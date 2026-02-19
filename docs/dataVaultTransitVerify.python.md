@@ -1,15 +1,15 @@
-# `dataVaultTransitVerify` Submodule <a name="`dataVaultTransitVerify` Submodule" id="@cdktf/provider-vault.dataVaultTransitVerify"></a>
+# `dataVaultTransitVerify` Submodule <a name="`dataVaultTransitVerify` Submodule" id="@cdktn/provider-vault.dataVaultTransitVerify"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataVaultTransitVerify <a name="DataVaultTransitVerify" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify"></a>
+### DataVaultTransitVerify <a name="DataVaultTransitVerify" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify vault_transit_verify}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify vault_transit_verify}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_vault import data_vault_transit_verify
+from cdktn_provider_vault import data_vault_transit_verify
 
 dataVaultTransitVerify.DataVaultTransitVerify(
   scope: Construct,
@@ -46,39 +46,39 @@ dataVaultTransitVerify.DataVaultTransitVerify(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the name of the encryption key that was used to generate the signature or HMAC. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.path">path</a></code> | <code>str</code> | The Transit secret backend the key belongs to. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.batchInput">batch_input</a></code> | <code>cdktf.IResolvable \| typing.List[typing.Mapping[str]]</code> | Specifies a list of items for processing. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.batchResults">batch_results</a></code> | <code>cdktf.IResolvable \| typing.List[typing.Mapping[str]]</code> | The results returned from Vault if using batch_input. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.cmac">cmac</a></code> | <code>str</code> | (Enterprise only) Specifies the signature output from the /transit/cmac function. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.context">context</a></code> | <code>str</code> | Base64 encoded context for key derivation. Required if key derivation is enabled; currently only available with ed25519 keys. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.hashAlgorithm">hash_algorithm</a></code> | <code>str</code> | Specifies the hash algorithm to use. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.hmac">hmac</a></code> | <code>str</code> | Specifies the signature output from the /transit/hmac function. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.input">input</a></code> | <code>str</code> | Specifies the base64 encoded input data. One of input or batch_input must be supplied. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.macLength">mac_length</a></code> | <code>typing.Union[int, float]</code> | Specifies the MAC length used to generate a CMAC. The mac_length cannot be larger than the cipher's block size. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.marshalingAlgorithm">marshaling_algorithm</a></code> | <code>str</code> | Specifies the way in which the signature was originally marshaled. This currently only applies to ECDSA keys. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.prehashed">prehashed</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true when the input is already hashed. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.reference">reference</a></code> | <code>str</code> | A user-supplied string that will be present in the reference field on the corresponding batch_results item in the response, to assist in understanding which result corresponds to a particular input. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.saltLength">salt_length</a></code> | <code>str</code> | The salt length used to sign. This currently only applies to the RSA PSS signature scheme. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.signature">signature</a></code> | <code>str</code> | Specifies the signature output from the /transit/sign function. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.signatureAlgorithm">signature_algorithm</a></code> | <code>str</code> | When using a RSA key, specifies the RSA signature algorithm to use for signature verification. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.signatureContext">signature_context</a></code> | <code>str</code> | Base64 encoded context for Ed25519ctx and Ed25519ph signatures. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.valid">valid</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether verification succeeded. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.name">name</a></code> | <code>str</code> | Specifies the name of the encryption key that was used to generate the signature or HMAC. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.path">path</a></code> | <code>str</code> | The Transit secret backend the key belongs to. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.batchInput">batch_input</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | Specifies a list of items for processing. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.batchResults">batch_results</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | The results returned from Vault if using batch_input. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.cmac">cmac</a></code> | <code>str</code> | (Enterprise only) Specifies the signature output from the /transit/cmac function. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.context">context</a></code> | <code>str</code> | Base64 encoded context for key derivation. Required if key derivation is enabled; currently only available with ed25519 keys. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.hashAlgorithm">hash_algorithm</a></code> | <code>str</code> | Specifies the hash algorithm to use. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.hmac">hmac</a></code> | <code>str</code> | Specifies the signature output from the /transit/hmac function. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.input">input</a></code> | <code>str</code> | Specifies the base64 encoded input data. One of input or batch_input must be supplied. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.macLength">mac_length</a></code> | <code>typing.Union[int, float]</code> | Specifies the MAC length used to generate a CMAC. The mac_length cannot be larger than the cipher's block size. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.marshalingAlgorithm">marshaling_algorithm</a></code> | <code>str</code> | Specifies the way in which the signature was originally marshaled. This currently only applies to ECDSA keys. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.prehashed">prehashed</a></code> | <code>bool \| cdktn.IResolvable</code> | Set to true when the input is already hashed. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.reference">reference</a></code> | <code>str</code> | A user-supplied string that will be present in the reference field on the corresponding batch_results item in the response, to assist in understanding which result corresponds to a particular input. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.saltLength">salt_length</a></code> | <code>str</code> | The salt length used to sign. This currently only applies to the RSA PSS signature scheme. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.signature">signature</a></code> | <code>str</code> | Specifies the signature output from the /transit/sign function. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.signatureAlgorithm">signature_algorithm</a></code> | <code>str</code> | When using a RSA key, specifies the RSA signature algorithm to use for signature verification. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.signatureContext">signature_context</a></code> | <code>str</code> | Base64 encoded context for Ed25519ctx and Ed25519ph signatures. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.valid">valid</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether verification succeeded. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -86,7 +86,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -96,91 +96,91 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.name"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.name"></a>
 
 - *Type:* str
 
 Specifies the name of the encryption key that was used to generate the signature or HMAC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#name DataVaultTransitVerify#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#name DataVaultTransitVerify#name}
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.path"></a>
+##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.path"></a>
 
 - *Type:* str
 
 The Transit secret backend the key belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#path DataVaultTransitVerify#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#path DataVaultTransitVerify#path}
 
 ---
 
-##### `batch_input`<sup>Optional</sup> <a name="batch_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.batchInput"></a>
+##### `batch_input`<sup>Optional</sup> <a name="batch_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.batchInput"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[typing.Mapping[str]]
+- *Type:* cdktn.IResolvable | typing.List[typing.Mapping[str]]
 
 Specifies a list of items for processing.
 
 When this parameter is set, any supplied 'input' or 'context' parameters will be ignored. Responses are returned in the 'batch_results' array component of the 'data' element of the response. Any batch output will preserve the order of the batch input. If the input data value of an item is invalid, the corresponding item in the 'batch_results' will have the key 'error' with a value describing the error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#batch_input DataVaultTransitVerify#batch_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#batch_input DataVaultTransitVerify#batch_input}
 
 ---
 
-##### `batch_results`<sup>Optional</sup> <a name="batch_results" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.batchResults"></a>
+##### `batch_results`<sup>Optional</sup> <a name="batch_results" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.batchResults"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[typing.Mapping[str]]
+- *Type:* cdktn.IResolvable | typing.List[typing.Mapping[str]]
 
 The results returned from Vault if using batch_input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#batch_results DataVaultTransitVerify#batch_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#batch_results DataVaultTransitVerify#batch_results}
 
 ---
 
-##### `cmac`<sup>Optional</sup> <a name="cmac" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.cmac"></a>
+##### `cmac`<sup>Optional</sup> <a name="cmac" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.cmac"></a>
 
 - *Type:* str
 
@@ -188,31 +188,31 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 One of the following arguments must be supplied signature, hmac or cmac.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#cmac DataVaultTransitVerify#cmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#cmac DataVaultTransitVerify#cmac}
 
 ---
 
-##### `context`<sup>Optional</sup> <a name="context" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.context"></a>
+##### `context`<sup>Optional</sup> <a name="context" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.context"></a>
 
 - *Type:* str
 
 Base64 encoded context for key derivation. Required if key derivation is enabled; currently only available with ed25519 keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#context DataVaultTransitVerify#context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#context DataVaultTransitVerify#context}
 
 ---
 
-##### `hash_algorithm`<sup>Optional</sup> <a name="hash_algorithm" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.hashAlgorithm"></a>
+##### `hash_algorithm`<sup>Optional</sup> <a name="hash_algorithm" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.hashAlgorithm"></a>
 
 - *Type:* str
 
 Specifies the hash algorithm to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#hash_algorithm DataVaultTransitVerify#hash_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#hash_algorithm DataVaultTransitVerify#hash_algorithm}
 
 ---
 
-##### `hmac`<sup>Optional</sup> <a name="hmac" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.hmac"></a>
+##### `hmac`<sup>Optional</sup> <a name="hmac" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.hmac"></a>
 
 - *Type:* str
 
@@ -220,74 +220,74 @@ Specifies the signature output from the /transit/hmac function.
 
 One of the following arguments must be supplied signature, hmac or cmac.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#hmac DataVaultTransitVerify#hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#hmac DataVaultTransitVerify#hmac}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `input`<sup>Optional</sup> <a name="input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.input"></a>
+##### `input`<sup>Optional</sup> <a name="input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.input"></a>
 
 - *Type:* str
 
 Specifies the base64 encoded input data. One of input or batch_input must be supplied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#input DataVaultTransitVerify#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#input DataVaultTransitVerify#input}
 
 ---
 
-##### `mac_length`<sup>Optional</sup> <a name="mac_length" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.macLength"></a>
+##### `mac_length`<sup>Optional</sup> <a name="mac_length" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.macLength"></a>
 
 - *Type:* typing.Union[int, float]
 
 Specifies the MAC length used to generate a CMAC. The mac_length cannot be larger than the cipher's block size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#mac_length DataVaultTransitVerify#mac_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#mac_length DataVaultTransitVerify#mac_length}
 
 ---
 
-##### `marshaling_algorithm`<sup>Optional</sup> <a name="marshaling_algorithm" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.marshalingAlgorithm"></a>
+##### `marshaling_algorithm`<sup>Optional</sup> <a name="marshaling_algorithm" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.marshalingAlgorithm"></a>
 
 - *Type:* str
 
 Specifies the way in which the signature was originally marshaled. This currently only applies to ECDSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#marshaling_algorithm DataVaultTransitVerify#marshaling_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#marshaling_algorithm DataVaultTransitVerify#marshaling_algorithm}
 
 ---
 
-##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.namespace"></a>
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.namespace"></a>
 
 - *Type:* str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#namespace DataVaultTransitVerify#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#namespace DataVaultTransitVerify#namespace}
 
 ---
 
-##### `prehashed`<sup>Optional</sup> <a name="prehashed" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.prehashed"></a>
+##### `prehashed`<sup>Optional</sup> <a name="prehashed" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.prehashed"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Set to true when the input is already hashed.
 
 If the key type is rsa-2048, rsa-3072 or rsa-4096, then the algorithm used to hash the input should be indicated by the hash_algorithm parameter. Just as the value to sign should be the base64-encoded representation of the exact binary data you want signed, when set, input is expected to be base64-encoded binary hashed data, not hex-formatted. (As an example, on the command line, you could generate a suitable input via openssl dgst -sha256 -binary | base64.)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#prehashed DataVaultTransitVerify#prehashed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#prehashed DataVaultTransitVerify#prehashed}
 
 ---
 
-##### `reference`<sup>Optional</sup> <a name="reference" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.reference"></a>
+##### `reference`<sup>Optional</sup> <a name="reference" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.reference"></a>
 
 - *Type:* str
 
@@ -295,21 +295,21 @@ A user-supplied string that will be present in the reference field on the corres
 
 Only valid on batch requests when using ‘batch_input’ below.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#reference DataVaultTransitVerify#reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#reference DataVaultTransitVerify#reference}
 
 ---
 
-##### `salt_length`<sup>Optional</sup> <a name="salt_length" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.saltLength"></a>
+##### `salt_length`<sup>Optional</sup> <a name="salt_length" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.saltLength"></a>
 
 - *Type:* str
 
 The salt length used to sign. This currently only applies to the RSA PSS signature scheme.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#salt_length DataVaultTransitVerify#salt_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#salt_length DataVaultTransitVerify#salt_length}
 
 ---
 
-##### `signature`<sup>Optional</sup> <a name="signature" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.signature"></a>
+##### `signature`<sup>Optional</sup> <a name="signature" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.signature"></a>
 
 - *Type:* str
 
@@ -317,37 +317,37 @@ Specifies the signature output from the /transit/sign function.
 
 One of the following arguments must be supplied signature, hmac or cmac.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#signature DataVaultTransitVerify#signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#signature DataVaultTransitVerify#signature}
 
 ---
 
-##### `signature_algorithm`<sup>Optional</sup> <a name="signature_algorithm" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.signatureAlgorithm"></a>
+##### `signature_algorithm`<sup>Optional</sup> <a name="signature_algorithm" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.signatureAlgorithm"></a>
 
 - *Type:* str
 
 When using a RSA key, specifies the RSA signature algorithm to use for signature verification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#signature_algorithm DataVaultTransitVerify#signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#signature_algorithm DataVaultTransitVerify#signature_algorithm}
 
 ---
 
-##### `signature_context`<sup>Optional</sup> <a name="signature_context" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.signatureContext"></a>
+##### `signature_context`<sup>Optional</sup> <a name="signature_context" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.signatureContext"></a>
 
 - *Type:* str
 
 Base64 encoded context for Ed25519ctx and Ed25519ph signatures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#signature_context DataVaultTransitVerify#signature_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#signature_context DataVaultTransitVerify#signature_context}
 
 ---
 
-##### `valid`<sup>Optional</sup> <a name="valid" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.valid"></a>
+##### `valid`<sup>Optional</sup> <a name="valid" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.Initializer.parameter.valid"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether verification succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#valid DataVaultTransitVerify#valid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#valid DataVaultTransitVerify#valid}
 
 ---
 
@@ -355,45 +355,45 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetBatchInput">reset_batch_input</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetBatchResults">reset_batch_results</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetCmac">reset_cmac</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetContext">reset_context</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetHashAlgorithm">reset_hash_algorithm</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetHmac">reset_hmac</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetInput">reset_input</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetMacLength">reset_mac_length</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetMarshalingAlgorithm">reset_marshaling_algorithm</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetNamespace">reset_namespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetPrehashed">reset_prehashed</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetReference">reset_reference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSaltLength">reset_salt_length</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSignature">reset_signature</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSignatureAlgorithm">reset_signature_algorithm</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSignatureContext">reset_signature_context</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetValid">reset_valid</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetBatchInput">reset_batch_input</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetBatchResults">reset_batch_results</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetCmac">reset_cmac</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetContext">reset_context</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetHashAlgorithm">reset_hash_algorithm</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetHmac">reset_hmac</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetInput">reset_input</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetMacLength">reset_mac_length</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetMarshalingAlgorithm">reset_marshaling_algorithm</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetNamespace">reset_namespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetPrehashed">reset_prehashed</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetReference">reset_reference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSaltLength">reset_salt_length</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSignature">reset_signature</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSignatureAlgorithm">reset_signature_algorithm</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSignatureContext">reset_signature_context</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetValid">reset_valid</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toString"></a>
 
 ```python
 def to_string() -> str
@@ -401,7 +401,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.addOverride"></a>
 
 ```python
 def add_override(
@@ -410,19 +410,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -432,7 +432,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -440,7 +440,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -448,7 +448,7 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
@@ -456,13 +456,13 @@ def to_hcl_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -470,7 +470,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -478,13 +478,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -492,13 +492,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -506,13 +506,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -520,13 +520,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -534,13 +534,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -548,13 +548,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -562,13 +562,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -576,13 +576,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -590,13 +590,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -604,115 +604,115 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `reset_batch_input` <a name="reset_batch_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetBatchInput"></a>
+##### `reset_batch_input` <a name="reset_batch_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetBatchInput"></a>
 
 ```python
 def reset_batch_input() -> None
 ```
 
-##### `reset_batch_results` <a name="reset_batch_results" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetBatchResults"></a>
+##### `reset_batch_results` <a name="reset_batch_results" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetBatchResults"></a>
 
 ```python
 def reset_batch_results() -> None
 ```
 
-##### `reset_cmac` <a name="reset_cmac" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetCmac"></a>
+##### `reset_cmac` <a name="reset_cmac" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetCmac"></a>
 
 ```python
 def reset_cmac() -> None
 ```
 
-##### `reset_context` <a name="reset_context" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetContext"></a>
+##### `reset_context` <a name="reset_context" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetContext"></a>
 
 ```python
 def reset_context() -> None
 ```
 
-##### `reset_hash_algorithm` <a name="reset_hash_algorithm" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetHashAlgorithm"></a>
+##### `reset_hash_algorithm` <a name="reset_hash_algorithm" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetHashAlgorithm"></a>
 
 ```python
 def reset_hash_algorithm() -> None
 ```
 
-##### `reset_hmac` <a name="reset_hmac" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetHmac"></a>
+##### `reset_hmac` <a name="reset_hmac" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetHmac"></a>
 
 ```python
 def reset_hmac() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_input` <a name="reset_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetInput"></a>
+##### `reset_input` <a name="reset_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetInput"></a>
 
 ```python
 def reset_input() -> None
 ```
 
-##### `reset_mac_length` <a name="reset_mac_length" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetMacLength"></a>
+##### `reset_mac_length` <a name="reset_mac_length" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetMacLength"></a>
 
 ```python
 def reset_mac_length() -> None
 ```
 
-##### `reset_marshaling_algorithm` <a name="reset_marshaling_algorithm" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetMarshalingAlgorithm"></a>
+##### `reset_marshaling_algorithm` <a name="reset_marshaling_algorithm" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetMarshalingAlgorithm"></a>
 
 ```python
 def reset_marshaling_algorithm() -> None
 ```
 
-##### `reset_namespace` <a name="reset_namespace" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetNamespace"></a>
+##### `reset_namespace` <a name="reset_namespace" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetNamespace"></a>
 
 ```python
 def reset_namespace() -> None
 ```
 
-##### `reset_prehashed` <a name="reset_prehashed" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetPrehashed"></a>
+##### `reset_prehashed` <a name="reset_prehashed" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetPrehashed"></a>
 
 ```python
 def reset_prehashed() -> None
 ```
 
-##### `reset_reference` <a name="reset_reference" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetReference"></a>
+##### `reset_reference` <a name="reset_reference" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetReference"></a>
 
 ```python
 def reset_reference() -> None
 ```
 
-##### `reset_salt_length` <a name="reset_salt_length" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSaltLength"></a>
+##### `reset_salt_length` <a name="reset_salt_length" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSaltLength"></a>
 
 ```python
 def reset_salt_length() -> None
 ```
 
-##### `reset_signature` <a name="reset_signature" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSignature"></a>
+##### `reset_signature` <a name="reset_signature" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSignature"></a>
 
 ```python
 def reset_signature() -> None
 ```
 
-##### `reset_signature_algorithm` <a name="reset_signature_algorithm" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSignatureAlgorithm"></a>
+##### `reset_signature_algorithm` <a name="reset_signature_algorithm" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSignatureAlgorithm"></a>
 
 ```python
 def reset_signature_algorithm() -> None
 ```
 
-##### `reset_signature_context` <a name="reset_signature_context" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSignatureContext"></a>
+##### `reset_signature_context` <a name="reset_signature_context" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetSignatureContext"></a>
 
 ```python
 def reset_signature_context() -> None
 ```
 
-##### `reset_valid` <a name="reset_valid" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetValid"></a>
+##### `reset_valid` <a name="reset_valid" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.resetValid"></a>
 
 ```python
 def reset_valid() -> None
@@ -722,17 +722,17 @@ def reset_valid() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataVaultTransitVerify resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a DataVaultTransitVerify resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_vault import data_vault_transit_verify
+from cdktn_provider_vault import data_vault_transit_verify
 
 dataVaultTransitVerify.DataVaultTransitVerify.is_construct(
   x: typing.Any
@@ -755,7 +755,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -763,42 +763,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_vault import data_vault_transit_verify
+from cdktn_provider_vault import data_vault_transit_verify
 
 dataVaultTransitVerify.DataVaultTransitVerify.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformDataSource"></a>
+##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformDataSource"></a>
 
 ```python
-from cdktf_cdktf_provider_vault import data_vault_transit_verify
+from cdktn_provider_vault import data_vault_transit_verify
 
 dataVaultTransitVerify.DataVaultTransitVerify.is_terraform_data_source(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_vault import data_vault_transit_verify
+from cdktn_provider_vault import data_vault_transit_verify
 
 dataVaultTransitVerify.DataVaultTransitVerify.generate_config_for_import(
   scope: Construct,
@@ -808,9 +808,9 @@ dataVaultTransitVerify.DataVaultTransitVerify.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a DataVaultTransitVerify resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DataVaultTransitVerify resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -818,7 +818,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -826,19 +826,19 @@ The construct id used in the generated config for the DataVaultTransitVerify to 
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing DataVaultTransitVerify that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DataVaultTransitVerify to import is found.
 
@@ -848,62 +848,62 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchInputInput">batch_input_input</a></code> | <code>cdktf.IResolvable \| typing.List[typing.Mapping[str]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchResultsInput">batch_results_input</a></code> | <code>cdktf.IResolvable \| typing.List[typing.Mapping[str]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.cmacInput">cmac_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.contextInput">context_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hashAlgorithmInput">hash_algorithm_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hmacInput">hmac_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.macLengthInput">mac_length_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.marshalingAlgorithmInput">marshaling_algorithm_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.prehashedInput">prehashed_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.referenceInput">reference_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.saltLengthInput">salt_length_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureAlgorithmInput">signature_algorithm_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureContextInput">signature_context_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureInput">signature_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.validInput">valid_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchInput">batch_input</a></code> | <code>cdktf.IResolvable \| typing.List[typing.Mapping[str]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchResults">batch_results</a></code> | <code>cdktf.IResolvable \| typing.List[typing.Mapping[str]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.cmac">cmac</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.context">context</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hashAlgorithm">hash_algorithm</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hmac">hmac</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.input">input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.macLength">mac_length</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.marshalingAlgorithm">marshaling_algorithm</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.prehashed">prehashed</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.reference">reference</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.saltLength">salt_length</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signature">signature</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureAlgorithm">signature_algorithm</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureContext">signature_context</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.valid">valid</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchInputInput">batch_input_input</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchResultsInput">batch_results_input</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.cmacInput">cmac_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.contextInput">context_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hashAlgorithmInput">hash_algorithm_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hmacInput">hmac_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.inputInput">input_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.macLengthInput">mac_length_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.marshalingAlgorithmInput">marshaling_algorithm_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.prehashedInput">prehashed_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.referenceInput">reference_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.saltLengthInput">salt_length_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureAlgorithmInput">signature_algorithm_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureContextInput">signature_context_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureInput">signature_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.validInput">valid_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchInput">batch_input</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchResults">batch_results</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.cmac">cmac</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.context">context</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hashAlgorithm">hash_algorithm</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hmac">hmac</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.input">input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.macLength">mac_length</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.marshalingAlgorithm">marshaling_algorithm</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.path">path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.prehashed">prehashed</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.reference">reference</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.saltLength">salt_length</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signature">signature</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureAlgorithm">signature_algorithm</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureContext">signature_context</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.valid">valid</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.node"></a>
 
 ```python
 node: Node
@@ -915,17 +915,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.fqn"></a>
 
 ```python
 fqn: str
@@ -935,7 +935,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -945,7 +945,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -955,7 +955,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -965,27 +965,27 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -995,57 +995,57 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `batch_input_input`<sup>Optional</sup> <a name="batch_input_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchInputInput"></a>
+##### `batch_input_input`<sup>Optional</sup> <a name="batch_input_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchInputInput"></a>
 
 ```python
 batch_input_input: IResolvable | typing.List[typing.Mapping[str]]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[typing.Mapping[str]]
+- *Type:* cdktn.IResolvable | typing.List[typing.Mapping[str]]
 
 ---
 
-##### `batch_results_input`<sup>Optional</sup> <a name="batch_results_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchResultsInput"></a>
+##### `batch_results_input`<sup>Optional</sup> <a name="batch_results_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchResultsInput"></a>
 
 ```python
 batch_results_input: IResolvable | typing.List[typing.Mapping[str]]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[typing.Mapping[str]]
+- *Type:* cdktn.IResolvable | typing.List[typing.Mapping[str]]
 
 ---
 
-##### `cmac_input`<sup>Optional</sup> <a name="cmac_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.cmacInput"></a>
+##### `cmac_input`<sup>Optional</sup> <a name="cmac_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.cmacInput"></a>
 
 ```python
 cmac_input: str
@@ -1055,7 +1055,7 @@ cmac_input: str
 
 ---
 
-##### `context_input`<sup>Optional</sup> <a name="context_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.contextInput"></a>
+##### `context_input`<sup>Optional</sup> <a name="context_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.contextInput"></a>
 
 ```python
 context_input: str
@@ -1065,7 +1065,7 @@ context_input: str
 
 ---
 
-##### `hash_algorithm_input`<sup>Optional</sup> <a name="hash_algorithm_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hashAlgorithmInput"></a>
+##### `hash_algorithm_input`<sup>Optional</sup> <a name="hash_algorithm_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hashAlgorithmInput"></a>
 
 ```python
 hash_algorithm_input: str
@@ -1075,7 +1075,7 @@ hash_algorithm_input: str
 
 ---
 
-##### `hmac_input`<sup>Optional</sup> <a name="hmac_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hmacInput"></a>
+##### `hmac_input`<sup>Optional</sup> <a name="hmac_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hmacInput"></a>
 
 ```python
 hmac_input: str
@@ -1085,7 +1085,7 @@ hmac_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1095,7 +1095,7 @@ id_input: str
 
 ---
 
-##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.inputInput"></a>
+##### `input_input`<sup>Optional</sup> <a name="input_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.inputInput"></a>
 
 ```python
 input_input: str
@@ -1105,7 +1105,7 @@ input_input: str
 
 ---
 
-##### `mac_length_input`<sup>Optional</sup> <a name="mac_length_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.macLengthInput"></a>
+##### `mac_length_input`<sup>Optional</sup> <a name="mac_length_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.macLengthInput"></a>
 
 ```python
 mac_length_input: typing.Union[int, float]
@@ -1115,7 +1115,7 @@ mac_length_input: typing.Union[int, float]
 
 ---
 
-##### `marshaling_algorithm_input`<sup>Optional</sup> <a name="marshaling_algorithm_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.marshalingAlgorithmInput"></a>
+##### `marshaling_algorithm_input`<sup>Optional</sup> <a name="marshaling_algorithm_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.marshalingAlgorithmInput"></a>
 
 ```python
 marshaling_algorithm_input: str
@@ -1125,7 +1125,7 @@ marshaling_algorithm_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1135,7 +1135,7 @@ name_input: str
 
 ---
 
-##### `namespace_input`<sup>Optional</sup> <a name="namespace_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.namespaceInput"></a>
+##### `namespace_input`<sup>Optional</sup> <a name="namespace_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.namespaceInput"></a>
 
 ```python
 namespace_input: str
@@ -1145,7 +1145,7 @@ namespace_input: str
 
 ---
 
-##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.pathInput"></a>
+##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.pathInput"></a>
 
 ```python
 path_input: str
@@ -1155,17 +1155,17 @@ path_input: str
 
 ---
 
-##### `prehashed_input`<sup>Optional</sup> <a name="prehashed_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.prehashedInput"></a>
+##### `prehashed_input`<sup>Optional</sup> <a name="prehashed_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.prehashedInput"></a>
 
 ```python
 prehashed_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `reference_input`<sup>Optional</sup> <a name="reference_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.referenceInput"></a>
+##### `reference_input`<sup>Optional</sup> <a name="reference_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.referenceInput"></a>
 
 ```python
 reference_input: str
@@ -1175,7 +1175,7 @@ reference_input: str
 
 ---
 
-##### `salt_length_input`<sup>Optional</sup> <a name="salt_length_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.saltLengthInput"></a>
+##### `salt_length_input`<sup>Optional</sup> <a name="salt_length_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.saltLengthInput"></a>
 
 ```python
 salt_length_input: str
@@ -1185,7 +1185,7 @@ salt_length_input: str
 
 ---
 
-##### `signature_algorithm_input`<sup>Optional</sup> <a name="signature_algorithm_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureAlgorithmInput"></a>
+##### `signature_algorithm_input`<sup>Optional</sup> <a name="signature_algorithm_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureAlgorithmInput"></a>
 
 ```python
 signature_algorithm_input: str
@@ -1195,7 +1195,7 @@ signature_algorithm_input: str
 
 ---
 
-##### `signature_context_input`<sup>Optional</sup> <a name="signature_context_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureContextInput"></a>
+##### `signature_context_input`<sup>Optional</sup> <a name="signature_context_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureContextInput"></a>
 
 ```python
 signature_context_input: str
@@ -1205,7 +1205,7 @@ signature_context_input: str
 
 ---
 
-##### `signature_input`<sup>Optional</sup> <a name="signature_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureInput"></a>
+##### `signature_input`<sup>Optional</sup> <a name="signature_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureInput"></a>
 
 ```python
 signature_input: str
@@ -1215,37 +1215,37 @@ signature_input: str
 
 ---
 
-##### `valid_input`<sup>Optional</sup> <a name="valid_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.validInput"></a>
+##### `valid_input`<sup>Optional</sup> <a name="valid_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.validInput"></a>
 
 ```python
 valid_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `batch_input`<sup>Required</sup> <a name="batch_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchInput"></a>
+##### `batch_input`<sup>Required</sup> <a name="batch_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchInput"></a>
 
 ```python
 batch_input: IResolvable | typing.List[typing.Mapping[str]]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[typing.Mapping[str]]
+- *Type:* cdktn.IResolvable | typing.List[typing.Mapping[str]]
 
 ---
 
-##### `batch_results`<sup>Required</sup> <a name="batch_results" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchResults"></a>
+##### `batch_results`<sup>Required</sup> <a name="batch_results" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.batchResults"></a>
 
 ```python
 batch_results: IResolvable | typing.List[typing.Mapping[str]]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[typing.Mapping[str]]
+- *Type:* cdktn.IResolvable | typing.List[typing.Mapping[str]]
 
 ---
 
-##### `cmac`<sup>Required</sup> <a name="cmac" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.cmac"></a>
+##### `cmac`<sup>Required</sup> <a name="cmac" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.cmac"></a>
 
 ```python
 cmac: str
@@ -1255,7 +1255,7 @@ cmac: str
 
 ---
 
-##### `context`<sup>Required</sup> <a name="context" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.context"></a>
+##### `context`<sup>Required</sup> <a name="context" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.context"></a>
 
 ```python
 context: str
@@ -1265,7 +1265,7 @@ context: str
 
 ---
 
-##### `hash_algorithm`<sup>Required</sup> <a name="hash_algorithm" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hashAlgorithm"></a>
+##### `hash_algorithm`<sup>Required</sup> <a name="hash_algorithm" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hashAlgorithm"></a>
 
 ```python
 hash_algorithm: str
@@ -1275,7 +1275,7 @@ hash_algorithm: str
 
 ---
 
-##### `hmac`<sup>Required</sup> <a name="hmac" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hmac"></a>
+##### `hmac`<sup>Required</sup> <a name="hmac" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.hmac"></a>
 
 ```python
 hmac: str
@@ -1285,7 +1285,7 @@ hmac: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.id"></a>
 
 ```python
 id: str
@@ -1295,7 +1295,7 @@ id: str
 
 ---
 
-##### `input`<sup>Required</sup> <a name="input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.input"></a>
+##### `input`<sup>Required</sup> <a name="input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.input"></a>
 
 ```python
 input: str
@@ -1305,7 +1305,7 @@ input: str
 
 ---
 
-##### `mac_length`<sup>Required</sup> <a name="mac_length" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.macLength"></a>
+##### `mac_length`<sup>Required</sup> <a name="mac_length" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.macLength"></a>
 
 ```python
 mac_length: typing.Union[int, float]
@@ -1315,7 +1315,7 @@ mac_length: typing.Union[int, float]
 
 ---
 
-##### `marshaling_algorithm`<sup>Required</sup> <a name="marshaling_algorithm" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.marshalingAlgorithm"></a>
+##### `marshaling_algorithm`<sup>Required</sup> <a name="marshaling_algorithm" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.marshalingAlgorithm"></a>
 
 ```python
 marshaling_algorithm: str
@@ -1325,7 +1325,7 @@ marshaling_algorithm: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.name"></a>
 
 ```python
 name: str
@@ -1335,7 +1335,7 @@ name: str
 
 ---
 
-##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.namespace"></a>
+##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.namespace"></a>
 
 ```python
 namespace: str
@@ -1345,7 +1345,7 @@ namespace: str
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.path"></a>
+##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.path"></a>
 
 ```python
 path: str
@@ -1355,17 +1355,17 @@ path: str
 
 ---
 
-##### `prehashed`<sup>Required</sup> <a name="prehashed" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.prehashed"></a>
+##### `prehashed`<sup>Required</sup> <a name="prehashed" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.prehashed"></a>
 
 ```python
 prehashed: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `reference`<sup>Required</sup> <a name="reference" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.reference"></a>
+##### `reference`<sup>Required</sup> <a name="reference" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.reference"></a>
 
 ```python
 reference: str
@@ -1375,7 +1375,7 @@ reference: str
 
 ---
 
-##### `salt_length`<sup>Required</sup> <a name="salt_length" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.saltLength"></a>
+##### `salt_length`<sup>Required</sup> <a name="salt_length" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.saltLength"></a>
 
 ```python
 salt_length: str
@@ -1385,7 +1385,7 @@ salt_length: str
 
 ---
 
-##### `signature`<sup>Required</sup> <a name="signature" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signature"></a>
+##### `signature`<sup>Required</sup> <a name="signature" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signature"></a>
 
 ```python
 signature: str
@@ -1395,7 +1395,7 @@ signature: str
 
 ---
 
-##### `signature_algorithm`<sup>Required</sup> <a name="signature_algorithm" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureAlgorithm"></a>
+##### `signature_algorithm`<sup>Required</sup> <a name="signature_algorithm" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureAlgorithm"></a>
 
 ```python
 signature_algorithm: str
@@ -1405,7 +1405,7 @@ signature_algorithm: str
 
 ---
 
-##### `signature_context`<sup>Required</sup> <a name="signature_context" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureContext"></a>
+##### `signature_context`<sup>Required</sup> <a name="signature_context" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.signatureContext"></a>
 
 ```python
 signature_context: str
@@ -1415,13 +1415,13 @@ signature_context: str
 
 ---
 
-##### `valid`<sup>Required</sup> <a name="valid" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.valid"></a>
+##### `valid`<sup>Required</sup> <a name="valid" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.valid"></a>
 
 ```python
 valid: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1429,11 +1429,11 @@ valid: bool | IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerify.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1445,12 +1445,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataVaultTransitVerifyConfig <a name="DataVaultTransitVerifyConfig" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig"></a>
+### DataVaultTransitVerifyConfig <a name="DataVaultTransitVerifyConfig" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_vault import data_vault_transit_verify
+from cdktn_provider_vault import data_vault_transit_verify
 
 dataVaultTransitVerify.DataVaultTransitVerifyConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1487,107 +1487,107 @@ dataVaultTransitVerify.DataVaultTransitVerifyConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.name">name</a></code> | <code>str</code> | Specifies the name of the encryption key that was used to generate the signature or HMAC. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.path">path</a></code> | <code>str</code> | The Transit secret backend the key belongs to. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.batchInput">batch_input</a></code> | <code>cdktf.IResolvable \| typing.List[typing.Mapping[str]]</code> | Specifies a list of items for processing. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.batchResults">batch_results</a></code> | <code>cdktf.IResolvable \| typing.List[typing.Mapping[str]]</code> | The results returned from Vault if using batch_input. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.cmac">cmac</a></code> | <code>str</code> | (Enterprise only) Specifies the signature output from the /transit/cmac function. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.context">context</a></code> | <code>str</code> | Base64 encoded context for key derivation. Required if key derivation is enabled; currently only available with ed25519 keys. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.hashAlgorithm">hash_algorithm</a></code> | <code>str</code> | Specifies the hash algorithm to use. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.hmac">hmac</a></code> | <code>str</code> | Specifies the signature output from the /transit/hmac function. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.input">input</a></code> | <code>str</code> | Specifies the base64 encoded input data. One of input or batch_input must be supplied. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.macLength">mac_length</a></code> | <code>typing.Union[int, float]</code> | Specifies the MAC length used to generate a CMAC. The mac_length cannot be larger than the cipher's block size. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.marshalingAlgorithm">marshaling_algorithm</a></code> | <code>str</code> | Specifies the way in which the signature was originally marshaled. This currently only applies to ECDSA keys. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.prehashed">prehashed</a></code> | <code>bool \| cdktf.IResolvable</code> | Set to true when the input is already hashed. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.reference">reference</a></code> | <code>str</code> | A user-supplied string that will be present in the reference field on the corresponding batch_results item in the response, to assist in understanding which result corresponds to a particular input. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.saltLength">salt_length</a></code> | <code>str</code> | The salt length used to sign. This currently only applies to the RSA PSS signature scheme. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.signature">signature</a></code> | <code>str</code> | Specifies the signature output from the /transit/sign function. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.signatureAlgorithm">signature_algorithm</a></code> | <code>str</code> | When using a RSA key, specifies the RSA signature algorithm to use for signature verification. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.signatureContext">signature_context</a></code> | <code>str</code> | Base64 encoded context for Ed25519ctx and Ed25519ph signatures. |
-| <code><a href="#@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.valid">valid</a></code> | <code>bool \| cdktf.IResolvable</code> | Indicates whether verification succeeded. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.name">name</a></code> | <code>str</code> | Specifies the name of the encryption key that was used to generate the signature or HMAC. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.path">path</a></code> | <code>str</code> | The Transit secret backend the key belongs to. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.batchInput">batch_input</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | Specifies a list of items for processing. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.batchResults">batch_results</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | The results returned from Vault if using batch_input. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.cmac">cmac</a></code> | <code>str</code> | (Enterprise only) Specifies the signature output from the /transit/cmac function. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.context">context</a></code> | <code>str</code> | Base64 encoded context for key derivation. Required if key derivation is enabled; currently only available with ed25519 keys. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.hashAlgorithm">hash_algorithm</a></code> | <code>str</code> | Specifies the hash algorithm to use. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.hmac">hmac</a></code> | <code>str</code> | Specifies the signature output from the /transit/hmac function. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.input">input</a></code> | <code>str</code> | Specifies the base64 encoded input data. One of input or batch_input must be supplied. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.macLength">mac_length</a></code> | <code>typing.Union[int, float]</code> | Specifies the MAC length used to generate a CMAC. The mac_length cannot be larger than the cipher's block size. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.marshalingAlgorithm">marshaling_algorithm</a></code> | <code>str</code> | Specifies the way in which the signature was originally marshaled. This currently only applies to ECDSA keys. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.prehashed">prehashed</a></code> | <code>bool \| cdktn.IResolvable</code> | Set to true when the input is already hashed. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.reference">reference</a></code> | <code>str</code> | A user-supplied string that will be present in the reference field on the corresponding batch_results item in the response, to assist in understanding which result corresponds to a particular input. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.saltLength">salt_length</a></code> | <code>str</code> | The salt length used to sign. This currently only applies to the RSA PSS signature scheme. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.signature">signature</a></code> | <code>str</code> | Specifies the signature output from the /transit/sign function. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.signatureAlgorithm">signature_algorithm</a></code> | <code>str</code> | When using a RSA key, specifies the RSA signature algorithm to use for signature verification. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.signatureContext">signature_context</a></code> | <code>str</code> | Base64 encoded context for Ed25519ctx and Ed25519ph signatures. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.valid">valid</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether verification succeeded. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.name"></a>
 
 ```python
 name: str
@@ -1597,11 +1597,11 @@ name: str
 
 Specifies the name of the encryption key that was used to generate the signature or HMAC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#name DataVaultTransitVerify#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#name DataVaultTransitVerify#name}
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.path"></a>
+##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.path"></a>
 
 ```python
 path: str
@@ -1611,41 +1611,41 @@ path: str
 
 The Transit secret backend the key belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#path DataVaultTransitVerify#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#path DataVaultTransitVerify#path}
 
 ---
 
-##### `batch_input`<sup>Optional</sup> <a name="batch_input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.batchInput"></a>
+##### `batch_input`<sup>Optional</sup> <a name="batch_input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.batchInput"></a>
 
 ```python
 batch_input: IResolvable | typing.List[typing.Mapping[str]]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[typing.Mapping[str]]
+- *Type:* cdktn.IResolvable | typing.List[typing.Mapping[str]]
 
 Specifies a list of items for processing.
 
 When this parameter is set, any supplied 'input' or 'context' parameters will be ignored. Responses are returned in the 'batch_results' array component of the 'data' element of the response. Any batch output will preserve the order of the batch input. If the input data value of an item is invalid, the corresponding item in the 'batch_results' will have the key 'error' with a value describing the error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#batch_input DataVaultTransitVerify#batch_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#batch_input DataVaultTransitVerify#batch_input}
 
 ---
 
-##### `batch_results`<sup>Optional</sup> <a name="batch_results" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.batchResults"></a>
+##### `batch_results`<sup>Optional</sup> <a name="batch_results" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.batchResults"></a>
 
 ```python
 batch_results: IResolvable | typing.List[typing.Mapping[str]]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[typing.Mapping[str]]
+- *Type:* cdktn.IResolvable | typing.List[typing.Mapping[str]]
 
 The results returned from Vault if using batch_input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#batch_results DataVaultTransitVerify#batch_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#batch_results DataVaultTransitVerify#batch_results}
 
 ---
 
-##### `cmac`<sup>Optional</sup> <a name="cmac" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.cmac"></a>
+##### `cmac`<sup>Optional</sup> <a name="cmac" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.cmac"></a>
 
 ```python
 cmac: str
@@ -1657,11 +1657,11 @@ cmac: str
 
 One of the following arguments must be supplied signature, hmac or cmac.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#cmac DataVaultTransitVerify#cmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#cmac DataVaultTransitVerify#cmac}
 
 ---
 
-##### `context`<sup>Optional</sup> <a name="context" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.context"></a>
+##### `context`<sup>Optional</sup> <a name="context" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.context"></a>
 
 ```python
 context: str
@@ -1671,11 +1671,11 @@ context: str
 
 Base64 encoded context for key derivation. Required if key derivation is enabled; currently only available with ed25519 keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#context DataVaultTransitVerify#context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#context DataVaultTransitVerify#context}
 
 ---
 
-##### `hash_algorithm`<sup>Optional</sup> <a name="hash_algorithm" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.hashAlgorithm"></a>
+##### `hash_algorithm`<sup>Optional</sup> <a name="hash_algorithm" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.hashAlgorithm"></a>
 
 ```python
 hash_algorithm: str
@@ -1685,11 +1685,11 @@ hash_algorithm: str
 
 Specifies the hash algorithm to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#hash_algorithm DataVaultTransitVerify#hash_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#hash_algorithm DataVaultTransitVerify#hash_algorithm}
 
 ---
 
-##### `hmac`<sup>Optional</sup> <a name="hmac" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.hmac"></a>
+##### `hmac`<sup>Optional</sup> <a name="hmac" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.hmac"></a>
 
 ```python
 hmac: str
@@ -1701,11 +1701,11 @@ Specifies the signature output from the /transit/hmac function.
 
 One of the following arguments must be supplied signature, hmac or cmac.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#hmac DataVaultTransitVerify#hmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#hmac DataVaultTransitVerify#hmac}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.id"></a>
 
 ```python
 id: str
@@ -1713,14 +1713,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `input`<sup>Optional</sup> <a name="input" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.input"></a>
+##### `input`<sup>Optional</sup> <a name="input" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.input"></a>
 
 ```python
 input: str
@@ -1730,11 +1730,11 @@ input: str
 
 Specifies the base64 encoded input data. One of input or batch_input must be supplied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#input DataVaultTransitVerify#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#input DataVaultTransitVerify#input}
 
 ---
 
-##### `mac_length`<sup>Optional</sup> <a name="mac_length" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.macLength"></a>
+##### `mac_length`<sup>Optional</sup> <a name="mac_length" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.macLength"></a>
 
 ```python
 mac_length: typing.Union[int, float]
@@ -1744,11 +1744,11 @@ mac_length: typing.Union[int, float]
 
 Specifies the MAC length used to generate a CMAC. The mac_length cannot be larger than the cipher's block size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#mac_length DataVaultTransitVerify#mac_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#mac_length DataVaultTransitVerify#mac_length}
 
 ---
 
-##### `marshaling_algorithm`<sup>Optional</sup> <a name="marshaling_algorithm" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.marshalingAlgorithm"></a>
+##### `marshaling_algorithm`<sup>Optional</sup> <a name="marshaling_algorithm" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.marshalingAlgorithm"></a>
 
 ```python
 marshaling_algorithm: str
@@ -1758,11 +1758,11 @@ marshaling_algorithm: str
 
 Specifies the way in which the signature was originally marshaled. This currently only applies to ECDSA keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#marshaling_algorithm DataVaultTransitVerify#marshaling_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#marshaling_algorithm DataVaultTransitVerify#marshaling_algorithm}
 
 ---
 
-##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.namespace"></a>
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.namespace"></a>
 
 ```python
 namespace: str
@@ -1772,27 +1772,27 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#namespace DataVaultTransitVerify#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#namespace DataVaultTransitVerify#namespace}
 
 ---
 
-##### `prehashed`<sup>Optional</sup> <a name="prehashed" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.prehashed"></a>
+##### `prehashed`<sup>Optional</sup> <a name="prehashed" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.prehashed"></a>
 
 ```python
 prehashed: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Set to true when the input is already hashed.
 
 If the key type is rsa-2048, rsa-3072 or rsa-4096, then the algorithm used to hash the input should be indicated by the hash_algorithm parameter. Just as the value to sign should be the base64-encoded representation of the exact binary data you want signed, when set, input is expected to be base64-encoded binary hashed data, not hex-formatted. (As an example, on the command line, you could generate a suitable input via openssl dgst -sha256 -binary | base64.)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#prehashed DataVaultTransitVerify#prehashed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#prehashed DataVaultTransitVerify#prehashed}
 
 ---
 
-##### `reference`<sup>Optional</sup> <a name="reference" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.reference"></a>
+##### `reference`<sup>Optional</sup> <a name="reference" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.reference"></a>
 
 ```python
 reference: str
@@ -1804,11 +1804,11 @@ A user-supplied string that will be present in the reference field on the corres
 
 Only valid on batch requests when using ‘batch_input’ below.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#reference DataVaultTransitVerify#reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#reference DataVaultTransitVerify#reference}
 
 ---
 
-##### `salt_length`<sup>Optional</sup> <a name="salt_length" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.saltLength"></a>
+##### `salt_length`<sup>Optional</sup> <a name="salt_length" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.saltLength"></a>
 
 ```python
 salt_length: str
@@ -1818,11 +1818,11 @@ salt_length: str
 
 The salt length used to sign. This currently only applies to the RSA PSS signature scheme.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#salt_length DataVaultTransitVerify#salt_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#salt_length DataVaultTransitVerify#salt_length}
 
 ---
 
-##### `signature`<sup>Optional</sup> <a name="signature" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.signature"></a>
+##### `signature`<sup>Optional</sup> <a name="signature" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.signature"></a>
 
 ```python
 signature: str
@@ -1834,11 +1834,11 @@ Specifies the signature output from the /transit/sign function.
 
 One of the following arguments must be supplied signature, hmac or cmac.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#signature DataVaultTransitVerify#signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#signature DataVaultTransitVerify#signature}
 
 ---
 
-##### `signature_algorithm`<sup>Optional</sup> <a name="signature_algorithm" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.signatureAlgorithm"></a>
+##### `signature_algorithm`<sup>Optional</sup> <a name="signature_algorithm" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.signatureAlgorithm"></a>
 
 ```python
 signature_algorithm: str
@@ -1848,11 +1848,11 @@ signature_algorithm: str
 
 When using a RSA key, specifies the RSA signature algorithm to use for signature verification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#signature_algorithm DataVaultTransitVerify#signature_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#signature_algorithm DataVaultTransitVerify#signature_algorithm}
 
 ---
 
-##### `signature_context`<sup>Optional</sup> <a name="signature_context" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.signatureContext"></a>
+##### `signature_context`<sup>Optional</sup> <a name="signature_context" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.signatureContext"></a>
 
 ```python
 signature_context: str
@@ -1862,21 +1862,21 @@ signature_context: str
 
 Base64 encoded context for Ed25519ctx and Ed25519ph signatures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#signature_context DataVaultTransitVerify#signature_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#signature_context DataVaultTransitVerify#signature_context}
 
 ---
 
-##### `valid`<sup>Optional</sup> <a name="valid" id="@cdktf/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.valid"></a>
+##### `valid`<sup>Optional</sup> <a name="valid" id="@cdktn/provider-vault.dataVaultTransitVerify.DataVaultTransitVerifyConfig.property.valid"></a>
 
 ```python
 valid: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Indicates whether verification succeeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#valid DataVaultTransitVerify#valid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#valid DataVaultTransitVerify#valid}
 
 ---
 

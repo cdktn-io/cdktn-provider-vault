@@ -1,28 +1,28 @@
-# `jwtAuthBackendRole` Submodule <a name="`jwtAuthBackendRole` Submodule" id="@cdktf/provider-vault.jwtAuthBackendRole"></a>
+# `jwtAuthBackendRole` Submodule <a name="`jwtAuthBackendRole` Submodule" id="@cdktn/provider-vault.jwtAuthBackendRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### JwtAuthBackendRole <a name="JwtAuthBackendRole" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole"></a>
+### JwtAuthBackendRole <a name="JwtAuthBackendRole" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jwtauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jwtauthbackendrole"
 
 jwtauthbackendrole.NewJwtAuthBackendRole(scope Construct, id *string, config JwtAuthBackendRoleConfig) JwtAuthBackendRole
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig">JwtAuthBackendRoleConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig">JwtAuthBackendRoleConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig">JwtAuthBackendRoleConfig</a>
+- *Type:* <a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig">JwtAuthBackendRoleConfig</a>
 
 ---
 
@@ -50,62 +50,62 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetAliasMetadata">ResetAliasMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetAllowedRedirectUris">ResetAllowedRedirectUris</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBackend">ResetBackend</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundAudiences">ResetBoundAudiences</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundClaims">ResetBoundClaims</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundClaimsType">ResetBoundClaimsType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundSubject">ResetBoundSubject</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetClaimMappings">ResetClaimMappings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetClockSkewLeeway">ResetClockSkewLeeway</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetDisableBoundClaimsParsing">ResetDisableBoundClaimsParsing</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetExpirationLeeway">ResetExpirationLeeway</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetGroupsClaim">ResetGroupsClaim</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetMaxAge">ResetMaxAge</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetNamespace">ResetNamespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetNotBeforeLeeway">ResetNotBeforeLeeway</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetOidcScopes">ResetOidcScopes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetRoleType">ResetRoleType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenBoundCidrs">ResetTokenBoundCidrs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenExplicitMaxTtl">ResetTokenExplicitMaxTtl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenMaxTtl">ResetTokenMaxTtl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenNoDefaultPolicy">ResetTokenNoDefaultPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenNumUses">ResetTokenNumUses</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenPeriod">ResetTokenPeriod</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenPolicies">ResetTokenPolicies</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenTtl">ResetTokenTtl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenType">ResetTokenType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetUserClaimJsonPointer">ResetUserClaimJsonPointer</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetVerboseOidcLogging">ResetVerboseOidcLogging</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetAliasMetadata">ResetAliasMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetAllowedRedirectUris">ResetAllowedRedirectUris</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBackend">ResetBackend</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundAudiences">ResetBoundAudiences</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundClaims">ResetBoundClaims</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundClaimsType">ResetBoundClaimsType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundSubject">ResetBoundSubject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetClaimMappings">ResetClaimMappings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetClockSkewLeeway">ResetClockSkewLeeway</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetDisableBoundClaimsParsing">ResetDisableBoundClaimsParsing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetExpirationLeeway">ResetExpirationLeeway</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetGroupsClaim">ResetGroupsClaim</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetMaxAge">ResetMaxAge</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetNotBeforeLeeway">ResetNotBeforeLeeway</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetOidcScopes">ResetOidcScopes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetRoleType">ResetRoleType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenBoundCidrs">ResetTokenBoundCidrs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenExplicitMaxTtl">ResetTokenExplicitMaxTtl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenMaxTtl">ResetTokenMaxTtl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenNoDefaultPolicy">ResetTokenNoDefaultPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenNumUses">ResetTokenNumUses</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenPeriod">ResetTokenPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenPolicies">ResetTokenPolicies</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenTtl">ResetTokenTtl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenType">ResetTokenType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetUserClaimJsonPointer">ResetUserClaimJsonPointer</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetVerboseOidcLogging">ResetVerboseOidcLogging</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toString"></a>
 
 ```go
 func ToString() *string
@@ -113,25 +113,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -139,7 +139,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -147,7 +147,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -155,19 +155,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -175,7 +175,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -183,7 +183,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -191,151 +191,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -345,7 +345,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -353,7 +353,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -361,7 +361,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -369,7 +369,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -377,7 +377,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -385,7 +385,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -393,175 +393,175 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAliasMetadata` <a name="ResetAliasMetadata" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetAliasMetadata"></a>
+##### `ResetAliasMetadata` <a name="ResetAliasMetadata" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetAliasMetadata"></a>
 
 ```go
 func ResetAliasMetadata()
 ```
 
-##### `ResetAllowedRedirectUris` <a name="ResetAllowedRedirectUris" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetAllowedRedirectUris"></a>
+##### `ResetAllowedRedirectUris` <a name="ResetAllowedRedirectUris" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetAllowedRedirectUris"></a>
 
 ```go
 func ResetAllowedRedirectUris()
 ```
 
-##### `ResetBackend` <a name="ResetBackend" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBackend"></a>
+##### `ResetBackend` <a name="ResetBackend" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBackend"></a>
 
 ```go
 func ResetBackend()
 ```
 
-##### `ResetBoundAudiences` <a name="ResetBoundAudiences" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundAudiences"></a>
+##### `ResetBoundAudiences` <a name="ResetBoundAudiences" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundAudiences"></a>
 
 ```go
 func ResetBoundAudiences()
 ```
 
-##### `ResetBoundClaims` <a name="ResetBoundClaims" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundClaims"></a>
+##### `ResetBoundClaims` <a name="ResetBoundClaims" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundClaims"></a>
 
 ```go
 func ResetBoundClaims()
 ```
 
-##### `ResetBoundClaimsType` <a name="ResetBoundClaimsType" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundClaimsType"></a>
+##### `ResetBoundClaimsType` <a name="ResetBoundClaimsType" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundClaimsType"></a>
 
 ```go
 func ResetBoundClaimsType()
 ```
 
-##### `ResetBoundSubject` <a name="ResetBoundSubject" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundSubject"></a>
+##### `ResetBoundSubject` <a name="ResetBoundSubject" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetBoundSubject"></a>
 
 ```go
 func ResetBoundSubject()
 ```
 
-##### `ResetClaimMappings` <a name="ResetClaimMappings" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetClaimMappings"></a>
+##### `ResetClaimMappings` <a name="ResetClaimMappings" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetClaimMappings"></a>
 
 ```go
 func ResetClaimMappings()
 ```
 
-##### `ResetClockSkewLeeway` <a name="ResetClockSkewLeeway" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetClockSkewLeeway"></a>
+##### `ResetClockSkewLeeway` <a name="ResetClockSkewLeeway" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetClockSkewLeeway"></a>
 
 ```go
 func ResetClockSkewLeeway()
 ```
 
-##### `ResetDisableBoundClaimsParsing` <a name="ResetDisableBoundClaimsParsing" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetDisableBoundClaimsParsing"></a>
+##### `ResetDisableBoundClaimsParsing` <a name="ResetDisableBoundClaimsParsing" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetDisableBoundClaimsParsing"></a>
 
 ```go
 func ResetDisableBoundClaimsParsing()
 ```
 
-##### `ResetExpirationLeeway` <a name="ResetExpirationLeeway" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetExpirationLeeway"></a>
+##### `ResetExpirationLeeway` <a name="ResetExpirationLeeway" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetExpirationLeeway"></a>
 
 ```go
 func ResetExpirationLeeway()
 ```
 
-##### `ResetGroupsClaim` <a name="ResetGroupsClaim" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetGroupsClaim"></a>
+##### `ResetGroupsClaim` <a name="ResetGroupsClaim" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetGroupsClaim"></a>
 
 ```go
 func ResetGroupsClaim()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetMaxAge` <a name="ResetMaxAge" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetMaxAge"></a>
+##### `ResetMaxAge` <a name="ResetMaxAge" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetMaxAge"></a>
 
 ```go
 func ResetMaxAge()
 ```
 
-##### `ResetNamespace` <a name="ResetNamespace" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetNamespace"></a>
+##### `ResetNamespace` <a name="ResetNamespace" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetNamespace"></a>
 
 ```go
 func ResetNamespace()
 ```
 
-##### `ResetNotBeforeLeeway` <a name="ResetNotBeforeLeeway" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetNotBeforeLeeway"></a>
+##### `ResetNotBeforeLeeway` <a name="ResetNotBeforeLeeway" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetNotBeforeLeeway"></a>
 
 ```go
 func ResetNotBeforeLeeway()
 ```
 
-##### `ResetOidcScopes` <a name="ResetOidcScopes" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetOidcScopes"></a>
+##### `ResetOidcScopes` <a name="ResetOidcScopes" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetOidcScopes"></a>
 
 ```go
 func ResetOidcScopes()
 ```
 
-##### `ResetRoleType` <a name="ResetRoleType" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetRoleType"></a>
+##### `ResetRoleType` <a name="ResetRoleType" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetRoleType"></a>
 
 ```go
 func ResetRoleType()
 ```
 
-##### `ResetTokenBoundCidrs` <a name="ResetTokenBoundCidrs" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenBoundCidrs"></a>
+##### `ResetTokenBoundCidrs` <a name="ResetTokenBoundCidrs" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenBoundCidrs"></a>
 
 ```go
 func ResetTokenBoundCidrs()
 ```
 
-##### `ResetTokenExplicitMaxTtl` <a name="ResetTokenExplicitMaxTtl" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenExplicitMaxTtl"></a>
+##### `ResetTokenExplicitMaxTtl` <a name="ResetTokenExplicitMaxTtl" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenExplicitMaxTtl"></a>
 
 ```go
 func ResetTokenExplicitMaxTtl()
 ```
 
-##### `ResetTokenMaxTtl` <a name="ResetTokenMaxTtl" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenMaxTtl"></a>
+##### `ResetTokenMaxTtl` <a name="ResetTokenMaxTtl" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenMaxTtl"></a>
 
 ```go
 func ResetTokenMaxTtl()
 ```
 
-##### `ResetTokenNoDefaultPolicy` <a name="ResetTokenNoDefaultPolicy" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenNoDefaultPolicy"></a>
+##### `ResetTokenNoDefaultPolicy` <a name="ResetTokenNoDefaultPolicy" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenNoDefaultPolicy"></a>
 
 ```go
 func ResetTokenNoDefaultPolicy()
 ```
 
-##### `ResetTokenNumUses` <a name="ResetTokenNumUses" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenNumUses"></a>
+##### `ResetTokenNumUses` <a name="ResetTokenNumUses" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenNumUses"></a>
 
 ```go
 func ResetTokenNumUses()
 ```
 
-##### `ResetTokenPeriod` <a name="ResetTokenPeriod" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenPeriod"></a>
+##### `ResetTokenPeriod` <a name="ResetTokenPeriod" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenPeriod"></a>
 
 ```go
 func ResetTokenPeriod()
 ```
 
-##### `ResetTokenPolicies` <a name="ResetTokenPolicies" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenPolicies"></a>
+##### `ResetTokenPolicies` <a name="ResetTokenPolicies" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenPolicies"></a>
 
 ```go
 func ResetTokenPolicies()
 ```
 
-##### `ResetTokenTtl` <a name="ResetTokenTtl" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenTtl"></a>
+##### `ResetTokenTtl` <a name="ResetTokenTtl" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenTtl"></a>
 
 ```go
 func ResetTokenTtl()
 ```
 
-##### `ResetTokenType` <a name="ResetTokenType" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenType"></a>
+##### `ResetTokenType` <a name="ResetTokenType" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetTokenType"></a>
 
 ```go
 func ResetTokenType()
 ```
 
-##### `ResetUserClaimJsonPointer` <a name="ResetUserClaimJsonPointer" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetUserClaimJsonPointer"></a>
+##### `ResetUserClaimJsonPointer` <a name="ResetUserClaimJsonPointer" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetUserClaimJsonPointer"></a>
 
 ```go
 func ResetUserClaimJsonPointer()
 ```
 
-##### `ResetVerboseOidcLogging` <a name="ResetVerboseOidcLogging" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetVerboseOidcLogging"></a>
+##### `ResetVerboseOidcLogging` <a name="ResetVerboseOidcLogging" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.resetVerboseOidcLogging"></a>
 
 ```go
 func ResetVerboseOidcLogging()
@@ -571,17 +571,17 @@ func ResetVerboseOidcLogging()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a JwtAuthBackendRole resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a JwtAuthBackendRole resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jwtauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jwtauthbackendrole"
 
 jwtauthbackendrole.JwtAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -610,45 +610,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jwtauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jwtauthbackendrole"
 
 jwtauthbackendrole.JwtAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jwtauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jwtauthbackendrole"
 
 jwtauthbackendrole.JwtAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jwtauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jwtauthbackendrole"
 
 jwtauthbackendrole.JwtAuthBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a JwtAuthBackendRole resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a JwtAuthBackendRole resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -656,7 +656,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -664,19 +664,19 @@ The construct id used in the generated config for the JwtAuthBackendRole to impo
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing JwtAuthBackendRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the JwtAuthBackendRole to import is found.
 
@@ -686,86 +686,86 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.aliasMetadataInput">AliasMetadataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.allowedRedirectUrisInput">AllowedRedirectUrisInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.backendInput">BackendInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundAudiencesInput">BoundAudiencesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaimsInput">BoundClaimsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaimsTypeInput">BoundClaimsTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundSubjectInput">BoundSubjectInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.claimMappingsInput">ClaimMappingsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.clockSkewLeewayInput">ClockSkewLeewayInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.disableBoundClaimsParsingInput">DisableBoundClaimsParsingInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.expirationLeewayInput">ExpirationLeewayInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.groupsClaimInput">GroupsClaimInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.maxAgeInput">MaxAgeInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.notBeforeLeewayInput">NotBeforeLeewayInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.oidcScopesInput">OidcScopesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleNameInput">RoleNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleTypeInput">RoleTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenBoundCidrsInput">TokenBoundCidrsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenExplicitMaxTtlInput">TokenExplicitMaxTtlInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenMaxTtlInput">TokenMaxTtlInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNoDefaultPolicyInput">TokenNoDefaultPolicyInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNumUsesInput">TokenNumUsesInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPeriodInput">TokenPeriodInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPoliciesInput">TokenPoliciesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenTtlInput">TokenTtlInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenTypeInput">TokenTypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaimInput">UserClaimInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaimJsonPointerInput">UserClaimJsonPointerInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.verboseOidcLoggingInput">VerboseOidcLoggingInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.aliasMetadata">AliasMetadata</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.allowedRedirectUris">AllowedRedirectUris</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.backend">Backend</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundAudiences">BoundAudiences</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaims">BoundClaims</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaimsType">BoundClaimsType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundSubject">BoundSubject</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.claimMappings">ClaimMappings</a></code> | <code>*map[string]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.clockSkewLeeway">ClockSkewLeeway</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.disableBoundClaimsParsing">DisableBoundClaimsParsing</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.expirationLeeway">ExpirationLeeway</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.groupsClaim">GroupsClaim</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.maxAge">MaxAge</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.notBeforeLeeway">NotBeforeLeeway</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.oidcScopes">OidcScopes</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleName">RoleName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleType">RoleType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenBoundCidrs">TokenBoundCidrs</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenExplicitMaxTtl">TokenExplicitMaxTtl</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenMaxTtl">TokenMaxTtl</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNoDefaultPolicy">TokenNoDefaultPolicy</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNumUses">TokenNumUses</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPeriod">TokenPeriod</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPolicies">TokenPolicies</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenTtl">TokenTtl</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenType">TokenType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaim">UserClaim</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaimJsonPointer">UserClaimJsonPointer</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.verboseOidcLogging">VerboseOidcLogging</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.aliasMetadataInput">AliasMetadataInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.allowedRedirectUrisInput">AllowedRedirectUrisInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.backendInput">BackendInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundAudiencesInput">BoundAudiencesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaimsInput">BoundClaimsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaimsTypeInput">BoundClaimsTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundSubjectInput">BoundSubjectInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.claimMappingsInput">ClaimMappingsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.clockSkewLeewayInput">ClockSkewLeewayInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.disableBoundClaimsParsingInput">DisableBoundClaimsParsingInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.expirationLeewayInput">ExpirationLeewayInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.groupsClaimInput">GroupsClaimInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.maxAgeInput">MaxAgeInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.notBeforeLeewayInput">NotBeforeLeewayInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.oidcScopesInput">OidcScopesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleNameInput">RoleNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleTypeInput">RoleTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenBoundCidrsInput">TokenBoundCidrsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenExplicitMaxTtlInput">TokenExplicitMaxTtlInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenMaxTtlInput">TokenMaxTtlInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNoDefaultPolicyInput">TokenNoDefaultPolicyInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNumUsesInput">TokenNumUsesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPeriodInput">TokenPeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPoliciesInput">TokenPoliciesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenTtlInput">TokenTtlInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenTypeInput">TokenTypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaimInput">UserClaimInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaimJsonPointerInput">UserClaimJsonPointerInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.verboseOidcLoggingInput">VerboseOidcLoggingInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.aliasMetadata">AliasMetadata</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.allowedRedirectUris">AllowedRedirectUris</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.backend">Backend</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundAudiences">BoundAudiences</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaims">BoundClaims</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaimsType">BoundClaimsType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundSubject">BoundSubject</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.claimMappings">ClaimMappings</a></code> | <code>*map[string]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.clockSkewLeeway">ClockSkewLeeway</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.disableBoundClaimsParsing">DisableBoundClaimsParsing</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.expirationLeeway">ExpirationLeeway</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.groupsClaim">GroupsClaim</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.maxAge">MaxAge</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.notBeforeLeeway">NotBeforeLeeway</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.oidcScopes">OidcScopes</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleName">RoleName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleType">RoleType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenBoundCidrs">TokenBoundCidrs</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenExplicitMaxTtl">TokenExplicitMaxTtl</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenMaxTtl">TokenMaxTtl</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNoDefaultPolicy">TokenNoDefaultPolicy</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNumUses">TokenNumUses</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPeriod">TokenPeriod</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPolicies">TokenPolicies</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenTtl">TokenTtl</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenType">TokenType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaim">UserClaim</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaimJsonPointer">UserClaimJsonPointer</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.verboseOidcLogging">VerboseOidcLogging</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.node"></a>
 
 ```go
 func Node() Node
@@ -777,17 +777,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -797,7 +797,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -807,7 +807,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -817,7 +817,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -827,17 +827,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -847,7 +847,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -857,7 +857,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -867,37 +867,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -907,7 +907,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `AliasMetadataInput`<sup>Optional</sup> <a name="AliasMetadataInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.aliasMetadataInput"></a>
+##### `AliasMetadataInput`<sup>Optional</sup> <a name="AliasMetadataInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.aliasMetadataInput"></a>
 
 ```go
 func AliasMetadataInput() *map[string]*string
@@ -917,7 +917,7 @@ func AliasMetadataInput() *map[string]*string
 
 ---
 
-##### `AllowedRedirectUrisInput`<sup>Optional</sup> <a name="AllowedRedirectUrisInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.allowedRedirectUrisInput"></a>
+##### `AllowedRedirectUrisInput`<sup>Optional</sup> <a name="AllowedRedirectUrisInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.allowedRedirectUrisInput"></a>
 
 ```go
 func AllowedRedirectUrisInput() *[]*string
@@ -927,7 +927,7 @@ func AllowedRedirectUrisInput() *[]*string
 
 ---
 
-##### `BackendInput`<sup>Optional</sup> <a name="BackendInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.backendInput"></a>
+##### `BackendInput`<sup>Optional</sup> <a name="BackendInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.backendInput"></a>
 
 ```go
 func BackendInput() *string
@@ -937,7 +937,7 @@ func BackendInput() *string
 
 ---
 
-##### `BoundAudiencesInput`<sup>Optional</sup> <a name="BoundAudiencesInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundAudiencesInput"></a>
+##### `BoundAudiencesInput`<sup>Optional</sup> <a name="BoundAudiencesInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundAudiencesInput"></a>
 
 ```go
 func BoundAudiencesInput() *[]*string
@@ -947,7 +947,7 @@ func BoundAudiencesInput() *[]*string
 
 ---
 
-##### `BoundClaimsInput`<sup>Optional</sup> <a name="BoundClaimsInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaimsInput"></a>
+##### `BoundClaimsInput`<sup>Optional</sup> <a name="BoundClaimsInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaimsInput"></a>
 
 ```go
 func BoundClaimsInput() *map[string]*string
@@ -957,7 +957,7 @@ func BoundClaimsInput() *map[string]*string
 
 ---
 
-##### `BoundClaimsTypeInput`<sup>Optional</sup> <a name="BoundClaimsTypeInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaimsTypeInput"></a>
+##### `BoundClaimsTypeInput`<sup>Optional</sup> <a name="BoundClaimsTypeInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaimsTypeInput"></a>
 
 ```go
 func BoundClaimsTypeInput() *string
@@ -967,7 +967,7 @@ func BoundClaimsTypeInput() *string
 
 ---
 
-##### `BoundSubjectInput`<sup>Optional</sup> <a name="BoundSubjectInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundSubjectInput"></a>
+##### `BoundSubjectInput`<sup>Optional</sup> <a name="BoundSubjectInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundSubjectInput"></a>
 
 ```go
 func BoundSubjectInput() *string
@@ -977,7 +977,7 @@ func BoundSubjectInput() *string
 
 ---
 
-##### `ClaimMappingsInput`<sup>Optional</sup> <a name="ClaimMappingsInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.claimMappingsInput"></a>
+##### `ClaimMappingsInput`<sup>Optional</sup> <a name="ClaimMappingsInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.claimMappingsInput"></a>
 
 ```go
 func ClaimMappingsInput() *map[string]*string
@@ -987,7 +987,7 @@ func ClaimMappingsInput() *map[string]*string
 
 ---
 
-##### `ClockSkewLeewayInput`<sup>Optional</sup> <a name="ClockSkewLeewayInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.clockSkewLeewayInput"></a>
+##### `ClockSkewLeewayInput`<sup>Optional</sup> <a name="ClockSkewLeewayInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.clockSkewLeewayInput"></a>
 
 ```go
 func ClockSkewLeewayInput() *f64
@@ -997,7 +997,7 @@ func ClockSkewLeewayInput() *f64
 
 ---
 
-##### `DisableBoundClaimsParsingInput`<sup>Optional</sup> <a name="DisableBoundClaimsParsingInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.disableBoundClaimsParsingInput"></a>
+##### `DisableBoundClaimsParsingInput`<sup>Optional</sup> <a name="DisableBoundClaimsParsingInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.disableBoundClaimsParsingInput"></a>
 
 ```go
 func DisableBoundClaimsParsingInput() interface{}
@@ -1007,7 +1007,7 @@ func DisableBoundClaimsParsingInput() interface{}
 
 ---
 
-##### `ExpirationLeewayInput`<sup>Optional</sup> <a name="ExpirationLeewayInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.expirationLeewayInput"></a>
+##### `ExpirationLeewayInput`<sup>Optional</sup> <a name="ExpirationLeewayInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.expirationLeewayInput"></a>
 
 ```go
 func ExpirationLeewayInput() *f64
@@ -1017,7 +1017,7 @@ func ExpirationLeewayInput() *f64
 
 ---
 
-##### `GroupsClaimInput`<sup>Optional</sup> <a name="GroupsClaimInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.groupsClaimInput"></a>
+##### `GroupsClaimInput`<sup>Optional</sup> <a name="GroupsClaimInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.groupsClaimInput"></a>
 
 ```go
 func GroupsClaimInput() *string
@@ -1027,7 +1027,7 @@ func GroupsClaimInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -1037,7 +1037,7 @@ func IdInput() *string
 
 ---
 
-##### `MaxAgeInput`<sup>Optional</sup> <a name="MaxAgeInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.maxAgeInput"></a>
+##### `MaxAgeInput`<sup>Optional</sup> <a name="MaxAgeInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.maxAgeInput"></a>
 
 ```go
 func MaxAgeInput() *f64
@@ -1047,7 +1047,7 @@ func MaxAgeInput() *f64
 
 ---
 
-##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.namespaceInput"></a>
+##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.namespaceInput"></a>
 
 ```go
 func NamespaceInput() *string
@@ -1057,7 +1057,7 @@ func NamespaceInput() *string
 
 ---
 
-##### `NotBeforeLeewayInput`<sup>Optional</sup> <a name="NotBeforeLeewayInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.notBeforeLeewayInput"></a>
+##### `NotBeforeLeewayInput`<sup>Optional</sup> <a name="NotBeforeLeewayInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.notBeforeLeewayInput"></a>
 
 ```go
 func NotBeforeLeewayInput() *f64
@@ -1067,7 +1067,7 @@ func NotBeforeLeewayInput() *f64
 
 ---
 
-##### `OidcScopesInput`<sup>Optional</sup> <a name="OidcScopesInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.oidcScopesInput"></a>
+##### `OidcScopesInput`<sup>Optional</sup> <a name="OidcScopesInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.oidcScopesInput"></a>
 
 ```go
 func OidcScopesInput() *[]*string
@@ -1077,7 +1077,7 @@ func OidcScopesInput() *[]*string
 
 ---
 
-##### `RoleNameInput`<sup>Optional</sup> <a name="RoleNameInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleNameInput"></a>
+##### `RoleNameInput`<sup>Optional</sup> <a name="RoleNameInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleNameInput"></a>
 
 ```go
 func RoleNameInput() *string
@@ -1087,7 +1087,7 @@ func RoleNameInput() *string
 
 ---
 
-##### `RoleTypeInput`<sup>Optional</sup> <a name="RoleTypeInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleTypeInput"></a>
+##### `RoleTypeInput`<sup>Optional</sup> <a name="RoleTypeInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleTypeInput"></a>
 
 ```go
 func RoleTypeInput() *string
@@ -1097,7 +1097,7 @@ func RoleTypeInput() *string
 
 ---
 
-##### `TokenBoundCidrsInput`<sup>Optional</sup> <a name="TokenBoundCidrsInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenBoundCidrsInput"></a>
+##### `TokenBoundCidrsInput`<sup>Optional</sup> <a name="TokenBoundCidrsInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenBoundCidrsInput"></a>
 
 ```go
 func TokenBoundCidrsInput() *[]*string
@@ -1107,7 +1107,7 @@ func TokenBoundCidrsInput() *[]*string
 
 ---
 
-##### `TokenExplicitMaxTtlInput`<sup>Optional</sup> <a name="TokenExplicitMaxTtlInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenExplicitMaxTtlInput"></a>
+##### `TokenExplicitMaxTtlInput`<sup>Optional</sup> <a name="TokenExplicitMaxTtlInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenExplicitMaxTtlInput"></a>
 
 ```go
 func TokenExplicitMaxTtlInput() *f64
@@ -1117,7 +1117,7 @@ func TokenExplicitMaxTtlInput() *f64
 
 ---
 
-##### `TokenMaxTtlInput`<sup>Optional</sup> <a name="TokenMaxTtlInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenMaxTtlInput"></a>
+##### `TokenMaxTtlInput`<sup>Optional</sup> <a name="TokenMaxTtlInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenMaxTtlInput"></a>
 
 ```go
 func TokenMaxTtlInput() *f64
@@ -1127,7 +1127,7 @@ func TokenMaxTtlInput() *f64
 
 ---
 
-##### `TokenNoDefaultPolicyInput`<sup>Optional</sup> <a name="TokenNoDefaultPolicyInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNoDefaultPolicyInput"></a>
+##### `TokenNoDefaultPolicyInput`<sup>Optional</sup> <a name="TokenNoDefaultPolicyInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNoDefaultPolicyInput"></a>
 
 ```go
 func TokenNoDefaultPolicyInput() interface{}
@@ -1137,7 +1137,7 @@ func TokenNoDefaultPolicyInput() interface{}
 
 ---
 
-##### `TokenNumUsesInput`<sup>Optional</sup> <a name="TokenNumUsesInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNumUsesInput"></a>
+##### `TokenNumUsesInput`<sup>Optional</sup> <a name="TokenNumUsesInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNumUsesInput"></a>
 
 ```go
 func TokenNumUsesInput() *f64
@@ -1147,7 +1147,7 @@ func TokenNumUsesInput() *f64
 
 ---
 
-##### `TokenPeriodInput`<sup>Optional</sup> <a name="TokenPeriodInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPeriodInput"></a>
+##### `TokenPeriodInput`<sup>Optional</sup> <a name="TokenPeriodInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPeriodInput"></a>
 
 ```go
 func TokenPeriodInput() *f64
@@ -1157,7 +1157,7 @@ func TokenPeriodInput() *f64
 
 ---
 
-##### `TokenPoliciesInput`<sup>Optional</sup> <a name="TokenPoliciesInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPoliciesInput"></a>
+##### `TokenPoliciesInput`<sup>Optional</sup> <a name="TokenPoliciesInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPoliciesInput"></a>
 
 ```go
 func TokenPoliciesInput() *[]*string
@@ -1167,7 +1167,7 @@ func TokenPoliciesInput() *[]*string
 
 ---
 
-##### `TokenTtlInput`<sup>Optional</sup> <a name="TokenTtlInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenTtlInput"></a>
+##### `TokenTtlInput`<sup>Optional</sup> <a name="TokenTtlInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenTtlInput"></a>
 
 ```go
 func TokenTtlInput() *f64
@@ -1177,7 +1177,7 @@ func TokenTtlInput() *f64
 
 ---
 
-##### `TokenTypeInput`<sup>Optional</sup> <a name="TokenTypeInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenTypeInput"></a>
+##### `TokenTypeInput`<sup>Optional</sup> <a name="TokenTypeInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenTypeInput"></a>
 
 ```go
 func TokenTypeInput() *string
@@ -1187,7 +1187,7 @@ func TokenTypeInput() *string
 
 ---
 
-##### `UserClaimInput`<sup>Optional</sup> <a name="UserClaimInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaimInput"></a>
+##### `UserClaimInput`<sup>Optional</sup> <a name="UserClaimInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaimInput"></a>
 
 ```go
 func UserClaimInput() *string
@@ -1197,7 +1197,7 @@ func UserClaimInput() *string
 
 ---
 
-##### `UserClaimJsonPointerInput`<sup>Optional</sup> <a name="UserClaimJsonPointerInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaimJsonPointerInput"></a>
+##### `UserClaimJsonPointerInput`<sup>Optional</sup> <a name="UserClaimJsonPointerInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaimJsonPointerInput"></a>
 
 ```go
 func UserClaimJsonPointerInput() interface{}
@@ -1207,7 +1207,7 @@ func UserClaimJsonPointerInput() interface{}
 
 ---
 
-##### `VerboseOidcLoggingInput`<sup>Optional</sup> <a name="VerboseOidcLoggingInput" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.verboseOidcLoggingInput"></a>
+##### `VerboseOidcLoggingInput`<sup>Optional</sup> <a name="VerboseOidcLoggingInput" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.verboseOidcLoggingInput"></a>
 
 ```go
 func VerboseOidcLoggingInput() interface{}
@@ -1217,7 +1217,7 @@ func VerboseOidcLoggingInput() interface{}
 
 ---
 
-##### `AliasMetadata`<sup>Required</sup> <a name="AliasMetadata" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.aliasMetadata"></a>
+##### `AliasMetadata`<sup>Required</sup> <a name="AliasMetadata" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.aliasMetadata"></a>
 
 ```go
 func AliasMetadata() *map[string]*string
@@ -1227,7 +1227,7 @@ func AliasMetadata() *map[string]*string
 
 ---
 
-##### `AllowedRedirectUris`<sup>Required</sup> <a name="AllowedRedirectUris" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.allowedRedirectUris"></a>
+##### `AllowedRedirectUris`<sup>Required</sup> <a name="AllowedRedirectUris" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.allowedRedirectUris"></a>
 
 ```go
 func AllowedRedirectUris() *[]*string
@@ -1237,7 +1237,7 @@ func AllowedRedirectUris() *[]*string
 
 ---
 
-##### `Backend`<sup>Required</sup> <a name="Backend" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.backend"></a>
+##### `Backend`<sup>Required</sup> <a name="Backend" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.backend"></a>
 
 ```go
 func Backend() *string
@@ -1247,7 +1247,7 @@ func Backend() *string
 
 ---
 
-##### `BoundAudiences`<sup>Required</sup> <a name="BoundAudiences" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundAudiences"></a>
+##### `BoundAudiences`<sup>Required</sup> <a name="BoundAudiences" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundAudiences"></a>
 
 ```go
 func BoundAudiences() *[]*string
@@ -1257,7 +1257,7 @@ func BoundAudiences() *[]*string
 
 ---
 
-##### `BoundClaims`<sup>Required</sup> <a name="BoundClaims" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaims"></a>
+##### `BoundClaims`<sup>Required</sup> <a name="BoundClaims" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaims"></a>
 
 ```go
 func BoundClaims() *map[string]*string
@@ -1267,7 +1267,7 @@ func BoundClaims() *map[string]*string
 
 ---
 
-##### `BoundClaimsType`<sup>Required</sup> <a name="BoundClaimsType" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaimsType"></a>
+##### `BoundClaimsType`<sup>Required</sup> <a name="BoundClaimsType" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundClaimsType"></a>
 
 ```go
 func BoundClaimsType() *string
@@ -1277,7 +1277,7 @@ func BoundClaimsType() *string
 
 ---
 
-##### `BoundSubject`<sup>Required</sup> <a name="BoundSubject" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundSubject"></a>
+##### `BoundSubject`<sup>Required</sup> <a name="BoundSubject" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.boundSubject"></a>
 
 ```go
 func BoundSubject() *string
@@ -1287,7 +1287,7 @@ func BoundSubject() *string
 
 ---
 
-##### `ClaimMappings`<sup>Required</sup> <a name="ClaimMappings" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.claimMappings"></a>
+##### `ClaimMappings`<sup>Required</sup> <a name="ClaimMappings" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.claimMappings"></a>
 
 ```go
 func ClaimMappings() *map[string]*string
@@ -1297,7 +1297,7 @@ func ClaimMappings() *map[string]*string
 
 ---
 
-##### `ClockSkewLeeway`<sup>Required</sup> <a name="ClockSkewLeeway" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.clockSkewLeeway"></a>
+##### `ClockSkewLeeway`<sup>Required</sup> <a name="ClockSkewLeeway" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.clockSkewLeeway"></a>
 
 ```go
 func ClockSkewLeeway() *f64
@@ -1307,7 +1307,7 @@ func ClockSkewLeeway() *f64
 
 ---
 
-##### `DisableBoundClaimsParsing`<sup>Required</sup> <a name="DisableBoundClaimsParsing" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.disableBoundClaimsParsing"></a>
+##### `DisableBoundClaimsParsing`<sup>Required</sup> <a name="DisableBoundClaimsParsing" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.disableBoundClaimsParsing"></a>
 
 ```go
 func DisableBoundClaimsParsing() interface{}
@@ -1317,7 +1317,7 @@ func DisableBoundClaimsParsing() interface{}
 
 ---
 
-##### `ExpirationLeeway`<sup>Required</sup> <a name="ExpirationLeeway" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.expirationLeeway"></a>
+##### `ExpirationLeeway`<sup>Required</sup> <a name="ExpirationLeeway" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.expirationLeeway"></a>
 
 ```go
 func ExpirationLeeway() *f64
@@ -1327,7 +1327,7 @@ func ExpirationLeeway() *f64
 
 ---
 
-##### `GroupsClaim`<sup>Required</sup> <a name="GroupsClaim" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.groupsClaim"></a>
+##### `GroupsClaim`<sup>Required</sup> <a name="GroupsClaim" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.groupsClaim"></a>
 
 ```go
 func GroupsClaim() *string
@@ -1337,7 +1337,7 @@ func GroupsClaim() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.id"></a>
 
 ```go
 func Id() *string
@@ -1347,7 +1347,7 @@ func Id() *string
 
 ---
 
-##### `MaxAge`<sup>Required</sup> <a name="MaxAge" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.maxAge"></a>
+##### `MaxAge`<sup>Required</sup> <a name="MaxAge" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.maxAge"></a>
 
 ```go
 func MaxAge() *f64
@@ -1357,7 +1357,7 @@ func MaxAge() *f64
 
 ---
 
-##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.namespace"></a>
+##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.namespace"></a>
 
 ```go
 func Namespace() *string
@@ -1367,7 +1367,7 @@ func Namespace() *string
 
 ---
 
-##### `NotBeforeLeeway`<sup>Required</sup> <a name="NotBeforeLeeway" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.notBeforeLeeway"></a>
+##### `NotBeforeLeeway`<sup>Required</sup> <a name="NotBeforeLeeway" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.notBeforeLeeway"></a>
 
 ```go
 func NotBeforeLeeway() *f64
@@ -1377,7 +1377,7 @@ func NotBeforeLeeway() *f64
 
 ---
 
-##### `OidcScopes`<sup>Required</sup> <a name="OidcScopes" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.oidcScopes"></a>
+##### `OidcScopes`<sup>Required</sup> <a name="OidcScopes" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.oidcScopes"></a>
 
 ```go
 func OidcScopes() *[]*string
@@ -1387,7 +1387,7 @@ func OidcScopes() *[]*string
 
 ---
 
-##### `RoleName`<sup>Required</sup> <a name="RoleName" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleName"></a>
+##### `RoleName`<sup>Required</sup> <a name="RoleName" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleName"></a>
 
 ```go
 func RoleName() *string
@@ -1397,7 +1397,7 @@ func RoleName() *string
 
 ---
 
-##### `RoleType`<sup>Required</sup> <a name="RoleType" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleType"></a>
+##### `RoleType`<sup>Required</sup> <a name="RoleType" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.roleType"></a>
 
 ```go
 func RoleType() *string
@@ -1407,7 +1407,7 @@ func RoleType() *string
 
 ---
 
-##### `TokenBoundCidrs`<sup>Required</sup> <a name="TokenBoundCidrs" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenBoundCidrs"></a>
+##### `TokenBoundCidrs`<sup>Required</sup> <a name="TokenBoundCidrs" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenBoundCidrs"></a>
 
 ```go
 func TokenBoundCidrs() *[]*string
@@ -1417,7 +1417,7 @@ func TokenBoundCidrs() *[]*string
 
 ---
 
-##### `TokenExplicitMaxTtl`<sup>Required</sup> <a name="TokenExplicitMaxTtl" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenExplicitMaxTtl"></a>
+##### `TokenExplicitMaxTtl`<sup>Required</sup> <a name="TokenExplicitMaxTtl" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenExplicitMaxTtl"></a>
 
 ```go
 func TokenExplicitMaxTtl() *f64
@@ -1427,7 +1427,7 @@ func TokenExplicitMaxTtl() *f64
 
 ---
 
-##### `TokenMaxTtl`<sup>Required</sup> <a name="TokenMaxTtl" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenMaxTtl"></a>
+##### `TokenMaxTtl`<sup>Required</sup> <a name="TokenMaxTtl" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenMaxTtl"></a>
 
 ```go
 func TokenMaxTtl() *f64
@@ -1437,7 +1437,7 @@ func TokenMaxTtl() *f64
 
 ---
 
-##### `TokenNoDefaultPolicy`<sup>Required</sup> <a name="TokenNoDefaultPolicy" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNoDefaultPolicy"></a>
+##### `TokenNoDefaultPolicy`<sup>Required</sup> <a name="TokenNoDefaultPolicy" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNoDefaultPolicy"></a>
 
 ```go
 func TokenNoDefaultPolicy() interface{}
@@ -1447,7 +1447,7 @@ func TokenNoDefaultPolicy() interface{}
 
 ---
 
-##### `TokenNumUses`<sup>Required</sup> <a name="TokenNumUses" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNumUses"></a>
+##### `TokenNumUses`<sup>Required</sup> <a name="TokenNumUses" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenNumUses"></a>
 
 ```go
 func TokenNumUses() *f64
@@ -1457,7 +1457,7 @@ func TokenNumUses() *f64
 
 ---
 
-##### `TokenPeriod`<sup>Required</sup> <a name="TokenPeriod" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPeriod"></a>
+##### `TokenPeriod`<sup>Required</sup> <a name="TokenPeriod" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPeriod"></a>
 
 ```go
 func TokenPeriod() *f64
@@ -1467,7 +1467,7 @@ func TokenPeriod() *f64
 
 ---
 
-##### `TokenPolicies`<sup>Required</sup> <a name="TokenPolicies" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPolicies"></a>
+##### `TokenPolicies`<sup>Required</sup> <a name="TokenPolicies" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenPolicies"></a>
 
 ```go
 func TokenPolicies() *[]*string
@@ -1477,7 +1477,7 @@ func TokenPolicies() *[]*string
 
 ---
 
-##### `TokenTtl`<sup>Required</sup> <a name="TokenTtl" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenTtl"></a>
+##### `TokenTtl`<sup>Required</sup> <a name="TokenTtl" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenTtl"></a>
 
 ```go
 func TokenTtl() *f64
@@ -1487,7 +1487,7 @@ func TokenTtl() *f64
 
 ---
 
-##### `TokenType`<sup>Required</sup> <a name="TokenType" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenType"></a>
+##### `TokenType`<sup>Required</sup> <a name="TokenType" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tokenType"></a>
 
 ```go
 func TokenType() *string
@@ -1497,7 +1497,7 @@ func TokenType() *string
 
 ---
 
-##### `UserClaim`<sup>Required</sup> <a name="UserClaim" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaim"></a>
+##### `UserClaim`<sup>Required</sup> <a name="UserClaim" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaim"></a>
 
 ```go
 func UserClaim() *string
@@ -1507,7 +1507,7 @@ func UserClaim() *string
 
 ---
 
-##### `UserClaimJsonPointer`<sup>Required</sup> <a name="UserClaimJsonPointer" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaimJsonPointer"></a>
+##### `UserClaimJsonPointer`<sup>Required</sup> <a name="UserClaimJsonPointer" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.userClaimJsonPointer"></a>
 
 ```go
 func UserClaimJsonPointer() interface{}
@@ -1517,7 +1517,7 @@ func UserClaimJsonPointer() interface{}
 
 ---
 
-##### `VerboseOidcLogging`<sup>Required</sup> <a name="VerboseOidcLogging" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.verboseOidcLogging"></a>
+##### `VerboseOidcLogging`<sup>Required</sup> <a name="VerboseOidcLogging" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.verboseOidcLogging"></a>
 
 ```go
 func VerboseOidcLogging() interface{}
@@ -1531,11 +1531,11 @@ func VerboseOidcLogging() interface{}
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1547,20 +1547,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### JwtAuthBackendRoleConfig <a name="JwtAuthBackendRoleConfig" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig"></a>
+### JwtAuthBackendRoleConfig <a name="JwtAuthBackendRoleConfig" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jwtauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jwtauthbackendrole"
 
 &jwtauthbackendrole.JwtAuthBackendRoleConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	RoleName: *string,
 	UserClaim: *string,
@@ -1600,48 +1600,48 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/jwtauthbackendrole"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.roleName">RoleName</a></code> | <code>*string</code> | Name of the role. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.userClaim">UserClaim</a></code> | <code>*string</code> | The claim to use to uniquely identify the user; |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.aliasMetadata">AliasMetadata</a></code> | <code>*map[string]*string</code> | The metadata to be tied to generated entity alias. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.allowedRedirectUris">AllowedRedirectUris</a></code> | <code>*[]*string</code> | The list of allowed values for redirect_uri during OIDC logins. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.backend">Backend</a></code> | <code>*string</code> | Unique name of the auth backend to configure. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundAudiences">BoundAudiences</a></code> | <code>*[]*string</code> | List of aud claims to match against. Any match is sufficient. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundClaims">BoundClaims</a></code> | <code>*map[string]*string</code> | Map of claims/values to match against. The expected value may be a single string or a comma-separated string list. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundClaimsType">BoundClaimsType</a></code> | <code>*string</code> | How to interpret values in the claims/values map: can be either "string" (exact match) or "glob" (wildcard match). |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundSubject">BoundSubject</a></code> | <code>*string</code> | If set, requires that the sub claim matches this value. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.claimMappings">ClaimMappings</a></code> | <code>*map[string]*string</code> | Map of claims (keys) to be copied to specified metadata fields (values). |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.clockSkewLeeway">ClockSkewLeeway</a></code> | <code>*f64</code> | The amount of leeway to add to all claims to account for clock skew, in seconds. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.disableBoundClaimsParsing">DisableBoundClaimsParsing</a></code> | <code>interface{}</code> | Disable bound claim value parsing. Useful when values contain commas. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.expirationLeeway">ExpirationLeeway</a></code> | <code>*f64</code> | The amount of leeway to add to expiration (exp) claims to account for clock skew, in seconds. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.groupsClaim">GroupsClaim</a></code> | <code>*string</code> | The claim to use to uniquely identify the set of groups to which the user belongs; |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#id JwtAuthBackendRole#id}. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.maxAge">MaxAge</a></code> | <code>*f64</code> | Specifies the allowable elapsed time in seconds since the last time the user was actively authenticated. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.notBeforeLeeway">NotBeforeLeeway</a></code> | <code>*f64</code> | The amount of leeway to add to not before (nbf) claims to account for clock skew, in seconds. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.oidcScopes">OidcScopes</a></code> | <code>*[]*string</code> | List of OIDC scopes to be used with an OIDC role. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.roleType">RoleType</a></code> | <code>*string</code> | Type of role, either "oidc" (default) or "jwt". |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenBoundCidrs">TokenBoundCidrs</a></code> | <code>*[]*string</code> | Specifies the blocks of IP addresses which are allowed to use the generated token. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenExplicitMaxTtl">TokenExplicitMaxTtl</a></code> | <code>*f64</code> | Generated Token's Explicit Maximum TTL in seconds. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenMaxTtl">TokenMaxTtl</a></code> | <code>*f64</code> | The maximum lifetime of the generated token. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenNoDefaultPolicy">TokenNoDefaultPolicy</a></code> | <code>interface{}</code> | If true, the 'default' policy will not automatically be added to generated tokens. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenNumUses">TokenNumUses</a></code> | <code>*f64</code> | The maximum number of times a token may be used, a value of zero means unlimited. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenPeriod">TokenPeriod</a></code> | <code>*f64</code> | Generated Token's Period. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenPolicies">TokenPolicies</a></code> | <code>*[]*string</code> | Generated Token's Policies. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenTtl">TokenTtl</a></code> | <code>*f64</code> | The initial ttl of the token to generate in seconds. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenType">TokenType</a></code> | <code>*string</code> | The type of token to generate, service or batch. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.userClaimJsonPointer">UserClaimJsonPointer</a></code> | <code>interface{}</code> | Specifies if the user_claim value uses JSON pointer syntax for referencing claims. |
-| <code><a href="#@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.verboseOidcLogging">VerboseOidcLogging</a></code> | <code>interface{}</code> | Log received OIDC tokens and claims when debug-level logging is active. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.roleName">RoleName</a></code> | <code>*string</code> | Name of the role. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.userClaim">UserClaim</a></code> | <code>*string</code> | The claim to use to uniquely identify the user; |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.aliasMetadata">AliasMetadata</a></code> | <code>*map[string]*string</code> | The metadata to be tied to generated entity alias. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.allowedRedirectUris">AllowedRedirectUris</a></code> | <code>*[]*string</code> | The list of allowed values for redirect_uri during OIDC logins. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.backend">Backend</a></code> | <code>*string</code> | Unique name of the auth backend to configure. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundAudiences">BoundAudiences</a></code> | <code>*[]*string</code> | List of aud claims to match against. Any match is sufficient. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundClaims">BoundClaims</a></code> | <code>*map[string]*string</code> | Map of claims/values to match against. The expected value may be a single string or a comma-separated string list. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundClaimsType">BoundClaimsType</a></code> | <code>*string</code> | How to interpret values in the claims/values map: can be either "string" (exact match) or "glob" (wildcard match). |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundSubject">BoundSubject</a></code> | <code>*string</code> | If set, requires that the sub claim matches this value. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.claimMappings">ClaimMappings</a></code> | <code>*map[string]*string</code> | Map of claims (keys) to be copied to specified metadata fields (values). |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.clockSkewLeeway">ClockSkewLeeway</a></code> | <code>*f64</code> | The amount of leeway to add to all claims to account for clock skew, in seconds. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.disableBoundClaimsParsing">DisableBoundClaimsParsing</a></code> | <code>interface{}</code> | Disable bound claim value parsing. Useful when values contain commas. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.expirationLeeway">ExpirationLeeway</a></code> | <code>*f64</code> | The amount of leeway to add to expiration (exp) claims to account for clock skew, in seconds. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.groupsClaim">GroupsClaim</a></code> | <code>*string</code> | The claim to use to uniquely identify the set of groups to which the user belongs; |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#id JwtAuthBackendRole#id}. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.maxAge">MaxAge</a></code> | <code>*f64</code> | Specifies the allowable elapsed time in seconds since the last time the user was actively authenticated. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.notBeforeLeeway">NotBeforeLeeway</a></code> | <code>*f64</code> | The amount of leeway to add to not before (nbf) claims to account for clock skew, in seconds. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.oidcScopes">OidcScopes</a></code> | <code>*[]*string</code> | List of OIDC scopes to be used with an OIDC role. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.roleType">RoleType</a></code> | <code>*string</code> | Type of role, either "oidc" (default) or "jwt". |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenBoundCidrs">TokenBoundCidrs</a></code> | <code>*[]*string</code> | Specifies the blocks of IP addresses which are allowed to use the generated token. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenExplicitMaxTtl">TokenExplicitMaxTtl</a></code> | <code>*f64</code> | Generated Token's Explicit Maximum TTL in seconds. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenMaxTtl">TokenMaxTtl</a></code> | <code>*f64</code> | The maximum lifetime of the generated token. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenNoDefaultPolicy">TokenNoDefaultPolicy</a></code> | <code>interface{}</code> | If true, the 'default' policy will not automatically be added to generated tokens. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenNumUses">TokenNumUses</a></code> | <code>*f64</code> | The maximum number of times a token may be used, a value of zero means unlimited. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenPeriod">TokenPeriod</a></code> | <code>*f64</code> | Generated Token's Period. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenPolicies">TokenPolicies</a></code> | <code>*[]*string</code> | Generated Token's Policies. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenTtl">TokenTtl</a></code> | <code>*f64</code> | The initial ttl of the token to generate in seconds. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenType">TokenType</a></code> | <code>*string</code> | The type of token to generate, service or batch. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.userClaimJsonPointer">UserClaimJsonPointer</a></code> | <code>interface{}</code> | Specifies if the user_claim value uses JSON pointer syntax for referencing claims. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.verboseOidcLogging">VerboseOidcLogging</a></code> | <code>interface{}</code> | Log received OIDC tokens and claims when debug-level logging is active. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1651,7 +1651,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1661,47 +1661,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1711,7 +1711,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `RoleName`<sup>Required</sup> <a name="RoleName" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.roleName"></a>
+##### `RoleName`<sup>Required</sup> <a name="RoleName" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.roleName"></a>
 
 ```go
 RoleName *string
@@ -1721,11 +1721,11 @@ RoleName *string
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#role_name JwtAuthBackendRole#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#role_name JwtAuthBackendRole#role_name}
 
 ---
 
-##### `UserClaim`<sup>Required</sup> <a name="UserClaim" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.userClaim"></a>
+##### `UserClaim`<sup>Required</sup> <a name="UserClaim" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.userClaim"></a>
 
 ```go
 UserClaim *string
@@ -1737,11 +1737,11 @@ The claim to use to uniquely identify the user;
 
 this will be used as the name for the Identity entity alias created due to a successful login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#user_claim JwtAuthBackendRole#user_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#user_claim JwtAuthBackendRole#user_claim}
 
 ---
 
-##### `AliasMetadata`<sup>Optional</sup> <a name="AliasMetadata" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.aliasMetadata"></a>
+##### `AliasMetadata`<sup>Optional</sup> <a name="AliasMetadata" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.aliasMetadata"></a>
 
 ```go
 AliasMetadata *map[string]*string
@@ -1753,11 +1753,11 @@ The metadata to be tied to generated entity alias.
 
 This should be a list or map containing the metadata in key value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#alias_metadata JwtAuthBackendRole#alias_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#alias_metadata JwtAuthBackendRole#alias_metadata}
 
 ---
 
-##### `AllowedRedirectUris`<sup>Optional</sup> <a name="AllowedRedirectUris" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.allowedRedirectUris"></a>
+##### `AllowedRedirectUris`<sup>Optional</sup> <a name="AllowedRedirectUris" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.allowedRedirectUris"></a>
 
 ```go
 AllowedRedirectUris *[]*string
@@ -1767,11 +1767,11 @@ AllowedRedirectUris *[]*string
 
 The list of allowed values for redirect_uri during OIDC logins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#allowed_redirect_uris JwtAuthBackendRole#allowed_redirect_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#allowed_redirect_uris JwtAuthBackendRole#allowed_redirect_uris}
 
 ---
 
-##### `Backend`<sup>Optional</sup> <a name="Backend" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.backend"></a>
+##### `Backend`<sup>Optional</sup> <a name="Backend" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.backend"></a>
 
 ```go
 Backend *string
@@ -1781,11 +1781,11 @@ Backend *string
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#backend JwtAuthBackendRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#backend JwtAuthBackendRole#backend}
 
 ---
 
-##### `BoundAudiences`<sup>Optional</sup> <a name="BoundAudiences" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundAudiences"></a>
+##### `BoundAudiences`<sup>Optional</sup> <a name="BoundAudiences" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundAudiences"></a>
 
 ```go
 BoundAudiences *[]*string
@@ -1795,11 +1795,11 @@ BoundAudiences *[]*string
 
 List of aud claims to match against. Any match is sufficient.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#bound_audiences JwtAuthBackendRole#bound_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#bound_audiences JwtAuthBackendRole#bound_audiences}
 
 ---
 
-##### `BoundClaims`<sup>Optional</sup> <a name="BoundClaims" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundClaims"></a>
+##### `BoundClaims`<sup>Optional</sup> <a name="BoundClaims" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundClaims"></a>
 
 ```go
 BoundClaims *map[string]*string
@@ -1809,11 +1809,11 @@ BoundClaims *map[string]*string
 
 Map of claims/values to match against. The expected value may be a single string or a comma-separated string list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#bound_claims JwtAuthBackendRole#bound_claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#bound_claims JwtAuthBackendRole#bound_claims}
 
 ---
 
-##### `BoundClaimsType`<sup>Optional</sup> <a name="BoundClaimsType" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundClaimsType"></a>
+##### `BoundClaimsType`<sup>Optional</sup> <a name="BoundClaimsType" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundClaimsType"></a>
 
 ```go
 BoundClaimsType *string
@@ -1823,11 +1823,11 @@ BoundClaimsType *string
 
 How to interpret values in the claims/values map: can be either "string" (exact match) or "glob" (wildcard match).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#bound_claims_type JwtAuthBackendRole#bound_claims_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#bound_claims_type JwtAuthBackendRole#bound_claims_type}
 
 ---
 
-##### `BoundSubject`<sup>Optional</sup> <a name="BoundSubject" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundSubject"></a>
+##### `BoundSubject`<sup>Optional</sup> <a name="BoundSubject" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.boundSubject"></a>
 
 ```go
 BoundSubject *string
@@ -1837,11 +1837,11 @@ BoundSubject *string
 
 If set, requires that the sub claim matches this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#bound_subject JwtAuthBackendRole#bound_subject}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#bound_subject JwtAuthBackendRole#bound_subject}
 
 ---
 
-##### `ClaimMappings`<sup>Optional</sup> <a name="ClaimMappings" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.claimMappings"></a>
+##### `ClaimMappings`<sup>Optional</sup> <a name="ClaimMappings" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.claimMappings"></a>
 
 ```go
 ClaimMappings *map[string]*string
@@ -1851,11 +1851,11 @@ ClaimMappings *map[string]*string
 
 Map of claims (keys) to be copied to specified metadata fields (values).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#claim_mappings JwtAuthBackendRole#claim_mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#claim_mappings JwtAuthBackendRole#claim_mappings}
 
 ---
 
-##### `ClockSkewLeeway`<sup>Optional</sup> <a name="ClockSkewLeeway" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.clockSkewLeeway"></a>
+##### `ClockSkewLeeway`<sup>Optional</sup> <a name="ClockSkewLeeway" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.clockSkewLeeway"></a>
 
 ```go
 ClockSkewLeeway *f64
@@ -1867,11 +1867,11 @@ The amount of leeway to add to all claims to account for clock skew, in seconds.
 
 Defaults to 60 seconds if set to 0 and can be disabled if set to -1. Only applicable with 'jwt' roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#clock_skew_leeway JwtAuthBackendRole#clock_skew_leeway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#clock_skew_leeway JwtAuthBackendRole#clock_skew_leeway}
 
 ---
 
-##### `DisableBoundClaimsParsing`<sup>Optional</sup> <a name="DisableBoundClaimsParsing" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.disableBoundClaimsParsing"></a>
+##### `DisableBoundClaimsParsing`<sup>Optional</sup> <a name="DisableBoundClaimsParsing" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.disableBoundClaimsParsing"></a>
 
 ```go
 DisableBoundClaimsParsing interface{}
@@ -1881,11 +1881,11 @@ DisableBoundClaimsParsing interface{}
 
 Disable bound claim value parsing. Useful when values contain commas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#disable_bound_claims_parsing JwtAuthBackendRole#disable_bound_claims_parsing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#disable_bound_claims_parsing JwtAuthBackendRole#disable_bound_claims_parsing}
 
 ---
 
-##### `ExpirationLeeway`<sup>Optional</sup> <a name="ExpirationLeeway" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.expirationLeeway"></a>
+##### `ExpirationLeeway`<sup>Optional</sup> <a name="ExpirationLeeway" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.expirationLeeway"></a>
 
 ```go
 ExpirationLeeway *f64
@@ -1897,11 +1897,11 @@ The amount of leeway to add to expiration (exp) claims to account for clock skew
 
 Defaults to 150 seconds if set to 0 and can be disabled if set to -1. Only applicable with 'jwt' roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#expiration_leeway JwtAuthBackendRole#expiration_leeway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#expiration_leeway JwtAuthBackendRole#expiration_leeway}
 
 ---
 
-##### `GroupsClaim`<sup>Optional</sup> <a name="GroupsClaim" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.groupsClaim"></a>
+##### `GroupsClaim`<sup>Optional</sup> <a name="GroupsClaim" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.groupsClaim"></a>
 
 ```go
 GroupsClaim *string
@@ -1913,11 +1913,11 @@ The claim to use to uniquely identify the set of groups to which the user belong
 
 this will be used as the names for the Identity group aliases created due to a successful login. The claim value must be a list of strings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#groups_claim JwtAuthBackendRole#groups_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#groups_claim JwtAuthBackendRole#groups_claim}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1925,14 +1925,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#id JwtAuthBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#id JwtAuthBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `MaxAge`<sup>Optional</sup> <a name="MaxAge" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.maxAge"></a>
+##### `MaxAge`<sup>Optional</sup> <a name="MaxAge" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.maxAge"></a>
 
 ```go
 MaxAge *f64
@@ -1942,11 +1942,11 @@ MaxAge *f64
 
 Specifies the allowable elapsed time in seconds since the last time the user was actively authenticated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#max_age JwtAuthBackendRole#max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#max_age JwtAuthBackendRole#max_age}
 
 ---
 
-##### `Namespace`<sup>Optional</sup> <a name="Namespace" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.namespace"></a>
+##### `Namespace`<sup>Optional</sup> <a name="Namespace" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.namespace"></a>
 
 ```go
 Namespace *string
@@ -1956,11 +1956,11 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#namespace JwtAuthBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#namespace JwtAuthBackendRole#namespace}
 
 ---
 
-##### `NotBeforeLeeway`<sup>Optional</sup> <a name="NotBeforeLeeway" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.notBeforeLeeway"></a>
+##### `NotBeforeLeeway`<sup>Optional</sup> <a name="NotBeforeLeeway" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.notBeforeLeeway"></a>
 
 ```go
 NotBeforeLeeway *f64
@@ -1972,11 +1972,11 @@ The amount of leeway to add to not before (nbf) claims to account for clock skew
 
 Defaults to 150 seconds if set to 0 and can be disabled if set to -1. Only applicable with 'jwt' roles.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#not_before_leeway JwtAuthBackendRole#not_before_leeway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#not_before_leeway JwtAuthBackendRole#not_before_leeway}
 
 ---
 
-##### `OidcScopes`<sup>Optional</sup> <a name="OidcScopes" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.oidcScopes"></a>
+##### `OidcScopes`<sup>Optional</sup> <a name="OidcScopes" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.oidcScopes"></a>
 
 ```go
 OidcScopes *[]*string
@@ -1988,11 +1988,11 @@ List of OIDC scopes to be used with an OIDC role.
 
 The standard scope "openid" is automatically included and need not be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#oidc_scopes JwtAuthBackendRole#oidc_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#oidc_scopes JwtAuthBackendRole#oidc_scopes}
 
 ---
 
-##### `RoleType`<sup>Optional</sup> <a name="RoleType" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.roleType"></a>
+##### `RoleType`<sup>Optional</sup> <a name="RoleType" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.roleType"></a>
 
 ```go
 RoleType *string
@@ -2002,11 +2002,11 @@ RoleType *string
 
 Type of role, either "oidc" (default) or "jwt".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#role_type JwtAuthBackendRole#role_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#role_type JwtAuthBackendRole#role_type}
 
 ---
 
-##### `TokenBoundCidrs`<sup>Optional</sup> <a name="TokenBoundCidrs" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenBoundCidrs"></a>
+##### `TokenBoundCidrs`<sup>Optional</sup> <a name="TokenBoundCidrs" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenBoundCidrs"></a>
 
 ```go
 TokenBoundCidrs *[]*string
@@ -2016,11 +2016,11 @@ TokenBoundCidrs *[]*string
 
 Specifies the blocks of IP addresses which are allowed to use the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_bound_cidrs JwtAuthBackendRole#token_bound_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_bound_cidrs JwtAuthBackendRole#token_bound_cidrs}
 
 ---
 
-##### `TokenExplicitMaxTtl`<sup>Optional</sup> <a name="TokenExplicitMaxTtl" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenExplicitMaxTtl"></a>
+##### `TokenExplicitMaxTtl`<sup>Optional</sup> <a name="TokenExplicitMaxTtl" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenExplicitMaxTtl"></a>
 
 ```go
 TokenExplicitMaxTtl *f64
@@ -2030,11 +2030,11 @@ TokenExplicitMaxTtl *f64
 
 Generated Token's Explicit Maximum TTL in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_explicit_max_ttl JwtAuthBackendRole#token_explicit_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_explicit_max_ttl JwtAuthBackendRole#token_explicit_max_ttl}
 
 ---
 
-##### `TokenMaxTtl`<sup>Optional</sup> <a name="TokenMaxTtl" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenMaxTtl"></a>
+##### `TokenMaxTtl`<sup>Optional</sup> <a name="TokenMaxTtl" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenMaxTtl"></a>
 
 ```go
 TokenMaxTtl *f64
@@ -2044,11 +2044,11 @@ TokenMaxTtl *f64
 
 The maximum lifetime of the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_max_ttl JwtAuthBackendRole#token_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_max_ttl JwtAuthBackendRole#token_max_ttl}
 
 ---
 
-##### `TokenNoDefaultPolicy`<sup>Optional</sup> <a name="TokenNoDefaultPolicy" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenNoDefaultPolicy"></a>
+##### `TokenNoDefaultPolicy`<sup>Optional</sup> <a name="TokenNoDefaultPolicy" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenNoDefaultPolicy"></a>
 
 ```go
 TokenNoDefaultPolicy interface{}
@@ -2058,11 +2058,11 @@ TokenNoDefaultPolicy interface{}
 
 If true, the 'default' policy will not automatically be added to generated tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_no_default_policy JwtAuthBackendRole#token_no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_no_default_policy JwtAuthBackendRole#token_no_default_policy}
 
 ---
 
-##### `TokenNumUses`<sup>Optional</sup> <a name="TokenNumUses" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenNumUses"></a>
+##### `TokenNumUses`<sup>Optional</sup> <a name="TokenNumUses" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenNumUses"></a>
 
 ```go
 TokenNumUses *f64
@@ -2072,11 +2072,11 @@ TokenNumUses *f64
 
 The maximum number of times a token may be used, a value of zero means unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_num_uses JwtAuthBackendRole#token_num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_num_uses JwtAuthBackendRole#token_num_uses}
 
 ---
 
-##### `TokenPeriod`<sup>Optional</sup> <a name="TokenPeriod" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenPeriod"></a>
+##### `TokenPeriod`<sup>Optional</sup> <a name="TokenPeriod" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenPeriod"></a>
 
 ```go
 TokenPeriod *f64
@@ -2086,11 +2086,11 @@ TokenPeriod *f64
 
 Generated Token's Period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_period JwtAuthBackendRole#token_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_period JwtAuthBackendRole#token_period}
 
 ---
 
-##### `TokenPolicies`<sup>Optional</sup> <a name="TokenPolicies" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenPolicies"></a>
+##### `TokenPolicies`<sup>Optional</sup> <a name="TokenPolicies" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenPolicies"></a>
 
 ```go
 TokenPolicies *[]*string
@@ -2100,11 +2100,11 @@ TokenPolicies *[]*string
 
 Generated Token's Policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_policies JwtAuthBackendRole#token_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_policies JwtAuthBackendRole#token_policies}
 
 ---
 
-##### `TokenTtl`<sup>Optional</sup> <a name="TokenTtl" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenTtl"></a>
+##### `TokenTtl`<sup>Optional</sup> <a name="TokenTtl" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenTtl"></a>
 
 ```go
 TokenTtl *f64
@@ -2114,11 +2114,11 @@ TokenTtl *f64
 
 The initial ttl of the token to generate in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_ttl JwtAuthBackendRole#token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_ttl JwtAuthBackendRole#token_ttl}
 
 ---
 
-##### `TokenType`<sup>Optional</sup> <a name="TokenType" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenType"></a>
+##### `TokenType`<sup>Optional</sup> <a name="TokenType" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.tokenType"></a>
 
 ```go
 TokenType *string
@@ -2128,11 +2128,11 @@ TokenType *string
 
 The type of token to generate, service or batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_type JwtAuthBackendRole#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_type JwtAuthBackendRole#token_type}
 
 ---
 
-##### `UserClaimJsonPointer`<sup>Optional</sup> <a name="UserClaimJsonPointer" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.userClaimJsonPointer"></a>
+##### `UserClaimJsonPointer`<sup>Optional</sup> <a name="UserClaimJsonPointer" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.userClaimJsonPointer"></a>
 
 ```go
 UserClaimJsonPointer interface{}
@@ -2144,11 +2144,11 @@ Specifies if the user_claim value uses JSON pointer syntax for referencing claim
 
 By default, the user_claim value will not use JSON pointer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#user_claim_json_pointer JwtAuthBackendRole#user_claim_json_pointer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#user_claim_json_pointer JwtAuthBackendRole#user_claim_json_pointer}
 
 ---
 
-##### `VerboseOidcLogging`<sup>Optional</sup> <a name="VerboseOidcLogging" id="@cdktf/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.verboseOidcLogging"></a>
+##### `VerboseOidcLogging`<sup>Optional</sup> <a name="VerboseOidcLogging" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.property.verboseOidcLogging"></a>
 
 ```go
 VerboseOidcLogging interface{}
@@ -2160,7 +2160,7 @@ Log received OIDC tokens and claims when debug-level logging is active.
 
 Not recommended in production since sensitive information may be present in OIDC responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#verbose_oidc_logging JwtAuthBackendRole#verbose_oidc_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#verbose_oidc_logging JwtAuthBackendRole#verbose_oidc_logging}
 
 ---
 
