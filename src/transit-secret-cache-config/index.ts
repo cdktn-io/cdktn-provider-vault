@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_cache_config
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_cache_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TransitSecretCacheConfigConfig extends cdktf.TerraformMetaArguments {
+export interface TransitSecretCacheConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Transit secret backend the resource belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_cache_config#backend TransitSecretCacheConfig#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_cache_config#backend TransitSecretCacheConfig#backend}
   */
   readonly backend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_cache_config#id TransitSecretCacheConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_cache_config#id TransitSecretCacheConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,21 +28,21 @@ export interface TransitSecretCacheConfigConfig extends cdktf.TerraformMetaArgum
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_cache_config#namespace TransitSecretCacheConfig#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_cache_config#namespace TransitSecretCacheConfig#namespace}
   */
   readonly namespace?: string;
   /**
   * Number of cache entries. A size of 0 mean unlimited.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_cache_config#size TransitSecretCacheConfig#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_cache_config#size TransitSecretCacheConfig#size}
   */
   readonly size: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config}
 */
-export class TransitSecretCacheConfig extends cdktf.TerraformResource {
+export class TransitSecretCacheConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class TransitSecretCacheConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TransitSecretCacheConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TransitSecretCacheConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransitSecretCacheConfig to import
-  * @param importFromId The id of the existing TransitSecretCacheConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_cache_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TransitSecretCacheConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_cache_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransitSecretCacheConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_transit_secret_cache_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_transit_secret_cache_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -68,7 +68,7 @@ export class TransitSecretCacheConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_cache_config vault_transit_secret_cache_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class TransitSecretCacheConfig extends cdktf.TerraformResource {
       terraformResourceType: 'vault_transit_secret_cache_config',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -164,35 +164,35 @@ export class TransitSecretCacheConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      size: cdktf.numberToTerraform(this._size),
+      backend: cdktn.stringToTerraform(this._backend),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      size: cdktn.numberToTerraform(this._size),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       size: {
-        value: cdktf.numberToHclTerraform(this._size),
+        value: cdktn.numberToHclTerraform(this._size),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

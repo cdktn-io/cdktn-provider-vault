@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend_group
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OktaAuthBackendGroupAConfig extends cdktf.TerraformMetaArguments {
+export interface OktaAuthBackendGroupAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Name of the Okta group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend_group#group_name OktaAuthBackendGroupA#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend_group#group_name OktaAuthBackendGroupA#group_name}
   */
   readonly groupName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,27 +28,27 @@ export interface OktaAuthBackendGroupAConfig extends cdktf.TerraformMetaArgument
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend_group#namespace OktaAuthBackendGroupA#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend_group#namespace OktaAuthBackendGroupA#namespace}
   */
   readonly namespace?: string;
   /**
   * Path to the Okta auth backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend_group#path OktaAuthBackendGroupA#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend_group#path OktaAuthBackendGroupA#path}
   */
   readonly path: string;
   /**
   * Policies to associate with this group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend_group#policies OktaAuthBackendGroupA#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend_group#policies OktaAuthBackendGroupA#policies}
   */
   readonly policies?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group}
 */
-export class OktaAuthBackendGroupA extends cdktf.TerraformResource {
+export class OktaAuthBackendGroupA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class OktaAuthBackendGroupA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OktaAuthBackendGroupA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OktaAuthBackendGroupA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OktaAuthBackendGroupA to import
-  * @param importFromId The id of the existing OktaAuthBackendGroupA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OktaAuthBackendGroupA that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OktaAuthBackendGroupA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_okta_auth_backend_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_okta_auth_backend_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -74,7 +74,7 @@ export class OktaAuthBackendGroupA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class OktaAuthBackendGroupA extends cdktf.TerraformResource {
       terraformResourceType: 'vault_okta_auth_backend_group',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -168,7 +168,7 @@ export class OktaAuthBackendGroupA extends cdktf.TerraformResource {
   // policies - computed: false, optional: true, required: false
   private _policies?: string[]; 
   public get policies() {
-    return cdktf.Fn.tolist(this.getListAttribute('policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('policies'));
   }
   public set policies(value: string[]) {
     this._policies = value;
@@ -187,42 +187,42 @@ export class OktaAuthBackendGroupA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      group_name: cdktf.stringToTerraform(this._groupName),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      path: cdktf.stringToTerraform(this._path),
-      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
+      group_name: cdktn.stringToTerraform(this._groupName),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      path: cdktn.stringToTerraform(this._path),
+      policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._policies),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       group_name: {
-        value: cdktf.stringToHclTerraform(this._groupName),
+        value: cdktn.stringToHclTerraform(this._groupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policies: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policies),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._policies),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

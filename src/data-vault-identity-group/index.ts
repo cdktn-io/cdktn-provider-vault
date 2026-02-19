@@ -1,49 +1,49 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataVaultIdentityGroupConfig extends cdktf.TerraformMetaArguments {
+export interface DataVaultIdentityGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * ID of the alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group#alias_id DataVaultIdentityGroup#alias_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group#alias_id DataVaultIdentityGroup#alias_id}
   */
   readonly aliasId?: string;
   /**
   * Accessor of the mount to which the alias belongs to. This should be supplied in conjunction with `alias_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group#alias_mount_accessor DataVaultIdentityGroup#alias_mount_accessor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group#alias_mount_accessor DataVaultIdentityGroup#alias_mount_accessor}
   */
   readonly aliasMountAccessor?: string;
   /**
   * Name of the alias. This should be supplied in conjunction with `alias_mount_accessor`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group#alias_name DataVaultIdentityGroup#alias_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group#alias_name DataVaultIdentityGroup#alias_name}
   */
   readonly aliasName?: string;
   /**
   * ID of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group#group_id DataVaultIdentityGroup#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group#group_id DataVaultIdentityGroup#group_id}
   */
   readonly groupId?: string;
   /**
   * Name of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group#group_name DataVaultIdentityGroup#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group#group_name DataVaultIdentityGroup#group_name}
   */
   readonly groupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group#id DataVaultIdentityGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group#id DataVaultIdentityGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,15 +52,15 @@ export interface DataVaultIdentityGroupConfig extends cdktf.TerraformMetaArgumen
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group#namespace DataVaultIdentityGroup#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group#namespace DataVaultIdentityGroup#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group vault_identity_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group vault_identity_group}
 */
-export class DataVaultIdentityGroup extends cdktf.TerraformDataSource {
+export class DataVaultIdentityGroup extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -71,14 +71,14 @@ export class DataVaultIdentityGroup extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataVaultIdentityGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataVaultIdentityGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultIdentityGroup to import
-  * @param importFromId The id of the existing DataVaultIdentityGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultIdentityGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultIdentityGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -86,7 +86,7 @@ export class DataVaultIdentityGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_group vault_identity_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_group vault_identity_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class DataVaultIdentityGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_identity_group',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -154,11 +154,11 @@ export class DataVaultIdentityGroup extends cdktf.TerraformDataSource {
 
   // alias_merged_from_canonical_ids - computed: true, optional: false, required: false
   public get aliasMergedFromCanonicalIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('alias_merged_from_canonical_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('alias_merged_from_canonical_ids'));
   }
 
   // alias_metadata - computed: true, optional: false, required: false
-  private _aliasMetadata = new cdktf.StringMap(this, "alias_metadata");
+  private _aliasMetadata = new cdktn.StringMap(this, "alias_metadata");
   public get aliasMetadata() {
     return this._aliasMetadata;
   }
@@ -270,16 +270,16 @@ export class DataVaultIdentityGroup extends cdktf.TerraformDataSource {
 
   // member_entity_ids - computed: true, optional: false, required: false
   public get memberEntityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('member_entity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('member_entity_ids'));
   }
 
   // member_group_ids - computed: true, optional: false, required: false
   public get memberGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('member_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('member_group_ids'));
   }
 
   // metadata - computed: true, optional: false, required: false
-  private _metadata = new cdktf.StringMap(this, "metadata");
+  private _metadata = new cdktn.StringMap(this, "metadata");
   public get metadata() {
     return this._metadata;
   }
@@ -312,12 +312,12 @@ export class DataVaultIdentityGroup extends cdktf.TerraformDataSource {
 
   // parent_group_ids - computed: true, optional: false, required: false
   public get parentGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('parent_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('parent_group_ids'));
   }
 
   // policies - computed: true, optional: false, required: false
   public get policies() {
-    return cdktf.Fn.tolist(this.getListAttribute('policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('policies'));
   }
 
   // type - computed: true, optional: false, required: false
@@ -331,56 +331,56 @@ export class DataVaultIdentityGroup extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias_id: cdktf.stringToTerraform(this._aliasId),
-      alias_mount_accessor: cdktf.stringToTerraform(this._aliasMountAccessor),
-      alias_name: cdktf.stringToTerraform(this._aliasName),
-      group_id: cdktf.stringToTerraform(this._groupId),
-      group_name: cdktf.stringToTerraform(this._groupName),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
+      alias_id: cdktn.stringToTerraform(this._aliasId),
+      alias_mount_accessor: cdktn.stringToTerraform(this._aliasMountAccessor),
+      alias_name: cdktn.stringToTerraform(this._aliasName),
+      group_id: cdktn.stringToTerraform(this._groupId),
+      group_name: cdktn.stringToTerraform(this._groupName),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias_id: {
-        value: cdktf.stringToHclTerraform(this._aliasId),
+        value: cdktn.stringToHclTerraform(this._aliasId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias_mount_accessor: {
-        value: cdktf.stringToHclTerraform(this._aliasMountAccessor),
+        value: cdktn.stringToHclTerraform(this._aliasMountAccessor),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias_name: {
-        value: cdktf.stringToHclTerraform(this._aliasName),
+        value: cdktn.stringToHclTerraform(this._aliasName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       group_id: {
-        value: cdktf.stringToHclTerraform(this._groupId),
+        value: cdktn.stringToHclTerraform(this._groupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       group_name: {
-        value: cdktf.stringToHclTerraform(this._groupName),
+        value: cdktn.stringToHclTerraform(this._groupName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

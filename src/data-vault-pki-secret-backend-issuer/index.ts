@@ -1,49 +1,49 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_issuer
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_issuer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataVaultPkiSecretBackendIssuerConfig extends cdktf.TerraformMetaArguments {
+export interface DataVaultPkiSecretBackendIssuerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Full path where PKI backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_issuer#backend DataVaultPkiSecretBackendIssuer#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_issuer#backend DataVaultPkiSecretBackendIssuer#backend}
   */
   readonly backend: string;
   /**
   * This determines whether this issuer is able to issue certificates where the chain of trust (including the issued certificate) contain critical extensions not processed by Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_issuer#disable_critical_extension_checks DataVaultPkiSecretBackendIssuer#disable_critical_extension_checks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_issuer#disable_critical_extension_checks DataVaultPkiSecretBackendIssuer#disable_critical_extension_checks}
   */
-  readonly disableCriticalExtensionChecks?: boolean | cdktf.IResolvable;
+  readonly disableCriticalExtensionChecks?: boolean | cdktn.IResolvable;
   /**
   * This determines whether this issuer is able to issue certificates where the chain of trust (including the final issued certificate) contains a link in which the subject of the issuing certificate does not match the named issuer of the certificate it signed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_issuer#disable_name_checks DataVaultPkiSecretBackendIssuer#disable_name_checks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_issuer#disable_name_checks DataVaultPkiSecretBackendIssuer#disable_name_checks}
   */
-  readonly disableNameChecks?: boolean | cdktf.IResolvable;
+  readonly disableNameChecks?: boolean | cdktn.IResolvable;
   /**
   * This determines whether this issuer is able to issue certificates where the chain of trust (including the final issued certificate) violates the name constraints critical extension of one of the issuer certificates in the chain
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_issuer#disable_name_constraint_checks DataVaultPkiSecretBackendIssuer#disable_name_constraint_checks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_issuer#disable_name_constraint_checks DataVaultPkiSecretBackendIssuer#disable_name_constraint_checks}
   */
-  readonly disableNameConstraintChecks?: boolean | cdktf.IResolvable;
+  readonly disableNameConstraintChecks?: boolean | cdktn.IResolvable;
   /**
   * This determines whether this issuer is able to issue certificates where the chain of trust (including the final issued certificate) is longer than allowed by a certificate authority in that chain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_issuer#disable_path_length_checks DataVaultPkiSecretBackendIssuer#disable_path_length_checks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_issuer#disable_path_length_checks DataVaultPkiSecretBackendIssuer#disable_path_length_checks}
   */
-  readonly disablePathLengthChecks?: boolean | cdktf.IResolvable;
+  readonly disablePathLengthChecks?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_issuer#id DataVaultPkiSecretBackendIssuer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_issuer#id DataVaultPkiSecretBackendIssuer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,21 +52,21 @@ export interface DataVaultPkiSecretBackendIssuerConfig extends cdktf.TerraformMe
   /**
   * Reference to an existing issuer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_issuer#issuer_ref DataVaultPkiSecretBackendIssuer#issuer_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_issuer#issuer_ref DataVaultPkiSecretBackendIssuer#issuer_ref}
   */
   readonly issuerRef: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_issuer#namespace DataVaultPkiSecretBackendIssuer#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_issuer#namespace DataVaultPkiSecretBackendIssuer#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}
 */
-export class DataVaultPkiSecretBackendIssuer extends cdktf.TerraformDataSource {
+export class DataVaultPkiSecretBackendIssuer extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class DataVaultPkiSecretBackendIssuer extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataVaultPkiSecretBackendIssuer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataVaultPkiSecretBackendIssuer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultPkiSecretBackendIssuer to import
-  * @param importFromId The id of the existing DataVaultPkiSecretBackendIssuer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_issuer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultPkiSecretBackendIssuer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_issuer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultPkiSecretBackendIssuer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_issuer", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_issuer", importId: importFromId, provider });
       }
 
   // ===========
@@ -92,7 +92,7 @@ export class DataVaultPkiSecretBackendIssuer extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +103,7 @@ export class DataVaultPkiSecretBackendIssuer extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_pki_secret_backend_issuer',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -152,11 +152,11 @@ export class DataVaultPkiSecretBackendIssuer extends cdktf.TerraformDataSource {
   }
 
   // disable_critical_extension_checks - computed: false, optional: true, required: false
-  private _disableCriticalExtensionChecks?: boolean | cdktf.IResolvable; 
+  private _disableCriticalExtensionChecks?: boolean | cdktn.IResolvable; 
   public get disableCriticalExtensionChecks() {
     return this.getBooleanAttribute('disable_critical_extension_checks');
   }
-  public set disableCriticalExtensionChecks(value: boolean | cdktf.IResolvable) {
+  public set disableCriticalExtensionChecks(value: boolean | cdktn.IResolvable) {
     this._disableCriticalExtensionChecks = value;
   }
   public resetDisableCriticalExtensionChecks() {
@@ -168,11 +168,11 @@ export class DataVaultPkiSecretBackendIssuer extends cdktf.TerraformDataSource {
   }
 
   // disable_name_checks - computed: false, optional: true, required: false
-  private _disableNameChecks?: boolean | cdktf.IResolvable; 
+  private _disableNameChecks?: boolean | cdktn.IResolvable; 
   public get disableNameChecks() {
     return this.getBooleanAttribute('disable_name_checks');
   }
-  public set disableNameChecks(value: boolean | cdktf.IResolvable) {
+  public set disableNameChecks(value: boolean | cdktn.IResolvable) {
     this._disableNameChecks = value;
   }
   public resetDisableNameChecks() {
@@ -184,11 +184,11 @@ export class DataVaultPkiSecretBackendIssuer extends cdktf.TerraformDataSource {
   }
 
   // disable_name_constraint_checks - computed: false, optional: true, required: false
-  private _disableNameConstraintChecks?: boolean | cdktf.IResolvable; 
+  private _disableNameConstraintChecks?: boolean | cdktn.IResolvable; 
   public get disableNameConstraintChecks() {
     return this.getBooleanAttribute('disable_name_constraint_checks');
   }
-  public set disableNameConstraintChecks(value: boolean | cdktf.IResolvable) {
+  public set disableNameConstraintChecks(value: boolean | cdktn.IResolvable) {
     this._disableNameConstraintChecks = value;
   }
   public resetDisableNameConstraintChecks() {
@@ -200,11 +200,11 @@ export class DataVaultPkiSecretBackendIssuer extends cdktf.TerraformDataSource {
   }
 
   // disable_path_length_checks - computed: false, optional: true, required: false
-  private _disablePathLengthChecks?: boolean | cdktf.IResolvable; 
+  private _disablePathLengthChecks?: boolean | cdktn.IResolvable; 
   public get disablePathLengthChecks() {
     return this.getBooleanAttribute('disable_path_length_checks');
   }
-  public set disablePathLengthChecks(value: boolean | cdktf.IResolvable) {
+  public set disablePathLengthChecks(value: boolean | cdktn.IResolvable) {
     this._disablePathLengthChecks = value;
   }
   public resetDisablePathLengthChecks() {
@@ -296,63 +296,63 @@ export class DataVaultPkiSecretBackendIssuer extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      disable_critical_extension_checks: cdktf.booleanToTerraform(this._disableCriticalExtensionChecks),
-      disable_name_checks: cdktf.booleanToTerraform(this._disableNameChecks),
-      disable_name_constraint_checks: cdktf.booleanToTerraform(this._disableNameConstraintChecks),
-      disable_path_length_checks: cdktf.booleanToTerraform(this._disablePathLengthChecks),
-      id: cdktf.stringToTerraform(this._id),
-      issuer_ref: cdktf.stringToTerraform(this._issuerRef),
-      namespace: cdktf.stringToTerraform(this._namespace),
+      backend: cdktn.stringToTerraform(this._backend),
+      disable_critical_extension_checks: cdktn.booleanToTerraform(this._disableCriticalExtensionChecks),
+      disable_name_checks: cdktn.booleanToTerraform(this._disableNameChecks),
+      disable_name_constraint_checks: cdktn.booleanToTerraform(this._disableNameConstraintChecks),
+      disable_path_length_checks: cdktn.booleanToTerraform(this._disablePathLengthChecks),
+      id: cdktn.stringToTerraform(this._id),
+      issuer_ref: cdktn.stringToTerraform(this._issuerRef),
+      namespace: cdktn.stringToTerraform(this._namespace),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_critical_extension_checks: {
-        value: cdktf.booleanToHclTerraform(this._disableCriticalExtensionChecks),
+        value: cdktn.booleanToHclTerraform(this._disableCriticalExtensionChecks),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_name_checks: {
-        value: cdktf.booleanToHclTerraform(this._disableNameChecks),
+        value: cdktn.booleanToHclTerraform(this._disableNameChecks),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_name_constraint_checks: {
-        value: cdktf.booleanToHclTerraform(this._disableNameConstraintChecks),
+        value: cdktn.booleanToHclTerraform(this._disableNameConstraintChecks),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_path_length_checks: {
-        value: cdktf.booleanToHclTerraform(this._disablePathLengthChecks),
+        value: cdktn.booleanToHclTerraform(this._disablePathLengthChecks),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       issuer_ref: {
-        value: cdktf.stringToHclTerraform(this._issuerRef),
+        value: cdktn.stringToHclTerraform(this._issuerRef),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

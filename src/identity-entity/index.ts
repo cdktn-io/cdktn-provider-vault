@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IdentityEntityConfig extends cdktf.TerraformMetaArguments {
+export interface IdentityEntityConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether the entity is disabled. Disabled entities' associated tokens cannot be used, but are not revoked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#disabled IdentityEntity#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * Manage policies externally through `vault_identity_entity_policies`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#external_policies IdentityEntity#external_policies}
   */
-  readonly externalPolicies?: boolean | cdktf.IResolvable;
+  readonly externalPolicies?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity#id IdentityEntity#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#id IdentityEntity#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,33 +34,33 @@ export interface IdentityEntityConfig extends cdktf.TerraformMetaArguments {
   /**
   * Metadata to be associated with the entity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#metadata IdentityEntity#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Name of the entity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity#name IdentityEntity#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#name IdentityEntity#name}
   */
   readonly name?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#namespace IdentityEntity#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be tied to the entity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity#policies IdentityEntity#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#policies IdentityEntity#policies}
   */
   readonly policies?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity vault_identity_entity}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity vault_identity_entity}
 */
-export class IdentityEntity extends cdktf.TerraformResource {
+export class IdentityEntity extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -71,14 +71,14 @@ export class IdentityEntity extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IdentityEntity resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IdentityEntity resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityEntity to import
-  * @param importFromId The id of the existing IdentityEntity that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityEntity that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityEntity to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_entity", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_entity", importId: importFromId, provider });
       }
 
   // ===========
@@ -86,7 +86,7 @@ export class IdentityEntity extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_entity vault_identity_entity} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_entity vault_identity_entity} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class IdentityEntity extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_entity',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -122,11 +122,11 @@ export class IdentityEntity extends cdktf.TerraformResource {
   // ==========
 
   // disabled - computed: false, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -138,11 +138,11 @@ export class IdentityEntity extends cdktf.TerraformResource {
   }
 
   // external_policies - computed: false, optional: true, required: false
-  private _externalPolicies?: boolean | cdktf.IResolvable; 
+  private _externalPolicies?: boolean | cdktn.IResolvable; 
   public get externalPolicies() {
     return this.getBooleanAttribute('external_policies');
   }
-  public set externalPolicies(value: boolean | cdktf.IResolvable) {
+  public set externalPolicies(value: boolean | cdktn.IResolvable) {
     this._externalPolicies = value;
   }
   public resetExternalPolicies() {
@@ -220,7 +220,7 @@ export class IdentityEntity extends cdktf.TerraformResource {
   // policies - computed: false, optional: true, required: false
   private _policies?: string[]; 
   public get policies() {
-    return cdktf.Fn.tolist(this.getListAttribute('policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('policies'));
   }
   public set policies(value: string[]) {
     this._policies = value;
@@ -239,56 +239,56 @@ export class IdentityEntity extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      disabled: cdktf.booleanToTerraform(this._disabled),
-      external_policies: cdktf.booleanToTerraform(this._externalPolicies),
-      id: cdktf.stringToTerraform(this._id),
-      metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
+      disabled: cdktn.booleanToTerraform(this._disabled),
+      external_policies: cdktn.booleanToTerraform(this._externalPolicies),
+      id: cdktn.stringToTerraform(this._id),
+      metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._metadata),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._policies),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       disabled: {
-        value: cdktf.booleanToHclTerraform(this._disabled),
+        value: cdktn.booleanToHclTerraform(this._disabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       external_policies: {
-        value: cdktf.booleanToHclTerraform(this._externalPolicies),
+        value: cdktn.booleanToHclTerraform(this._externalPolicies),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._metadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policies: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policies),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._policies),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

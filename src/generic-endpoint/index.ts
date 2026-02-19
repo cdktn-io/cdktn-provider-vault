@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GenericEndpointConfig extends cdktf.TerraformMetaArguments {
+export interface GenericEndpointConfig extends cdktn.TerraformMetaArguments {
   /**
   * JSON-encoded data to write.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint#data_json GenericEndpoint#data_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint#data_json GenericEndpoint#data_json}
   */
   readonly dataJson: string;
   /**
   * Don't attempt to delete the path from Vault if true
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint#disable_delete GenericEndpoint#disable_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint#disable_delete GenericEndpoint#disable_delete}
   */
-  readonly disableDelete?: boolean | cdktf.IResolvable;
+  readonly disableDelete?: boolean | cdktn.IResolvable;
   /**
   * Don't attempt to read the path from Vault if true; drift won't be detected
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint#disable_read GenericEndpoint#disable_read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint#disable_read GenericEndpoint#disable_read}
   */
-  readonly disableRead?: boolean | cdktf.IResolvable;
+  readonly disableRead?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint#id GenericEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint#id GenericEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,33 +40,33 @@ export interface GenericEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * When reading, disregard fields not present in data_json
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint#ignore_absent_fields GenericEndpoint#ignore_absent_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint#ignore_absent_fields GenericEndpoint#ignore_absent_fields}
   */
-  readonly ignoreAbsentFields?: boolean | cdktf.IResolvable;
+  readonly ignoreAbsentFields?: boolean | cdktn.IResolvable;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint#namespace GenericEndpoint#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint#namespace GenericEndpoint#namespace}
   */
   readonly namespace?: string;
   /**
   * Full path where to the endpoint that will be written
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint#path GenericEndpoint#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint#path GenericEndpoint#path}
   */
   readonly path: string;
   /**
   * Top-level fields returned by write to persist in state
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint#write_fields GenericEndpoint#write_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint#write_fields GenericEndpoint#write_fields}
   */
   readonly writeFields?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint vault_generic_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint vault_generic_endpoint}
 */
-export class GenericEndpoint extends cdktf.TerraformResource {
+export class GenericEndpoint extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class GenericEndpoint extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GenericEndpoint resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GenericEndpoint resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GenericEndpoint to import
-  * @param importFromId The id of the existing GenericEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GenericEndpoint that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GenericEndpoint to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_generic_endpoint", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_generic_endpoint", importId: importFromId, provider });
       }
 
   // ===========
@@ -92,7 +92,7 @@ export class GenericEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_endpoint vault_generic_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_endpoint vault_generic_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +103,7 @@ export class GenericEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'vault_generic_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -142,11 +142,11 @@ export class GenericEndpoint extends cdktf.TerraformResource {
   }
 
   // disable_delete - computed: false, optional: true, required: false
-  private _disableDelete?: boolean | cdktf.IResolvable; 
+  private _disableDelete?: boolean | cdktn.IResolvable; 
   public get disableDelete() {
     return this.getBooleanAttribute('disable_delete');
   }
-  public set disableDelete(value: boolean | cdktf.IResolvable) {
+  public set disableDelete(value: boolean | cdktn.IResolvable) {
     this._disableDelete = value;
   }
   public resetDisableDelete() {
@@ -158,11 +158,11 @@ export class GenericEndpoint extends cdktf.TerraformResource {
   }
 
   // disable_read - computed: false, optional: true, required: false
-  private _disableRead?: boolean | cdktf.IResolvable; 
+  private _disableRead?: boolean | cdktn.IResolvable; 
   public get disableRead() {
     return this.getBooleanAttribute('disable_read');
   }
-  public set disableRead(value: boolean | cdktf.IResolvable) {
+  public set disableRead(value: boolean | cdktn.IResolvable) {
     this._disableRead = value;
   }
   public resetDisableRead() {
@@ -190,11 +190,11 @@ export class GenericEndpoint extends cdktf.TerraformResource {
   }
 
   // ignore_absent_fields - computed: false, optional: true, required: false
-  private _ignoreAbsentFields?: boolean | cdktf.IResolvable; 
+  private _ignoreAbsentFields?: boolean | cdktn.IResolvable; 
   public get ignoreAbsentFields() {
     return this.getBooleanAttribute('ignore_absent_fields');
   }
-  public set ignoreAbsentFields(value: boolean | cdktf.IResolvable) {
+  public set ignoreAbsentFields(value: boolean | cdktn.IResolvable) {
     this._ignoreAbsentFields = value;
   }
   public resetIgnoreAbsentFields() {
@@ -235,7 +235,7 @@ export class GenericEndpoint extends cdktf.TerraformResource {
   }
 
   // write_data - computed: true, optional: false, required: false
-  private _writeData = new cdktf.StringMap(this, "write_data");
+  private _writeData = new cdktn.StringMap(this, "write_data");
   public get writeData() {
     return this._writeData;
   }
@@ -267,63 +267,63 @@ export class GenericEndpoint extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_json: cdktf.stringToTerraform(this._dataJson),
-      disable_delete: cdktf.booleanToTerraform(this._disableDelete),
-      disable_read: cdktf.booleanToTerraform(this._disableRead),
-      id: cdktf.stringToTerraform(this._id),
-      ignore_absent_fields: cdktf.booleanToTerraform(this._ignoreAbsentFields),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      path: cdktf.stringToTerraform(this._path),
-      write_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(this._writeFields),
+      data_json: cdktn.stringToTerraform(this._dataJson),
+      disable_delete: cdktn.booleanToTerraform(this._disableDelete),
+      disable_read: cdktn.booleanToTerraform(this._disableRead),
+      id: cdktn.stringToTerraform(this._id),
+      ignore_absent_fields: cdktn.booleanToTerraform(this._ignoreAbsentFields),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      path: cdktn.stringToTerraform(this._path),
+      write_fields: cdktn.listMapper(cdktn.stringToTerraform, false)(this._writeFields),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_json: {
-        value: cdktf.stringToHclTerraform(this._dataJson),
+        value: cdktn.stringToHclTerraform(this._dataJson),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_delete: {
-        value: cdktf.booleanToHclTerraform(this._disableDelete),
+        value: cdktn.booleanToHclTerraform(this._disableDelete),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_read: {
-        value: cdktf.booleanToHclTerraform(this._disableRead),
+        value: cdktn.booleanToHclTerraform(this._disableRead),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ignore_absent_fields: {
-        value: cdktf.booleanToHclTerraform(this._ignoreAbsentFields),
+        value: cdktn.booleanToHclTerraform(this._ignoreAbsentFields),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       write_fields: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._writeFields),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._writeFields),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TokenConfig extends cdktf.TerraformMetaArguments {
+export interface TokenConfig extends cdktn.TerraformMetaArguments {
   /**
   * The display name of the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#display_name Token#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#display_name Token#display_name}
   */
   readonly displayName?: string;
   /**
   * The explicit max TTL of the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#explicit_max_ttl Token#explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#explicit_max_ttl Token#explicit_max_ttl}
   */
   readonly explicitMaxTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#id Token#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#id Token#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,87 +34,87 @@ export interface TokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Metadata to be associated with the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#metadata Token#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#metadata Token#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#namespace Token#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#namespace Token#namespace}
   */
   readonly namespace?: string;
   /**
   * Flag to disable the default policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#no_default_policy Token#no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#no_default_policy Token#no_default_policy}
   */
-  readonly noDefaultPolicy?: boolean | cdktf.IResolvable;
+  readonly noDefaultPolicy?: boolean | cdktn.IResolvable;
   /**
   * Flag to create a token without parent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#no_parent Token#no_parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#no_parent Token#no_parent}
   */
-  readonly noParent?: boolean | cdktf.IResolvable;
+  readonly noParent?: boolean | cdktn.IResolvable;
   /**
   * The number of allowed uses of the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#num_uses Token#num_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#num_uses Token#num_uses}
   */
   readonly numUses?: number;
   /**
   * The period of the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#period Token#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#period Token#period}
   */
   readonly period?: string;
   /**
   * List of policies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#policies Token#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#policies Token#policies}
   */
   readonly policies?: string[];
   /**
   * The renew increment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#renew_increment Token#renew_increment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#renew_increment Token#renew_increment}
   */
   readonly renewIncrement?: number;
   /**
   * The minimum lease to renew token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#renew_min_lease Token#renew_min_lease}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#renew_min_lease Token#renew_min_lease}
   */
   readonly renewMinLease?: number;
   /**
   * Flag to allow the token to be renewed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#renewable Token#renewable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#renewable Token#renewable}
   */
-  readonly renewable?: boolean | cdktf.IResolvable;
+  readonly renewable?: boolean | cdktn.IResolvable;
   /**
   * The token role name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#role_name Token#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#role_name Token#role_name}
   */
   readonly roleName?: string;
   /**
   * The TTL period of the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#ttl Token#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#ttl Token#ttl}
   */
   readonly ttl?: string;
   /**
   * The TTL period of the wrapped token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#wrapping_ttl Token#wrapping_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#wrapping_ttl Token#wrapping_ttl}
   */
   readonly wrappingTtl?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token vault_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token vault_token}
 */
-export class Token extends cdktf.TerraformResource {
+export class Token extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -125,14 +125,14 @@ export class Token extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Token resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Token resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Token to import
-  * @param importFromId The id of the existing Token that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Token that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Token to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_token", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_token", importId: importFromId, provider });
       }
 
   // ===========
@@ -140,7 +140,7 @@ export class Token extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/token vault_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/token vault_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -151,7 +151,7 @@ export class Token extends cdktf.TerraformResource {
       terraformResourceType: 'vault_token',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -280,11 +280,11 @@ export class Token extends cdktf.TerraformResource {
   }
 
   // no_default_policy - computed: false, optional: true, required: false
-  private _noDefaultPolicy?: boolean | cdktf.IResolvable; 
+  private _noDefaultPolicy?: boolean | cdktn.IResolvable; 
   public get noDefaultPolicy() {
     return this.getBooleanAttribute('no_default_policy');
   }
-  public set noDefaultPolicy(value: boolean | cdktf.IResolvable) {
+  public set noDefaultPolicy(value: boolean | cdktn.IResolvable) {
     this._noDefaultPolicy = value;
   }
   public resetNoDefaultPolicy() {
@@ -296,11 +296,11 @@ export class Token extends cdktf.TerraformResource {
   }
 
   // no_parent - computed: true, optional: true, required: false
-  private _noParent?: boolean | cdktf.IResolvable; 
+  private _noParent?: boolean | cdktn.IResolvable; 
   public get noParent() {
     return this.getBooleanAttribute('no_parent');
   }
-  public set noParent(value: boolean | cdktf.IResolvable) {
+  public set noParent(value: boolean | cdktn.IResolvable) {
     this._noParent = value;
   }
   public resetNoParent() {
@@ -346,7 +346,7 @@ export class Token extends cdktf.TerraformResource {
   // policies - computed: false, optional: true, required: false
   private _policies?: string[]; 
   public get policies() {
-    return cdktf.Fn.tolist(this.getListAttribute('policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('policies'));
   }
   public set policies(value: string[]) {
     this._policies = value;
@@ -392,11 +392,11 @@ export class Token extends cdktf.TerraformResource {
   }
 
   // renewable - computed: true, optional: true, required: false
-  private _renewable?: boolean | cdktf.IResolvable; 
+  private _renewable?: boolean | cdktn.IResolvable; 
   public get renewable() {
     return this.getBooleanAttribute('renewable');
   }
-  public set renewable(value: boolean | cdktf.IResolvable) {
+  public set renewable(value: boolean | cdktn.IResolvable) {
     this._renewable = value;
   }
   public resetRenewable() {
@@ -471,119 +471,119 @@ export class Token extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      display_name: cdktf.stringToTerraform(this._displayName),
-      explicit_max_ttl: cdktf.stringToTerraform(this._explicitMaxTtl),
-      id: cdktf.stringToTerraform(this._id),
-      metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      no_default_policy: cdktf.booleanToTerraform(this._noDefaultPolicy),
-      no_parent: cdktf.booleanToTerraform(this._noParent),
-      num_uses: cdktf.numberToTerraform(this._numUses),
-      period: cdktf.stringToTerraform(this._period),
-      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
-      renew_increment: cdktf.numberToTerraform(this._renewIncrement),
-      renew_min_lease: cdktf.numberToTerraform(this._renewMinLease),
-      renewable: cdktf.booleanToTerraform(this._renewable),
-      role_name: cdktf.stringToTerraform(this._roleName),
-      ttl: cdktf.stringToTerraform(this._ttl),
-      wrapping_ttl: cdktf.stringToTerraform(this._wrappingTtl),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      explicit_max_ttl: cdktn.stringToTerraform(this._explicitMaxTtl),
+      id: cdktn.stringToTerraform(this._id),
+      metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._metadata),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      no_default_policy: cdktn.booleanToTerraform(this._noDefaultPolicy),
+      no_parent: cdktn.booleanToTerraform(this._noParent),
+      num_uses: cdktn.numberToTerraform(this._numUses),
+      period: cdktn.stringToTerraform(this._period),
+      policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._policies),
+      renew_increment: cdktn.numberToTerraform(this._renewIncrement),
+      renew_min_lease: cdktn.numberToTerraform(this._renewMinLease),
+      renewable: cdktn.booleanToTerraform(this._renewable),
+      role_name: cdktn.stringToTerraform(this._roleName),
+      ttl: cdktn.stringToTerraform(this._ttl),
+      wrapping_ttl: cdktn.stringToTerraform(this._wrappingTtl),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       explicit_max_ttl: {
-        value: cdktf.stringToHclTerraform(this._explicitMaxTtl),
+        value: cdktn.stringToHclTerraform(this._explicitMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._metadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       no_default_policy: {
-        value: cdktf.booleanToHclTerraform(this._noDefaultPolicy),
+        value: cdktn.booleanToHclTerraform(this._noDefaultPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       no_parent: {
-        value: cdktf.booleanToHclTerraform(this._noParent),
+        value: cdktn.booleanToHclTerraform(this._noParent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       num_uses: {
-        value: cdktf.numberToHclTerraform(this._numUses),
+        value: cdktn.numberToHclTerraform(this._numUses),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       period: {
-        value: cdktf.stringToHclTerraform(this._period),
+        value: cdktn.stringToHclTerraform(this._period),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policies: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policies),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._policies),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       renew_increment: {
-        value: cdktf.numberToHclTerraform(this._renewIncrement),
+        value: cdktn.numberToHclTerraform(this._renewIncrement),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       renew_min_lease: {
-        value: cdktf.numberToHclTerraform(this._renewMinLease),
+        value: cdktn.numberToHclTerraform(this._renewMinLease),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       renewable: {
-        value: cdktf.booleanToHclTerraform(this._renewable),
+        value: cdktn.booleanToHclTerraform(this._renewable),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       role_name: {
-        value: cdktf.stringToHclTerraform(this._roleName),
+        value: cdktn.stringToHclTerraform(this._roleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ttl: {
-        value: cdktf.stringToHclTerraform(this._ttl),
+        value: cdktn.stringToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       wrapping_ttl: {
-        value: cdktf.stringToHclTerraform(this._wrappingTtl),
+        value: cdktn.stringToHclTerraform(this._wrappingTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

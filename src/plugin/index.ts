@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PluginConfig extends cdktf.TerraformMetaArguments {
+export interface PluginConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of additional arguments to pass to the plugin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin#args Plugin#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin#args Plugin#args}
   */
   readonly args?: string[];
   /**
   * Command to execute the plugin, relative to the plugin_directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin#command Plugin#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin#command Plugin#command}
   */
   readonly command: string;
   /**
   * List of additional environment variables to run the plugin with in KEY=VALUE form.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin#env Plugin#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin#env Plugin#env}
   */
   readonly env?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin#id Plugin#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin#id Plugin#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,45 +40,45 @@ export interface PluginConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the plugin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin#name Plugin#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin#name Plugin#name}
   */
   readonly name: string;
   /**
   * OCI image to run. If specified, setting command, args, and env will update the container's entrypoint, args, and environment variables (append-only) respectively.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin#oci_image Plugin#oci_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin#oci_image Plugin#oci_image}
   */
   readonly ociImage?: string;
   /**
   * Vault plugin runtime to use if oci_image is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin#runtime Plugin#runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin#runtime Plugin#runtime}
   */
   readonly runtime?: string;
   /**
   * SHA256 sum of the plugin binary.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin#sha256 Plugin#sha256}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin#sha256 Plugin#sha256}
   */
   readonly sha256: string;
   /**
   * Type of plugin; one of "auth", "secret", or "database".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin#type Plugin#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin#type Plugin#type}
   */
   readonly type: string;
   /**
   * Semantic version of the plugin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin#version Plugin#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin#version Plugin#version}
   */
   readonly version?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin vault_plugin}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin vault_plugin}
 */
-export class Plugin extends cdktf.TerraformResource {
+export class Plugin extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -89,14 +89,14 @@ export class Plugin extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Plugin resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Plugin resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Plugin to import
-  * @param importFromId The id of the existing Plugin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Plugin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Plugin to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_plugin", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_plugin", importId: importFromId, provider });
       }
 
   // ===========
@@ -104,7 +104,7 @@ export class Plugin extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin vault_plugin} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin vault_plugin} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -115,7 +115,7 @@ export class Plugin extends cdktf.TerraformResource {
       terraformResourceType: 'vault_plugin',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -296,77 +296,77 @@ export class Plugin extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      args: cdktf.listMapper(cdktf.stringToTerraform, false)(this._args),
-      command: cdktf.stringToTerraform(this._command),
-      env: cdktf.listMapper(cdktf.stringToTerraform, false)(this._env),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      oci_image: cdktf.stringToTerraform(this._ociImage),
-      runtime: cdktf.stringToTerraform(this._runtime),
-      sha256: cdktf.stringToTerraform(this._sha256),
-      type: cdktf.stringToTerraform(this._type),
-      version: cdktf.stringToTerraform(this._version),
+      args: cdktn.listMapper(cdktn.stringToTerraform, false)(this._args),
+      command: cdktn.stringToTerraform(this._command),
+      env: cdktn.listMapper(cdktn.stringToTerraform, false)(this._env),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      oci_image: cdktn.stringToTerraform(this._ociImage),
+      runtime: cdktn.stringToTerraform(this._runtime),
+      sha256: cdktn.stringToTerraform(this._sha256),
+      type: cdktn.stringToTerraform(this._type),
+      version: cdktn.stringToTerraform(this._version),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       args: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._args),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._args),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       command: {
-        value: cdktf.stringToHclTerraform(this._command),
+        value: cdktn.stringToHclTerraform(this._command),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       env: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._env),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._env),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oci_image: {
-        value: cdktf.stringToHclTerraform(this._ociImage),
+        value: cdktn.stringToHclTerraform(this._ociImage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       runtime: {
-        value: cdktf.stringToHclTerraform(this._runtime),
+        value: cdktn.stringToHclTerraform(this._runtime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sha256: {
-        value: cdktf.stringToHclTerraform(this._sha256),
+        value: cdktn.stringToHclTerraform(this._sha256),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

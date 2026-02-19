@@ -1,84 +1,120 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecretsSyncGhDestinationConfig extends cdktf.TerraformMetaArguments {
+export interface SecretsSyncGhDestinationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Fine-grained or personal access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination#access_token SecretsSyncGhDestination#access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#access_token SecretsSyncGhDestination#access_token}
   */
   readonly accessToken?: string;
   /**
+  * List of allowed IPv4 addresses in CIDR notation (e.g., 192.168.1.1/32) for outbound connections from Vault to the destination. If not set, all IPv4 addresses are allowed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#allowed_ipv4_addresses SecretsSyncGhDestination#allowed_ipv4_addresses}
+  */
+  readonly allowedIpv4Addresses?: string[];
+  /**
+  * List of allowed IPv6 addresses in CIDR notation (e.g., 2001:db8::1/128) for outbound connections from Vault to the destination. If not set, all IPv6 addresses are allowed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#allowed_ipv6_addresses SecretsSyncGhDestination#allowed_ipv6_addresses}
+  */
+  readonly allowedIpv6Addresses?: string[];
+  /**
+  * List of allowed ports for outbound connections from Vault to the destination. If not set, all ports are allowed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#allowed_ports SecretsSyncGhDestination#allowed_ports}
+  */
+  readonly allowedPorts?: number[];
+  /**
   * The user-defined name of the GitHub App configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination#app_name SecretsSyncGhDestination#app_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#app_name SecretsSyncGhDestination#app_name}
   */
   readonly appName?: string;
   /**
+  * If set to true, disables strict networking enforcement for this destination. When disabled, Vault will not enforce allowed IP addresses and ports.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#disable_strict_networking SecretsSyncGhDestination#disable_strict_networking}
+  */
+  readonly disableStrictNetworking?: boolean | cdktn.IResolvable;
+  /**
+  * GitHub environment name where secrets will be synced. Required when secrets_location is set to 'environment'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#environment_name SecretsSyncGhDestination#environment_name}
+  */
+  readonly environmentName?: string;
+  /**
   * Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination#granularity SecretsSyncGhDestination#granularity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#granularity SecretsSyncGhDestination#granularity}
   */
   readonly granularity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination#id SecretsSyncGhDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#id SecretsSyncGhDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The ID of the installation generated by GitHub when the app referenced by the app_name was installed in the user’s GitHub account. Necessary if the app_name field is also provided.
+  * The ID of the installation generated by GitHub when the app referenced by the app_name was installed in the user's GitHub account. Necessary if the app_name field is also provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination#installation_id SecretsSyncGhDestination#installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#installation_id SecretsSyncGhDestination#installation_id}
   */
   readonly installationId?: number;
   /**
   * Unique name of the github destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination#name SecretsSyncGhDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#name SecretsSyncGhDestination#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination#namespace SecretsSyncGhDestination#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#namespace SecretsSyncGhDestination#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination#repository_name SecretsSyncGhDestination#repository_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#repository_name SecretsSyncGhDestination#repository_name}
   */
   readonly repositoryName?: string;
   /**
   * GitHub organization or username that owns the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination#repository_owner SecretsSyncGhDestination#repository_owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#repository_owner SecretsSyncGhDestination#repository_owner}
   */
   readonly repositoryOwner?: string;
   /**
   * Template describing how to generate external secret names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination#secret_name_template SecretsSyncGhDestination#secret_name_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#secret_name_template SecretsSyncGhDestination#secret_name_template}
   */
   readonly secretNameTemplate?: string;
+  /**
+  * Determines where secrets will be stored in GitHub. Valid values are 'repository' or 'environment'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#secrets_location SecretsSyncGhDestination#secrets_location}
+  */
+  readonly secretsLocation?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination}
 */
-export class SecretsSyncGhDestination extends cdktf.TerraformResource {
+export class SecretsSyncGhDestination extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -89,14 +125,14 @@ export class SecretsSyncGhDestination extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecretsSyncGhDestination resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecretsSyncGhDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsSyncGhDestination to import
-  * @param importFromId The id of the existing SecretsSyncGhDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretsSyncGhDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsSyncGhDestination to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_secrets_sync_gh_destination", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_secrets_sync_gh_destination", importId: importFromId, provider });
       }
 
   // ===========
@@ -104,7 +140,7 @@ export class SecretsSyncGhDestination extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gh_destination vault_secrets_sync_gh_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -115,7 +151,7 @@ export class SecretsSyncGhDestination extends cdktf.TerraformResource {
       terraformResourceType: 'vault_secrets_sync_gh_destination',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -127,7 +163,12 @@ export class SecretsSyncGhDestination extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accessToken = config.accessToken;
+    this._allowedIpv4Addresses = config.allowedIpv4Addresses;
+    this._allowedIpv6Addresses = config.allowedIpv6Addresses;
+    this._allowedPorts = config.allowedPorts;
     this._appName = config.appName;
+    this._disableStrictNetworking = config.disableStrictNetworking;
+    this._environmentName = config.environmentName;
     this._granularity = config.granularity;
     this._id = config.id;
     this._installationId = config.installationId;
@@ -136,6 +177,7 @@ export class SecretsSyncGhDestination extends cdktf.TerraformResource {
     this._repositoryName = config.repositoryName;
     this._repositoryOwner = config.repositoryOwner;
     this._secretNameTemplate = config.secretNameTemplate;
+    this._secretsLocation = config.secretsLocation;
   }
 
   // ==========
@@ -158,6 +200,54 @@ export class SecretsSyncGhDestination extends cdktf.TerraformResource {
     return this._accessToken;
   }
 
+  // allowed_ipv4_addresses - computed: false, optional: true, required: false
+  private _allowedIpv4Addresses?: string[]; 
+  public get allowedIpv4Addresses() {
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_ipv4_addresses'));
+  }
+  public set allowedIpv4Addresses(value: string[]) {
+    this._allowedIpv4Addresses = value;
+  }
+  public resetAllowedIpv4Addresses() {
+    this._allowedIpv4Addresses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedIpv4AddressesInput() {
+    return this._allowedIpv4Addresses;
+  }
+
+  // allowed_ipv6_addresses - computed: false, optional: true, required: false
+  private _allowedIpv6Addresses?: string[]; 
+  public get allowedIpv6Addresses() {
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_ipv6_addresses'));
+  }
+  public set allowedIpv6Addresses(value: string[]) {
+    this._allowedIpv6Addresses = value;
+  }
+  public resetAllowedIpv6Addresses() {
+    this._allowedIpv6Addresses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedIpv6AddressesInput() {
+    return this._allowedIpv6Addresses;
+  }
+
+  // allowed_ports - computed: false, optional: true, required: false
+  private _allowedPorts?: number[]; 
+  public get allowedPorts() {
+    return cdktn.Token.asNumberList(cdktn.Fn.tolist(this.getNumberListAttribute('allowed_ports')));
+  }
+  public set allowedPorts(value: number[]) {
+    this._allowedPorts = value;
+  }
+  public resetAllowedPorts() {
+    this._allowedPorts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedPortsInput() {
+    return this._allowedPorts;
+  }
+
   // app_name - computed: false, optional: true, required: false
   private _appName?: string; 
   public get appName() {
@@ -172,6 +262,38 @@ export class SecretsSyncGhDestination extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get appNameInput() {
     return this._appName;
+  }
+
+  // disable_strict_networking - computed: false, optional: true, required: false
+  private _disableStrictNetworking?: boolean | cdktn.IResolvable; 
+  public get disableStrictNetworking() {
+    return this.getBooleanAttribute('disable_strict_networking');
+  }
+  public set disableStrictNetworking(value: boolean | cdktn.IResolvable) {
+    this._disableStrictNetworking = value;
+  }
+  public resetDisableStrictNetworking() {
+    this._disableStrictNetworking = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableStrictNetworkingInput() {
+    return this._disableStrictNetworking;
+  }
+
+  // environment_name - computed: false, optional: true, required: false
+  private _environmentName?: string; 
+  public get environmentName() {
+    return this.getStringAttribute('environment_name');
+  }
+  public set environmentName(value: string) {
+    this._environmentName = value;
+  }
+  public resetEnvironmentName() {
+    this._environmentName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get environmentNameInput() {
+    return this._environmentName;
   }
 
   // granularity - computed: false, optional: true, required: false
@@ -299,6 +421,22 @@ export class SecretsSyncGhDestination extends cdktf.TerraformResource {
     return this._secretNameTemplate;
   }
 
+  // secrets_location - computed: false, optional: true, required: false
+  private _secretsLocation?: string; 
+  public get secretsLocation() {
+    return this.getStringAttribute('secrets_location');
+  }
+  public set secretsLocation(value: string) {
+    this._secretsLocation = value;
+  }
+  public resetSecretsLocation() {
+    this._secretsLocation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretsLocationInput() {
+    return this._secretsLocation;
+  }
+
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
@@ -310,77 +448,119 @@ export class SecretsSyncGhDestination extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_token: cdktf.stringToTerraform(this._accessToken),
-      app_name: cdktf.stringToTerraform(this._appName),
-      granularity: cdktf.stringToTerraform(this._granularity),
-      id: cdktf.stringToTerraform(this._id),
-      installation_id: cdktf.numberToTerraform(this._installationId),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      repository_name: cdktf.stringToTerraform(this._repositoryName),
-      repository_owner: cdktf.stringToTerraform(this._repositoryOwner),
-      secret_name_template: cdktf.stringToTerraform(this._secretNameTemplate),
+      access_token: cdktn.stringToTerraform(this._accessToken),
+      allowed_ipv4_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedIpv4Addresses),
+      allowed_ipv6_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedIpv6Addresses),
+      allowed_ports: cdktn.listMapper(cdktn.numberToTerraform, false)(this._allowedPorts),
+      app_name: cdktn.stringToTerraform(this._appName),
+      disable_strict_networking: cdktn.booleanToTerraform(this._disableStrictNetworking),
+      environment_name: cdktn.stringToTerraform(this._environmentName),
+      granularity: cdktn.stringToTerraform(this._granularity),
+      id: cdktn.stringToTerraform(this._id),
+      installation_id: cdktn.numberToTerraform(this._installationId),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      repository_name: cdktn.stringToTerraform(this._repositoryName),
+      repository_owner: cdktn.stringToTerraform(this._repositoryOwner),
+      secret_name_template: cdktn.stringToTerraform(this._secretNameTemplate),
+      secrets_location: cdktn.stringToTerraform(this._secretsLocation),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_token: {
-        value: cdktf.stringToHclTerraform(this._accessToken),
+        value: cdktn.stringToHclTerraform(this._accessToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
+      allowed_ipv4_addresses: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedIpv4Addresses),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      allowed_ipv6_addresses: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedIpv6Addresses),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      allowed_ports: {
+        value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(this._allowedPorts),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
       app_name: {
-        value: cdktf.stringToHclTerraform(this._appName),
+        value: cdktn.stringToHclTerraform(this._appName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      disable_strict_networking: {
+        value: cdktn.booleanToHclTerraform(this._disableStrictNetworking),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      environment_name: {
+        value: cdktn.stringToHclTerraform(this._environmentName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       granularity: {
-        value: cdktf.stringToHclTerraform(this._granularity),
+        value: cdktn.stringToHclTerraform(this._granularity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       installation_id: {
-        value: cdktf.numberToHclTerraform(this._installationId),
+        value: cdktn.numberToHclTerraform(this._installationId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_name: {
-        value: cdktf.stringToHclTerraform(this._repositoryName),
+        value: cdktn.stringToHclTerraform(this._repositoryName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       repository_owner: {
-        value: cdktf.stringToHclTerraform(this._repositoryOwner),
+        value: cdktn.stringToHclTerraform(this._repositoryOwner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_name_template: {
-        value: cdktf.stringToHclTerraform(this._secretNameTemplate),
+        value: cdktn.stringToHclTerraform(this._secretNameTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secrets_location: {
+        value: cdktn.stringToHclTerraform(this._secretsLocation),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

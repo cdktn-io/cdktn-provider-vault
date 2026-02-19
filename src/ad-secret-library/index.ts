@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_library
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_library
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AdSecretLibraryConfig extends cdktf.TerraformMetaArguments {
+export interface AdSecretLibraryConfig extends cdktn.TerraformMetaArguments {
   /**
   * The mount path for the AD backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_library#backend AdSecretLibrary#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_library#backend AdSecretLibrary#backend}
   */
   readonly backend: string;
   /**
   * Disable enforcing that service accounts must be checked in by the entity or client token that checked them out.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_library#disable_check_in_enforcement AdSecretLibrary#disable_check_in_enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_library#disable_check_in_enforcement AdSecretLibrary#disable_check_in_enforcement}
   */
-  readonly disableCheckInEnforcement?: boolean | cdktf.IResolvable;
+  readonly disableCheckInEnforcement?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_library#id AdSecretLibrary#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,39 +34,39 @@ export interface AdSecretLibraryConfig extends cdktf.TerraformMetaArguments {
   /**
   * The maximum amount of time, in seconds, a check-out last with renewal before Vault automatically checks it back in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_library#max_ttl AdSecretLibrary#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_library#max_ttl AdSecretLibrary#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * The name of the set of service accounts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_library#name AdSecretLibrary#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_library#name AdSecretLibrary#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_library#namespace AdSecretLibrary#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_library#namespace AdSecretLibrary#namespace}
   */
   readonly namespace?: string;
   /**
   * The names of all the service accounts that can be checked out from this set. These service accounts must already exist in Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_library#service_account_names AdSecretLibrary#service_account_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_library#service_account_names AdSecretLibrary#service_account_names}
   */
   readonly serviceAccountNames: string[];
   /**
   * The amount of time, in seconds, a single check-out lasts before Vault automatically checks it back in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_library#ttl AdSecretLibrary#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_library#ttl AdSecretLibrary#ttl}
   */
   readonly ttl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_library vault_ad_secret_library}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_library vault_ad_secret_library}
 */
-export class AdSecretLibrary extends cdktf.TerraformResource {
+export class AdSecretLibrary extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class AdSecretLibrary extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AdSecretLibrary resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AdSecretLibrary resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AdSecretLibrary to import
-  * @param importFromId The id of the existing AdSecretLibrary that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_library#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AdSecretLibrary that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_library#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AdSecretLibrary to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_ad_secret_library", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_ad_secret_library", importId: importFromId, provider });
       }
 
   // ===========
@@ -92,7 +92,7 @@ export class AdSecretLibrary extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_library vault_ad_secret_library} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_library vault_ad_secret_library} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +103,7 @@ export class AdSecretLibrary extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ad_secret_library',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -142,11 +142,11 @@ export class AdSecretLibrary extends cdktf.TerraformResource {
   }
 
   // disable_check_in_enforcement - computed: false, optional: true, required: false
-  private _disableCheckInEnforcement?: boolean | cdktf.IResolvable; 
+  private _disableCheckInEnforcement?: boolean | cdktn.IResolvable; 
   public get disableCheckInEnforcement() {
     return this.getBooleanAttribute('disable_check_in_enforcement');
   }
-  public set disableCheckInEnforcement(value: boolean | cdktf.IResolvable) {
+  public set disableCheckInEnforcement(value: boolean | cdktn.IResolvable) {
     this._disableCheckInEnforcement = value;
   }
   public resetDisableCheckInEnforcement() {
@@ -253,63 +253,63 @@ export class AdSecretLibrary extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      disable_check_in_enforcement: cdktf.booleanToTerraform(this._disableCheckInEnforcement),
-      id: cdktf.stringToTerraform(this._id),
-      max_ttl: cdktf.numberToTerraform(this._maxTtl),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      service_account_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._serviceAccountNames),
-      ttl: cdktf.numberToTerraform(this._ttl),
+      backend: cdktn.stringToTerraform(this._backend),
+      disable_check_in_enforcement: cdktn.booleanToTerraform(this._disableCheckInEnforcement),
+      id: cdktn.stringToTerraform(this._id),
+      max_ttl: cdktn.numberToTerraform(this._maxTtl),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      service_account_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._serviceAccountNames),
+      ttl: cdktn.numberToTerraform(this._ttl),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_check_in_enforcement: {
-        value: cdktf.booleanToHclTerraform(this._disableCheckInEnforcement),
+        value: cdktn.booleanToHclTerraform(this._disableCheckInEnforcement),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_ttl: {
-        value: cdktf.numberToHclTerraform(this._maxTtl),
+        value: cdktn.numberToHclTerraform(this._maxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_account_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._serviceAccountNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._serviceAccountNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

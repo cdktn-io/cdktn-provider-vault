@@ -1,92 +1,92 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface JwtAuthBackendRoleConfig extends cdktf.TerraformMetaArguments {
+export interface JwtAuthBackendRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The metadata to be tied to generated entity alias.
   *   This should be a list or map containing the metadata in key value pairs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#alias_metadata JwtAuthBackendRole#alias_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#alias_metadata JwtAuthBackendRole#alias_metadata}
   */
   readonly aliasMetadata?: { [key: string]: string };
   /**
   * The list of allowed values for redirect_uri during OIDC logins.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#allowed_redirect_uris JwtAuthBackendRole#allowed_redirect_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#allowed_redirect_uris JwtAuthBackendRole#allowed_redirect_uris}
   */
   readonly allowedRedirectUris?: string[];
   /**
   * Unique name of the auth backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#backend JwtAuthBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#backend JwtAuthBackendRole#backend}
   */
   readonly backend?: string;
   /**
   * List of aud claims to match against. Any match is sufficient.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#bound_audiences JwtAuthBackendRole#bound_audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#bound_audiences JwtAuthBackendRole#bound_audiences}
   */
   readonly boundAudiences?: string[];
   /**
   * Map of claims/values to match against. The expected value may be a single string or a comma-separated string list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#bound_claims JwtAuthBackendRole#bound_claims}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#bound_claims JwtAuthBackendRole#bound_claims}
   */
   readonly boundClaims?: { [key: string]: string };
   /**
   * How to interpret values in the claims/values map: can be either "string" (exact match) or "glob" (wildcard match).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#bound_claims_type JwtAuthBackendRole#bound_claims_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#bound_claims_type JwtAuthBackendRole#bound_claims_type}
   */
   readonly boundClaimsType?: string;
   /**
   * If set, requires that the sub claim matches this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#bound_subject JwtAuthBackendRole#bound_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#bound_subject JwtAuthBackendRole#bound_subject}
   */
   readonly boundSubject?: string;
   /**
   * Map of claims (keys) to be copied to specified metadata fields (values).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#claim_mappings JwtAuthBackendRole#claim_mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#claim_mappings JwtAuthBackendRole#claim_mappings}
   */
   readonly claimMappings?: { [key: string]: string };
   /**
   * The amount of leeway to add to all claims to account for clock skew, in seconds. Defaults to 60 seconds if set to 0 and can be disabled if set to -1. Only applicable with 'jwt' roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#clock_skew_leeway JwtAuthBackendRole#clock_skew_leeway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#clock_skew_leeway JwtAuthBackendRole#clock_skew_leeway}
   */
   readonly clockSkewLeeway?: number;
   /**
   * Disable bound claim value parsing. Useful when values contain commas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#disable_bound_claims_parsing JwtAuthBackendRole#disable_bound_claims_parsing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#disable_bound_claims_parsing JwtAuthBackendRole#disable_bound_claims_parsing}
   */
-  readonly disableBoundClaimsParsing?: boolean | cdktf.IResolvable;
+  readonly disableBoundClaimsParsing?: boolean | cdktn.IResolvable;
   /**
   * The amount of leeway to add to expiration (exp) claims to account for clock skew, in seconds. Defaults to 150 seconds if set to 0 and can be disabled if set to -1. Only applicable with 'jwt' roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#expiration_leeway JwtAuthBackendRole#expiration_leeway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#expiration_leeway JwtAuthBackendRole#expiration_leeway}
   */
   readonly expirationLeeway?: number;
   /**
   * The claim to use to uniquely identify the set of groups to which the user belongs; this will be used as the names for the Identity group aliases created due to a successful login. The claim value must be a list of strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#groups_claim JwtAuthBackendRole#groups_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#groups_claim JwtAuthBackendRole#groups_claim}
   */
   readonly groupsClaim?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#id JwtAuthBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#id JwtAuthBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -95,117 +95,117 @@ export interface JwtAuthBackendRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the allowable elapsed time in seconds since the last time the user was actively authenticated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#max_age JwtAuthBackendRole#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#max_age JwtAuthBackendRole#max_age}
   */
   readonly maxAge?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#namespace JwtAuthBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#namespace JwtAuthBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * The amount of leeway to add to not before (nbf) claims to account for clock skew, in seconds. Defaults to 150 seconds if set to 0 and can be disabled if set to -1. Only applicable with 'jwt' roles. 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#not_before_leeway JwtAuthBackendRole#not_before_leeway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#not_before_leeway JwtAuthBackendRole#not_before_leeway}
   */
   readonly notBeforeLeeway?: number;
   /**
   * List of OIDC scopes to be used with an OIDC role. The standard scope "openid" is automatically included and need not be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#oidc_scopes JwtAuthBackendRole#oidc_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#oidc_scopes JwtAuthBackendRole#oidc_scopes}
   */
   readonly oidcScopes?: string[];
   /**
   * Name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#role_name JwtAuthBackendRole#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#role_name JwtAuthBackendRole#role_name}
   */
   readonly roleName: string;
   /**
   * Type of role, either "oidc" (default) or "jwt"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#role_type JwtAuthBackendRole#role_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#role_type JwtAuthBackendRole#role_type}
   */
   readonly roleType?: string;
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_bound_cidrs JwtAuthBackendRole#token_bound_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_bound_cidrs JwtAuthBackendRole#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_explicit_max_ttl JwtAuthBackendRole#token_explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_explicit_max_ttl JwtAuthBackendRole#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_max_ttl JwtAuthBackendRole#token_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_max_ttl JwtAuthBackendRole#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_no_default_policy JwtAuthBackendRole#token_no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_no_default_policy JwtAuthBackendRole#token_no_default_policy}
   */
-  readonly tokenNoDefaultPolicy?: boolean | cdktf.IResolvable;
+  readonly tokenNoDefaultPolicy?: boolean | cdktn.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_num_uses JwtAuthBackendRole#token_num_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_num_uses JwtAuthBackendRole#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_period JwtAuthBackendRole#token_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_period JwtAuthBackendRole#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_policies JwtAuthBackendRole#token_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_policies JwtAuthBackendRole#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_ttl JwtAuthBackendRole#token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_ttl JwtAuthBackendRole#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#token_type JwtAuthBackendRole#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#token_type JwtAuthBackendRole#token_type}
   */
   readonly tokenType?: string;
   /**
   * The claim to use to uniquely identify the user; this will be used as the name for the Identity entity alias created due to a successful login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#user_claim JwtAuthBackendRole#user_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#user_claim JwtAuthBackendRole#user_claim}
   */
   readonly userClaim: string;
   /**
   * Specifies if the user_claim value uses JSON pointer syntax for referencing claims. By default, the user_claim value will not use JSON pointer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#user_claim_json_pointer JwtAuthBackendRole#user_claim_json_pointer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#user_claim_json_pointer JwtAuthBackendRole#user_claim_json_pointer}
   */
-  readonly userClaimJsonPointer?: boolean | cdktf.IResolvable;
+  readonly userClaimJsonPointer?: boolean | cdktn.IResolvable;
   /**
   * Log received OIDC tokens and claims when debug-level logging is active. Not recommended in production since sensitive information may be present in OIDC responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#verbose_oidc_logging JwtAuthBackendRole#verbose_oidc_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#verbose_oidc_logging JwtAuthBackendRole#verbose_oidc_logging}
   */
-  readonly verboseOidcLogging?: boolean | cdktf.IResolvable;
+  readonly verboseOidcLogging?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role}
 */
-export class JwtAuthBackendRole extends cdktf.TerraformResource {
+export class JwtAuthBackendRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -216,14 +216,14 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a JwtAuthBackendRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a JwtAuthBackendRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the JwtAuthBackendRole to import
-  * @param importFromId The id of the existing JwtAuthBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing JwtAuthBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the JwtAuthBackendRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_jwt_auth_backend_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_jwt_auth_backend_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -231,7 +231,7 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend_role vault_jwt_auth_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -242,7 +242,7 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_jwt_auth_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -309,7 +309,7 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
   // allowed_redirect_uris - computed: false, optional: true, required: false
   private _allowedRedirectUris?: string[]; 
   public get allowedRedirectUris() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_redirect_uris'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_redirect_uris'));
   }
   public set allowedRedirectUris(value: string[]) {
     this._allowedRedirectUris = value;
@@ -341,7 +341,7 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
   // bound_audiences - computed: false, optional: true, required: false
   private _boundAudiences?: string[]; 
   public get boundAudiences() {
-    return cdktf.Fn.tolist(this.getListAttribute('bound_audiences'));
+    return cdktn.Fn.tolist(this.getListAttribute('bound_audiences'));
   }
   public set boundAudiences(value: string[]) {
     this._boundAudiences = value;
@@ -435,11 +435,11 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
   }
 
   // disable_bound_claims_parsing - computed: false, optional: true, required: false
-  private _disableBoundClaimsParsing?: boolean | cdktf.IResolvable; 
+  private _disableBoundClaimsParsing?: boolean | cdktn.IResolvable; 
   public get disableBoundClaimsParsing() {
     return this.getBooleanAttribute('disable_bound_claims_parsing');
   }
-  public set disableBoundClaimsParsing(value: boolean | cdktf.IResolvable) {
+  public set disableBoundClaimsParsing(value: boolean | cdktn.IResolvable) {
     this._disableBoundClaimsParsing = value;
   }
   public resetDisableBoundClaimsParsing() {
@@ -549,7 +549,7 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
   // oidc_scopes - computed: false, optional: true, required: false
   private _oidcScopes?: string[]; 
   public get oidcScopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('oidc_scopes'));
+    return cdktn.Fn.tolist(this.getListAttribute('oidc_scopes'));
   }
   public set oidcScopes(value: string[]) {
     this._oidcScopes = value;
@@ -594,7 +594,7 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
   // token_bound_cidrs - computed: false, optional: true, required: false
   private _tokenBoundCidrs?: string[]; 
   public get tokenBoundCidrs() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_bound_cidrs'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_bound_cidrs'));
   }
   public set tokenBoundCidrs(value: string[]) {
     this._tokenBoundCidrs = value;
@@ -640,11 +640,11 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
   }
 
   // token_no_default_policy - computed: false, optional: true, required: false
-  private _tokenNoDefaultPolicy?: boolean | cdktf.IResolvable; 
+  private _tokenNoDefaultPolicy?: boolean | cdktn.IResolvable; 
   public get tokenNoDefaultPolicy() {
     return this.getBooleanAttribute('token_no_default_policy');
   }
-  public set tokenNoDefaultPolicy(value: boolean | cdktf.IResolvable) {
+  public set tokenNoDefaultPolicy(value: boolean | cdktn.IResolvable) {
     this._tokenNoDefaultPolicy = value;
   }
   public resetTokenNoDefaultPolicy() {
@@ -690,7 +690,7 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
   // token_policies - computed: false, optional: true, required: false
   private _tokenPolicies?: string[]; 
   public get tokenPolicies() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_policies'));
   }
   public set tokenPolicies(value: string[]) {
     this._tokenPolicies = value;
@@ -749,11 +749,11 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
   }
 
   // user_claim_json_pointer - computed: false, optional: true, required: false
-  private _userClaimJsonPointer?: boolean | cdktf.IResolvable; 
+  private _userClaimJsonPointer?: boolean | cdktn.IResolvable; 
   public get userClaimJsonPointer() {
     return this.getBooleanAttribute('user_claim_json_pointer');
   }
-  public set userClaimJsonPointer(value: boolean | cdktf.IResolvable) {
+  public set userClaimJsonPointer(value: boolean | cdktn.IResolvable) {
     this._userClaimJsonPointer = value;
   }
   public resetUserClaimJsonPointer() {
@@ -765,11 +765,11 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
   }
 
   // verbose_oidc_logging - computed: false, optional: true, required: false
-  private _verboseOidcLogging?: boolean | cdktf.IResolvable; 
+  private _verboseOidcLogging?: boolean | cdktn.IResolvable; 
   public get verboseOidcLogging() {
     return this.getBooleanAttribute('verbose_oidc_logging');
   }
-  public set verboseOidcLogging(value: boolean | cdktf.IResolvable) {
+  public set verboseOidcLogging(value: boolean | cdktn.IResolvable) {
     this._verboseOidcLogging = value;
   }
   public resetVerboseOidcLogging() {
@@ -786,224 +786,224 @@ export class JwtAuthBackendRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias_metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._aliasMetadata),
-      allowed_redirect_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedRedirectUris),
-      backend: cdktf.stringToTerraform(this._backend),
-      bound_audiences: cdktf.listMapper(cdktf.stringToTerraform, false)(this._boundAudiences),
-      bound_claims: cdktf.hashMapper(cdktf.stringToTerraform)(this._boundClaims),
-      bound_claims_type: cdktf.stringToTerraform(this._boundClaimsType),
-      bound_subject: cdktf.stringToTerraform(this._boundSubject),
-      claim_mappings: cdktf.hashMapper(cdktf.stringToTerraform)(this._claimMappings),
-      clock_skew_leeway: cdktf.numberToTerraform(this._clockSkewLeeway),
-      disable_bound_claims_parsing: cdktf.booleanToTerraform(this._disableBoundClaimsParsing),
-      expiration_leeway: cdktf.numberToTerraform(this._expirationLeeway),
-      groups_claim: cdktf.stringToTerraform(this._groupsClaim),
-      id: cdktf.stringToTerraform(this._id),
-      max_age: cdktf.numberToTerraform(this._maxAge),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      not_before_leeway: cdktf.numberToTerraform(this._notBeforeLeeway),
-      oidc_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._oidcScopes),
-      role_name: cdktf.stringToTerraform(this._roleName),
-      role_type: cdktf.stringToTerraform(this._roleType),
-      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenBoundCidrs),
-      token_explicit_max_ttl: cdktf.numberToTerraform(this._tokenExplicitMaxTtl),
-      token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
-      token_no_default_policy: cdktf.booleanToTerraform(this._tokenNoDefaultPolicy),
-      token_num_uses: cdktf.numberToTerraform(this._tokenNumUses),
-      token_period: cdktf.numberToTerraform(this._tokenPeriod),
-      token_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenPolicies),
-      token_ttl: cdktf.numberToTerraform(this._tokenTtl),
-      token_type: cdktf.stringToTerraform(this._tokenType),
-      user_claim: cdktf.stringToTerraform(this._userClaim),
-      user_claim_json_pointer: cdktf.booleanToTerraform(this._userClaimJsonPointer),
-      verbose_oidc_logging: cdktf.booleanToTerraform(this._verboseOidcLogging),
+      alias_metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._aliasMetadata),
+      allowed_redirect_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedRedirectUris),
+      backend: cdktn.stringToTerraform(this._backend),
+      bound_audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(this._boundAudiences),
+      bound_claims: cdktn.hashMapper(cdktn.stringToTerraform)(this._boundClaims),
+      bound_claims_type: cdktn.stringToTerraform(this._boundClaimsType),
+      bound_subject: cdktn.stringToTerraform(this._boundSubject),
+      claim_mappings: cdktn.hashMapper(cdktn.stringToTerraform)(this._claimMappings),
+      clock_skew_leeway: cdktn.numberToTerraform(this._clockSkewLeeway),
+      disable_bound_claims_parsing: cdktn.booleanToTerraform(this._disableBoundClaimsParsing),
+      expiration_leeway: cdktn.numberToTerraform(this._expirationLeeway),
+      groups_claim: cdktn.stringToTerraform(this._groupsClaim),
+      id: cdktn.stringToTerraform(this._id),
+      max_age: cdktn.numberToTerraform(this._maxAge),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      not_before_leeway: cdktn.numberToTerraform(this._notBeforeLeeway),
+      oidc_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._oidcScopes),
+      role_name: cdktn.stringToTerraform(this._roleName),
+      role_type: cdktn.stringToTerraform(this._roleType),
+      token_bound_cidrs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenBoundCidrs),
+      token_explicit_max_ttl: cdktn.numberToTerraform(this._tokenExplicitMaxTtl),
+      token_max_ttl: cdktn.numberToTerraform(this._tokenMaxTtl),
+      token_no_default_policy: cdktn.booleanToTerraform(this._tokenNoDefaultPolicy),
+      token_num_uses: cdktn.numberToTerraform(this._tokenNumUses),
+      token_period: cdktn.numberToTerraform(this._tokenPeriod),
+      token_policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenPolicies),
+      token_ttl: cdktn.numberToTerraform(this._tokenTtl),
+      token_type: cdktn.stringToTerraform(this._tokenType),
+      user_claim: cdktn.stringToTerraform(this._userClaim),
+      user_claim_json_pointer: cdktn.booleanToTerraform(this._userClaimJsonPointer),
+      verbose_oidc_logging: cdktn.booleanToTerraform(this._verboseOidcLogging),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias_metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._aliasMetadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._aliasMetadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       allowed_redirect_uris: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedRedirectUris),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedRedirectUris),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bound_audiences: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundAudiences),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._boundAudiences),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       bound_claims: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._boundClaims),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._boundClaims),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       bound_claims_type: {
-        value: cdktf.stringToHclTerraform(this._boundClaimsType),
+        value: cdktn.stringToHclTerraform(this._boundClaimsType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bound_subject: {
-        value: cdktf.stringToHclTerraform(this._boundSubject),
+        value: cdktn.stringToHclTerraform(this._boundSubject),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       claim_mappings: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._claimMappings),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._claimMappings),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       clock_skew_leeway: {
-        value: cdktf.numberToHclTerraform(this._clockSkewLeeway),
+        value: cdktn.numberToHclTerraform(this._clockSkewLeeway),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       disable_bound_claims_parsing: {
-        value: cdktf.booleanToHclTerraform(this._disableBoundClaimsParsing),
+        value: cdktn.booleanToHclTerraform(this._disableBoundClaimsParsing),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       expiration_leeway: {
-        value: cdktf.numberToHclTerraform(this._expirationLeeway),
+        value: cdktn.numberToHclTerraform(this._expirationLeeway),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       groups_claim: {
-        value: cdktf.stringToHclTerraform(this._groupsClaim),
+        value: cdktn.stringToHclTerraform(this._groupsClaim),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_age: {
-        value: cdktf.numberToHclTerraform(this._maxAge),
+        value: cdktn.numberToHclTerraform(this._maxAge),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       not_before_leeway: {
-        value: cdktf.numberToHclTerraform(this._notBeforeLeeway),
+        value: cdktn.numberToHclTerraform(this._notBeforeLeeway),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       oidc_scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._oidcScopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._oidcScopes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       role_name: {
-        value: cdktf.stringToHclTerraform(this._roleName),
+        value: cdktn.stringToHclTerraform(this._roleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_type: {
-        value: cdktf.stringToHclTerraform(this._roleType),
+        value: cdktn.stringToHclTerraform(this._roleType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_bound_cidrs: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenBoundCidrs),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenBoundCidrs),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       token_explicit_max_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenExplicitMaxTtl),
+        value: cdktn.numberToHclTerraform(this._tokenExplicitMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_max_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenMaxTtl),
+        value: cdktn.numberToHclTerraform(this._tokenMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_no_default_policy: {
-        value: cdktf.booleanToHclTerraform(this._tokenNoDefaultPolicy),
+        value: cdktn.booleanToHclTerraform(this._tokenNoDefaultPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       token_num_uses: {
-        value: cdktf.numberToHclTerraform(this._tokenNumUses),
+        value: cdktn.numberToHclTerraform(this._tokenNumUses),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_period: {
-        value: cdktf.numberToHclTerraform(this._tokenPeriod),
+        value: cdktn.numberToHclTerraform(this._tokenPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_policies: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenPolicies),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenPolicies),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       token_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenTtl),
+        value: cdktn.numberToHclTerraform(this._tokenTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_type: {
-        value: cdktf.stringToHclTerraform(this._tokenType),
+        value: cdktn.stringToHclTerraform(this._tokenType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_claim: {
-        value: cdktf.stringToHclTerraform(this._userClaim),
+        value: cdktn.stringToHclTerraform(this._userClaim),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_claim_json_pointer: {
-        value: cdktf.booleanToHclTerraform(this._userClaimJsonPointer),
+        value: cdktn.booleanToHclTerraform(this._userClaimJsonPointer),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       verbose_oidc_logging: {
-        value: cdktf.booleanToHclTerraform(this._verboseOidcLogging),
+        value: cdktn.booleanToHclTerraform(this._verboseOidcLogging),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

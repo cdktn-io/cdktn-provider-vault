@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_login_enforcement
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IdentityMfaLoginEnforcementConfig extends cdktf.TerraformMetaArguments {
+export interface IdentityMfaLoginEnforcementConfig extends cdktn.TerraformMetaArguments {
   /**
   * Set of auth method accessor IDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement#auth_method_accessors IdentityMfaLoginEnforcement#auth_method_accessors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_login_enforcement#auth_method_accessors IdentityMfaLoginEnforcement#auth_method_accessors}
   */
   readonly authMethodAccessors?: string[];
   /**
   * Set of auth method types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement#auth_method_types IdentityMfaLoginEnforcement#auth_method_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_login_enforcement#auth_method_types IdentityMfaLoginEnforcement#auth_method_types}
   */
   readonly authMethodTypes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement#id IdentityMfaLoginEnforcement#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_login_enforcement#id IdentityMfaLoginEnforcement#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,39 +34,39 @@ export interface IdentityMfaLoginEnforcementConfig extends cdktf.TerraformMetaAr
   /**
   * Set of identity entity IDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement#identity_entity_ids IdentityMfaLoginEnforcement#identity_entity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_login_enforcement#identity_entity_ids IdentityMfaLoginEnforcement#identity_entity_ids}
   */
   readonly identityEntityIds?: string[];
   /**
   * Set of identity group IDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement#identity_group_ids IdentityMfaLoginEnforcement#identity_group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_login_enforcement#identity_group_ids IdentityMfaLoginEnforcement#identity_group_ids}
   */
   readonly identityGroupIds?: string[];
   /**
   * Set of MFA method UUIDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement#mfa_method_ids IdentityMfaLoginEnforcement#mfa_method_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_login_enforcement#mfa_method_ids IdentityMfaLoginEnforcement#mfa_method_ids}
   */
   readonly mfaMethodIds: string[];
   /**
   * Login enforcement name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement#name IdentityMfaLoginEnforcement#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_login_enforcement#name IdentityMfaLoginEnforcement#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement#namespace IdentityMfaLoginEnforcement#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_login_enforcement#namespace IdentityMfaLoginEnforcement#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement}
 */
-export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
+export class IdentityMfaLoginEnforcement extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IdentityMfaLoginEnforcement resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IdentityMfaLoginEnforcement resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityMfaLoginEnforcement to import
-  * @param importFromId The id of the existing IdentityMfaLoginEnforcement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityMfaLoginEnforcement that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_login_enforcement#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityMfaLoginEnforcement to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_mfa_login_enforcement", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_mfa_login_enforcement", importId: importFromId, provider });
       }
 
   // ===========
@@ -92,7 +92,7 @@ export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_login_enforcement vault_identity_mfa_login_enforcement} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +103,7 @@ export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_mfa_login_enforcement',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -131,7 +131,7 @@ export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
   // auth_method_accessors - computed: false, optional: true, required: false
   private _authMethodAccessors?: string[]; 
   public get authMethodAccessors() {
-    return cdktf.Fn.tolist(this.getListAttribute('auth_method_accessors'));
+    return cdktn.Fn.tolist(this.getListAttribute('auth_method_accessors'));
   }
   public set authMethodAccessors(value: string[]) {
     this._authMethodAccessors = value;
@@ -147,7 +147,7 @@ export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
   // auth_method_types - computed: false, optional: true, required: false
   private _authMethodTypes?: string[]; 
   public get authMethodTypes() {
-    return cdktf.Fn.tolist(this.getListAttribute('auth_method_types'));
+    return cdktn.Fn.tolist(this.getListAttribute('auth_method_types'));
   }
   public set authMethodTypes(value: string[]) {
     this._authMethodTypes = value;
@@ -179,7 +179,7 @@ export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
   // identity_entity_ids - computed: false, optional: true, required: false
   private _identityEntityIds?: string[]; 
   public get identityEntityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_entity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_entity_ids'));
   }
   public set identityEntityIds(value: string[]) {
     this._identityEntityIds = value;
@@ -195,7 +195,7 @@ export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
   // identity_group_ids - computed: false, optional: true, required: false
   private _identityGroupIds?: string[]; 
   public get identityGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('identity_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('identity_group_ids'));
   }
   public set identityGroupIds(value: string[]) {
     this._identityGroupIds = value;
@@ -211,7 +211,7 @@ export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
   // mfa_method_ids - computed: false, optional: false, required: true
   private _mfaMethodIds?: string[]; 
   public get mfaMethodIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('mfa_method_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('mfa_method_ids'));
   }
   public set mfaMethodIds(value: string[]) {
     this._mfaMethodIds = value;
@@ -271,63 +271,63 @@ export class IdentityMfaLoginEnforcement extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auth_method_accessors: cdktf.listMapper(cdktf.stringToTerraform, false)(this._authMethodAccessors),
-      auth_method_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._authMethodTypes),
-      id: cdktf.stringToTerraform(this._id),
-      identity_entity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._identityEntityIds),
-      identity_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._identityGroupIds),
-      mfa_method_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._mfaMethodIds),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
+      auth_method_accessors: cdktn.listMapper(cdktn.stringToTerraform, false)(this._authMethodAccessors),
+      auth_method_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._authMethodTypes),
+      id: cdktn.stringToTerraform(this._id),
+      identity_entity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._identityEntityIds),
+      identity_group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._identityGroupIds),
+      mfa_method_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._mfaMethodIds),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auth_method_accessors: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._authMethodAccessors),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._authMethodAccessors),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       auth_method_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._authMethodTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._authMethodTypes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_entity_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._identityEntityIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._identityEntityIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       identity_group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._identityGroupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._identityGroupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       mfa_method_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._mfaMethodIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._mfaMethodIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,61 +1,61 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AwsAuthBackendClientConfig extends cdktf.TerraformMetaArguments {
+export interface AwsAuthBackendClientConfig extends cdktn.TerraformMetaArguments {
   /**
   * AWS Access key with permissions to query AWS APIs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#access_key AwsAuthBackendClient#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#access_key AwsAuthBackendClient#access_key}
   */
   readonly accessKey?: string;
   /**
   * List of additional headers that are allowed to be in STS request headers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#allowed_sts_header_values AwsAuthBackendClient#allowed_sts_header_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#allowed_sts_header_values AwsAuthBackendClient#allowed_sts_header_values}
   */
   readonly allowedStsHeaderValues?: string[];
   /**
   * Unique name of the auth backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#backend AwsAuthBackendClient#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#backend AwsAuthBackendClient#backend}
   */
   readonly backend?: string;
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#disable_automated_rotation AwsAuthBackendClient#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#disable_automated_rotation AwsAuthBackendClient#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * URL to override the default generated endpoint for making AWS EC2 API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#ec2_endpoint AwsAuthBackendClient#ec2_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#ec2_endpoint AwsAuthBackendClient#ec2_endpoint}
   */
   readonly ec2Endpoint?: string;
   /**
   * URL to override the default generated endpoint for making AWS IAM API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#iam_endpoint AwsAuthBackendClient#iam_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#iam_endpoint AwsAuthBackendClient#iam_endpoint}
   */
   readonly iamEndpoint?: string;
   /**
   * The value to require in the X-Vault-AWS-IAM-Server-ID header as part of GetCallerIdentity requests that are used in the iam auth method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#iam_server_id_header_value AwsAuthBackendClient#iam_server_id_header_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#iam_server_id_header_value AwsAuthBackendClient#iam_server_id_header_value}
   */
   readonly iamServerIdHeaderValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#id AwsAuthBackendClient#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -64,81 +64,93 @@ export interface AwsAuthBackendClientConfig extends cdktf.TerraformMetaArguments
   /**
   * The audience claim value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#identity_token_audience AwsAuthBackendClient#identity_token_audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#identity_token_audience AwsAuthBackendClient#identity_token_audience}
   */
   readonly identityTokenAudience?: string;
   /**
   * The TTL of generated identity tokens in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#identity_token_ttl AwsAuthBackendClient#identity_token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#identity_token_ttl AwsAuthBackendClient#identity_token_ttl}
   */
   readonly identityTokenTtl?: number;
   /**
   * Number of max retries the client should use for recoverable errors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#max_retries AwsAuthBackendClient#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#max_retries AwsAuthBackendClient#max_retries}
   */
   readonly maxRetries?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#namespace AwsAuthBackendClient#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#namespace AwsAuthBackendClient#namespace}
   */
   readonly namespace?: string;
   /**
   * Role ARN to assume for plugin identity token federation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#role_arn AwsAuthBackendClient#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#role_arn AwsAuthBackendClient#role_arn}
   */
   readonly roleArn?: string;
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#rotation_period AwsAuthBackendClient#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#rotation_period AwsAuthBackendClient#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#rotation_schedule AwsAuthBackendClient#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#rotation_schedule AwsAuthBackendClient#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#rotation_window AwsAuthBackendClient#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#rotation_window AwsAuthBackendClient#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * AWS Secret key with permissions to query AWS APIs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#secret_key AwsAuthBackendClient#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#secret_key AwsAuthBackendClient#secret_key}
   */
   readonly secretKey?: string;
   /**
+  * Write-only AWS Secret key with permissions to query AWS APIs. This field is recommended over secret_key for enhanced security.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#secret_key_wo AwsAuthBackendClient#secret_key_wo}
+  */
+  readonly secretKeyWo?: string;
+  /**
+  * Version counter for write-only secret_key field. Increment this value to force update of the secret.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#secret_key_wo_version AwsAuthBackendClient#secret_key_wo_version}
+  */
+  readonly secretKeyWoVersion?: number;
+  /**
   * URL to override the default generated endpoint for making AWS STS API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#sts_endpoint AwsAuthBackendClient#sts_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#sts_endpoint AwsAuthBackendClient#sts_endpoint}
   */
   readonly stsEndpoint?: string;
   /**
   * Region to override the default region for making AWS STS API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#sts_region AwsAuthBackendClient#sts_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#sts_region AwsAuthBackendClient#sts_region}
   */
   readonly stsRegion?: string;
   /**
   * If set, will override sts_region and use the region from the client request's header
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#use_sts_region_from_client AwsAuthBackendClient#use_sts_region_from_client}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#use_sts_region_from_client AwsAuthBackendClient#use_sts_region_from_client}
   */
-  readonly useStsRegionFromClient?: boolean | cdktf.IResolvable;
+  readonly useStsRegionFromClient?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client}
 */
-export class AwsAuthBackendClient extends cdktf.TerraformResource {
+export class AwsAuthBackendClient extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -149,14 +161,14 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AwsAuthBackendClient resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AwsAuthBackendClient resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsAuthBackendClient to import
-  * @param importFromId The id of the existing AwsAuthBackendClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsAuthBackendClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsAuthBackendClient to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_aws_auth_backend_client", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_aws_auth_backend_client", importId: importFromId, provider });
       }
 
   // ===========
@@ -164,7 +176,7 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_client vault_aws_auth_backend_client} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -175,7 +187,7 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
       terraformResourceType: 'vault_aws_auth_backend_client',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -203,6 +215,8 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
     this._rotationSchedule = config.rotationSchedule;
     this._rotationWindow = config.rotationWindow;
     this._secretKey = config.secretKey;
+    this._secretKeyWo = config.secretKeyWo;
+    this._secretKeyWoVersion = config.secretKeyWoVersion;
     this._stsEndpoint = config.stsEndpoint;
     this._stsRegion = config.stsRegion;
     this._useStsRegionFromClient = config.useStsRegionFromClient;
@@ -231,7 +245,7 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
   // allowed_sts_header_values - computed: false, optional: true, required: false
   private _allowedStsHeaderValues?: string[]; 
   public get allowedStsHeaderValues() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_sts_header_values'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_sts_header_values'));
   }
   public set allowedStsHeaderValues(value: string[]) {
     this._allowedStsHeaderValues = value;
@@ -261,11 +275,11 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -484,6 +498,38 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
     return this._secretKey;
   }
 
+  // secret_key_wo - computed: false, optional: true, required: false
+  private _secretKeyWo?: string; 
+  public get secretKeyWo() {
+    return this.getStringAttribute('secret_key_wo');
+  }
+  public set secretKeyWo(value: string) {
+    this._secretKeyWo = value;
+  }
+  public resetSecretKeyWo() {
+    this._secretKeyWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretKeyWoInput() {
+    return this._secretKeyWo;
+  }
+
+  // secret_key_wo_version - computed: false, optional: true, required: false
+  private _secretKeyWoVersion?: number; 
+  public get secretKeyWoVersion() {
+    return this.getNumberAttribute('secret_key_wo_version');
+  }
+  public set secretKeyWoVersion(value: number) {
+    this._secretKeyWoVersion = value;
+  }
+  public resetSecretKeyWoVersion() {
+    this._secretKeyWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretKeyWoVersionInput() {
+    return this._secretKeyWoVersion;
+  }
+
   // sts_endpoint - computed: false, optional: true, required: false
   private _stsEndpoint?: string; 
   public get stsEndpoint() {
@@ -517,11 +563,11 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
   }
 
   // use_sts_region_from_client - computed: true, optional: true, required: false
-  private _useStsRegionFromClient?: boolean | cdktf.IResolvable; 
+  private _useStsRegionFromClient?: boolean | cdktn.IResolvable; 
   public get useStsRegionFromClient() {
     return this.getBooleanAttribute('use_sts_region_from_client');
   }
-  public set useStsRegionFromClient(value: boolean | cdktf.IResolvable) {
+  public set useStsRegionFromClient(value: boolean | cdktn.IResolvable) {
     this._useStsRegionFromClient = value;
   }
   public resetUseStsRegionFromClient() {
@@ -538,147 +584,161 @@ export class AwsAuthBackendClient extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_key: cdktf.stringToTerraform(this._accessKey),
-      allowed_sts_header_values: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedStsHeaderValues),
-      backend: cdktf.stringToTerraform(this._backend),
-      disable_automated_rotation: cdktf.booleanToTerraform(this._disableAutomatedRotation),
-      ec2_endpoint: cdktf.stringToTerraform(this._ec2Endpoint),
-      iam_endpoint: cdktf.stringToTerraform(this._iamEndpoint),
-      iam_server_id_header_value: cdktf.stringToTerraform(this._iamServerIdHeaderValue),
-      id: cdktf.stringToTerraform(this._id),
-      identity_token_audience: cdktf.stringToTerraform(this._identityTokenAudience),
-      identity_token_ttl: cdktf.numberToTerraform(this._identityTokenTtl),
-      max_retries: cdktf.numberToTerraform(this._maxRetries),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      role_arn: cdktf.stringToTerraform(this._roleArn),
-      rotation_period: cdktf.numberToTerraform(this._rotationPeriod),
-      rotation_schedule: cdktf.stringToTerraform(this._rotationSchedule),
-      rotation_window: cdktf.numberToTerraform(this._rotationWindow),
-      secret_key: cdktf.stringToTerraform(this._secretKey),
-      sts_endpoint: cdktf.stringToTerraform(this._stsEndpoint),
-      sts_region: cdktf.stringToTerraform(this._stsRegion),
-      use_sts_region_from_client: cdktf.booleanToTerraform(this._useStsRegionFromClient),
+      access_key: cdktn.stringToTerraform(this._accessKey),
+      allowed_sts_header_values: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedStsHeaderValues),
+      backend: cdktn.stringToTerraform(this._backend),
+      disable_automated_rotation: cdktn.booleanToTerraform(this._disableAutomatedRotation),
+      ec2_endpoint: cdktn.stringToTerraform(this._ec2Endpoint),
+      iam_endpoint: cdktn.stringToTerraform(this._iamEndpoint),
+      iam_server_id_header_value: cdktn.stringToTerraform(this._iamServerIdHeaderValue),
+      id: cdktn.stringToTerraform(this._id),
+      identity_token_audience: cdktn.stringToTerraform(this._identityTokenAudience),
+      identity_token_ttl: cdktn.numberToTerraform(this._identityTokenTtl),
+      max_retries: cdktn.numberToTerraform(this._maxRetries),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      role_arn: cdktn.stringToTerraform(this._roleArn),
+      rotation_period: cdktn.numberToTerraform(this._rotationPeriod),
+      rotation_schedule: cdktn.stringToTerraform(this._rotationSchedule),
+      rotation_window: cdktn.numberToTerraform(this._rotationWindow),
+      secret_key: cdktn.stringToTerraform(this._secretKey),
+      secret_key_wo: cdktn.stringToTerraform(this._secretKeyWo),
+      secret_key_wo_version: cdktn.numberToTerraform(this._secretKeyWoVersion),
+      sts_endpoint: cdktn.stringToTerraform(this._stsEndpoint),
+      sts_region: cdktn.stringToTerraform(this._stsRegion),
+      use_sts_region_from_client: cdktn.booleanToTerraform(this._useStsRegionFromClient),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_key: {
-        value: cdktf.stringToHclTerraform(this._accessKey),
+        value: cdktn.stringToHclTerraform(this._accessKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allowed_sts_header_values: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedStsHeaderValues),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedStsHeaderValues),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_automated_rotation: {
-        value: cdktf.booleanToHclTerraform(this._disableAutomatedRotation),
+        value: cdktn.booleanToHclTerraform(this._disableAutomatedRotation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ec2_endpoint: {
-        value: cdktf.stringToHclTerraform(this._ec2Endpoint),
+        value: cdktn.stringToHclTerraform(this._ec2Endpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_endpoint: {
-        value: cdktf.stringToHclTerraform(this._iamEndpoint),
+        value: cdktn.stringToHclTerraform(this._iamEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_server_id_header_value: {
-        value: cdktf.stringToHclTerraform(this._iamServerIdHeaderValue),
+        value: cdktn.stringToHclTerraform(this._iamServerIdHeaderValue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_token_audience: {
-        value: cdktf.stringToHclTerraform(this._identityTokenAudience),
+        value: cdktn.stringToHclTerraform(this._identityTokenAudience),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_token_ttl: {
-        value: cdktf.numberToHclTerraform(this._identityTokenTtl),
+        value: cdktn.numberToHclTerraform(this._identityTokenTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_retries: {
-        value: cdktf.numberToHclTerraform(this._maxRetries),
+        value: cdktn.numberToHclTerraform(this._maxRetries),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_arn: {
-        value: cdktf.stringToHclTerraform(this._roleArn),
+        value: cdktn.stringToHclTerraform(this._roleArn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rotation_period: {
-        value: cdktf.numberToHclTerraform(this._rotationPeriod),
+        value: cdktn.numberToHclTerraform(this._rotationPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       rotation_schedule: {
-        value: cdktf.stringToHclTerraform(this._rotationSchedule),
+        value: cdktn.stringToHclTerraform(this._rotationSchedule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rotation_window: {
-        value: cdktf.numberToHclTerraform(this._rotationWindow),
+        value: cdktn.numberToHclTerraform(this._rotationWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       secret_key: {
-        value: cdktf.stringToHclTerraform(this._secretKey),
+        value: cdktn.stringToHclTerraform(this._secretKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
+      secret_key_wo: {
+        value: cdktn.stringToHclTerraform(this._secretKeyWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_key_wo_version: {
+        value: cdktn.numberToHclTerraform(this._secretKeyWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       sts_endpoint: {
-        value: cdktf.stringToHclTerraform(this._stsEndpoint),
+        value: cdktn.stringToHclTerraform(this._stsEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sts_region: {
-        value: cdktf.stringToHclTerraform(this._stsRegion),
+        value: cdktn.stringToHclTerraform(this._stsRegion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_sts_region_from_client: {
-        value: cdktf.booleanToHclTerraform(this._useStsRegionFromClient),
+        value: cdktn.booleanToHclTerraform(this._useStsRegionFromClient),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/generic_secret
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/generic_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataVaultGenericSecretConfig extends cdktf.TerraformMetaArguments {
+export interface DataVaultGenericSecretConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/generic_secret#id DataVaultGenericSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/generic_secret#id DataVaultGenericSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface DataVaultGenericSecretConfig extends cdktf.TerraformMetaArgumen
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/generic_secret#namespace DataVaultGenericSecret#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/generic_secret#namespace DataVaultGenericSecret#namespace}
   */
   readonly namespace?: string;
   /**
   * Full path from which a secret will be read.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/generic_secret#path DataVaultGenericSecret#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/generic_secret#path DataVaultGenericSecret#path}
   */
   readonly path: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/generic_secret#version DataVaultGenericSecret#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/generic_secret#version DataVaultGenericSecret#version}
   */
   readonly version?: number;
   /**
   * If set to true, stores 'lease_start_time' in the TF state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/generic_secret#with_lease_start_time DataVaultGenericSecret#with_lease_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/generic_secret#with_lease_start_time DataVaultGenericSecret#with_lease_start_time}
   */
-  readonly withLeaseStartTime?: boolean | cdktf.IResolvable;
+  readonly withLeaseStartTime?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/generic_secret vault_generic_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/generic_secret vault_generic_secret}
 */
-export class DataVaultGenericSecret extends cdktf.TerraformDataSource {
+export class DataVaultGenericSecret extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -57,14 +57,14 @@ export class DataVaultGenericSecret extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataVaultGenericSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataVaultGenericSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultGenericSecret to import
-  * @param importFromId The id of the existing DataVaultGenericSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/generic_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultGenericSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/generic_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultGenericSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_generic_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_generic_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -72,7 +72,7 @@ export class DataVaultGenericSecret extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/generic_secret vault_generic_secret} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/generic_secret vault_generic_secret} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class DataVaultGenericSecret extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_generic_secret',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -106,7 +106,7 @@ export class DataVaultGenericSecret extends cdktf.TerraformDataSource {
   // ==========
 
   // data - computed: true, optional: false, required: false
-  private _data = new cdktf.StringMap(this, "data");
+  private _data = new cdktn.StringMap(this, "data");
   public get data() {
     return this._data;
   }
@@ -198,11 +198,11 @@ export class DataVaultGenericSecret extends cdktf.TerraformDataSource {
   }
 
   // with_lease_start_time - computed: false, optional: true, required: false
-  private _withLeaseStartTime?: boolean | cdktf.IResolvable; 
+  private _withLeaseStartTime?: boolean | cdktn.IResolvable; 
   public get withLeaseStartTime() {
     return this.getBooleanAttribute('with_lease_start_time');
   }
-  public set withLeaseStartTime(value: boolean | cdktf.IResolvable) {
+  public set withLeaseStartTime(value: boolean | cdktn.IResolvable) {
     this._withLeaseStartTime = value;
   }
   public resetWithLeaseStartTime() {
@@ -219,42 +219,42 @@ export class DataVaultGenericSecret extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      path: cdktf.stringToTerraform(this._path),
-      version: cdktf.numberToTerraform(this._version),
-      with_lease_start_time: cdktf.booleanToTerraform(this._withLeaseStartTime),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      path: cdktn.stringToTerraform(this._path),
+      version: cdktn.numberToTerraform(this._version),
+      with_lease_start_time: cdktn.booleanToTerraform(this._withLeaseStartTime),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.numberToHclTerraform(this._version),
+        value: cdktn.numberToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       with_lease_start_time: {
-        value: cdktf.booleanToHclTerraform(this._withLeaseStartTime),
+        value: cdktn.booleanToHclTerraform(this._withLeaseStartTime),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

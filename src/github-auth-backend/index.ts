@@ -1,44 +1,44 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GithubAuthBackendConfig extends cdktf.TerraformMetaArguments {
+export interface GithubAuthBackendConfig extends cdktn.TerraformMetaArguments {
   /**
   * The metadata to be tied to generated entity alias.
   *   This should be a list or map containing the metadata in key value pairs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#alias_metadata GithubAuthBackend#alias_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#alias_metadata GithubAuthBackend#alias_metadata}
   */
   readonly aliasMetadata?: { [key: string]: string };
   /**
   * The API endpoint to use. Useful if you are running GitHub Enterprise or an API-compatible authentication server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#base_url GithubAuthBackend#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#base_url GithubAuthBackend#base_url}
   */
   readonly baseUrl?: string;
   /**
   * Specifies the description of the mount. This overrides the current stored value, if any.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#description GithubAuthBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#description GithubAuthBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#disable_remount GithubAuthBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#disable_remount GithubAuthBackend#disable_remount}
   */
-  readonly disableRemount?: boolean | cdktf.IResolvable;
+  readonly disableRemount?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#id GithubAuthBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#id GithubAuthBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,189 +47,189 @@ export interface GithubAuthBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#namespace GithubAuthBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#namespace GithubAuthBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * The organization users must be part of.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#organization GithubAuthBackend#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#organization GithubAuthBackend#organization}
   */
   readonly organization: string;
   /**
   * The ID of the organization users must be part of. Vault will attempt to fetch and set this value if it is not provided (vault-1.10+)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#organization_id GithubAuthBackend#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#organization_id GithubAuthBackend#organization_id}
   */
   readonly organizationId?: number;
   /**
   * Path where the auth backend is mounted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#path GithubAuthBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#path GithubAuthBackend#path}
   */
   readonly path?: string;
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#token_bound_cidrs GithubAuthBackend#token_bound_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#token_bound_cidrs GithubAuthBackend#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#token_explicit_max_ttl GithubAuthBackend#token_explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#token_explicit_max_ttl GithubAuthBackend#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#token_max_ttl GithubAuthBackend#token_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#token_max_ttl GithubAuthBackend#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#token_no_default_policy GithubAuthBackend#token_no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#token_no_default_policy GithubAuthBackend#token_no_default_policy}
   */
-  readonly tokenNoDefaultPolicy?: boolean | cdktf.IResolvable;
+  readonly tokenNoDefaultPolicy?: boolean | cdktn.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#token_num_uses GithubAuthBackend#token_num_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#token_num_uses GithubAuthBackend#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#token_period GithubAuthBackend#token_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#token_period GithubAuthBackend#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#token_policies GithubAuthBackend#token_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#token_policies GithubAuthBackend#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#token_ttl GithubAuthBackend#token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#token_ttl GithubAuthBackend#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#token_type GithubAuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#token_type GithubAuthBackend#token_type}
   */
   readonly tokenType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#tune GithubAuthBackend#tune}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#tune GithubAuthBackend#tune}
   */
-  readonly tune?: GithubAuthBackendTune[] | cdktf.IResolvable;
+  readonly tune?: GithubAuthBackendTune[] | cdktn.IResolvable;
 }
 export interface GithubAuthBackendTune {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#allowed_response_headers GithubAuthBackend#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#allowed_response_headers GithubAuthBackend#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#audit_non_hmac_request_keys GithubAuthBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#audit_non_hmac_request_keys GithubAuthBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#audit_non_hmac_response_keys GithubAuthBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#audit_non_hmac_response_keys GithubAuthBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#default_lease_ttl GithubAuthBackend#default_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#default_lease_ttl GithubAuthBackend#default_lease_ttl}
   */
   readonly defaultLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#listing_visibility GithubAuthBackend#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#listing_visibility GithubAuthBackend#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#max_lease_ttl GithubAuthBackend#max_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#max_lease_ttl GithubAuthBackend#max_lease_ttl}
   */
   readonly maxLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#passthrough_request_headers GithubAuthBackend#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#passthrough_request_headers GithubAuthBackend#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#token_type GithubAuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#token_type GithubAuthBackend#token_type}
   */
   readonly tokenType?: string;
 }
 
-export function githubAuthBackendTuneToTerraform(struct?: GithubAuthBackendTune | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function githubAuthBackendTuneToTerraform(struct?: GithubAuthBackendTune | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_response_headers: struct!.allowedResponseHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedResponseHeaders),
-    audit_non_hmac_request_keys: struct!.auditNonHmacRequestKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacRequestKeys),
-    audit_non_hmac_response_keys: struct!.auditNonHmacResponseKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacResponseKeys),
-    default_lease_ttl: struct!.defaultLeaseTtl === undefined ? null : cdktf.stringToTerraform(struct!.defaultLeaseTtl),
-    listing_visibility: struct!.listingVisibility === undefined ? null : cdktf.stringToTerraform(struct!.listingVisibility),
-    max_lease_ttl: struct!.maxLeaseTtl === undefined ? null : cdktf.stringToTerraform(struct!.maxLeaseTtl),
-    passthrough_request_headers: struct!.passthroughRequestHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.passthroughRequestHeaders),
-    token_type: struct!.tokenType === undefined ? null : cdktf.stringToTerraform(struct!.tokenType),
+    allowed_response_headers: struct!.allowedResponseHeaders === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedResponseHeaders),
+    audit_non_hmac_request_keys: struct!.auditNonHmacRequestKeys === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.auditNonHmacRequestKeys),
+    audit_non_hmac_response_keys: struct!.auditNonHmacResponseKeys === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.auditNonHmacResponseKeys),
+    default_lease_ttl: struct!.defaultLeaseTtl === undefined ? null : cdktn.stringToTerraform(struct!.defaultLeaseTtl),
+    listing_visibility: struct!.listingVisibility === undefined ? null : cdktn.stringToTerraform(struct!.listingVisibility),
+    max_lease_ttl: struct!.maxLeaseTtl === undefined ? null : cdktn.stringToTerraform(struct!.maxLeaseTtl),
+    passthrough_request_headers: struct!.passthroughRequestHeaders === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.passthroughRequestHeaders),
+    token_type: struct!.tokenType === undefined ? null : cdktn.stringToTerraform(struct!.tokenType),
   }
 }
 
 
-export function githubAuthBackendTuneToHclTerraform(struct?: GithubAuthBackendTune | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function githubAuthBackendTuneToHclTerraform(struct?: GithubAuthBackendTune | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_response_headers: {
-      value: struct!.allowedResponseHeaders === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedResponseHeaders),
+      value: struct!.allowedResponseHeaders === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedResponseHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     audit_non_hmac_request_keys: {
-      value: struct!.auditNonHmacRequestKeys === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacRequestKeys),
+      value: struct!.auditNonHmacRequestKeys === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.auditNonHmacRequestKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     audit_non_hmac_response_keys: {
-      value: struct!.auditNonHmacResponseKeys === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacResponseKeys),
+      value: struct!.auditNonHmacResponseKeys === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.auditNonHmacResponseKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     default_lease_ttl: {
-      value: struct!.defaultLeaseTtl === undefined ? null : cdktf.stringToHclTerraform(struct!.defaultLeaseTtl),
+      value: struct!.defaultLeaseTtl === undefined ? null : cdktn.stringToHclTerraform(struct!.defaultLeaseTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     listing_visibility: {
-      value: struct!.listingVisibility === undefined ? null : cdktf.stringToHclTerraform(struct!.listingVisibility),
+      value: struct!.listingVisibility === undefined ? null : cdktn.stringToHclTerraform(struct!.listingVisibility),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_lease_ttl: {
-      value: struct!.maxLeaseTtl === undefined ? null : cdktf.stringToHclTerraform(struct!.maxLeaseTtl),
+      value: struct!.maxLeaseTtl === undefined ? null : cdktn.stringToHclTerraform(struct!.maxLeaseTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     passthrough_request_headers: {
-      value: struct!.passthroughRequestHeaders === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.passthroughRequestHeaders),
+      value: struct!.passthroughRequestHeaders === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.passthroughRequestHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     token_type: {
-      value: struct!.tokenType === undefined ? null : cdktf.stringToHclTerraform(struct!.tokenType),
+      value: struct!.tokenType === undefined ? null : cdktn.stringToHclTerraform(struct!.tokenType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -240,9 +240,9 @@ export function githubAuthBackendTuneToHclTerraform(struct?: GithubAuthBackendTu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GithubAuthBackendTuneOutputReference extends cdktf.ComplexObject {
+export class GithubAuthBackendTuneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -250,11 +250,11 @@ export class GithubAuthBackendTuneOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GithubAuthBackendTune | cdktf.IResolvable | undefined {
+  public get internalValue(): GithubAuthBackendTune | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -295,7 +295,7 @@ export class GithubAuthBackendTuneOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GithubAuthBackendTune | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GithubAuthBackendTune | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -308,7 +308,7 @@ export class GithubAuthBackendTuneOutputReference extends cdktf.ComplexObject {
       this._passthroughRequestHeaders = undefined;
       this._tokenType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -455,15 +455,15 @@ export class GithubAuthBackendTuneOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class GithubAuthBackendTuneList extends cdktf.ComplexList {
-  public internalValue? : GithubAuthBackendTune[] | cdktf.IResolvable
+export class GithubAuthBackendTuneList extends cdktn.ComplexList {
+  public internalValue? : GithubAuthBackendTune[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -476,9 +476,9 @@ export class GithubAuthBackendTuneList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend vault_github_auth_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend vault_github_auth_backend}
 */
-export class GithubAuthBackend extends cdktf.TerraformResource {
+export class GithubAuthBackend extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -489,14 +489,14 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GithubAuthBackend resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GithubAuthBackend resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GithubAuthBackend to import
-  * @param importFromId The id of the existing GithubAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GithubAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GithubAuthBackend to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_github_auth_backend", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_github_auth_backend", importId: importFromId, provider });
       }
 
   // ===========
@@ -504,7 +504,7 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/github_auth_backend vault_github_auth_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -515,7 +515,7 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_github_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -605,11 +605,11 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
   }
 
   // disable_remount - computed: false, optional: true, required: false
-  private _disableRemount?: boolean | cdktf.IResolvable; 
+  private _disableRemount?: boolean | cdktn.IResolvable; 
   public get disableRemount() {
     return this.getBooleanAttribute('disable_remount');
   }
-  public set disableRemount(value: boolean | cdktf.IResolvable) {
+  public set disableRemount(value: boolean | cdktn.IResolvable) {
     this._disableRemount = value;
   }
   public resetDisableRemount() {
@@ -700,7 +700,7 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
   // token_bound_cidrs - computed: false, optional: true, required: false
   private _tokenBoundCidrs?: string[]; 
   public get tokenBoundCidrs() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_bound_cidrs'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_bound_cidrs'));
   }
   public set tokenBoundCidrs(value: string[]) {
     this._tokenBoundCidrs = value;
@@ -746,11 +746,11 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
   }
 
   // token_no_default_policy - computed: false, optional: true, required: false
-  private _tokenNoDefaultPolicy?: boolean | cdktf.IResolvable; 
+  private _tokenNoDefaultPolicy?: boolean | cdktn.IResolvable; 
   public get tokenNoDefaultPolicy() {
     return this.getBooleanAttribute('token_no_default_policy');
   }
-  public set tokenNoDefaultPolicy(value: boolean | cdktf.IResolvable) {
+  public set tokenNoDefaultPolicy(value: boolean | cdktn.IResolvable) {
     this._tokenNoDefaultPolicy = value;
   }
   public resetTokenNoDefaultPolicy() {
@@ -796,7 +796,7 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
   // token_policies - computed: false, optional: true, required: false
   private _tokenPolicies?: string[]; 
   public get tokenPolicies() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_policies'));
   }
   public set tokenPolicies(value: string[]) {
     this._tokenPolicies = value;
@@ -846,7 +846,7 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
   public get tune() {
     return this._tune;
   }
-  public putTune(value: GithubAuthBackendTune[] | cdktf.IResolvable) {
+  public putTune(value: GithubAuthBackendTune[] | cdktn.IResolvable) {
     this._tune.internalValue = value;
   }
   public resetTune() {
@@ -863,140 +863,140 @@ export class GithubAuthBackend extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias_metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._aliasMetadata),
-      base_url: cdktf.stringToTerraform(this._baseUrl),
-      description: cdktf.stringToTerraform(this._description),
-      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      organization: cdktf.stringToTerraform(this._organization),
-      organization_id: cdktf.numberToTerraform(this._organizationId),
-      path: cdktf.stringToTerraform(this._path),
-      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenBoundCidrs),
-      token_explicit_max_ttl: cdktf.numberToTerraform(this._tokenExplicitMaxTtl),
-      token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
-      token_no_default_policy: cdktf.booleanToTerraform(this._tokenNoDefaultPolicy),
-      token_num_uses: cdktf.numberToTerraform(this._tokenNumUses),
-      token_period: cdktf.numberToTerraform(this._tokenPeriod),
-      token_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenPolicies),
-      token_ttl: cdktf.numberToTerraform(this._tokenTtl),
-      token_type: cdktf.stringToTerraform(this._tokenType),
-      tune: cdktf.listMapper(githubAuthBackendTuneToTerraform, false)(this._tune.internalValue),
+      alias_metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._aliasMetadata),
+      base_url: cdktn.stringToTerraform(this._baseUrl),
+      description: cdktn.stringToTerraform(this._description),
+      disable_remount: cdktn.booleanToTerraform(this._disableRemount),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      organization: cdktn.stringToTerraform(this._organization),
+      organization_id: cdktn.numberToTerraform(this._organizationId),
+      path: cdktn.stringToTerraform(this._path),
+      token_bound_cidrs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenBoundCidrs),
+      token_explicit_max_ttl: cdktn.numberToTerraform(this._tokenExplicitMaxTtl),
+      token_max_ttl: cdktn.numberToTerraform(this._tokenMaxTtl),
+      token_no_default_policy: cdktn.booleanToTerraform(this._tokenNoDefaultPolicy),
+      token_num_uses: cdktn.numberToTerraform(this._tokenNumUses),
+      token_period: cdktn.numberToTerraform(this._tokenPeriod),
+      token_policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenPolicies),
+      token_ttl: cdktn.numberToTerraform(this._tokenTtl),
+      token_type: cdktn.stringToTerraform(this._tokenType),
+      tune: cdktn.listMapper(githubAuthBackendTuneToTerraform, false)(this._tune.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias_metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._aliasMetadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._aliasMetadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       base_url: {
-        value: cdktf.stringToHclTerraform(this._baseUrl),
+        value: cdktn.stringToHclTerraform(this._baseUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_remount: {
-        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        value: cdktn.booleanToHclTerraform(this._disableRemount),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization: {
-        value: cdktf.stringToHclTerraform(this._organization),
+        value: cdktn.stringToHclTerraform(this._organization),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization_id: {
-        value: cdktf.numberToHclTerraform(this._organizationId),
+        value: cdktn.numberToHclTerraform(this._organizationId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_bound_cidrs: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenBoundCidrs),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenBoundCidrs),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       token_explicit_max_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenExplicitMaxTtl),
+        value: cdktn.numberToHclTerraform(this._tokenExplicitMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_max_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenMaxTtl),
+        value: cdktn.numberToHclTerraform(this._tokenMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_no_default_policy: {
-        value: cdktf.booleanToHclTerraform(this._tokenNoDefaultPolicy),
+        value: cdktn.booleanToHclTerraform(this._tokenNoDefaultPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       token_num_uses: {
-        value: cdktf.numberToHclTerraform(this._tokenNumUses),
+        value: cdktn.numberToHclTerraform(this._tokenNumUses),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_period: {
-        value: cdktf.numberToHclTerraform(this._tokenPeriod),
+        value: cdktn.numberToHclTerraform(this._tokenPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_policies: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenPolicies),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenPolicies),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       token_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenTtl),
+        value: cdktn.numberToHclTerraform(this._tokenTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_type: {
-        value: cdktf.stringToHclTerraform(this._tokenType),
+        value: cdktn.stringToHclTerraform(this._tokenType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tune: {
-        value: cdktf.listMapperHcl(githubAuthBackendTuneToHclTerraform, false)(this._tune.internalValue),
+        value: cdktn.listMapperHcl(githubAuthBackendTuneToHclTerraform, false)(this._tune.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "GithubAuthBackendTuneList",

@@ -1,55 +1,55 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KvSecretV2Config extends cdktf.TerraformMetaArguments {
+export interface KvSecretV2Config extends cdktn.TerraformMetaArguments {
   /**
   * This flag is required if cas_required is set to true on either the secret or the engine's config. In order for a write to be successful, cas must be set to the current version of the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#cas KvSecretV2#cas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#cas KvSecretV2#cas}
   */
   readonly cas?: number;
   /**
   * JSON-encoded secret data to write.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#data_json KvSecretV2#data_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#data_json KvSecretV2#data_json}
   */
   readonly dataJson?: string;
   /**
   * Write-Only JSON-encoded secret data to write.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#data_json_wo KvSecretV2#data_json_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#data_json_wo KvSecretV2#data_json_wo}
   */
   readonly dataJsonWo?: string;
   /**
   * Version counter for write-only secret data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#data_json_wo_version KvSecretV2#data_json_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#data_json_wo_version KvSecretV2#data_json_wo_version}
   */
   readonly dataJsonWoVersion?: number;
   /**
   * If set to true, permanently deletes all versions for the specified key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#delete_all_versions KvSecretV2#delete_all_versions}
   */
-  readonly deleteAllVersions?: boolean | cdktf.IResolvable;
+  readonly deleteAllVersions?: boolean | cdktn.IResolvable;
   /**
   * If set to true, disables reading secret from Vault; note: drift won't be detected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#disable_read KvSecretV2#disable_read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#disable_read KvSecretV2#disable_read}
   */
-  readonly disableRead?: boolean | cdktf.IResolvable;
+  readonly disableRead?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#id KvSecretV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#id KvSecretV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,31 +58,31 @@ export interface KvSecretV2Config extends cdktf.TerraformMetaArguments {
   /**
   * Path where KV-V2 engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#mount KvSecretV2#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#mount KvSecretV2#mount}
   */
   readonly mount: string;
   /**
   * Full name of the secret. For a nested secret, the name is the nested path excluding the mount and data prefix. For example, for a secret at 'kvv2/data/foo/bar/baz', the name is 'foo/bar/baz'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#name KvSecretV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#name KvSecretV2#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#namespace KvSecretV2#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#namespace KvSecretV2#namespace}
   */
   readonly namespace?: string;
   /**
   * An object that holds option settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#options KvSecretV2#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#options KvSecretV2#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * custom_metadata block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#custom_metadata KvSecretV2#custom_metadata}
   */
   readonly customMetadata?: KvSecretV2CustomMetadata;
 }
@@ -90,69 +90,69 @@ export interface KvSecretV2CustomMetadata {
   /**
   * If true, all keys will require the cas parameter to be set on all write requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#cas_required KvSecretV2#cas_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#cas_required KvSecretV2#cas_required}
   */
-  readonly casRequired?: boolean | cdktf.IResolvable;
+  readonly casRequired?: boolean | cdktn.IResolvable;
   /**
   * A map of arbitrary string to string valued user-provided metadata meant to describe the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#data KvSecretV2#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#data KvSecretV2#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * If set, specifies the length of time before a version is deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#delete_version_after KvSecretV2#delete_version_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#delete_version_after KvSecretV2#delete_version_after}
   */
   readonly deleteVersionAfter?: number;
   /**
   * The number of versions to keep per key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#max_versions KvSecretV2#max_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#max_versions KvSecretV2#max_versions}
   */
   readonly maxVersions?: number;
 }
 
 export function kvSecretV2CustomMetadataToTerraform(struct?: KvSecretV2CustomMetadataOutputReference | KvSecretV2CustomMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cas_required: cdktf.booleanToTerraform(struct!.casRequired),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    delete_version_after: cdktf.numberToTerraform(struct!.deleteVersionAfter),
-    max_versions: cdktf.numberToTerraform(struct!.maxVersions),
+    cas_required: cdktn.booleanToTerraform(struct!.casRequired),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    delete_version_after: cdktn.numberToTerraform(struct!.deleteVersionAfter),
+    max_versions: cdktn.numberToTerraform(struct!.maxVersions),
   }
 }
 
 
 export function kvSecretV2CustomMetadataToHclTerraform(struct?: KvSecretV2CustomMetadataOutputReference | KvSecretV2CustomMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cas_required: {
-      value: cdktf.booleanToHclTerraform(struct!.casRequired),
+      value: cdktn.booleanToHclTerraform(struct!.casRequired),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     delete_version_after: {
-      value: cdktf.numberToHclTerraform(struct!.deleteVersionAfter),
+      value: cdktn.numberToHclTerraform(struct!.deleteVersionAfter),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_versions: {
-      value: cdktf.numberToHclTerraform(struct!.maxVersions),
+      value: cdktn.numberToHclTerraform(struct!.maxVersions),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -163,14 +163,14 @@ export function kvSecretV2CustomMetadataToHclTerraform(struct?: KvSecretV2Custom
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KvSecretV2CustomMetadataOutputReference extends cdktf.ComplexObject {
+export class KvSecretV2CustomMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -214,11 +214,11 @@ export class KvSecretV2CustomMetadataOutputReference extends cdktf.ComplexObject
   }
 
   // cas_required - computed: false, optional: true, required: false
-  private _casRequired?: boolean | cdktf.IResolvable; 
+  private _casRequired?: boolean | cdktn.IResolvable; 
   public get casRequired() {
     return this.getBooleanAttribute('cas_required');
   }
-  public set casRequired(value: boolean | cdktf.IResolvable) {
+  public set casRequired(value: boolean | cdktn.IResolvable) {
     this._casRequired = value;
   }
   public resetCasRequired() {
@@ -279,9 +279,9 @@ export class KvSecretV2CustomMetadataOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2 vault_kv_secret_v2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2 vault_kv_secret_v2}
 */
-export class KvSecretV2 extends cdktf.TerraformResource {
+export class KvSecretV2 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -292,14 +292,14 @@ export class KvSecretV2 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KvSecretV2 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KvSecretV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KvSecretV2 to import
-  * @param importFromId The id of the existing KvSecretV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KvSecretV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KvSecretV2 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_kv_secret_v2", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_kv_secret_v2", importId: importFromId, provider });
       }
 
   // ===========
@@ -307,7 +307,7 @@ export class KvSecretV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_v2 vault_kv_secret_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_v2 vault_kv_secret_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -318,7 +318,7 @@ export class KvSecretV2 extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kv_secret_v2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -364,7 +364,7 @@ export class KvSecretV2 extends cdktf.TerraformResource {
   }
 
   // data - computed: true, optional: false, required: false
-  private _data = new cdktf.StringMap(this, "data");
+  private _data = new cdktn.StringMap(this, "data");
   public get data() {
     return this._data;
   }
@@ -418,11 +418,11 @@ export class KvSecretV2 extends cdktf.TerraformResource {
   }
 
   // delete_all_versions - computed: false, optional: true, required: false
-  private _deleteAllVersions?: boolean | cdktf.IResolvable; 
+  private _deleteAllVersions?: boolean | cdktn.IResolvable; 
   public get deleteAllVersions() {
     return this.getBooleanAttribute('delete_all_versions');
   }
-  public set deleteAllVersions(value: boolean | cdktf.IResolvable) {
+  public set deleteAllVersions(value: boolean | cdktn.IResolvable) {
     this._deleteAllVersions = value;
   }
   public resetDeleteAllVersions() {
@@ -434,11 +434,11 @@ export class KvSecretV2 extends cdktf.TerraformResource {
   }
 
   // disable_read - computed: false, optional: true, required: false
-  private _disableRead?: boolean | cdktf.IResolvable; 
+  private _disableRead?: boolean | cdktn.IResolvable; 
   public get disableRead() {
     return this.getBooleanAttribute('disable_read');
   }
-  public set disableRead(value: boolean | cdktf.IResolvable) {
+  public set disableRead(value: boolean | cdktn.IResolvable) {
     this._disableRead = value;
   }
   public resetDisableRead() {
@@ -466,7 +466,7 @@ export class KvSecretV2 extends cdktf.TerraformResource {
   }
 
   // metadata - computed: true, optional: false, required: false
-  private _metadata = new cdktf.StringMap(this, "metadata");
+  private _metadata = new cdktn.StringMap(this, "metadata");
   public get metadata() {
     return this._metadata;
   }
@@ -556,17 +556,17 @@ export class KvSecretV2 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cas: cdktf.numberToTerraform(this._cas),
-      data_json: cdktf.stringToTerraform(this._dataJson),
-      data_json_wo: cdktf.stringToTerraform(this._dataJsonWo),
-      data_json_wo_version: cdktf.numberToTerraform(this._dataJsonWoVersion),
-      delete_all_versions: cdktf.booleanToTerraform(this._deleteAllVersions),
-      disable_read: cdktf.booleanToTerraform(this._disableRead),
-      id: cdktf.stringToTerraform(this._id),
-      mount: cdktf.stringToTerraform(this._mount),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
+      cas: cdktn.numberToTerraform(this._cas),
+      data_json: cdktn.stringToTerraform(this._dataJson),
+      data_json_wo: cdktn.stringToTerraform(this._dataJsonWo),
+      data_json_wo_version: cdktn.numberToTerraform(this._dataJsonWoVersion),
+      delete_all_versions: cdktn.booleanToTerraform(this._deleteAllVersions),
+      disable_read: cdktn.booleanToTerraform(this._disableRead),
+      id: cdktn.stringToTerraform(this._id),
+      mount: cdktn.stringToTerraform(this._mount),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      options: cdktn.hashMapper(cdktn.stringToTerraform)(this._options),
       custom_metadata: kvSecretV2CustomMetadataToTerraform(this._customMetadata.internalValue),
     };
   }
@@ -574,67 +574,67 @@ export class KvSecretV2 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cas: {
-        value: cdktf.numberToHclTerraform(this._cas),
+        value: cdktn.numberToHclTerraform(this._cas),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       data_json: {
-        value: cdktf.stringToHclTerraform(this._dataJson),
+        value: cdktn.stringToHclTerraform(this._dataJson),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_json_wo: {
-        value: cdktf.stringToHclTerraform(this._dataJsonWo),
+        value: cdktn.stringToHclTerraform(this._dataJsonWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       data_json_wo_version: {
-        value: cdktf.numberToHclTerraform(this._dataJsonWoVersion),
+        value: cdktn.numberToHclTerraform(this._dataJsonWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       delete_all_versions: {
-        value: cdktf.booleanToHclTerraform(this._deleteAllVersions),
+        value: cdktn.booleanToHclTerraform(this._deleteAllVersions),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_read: {
-        value: cdktf.booleanToHclTerraform(this._disableRead),
+        value: cdktn.booleanToHclTerraform(this._disableRead),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mount: {
-        value: cdktf.stringToHclTerraform(this._mount),
+        value: cdktn.stringToHclTerraform(this._mount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       options: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._options),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

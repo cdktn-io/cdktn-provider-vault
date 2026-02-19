@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataVaultPolicyDocumentConfig extends cdktf.TerraformMetaArguments {
+export interface DataVaultPolicyDocumentConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#id DataVaultPolicyDocument#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#id DataVaultPolicyDocument#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,57 +22,57 @@ export interface DataVaultPolicyDocumentConfig extends cdktf.TerraformMetaArgume
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#namespace DataVaultPolicyDocument#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#namespace DataVaultPolicyDocument#namespace}
   */
   readonly namespace?: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#rule DataVaultPolicyDocument#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#rule DataVaultPolicyDocument#rule}
   */
-  readonly rule?: DataVaultPolicyDocumentRule[] | cdktf.IResolvable;
+  readonly rule?: DataVaultPolicyDocumentRule[] | cdktn.IResolvable;
 }
 export interface DataVaultPolicyDocumentRuleAllowedParameter {
   /**
   * Name of permitted key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}
   */
   readonly key: string;
   /**
   * A list of values what are permitted by policy rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}
   */
   readonly value: string[];
 }
 
-export function dataVaultPolicyDocumentRuleAllowedParameterToTerraform(struct?: DataVaultPolicyDocumentRuleAllowedParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataVaultPolicyDocumentRuleAllowedParameterToTerraform(struct?: DataVaultPolicyDocumentRuleAllowedParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.value),
   }
 }
 
 
-export function dataVaultPolicyDocumentRuleAllowedParameterToHclTerraform(struct?: DataVaultPolicyDocumentRuleAllowedParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataVaultPolicyDocumentRuleAllowedParameterToHclTerraform(struct?: DataVaultPolicyDocumentRuleAllowedParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.value),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.value),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -83,9 +83,9 @@ export function dataVaultPolicyDocumentRuleAllowedParameterToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataVaultPolicyDocumentRuleAllowedParameterOutputReference extends cdktf.ComplexObject {
+export class DataVaultPolicyDocumentRuleAllowedParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -93,11 +93,11 @@ export class DataVaultPolicyDocumentRuleAllowedParameterOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataVaultPolicyDocumentRuleAllowedParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataVaultPolicyDocumentRuleAllowedParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -114,14 +114,14 @@ export class DataVaultPolicyDocumentRuleAllowedParameterOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataVaultPolicyDocumentRuleAllowedParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataVaultPolicyDocumentRuleAllowedParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -160,15 +160,15 @@ export class DataVaultPolicyDocumentRuleAllowedParameterOutputReference extends 
   }
 }
 
-export class DataVaultPolicyDocumentRuleAllowedParameterList extends cdktf.ComplexList {
-  public internalValue? : DataVaultPolicyDocumentRuleAllowedParameter[] | cdktf.IResolvable
+export class DataVaultPolicyDocumentRuleAllowedParameterList extends cdktn.ComplexList {
+  public internalValue? : DataVaultPolicyDocumentRuleAllowedParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -183,43 +183,43 @@ export interface DataVaultPolicyDocumentRuleDeniedParameter {
   /**
   * Name of denied key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#key DataVaultPolicyDocument#key}
   */
   readonly key: string;
   /**
   * A list of values what are denied by policy rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#value DataVaultPolicyDocument#value}
   */
   readonly value: string[];
 }
 
-export function dataVaultPolicyDocumentRuleDeniedParameterToTerraform(struct?: DataVaultPolicyDocumentRuleDeniedParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataVaultPolicyDocumentRuleDeniedParameterToTerraform(struct?: DataVaultPolicyDocumentRuleDeniedParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    key: cdktf.stringToTerraform(struct!.key),
-    value: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.value),
+    key: cdktn.stringToTerraform(struct!.key),
+    value: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.value),
   }
 }
 
 
-export function dataVaultPolicyDocumentRuleDeniedParameterToHclTerraform(struct?: DataVaultPolicyDocumentRuleDeniedParameter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataVaultPolicyDocumentRuleDeniedParameterToHclTerraform(struct?: DataVaultPolicyDocumentRuleDeniedParameter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     key: {
-      value: cdktf.stringToHclTerraform(struct!.key),
+      value: cdktn.stringToHclTerraform(struct!.key),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.value),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.value),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -230,9 +230,9 @@ export function dataVaultPolicyDocumentRuleDeniedParameterToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataVaultPolicyDocumentRuleDeniedParameterOutputReference extends cdktf.ComplexObject {
+export class DataVaultPolicyDocumentRuleDeniedParameterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -240,11 +240,11 @@ export class DataVaultPolicyDocumentRuleDeniedParameterOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataVaultPolicyDocumentRuleDeniedParameter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataVaultPolicyDocumentRuleDeniedParameter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -261,14 +261,14 @@ export class DataVaultPolicyDocumentRuleDeniedParameterOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataVaultPolicyDocumentRuleDeniedParameter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataVaultPolicyDocumentRuleDeniedParameter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._key = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -307,15 +307,15 @@ export class DataVaultPolicyDocumentRuleDeniedParameterOutputReference extends c
   }
 }
 
-export class DataVaultPolicyDocumentRuleDeniedParameterList extends cdktf.ComplexList {
-  public internalValue? : DataVaultPolicyDocumentRuleDeniedParameter[] | cdktf.IResolvable
+export class DataVaultPolicyDocumentRuleDeniedParameterList extends cdktn.ComplexList {
+  public internalValue? : DataVaultPolicyDocumentRuleDeniedParameter[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -330,134 +330,134 @@ export interface DataVaultPolicyDocumentRule {
   /**
   * A list of capabilities to apply to the specified path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#capabilities DataVaultPolicyDocument#capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#capabilities DataVaultPolicyDocument#capabilities}
   */
   readonly capabilities: string[];
   /**
   * Description of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#description DataVaultPolicyDocument#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#description DataVaultPolicyDocument#description}
   */
   readonly description?: string;
   /**
   * The maximum allowed TTL that clients can specify for a wrapped response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#max_wrapping_ttl DataVaultPolicyDocument#max_wrapping_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#max_wrapping_ttl DataVaultPolicyDocument#max_wrapping_ttl}
   */
   readonly maxWrappingTtl?: string;
   /**
   * The minimum allowed TTL that clients can specify for a wrapped response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#min_wrapping_ttl DataVaultPolicyDocument#min_wrapping_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#min_wrapping_ttl DataVaultPolicyDocument#min_wrapping_ttl}
   */
   readonly minWrappingTtl?: string;
   /**
   * A path in Vault that this rule applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#path DataVaultPolicyDocument#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#path DataVaultPolicyDocument#path}
   */
   readonly path: string;
   /**
   * A list of parameters that must be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#required_parameters DataVaultPolicyDocument#required_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#required_parameters DataVaultPolicyDocument#required_parameters}
   */
   readonly requiredParameters?: string[];
   /**
   * A list of event types to subscribe to when using `subscribe` capability
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#subscribe_event_types DataVaultPolicyDocument#subscribe_event_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#subscribe_event_types DataVaultPolicyDocument#subscribe_event_types}
   */
   readonly subscribeEventTypes?: string[];
   /**
   * allowed_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#allowed_parameter DataVaultPolicyDocument#allowed_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#allowed_parameter DataVaultPolicyDocument#allowed_parameter}
   */
-  readonly allowedParameter?: DataVaultPolicyDocumentRuleAllowedParameter[] | cdktf.IResolvable;
+  readonly allowedParameter?: DataVaultPolicyDocumentRuleAllowedParameter[] | cdktn.IResolvable;
   /**
   * denied_parameter block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#denied_parameter DataVaultPolicyDocument#denied_parameter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#denied_parameter DataVaultPolicyDocument#denied_parameter}
   */
-  readonly deniedParameter?: DataVaultPolicyDocumentRuleDeniedParameter[] | cdktf.IResolvable;
+  readonly deniedParameter?: DataVaultPolicyDocumentRuleDeniedParameter[] | cdktn.IResolvable;
 }
 
-export function dataVaultPolicyDocumentRuleToTerraform(struct?: DataVaultPolicyDocumentRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataVaultPolicyDocumentRuleToTerraform(struct?: DataVaultPolicyDocumentRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    capabilities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.capabilities),
-    description: cdktf.stringToTerraform(struct!.description),
-    max_wrapping_ttl: cdktf.stringToTerraform(struct!.maxWrappingTtl),
-    min_wrapping_ttl: cdktf.stringToTerraform(struct!.minWrappingTtl),
-    path: cdktf.stringToTerraform(struct!.path),
-    required_parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requiredParameters),
-    subscribe_event_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subscribeEventTypes),
-    allowed_parameter: cdktf.listMapper(dataVaultPolicyDocumentRuleAllowedParameterToTerraform, true)(struct!.allowedParameter),
-    denied_parameter: cdktf.listMapper(dataVaultPolicyDocumentRuleDeniedParameterToTerraform, true)(struct!.deniedParameter),
+    capabilities: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.capabilities),
+    description: cdktn.stringToTerraform(struct!.description),
+    max_wrapping_ttl: cdktn.stringToTerraform(struct!.maxWrappingTtl),
+    min_wrapping_ttl: cdktn.stringToTerraform(struct!.minWrappingTtl),
+    path: cdktn.stringToTerraform(struct!.path),
+    required_parameters: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.requiredParameters),
+    subscribe_event_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subscribeEventTypes),
+    allowed_parameter: cdktn.listMapper(dataVaultPolicyDocumentRuleAllowedParameterToTerraform, true)(struct!.allowedParameter),
+    denied_parameter: cdktn.listMapper(dataVaultPolicyDocumentRuleDeniedParameterToTerraform, true)(struct!.deniedParameter),
   }
 }
 
 
-export function dataVaultPolicyDocumentRuleToHclTerraform(struct?: DataVaultPolicyDocumentRule | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataVaultPolicyDocumentRuleToHclTerraform(struct?: DataVaultPolicyDocumentRule | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     capabilities: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.capabilities),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.capabilities),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_wrapping_ttl: {
-      value: cdktf.stringToHclTerraform(struct!.maxWrappingTtl),
+      value: cdktn.stringToHclTerraform(struct!.maxWrappingTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     min_wrapping_ttl: {
-      value: cdktf.stringToHclTerraform(struct!.minWrappingTtl),
+      value: cdktn.stringToHclTerraform(struct!.minWrappingTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     required_parameters: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requiredParameters),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.requiredParameters),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     subscribe_event_types: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subscribeEventTypes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subscribeEventTypes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allowed_parameter: {
-      value: cdktf.listMapperHcl(dataVaultPolicyDocumentRuleAllowedParameterToHclTerraform, true)(struct!.allowedParameter),
+      value: cdktn.listMapperHcl(dataVaultPolicyDocumentRuleAllowedParameterToHclTerraform, true)(struct!.allowedParameter),
       isBlock: true,
       type: "list",
       storageClassType: "DataVaultPolicyDocumentRuleAllowedParameterList",
     },
     denied_parameter: {
-      value: cdktf.listMapperHcl(dataVaultPolicyDocumentRuleDeniedParameterToHclTerraform, true)(struct!.deniedParameter),
+      value: cdktn.listMapperHcl(dataVaultPolicyDocumentRuleDeniedParameterToHclTerraform, true)(struct!.deniedParameter),
       isBlock: true,
       type: "list",
       storageClassType: "DataVaultPolicyDocumentRuleDeniedParameterList",
@@ -468,9 +468,9 @@ export function dataVaultPolicyDocumentRuleToHclTerraform(struct?: DataVaultPoli
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataVaultPolicyDocumentRuleOutputReference extends cdktf.ComplexObject {
+export class DataVaultPolicyDocumentRuleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -478,11 +478,11 @@ export class DataVaultPolicyDocumentRuleOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataVaultPolicyDocumentRule | cdktf.IResolvable | undefined {
+  public get internalValue(): DataVaultPolicyDocumentRule | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -527,7 +527,7 @@ export class DataVaultPolicyDocumentRuleOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataVaultPolicyDocumentRule | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataVaultPolicyDocumentRule | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -541,7 +541,7 @@ export class DataVaultPolicyDocumentRuleOutputReference extends cdktf.ComplexObj
       this._allowedParameter.internalValue = undefined;
       this._deniedParameter.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -671,7 +671,7 @@ export class DataVaultPolicyDocumentRuleOutputReference extends cdktf.ComplexObj
   public get allowedParameter() {
     return this._allowedParameter;
   }
-  public putAllowedParameter(value: DataVaultPolicyDocumentRuleAllowedParameter[] | cdktf.IResolvable) {
+  public putAllowedParameter(value: DataVaultPolicyDocumentRuleAllowedParameter[] | cdktn.IResolvable) {
     this._allowedParameter.internalValue = value;
   }
   public resetAllowedParameter() {
@@ -687,7 +687,7 @@ export class DataVaultPolicyDocumentRuleOutputReference extends cdktf.ComplexObj
   public get deniedParameter() {
     return this._deniedParameter;
   }
-  public putDeniedParameter(value: DataVaultPolicyDocumentRuleDeniedParameter[] | cdktf.IResolvable) {
+  public putDeniedParameter(value: DataVaultPolicyDocumentRuleDeniedParameter[] | cdktn.IResolvable) {
     this._deniedParameter.internalValue = value;
   }
   public resetDeniedParameter() {
@@ -699,15 +699,15 @@ export class DataVaultPolicyDocumentRuleOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class DataVaultPolicyDocumentRuleList extends cdktf.ComplexList {
-  public internalValue? : DataVaultPolicyDocumentRule[] | cdktf.IResolvable
+export class DataVaultPolicyDocumentRuleList extends cdktn.ComplexList {
+  public internalValue? : DataVaultPolicyDocumentRule[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -720,9 +720,9 @@ export class DataVaultPolicyDocumentRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document vault_policy_document}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document vault_policy_document}
 */
-export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
+export class DataVaultPolicyDocument extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -733,14 +733,14 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataVaultPolicyDocument resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataVaultPolicyDocument resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultPolicyDocument to import
-  * @param importFromId The id of the existing DataVaultPolicyDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultPolicyDocument that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultPolicyDocument to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_policy_document", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_policy_document", importId: importFromId, provider });
       }
 
   // ===========
@@ -748,7 +748,7 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/policy_document vault_policy_document} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/policy_document vault_policy_document} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -759,7 +759,7 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_policy_document',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -821,7 +821,7 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
   public get rule() {
     return this._rule;
   }
-  public putRule(value: DataVaultPolicyDocumentRule[] | cdktf.IResolvable) {
+  public putRule(value: DataVaultPolicyDocumentRule[] | cdktn.IResolvable) {
     this._rule.internalValue = value;
   }
   public resetRule() {
@@ -838,28 +838,28 @@ export class DataVaultPolicyDocument extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      rule: cdktf.listMapper(dataVaultPolicyDocumentRuleToTerraform, true)(this._rule.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      rule: cdktn.listMapper(dataVaultPolicyDocumentRuleToTerraform, true)(this._rule.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rule: {
-        value: cdktf.listMapperHcl(dataVaultPolicyDocumentRuleToHclTerraform, true)(this._rule.internalValue),
+        value: cdktn.listMapperHcl(dataVaultPolicyDocumentRuleToHclTerraform, true)(this._rule.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DataVaultPolicyDocumentRuleList",

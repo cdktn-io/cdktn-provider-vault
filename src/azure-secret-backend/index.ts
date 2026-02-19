@@ -1,103 +1,115 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AzureSecretBackendConfig extends cdktf.TerraformMetaArguments {
+export interface AzureSecretBackendConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of managed key registry entry names that the mount in question is allowed to access
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#allowed_managed_keys AzureSecretBackend#allowed_managed_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#allowed_managed_keys AzureSecretBackend#allowed_managed_keys}
   */
   readonly allowedManagedKeys?: string[];
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#allowed_response_headers AzureSecretBackend#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#allowed_response_headers AzureSecretBackend#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#audit_non_hmac_request_keys AzureSecretBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#audit_non_hmac_request_keys AzureSecretBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#audit_non_hmac_response_keys AzureSecretBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#audit_non_hmac_response_keys AzureSecretBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
   * The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#client_id AzureSecretBackend#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#client_id AzureSecretBackend#client_id}
   */
   readonly clientId?: string;
   /**
   * The client secret for credentials to query the Azure APIs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#client_secret AzureSecretBackend#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#client_secret AzureSecretBackend#client_secret}
   */
   readonly clientSecret?: string;
   /**
+  * The client secret for credentials to query the Azure APIs. This is a write-only field and will not be read back from Vault.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#client_secret_wo AzureSecretBackend#client_secret_wo}
+  */
+  readonly clientSecretWo?: string;
+  /**
+  * A version counter for the write-only client_secret_wo field. Incrementing this value will trigger an update to the client secret.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#client_secret_wo_version AzureSecretBackend#client_secret_wo_version}
+  */
+  readonly clientSecretWoVersion?: number;
+  /**
   * Default lease duration for tokens and secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#default_lease_ttl_seconds AzureSecretBackend#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#default_lease_ttl_seconds AzureSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#delegated_auth_accessors AzureSecretBackend#delegated_auth_accessors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#delegated_auth_accessors AzureSecretBackend#delegated_auth_accessors}
   */
   readonly delegatedAuthAccessors?: string[];
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#description AzureSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#description AzureSecretBackend#description}
   */
   readonly description?: string;
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#disable_automated_rotation AzureSecretBackend#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#disable_automated_rotation AzureSecretBackend#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#disable_remount AzureSecretBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#disable_remount AzureSecretBackend#disable_remount}
   */
-  readonly disableRemount?: boolean | cdktf.IResolvable;
+  readonly disableRemount?: boolean | cdktn.IResolvable;
   /**
   * The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#environment AzureSecretBackend#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#environment AzureSecretBackend#environment}
   */
   readonly environment?: string;
   /**
   * Enable the secrets engine to access Vault's external entropy source
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#external_entropy_access AzureSecretBackend#external_entropy_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#external_entropy_access AzureSecretBackend#external_entropy_access}
   */
-  readonly externalEntropyAccess?: boolean | cdktf.IResolvable;
+  readonly externalEntropyAccess?: boolean | cdktn.IResolvable;
   /**
   * If set to true, disables caching.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#force_no_cache AzureSecretBackend#force_no_cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#force_no_cache AzureSecretBackend#force_no_cache}
   */
-  readonly forceNoCache?: boolean | cdktf.IResolvable;
+  readonly forceNoCache?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#id AzureSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -106,117 +118,117 @@ export interface AzureSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The audience claim value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#identity_token_audience AzureSecretBackend#identity_token_audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#identity_token_audience AzureSecretBackend#identity_token_audience}
   */
   readonly identityTokenAudience?: string;
   /**
   * The key to use for signing identity tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#identity_token_key AzureSecretBackend#identity_token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#identity_token_key AzureSecretBackend#identity_token_key}
   */
   readonly identityTokenKey?: string;
   /**
   * The TTL of generated identity tokens in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#identity_token_ttl AzureSecretBackend#identity_token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#identity_token_ttl AzureSecretBackend#identity_token_ttl}
   */
   readonly identityTokenTtl?: number;
   /**
   * Specifies whether to show this mount in the UI-specific listing endpoint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#listing_visibility AzureSecretBackend#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#listing_visibility AzureSecretBackend#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
   * Local mount flag that can be explicitly set to true to enforce local mount in HA environment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#local AzureSecretBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#local AzureSecretBackend#local}
   */
-  readonly local?: boolean | cdktf.IResolvable;
+  readonly local?: boolean | cdktn.IResolvable;
   /**
   * Maximum possible lease duration for tokens and secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#max_lease_ttl_seconds AzureSecretBackend#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#max_lease_ttl_seconds AzureSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#namespace AzureSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#namespace AzureSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies mount type specific options that are passed to the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#options AzureSecretBackend#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#options AzureSecretBackend#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#passthrough_request_headers AzureSecretBackend#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#passthrough_request_headers AzureSecretBackend#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
   * Path to mount the backend at.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#path AzureSecretBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#path AzureSecretBackend#path}
   */
   readonly path?: string;
   /**
   * Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#plugin_version AzureSecretBackend#plugin_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#plugin_version AzureSecretBackend#plugin_version}
   */
   readonly pluginVersion?: string;
   /**
   * The TTL in seconds of the root password in Azure when rotate-root generates a new client secret
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#root_password_ttl AzureSecretBackend#root_password_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#root_password_ttl AzureSecretBackend#root_password_ttl}
   */
   readonly rootPasswordTtl?: number;
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#rotation_period AzureSecretBackend#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#rotation_period AzureSecretBackend#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#rotation_schedule AzureSecretBackend#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#rotation_schedule AzureSecretBackend#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#rotation_window AzureSecretBackend#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#rotation_window AzureSecretBackend#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#seal_wrap AzureSecretBackend#seal_wrap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#seal_wrap AzureSecretBackend#seal_wrap}
   */
-  readonly sealWrap?: boolean | cdktf.IResolvable;
+  readonly sealWrap?: boolean | cdktn.IResolvable;
   /**
   * The subscription id for the Azure Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#subscription_id AzureSecretBackend#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#subscription_id AzureSecretBackend#subscription_id}
   */
   readonly subscriptionId: string;
   /**
   * The tenant id for the Azure Active Directory organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#tenant_id AzureSecretBackend#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#tenant_id AzureSecretBackend#tenant_id}
   */
   readonly tenantId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend vault_azure_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend vault_azure_secret_backend}
 */
-export class AzureSecretBackend extends cdktf.TerraformResource {
+export class AzureSecretBackend extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -227,14 +239,14 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AzureSecretBackend resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AzureSecretBackend resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzureSecretBackend to import
-  * @param importFromId The id of the existing AzureSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AzureSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzureSecretBackend to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_azure_secret_backend", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_azure_secret_backend", importId: importFromId, provider });
       }
 
   // ===========
@@ -242,7 +254,7 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend vault_azure_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -253,7 +265,7 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_azure_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -270,6 +282,8 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
     this._auditNonHmacResponseKeys = config.auditNonHmacResponseKeys;
     this._clientId = config.clientId;
     this._clientSecret = config.clientSecret;
+    this._clientSecretWo = config.clientSecretWo;
+    this._clientSecretWoVersion = config.clientSecretWoVersion;
     this._defaultLeaseTtlSeconds = config.defaultLeaseTtlSeconds;
     this._delegatedAuthAccessors = config.delegatedAuthAccessors;
     this._description = config.description;
@@ -311,7 +325,7 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
   // allowed_managed_keys - computed: false, optional: true, required: false
   private _allowedManagedKeys?: string[]; 
   public get allowedManagedKeys() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_managed_keys'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_managed_keys'));
   }
   public set allowedManagedKeys(value: string[]) {
     this._allowedManagedKeys = value;
@@ -404,6 +418,38 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
     return this._clientSecret;
   }
 
+  // client_secret_wo - computed: false, optional: true, required: false
+  private _clientSecretWo?: string; 
+  public get clientSecretWo() {
+    return this.getStringAttribute('client_secret_wo');
+  }
+  public set clientSecretWo(value: string) {
+    this._clientSecretWo = value;
+  }
+  public resetClientSecretWo() {
+    this._clientSecretWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretWoInput() {
+    return this._clientSecretWo;
+  }
+
+  // client_secret_wo_version - computed: false, optional: true, required: false
+  private _clientSecretWoVersion?: number; 
+  public get clientSecretWoVersion() {
+    return this.getNumberAttribute('client_secret_wo_version');
+  }
+  public set clientSecretWoVersion(value: number) {
+    this._clientSecretWoVersion = value;
+  }
+  public resetClientSecretWoVersion() {
+    this._clientSecretWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretWoVersionInput() {
+    return this._clientSecretWoVersion;
+  }
+
   // default_lease_ttl_seconds - computed: true, optional: true, required: false
   private _defaultLeaseTtlSeconds?: number; 
   public get defaultLeaseTtlSeconds() {
@@ -453,11 +499,11 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -469,11 +515,11 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
   }
 
   // disable_remount - computed: false, optional: true, required: false
-  private _disableRemount?: boolean | cdktf.IResolvable; 
+  private _disableRemount?: boolean | cdktn.IResolvable; 
   public get disableRemount() {
     return this.getBooleanAttribute('disable_remount');
   }
-  public set disableRemount(value: boolean | cdktf.IResolvable) {
+  public set disableRemount(value: boolean | cdktn.IResolvable) {
     this._disableRemount = value;
   }
   public resetDisableRemount() {
@@ -501,11 +547,11 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
   }
 
   // external_entropy_access - computed: false, optional: true, required: false
-  private _externalEntropyAccess?: boolean | cdktf.IResolvable; 
+  private _externalEntropyAccess?: boolean | cdktn.IResolvable; 
   public get externalEntropyAccess() {
     return this.getBooleanAttribute('external_entropy_access');
   }
-  public set externalEntropyAccess(value: boolean | cdktf.IResolvable) {
+  public set externalEntropyAccess(value: boolean | cdktn.IResolvable) {
     this._externalEntropyAccess = value;
   }
   public resetExternalEntropyAccess() {
@@ -517,11 +563,11 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
   }
 
   // force_no_cache - computed: true, optional: true, required: false
-  private _forceNoCache?: boolean | cdktf.IResolvable; 
+  private _forceNoCache?: boolean | cdktn.IResolvable; 
   public get forceNoCache() {
     return this.getBooleanAttribute('force_no_cache');
   }
-  public set forceNoCache(value: boolean | cdktf.IResolvable) {
+  public set forceNoCache(value: boolean | cdktn.IResolvable) {
     this._forceNoCache = value;
   }
   public resetForceNoCache() {
@@ -613,11 +659,11 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
   }
 
   // local - computed: false, optional: true, required: false
-  private _local?: boolean | cdktf.IResolvable; 
+  private _local?: boolean | cdktn.IResolvable; 
   public get local() {
     return this.getBooleanAttribute('local');
   }
-  public set local(value: boolean | cdktf.IResolvable) {
+  public set local(value: boolean | cdktn.IResolvable) {
     this._local = value;
   }
   public resetLocal() {
@@ -789,11 +835,11 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
   }
 
   // seal_wrap - computed: true, optional: true, required: false
-  private _sealWrap?: boolean | cdktf.IResolvable; 
+  private _sealWrap?: boolean | cdktn.IResolvable; 
   public get sealWrap() {
     return this.getBooleanAttribute('seal_wrap');
   }
-  public set sealWrap(value: boolean | cdktf.IResolvable) {
+  public set sealWrap(value: boolean | cdktn.IResolvable) {
     this._sealWrap = value;
   }
   public resetSealWrap() {
@@ -836,238 +882,252 @@ export class AzureSecretBackend extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_managed_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedManagedKeys),
-      allowed_response_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedResponseHeaders),
-      audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacRequestKeys),
-      audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacResponseKeys),
-      client_id: cdktf.stringToTerraform(this._clientId),
-      client_secret: cdktf.stringToTerraform(this._clientSecret),
-      default_lease_ttl_seconds: cdktf.numberToTerraform(this._defaultLeaseTtlSeconds),
-      delegated_auth_accessors: cdktf.listMapper(cdktf.stringToTerraform, false)(this._delegatedAuthAccessors),
-      description: cdktf.stringToTerraform(this._description),
-      disable_automated_rotation: cdktf.booleanToTerraform(this._disableAutomatedRotation),
-      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
-      environment: cdktf.stringToTerraform(this._environment),
-      external_entropy_access: cdktf.booleanToTerraform(this._externalEntropyAccess),
-      force_no_cache: cdktf.booleanToTerraform(this._forceNoCache),
-      id: cdktf.stringToTerraform(this._id),
-      identity_token_audience: cdktf.stringToTerraform(this._identityTokenAudience),
-      identity_token_key: cdktf.stringToTerraform(this._identityTokenKey),
-      identity_token_ttl: cdktf.numberToTerraform(this._identityTokenTtl),
-      listing_visibility: cdktf.stringToTerraform(this._listingVisibility),
-      local: cdktf.booleanToTerraform(this._local),
-      max_lease_ttl_seconds: cdktf.numberToTerraform(this._maxLeaseTtlSeconds),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
-      passthrough_request_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passthroughRequestHeaders),
-      path: cdktf.stringToTerraform(this._path),
-      plugin_version: cdktf.stringToTerraform(this._pluginVersion),
-      root_password_ttl: cdktf.numberToTerraform(this._rootPasswordTtl),
-      rotation_period: cdktf.numberToTerraform(this._rotationPeriod),
-      rotation_schedule: cdktf.stringToTerraform(this._rotationSchedule),
-      rotation_window: cdktf.numberToTerraform(this._rotationWindow),
-      seal_wrap: cdktf.booleanToTerraform(this._sealWrap),
-      subscription_id: cdktf.stringToTerraform(this._subscriptionId),
-      tenant_id: cdktf.stringToTerraform(this._tenantId),
+      allowed_managed_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedManagedKeys),
+      allowed_response_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedResponseHeaders),
+      audit_non_hmac_request_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._auditNonHmacRequestKeys),
+      audit_non_hmac_response_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._auditNonHmacResponseKeys),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      client_secret: cdktn.stringToTerraform(this._clientSecret),
+      client_secret_wo: cdktn.stringToTerraform(this._clientSecretWo),
+      client_secret_wo_version: cdktn.numberToTerraform(this._clientSecretWoVersion),
+      default_lease_ttl_seconds: cdktn.numberToTerraform(this._defaultLeaseTtlSeconds),
+      delegated_auth_accessors: cdktn.listMapper(cdktn.stringToTerraform, false)(this._delegatedAuthAccessors),
+      description: cdktn.stringToTerraform(this._description),
+      disable_automated_rotation: cdktn.booleanToTerraform(this._disableAutomatedRotation),
+      disable_remount: cdktn.booleanToTerraform(this._disableRemount),
+      environment: cdktn.stringToTerraform(this._environment),
+      external_entropy_access: cdktn.booleanToTerraform(this._externalEntropyAccess),
+      force_no_cache: cdktn.booleanToTerraform(this._forceNoCache),
+      id: cdktn.stringToTerraform(this._id),
+      identity_token_audience: cdktn.stringToTerraform(this._identityTokenAudience),
+      identity_token_key: cdktn.stringToTerraform(this._identityTokenKey),
+      identity_token_ttl: cdktn.numberToTerraform(this._identityTokenTtl),
+      listing_visibility: cdktn.stringToTerraform(this._listingVisibility),
+      local: cdktn.booleanToTerraform(this._local),
+      max_lease_ttl_seconds: cdktn.numberToTerraform(this._maxLeaseTtlSeconds),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      options: cdktn.hashMapper(cdktn.stringToTerraform)(this._options),
+      passthrough_request_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._passthroughRequestHeaders),
+      path: cdktn.stringToTerraform(this._path),
+      plugin_version: cdktn.stringToTerraform(this._pluginVersion),
+      root_password_ttl: cdktn.numberToTerraform(this._rootPasswordTtl),
+      rotation_period: cdktn.numberToTerraform(this._rotationPeriod),
+      rotation_schedule: cdktn.stringToTerraform(this._rotationSchedule),
+      rotation_window: cdktn.numberToTerraform(this._rotationWindow),
+      seal_wrap: cdktn.booleanToTerraform(this._sealWrap),
+      subscription_id: cdktn.stringToTerraform(this._subscriptionId),
+      tenant_id: cdktn.stringToTerraform(this._tenantId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_managed_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedManagedKeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedManagedKeys),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       allowed_response_headers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedResponseHeaders),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedResponseHeaders),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       audit_non_hmac_request_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacRequestKeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._auditNonHmacRequestKeys),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       audit_non_hmac_response_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacResponseKeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._auditNonHmacResponseKeys),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_secret: {
-        value: cdktf.stringToHclTerraform(this._clientSecret),
+        value: cdktn.stringToHclTerraform(this._clientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
+      client_secret_wo: {
+        value: cdktn.stringToHclTerraform(this._clientSecretWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_secret_wo_version: {
+        value: cdktn.numberToHclTerraform(this._clientSecretWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       default_lease_ttl_seconds: {
-        value: cdktf.numberToHclTerraform(this._defaultLeaseTtlSeconds),
+        value: cdktn.numberToHclTerraform(this._defaultLeaseTtlSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       delegated_auth_accessors: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._delegatedAuthAccessors),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._delegatedAuthAccessors),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_automated_rotation: {
-        value: cdktf.booleanToHclTerraform(this._disableAutomatedRotation),
+        value: cdktn.booleanToHclTerraform(this._disableAutomatedRotation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_remount: {
-        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        value: cdktn.booleanToHclTerraform(this._disableRemount),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       environment: {
-        value: cdktf.stringToHclTerraform(this._environment),
+        value: cdktn.stringToHclTerraform(this._environment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_entropy_access: {
-        value: cdktf.booleanToHclTerraform(this._externalEntropyAccess),
+        value: cdktn.booleanToHclTerraform(this._externalEntropyAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_no_cache: {
-        value: cdktf.booleanToHclTerraform(this._forceNoCache),
+        value: cdktn.booleanToHclTerraform(this._forceNoCache),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_token_audience: {
-        value: cdktf.stringToHclTerraform(this._identityTokenAudience),
+        value: cdktn.stringToHclTerraform(this._identityTokenAudience),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_token_key: {
-        value: cdktf.stringToHclTerraform(this._identityTokenKey),
+        value: cdktn.stringToHclTerraform(this._identityTokenKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_token_ttl: {
-        value: cdktf.numberToHclTerraform(this._identityTokenTtl),
+        value: cdktn.numberToHclTerraform(this._identityTokenTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       listing_visibility: {
-        value: cdktf.stringToHclTerraform(this._listingVisibility),
+        value: cdktn.stringToHclTerraform(this._listingVisibility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local: {
-        value: cdktf.booleanToHclTerraform(this._local),
+        value: cdktn.booleanToHclTerraform(this._local),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       max_lease_ttl_seconds: {
-        value: cdktf.numberToHclTerraform(this._maxLeaseTtlSeconds),
+        value: cdktn.numberToHclTerraform(this._maxLeaseTtlSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       options: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._options),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       passthrough_request_headers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._passthroughRequestHeaders),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._passthroughRequestHeaders),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plugin_version: {
-        value: cdktf.stringToHclTerraform(this._pluginVersion),
+        value: cdktn.stringToHclTerraform(this._pluginVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       root_password_ttl: {
-        value: cdktf.numberToHclTerraform(this._rootPasswordTtl),
+        value: cdktn.numberToHclTerraform(this._rootPasswordTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       rotation_period: {
-        value: cdktf.numberToHclTerraform(this._rotationPeriod),
+        value: cdktn.numberToHclTerraform(this._rotationPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       rotation_schedule: {
-        value: cdktf.stringToHclTerraform(this._rotationSchedule),
+        value: cdktn.stringToHclTerraform(this._rotationSchedule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rotation_window: {
-        value: cdktf.numberToHclTerraform(this._rotationWindow),
+        value: cdktn.numberToHclTerraform(this._rotationWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       seal_wrap: {
-        value: cdktf.booleanToHclTerraform(this._sealWrap),
+        value: cdktn.booleanToHclTerraform(this._sealWrap),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       subscription_id: {
-        value: cdktf.stringToHclTerraform(this._subscriptionId),
+        value: cdktn.stringToHclTerraform(this._subscriptionId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tenant_id: {
-        value: cdktf.stringToHclTerraform(this._tenantId),
+        value: cdktn.stringToHclTerraform(this._tenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

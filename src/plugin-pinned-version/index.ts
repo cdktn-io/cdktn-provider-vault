@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PluginPinnedVersionConfig extends cdktf.TerraformMetaArguments {
+export interface PluginPinnedVersionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version#id PluginPinnedVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,27 +22,27 @@ export interface PluginPinnedVersionConfig extends cdktf.TerraformMetaArguments 
   /**
   * Name of the plugin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#name PluginPinnedVersion#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version#name PluginPinnedVersion#name}
   */
   readonly name: string;
   /**
   * Type of plugin; one of "auth", "secret", or "database".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#type PluginPinnedVersion#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version#type PluginPinnedVersion#type}
   */
   readonly type: string;
   /**
   * Semantic pinned plugin version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#version PluginPinnedVersion#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version#version PluginPinnedVersion#version}
   */
   readonly version: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version}
 */
-export class PluginPinnedVersion extends cdktf.TerraformResource {
+export class PluginPinnedVersion extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class PluginPinnedVersion extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PluginPinnedVersion resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PluginPinnedVersion resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PluginPinnedVersion to import
-  * @param importFromId The id of the existing PluginPinnedVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PluginPinnedVersion that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PluginPinnedVersion to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_plugin_pinned_version", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_plugin_pinned_version", importId: importFromId, provider });
       }
 
   // ===========
@@ -68,7 +68,7 @@ export class PluginPinnedVersion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/plugin_pinned_version vault_plugin_pinned_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class PluginPinnedVersion extends cdktf.TerraformResource {
       terraformResourceType: 'vault_plugin_pinned_version',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -161,35 +161,35 @@ export class PluginPinnedVersion extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      type: cdktf.stringToTerraform(this._type),
-      version: cdktf.stringToTerraform(this._version),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      type: cdktn.stringToTerraform(this._type),
+      version: cdktn.stringToTerraform(this._version),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       version: {
-        value: cdktf.stringToHclTerraform(this._version),
+        value: cdktn.stringToHclTerraform(this._version),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,33 +1,33 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_okta
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MfaOktaConfig extends cdktf.TerraformMetaArguments {
+export interface MfaOktaConfig extends cdktn.TerraformMetaArguments {
   /**
   * Okta API key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_okta#api_token MfaOkta#api_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#api_token MfaOkta#api_token}
   */
   readonly apiToken: string;
   /**
   * If set, will be used as the base domain for API requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_okta#base_url MfaOkta#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#base_url MfaOkta#base_url}
   */
   readonly baseUrl?: string;
   /**
   * ID computed by Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_okta#id MfaOkta#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#id MfaOkta#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,45 +36,45 @@ export interface MfaOktaConfig extends cdktf.TerraformMetaArguments {
   /**
   * The mount to tie this method to for use in automatic mappings. The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_okta#mount_accessor MfaOkta#mount_accessor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#mount_accessor MfaOkta#mount_accessor}
   */
   readonly mountAccessor: string;
   /**
   * Name of the MFA method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_okta#name MfaOkta#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#name MfaOkta#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_okta#namespace MfaOkta#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#namespace MfaOkta#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the organization to be used in the Okta API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_okta#org_name MfaOkta#org_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#org_name MfaOkta#org_name}
   */
   readonly orgName: string;
   /**
   * If set to true, the username will only match the primary email for the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_okta#primary_email MfaOkta#primary_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#primary_email MfaOkta#primary_email}
   */
-  readonly primaryEmail?: boolean | cdktf.IResolvable;
+  readonly primaryEmail?: boolean | cdktn.IResolvable;
   /**
   * A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_okta#username_format MfaOkta#username_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#username_format MfaOkta#username_format}
   */
   readonly usernameFormat?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_okta vault_mfa_okta}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta vault_mfa_okta}
 */
-export class MfaOkta extends cdktf.TerraformResource {
+export class MfaOkta extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -85,14 +85,14 @@ export class MfaOkta extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MfaOkta resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MfaOkta resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MfaOkta to import
-  * @param importFromId The id of the existing MfaOkta that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_okta#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MfaOkta that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MfaOkta to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_mfa_okta", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_mfa_okta", importId: importFromId, provider });
       }
 
   // ===========
@@ -100,7 +100,7 @@ export class MfaOkta extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_okta vault_mfa_okta} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta vault_mfa_okta} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -111,7 +111,7 @@ export class MfaOkta extends cdktf.TerraformResource {
       terraformResourceType: 'vault_mfa_okta',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -238,11 +238,11 @@ export class MfaOkta extends cdktf.TerraformResource {
   }
 
   // primary_email - computed: false, optional: true, required: false
-  private _primaryEmail?: boolean | cdktf.IResolvable; 
+  private _primaryEmail?: boolean | cdktn.IResolvable; 
   public get primaryEmail() {
     return this.getBooleanAttribute('primary_email');
   }
-  public set primaryEmail(value: boolean | cdktf.IResolvable) {
+  public set primaryEmail(value: boolean | cdktn.IResolvable) {
     this._primaryEmail = value;
   }
   public resetPrimaryEmail() {
@@ -275,70 +275,70 @@ export class MfaOkta extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_token: cdktf.stringToTerraform(this._apiToken),
-      base_url: cdktf.stringToTerraform(this._baseUrl),
-      id: cdktf.stringToTerraform(this._id),
-      mount_accessor: cdktf.stringToTerraform(this._mountAccessor),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      org_name: cdktf.stringToTerraform(this._orgName),
-      primary_email: cdktf.booleanToTerraform(this._primaryEmail),
-      username_format: cdktf.stringToTerraform(this._usernameFormat),
+      api_token: cdktn.stringToTerraform(this._apiToken),
+      base_url: cdktn.stringToTerraform(this._baseUrl),
+      id: cdktn.stringToTerraform(this._id),
+      mount_accessor: cdktn.stringToTerraform(this._mountAccessor),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      org_name: cdktn.stringToTerraform(this._orgName),
+      primary_email: cdktn.booleanToTerraform(this._primaryEmail),
+      username_format: cdktn.stringToTerraform(this._usernameFormat),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_token: {
-        value: cdktf.stringToHclTerraform(this._apiToken),
+        value: cdktn.stringToHclTerraform(this._apiToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       base_url: {
-        value: cdktf.stringToHclTerraform(this._baseUrl),
+        value: cdktn.stringToHclTerraform(this._baseUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mount_accessor: {
-        value: cdktf.stringToHclTerraform(this._mountAccessor),
+        value: cdktn.stringToHclTerraform(this._mountAccessor),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       org_name: {
-        value: cdktf.stringToHclTerraform(this._orgName),
+        value: cdktn.stringToHclTerraform(this._orgName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       primary_email: {
-        value: cdktf.booleanToHclTerraform(this._primaryEmail),
+        value: cdktn.booleanToHclTerraform(this._primaryEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       username_format: {
-        value: cdktf.stringToHclTerraform(this._usernameFormat),
+        value: cdktn.stringToHclTerraform(this._usernameFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

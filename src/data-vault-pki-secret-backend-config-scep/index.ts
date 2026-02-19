@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_config_scep
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_config_scep
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataVaultPkiSecretBackendConfigScepConfig extends cdktf.TerraformMetaArguments {
+export interface DataVaultPkiSecretBackendConfigScepConfig extends cdktn.TerraformMetaArguments {
   /**
   * Path where PKI engine is mounted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_config_scep#backend DataVaultPkiSecretBackendConfigScep#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_config_scep#backend DataVaultPkiSecretBackendConfigScep#backend}
   */
   readonly backend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_config_scep#id DataVaultPkiSecretBackendConfigScep#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_config_scep#id DataVaultPkiSecretBackendConfigScep#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface DataVaultPkiSecretBackendConfigScepConfig extends cdktf.Terrafo
   /**
   * The level of logging verbosity, affects only SCEP logs on this mount
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_config_scep#log_level DataVaultPkiSecretBackendConfigScep#log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_config_scep#log_level DataVaultPkiSecretBackendConfigScep#log_level}
   */
   readonly logLevel?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_config_scep#namespace DataVaultPkiSecretBackendConfigScep#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_config_scep#namespace DataVaultPkiSecretBackendConfigScep#namespace}
   */
   readonly namespace?: string;
 }
@@ -42,8 +42,8 @@ export interface DataVaultPkiSecretBackendConfigScepAuthenticators {
 }
 
 export function dataVaultPkiSecretBackendConfigScepAuthenticatorsToTerraform(struct?: DataVaultPkiSecretBackendConfigScepAuthenticators): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -52,8 +52,8 @@ export function dataVaultPkiSecretBackendConfigScepAuthenticatorsToTerraform(str
 
 
 export function dataVaultPkiSecretBackendConfigScepAuthenticatorsToHclTerraform(struct?: DataVaultPkiSecretBackendConfigScepAuthenticators): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -61,7 +61,7 @@ export function dataVaultPkiSecretBackendConfigScepAuthenticatorsToHclTerraform(
   return attrs;
 }
 
-export class DataVaultPkiSecretBackendConfigScepAuthenticatorsOutputReference extends cdktf.ComplexObject {
+export class DataVaultPkiSecretBackendConfigScepAuthenticatorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -70,7 +70,7 @@ export class DataVaultPkiSecretBackendConfigScepAuthenticatorsOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -90,26 +90,26 @@ export class DataVaultPkiSecretBackendConfigScepAuthenticatorsOutputReference ex
   }
 
   // cert - computed: true, optional: false, required: false
-  private _cert = new cdktf.StringMap(this, "cert");
+  private _cert = new cdktn.StringMap(this, "cert");
   public get cert() {
     return this._cert;
   }
 
   // scep - computed: true, optional: false, required: false
-  private _scep = new cdktf.StringMap(this, "scep");
+  private _scep = new cdktn.StringMap(this, "scep");
   public get scep() {
     return this._scep;
   }
 }
 
-export class DataVaultPkiSecretBackendConfigScepAuthenticatorsList extends cdktf.ComplexList {
+export class DataVaultPkiSecretBackendConfigScepAuthenticatorsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -124,8 +124,8 @@ export interface DataVaultPkiSecretBackendConfigScepExternalValidation {
 }
 
 export function dataVaultPkiSecretBackendConfigScepExternalValidationToTerraform(struct?: DataVaultPkiSecretBackendConfigScepExternalValidation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -134,8 +134,8 @@ export function dataVaultPkiSecretBackendConfigScepExternalValidationToTerraform
 
 
 export function dataVaultPkiSecretBackendConfigScepExternalValidationToHclTerraform(struct?: DataVaultPkiSecretBackendConfigScepExternalValidation): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -143,7 +143,7 @@ export function dataVaultPkiSecretBackendConfigScepExternalValidationToHclTerraf
   return attrs;
 }
 
-export class DataVaultPkiSecretBackendConfigScepExternalValidationOutputReference extends cdktf.ComplexObject {
+export class DataVaultPkiSecretBackendConfigScepExternalValidationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -152,7 +152,7 @@ export class DataVaultPkiSecretBackendConfigScepExternalValidationOutputReferenc
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -172,20 +172,20 @@ export class DataVaultPkiSecretBackendConfigScepExternalValidationOutputReferenc
   }
 
   // intune - computed: true, optional: false, required: false
-  private _intune = new cdktf.StringMap(this, "intune");
+  private _intune = new cdktn.StringMap(this, "intune");
   public get intune() {
     return this._intune;
   }
 }
 
-export class DataVaultPkiSecretBackendConfigScepExternalValidationList extends cdktf.ComplexList {
+export class DataVaultPkiSecretBackendConfigScepExternalValidationList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -198,9 +198,9 @@ export class DataVaultPkiSecretBackendConfigScepExternalValidationList extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep}
 */
-export class DataVaultPkiSecretBackendConfigScep extends cdktf.TerraformDataSource {
+export class DataVaultPkiSecretBackendConfigScep extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -211,14 +211,14 @@ export class DataVaultPkiSecretBackendConfigScep extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataVaultPkiSecretBackendConfigScep resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataVaultPkiSecretBackendConfigScep resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultPkiSecretBackendConfigScep to import
-  * @param importFromId The id of the existing DataVaultPkiSecretBackendConfigScep that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_config_scep#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultPkiSecretBackendConfigScep that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_config_scep#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultPkiSecretBackendConfigScep to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_config_scep", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_config_scep", importId: importFromId, provider });
       }
 
   // ===========
@@ -226,7 +226,7 @@ export class DataVaultPkiSecretBackendConfigScep extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -237,7 +237,7 @@ export class DataVaultPkiSecretBackendConfigScep extends cdktf.TerraformDataSour
       terraformResourceType: 'vault_pki_secret_backend_config_scep',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -367,35 +367,35 @@ export class DataVaultPkiSecretBackendConfigScep extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      id: cdktf.stringToTerraform(this._id),
-      log_level: cdktf.stringToTerraform(this._logLevel),
-      namespace: cdktf.stringToTerraform(this._namespace),
+      backend: cdktn.stringToTerraform(this._backend),
+      id: cdktn.stringToTerraform(this._id),
+      log_level: cdktn.stringToTerraform(this._logLevel),
+      namespace: cdktn.stringToTerraform(this._namespace),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_level: {
-        value: cdktf.stringToHclTerraform(this._logLevel),
+        value: cdktn.stringToHclTerraform(this._logLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

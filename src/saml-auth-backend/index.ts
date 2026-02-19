@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SamlAuthBackendConfig extends cdktf.TerraformMetaArguments {
+export interface SamlAuthBackendConfig extends cdktn.TerraformMetaArguments {
   /**
   * The well-formatted URLs of your Assertion Consumer Service (ACS) that should receive a response from the identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#acs_urls SamlAuthBackend#acs_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#acs_urls SamlAuthBackend#acs_urls}
   */
   readonly acsUrls: string[];
   /**
   * The role to use if no role is provided during login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#default_role SamlAuthBackend#default_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#default_role SamlAuthBackend#default_role}
   */
   readonly defaultRole?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#disable_remount SamlAuthBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#disable_remount SamlAuthBackend#disable_remount}
   */
-  readonly disableRemount?: boolean | cdktf.IResolvable;
+  readonly disableRemount?: boolean | cdktn.IResolvable;
   /**
   * The entity ID of the SAML authentication service provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#entity_id SamlAuthBackend#entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#entity_id SamlAuthBackend#entity_id}
   */
   readonly entityId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,153 +46,165 @@ export interface SamlAuthBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The PEM encoded certificate of the identity provider. Mutually exclusive with 'idp_metadata_url'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#idp_cert SamlAuthBackend#idp_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#idp_cert SamlAuthBackend#idp_cert}
   */
   readonly idpCert?: string;
   /**
   * The entity ID of the identity provider. Mutually exclusive with 'idp_metadata_url'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#idp_entity_id SamlAuthBackend#idp_entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#idp_entity_id SamlAuthBackend#idp_entity_id}
   */
   readonly idpEntityId?: string;
   /**
   * The metadata URL of the identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#idp_metadata_url SamlAuthBackend#idp_metadata_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#idp_metadata_url SamlAuthBackend#idp_metadata_url}
   */
   readonly idpMetadataUrl?: string;
   /**
   * The SSO URL of the identity provider. Mutually exclusive with 'idp_metadata_url'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#idp_sso_url SamlAuthBackend#idp_sso_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#idp_sso_url SamlAuthBackend#idp_sso_url}
   */
   readonly idpSsoUrl?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#namespace SamlAuthBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#namespace SamlAuthBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Unique name of the auth backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#path SamlAuthBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#path SamlAuthBackend#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#tune SamlAuthBackend#tune}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#tune SamlAuthBackend#tune}
   */
-  readonly tune?: SamlAuthBackendTune[] | cdktf.IResolvable;
+  readonly tune?: SamlAuthBackendTune[] | cdktn.IResolvable;
+  /**
+  * Whether to validate the assertion signature.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#validate_assertion_signature SamlAuthBackend#validate_assertion_signature}
+  */
+  readonly validateAssertionSignature?: boolean | cdktn.IResolvable;
+  /**
+  * Whether to validate the response signature.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#validate_response_signature SamlAuthBackend#validate_response_signature}
+  */
+  readonly validateResponseSignature?: boolean | cdktn.IResolvable;
   /**
   * Log additional, potentially sensitive information during the SAML exchange according to the current logging level. Not recommended for production.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#verbose_logging SamlAuthBackend#verbose_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#verbose_logging SamlAuthBackend#verbose_logging}
   */
-  readonly verboseLogging?: boolean | cdktf.IResolvable;
+  readonly verboseLogging?: boolean | cdktn.IResolvable;
 }
 export interface SamlAuthBackendTune {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#allowed_response_headers SamlAuthBackend#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#allowed_response_headers SamlAuthBackend#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#audit_non_hmac_request_keys SamlAuthBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#audit_non_hmac_request_keys SamlAuthBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#audit_non_hmac_response_keys SamlAuthBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#audit_non_hmac_response_keys SamlAuthBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#default_lease_ttl SamlAuthBackend#default_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#default_lease_ttl SamlAuthBackend#default_lease_ttl}
   */
   readonly defaultLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#listing_visibility SamlAuthBackend#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#listing_visibility SamlAuthBackend#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#max_lease_ttl SamlAuthBackend#max_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#max_lease_ttl SamlAuthBackend#max_lease_ttl}
   */
   readonly maxLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#passthrough_request_headers SamlAuthBackend#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#passthrough_request_headers SamlAuthBackend#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#token_type SamlAuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#token_type SamlAuthBackend#token_type}
   */
   readonly tokenType?: string;
 }
 
-export function samlAuthBackendTuneToTerraform(struct?: SamlAuthBackendTune | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function samlAuthBackendTuneToTerraform(struct?: SamlAuthBackendTune | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_response_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedResponseHeaders),
-    audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacRequestKeys),
-    audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacResponseKeys),
-    default_lease_ttl: cdktf.stringToTerraform(struct!.defaultLeaseTtl),
-    listing_visibility: cdktf.stringToTerraform(struct!.listingVisibility),
-    max_lease_ttl: cdktf.stringToTerraform(struct!.maxLeaseTtl),
-    passthrough_request_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.passthroughRequestHeaders),
-    token_type: cdktf.stringToTerraform(struct!.tokenType),
+    allowed_response_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedResponseHeaders),
+    audit_non_hmac_request_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.auditNonHmacRequestKeys),
+    audit_non_hmac_response_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.auditNonHmacResponseKeys),
+    default_lease_ttl: cdktn.stringToTerraform(struct!.defaultLeaseTtl),
+    listing_visibility: cdktn.stringToTerraform(struct!.listingVisibility),
+    max_lease_ttl: cdktn.stringToTerraform(struct!.maxLeaseTtl),
+    passthrough_request_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.passthroughRequestHeaders),
+    token_type: cdktn.stringToTerraform(struct!.tokenType),
   }
 }
 
 
-export function samlAuthBackendTuneToHclTerraform(struct?: SamlAuthBackendTune | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function samlAuthBackendTuneToHclTerraform(struct?: SamlAuthBackendTune | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_response_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedResponseHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedResponseHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     audit_non_hmac_request_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacRequestKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.auditNonHmacRequestKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     audit_non_hmac_response_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacResponseKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.auditNonHmacResponseKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     default_lease_ttl: {
-      value: cdktf.stringToHclTerraform(struct!.defaultLeaseTtl),
+      value: cdktn.stringToHclTerraform(struct!.defaultLeaseTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     listing_visibility: {
-      value: cdktf.stringToHclTerraform(struct!.listingVisibility),
+      value: cdktn.stringToHclTerraform(struct!.listingVisibility),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_lease_ttl: {
-      value: cdktf.stringToHclTerraform(struct!.maxLeaseTtl),
+      value: cdktn.stringToHclTerraform(struct!.maxLeaseTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     passthrough_request_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.passthroughRequestHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.passthroughRequestHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     token_type: {
-      value: cdktf.stringToHclTerraform(struct!.tokenType),
+      value: cdktn.stringToHclTerraform(struct!.tokenType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -203,9 +215,9 @@ export function samlAuthBackendTuneToHclTerraform(struct?: SamlAuthBackendTune |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SamlAuthBackendTuneOutputReference extends cdktf.ComplexObject {
+export class SamlAuthBackendTuneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -213,11 +225,11 @@ export class SamlAuthBackendTuneOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SamlAuthBackendTune | cdktf.IResolvable | undefined {
+  public get internalValue(): SamlAuthBackendTune | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -258,7 +270,7 @@ export class SamlAuthBackendTuneOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SamlAuthBackendTune | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SamlAuthBackendTune | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -271,7 +283,7 @@ export class SamlAuthBackendTuneOutputReference extends cdktf.ComplexObject {
       this._passthroughRequestHeaders = undefined;
       this._tokenType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -418,15 +430,15 @@ export class SamlAuthBackendTuneOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SamlAuthBackendTuneList extends cdktf.ComplexList {
-  public internalValue? : SamlAuthBackendTune[] | cdktf.IResolvable
+export class SamlAuthBackendTuneList extends cdktn.ComplexList {
+  public internalValue? : SamlAuthBackendTune[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -439,9 +451,9 @@ export class SamlAuthBackendTuneList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend vault_saml_auth_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend vault_saml_auth_backend}
 */
-export class SamlAuthBackend extends cdktf.TerraformResource {
+export class SamlAuthBackend extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -452,14 +464,14 @@ export class SamlAuthBackend extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SamlAuthBackend resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SamlAuthBackend resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SamlAuthBackend to import
-  * @param importFromId The id of the existing SamlAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SamlAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SamlAuthBackend to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_saml_auth_backend", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_saml_auth_backend", importId: importFromId, provider });
       }
 
   // ===========
@@ -467,7 +479,7 @@ export class SamlAuthBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend vault_saml_auth_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -478,7 +490,7 @@ export class SamlAuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_saml_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -501,6 +513,8 @@ export class SamlAuthBackend extends cdktf.TerraformResource {
     this._namespace = config.namespace;
     this._path = config.path;
     this._tune.internalValue = config.tune;
+    this._validateAssertionSignature = config.validateAssertionSignature;
+    this._validateResponseSignature = config.validateResponseSignature;
     this._verboseLogging = config.verboseLogging;
   }
 
@@ -538,11 +552,11 @@ export class SamlAuthBackend extends cdktf.TerraformResource {
   }
 
   // disable_remount - computed: false, optional: true, required: false
-  private _disableRemount?: boolean | cdktf.IResolvable; 
+  private _disableRemount?: boolean | cdktn.IResolvable; 
   public get disableRemount() {
     return this.getBooleanAttribute('disable_remount');
   }
-  public set disableRemount(value: boolean | cdktf.IResolvable) {
+  public set disableRemount(value: boolean | cdktn.IResolvable) {
     this._disableRemount = value;
   }
   public resetDisableRemount() {
@@ -683,7 +697,7 @@ export class SamlAuthBackend extends cdktf.TerraformResource {
   public get tune() {
     return this._tune;
   }
-  public putTune(value: SamlAuthBackendTune[] | cdktf.IResolvable) {
+  public putTune(value: SamlAuthBackendTune[] | cdktn.IResolvable) {
     this._tune.internalValue = value;
   }
   public resetTune() {
@@ -694,12 +708,44 @@ export class SamlAuthBackend extends cdktf.TerraformResource {
     return this._tune.internalValue;
   }
 
+  // validate_assertion_signature - computed: true, optional: true, required: false
+  private _validateAssertionSignature?: boolean | cdktn.IResolvable; 
+  public get validateAssertionSignature() {
+    return this.getBooleanAttribute('validate_assertion_signature');
+  }
+  public set validateAssertionSignature(value: boolean | cdktn.IResolvable) {
+    this._validateAssertionSignature = value;
+  }
+  public resetValidateAssertionSignature() {
+    this._validateAssertionSignature = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validateAssertionSignatureInput() {
+    return this._validateAssertionSignature;
+  }
+
+  // validate_response_signature - computed: true, optional: true, required: false
+  private _validateResponseSignature?: boolean | cdktn.IResolvable; 
+  public get validateResponseSignature() {
+    return this.getBooleanAttribute('validate_response_signature');
+  }
+  public set validateResponseSignature(value: boolean | cdktn.IResolvable) {
+    this._validateResponseSignature = value;
+  }
+  public resetValidateResponseSignature() {
+    this._validateResponseSignature = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validateResponseSignatureInput() {
+    return this._validateResponseSignature;
+  }
+
   // verbose_logging - computed: true, optional: true, required: false
-  private _verboseLogging?: boolean | cdktf.IResolvable; 
+  private _verboseLogging?: boolean | cdktn.IResolvable; 
   public get verboseLogging() {
     return this.getBooleanAttribute('verbose_logging');
   }
-  public set verboseLogging(value: boolean | cdktf.IResolvable) {
+  public set verboseLogging(value: boolean | cdktn.IResolvable) {
     this._verboseLogging = value;
   }
   public resetVerboseLogging() {
@@ -716,98 +762,112 @@ export class SamlAuthBackend extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      acs_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._acsUrls),
-      default_role: cdktf.stringToTerraform(this._defaultRole),
-      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
-      entity_id: cdktf.stringToTerraform(this._entityId),
-      id: cdktf.stringToTerraform(this._id),
-      idp_cert: cdktf.stringToTerraform(this._idpCert),
-      idp_entity_id: cdktf.stringToTerraform(this._idpEntityId),
-      idp_metadata_url: cdktf.stringToTerraform(this._idpMetadataUrl),
-      idp_sso_url: cdktf.stringToTerraform(this._idpSsoUrl),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      path: cdktf.stringToTerraform(this._path),
-      tune: cdktf.listMapper(samlAuthBackendTuneToTerraform, false)(this._tune.internalValue),
-      verbose_logging: cdktf.booleanToTerraform(this._verboseLogging),
+      acs_urls: cdktn.listMapper(cdktn.stringToTerraform, false)(this._acsUrls),
+      default_role: cdktn.stringToTerraform(this._defaultRole),
+      disable_remount: cdktn.booleanToTerraform(this._disableRemount),
+      entity_id: cdktn.stringToTerraform(this._entityId),
+      id: cdktn.stringToTerraform(this._id),
+      idp_cert: cdktn.stringToTerraform(this._idpCert),
+      idp_entity_id: cdktn.stringToTerraform(this._idpEntityId),
+      idp_metadata_url: cdktn.stringToTerraform(this._idpMetadataUrl),
+      idp_sso_url: cdktn.stringToTerraform(this._idpSsoUrl),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      path: cdktn.stringToTerraform(this._path),
+      tune: cdktn.listMapper(samlAuthBackendTuneToTerraform, false)(this._tune.internalValue),
+      validate_assertion_signature: cdktn.booleanToTerraform(this._validateAssertionSignature),
+      validate_response_signature: cdktn.booleanToTerraform(this._validateResponseSignature),
+      verbose_logging: cdktn.booleanToTerraform(this._verboseLogging),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       acs_urls: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._acsUrls),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._acsUrls),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       default_role: {
-        value: cdktf.stringToHclTerraform(this._defaultRole),
+        value: cdktn.stringToHclTerraform(this._defaultRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_remount: {
-        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        value: cdktn.booleanToHclTerraform(this._disableRemount),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       entity_id: {
-        value: cdktf.stringToHclTerraform(this._entityId),
+        value: cdktn.stringToHclTerraform(this._entityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idp_cert: {
-        value: cdktf.stringToHclTerraform(this._idpCert),
+        value: cdktn.stringToHclTerraform(this._idpCert),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idp_entity_id: {
-        value: cdktf.stringToHclTerraform(this._idpEntityId),
+        value: cdktn.stringToHclTerraform(this._idpEntityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idp_metadata_url: {
-        value: cdktf.stringToHclTerraform(this._idpMetadataUrl),
+        value: cdktn.stringToHclTerraform(this._idpMetadataUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       idp_sso_url: {
-        value: cdktf.stringToHclTerraform(this._idpSsoUrl),
+        value: cdktn.stringToHclTerraform(this._idpSsoUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tune: {
-        value: cdktf.listMapperHcl(samlAuthBackendTuneToHclTerraform, false)(this._tune.internalValue),
+        value: cdktn.listMapperHcl(samlAuthBackendTuneToHclTerraform, false)(this._tune.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SamlAuthBackendTuneList",
       },
+      validate_assertion_signature: {
+        value: cdktn.booleanToHclTerraform(this._validateAssertionSignature),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      validate_response_signature: {
+        value: cdktn.booleanToHclTerraform(this._validateResponseSignature),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       verbose_logging: {
-        value: cdktf.booleanToHclTerraform(this._verboseLogging),
+        value: cdktn.booleanToHclTerraform(this._verboseLogging),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

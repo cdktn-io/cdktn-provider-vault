@@ -1,55 +1,55 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataVaultTransitVerifyConfig extends cdktf.TerraformMetaArguments {
+export interface DataVaultTransitVerifyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a list of items for processing. When this parameter is set, any supplied 'input' or 'context' parameters will be ignored. Responses are returned in the 'batch_results' array component of the 'data' element of the response. Any batch output will preserve the order of the batch input. If the input data value of an item is invalid, the corresponding item in the 'batch_results' will have the key 'error' with a value describing the error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#batch_input DataVaultTransitVerify#batch_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#batch_input DataVaultTransitVerify#batch_input}
   */
-  readonly batchInput?: { [key: string]: string }[] | cdktf.IResolvable;
+  readonly batchInput?: { [key: string]: string }[] | cdktn.IResolvable;
   /**
   * The results returned from Vault if using batch_input
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#batch_results DataVaultTransitVerify#batch_results}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#batch_results DataVaultTransitVerify#batch_results}
   */
-  readonly batchResults?: { [key: string]: string }[] | cdktf.IResolvable;
+  readonly batchResults?: { [key: string]: string }[] | cdktn.IResolvable;
   /**
   * (Enterprise only) Specifies the signature output from the /transit/cmac function. One of the following arguments must be supplied signature, hmac or cmac.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#cmac DataVaultTransitVerify#cmac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#cmac DataVaultTransitVerify#cmac}
   */
   readonly cmac?: string;
   /**
   * Base64 encoded context for key derivation. Required if key derivation is enabled; currently only available with ed25519 keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#context DataVaultTransitVerify#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#context DataVaultTransitVerify#context}
   */
   readonly context?: string;
   /**
   * Specifies the hash algorithm to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#hash_algorithm DataVaultTransitVerify#hash_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#hash_algorithm DataVaultTransitVerify#hash_algorithm}
   */
   readonly hashAlgorithm?: string;
   /**
   * Specifies the signature output from the /transit/hmac function. One of the following arguments must be supplied signature, hmac or cmac.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#hmac DataVaultTransitVerify#hmac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#hmac DataVaultTransitVerify#hmac}
   */
   readonly hmac?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#id DataVaultTransitVerify#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,87 +58,87 @@ export interface DataVaultTransitVerifyConfig extends cdktf.TerraformMetaArgumen
   /**
   * Specifies the base64 encoded input data. One of input or batch_input must be supplied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#input DataVaultTransitVerify#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#input DataVaultTransitVerify#input}
   */
   readonly input?: string;
   /**
   * Specifies the MAC length used to generate a CMAC. The mac_length cannot be larger than the cipher's block size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#mac_length DataVaultTransitVerify#mac_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#mac_length DataVaultTransitVerify#mac_length}
   */
   readonly macLength?: number;
   /**
   * Specifies the way in which the signature was originally marshaled. This currently only applies to ECDSA keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#marshaling_algorithm DataVaultTransitVerify#marshaling_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#marshaling_algorithm DataVaultTransitVerify#marshaling_algorithm}
   */
   readonly marshalingAlgorithm?: string;
   /**
   * Specifies the name of the encryption key that was used to generate the signature or HMAC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#name DataVaultTransitVerify#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#name DataVaultTransitVerify#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#namespace DataVaultTransitVerify#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#namespace DataVaultTransitVerify#namespace}
   */
   readonly namespace?: string;
   /**
   * The Transit secret backend the key belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#path DataVaultTransitVerify#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#path DataVaultTransitVerify#path}
   */
   readonly path: string;
   /**
   * Set to true when the input is already hashed. If the key type is rsa-2048, rsa-3072 or rsa-4096, then the algorithm used to hash the input should be indicated by the hash_algorithm parameter. Just as the value to sign should be the base64-encoded representation of the exact binary data you want signed, when set, input is expected to be base64-encoded binary hashed data, not hex-formatted. (As an example, on the command line, you could generate a suitable input via openssl dgst -sha256 -binary | base64.)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#prehashed DataVaultTransitVerify#prehashed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#prehashed DataVaultTransitVerify#prehashed}
   */
-  readonly prehashed?: boolean | cdktf.IResolvable;
+  readonly prehashed?: boolean | cdktn.IResolvable;
   /**
   * A user-supplied string that will be present in the reference field on the corresponding batch_results item in the response, to assist in understanding which result corresponds to a particular input. Only valid on batch requests when using ‘batch_input’ below.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#reference DataVaultTransitVerify#reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#reference DataVaultTransitVerify#reference}
   */
   readonly reference?: string;
   /**
   * The salt length used to sign. This currently only applies to the RSA PSS signature scheme.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#salt_length DataVaultTransitVerify#salt_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#salt_length DataVaultTransitVerify#salt_length}
   */
   readonly saltLength?: string;
   /**
   * Specifies the signature output from the /transit/sign function. One of the following arguments must be supplied signature, hmac or cmac.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#signature DataVaultTransitVerify#signature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#signature DataVaultTransitVerify#signature}
   */
   readonly signature?: string;
   /**
   * When using a RSA key, specifies the RSA signature algorithm to use for signature verification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#signature_algorithm DataVaultTransitVerify#signature_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#signature_algorithm DataVaultTransitVerify#signature_algorithm}
   */
   readonly signatureAlgorithm?: string;
   /**
   * Base64 encoded context for Ed25519ctx and Ed25519ph signatures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#signature_context DataVaultTransitVerify#signature_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#signature_context DataVaultTransitVerify#signature_context}
   */
   readonly signatureContext?: string;
   /**
   * Indicates whether verification succeeded
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#valid DataVaultTransitVerify#valid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#valid DataVaultTransitVerify#valid}
   */
-  readonly valid?: boolean | cdktf.IResolvable;
+  readonly valid?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify vault_transit_verify}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify vault_transit_verify}
 */
-export class DataVaultTransitVerify extends cdktf.TerraformDataSource {
+export class DataVaultTransitVerify extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -149,14 +149,14 @@ export class DataVaultTransitVerify extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataVaultTransitVerify resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataVaultTransitVerify resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultTransitVerify to import
-  * @param importFromId The id of the existing DataVaultTransitVerify that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultTransitVerify that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultTransitVerify to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_transit_verify", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_transit_verify", importId: importFromId, provider });
       }
 
   // ===========
@@ -164,7 +164,7 @@ export class DataVaultTransitVerify extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_verify vault_transit_verify} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_verify vault_transit_verify} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -175,7 +175,7 @@ export class DataVaultTransitVerify extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_transit_verify',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -213,11 +213,11 @@ export class DataVaultTransitVerify extends cdktf.TerraformDataSource {
   // ==========
 
   // batch_input - computed: false, optional: true, required: false
-  private _batchInput?: { [key: string]: string }[] | cdktf.IResolvable; 
+  private _batchInput?: { [key: string]: string }[] | cdktn.IResolvable; 
   public get batchInput() {
     return this.interpolationForAttribute('batch_input');
   }
-  public set batchInput(value: { [key: string]: string }[] | cdktf.IResolvable) {
+  public set batchInput(value: { [key: string]: string }[] | cdktn.IResolvable) {
     this._batchInput = value;
   }
   public resetBatchInput() {
@@ -229,11 +229,11 @@ export class DataVaultTransitVerify extends cdktf.TerraformDataSource {
   }
 
   // batch_results - computed: true, optional: true, required: false
-  private _batchResults?: { [key: string]: string }[] | cdktf.IResolvable; 
+  private _batchResults?: { [key: string]: string }[] | cdktn.IResolvable; 
   public get batchResults() {
     return this.interpolationForAttribute('batch_results');
   }
-  public set batchResults(value: { [key: string]: string }[] | cdktf.IResolvable) {
+  public set batchResults(value: { [key: string]: string }[] | cdktn.IResolvable) {
     this._batchResults = value;
   }
   public resetBatchResults() {
@@ -415,11 +415,11 @@ export class DataVaultTransitVerify extends cdktf.TerraformDataSource {
   }
 
   // prehashed - computed: false, optional: true, required: false
-  private _prehashed?: boolean | cdktf.IResolvable; 
+  private _prehashed?: boolean | cdktn.IResolvable; 
   public get prehashed() {
     return this.getBooleanAttribute('prehashed');
   }
-  public set prehashed(value: boolean | cdktf.IResolvable) {
+  public set prehashed(value: boolean | cdktn.IResolvable) {
     this._prehashed = value;
   }
   public resetPrehashed() {
@@ -511,11 +511,11 @@ export class DataVaultTransitVerify extends cdktf.TerraformDataSource {
   }
 
   // valid - computed: true, optional: true, required: false
-  private _valid?: boolean | cdktf.IResolvable; 
+  private _valid?: boolean | cdktn.IResolvable; 
   public get valid() {
     return this.getBooleanAttribute('valid');
   }
-  public set valid(value: boolean | cdktf.IResolvable) {
+  public set valid(value: boolean | cdktn.IResolvable) {
     this._valid = value;
   }
   public resetValid() {
@@ -532,147 +532,147 @@ export class DataVaultTransitVerify extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      batch_input: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._batchInput),
-      batch_results: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._batchResults),
-      cmac: cdktf.stringToTerraform(this._cmac),
-      context: cdktf.stringToTerraform(this._context),
-      hash_algorithm: cdktf.stringToTerraform(this._hashAlgorithm),
-      hmac: cdktf.stringToTerraform(this._hmac),
-      id: cdktf.stringToTerraform(this._id),
-      input: cdktf.stringToTerraform(this._input),
-      mac_length: cdktf.numberToTerraform(this._macLength),
-      marshaling_algorithm: cdktf.stringToTerraform(this._marshalingAlgorithm),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      path: cdktf.stringToTerraform(this._path),
-      prehashed: cdktf.booleanToTerraform(this._prehashed),
-      reference: cdktf.stringToTerraform(this._reference),
-      salt_length: cdktf.stringToTerraform(this._saltLength),
-      signature: cdktf.stringToTerraform(this._signature),
-      signature_algorithm: cdktf.stringToTerraform(this._signatureAlgorithm),
-      signature_context: cdktf.stringToTerraform(this._signatureContext),
-      valid: cdktf.booleanToTerraform(this._valid),
+      batch_input: cdktn.listMapper(cdktn.hashMapper(cdktn.stringToTerraform), false)(this._batchInput),
+      batch_results: cdktn.listMapper(cdktn.hashMapper(cdktn.stringToTerraform), false)(this._batchResults),
+      cmac: cdktn.stringToTerraform(this._cmac),
+      context: cdktn.stringToTerraform(this._context),
+      hash_algorithm: cdktn.stringToTerraform(this._hashAlgorithm),
+      hmac: cdktn.stringToTerraform(this._hmac),
+      id: cdktn.stringToTerraform(this._id),
+      input: cdktn.stringToTerraform(this._input),
+      mac_length: cdktn.numberToTerraform(this._macLength),
+      marshaling_algorithm: cdktn.stringToTerraform(this._marshalingAlgorithm),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      path: cdktn.stringToTerraform(this._path),
+      prehashed: cdktn.booleanToTerraform(this._prehashed),
+      reference: cdktn.stringToTerraform(this._reference),
+      salt_length: cdktn.stringToTerraform(this._saltLength),
+      signature: cdktn.stringToTerraform(this._signature),
+      signature_algorithm: cdktn.stringToTerraform(this._signatureAlgorithm),
+      signature_context: cdktn.stringToTerraform(this._signatureContext),
+      valid: cdktn.booleanToTerraform(this._valid),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       batch_input: {
-        value: cdktf.listMapperHcl(cdktf.hashMapperHcl(cdktf.stringToHclTerraform), false)(this._batchInput),
+        value: cdktn.listMapperHcl(cdktn.hashMapperHcl(cdktn.stringToHclTerraform), false)(this._batchInput),
         isBlock: false,
         type: "list",
         storageClassType: "stringMapList",
       },
       batch_results: {
-        value: cdktf.listMapperHcl(cdktf.hashMapperHcl(cdktf.stringToHclTerraform), false)(this._batchResults),
+        value: cdktn.listMapperHcl(cdktn.hashMapperHcl(cdktn.stringToHclTerraform), false)(this._batchResults),
         isBlock: false,
         type: "list",
         storageClassType: "stringMapList",
       },
       cmac: {
-        value: cdktf.stringToHclTerraform(this._cmac),
+        value: cdktn.stringToHclTerraform(this._cmac),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       context: {
-        value: cdktf.stringToHclTerraform(this._context),
+        value: cdktn.stringToHclTerraform(this._context),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hash_algorithm: {
-        value: cdktf.stringToHclTerraform(this._hashAlgorithm),
+        value: cdktn.stringToHclTerraform(this._hashAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hmac: {
-        value: cdktf.stringToHclTerraform(this._hmac),
+        value: cdktn.stringToHclTerraform(this._hmac),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       input: {
-        value: cdktf.stringToHclTerraform(this._input),
+        value: cdktn.stringToHclTerraform(this._input),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mac_length: {
-        value: cdktf.numberToHclTerraform(this._macLength),
+        value: cdktn.numberToHclTerraform(this._macLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       marshaling_algorithm: {
-        value: cdktf.stringToHclTerraform(this._marshalingAlgorithm),
+        value: cdktn.stringToHclTerraform(this._marshalingAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       prehashed: {
-        value: cdktf.booleanToHclTerraform(this._prehashed),
+        value: cdktn.booleanToHclTerraform(this._prehashed),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       reference: {
-        value: cdktf.stringToHclTerraform(this._reference),
+        value: cdktn.stringToHclTerraform(this._reference),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       salt_length: {
-        value: cdktf.stringToHclTerraform(this._saltLength),
+        value: cdktn.stringToHclTerraform(this._saltLength),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       signature: {
-        value: cdktf.stringToHclTerraform(this._signature),
+        value: cdktn.stringToHclTerraform(this._signature),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       signature_algorithm: {
-        value: cdktf.stringToHclTerraform(this._signatureAlgorithm),
+        value: cdktn.stringToHclTerraform(this._signatureAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       signature_context: {
-        value: cdktf.stringToHclTerraform(this._signatureContext),
+        value: cdktn.stringToHclTerraform(this._signatureContext),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       valid: {
-        value: cdktf.booleanToHclTerraform(this._valid),
+        value: cdktn.booleanToHclTerraform(this._valid),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

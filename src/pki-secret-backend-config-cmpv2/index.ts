@@ -1,55 +1,55 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PkiSecretBackendConfigCmpv2Config extends cdktf.TerraformMetaArguments {
+export interface PkiSecretBackendConfigCmpv2Config extends cdktn.TerraformMetaArguments {
   /**
   * Fields parsed from the CSR that appear in the audit and can be used by sentinel policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2#audit_fields PkiSecretBackendConfigCmpv2#audit_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2#audit_fields PkiSecretBackendConfigCmpv2#audit_fields}
   */
   readonly auditFields?: string[];
   /**
   * The PKI secret backend the resource belongs to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2#backend PkiSecretBackendConfigCmpv2#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2#backend PkiSecretBackendConfigCmpv2#backend}
   */
   readonly backend: string;
   /**
   * Can be sign-verbatim or a role given by role:<role_name>
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2#default_path_policy PkiSecretBackendConfigCmpv2#default_path_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2#default_path_policy PkiSecretBackendConfigCmpv2#default_path_policy}
   */
   readonly defaultPathPolicy?: string;
   /**
   * A comma-separated list of validations not to perform on CMPv2 messages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2#disabled_validations PkiSecretBackendConfigCmpv2#disabled_validations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2#disabled_validations PkiSecretBackendConfigCmpv2#disabled_validations}
   */
   readonly disabledValidations?: string[];
   /**
   * If set, parse out fields from the provided CSR making them available for Sentinel policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2#enable_sentinel_parsing PkiSecretBackendConfigCmpv2#enable_sentinel_parsing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2#enable_sentinel_parsing PkiSecretBackendConfigCmpv2#enable_sentinel_parsing}
   */
-  readonly enableSentinelParsing?: boolean | cdktf.IResolvable;
+  readonly enableSentinelParsing?: boolean | cdktn.IResolvable;
   /**
   * Specifies whether CMPv2 is enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2#enabled PkiSecretBackendConfigCmpv2#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2#enabled PkiSecretBackendConfigCmpv2#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2#id PkiSecretBackendConfigCmpv2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2#id PkiSecretBackendConfigCmpv2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,42 +58,42 @@ export interface PkiSecretBackendConfigCmpv2Config extends cdktf.TerraformMetaAr
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2#namespace PkiSecretBackendConfigCmpv2#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2#namespace PkiSecretBackendConfigCmpv2#namespace}
   */
   readonly namespace?: string;
   /**
   * authenticators block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2#authenticators PkiSecretBackendConfigCmpv2#authenticators}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2#authenticators PkiSecretBackendConfigCmpv2#authenticators}
   */
   readonly authenticators?: PkiSecretBackendConfigCmpv2Authenticators;
 }
 export interface PkiSecretBackendConfigCmpv2Authenticators {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2#cert PkiSecretBackendConfigCmpv2#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2#cert PkiSecretBackendConfigCmpv2#cert}
   */
   readonly cert?: { [key: string]: string };
 }
 
 export function pkiSecretBackendConfigCmpv2AuthenticatorsToTerraform(struct?: PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference | PkiSecretBackendConfigCmpv2Authenticators): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cert: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.cert),
+    cert: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.cert),
   }
 }
 
 
 export function pkiSecretBackendConfigCmpv2AuthenticatorsToHclTerraform(struct?: PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference | PkiSecretBackendConfigCmpv2Authenticators): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cert: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.cert),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.cert),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -104,14 +104,14 @@ export function pkiSecretBackendConfigCmpv2AuthenticatorsToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference extends cdktf.ComplexObject {
+export class PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -154,9 +154,9 @@ export class PkiSecretBackendConfigCmpv2AuthenticatorsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2}
 */
-export class PkiSecretBackendConfigCmpv2 extends cdktf.TerraformResource {
+export class PkiSecretBackendConfigCmpv2 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -167,14 +167,14 @@ export class PkiSecretBackendConfigCmpv2 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PkiSecretBackendConfigCmpv2 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PkiSecretBackendConfigCmpv2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PkiSecretBackendConfigCmpv2 to import
-  * @param importFromId The id of the existing PkiSecretBackendConfigCmpv2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PkiSecretBackendConfigCmpv2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PkiSecretBackendConfigCmpv2 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_config_cmpv2", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_config_cmpv2", importId: importFromId, provider });
       }
 
   // ===========
@@ -182,7 +182,7 @@ export class PkiSecretBackendConfigCmpv2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_cmpv2 vault_pki_secret_backend_config_cmpv2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -193,7 +193,7 @@ export class PkiSecretBackendConfigCmpv2 extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_config_cmpv2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -281,11 +281,11 @@ export class PkiSecretBackendConfigCmpv2 extends cdktf.TerraformResource {
   }
 
   // enable_sentinel_parsing - computed: false, optional: true, required: false
-  private _enableSentinelParsing?: boolean | cdktf.IResolvable; 
+  private _enableSentinelParsing?: boolean | cdktn.IResolvable; 
   public get enableSentinelParsing() {
     return this.getBooleanAttribute('enable_sentinel_parsing');
   }
-  public set enableSentinelParsing(value: boolean | cdktf.IResolvable) {
+  public set enableSentinelParsing(value: boolean | cdktn.IResolvable) {
     this._enableSentinelParsing = value;
   }
   public resetEnableSentinelParsing() {
@@ -297,11 +297,11 @@ export class PkiSecretBackendConfigCmpv2 extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -371,14 +371,14 @@ export class PkiSecretBackendConfigCmpv2 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      audit_fields: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditFields),
-      backend: cdktf.stringToTerraform(this._backend),
-      default_path_policy: cdktf.stringToTerraform(this._defaultPathPolicy),
-      disabled_validations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._disabledValidations),
-      enable_sentinel_parsing: cdktf.booleanToTerraform(this._enableSentinelParsing),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
+      audit_fields: cdktn.listMapper(cdktn.stringToTerraform, false)(this._auditFields),
+      backend: cdktn.stringToTerraform(this._backend),
+      default_path_policy: cdktn.stringToTerraform(this._defaultPathPolicy),
+      disabled_validations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._disabledValidations),
+      enable_sentinel_parsing: cdktn.booleanToTerraform(this._enableSentinelParsing),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
       authenticators: pkiSecretBackendConfigCmpv2AuthenticatorsToTerraform(this._authenticators.internalValue),
     };
   }
@@ -386,49 +386,49 @@ export class PkiSecretBackendConfigCmpv2 extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       audit_fields: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditFields),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._auditFields),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_path_policy: {
-        value: cdktf.stringToHclTerraform(this._defaultPathPolicy),
+        value: cdktn.stringToHclTerraform(this._defaultPathPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disabled_validations: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._disabledValidations),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._disabledValidations),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       enable_sentinel_parsing: {
-        value: cdktf.booleanToHclTerraform(this._enableSentinelParsing),
+        value: cdktn.booleanToHclTerraform(this._enableSentinelParsing),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

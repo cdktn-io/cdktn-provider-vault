@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TerraformCloudSecretRoleConfig extends cdktf.TerraformMetaArguments {
+export interface TerraformCloudSecretRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The path of the Terraform Cloud Secret Backend the role belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role#backend TerraformCloudSecretRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role#backend TerraformCloudSecretRole#backend}
   */
   readonly backend?: string;
   /**
   * The type of credential to generate. Valid values are 'team', 'team_legacy', 'user', or 'organization'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role#credential_type TerraformCloudSecretRole#credential_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role#credential_type TerraformCloudSecretRole#credential_type}
   */
   readonly credentialType?: string;
   /**
   * Description of the role. This is used as a prefix to help identify the token in the HCP Terraform UI. Only valid with 'team' or 'user' credential types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role#description TerraformCloudSecretRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role#description TerraformCloudSecretRole#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role#id TerraformCloudSecretRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role#id TerraformCloudSecretRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,51 +40,51 @@ export interface TerraformCloudSecretRoleConfig extends cdktf.TerraformMetaArgum
   /**
   * Maximum allowed lease for generated credentials. If not set or set to 0, will use system default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role#max_ttl TerraformCloudSecretRole#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role#max_ttl TerraformCloudSecretRole#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * The name of an existing role against which to create this Terraform Cloud credential
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role#name TerraformCloudSecretRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role#name TerraformCloudSecretRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role#namespace TerraformCloudSecretRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role#namespace TerraformCloudSecretRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the Terraform Cloud or Enterprise organization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role#organization TerraformCloudSecretRole#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role#organization TerraformCloudSecretRole#organization}
   */
   readonly organization?: string;
   /**
   * ID of the Terraform Cloud or Enterprise team under organization (e.g., settings/teams/team-xxxxxxxxxxxxx)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role#team_id TerraformCloudSecretRole#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role#team_id TerraformCloudSecretRole#team_id}
   */
   readonly teamId?: string;
   /**
   * Default lease for generated credentials. If not set or set to 0, will use system default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role#ttl TerraformCloudSecretRole#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role#ttl TerraformCloudSecretRole#ttl}
   */
   readonly ttl?: number;
   /**
   * ID of the Terraform Cloud or Enterprise user (e.g., user-xxxxxxxxxxxxxxxx)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role#user_id TerraformCloudSecretRole#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role#user_id TerraformCloudSecretRole#user_id}
   */
   readonly userId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role}
 */
-export class TerraformCloudSecretRole extends cdktf.TerraformResource {
+export class TerraformCloudSecretRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -95,14 +95,14 @@ export class TerraformCloudSecretRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TerraformCloudSecretRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TerraformCloudSecretRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TerraformCloudSecretRole to import
-  * @param importFromId The id of the existing TerraformCloudSecretRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TerraformCloudSecretRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TerraformCloudSecretRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_terraform_cloud_secret_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_terraform_cloud_secret_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -110,7 +110,7 @@ export class TerraformCloudSecretRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/terraform_cloud_secret_role vault_terraform_cloud_secret_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -121,7 +121,7 @@ export class TerraformCloudSecretRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_terraform_cloud_secret_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -328,84 +328,84 @@ export class TerraformCloudSecretRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      credential_type: cdktf.stringToTerraform(this._credentialType),
-      description: cdktf.stringToTerraform(this._description),
-      id: cdktf.stringToTerraform(this._id),
-      max_ttl: cdktf.numberToTerraform(this._maxTtl),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      organization: cdktf.stringToTerraform(this._organization),
-      team_id: cdktf.stringToTerraform(this._teamId),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      user_id: cdktf.stringToTerraform(this._userId),
+      backend: cdktn.stringToTerraform(this._backend),
+      credential_type: cdktn.stringToTerraform(this._credentialType),
+      description: cdktn.stringToTerraform(this._description),
+      id: cdktn.stringToTerraform(this._id),
+      max_ttl: cdktn.numberToTerraform(this._maxTtl),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      organization: cdktn.stringToTerraform(this._organization),
+      team_id: cdktn.stringToTerraform(this._teamId),
+      ttl: cdktn.numberToTerraform(this._ttl),
+      user_id: cdktn.stringToTerraform(this._userId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       credential_type: {
-        value: cdktf.stringToHclTerraform(this._credentialType),
+        value: cdktn.stringToHclTerraform(this._credentialType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_ttl: {
-        value: cdktf.numberToHclTerraform(this._maxTtl),
+        value: cdktn.numberToHclTerraform(this._maxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization: {
-        value: cdktf.stringToHclTerraform(this._organization),
+        value: cdktn.stringToHclTerraform(this._organization),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       team_id: {
-        value: cdktf.stringToHclTerraform(this._teamId),
+        value: cdktn.stringToHclTerraform(this._teamId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       user_id: {
-        value: cdktf.stringToHclTerraform(this._userId),
+        value: cdktn.stringToHclTerraform(this._userId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

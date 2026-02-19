@@ -1,183 +1,183 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SshSecretBackendRoleConfig extends cdktf.TerraformMetaArguments {
+export interface SshSecretBackendRoleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#algorithm_signer SshSecretBackendRole#algorithm_signer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#algorithm_signer SshSecretBackendRole#algorithm_signer}
   */
   readonly algorithmSigner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#allow_bare_domains SshSecretBackendRole#allow_bare_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allow_bare_domains SshSecretBackendRole#allow_bare_domains}
   */
-  readonly allowBareDomains?: boolean | cdktf.IResolvable;
+  readonly allowBareDomains?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#allow_empty_principals SshSecretBackendRole#allow_empty_principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allow_empty_principals SshSecretBackendRole#allow_empty_principals}
   */
-  readonly allowEmptyPrincipals?: boolean | cdktf.IResolvable;
+  readonly allowEmptyPrincipals?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#allow_host_certificates SshSecretBackendRole#allow_host_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allow_host_certificates SshSecretBackendRole#allow_host_certificates}
   */
-  readonly allowHostCertificates?: boolean | cdktf.IResolvable;
+  readonly allowHostCertificates?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#allow_subdomains SshSecretBackendRole#allow_subdomains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allow_subdomains SshSecretBackendRole#allow_subdomains}
   */
-  readonly allowSubdomains?: boolean | cdktf.IResolvable;
+  readonly allowSubdomains?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#allow_user_certificates SshSecretBackendRole#allow_user_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allow_user_certificates SshSecretBackendRole#allow_user_certificates}
   */
-  readonly allowUserCertificates?: boolean | cdktf.IResolvable;
+  readonly allowUserCertificates?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#allow_user_key_ids SshSecretBackendRole#allow_user_key_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allow_user_key_ids SshSecretBackendRole#allow_user_key_ids}
   */
-  readonly allowUserKeyIds?: boolean | cdktf.IResolvable;
+  readonly allowUserKeyIds?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#allowed_critical_options SshSecretBackendRole#allowed_critical_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_critical_options SshSecretBackendRole#allowed_critical_options}
   */
   readonly allowedCriticalOptions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#allowed_domains SshSecretBackendRole#allowed_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_domains SshSecretBackendRole#allowed_domains}
   */
   readonly allowedDomains?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#allowed_domains_template SshSecretBackendRole#allowed_domains_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_domains_template SshSecretBackendRole#allowed_domains_template}
   */
-  readonly allowedDomainsTemplate?: boolean | cdktf.IResolvable;
+  readonly allowedDomainsTemplate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#allowed_extensions SshSecretBackendRole#allowed_extensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_extensions SshSecretBackendRole#allowed_extensions}
   */
   readonly allowedExtensions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#allowed_users SshSecretBackendRole#allowed_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_users SshSecretBackendRole#allowed_users}
   */
   readonly allowedUsers?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#allowed_users_template SshSecretBackendRole#allowed_users_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_users_template SshSecretBackendRole#allowed_users_template}
   */
-  readonly allowedUsersTemplate?: boolean | cdktf.IResolvable;
+  readonly allowedUsersTemplate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#backend SshSecretBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#backend SshSecretBackendRole#backend}
   */
   readonly backend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#cidr_list SshSecretBackendRole#cidr_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#cidr_list SshSecretBackendRole#cidr_list}
   */
   readonly cidrList?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#default_critical_options SshSecretBackendRole#default_critical_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#default_critical_options SshSecretBackendRole#default_critical_options}
   */
   readonly defaultCriticalOptions?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#default_extensions SshSecretBackendRole#default_extensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#default_extensions SshSecretBackendRole#default_extensions}
   */
   readonly defaultExtensions?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#default_user SshSecretBackendRole#default_user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#default_user SshSecretBackendRole#default_user}
   */
   readonly defaultUser?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#default_user_template SshSecretBackendRole#default_user_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#default_user_template SshSecretBackendRole#default_user_template}
   */
-  readonly defaultUserTemplate?: boolean | cdktf.IResolvable;
+  readonly defaultUserTemplate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#id SshSecretBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#id SshSecretBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#key_id_format SshSecretBackendRole#key_id_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#key_id_format SshSecretBackendRole#key_id_format}
   */
   readonly keyIdFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#key_type SshSecretBackendRole#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#key_type SshSecretBackendRole#key_type}
   */
   readonly keyType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#max_ttl SshSecretBackendRole#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#max_ttl SshSecretBackendRole#max_ttl}
   */
   readonly maxTtl?: string;
   /**
   * Unique name for the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#name SshSecretBackendRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#name SshSecretBackendRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#namespace SshSecretBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#namespace SshSecretBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the duration by which to backdate the ValidAfter property. Uses duration format strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#not_before_duration SshSecretBackendRole#not_before_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#not_before_duration SshSecretBackendRole#not_before_duration}
   */
   readonly notBeforeDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#ttl SshSecretBackendRole#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#ttl SshSecretBackendRole#ttl}
   */
   readonly ttl?: string;
   /**
   * allowed_user_key_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#allowed_user_key_config SshSecretBackendRole#allowed_user_key_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_user_key_config SshSecretBackendRole#allowed_user_key_config}
   */
-  readonly allowedUserKeyConfig?: SshSecretBackendRoleAllowedUserKeyConfig[] | cdktf.IResolvable;
+  readonly allowedUserKeyConfig?: SshSecretBackendRoleAllowedUserKeyConfig[] | cdktn.IResolvable;
 }
 export interface SshSecretBackendRoleAllowedUserKeyConfig {
   /**
   * List of allowed key lengths, vault-1.10 and above
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#lengths SshSecretBackendRole#lengths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#lengths SshSecretBackendRole#lengths}
   */
   readonly lengths: number[];
   /**
   * Key type, choices:
   * rsa, ecdsa, ec, dsa, ed25519, ssh-rsa, ssh-dss, ssh-ed25519, ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, ecdsa-sha2-nistp521
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#type SshSecretBackendRole#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#type SshSecretBackendRole#type}
   */
   readonly type: string;
 }
 
-export function sshSecretBackendRoleAllowedUserKeyConfigToTerraform(struct?: SshSecretBackendRoleAllowedUserKeyConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sshSecretBackendRoleAllowedUserKeyConfigToTerraform(struct?: SshSecretBackendRoleAllowedUserKeyConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lengths: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.lengths),
-    type: cdktf.stringToTerraform(struct!.type),
+    lengths: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.lengths),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function sshSecretBackendRoleAllowedUserKeyConfigToHclTerraform(struct?: SshSecretBackendRoleAllowedUserKeyConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function sshSecretBackendRoleAllowedUserKeyConfigToHclTerraform(struct?: SshSecretBackendRoleAllowedUserKeyConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lengths: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.lengths),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.lengths),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -188,9 +188,9 @@ export function sshSecretBackendRoleAllowedUserKeyConfigToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SshSecretBackendRoleAllowedUserKeyConfigOutputReference extends cdktf.ComplexObject {
+export class SshSecretBackendRoleAllowedUserKeyConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -198,11 +198,11 @@ export class SshSecretBackendRoleAllowedUserKeyConfigOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SshSecretBackendRoleAllowedUserKeyConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): SshSecretBackendRoleAllowedUserKeyConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -219,14 +219,14 @@ export class SshSecretBackendRoleAllowedUserKeyConfigOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SshSecretBackendRoleAllowedUserKeyConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SshSecretBackendRoleAllowedUserKeyConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._lengths = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -265,15 +265,15 @@ export class SshSecretBackendRoleAllowedUserKeyConfigOutputReference extends cdk
   }
 }
 
-export class SshSecretBackendRoleAllowedUserKeyConfigList extends cdktf.ComplexList {
-  public internalValue? : SshSecretBackendRoleAllowedUserKeyConfig[] | cdktf.IResolvable
+export class SshSecretBackendRoleAllowedUserKeyConfigList extends cdktn.ComplexList {
+  public internalValue? : SshSecretBackendRoleAllowedUserKeyConfig[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -286,9 +286,9 @@ export class SshSecretBackendRoleAllowedUserKeyConfigList extends cdktf.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}
 */
-export class SshSecretBackendRole extends cdktf.TerraformResource {
+export class SshSecretBackendRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -299,14 +299,14 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SshSecretBackendRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SshSecretBackendRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SshSecretBackendRole to import
-  * @param importFromId The id of the existing SshSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SshSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SshSecretBackendRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_ssh_secret_backend_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_ssh_secret_backend_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -314,7 +314,7 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -325,7 +325,7 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ssh_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -387,11 +387,11 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
   }
 
   // allow_bare_domains - computed: false, optional: true, required: false
-  private _allowBareDomains?: boolean | cdktf.IResolvable; 
+  private _allowBareDomains?: boolean | cdktn.IResolvable; 
   public get allowBareDomains() {
     return this.getBooleanAttribute('allow_bare_domains');
   }
-  public set allowBareDomains(value: boolean | cdktf.IResolvable) {
+  public set allowBareDomains(value: boolean | cdktn.IResolvable) {
     this._allowBareDomains = value;
   }
   public resetAllowBareDomains() {
@@ -403,11 +403,11 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
   }
 
   // allow_empty_principals - computed: false, optional: true, required: false
-  private _allowEmptyPrincipals?: boolean | cdktf.IResolvable; 
+  private _allowEmptyPrincipals?: boolean | cdktn.IResolvable; 
   public get allowEmptyPrincipals() {
     return this.getBooleanAttribute('allow_empty_principals');
   }
-  public set allowEmptyPrincipals(value: boolean | cdktf.IResolvable) {
+  public set allowEmptyPrincipals(value: boolean | cdktn.IResolvable) {
     this._allowEmptyPrincipals = value;
   }
   public resetAllowEmptyPrincipals() {
@@ -419,11 +419,11 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
   }
 
   // allow_host_certificates - computed: false, optional: true, required: false
-  private _allowHostCertificates?: boolean | cdktf.IResolvable; 
+  private _allowHostCertificates?: boolean | cdktn.IResolvable; 
   public get allowHostCertificates() {
     return this.getBooleanAttribute('allow_host_certificates');
   }
-  public set allowHostCertificates(value: boolean | cdktf.IResolvable) {
+  public set allowHostCertificates(value: boolean | cdktn.IResolvable) {
     this._allowHostCertificates = value;
   }
   public resetAllowHostCertificates() {
@@ -435,11 +435,11 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
   }
 
   // allow_subdomains - computed: false, optional: true, required: false
-  private _allowSubdomains?: boolean | cdktf.IResolvable; 
+  private _allowSubdomains?: boolean | cdktn.IResolvable; 
   public get allowSubdomains() {
     return this.getBooleanAttribute('allow_subdomains');
   }
-  public set allowSubdomains(value: boolean | cdktf.IResolvable) {
+  public set allowSubdomains(value: boolean | cdktn.IResolvable) {
     this._allowSubdomains = value;
   }
   public resetAllowSubdomains() {
@@ -451,11 +451,11 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
   }
 
   // allow_user_certificates - computed: false, optional: true, required: false
-  private _allowUserCertificates?: boolean | cdktf.IResolvable; 
+  private _allowUserCertificates?: boolean | cdktn.IResolvable; 
   public get allowUserCertificates() {
     return this.getBooleanAttribute('allow_user_certificates');
   }
-  public set allowUserCertificates(value: boolean | cdktf.IResolvable) {
+  public set allowUserCertificates(value: boolean | cdktn.IResolvable) {
     this._allowUserCertificates = value;
   }
   public resetAllowUserCertificates() {
@@ -467,11 +467,11 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
   }
 
   // allow_user_key_ids - computed: false, optional: true, required: false
-  private _allowUserKeyIds?: boolean | cdktf.IResolvable; 
+  private _allowUserKeyIds?: boolean | cdktn.IResolvable; 
   public get allowUserKeyIds() {
     return this.getBooleanAttribute('allow_user_key_ids');
   }
-  public set allowUserKeyIds(value: boolean | cdktf.IResolvable) {
+  public set allowUserKeyIds(value: boolean | cdktn.IResolvable) {
     this._allowUserKeyIds = value;
   }
   public resetAllowUserKeyIds() {
@@ -515,11 +515,11 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
   }
 
   // allowed_domains_template - computed: true, optional: true, required: false
-  private _allowedDomainsTemplate?: boolean | cdktf.IResolvable; 
+  private _allowedDomainsTemplate?: boolean | cdktn.IResolvable; 
   public get allowedDomainsTemplate() {
     return this.getBooleanAttribute('allowed_domains_template');
   }
-  public set allowedDomainsTemplate(value: boolean | cdktf.IResolvable) {
+  public set allowedDomainsTemplate(value: boolean | cdktn.IResolvable) {
     this._allowedDomainsTemplate = value;
   }
   public resetAllowedDomainsTemplate() {
@@ -563,11 +563,11 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
   }
 
   // allowed_users_template - computed: false, optional: true, required: false
-  private _allowedUsersTemplate?: boolean | cdktf.IResolvable; 
+  private _allowedUsersTemplate?: boolean | cdktn.IResolvable; 
   public get allowedUsersTemplate() {
     return this.getBooleanAttribute('allowed_users_template');
   }
-  public set allowedUsersTemplate(value: boolean | cdktf.IResolvable) {
+  public set allowedUsersTemplate(value: boolean | cdktn.IResolvable) {
     this._allowedUsersTemplate = value;
   }
   public resetAllowedUsersTemplate() {
@@ -656,11 +656,11 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
   }
 
   // default_user_template - computed: false, optional: true, required: false
-  private _defaultUserTemplate?: boolean | cdktf.IResolvable; 
+  private _defaultUserTemplate?: boolean | cdktn.IResolvable; 
   public get defaultUserTemplate() {
     return this.getBooleanAttribute('default_user_template');
   }
-  public set defaultUserTemplate(value: boolean | cdktf.IResolvable) {
+  public set defaultUserTemplate(value: boolean | cdktn.IResolvable) {
     this._defaultUserTemplate = value;
   }
   public resetDefaultUserTemplate() {
@@ -798,7 +798,7 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
   public get allowedUserKeyConfig() {
     return this._allowedUserKeyConfig;
   }
-  public putAllowedUserKeyConfig(value: SshSecretBackendRoleAllowedUserKeyConfig[] | cdktf.IResolvable) {
+  public putAllowedUserKeyConfig(value: SshSecretBackendRoleAllowedUserKeyConfig[] | cdktn.IResolvable) {
     this._allowedUserKeyConfig.internalValue = value;
   }
   public resetAllowedUserKeyConfig() {
@@ -815,203 +815,203 @@ export class SshSecretBackendRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      algorithm_signer: cdktf.stringToTerraform(this._algorithmSigner),
-      allow_bare_domains: cdktf.booleanToTerraform(this._allowBareDomains),
-      allow_empty_principals: cdktf.booleanToTerraform(this._allowEmptyPrincipals),
-      allow_host_certificates: cdktf.booleanToTerraform(this._allowHostCertificates),
-      allow_subdomains: cdktf.booleanToTerraform(this._allowSubdomains),
-      allow_user_certificates: cdktf.booleanToTerraform(this._allowUserCertificates),
-      allow_user_key_ids: cdktf.booleanToTerraform(this._allowUserKeyIds),
-      allowed_critical_options: cdktf.stringToTerraform(this._allowedCriticalOptions),
-      allowed_domains: cdktf.stringToTerraform(this._allowedDomains),
-      allowed_domains_template: cdktf.booleanToTerraform(this._allowedDomainsTemplate),
-      allowed_extensions: cdktf.stringToTerraform(this._allowedExtensions),
-      allowed_users: cdktf.stringToTerraform(this._allowedUsers),
-      allowed_users_template: cdktf.booleanToTerraform(this._allowedUsersTemplate),
-      backend: cdktf.stringToTerraform(this._backend),
-      cidr_list: cdktf.stringToTerraform(this._cidrList),
-      default_critical_options: cdktf.hashMapper(cdktf.stringToTerraform)(this._defaultCriticalOptions),
-      default_extensions: cdktf.hashMapper(cdktf.stringToTerraform)(this._defaultExtensions),
-      default_user: cdktf.stringToTerraform(this._defaultUser),
-      default_user_template: cdktf.booleanToTerraform(this._defaultUserTemplate),
-      id: cdktf.stringToTerraform(this._id),
-      key_id_format: cdktf.stringToTerraform(this._keyIdFormat),
-      key_type: cdktf.stringToTerraform(this._keyType),
-      max_ttl: cdktf.stringToTerraform(this._maxTtl),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      not_before_duration: cdktf.stringToTerraform(this._notBeforeDuration),
-      ttl: cdktf.stringToTerraform(this._ttl),
-      allowed_user_key_config: cdktf.listMapper(sshSecretBackendRoleAllowedUserKeyConfigToTerraform, true)(this._allowedUserKeyConfig.internalValue),
+      algorithm_signer: cdktn.stringToTerraform(this._algorithmSigner),
+      allow_bare_domains: cdktn.booleanToTerraform(this._allowBareDomains),
+      allow_empty_principals: cdktn.booleanToTerraform(this._allowEmptyPrincipals),
+      allow_host_certificates: cdktn.booleanToTerraform(this._allowHostCertificates),
+      allow_subdomains: cdktn.booleanToTerraform(this._allowSubdomains),
+      allow_user_certificates: cdktn.booleanToTerraform(this._allowUserCertificates),
+      allow_user_key_ids: cdktn.booleanToTerraform(this._allowUserKeyIds),
+      allowed_critical_options: cdktn.stringToTerraform(this._allowedCriticalOptions),
+      allowed_domains: cdktn.stringToTerraform(this._allowedDomains),
+      allowed_domains_template: cdktn.booleanToTerraform(this._allowedDomainsTemplate),
+      allowed_extensions: cdktn.stringToTerraform(this._allowedExtensions),
+      allowed_users: cdktn.stringToTerraform(this._allowedUsers),
+      allowed_users_template: cdktn.booleanToTerraform(this._allowedUsersTemplate),
+      backend: cdktn.stringToTerraform(this._backend),
+      cidr_list: cdktn.stringToTerraform(this._cidrList),
+      default_critical_options: cdktn.hashMapper(cdktn.stringToTerraform)(this._defaultCriticalOptions),
+      default_extensions: cdktn.hashMapper(cdktn.stringToTerraform)(this._defaultExtensions),
+      default_user: cdktn.stringToTerraform(this._defaultUser),
+      default_user_template: cdktn.booleanToTerraform(this._defaultUserTemplate),
+      id: cdktn.stringToTerraform(this._id),
+      key_id_format: cdktn.stringToTerraform(this._keyIdFormat),
+      key_type: cdktn.stringToTerraform(this._keyType),
+      max_ttl: cdktn.stringToTerraform(this._maxTtl),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      not_before_duration: cdktn.stringToTerraform(this._notBeforeDuration),
+      ttl: cdktn.stringToTerraform(this._ttl),
+      allowed_user_key_config: cdktn.listMapper(sshSecretBackendRoleAllowedUserKeyConfigToTerraform, true)(this._allowedUserKeyConfig.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       algorithm_signer: {
-        value: cdktf.stringToHclTerraform(this._algorithmSigner),
+        value: cdktn.stringToHclTerraform(this._algorithmSigner),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allow_bare_domains: {
-        value: cdktf.booleanToHclTerraform(this._allowBareDomains),
+        value: cdktn.booleanToHclTerraform(this._allowBareDomains),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_empty_principals: {
-        value: cdktf.booleanToHclTerraform(this._allowEmptyPrincipals),
+        value: cdktn.booleanToHclTerraform(this._allowEmptyPrincipals),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_host_certificates: {
-        value: cdktf.booleanToHclTerraform(this._allowHostCertificates),
+        value: cdktn.booleanToHclTerraform(this._allowHostCertificates),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_subdomains: {
-        value: cdktf.booleanToHclTerraform(this._allowSubdomains),
+        value: cdktn.booleanToHclTerraform(this._allowSubdomains),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_user_certificates: {
-        value: cdktf.booleanToHclTerraform(this._allowUserCertificates),
+        value: cdktn.booleanToHclTerraform(this._allowUserCertificates),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_user_key_ids: {
-        value: cdktf.booleanToHclTerraform(this._allowUserKeyIds),
+        value: cdktn.booleanToHclTerraform(this._allowUserKeyIds),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allowed_critical_options: {
-        value: cdktf.stringToHclTerraform(this._allowedCriticalOptions),
+        value: cdktn.stringToHclTerraform(this._allowedCriticalOptions),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allowed_domains: {
-        value: cdktf.stringToHclTerraform(this._allowedDomains),
+        value: cdktn.stringToHclTerraform(this._allowedDomains),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allowed_domains_template: {
-        value: cdktf.booleanToHclTerraform(this._allowedDomainsTemplate),
+        value: cdktn.booleanToHclTerraform(this._allowedDomainsTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allowed_extensions: {
-        value: cdktf.stringToHclTerraform(this._allowedExtensions),
+        value: cdktn.stringToHclTerraform(this._allowedExtensions),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allowed_users: {
-        value: cdktf.stringToHclTerraform(this._allowedUsers),
+        value: cdktn.stringToHclTerraform(this._allowedUsers),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allowed_users_template: {
-        value: cdktf.booleanToHclTerraform(this._allowedUsersTemplate),
+        value: cdktn.booleanToHclTerraform(this._allowedUsersTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cidr_list: {
-        value: cdktf.stringToHclTerraform(this._cidrList),
+        value: cdktn.stringToHclTerraform(this._cidrList),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_critical_options: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._defaultCriticalOptions),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._defaultCriticalOptions),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       default_extensions: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._defaultExtensions),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._defaultExtensions),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       default_user: {
-        value: cdktf.stringToHclTerraform(this._defaultUser),
+        value: cdktn.stringToHclTerraform(this._defaultUser),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_user_template: {
-        value: cdktf.booleanToHclTerraform(this._defaultUserTemplate),
+        value: cdktn.booleanToHclTerraform(this._defaultUserTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_id_format: {
-        value: cdktf.stringToHclTerraform(this._keyIdFormat),
+        value: cdktn.stringToHclTerraform(this._keyIdFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_type: {
-        value: cdktf.stringToHclTerraform(this._keyType),
+        value: cdktn.stringToHclTerraform(this._keyType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_ttl: {
-        value: cdktf.stringToHclTerraform(this._maxTtl),
+        value: cdktn.stringToHclTerraform(this._maxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       not_before_duration: {
-        value: cdktf.stringToHclTerraform(this._notBeforeDuration),
+        value: cdktn.stringToHclTerraform(this._notBeforeDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ttl: {
-        value: cdktf.stringToHclTerraform(this._ttl),
+        value: cdktn.stringToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allowed_user_key_config: {
-        value: cdktf.listMapperHcl(sshSecretBackendRoleAllowedUserKeyConfigToHclTerraform, true)(this._allowedUserKeyConfig.internalValue),
+        value: cdktn.listMapperHcl(sshSecretBackendRoleAllowedUserKeyConfigToHclTerraform, true)(this._allowedUserKeyConfig.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "SshSecretBackendRoleAllowedUserKeyConfigList",

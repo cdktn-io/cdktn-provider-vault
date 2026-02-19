@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TransformTransformationConfig extends cdktf.TerraformMetaArguments {
+export interface TransformTransformationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The set of roles allowed to perform this transformation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
   */
-  readonly deletionAllowed?: boolean | cdktf.IResolvable;
+  readonly deletionAllowed?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#id TransformTransformation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#id TransformTransformation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,57 +34,57 @@ export interface TransformTransformationConfig extends cdktf.TerraformMetaArgume
   /**
   * The character used to replace data when in masking mode
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
   */
   readonly maskingCharacter?: string;
   /**
   * The name of the transformation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#name TransformTransformation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#name TransformTransformation#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
   */
   readonly namespace?: string;
   /**
   * The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#path TransformTransformation#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#path TransformTransformation#path}
   */
   readonly path: string;
   /**
   * The name of the template to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#template TransformTransformation#template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#template TransformTransformation#template}
   */
   readonly template?: string;
   /**
   * Templates configured for transformation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
   */
   readonly templates?: string[];
   /**
   * The source of where the tweak value comes from. Only valid when in FPE mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
   */
   readonly tweakSource?: string;
   /**
   * The type of transformation to perform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#type TransformTransformation#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#type TransformTransformation#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation vault_transform_transformation}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation vault_transform_transformation}
 */
-export class TransformTransformation extends cdktf.TerraformResource {
+export class TransformTransformation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -95,14 +95,14 @@ export class TransformTransformation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TransformTransformation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TransformTransformation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TransformTransformation to import
-  * @param importFromId The id of the existing TransformTransformation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TransformTransformation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TransformTransformation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_transform_transformation", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_transform_transformation", importId: importFromId, provider });
       }
 
   // ===========
@@ -110,7 +110,7 @@ export class TransformTransformation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation vault_transform_transformation} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation vault_transform_transformation} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -121,7 +121,7 @@ export class TransformTransformation extends cdktf.TerraformResource {
       terraformResourceType: 'vault_transform_transformation',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -166,11 +166,11 @@ export class TransformTransformation extends cdktf.TerraformResource {
   }
 
   // deletion_allowed - computed: false, optional: true, required: false
-  private _deletionAllowed?: boolean | cdktf.IResolvable; 
+  private _deletionAllowed?: boolean | cdktn.IResolvable; 
   public get deletionAllowed() {
     return this.getBooleanAttribute('deletion_allowed');
   }
-  public set deletionAllowed(value: boolean | cdktf.IResolvable) {
+  public set deletionAllowed(value: boolean | cdktn.IResolvable) {
     this._deletionAllowed = value;
   }
   public resetDeletionAllowed() {
@@ -325,84 +325,84 @@ export class TransformTransformation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedRoles),
-      deletion_allowed: cdktf.booleanToTerraform(this._deletionAllowed),
-      id: cdktf.stringToTerraform(this._id),
-      masking_character: cdktf.stringToTerraform(this._maskingCharacter),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      path: cdktf.stringToTerraform(this._path),
-      template: cdktf.stringToTerraform(this._template),
-      templates: cdktf.listMapper(cdktf.stringToTerraform, false)(this._templates),
-      tweak_source: cdktf.stringToTerraform(this._tweakSource),
-      type: cdktf.stringToTerraform(this._type),
+      allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedRoles),
+      deletion_allowed: cdktn.booleanToTerraform(this._deletionAllowed),
+      id: cdktn.stringToTerraform(this._id),
+      masking_character: cdktn.stringToTerraform(this._maskingCharacter),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      path: cdktn.stringToTerraform(this._path),
+      template: cdktn.stringToTerraform(this._template),
+      templates: cdktn.listMapper(cdktn.stringToTerraform, false)(this._templates),
+      tweak_source: cdktn.stringToTerraform(this._tweakSource),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_roles: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedRoles),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedRoles),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       deletion_allowed: {
-        value: cdktf.booleanToHclTerraform(this._deletionAllowed),
+        value: cdktn.booleanToHclTerraform(this._deletionAllowed),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       masking_character: {
-        value: cdktf.stringToHclTerraform(this._maskingCharacter),
+        value: cdktn.stringToHclTerraform(this._maskingCharacter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       template: {
-        value: cdktf.stringToHclTerraform(this._template),
+        value: cdktn.stringToHclTerraform(this._template),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       templates: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._templates),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._templates),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       tweak_source: {
-        value: cdktf.stringToHclTerraform(this._tweakSource),
+        value: cdktn.stringToHclTerraform(this._tweakSource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

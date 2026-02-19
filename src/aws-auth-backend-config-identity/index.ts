@@ -1,49 +1,49 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_config_identity
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_config_identity
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AwsAuthBackendConfigIdentityConfig extends cdktf.TerraformMetaArguments {
+export interface AwsAuthBackendConfigIdentityConfig extends cdktn.TerraformMetaArguments {
   /**
   * Unique name of the auth backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_config_identity#backend AwsAuthBackendConfigIdentity#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_config_identity#backend AwsAuthBackendConfigIdentity#backend}
   */
   readonly backend?: string;
   /**
   * Configures how to generate the identity alias when using the ec2 auth method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_config_identity#ec2_alias AwsAuthBackendConfigIdentity#ec2_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_config_identity#ec2_alias AwsAuthBackendConfigIdentity#ec2_alias}
   */
   readonly ec2Alias?: string;
   /**
   * The metadata to include on the token returned by the login endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_config_identity#ec2_metadata AwsAuthBackendConfigIdentity#ec2_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_config_identity#ec2_metadata AwsAuthBackendConfigIdentity#ec2_metadata}
   */
   readonly ec2Metadata?: string[];
   /**
   * How to generate the identity alias when using the iam auth method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_config_identity#iam_alias AwsAuthBackendConfigIdentity#iam_alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_config_identity#iam_alias AwsAuthBackendConfigIdentity#iam_alias}
   */
   readonly iamAlias?: string;
   /**
   * The metadata to include on the token returned by the login endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_config_identity#iam_metadata AwsAuthBackendConfigIdentity#iam_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_config_identity#iam_metadata AwsAuthBackendConfigIdentity#iam_metadata}
   */
   readonly iamMetadata?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_config_identity#id AwsAuthBackendConfigIdentity#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_config_identity#id AwsAuthBackendConfigIdentity#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,15 +52,15 @@ export interface AwsAuthBackendConfigIdentityConfig extends cdktf.TerraformMetaA
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_config_identity#namespace AwsAuthBackendConfigIdentity#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_config_identity#namespace AwsAuthBackendConfigIdentity#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity}
 */
-export class AwsAuthBackendConfigIdentity extends cdktf.TerraformResource {
+export class AwsAuthBackendConfigIdentity extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -71,14 +71,14 @@ export class AwsAuthBackendConfigIdentity extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AwsAuthBackendConfigIdentity resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AwsAuthBackendConfigIdentity resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsAuthBackendConfigIdentity to import
-  * @param importFromId The id of the existing AwsAuthBackendConfigIdentity that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_config_identity#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsAuthBackendConfigIdentity that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_config_identity#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsAuthBackendConfigIdentity to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_aws_auth_backend_config_identity", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_aws_auth_backend_config_identity", importId: importFromId, provider });
       }
 
   // ===========
@@ -86,7 +86,7 @@ export class AwsAuthBackendConfigIdentity extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_config_identity vault_aws_auth_backend_config_identity} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class AwsAuthBackendConfigIdentity extends cdktf.TerraformResource {
       terraformResourceType: 'vault_aws_auth_backend_config_identity',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -156,7 +156,7 @@ export class AwsAuthBackendConfigIdentity extends cdktf.TerraformResource {
   // ec2_metadata - computed: false, optional: true, required: false
   private _ec2Metadata?: string[]; 
   public get ec2Metadata() {
-    return cdktf.Fn.tolist(this.getListAttribute('ec2_metadata'));
+    return cdktn.Fn.tolist(this.getListAttribute('ec2_metadata'));
   }
   public set ec2Metadata(value: string[]) {
     this._ec2Metadata = value;
@@ -188,7 +188,7 @@ export class AwsAuthBackendConfigIdentity extends cdktf.TerraformResource {
   // iam_metadata - computed: false, optional: true, required: false
   private _iamMetadata?: string[]; 
   public get iamMetadata() {
-    return cdktf.Fn.tolist(this.getListAttribute('iam_metadata'));
+    return cdktn.Fn.tolist(this.getListAttribute('iam_metadata'));
   }
   public set iamMetadata(value: string[]) {
     this._iamMetadata = value;
@@ -239,56 +239,56 @@ export class AwsAuthBackendConfigIdentity extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      ec2_alias: cdktf.stringToTerraform(this._ec2Alias),
-      ec2_metadata: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ec2Metadata),
-      iam_alias: cdktf.stringToTerraform(this._iamAlias),
-      iam_metadata: cdktf.listMapper(cdktf.stringToTerraform, false)(this._iamMetadata),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
+      backend: cdktn.stringToTerraform(this._backend),
+      ec2_alias: cdktn.stringToTerraform(this._ec2Alias),
+      ec2_metadata: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ec2Metadata),
+      iam_alias: cdktn.stringToTerraform(this._iamAlias),
+      iam_metadata: cdktn.listMapper(cdktn.stringToTerraform, false)(this._iamMetadata),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ec2_alias: {
-        value: cdktf.stringToHclTerraform(this._ec2Alias),
+        value: cdktn.stringToHclTerraform(this._ec2Alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ec2_metadata: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ec2Metadata),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ec2Metadata),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       iam_alias: {
-        value: cdktf.stringToHclTerraform(this._iamAlias),
+        value: cdktn.stringToHclTerraform(this._iamAlias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_metadata: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._iamMetadata),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._iamMetadata),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

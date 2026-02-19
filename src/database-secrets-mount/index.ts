@@ -1,73 +1,73 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatabaseSecretsMountConfig extends cdktf.TerraformMetaArguments {
+export interface DatabaseSecretsMountConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of managed key registry entry names that the mount in question is allowed to access
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_managed_keys DatabaseSecretsMount#allowed_managed_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_managed_keys DatabaseSecretsMount#allowed_managed_keys}
   */
   readonly allowedManagedKeys?: string[];
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_response_headers DatabaseSecretsMount#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_response_headers DatabaseSecretsMount#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#audit_non_hmac_request_keys DatabaseSecretsMount#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#audit_non_hmac_request_keys DatabaseSecretsMount#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#audit_non_hmac_response_keys DatabaseSecretsMount#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#audit_non_hmac_response_keys DatabaseSecretsMount#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
   * Default lease duration for tokens and secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#default_lease_ttl_seconds DatabaseSecretsMount#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#default_lease_ttl_seconds DatabaseSecretsMount#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#delegated_auth_accessors DatabaseSecretsMount#delegated_auth_accessors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#delegated_auth_accessors DatabaseSecretsMount#delegated_auth_accessors}
   */
   readonly delegatedAuthAccessors?: string[];
   /**
   * Human-friendly description of the mount
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#description DatabaseSecretsMount#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#description DatabaseSecretsMount#description}
   */
   readonly description?: string;
   /**
   * Enable the secrets engine to access Vault's external entropy source
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#external_entropy_access DatabaseSecretsMount#external_entropy_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#external_entropy_access DatabaseSecretsMount#external_entropy_access}
   */
-  readonly externalEntropyAccess?: boolean | cdktf.IResolvable;
+  readonly externalEntropyAccess?: boolean | cdktn.IResolvable;
   /**
   * If set to true, disables caching.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#force_no_cache DatabaseSecretsMount#force_no_cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#force_no_cache DatabaseSecretsMount#force_no_cache}
   */
-  readonly forceNoCache?: boolean | cdktf.IResolvable;
+  readonly forceNoCache?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#id DatabaseSecretsMount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#id DatabaseSecretsMount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -76,460 +76,525 @@ export interface DatabaseSecretsMountConfig extends cdktf.TerraformMetaArguments
   /**
   * The key to use for signing plugin workload identity tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#identity_token_key DatabaseSecretsMount#identity_token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#identity_token_key DatabaseSecretsMount#identity_token_key}
   */
   readonly identityTokenKey?: string;
   /**
   * Specifies whether to show this mount in the UI-specific listing endpoint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#listing_visibility DatabaseSecretsMount#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#listing_visibility DatabaseSecretsMount#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
   * Local mount flag that can be explicitly set to true to enforce local mount in HA environment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#local DatabaseSecretsMount#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#local DatabaseSecretsMount#local}
   */
-  readonly local?: boolean | cdktf.IResolvable;
+  readonly local?: boolean | cdktn.IResolvable;
   /**
   * Maximum possible lease duration for tokens and secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_lease_ttl_seconds DatabaseSecretsMount#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_lease_ttl_seconds DatabaseSecretsMount#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#namespace DatabaseSecretsMount#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#namespace DatabaseSecretsMount#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies mount type specific options that are passed to the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#options DatabaseSecretsMount#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#options DatabaseSecretsMount#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#passthrough_request_headers DatabaseSecretsMount#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#passthrough_request_headers DatabaseSecretsMount#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
   * Where the secret backend will be mounted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#path DatabaseSecretsMount#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#path DatabaseSecretsMount#path}
   */
   readonly path: string;
   /**
   * Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
   */
   readonly pluginVersion?: string;
   /**
   * Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#seal_wrap DatabaseSecretsMount#seal_wrap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#seal_wrap DatabaseSecretsMount#seal_wrap}
   */
-  readonly sealWrap?: boolean | cdktf.IResolvable;
+  readonly sealWrap?: boolean | cdktn.IResolvable;
   /**
   * cassandra block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#cassandra DatabaseSecretsMount#cassandra}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#cassandra DatabaseSecretsMount#cassandra}
   */
-  readonly cassandra?: DatabaseSecretsMountCassandra[] | cdktf.IResolvable;
+  readonly cassandra?: DatabaseSecretsMountCassandra[] | cdktn.IResolvable;
   /**
   * couchbase block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#couchbase DatabaseSecretsMount#couchbase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#couchbase DatabaseSecretsMount#couchbase}
   */
-  readonly couchbase?: DatabaseSecretsMountCouchbase[] | cdktf.IResolvable;
+  readonly couchbase?: DatabaseSecretsMountCouchbase[] | cdktn.IResolvable;
   /**
   * elasticsearch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#elasticsearch DatabaseSecretsMount#elasticsearch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#elasticsearch DatabaseSecretsMount#elasticsearch}
   */
-  readonly elasticsearch?: DatabaseSecretsMountElasticsearch[] | cdktf.IResolvable;
+  readonly elasticsearch?: DatabaseSecretsMountElasticsearch[] | cdktn.IResolvable;
   /**
   * hana block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#hana DatabaseSecretsMount#hana}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#hana DatabaseSecretsMount#hana}
   */
-  readonly hana?: DatabaseSecretsMountHana[] | cdktf.IResolvable;
+  readonly hana?: DatabaseSecretsMountHana[] | cdktn.IResolvable;
   /**
   * influxdb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#influxdb DatabaseSecretsMount#influxdb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#influxdb DatabaseSecretsMount#influxdb}
   */
-  readonly influxdb?: DatabaseSecretsMountInfluxdb[] | cdktf.IResolvable;
+  readonly influxdb?: DatabaseSecretsMountInfluxdb[] | cdktn.IResolvable;
   /**
   * mongodb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#mongodb DatabaseSecretsMount#mongodb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mongodb DatabaseSecretsMount#mongodb}
   */
-  readonly mongodb?: DatabaseSecretsMountMongodb[] | cdktf.IResolvable;
+  readonly mongodb?: DatabaseSecretsMountMongodb[] | cdktn.IResolvable;
   /**
   * mongodbatlas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#mongodbatlas DatabaseSecretsMount#mongodbatlas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mongodbatlas DatabaseSecretsMount#mongodbatlas}
   */
-  readonly mongodbatlas?: DatabaseSecretsMountMongodbatlas[] | cdktf.IResolvable;
+  readonly mongodbatlas?: DatabaseSecretsMountMongodbatlas[] | cdktn.IResolvable;
   /**
   * mssql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#mssql DatabaseSecretsMount#mssql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mssql DatabaseSecretsMount#mssql}
   */
-  readonly mssql?: DatabaseSecretsMountMssql[] | cdktf.IResolvable;
+  readonly mssql?: DatabaseSecretsMountMssql[] | cdktn.IResolvable;
   /**
   * mysql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#mysql DatabaseSecretsMount#mysql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mysql DatabaseSecretsMount#mysql}
   */
-  readonly mysql?: DatabaseSecretsMountMysql[] | cdktf.IResolvable;
+  readonly mysql?: DatabaseSecretsMountMysql[] | cdktn.IResolvable;
   /**
   * mysql_aurora block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#mysql_aurora DatabaseSecretsMount#mysql_aurora}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mysql_aurora DatabaseSecretsMount#mysql_aurora}
   */
-  readonly mysqlAurora?: DatabaseSecretsMountMysqlAurora[] | cdktf.IResolvable;
+  readonly mysqlAurora?: DatabaseSecretsMountMysqlAurora[] | cdktn.IResolvable;
   /**
   * mysql_legacy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#mysql_legacy DatabaseSecretsMount#mysql_legacy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mysql_legacy DatabaseSecretsMount#mysql_legacy}
   */
-  readonly mysqlLegacy?: DatabaseSecretsMountMysqlLegacy[] | cdktf.IResolvable;
+  readonly mysqlLegacy?: DatabaseSecretsMountMysqlLegacy[] | cdktn.IResolvable;
   /**
   * mysql_rds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#mysql_rds DatabaseSecretsMount#mysql_rds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mysql_rds DatabaseSecretsMount#mysql_rds}
   */
-  readonly mysqlRds?: DatabaseSecretsMountMysqlRds[] | cdktf.IResolvable;
+  readonly mysqlRds?: DatabaseSecretsMountMysqlRds[] | cdktn.IResolvable;
   /**
   * oracle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#oracle DatabaseSecretsMount#oracle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#oracle DatabaseSecretsMount#oracle}
   */
-  readonly oracle?: DatabaseSecretsMountOracle[] | cdktf.IResolvable;
+  readonly oracle?: DatabaseSecretsMountOracle[] | cdktn.IResolvable;
   /**
   * postgresql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#postgresql DatabaseSecretsMount#postgresql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#postgresql DatabaseSecretsMount#postgresql}
   */
-  readonly postgresql?: DatabaseSecretsMountPostgresql[] | cdktf.IResolvable;
+  readonly postgresql?: DatabaseSecretsMountPostgresql[] | cdktn.IResolvable;
   /**
   * redis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#redis DatabaseSecretsMount#redis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#redis DatabaseSecretsMount#redis}
   */
-  readonly redis?: DatabaseSecretsMountRedis[] | cdktf.IResolvable;
+  readonly redis?: DatabaseSecretsMountRedis[] | cdktn.IResolvable;
   /**
   * redis_elasticache block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#redis_elasticache DatabaseSecretsMount#redis_elasticache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#redis_elasticache DatabaseSecretsMount#redis_elasticache}
   */
-  readonly redisElasticache?: DatabaseSecretsMountRedisElasticache[] | cdktf.IResolvable;
+  readonly redisElasticache?: DatabaseSecretsMountRedisElasticache[] | cdktn.IResolvable;
   /**
   * redshift block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#redshift DatabaseSecretsMount#redshift}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#redshift DatabaseSecretsMount#redshift}
   */
-  readonly redshift?: DatabaseSecretsMountRedshift[] | cdktf.IResolvable;
+  readonly redshift?: DatabaseSecretsMountRedshift[] | cdktn.IResolvable;
   /**
   * snowflake block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#snowflake DatabaseSecretsMount#snowflake}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#snowflake DatabaseSecretsMount#snowflake}
   */
-  readonly snowflake?: DatabaseSecretsMountSnowflake[] | cdktf.IResolvable;
+  readonly snowflake?: DatabaseSecretsMountSnowflake[] | cdktn.IResolvable;
 }
 export interface DatabaseSecretsMountCassandra {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * The number of seconds to use as a connection timeout.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
   */
   readonly connectTimeout?: number;
   /**
+  * Cassandra consistency level.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#consistency DatabaseSecretsMount#consistency}
+  */
+  readonly consistency?: string;
+  /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Cassandra hosts to connect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
   */
   readonly hosts?: string[];
   /**
   * Whether to skip verification of the server certificate when using TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
   */
-  readonly insecureTls?: boolean | cdktf.IResolvable;
+  readonly insecureTls?: boolean | cdktn.IResolvable;
+  /**
+  * Cassandra local datacenter name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#local_datacenter DatabaseSecretsMount#local_datacenter}
+  */
+  readonly localDatacenter?: string;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The password to use when authenticating with Cassandra.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * Concatenated PEM blocks containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
   */
   readonly pemBundle?: string;
   /**
   * Specifies JSON containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
   */
   readonly pemJson?: string;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * The transport port to use to connect to Cassandra.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
   */
   readonly port?: number;
   /**
   * The CQL protocol version to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#protocol_version DatabaseSecretsMount#protocol_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#protocol_version DatabaseSecretsMount#protocol_version}
   */
   readonly protocolVersion?: number;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * Skip permissions checks when a connection to Cassandra is first created. These checks ensure that Vault is able to create roles, but can be resource intensive in clusters with many roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#skip_verification DatabaseSecretsMount#skip_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#skip_verification DatabaseSecretsMount#skip_verification}
   */
-  readonly skipVerification?: boolean | cdktf.IResolvable;
+  readonly skipVerification?: boolean | cdktn.IResolvable;
+  /**
+  * Enable TCP keepalive for Cassandra connections.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#socket_keep_alive DatabaseSecretsMount#socket_keep_alive}
+  */
+  readonly socketKeepAlive?: string;
   /**
   * Whether to use TLS when connecting to Cassandra.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
   */
-  readonly tls?: boolean | cdktf.IResolvable;
+  readonly tls?: boolean | cdktn.IResolvable;
+  /**
+  * SNI host for TLS connections.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_server_name DatabaseSecretsMount#tls_server_name}
+  */
+  readonly tlsServerName?: string;
   /**
   * The username to use when authenticating with Cassandra.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
+  * Template for dynamic Cassandra usernames.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  */
+  readonly usernameTemplate?: string;
+  /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountCassandraToTerraform(struct?: DatabaseSecretsMountCassandra | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountCassandraToTerraform(struct?: DatabaseSecretsMountCassandra | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    connect_timeout: cdktf.numberToTerraform(struct!.connectTimeout),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hosts),
-    insecure_tls: cdktf.booleanToTerraform(struct!.insecureTls),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    pem_bundle: cdktf.stringToTerraform(struct!.pemBundle),
-    pem_json: cdktf.stringToTerraform(struct!.pemJson),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    port: cdktf.numberToTerraform(struct!.port),
-    protocol_version: cdktf.numberToTerraform(struct!.protocolVersion),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    skip_verification: cdktf.booleanToTerraform(struct!.skipVerification),
-    tls: cdktf.booleanToTerraform(struct!.tls),
-    username: cdktf.stringToTerraform(struct!.username),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    connect_timeout: cdktn.numberToTerraform(struct!.connectTimeout),
+    consistency: cdktn.stringToTerraform(struct!.consistency),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    hosts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.hosts),
+    insecure_tls: cdktn.booleanToTerraform(struct!.insecureTls),
+    local_datacenter: cdktn.stringToTerraform(struct!.localDatacenter),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    pem_bundle: cdktn.stringToTerraform(struct!.pemBundle),
+    pem_json: cdktn.stringToTerraform(struct!.pemJson),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    port: cdktn.numberToTerraform(struct!.port),
+    protocol_version: cdktn.numberToTerraform(struct!.protocolVersion),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    skip_verification: cdktn.booleanToTerraform(struct!.skipVerification),
+    socket_keep_alive: cdktn.stringToTerraform(struct!.socketKeepAlive),
+    tls: cdktn.booleanToTerraform(struct!.tls),
+    tls_server_name: cdktn.stringToTerraform(struct!.tlsServerName),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountCassandraToHclTerraform(struct?: DatabaseSecretsMountCassandra | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountCassandraToHclTerraform(struct?: DatabaseSecretsMountCassandra | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     connect_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.connectTimeout),
+      value: cdktn.numberToHclTerraform(struct!.connectTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
+    consistency: {
+      value: cdktn.stringToHclTerraform(struct!.consistency),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     hosts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hosts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.hosts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     insecure_tls: {
-      value: cdktf.booleanToHclTerraform(struct!.insecureTls),
+      value: cdktn.booleanToHclTerraform(struct!.insecureTls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
+    local_datacenter: {
+      value: cdktn.stringToHclTerraform(struct!.localDatacenter),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pem_bundle: {
-      value: cdktf.stringToHclTerraform(struct!.pemBundle),
+      value: cdktn.stringToHclTerraform(struct!.pemBundle),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pem_json: {
-      value: cdktf.stringToHclTerraform(struct!.pemJson),
+      value: cdktn.stringToHclTerraform(struct!.pemJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     protocol_version: {
-      value: cdktf.numberToHclTerraform(struct!.protocolVersion),
+      value: cdktn.numberToHclTerraform(struct!.protocolVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     skip_verification: {
-      value: cdktf.booleanToHclTerraform(struct!.skipVerification),
+      value: cdktn.booleanToHclTerraform(struct!.skipVerification),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    socket_keep_alive: {
+      value: cdktn.stringToHclTerraform(struct!.socketKeepAlive),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
     tls: {
-      value: cdktf.booleanToHclTerraform(struct!.tls),
+      value: cdktn.booleanToHclTerraform(struct!.tls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
+    tls_server_name: {
+      value: cdktn.stringToHclTerraform(struct!.tlsServerName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username_template: {
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -540,9 +605,9 @@ export function databaseSecretsMountCassandraToHclTerraform(struct?: DatabaseSec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountCassandraOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -550,11 +615,11 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountCassandra | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountCassandra | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -567,6 +632,10 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
     if (this._connectTimeout !== undefined) {
       hasAnyValues = true;
       internalValueResult.connectTimeout = this._connectTimeout;
+    }
+    if (this._consistency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.consistency = this._consistency;
     }
     if (this._data !== undefined) {
       hasAnyValues = true;
@@ -583,6 +652,10 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
     if (this._insecureTls !== undefined) {
       hasAnyValues = true;
       internalValueResult.insecureTls = this._insecureTls;
+    }
+    if (this._localDatacenter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.localDatacenter = this._localDatacenter;
     }
     if (this._name !== undefined) {
       hasAnyValues = true;
@@ -632,13 +705,25 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
       hasAnyValues = true;
       internalValueResult.skipVerification = this._skipVerification;
     }
+    if (this._socketKeepAlive !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.socketKeepAlive = this._socketKeepAlive;
+    }
     if (this._tls !== undefined) {
       hasAnyValues = true;
       internalValueResult.tls = this._tls;
     }
+    if (this._tlsServerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tlsServerName = this._tlsServerName;
+    }
     if (this._username !== undefined) {
       hasAnyValues = true;
       internalValueResult.username = this._username;
+    }
+    if (this._usernameTemplate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usernameTemplate = this._usernameTemplate;
     }
     if (this._verifyConnection !== undefined) {
       hasAnyValues = true;
@@ -647,16 +732,18 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountCassandra | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountCassandra | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._allowedRoles = undefined;
       this._connectTimeout = undefined;
+      this._consistency = undefined;
       this._data = undefined;
       this._disableAutomatedRotation = undefined;
       this._hosts = undefined;
       this._insecureTls = undefined;
+      this._localDatacenter = undefined;
       this._name = undefined;
       this._password = undefined;
       this._pemBundle = undefined;
@@ -669,11 +756,14 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
       this._skipVerification = undefined;
+      this._socketKeepAlive = undefined;
       this._tls = undefined;
+      this._tlsServerName = undefined;
       this._username = undefined;
+      this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -682,10 +772,12 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
       this.resolvableValue = undefined;
       this._allowedRoles = value.allowedRoles;
       this._connectTimeout = value.connectTimeout;
+      this._consistency = value.consistency;
       this._data = value.data;
       this._disableAutomatedRotation = value.disableAutomatedRotation;
       this._hosts = value.hosts;
       this._insecureTls = value.insecureTls;
+      this._localDatacenter = value.localDatacenter;
       this._name = value.name;
       this._password = value.password;
       this._pemBundle = value.pemBundle;
@@ -698,8 +790,11 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
       this._skipVerification = value.skipVerification;
+      this._socketKeepAlive = value.socketKeepAlive;
       this._tls = value.tls;
+      this._tlsServerName = value.tlsServerName;
       this._username = value.username;
+      this._usernameTemplate = value.usernameTemplate;
       this._verifyConnection = value.verifyConnection;
     }
   }
@@ -736,6 +831,22 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
     return this._connectTimeout;
   }
 
+  // consistency - computed: false, optional: true, required: false
+  private _consistency?: string; 
+  public get consistency() {
+    return this.getStringAttribute('consistency');
+  }
+  public set consistency(value: string) {
+    this._consistency = value;
+  }
+  public resetConsistency() {
+    this._consistency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get consistencyInput() {
+    return this._consistency;
+  }
+
   // data - computed: false, optional: true, required: false
   private _data?: { [key: string]: string }; 
   public get data() {
@@ -753,11 +864,11 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -785,11 +896,11 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
   }
 
   // insecure_tls - computed: false, optional: true, required: false
-  private _insecureTls?: boolean | cdktf.IResolvable; 
+  private _insecureTls?: boolean | cdktn.IResolvable; 
   public get insecureTls() {
     return this.getBooleanAttribute('insecure_tls');
   }
-  public set insecureTls(value: boolean | cdktf.IResolvable) {
+  public set insecureTls(value: boolean | cdktn.IResolvable) {
     this._insecureTls = value;
   }
   public resetInsecureTls() {
@@ -798,6 +909,22 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get insecureTlsInput() {
     return this._insecureTls;
+  }
+
+  // local_datacenter - computed: false, optional: true, required: false
+  private _localDatacenter?: string; 
+  public get localDatacenter() {
+    return this.getStringAttribute('local_datacenter');
+  }
+  public set localDatacenter(value: string) {
+    this._localDatacenter = value;
+  }
+  public resetLocalDatacenter() {
+    this._localDatacenter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localDatacenterInput() {
+    return this._localDatacenter;
   }
 
   // name - computed: false, optional: false, required: true
@@ -974,11 +1101,11 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
   }
 
   // skip_verification - computed: false, optional: true, required: false
-  private _skipVerification?: boolean | cdktf.IResolvable; 
+  private _skipVerification?: boolean | cdktn.IResolvable; 
   public get skipVerification() {
     return this.getBooleanAttribute('skip_verification');
   }
-  public set skipVerification(value: boolean | cdktf.IResolvable) {
+  public set skipVerification(value: boolean | cdktn.IResolvable) {
     this._skipVerification = value;
   }
   public resetSkipVerification() {
@@ -989,12 +1116,28 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
     return this._skipVerification;
   }
 
+  // socket_keep_alive - computed: false, optional: true, required: false
+  private _socketKeepAlive?: string; 
+  public get socketKeepAlive() {
+    return this.getStringAttribute('socket_keep_alive');
+  }
+  public set socketKeepAlive(value: string) {
+    this._socketKeepAlive = value;
+  }
+  public resetSocketKeepAlive() {
+    this._socketKeepAlive = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get socketKeepAliveInput() {
+    return this._socketKeepAlive;
+  }
+
   // tls - computed: false, optional: true, required: false
-  private _tls?: boolean | cdktf.IResolvable; 
+  private _tls?: boolean | cdktn.IResolvable; 
   public get tls() {
     return this.getBooleanAttribute('tls');
   }
-  public set tls(value: boolean | cdktf.IResolvable) {
+  public set tls(value: boolean | cdktn.IResolvable) {
     this._tls = value;
   }
   public resetTls() {
@@ -1003,6 +1146,22 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
   // Temporarily expose input value. Use with caution.
   public get tlsInput() {
     return this._tls;
+  }
+
+  // tls_server_name - computed: false, optional: true, required: false
+  private _tlsServerName?: string; 
+  public get tlsServerName() {
+    return this.getStringAttribute('tls_server_name');
+  }
+  public set tlsServerName(value: string) {
+    this._tlsServerName = value;
+  }
+  public resetTlsServerName() {
+    this._tlsServerName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsServerNameInput() {
+    return this._tlsServerName;
   }
 
   // username - computed: false, optional: true, required: false
@@ -1021,12 +1180,28 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
     return this._username;
   }
 
+  // username_template - computed: false, optional: true, required: false
+  private _usernameTemplate?: string; 
+  public get usernameTemplate() {
+    return this.getStringAttribute('username_template');
+  }
+  public set usernameTemplate(value: string) {
+    this._usernameTemplate = value;
+  }
+  public resetUsernameTemplate() {
+    this._usernameTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameTemplateInput() {
+    return this._usernameTemplate;
+  }
+
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -1038,15 +1213,15 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DatabaseSecretsMountCassandraList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountCassandra[] | cdktf.IResolvable
+export class DatabaseSecretsMountCassandraList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountCassandra[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1061,251 +1236,251 @@ export interface DatabaseSecretsMountCouchbase {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Required if `tls` is `true`. Specifies the certificate authority of the Couchbase server, as a PEM certificate that has been base64 encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#base64_pem DatabaseSecretsMount#base64_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#base64_pem DatabaseSecretsMount#base64_pem}
   */
   readonly base64Pem?: string;
   /**
   * Required for Couchbase versions prior to 6.5.0. This is only used to verify vault's connection to the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#bucket_name DatabaseSecretsMount#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#bucket_name DatabaseSecretsMount#bucket_name}
   */
   readonly bucketName?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * A set of Couchbase URIs to connect to. Must use `couchbases://` scheme if `tls` is `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
   */
   readonly hosts: string[];
   /**
   *  Specifies whether to skip verification of the server certificate when using TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
   */
-  readonly insecureTls?: boolean | cdktf.IResolvable;
+  readonly insecureTls?: boolean | cdktn.IResolvable;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * Specifies the password corresponding to the given username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password: string;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * Specifies whether to use TLS when connecting to Couchbase.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
   */
-  readonly tls?: boolean | cdktf.IResolvable;
+  readonly tls?: boolean | cdktn.IResolvable;
   /**
   * Specifies the username for Vault to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username: string;
   /**
   * Template describing how dynamic usernames are generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountCouchbaseToTerraform(struct?: DatabaseSecretsMountCouchbase | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountCouchbaseToTerraform(struct?: DatabaseSecretsMountCouchbase | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    base64_pem: cdktf.stringToTerraform(struct!.base64Pem),
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hosts),
-    insecure_tls: cdktf.booleanToTerraform(struct!.insecureTls),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    tls: cdktf.booleanToTerraform(struct!.tls),
-    username: cdktf.stringToTerraform(struct!.username),
-    username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    base64_pem: cdktn.stringToTerraform(struct!.base64Pem),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    hosts: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.hosts),
+    insecure_tls: cdktn.booleanToTerraform(struct!.insecureTls),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    tls: cdktn.booleanToTerraform(struct!.tls),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountCouchbaseToHclTerraform(struct?: DatabaseSecretsMountCouchbase | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountCouchbaseToHclTerraform(struct?: DatabaseSecretsMountCouchbase | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     base64_pem: {
-      value: cdktf.stringToHclTerraform(struct!.base64Pem),
+      value: cdktn.stringToHclTerraform(struct!.base64Pem),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     hosts: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.hosts),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.hosts),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     insecure_tls: {
-      value: cdktf.booleanToHclTerraform(struct!.insecureTls),
+      value: cdktn.booleanToHclTerraform(struct!.insecureTls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tls: {
-      value: cdktf.booleanToHclTerraform(struct!.tls),
+      value: cdktn.booleanToHclTerraform(struct!.tls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_template: {
-      value: cdktf.stringToHclTerraform(struct!.usernameTemplate),
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1316,9 +1491,9 @@ export function databaseSecretsMountCouchbaseToHclTerraform(struct?: DatabaseSec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountCouchbaseOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountCouchbaseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1326,11 +1501,11 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountCouchbase | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountCouchbase | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1411,7 +1586,7 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountCouchbase | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountCouchbase | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1434,7 +1609,7 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktf.ComplexO
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1527,11 +1702,11 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktf.ComplexO
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -1556,11 +1731,11 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktf.ComplexO
   }
 
   // insecure_tls - computed: false, optional: true, required: false
-  private _insecureTls?: boolean | cdktf.IResolvable; 
+  private _insecureTls?: boolean | cdktn.IResolvable; 
   public get insecureTls() {
     return this.getBooleanAttribute('insecure_tls');
   }
-  public set insecureTls(value: boolean | cdktf.IResolvable) {
+  public set insecureTls(value: boolean | cdktn.IResolvable) {
     this._insecureTls = value;
   }
   public resetInsecureTls() {
@@ -1678,11 +1853,11 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktf.ComplexO
   }
 
   // tls - computed: false, optional: true, required: false
-  private _tls?: boolean | cdktf.IResolvable; 
+  private _tls?: boolean | cdktn.IResolvable; 
   public get tls() {
     return this.getBooleanAttribute('tls');
   }
-  public set tls(value: boolean | cdktf.IResolvable) {
+  public set tls(value: boolean | cdktn.IResolvable) {
     this._tls = value;
   }
   public resetTls() {
@@ -1723,11 +1898,11 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktf.ComplexO
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -1739,15 +1914,15 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DatabaseSecretsMountCouchbaseList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountCouchbase[] | cdktf.IResolvable
+export class DatabaseSecretsMountCouchbaseList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountCouchbase[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1762,277 +1937,277 @@ export interface DatabaseSecretsMountElasticsearch {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * The path to a PEM-encoded CA cert file to use to verify the Elasticsearch server's identity
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
   */
   readonly caCert?: string;
   /**
   * The path to a directory of PEM-encoded CA cert files to use to verify the Elasticsearch server's identity
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#ca_path DatabaseSecretsMount#ca_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#ca_path DatabaseSecretsMount#ca_path}
   */
   readonly caPath?: string;
   /**
   * The path to the certificate for the Elasticsearch client to present for communication
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#client_cert DatabaseSecretsMount#client_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#client_cert DatabaseSecretsMount#client_cert}
   */
   readonly clientCert?: string;
   /**
   * The path to the key for the Elasticsearch client to use for communication
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#client_key DatabaseSecretsMount#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#client_key DatabaseSecretsMount#client_key}
   */
   readonly clientKey?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Whether to disable certificate verification
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#insecure DatabaseSecretsMount#insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#insecure DatabaseSecretsMount#insecure}
   */
-  readonly insecure?: boolean | cdktf.IResolvable;
+  readonly insecure?: boolean | cdktn.IResolvable;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The password to be used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password: string;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * This, if set, is used to set the SNI host when connecting via TLS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls_server_name DatabaseSecretsMount#tls_server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_server_name DatabaseSecretsMount#tls_server_name}
   */
   readonly tlsServerName?: string;
   /**
   * The URL for Elasticsearch's API
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
   */
   readonly url: string;
   /**
   * The username to be used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username: string;
   /**
   * Template describing how dynamic usernames are generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountElasticsearchToTerraform(struct?: DatabaseSecretsMountElasticsearch | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountElasticsearchToTerraform(struct?: DatabaseSecretsMountElasticsearch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    ca_cert: cdktf.stringToTerraform(struct!.caCert),
-    ca_path: cdktf.stringToTerraform(struct!.caPath),
-    client_cert: cdktf.stringToTerraform(struct!.clientCert),
-    client_key: cdktf.stringToTerraform(struct!.clientKey),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    insecure: cdktf.booleanToTerraform(struct!.insecure),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    tls_server_name: cdktf.stringToTerraform(struct!.tlsServerName),
-    url: cdktf.stringToTerraform(struct!.url),
-    username: cdktf.stringToTerraform(struct!.username),
-    username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    ca_cert: cdktn.stringToTerraform(struct!.caCert),
+    ca_path: cdktn.stringToTerraform(struct!.caPath),
+    client_cert: cdktn.stringToTerraform(struct!.clientCert),
+    client_key: cdktn.stringToTerraform(struct!.clientKey),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    insecure: cdktn.booleanToTerraform(struct!.insecure),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    tls_server_name: cdktn.stringToTerraform(struct!.tlsServerName),
+    url: cdktn.stringToTerraform(struct!.url),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountElasticsearchToHclTerraform(struct?: DatabaseSecretsMountElasticsearch | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountElasticsearchToHclTerraform(struct?: DatabaseSecretsMountElasticsearch | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     ca_cert: {
-      value: cdktf.stringToHclTerraform(struct!.caCert),
+      value: cdktn.stringToHclTerraform(struct!.caCert),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ca_path: {
-      value: cdktf.stringToHclTerraform(struct!.caPath),
+      value: cdktn.stringToHclTerraform(struct!.caPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_cert: {
-      value: cdktf.stringToHclTerraform(struct!.clientCert),
+      value: cdktn.stringToHclTerraform(struct!.clientCert),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_key: {
-      value: cdktf.stringToHclTerraform(struct!.clientKey),
+      value: cdktn.stringToHclTerraform(struct!.clientKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     insecure: {
-      value: cdktf.booleanToHclTerraform(struct!.insecure),
+      value: cdktn.booleanToHclTerraform(struct!.insecure),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tls_server_name: {
-      value: cdktf.stringToHclTerraform(struct!.tlsServerName),
+      value: cdktn.stringToHclTerraform(struct!.tlsServerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_template: {
-      value: cdktf.stringToHclTerraform(struct!.usernameTemplate),
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2043,9 +2218,9 @@ export function databaseSecretsMountElasticsearchToHclTerraform(struct?: Databas
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountElasticsearchOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountElasticsearchOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2053,11 +2228,11 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountElasticsearch | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountElasticsearch | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2146,7 +2321,7 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountElasticsearch | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountElasticsearch | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2171,7 +2346,7 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktf.Comp
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2298,11 +2473,11 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktf.Comp
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -2314,11 +2489,11 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktf.Comp
   }
 
   // insecure - computed: false, optional: true, required: false
-  private _insecure?: boolean | cdktf.IResolvable; 
+  private _insecure?: boolean | cdktn.IResolvable; 
   public get insecure() {
     return this.getBooleanAttribute('insecure');
   }
-  public set insecure(value: boolean | cdktf.IResolvable) {
+  public set insecure(value: boolean | cdktn.IResolvable) {
     this._insecure = value;
   }
   public resetInsecure() {
@@ -2494,11 +2669,11 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktf.Comp
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -2510,15 +2685,15 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktf.Comp
   }
 }
 
-export class DatabaseSecretsMountElasticsearchList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountElasticsearch[] | cdktf.IResolvable
+export class DatabaseSecretsMountElasticsearchList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountElasticsearch[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2533,264 +2708,277 @@ export interface DatabaseSecretsMountHana {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Disable special character escaping in username and password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
   */
-  readonly disableEscaping?: boolean | cdktf.IResolvable;
+  readonly disableEscaping?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
+  * Username generation template.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  */
+  readonly usernameTemplate?: string;
+  /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountHanaToTerraform(struct?: DatabaseSecretsMountHana | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountHanaToTerraform(struct?: DatabaseSecretsMountHana | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    disable_escaping: cdktf.booleanToTerraform(struct!.disableEscaping),
-    max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
-    max_idle_connections: cdktf.numberToTerraform(struct!.maxIdleConnections),
-    max_open_connections: cdktf.numberToTerraform(struct!.maxOpenConnections),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    password_wo: cdktf.stringToTerraform(struct!.passwordWo),
-    password_wo_version: cdktf.numberToTerraform(struct!.passwordWoVersion),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    username: cdktf.stringToTerraform(struct!.username),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    connection_url: cdktn.stringToTerraform(struct!.connectionUrl),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    disable_escaping: cdktn.booleanToTerraform(struct!.disableEscaping),
+    max_connection_lifetime: cdktn.numberToTerraform(struct!.maxConnectionLifetime),
+    max_idle_connections: cdktn.numberToTerraform(struct!.maxIdleConnections),
+    max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    password_wo: cdktn.stringToTerraform(struct!.passwordWo),
+    password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountHanaToHclTerraform(struct?: DatabaseSecretsMountHana | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountHanaToHclTerraform(struct?: DatabaseSecretsMountHana | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     connection_url: {
-      value: cdktf.stringToHclTerraform(struct!.connectionUrl),
+      value: cdktn.stringToHclTerraform(struct!.connectionUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disable_escaping: {
-      value: cdktf.booleanToHclTerraform(struct!.disableEscaping),
+      value: cdktn.booleanToHclTerraform(struct!.disableEscaping),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_connection_lifetime: {
-      value: cdktf.numberToHclTerraform(struct!.maxConnectionLifetime),
+      value: cdktn.numberToHclTerraform(struct!.maxConnectionLifetime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_idle_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxIdleConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxIdleConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_open_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxOpenConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxOpenConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo: {
-      value: cdktf.stringToHclTerraform(struct!.passwordWo),
+      value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.passwordWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.passwordWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username_template: {
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2801,9 +2989,9 @@ export function databaseSecretsMountHanaToHclTerraform(struct?: DatabaseSecretsM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountHanaOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountHanaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2811,11 +2999,11 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktf.ComplexObject
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountHana | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountHana | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2893,6 +3081,10 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktf.ComplexObject
       hasAnyValues = true;
       internalValueResult.username = this._username;
     }
+    if (this._usernameTemplate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usernameTemplate = this._usernameTemplate;
+    }
     if (this._verifyConnection !== undefined) {
       hasAnyValues = true;
       internalValueResult.verifyConnection = this._verifyConnection;
@@ -2900,7 +3092,7 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountHana | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountHana | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2922,9 +3114,10 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktf.ComplexObject
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
       this._username = undefined;
+      this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2949,6 +3142,7 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktf.ComplexObject
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
       this._username = value.username;
+      this._usernameTemplate = value.usernameTemplate;
       this._verifyConnection = value.verifyConnection;
     }
   }
@@ -3002,11 +3196,11 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktf.ComplexObject
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -3018,11 +3212,11 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktf.ComplexObject
   }
 
   // disable_escaping - computed: false, optional: true, required: false
-  private _disableEscaping?: boolean | cdktf.IResolvable; 
+  private _disableEscaping?: boolean | cdktn.IResolvable; 
   public get disableEscaping() {
     return this.getBooleanAttribute('disable_escaping');
   }
-  public set disableEscaping(value: boolean | cdktf.IResolvable) {
+  public set disableEscaping(value: boolean | cdktn.IResolvable) {
     this._disableEscaping = value;
   }
   public resetDisableEscaping() {
@@ -3238,12 +3432,28 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktf.ComplexObject
     return this._username;
   }
 
+  // username_template - computed: false, optional: true, required: false
+  private _usernameTemplate?: string; 
+  public get usernameTemplate() {
+    return this.getStringAttribute('username_template');
+  }
+  public set usernameTemplate(value: string) {
+    this._usernameTemplate = value;
+  }
+  public resetUsernameTemplate() {
+    this._usernameTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameTemplateInput() {
+    return this._usernameTemplate;
+  }
+
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -3255,15 +3465,15 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktf.ComplexObject
   }
 }
 
-export class DatabaseSecretsMountHanaList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountHana[] | cdktf.IResolvable
+export class DatabaseSecretsMountHanaList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountHana[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3278,277 +3488,277 @@ export interface DatabaseSecretsMountInfluxdb {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * The number of seconds to use as a connection timeout.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
   */
   readonly connectTimeout?: number;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Influxdb host to connect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
   */
   readonly host: string;
   /**
   * Whether to skip verification of the server certificate when using TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
   */
-  readonly insecureTls?: boolean | cdktf.IResolvable;
+  readonly insecureTls?: boolean | cdktn.IResolvable;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * Specifies the password corresponding to the given username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password: string;
   /**
   * Concatenated PEM blocks containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
   */
   readonly pemBundle?: string;
   /**
   * Specifies JSON containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
   */
   readonly pemJson?: string;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * The transport port to use to connect to Influxdb.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
   */
   readonly port?: number;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * Whether to use TLS when connecting to Influxdb.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
   */
-  readonly tls?: boolean | cdktf.IResolvable;
+  readonly tls?: boolean | cdktn.IResolvable;
   /**
   * Specifies the username to use for superuser access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username: string;
   /**
   * Template describing how dynamic usernames are generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountInfluxdbToTerraform(struct?: DatabaseSecretsMountInfluxdb | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountInfluxdbToTerraform(struct?: DatabaseSecretsMountInfluxdb | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    connect_timeout: cdktf.numberToTerraform(struct!.connectTimeout),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    host: cdktf.stringToTerraform(struct!.host),
-    insecure_tls: cdktf.booleanToTerraform(struct!.insecureTls),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    pem_bundle: cdktf.stringToTerraform(struct!.pemBundle),
-    pem_json: cdktf.stringToTerraform(struct!.pemJson),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    port: cdktf.numberToTerraform(struct!.port),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    tls: cdktf.booleanToTerraform(struct!.tls),
-    username: cdktf.stringToTerraform(struct!.username),
-    username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    connect_timeout: cdktn.numberToTerraform(struct!.connectTimeout),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    host: cdktn.stringToTerraform(struct!.host),
+    insecure_tls: cdktn.booleanToTerraform(struct!.insecureTls),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    pem_bundle: cdktn.stringToTerraform(struct!.pemBundle),
+    pem_json: cdktn.stringToTerraform(struct!.pemJson),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    port: cdktn.numberToTerraform(struct!.port),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    tls: cdktn.booleanToTerraform(struct!.tls),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountInfluxdbToHclTerraform(struct?: DatabaseSecretsMountInfluxdb | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountInfluxdbToHclTerraform(struct?: DatabaseSecretsMountInfluxdb | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     connect_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.connectTimeout),
+      value: cdktn.numberToHclTerraform(struct!.connectTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     insecure_tls: {
-      value: cdktf.booleanToHclTerraform(struct!.insecureTls),
+      value: cdktn.booleanToHclTerraform(struct!.insecureTls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pem_bundle: {
-      value: cdktf.stringToHclTerraform(struct!.pemBundle),
+      value: cdktn.stringToHclTerraform(struct!.pemBundle),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pem_json: {
-      value: cdktf.stringToHclTerraform(struct!.pemJson),
+      value: cdktn.stringToHclTerraform(struct!.pemJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tls: {
-      value: cdktf.booleanToHclTerraform(struct!.tls),
+      value: cdktn.booleanToHclTerraform(struct!.tls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_template: {
-      value: cdktf.stringToHclTerraform(struct!.usernameTemplate),
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3559,9 +3769,9 @@ export function databaseSecretsMountInfluxdbToHclTerraform(struct?: DatabaseSecr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountInfluxdbOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountInfluxdbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3569,11 +3779,11 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountInfluxdb | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountInfluxdb | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3662,7 +3872,7 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountInfluxdb | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountInfluxdb | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3687,7 +3897,7 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktf.ComplexOb
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3766,11 +3976,11 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktf.ComplexOb
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -3795,11 +4005,11 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktf.ComplexOb
   }
 
   // insecure_tls - computed: false, optional: true, required: false
-  private _insecureTls?: boolean | cdktf.IResolvable; 
+  private _insecureTls?: boolean | cdktn.IResolvable; 
   public get insecureTls() {
     return this.getBooleanAttribute('insecure_tls');
   }
-  public set insecureTls(value: boolean | cdktf.IResolvable) {
+  public set insecureTls(value: boolean | cdktn.IResolvable) {
     this._insecureTls = value;
   }
   public resetInsecureTls() {
@@ -3965,11 +4175,11 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktf.ComplexOb
   }
 
   // tls - computed: false, optional: true, required: false
-  private _tls?: boolean | cdktf.IResolvable; 
+  private _tls?: boolean | cdktn.IResolvable; 
   public get tls() {
     return this.getBooleanAttribute('tls');
   }
-  public set tls(value: boolean | cdktf.IResolvable) {
+  public set tls(value: boolean | cdktn.IResolvable) {
     this._tls = value;
   }
   public resetTls() {
@@ -4010,11 +4220,11 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktf.ComplexOb
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -4026,15 +4236,15 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DatabaseSecretsMountInfluxdbList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountInfluxdb[] | cdktf.IResolvable
+export class DatabaseSecretsMountInfluxdbList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountInfluxdb[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4049,267 +4259,306 @@ export interface DatabaseSecretsMountMongodb {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * The x509 CA file for validating the certificate presented by the MongoDB server. Must be PEM encoded.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+  */
+  readonly tlsCa?: string;
+  /**
+  * The x509 certificate and private key bundle for connecting to the database. Must be PEM encoded.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+  */
+  readonly tlsCertificateKey?: string;
+  /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
+  /**
+  * Specifies the MongoDB write concern for Vault management operations.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#write_concern DatabaseSecretsMount#write_concern}
+  */
+  readonly writeConcern?: string;
 }
 
-export function databaseSecretsMountMongodbToTerraform(struct?: DatabaseSecretsMountMongodb | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMongodbToTerraform(struct?: DatabaseSecretsMountMongodb | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
-    max_idle_connections: cdktf.numberToTerraform(struct!.maxIdleConnections),
-    max_open_connections: cdktf.numberToTerraform(struct!.maxOpenConnections),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    password_wo: cdktf.stringToTerraform(struct!.passwordWo),
-    password_wo_version: cdktf.numberToTerraform(struct!.passwordWoVersion),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    username: cdktf.stringToTerraform(struct!.username),
-    username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    connection_url: cdktn.stringToTerraform(struct!.connectionUrl),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    max_connection_lifetime: cdktn.numberToTerraform(struct!.maxConnectionLifetime),
+    max_idle_connections: cdktn.numberToTerraform(struct!.maxIdleConnections),
+    max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    password_wo: cdktn.stringToTerraform(struct!.passwordWo),
+    password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    tls_ca: cdktn.stringToTerraform(struct!.tlsCa),
+    tls_certificate_key: cdktn.stringToTerraform(struct!.tlsCertificateKey),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
+    write_concern: cdktn.stringToTerraform(struct!.writeConcern),
   }
 }
 
 
-export function databaseSecretsMountMongodbToHclTerraform(struct?: DatabaseSecretsMountMongodb | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMongodbToHclTerraform(struct?: DatabaseSecretsMountMongodb | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     connection_url: {
-      value: cdktf.stringToHclTerraform(struct!.connectionUrl),
+      value: cdktn.stringToHclTerraform(struct!.connectionUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_connection_lifetime: {
-      value: cdktf.numberToHclTerraform(struct!.maxConnectionLifetime),
+      value: cdktn.numberToHclTerraform(struct!.maxConnectionLifetime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_idle_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxIdleConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxIdleConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_open_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxOpenConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxOpenConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo: {
-      value: cdktf.stringToHclTerraform(struct!.passwordWo),
+      value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.passwordWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.passwordWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
+    tls_ca: {
+      value: cdktn.stringToHclTerraform(struct!.tlsCa),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tls_certificate_key: {
+      value: cdktn.stringToHclTerraform(struct!.tlsCertificateKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_template: {
-      value: cdktf.stringToHclTerraform(struct!.usernameTemplate),
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    write_concern: {
+      value: cdktn.stringToHclTerraform(struct!.writeConcern),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -4317,9 +4566,9 @@ export function databaseSecretsMountMongodbToHclTerraform(struct?: DatabaseSecre
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountMongodbOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountMongodbOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4327,11 +4576,11 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountMongodb | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountMongodb | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4401,6 +4650,14 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
     }
+    if (this._tlsCa !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tlsCa = this._tlsCa;
+    }
+    if (this._tlsCertificateKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tlsCertificateKey = this._tlsCertificateKey;
+    }
     if (this._username !== undefined) {
       hasAnyValues = true;
       internalValueResult.username = this._username;
@@ -4413,10 +4670,14 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktf.ComplexObj
       hasAnyValues = true;
       internalValueResult.verifyConnection = this._verifyConnection;
     }
+    if (this._writeConcern !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.writeConcern = this._writeConcern;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountMongodb | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountMongodb | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4436,11 +4697,14 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktf.ComplexObj
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._tlsCa = undefined;
+      this._tlsCertificateKey = undefined;
       this._username = undefined;
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
+      this._writeConcern = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4463,9 +4727,12 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktf.ComplexObj
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._tlsCa = value.tlsCa;
+      this._tlsCertificateKey = value.tlsCertificateKey;
       this._username = value.username;
       this._usernameTemplate = value.usernameTemplate;
       this._verifyConnection = value.verifyConnection;
+      this._writeConcern = value.writeConcern;
     }
   }
 
@@ -4518,11 +4785,11 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktf.ComplexObj
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -4722,6 +4989,38 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktf.ComplexObj
     return this._rotationWindow;
   }
 
+  // tls_ca - computed: false, optional: true, required: false
+  private _tlsCa?: string; 
+  public get tlsCa() {
+    return this.getStringAttribute('tls_ca');
+  }
+  public set tlsCa(value: string) {
+    this._tlsCa = value;
+  }
+  public resetTlsCa() {
+    this._tlsCa = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsCaInput() {
+    return this._tlsCa;
+  }
+
+  // tls_certificate_key - computed: false, optional: true, required: false
+  private _tlsCertificateKey?: string; 
+  public get tlsCertificateKey() {
+    return this.getStringAttribute('tls_certificate_key');
+  }
+  public set tlsCertificateKey(value: string) {
+    this._tlsCertificateKey = value;
+  }
+  public resetTlsCertificateKey() {
+    this._tlsCertificateKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsCertificateKeyInput() {
+    return this._tlsCertificateKey;
+  }
+
   // username - computed: false, optional: true, required: false
   private _username?: string; 
   public get username() {
@@ -4755,11 +5054,11 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktf.ComplexObj
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -4769,17 +5068,33 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktf.ComplexObj
   public get verifyConnectionInput() {
     return this._verifyConnection;
   }
+
+  // write_concern - computed: false, optional: true, required: false
+  private _writeConcern?: string; 
+  public get writeConcern() {
+    return this.getStringAttribute('write_concern');
+  }
+  public set writeConcern(value: string) {
+    this._writeConcern = value;
+  }
+  public resetWriteConcern() {
+    this._writeConcern = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get writeConcernInput() {
+    return this._writeConcern;
+  }
 }
 
-export class DatabaseSecretsMountMongodbList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountMongodb[] | cdktf.IResolvable
+export class DatabaseSecretsMountMongodbList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountMongodb[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4794,186 +5109,199 @@ export interface DatabaseSecretsMountMongodbatlas {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * The Private Programmatic API Key used to connect with MongoDB Atlas API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
   */
   readonly privateKey: string;
   /**
   * The Project ID the Database User should be created within.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#project_id DatabaseSecretsMount#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#project_id DatabaseSecretsMount#project_id}
   */
   readonly projectId: string;
   /**
   * The Public Programmatic API Key used to authenticate with the MongoDB Atlas API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#public_key DatabaseSecretsMount#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#public_key DatabaseSecretsMount#public_key}
   */
   readonly publicKey: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Template describing how dynamic usernames are generated.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  */
+  readonly usernameTemplate?: string;
+  /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountMongodbatlasToTerraform(struct?: DatabaseSecretsMountMongodbatlas | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMongodbatlasToTerraform(struct?: DatabaseSecretsMountMongodbatlas | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    name: cdktf.stringToTerraform(struct!.name),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    private_key: cdktf.stringToTerraform(struct!.privateKey),
-    project_id: cdktf.stringToTerraform(struct!.projectId),
-    public_key: cdktf.stringToTerraform(struct!.publicKey),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    name: cdktn.stringToTerraform(struct!.name),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    private_key: cdktn.stringToTerraform(struct!.privateKey),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
+    public_key: cdktn.stringToTerraform(struct!.publicKey),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountMongodbatlasToHclTerraform(struct?: DatabaseSecretsMountMongodbatlas | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMongodbatlasToHclTerraform(struct?: DatabaseSecretsMountMongodbatlas | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_key: {
-      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      value: cdktn.stringToHclTerraform(struct!.privateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     public_key: {
-      value: cdktf.stringToHclTerraform(struct!.publicKey),
+      value: cdktn.stringToHclTerraform(struct!.publicKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
+    username_template: {
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -4984,9 +5312,9 @@ export function databaseSecretsMountMongodbatlasToHclTerraform(struct?: Database
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4994,11 +5322,11 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountMongodbatlas | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountMongodbatlas | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5052,6 +5380,10 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
     }
+    if (this._usernameTemplate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.usernameTemplate = this._usernameTemplate;
+    }
     if (this._verifyConnection !== undefined) {
       hasAnyValues = true;
       internalValueResult.verifyConnection = this._verifyConnection;
@@ -5059,7 +5391,7 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountMongodbatlas | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountMongodbatlas | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5075,9 +5407,10 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktf.Compl
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5096,6 +5429,7 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktf.Compl
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._usernameTemplate = value.usernameTemplate;
       this._verifyConnection = value.verifyConnection;
     }
   }
@@ -5133,11 +5467,11 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktf.Compl
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -5280,12 +5614,28 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktf.Compl
     return this._rotationWindow;
   }
 
+  // username_template - computed: false, optional: true, required: false
+  private _usernameTemplate?: string; 
+  public get usernameTemplate() {
+    return this.getStringAttribute('username_template');
+  }
+  public set usernameTemplate(value: string) {
+    this._usernameTemplate = value;
+  }
+  public resetUsernameTemplate() {
+    this._usernameTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameTemplateInput() {
+    return this._usernameTemplate;
+  }
+
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -5297,15 +5647,15 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktf.Compl
   }
 }
 
-export class DatabaseSecretsMountMongodbatlasList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountMongodbatlas[] | cdktf.IResolvable
+export class DatabaseSecretsMountMongodbatlasList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountMongodbatlas[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -5320,290 +5670,290 @@ export interface DatabaseSecretsMountMssql {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * Set to true when the target is a Contained Database, e.g. AzureSQL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#contained_db DatabaseSecretsMount#contained_db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#contained_db DatabaseSecretsMount#contained_db}
   */
-  readonly containedDb?: boolean | cdktf.IResolvable;
+  readonly containedDb?: boolean | cdktn.IResolvable;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Disable special character escaping in username and password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
   */
-  readonly disableEscaping?: boolean | cdktf.IResolvable;
+  readonly disableEscaping?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountMssqlToTerraform(struct?: DatabaseSecretsMountMssql | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMssqlToTerraform(struct?: DatabaseSecretsMountMssql | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
-    contained_db: cdktf.booleanToTerraform(struct!.containedDb),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    disable_escaping: cdktf.booleanToTerraform(struct!.disableEscaping),
-    max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
-    max_idle_connections: cdktf.numberToTerraform(struct!.maxIdleConnections),
-    max_open_connections: cdktf.numberToTerraform(struct!.maxOpenConnections),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    password_wo: cdktf.stringToTerraform(struct!.passwordWo),
-    password_wo_version: cdktf.numberToTerraform(struct!.passwordWoVersion),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    username: cdktf.stringToTerraform(struct!.username),
-    username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    connection_url: cdktn.stringToTerraform(struct!.connectionUrl),
+    contained_db: cdktn.booleanToTerraform(struct!.containedDb),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    disable_escaping: cdktn.booleanToTerraform(struct!.disableEscaping),
+    max_connection_lifetime: cdktn.numberToTerraform(struct!.maxConnectionLifetime),
+    max_idle_connections: cdktn.numberToTerraform(struct!.maxIdleConnections),
+    max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    password_wo: cdktn.stringToTerraform(struct!.passwordWo),
+    password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountMssqlToHclTerraform(struct?: DatabaseSecretsMountMssql | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMssqlToHclTerraform(struct?: DatabaseSecretsMountMssql | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     connection_url: {
-      value: cdktf.stringToHclTerraform(struct!.connectionUrl),
+      value: cdktn.stringToHclTerraform(struct!.connectionUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     contained_db: {
-      value: cdktf.booleanToHclTerraform(struct!.containedDb),
+      value: cdktn.booleanToHclTerraform(struct!.containedDb),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disable_escaping: {
-      value: cdktf.booleanToHclTerraform(struct!.disableEscaping),
+      value: cdktn.booleanToHclTerraform(struct!.disableEscaping),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_connection_lifetime: {
-      value: cdktf.numberToHclTerraform(struct!.maxConnectionLifetime),
+      value: cdktn.numberToHclTerraform(struct!.maxConnectionLifetime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_idle_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxIdleConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxIdleConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_open_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxOpenConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxOpenConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo: {
-      value: cdktf.stringToHclTerraform(struct!.passwordWo),
+      value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.passwordWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.passwordWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_template: {
-      value: cdktf.stringToHclTerraform(struct!.usernameTemplate),
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -5614,9 +5964,9 @@ export function databaseSecretsMountMssqlToHclTerraform(struct?: DatabaseSecrets
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountMssqlOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountMssqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -5624,11 +5974,11 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountMssql | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountMssql | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5721,7 +6071,7 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountMssql | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountMssql | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5747,7 +6097,7 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktf.ComplexObjec
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5811,11 +6161,11 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktf.ComplexObjec
   }
 
   // contained_db - computed: false, optional: true, required: false
-  private _containedDb?: boolean | cdktf.IResolvable; 
+  private _containedDb?: boolean | cdktn.IResolvable; 
   public get containedDb() {
     return this.getBooleanAttribute('contained_db');
   }
-  public set containedDb(value: boolean | cdktf.IResolvable) {
+  public set containedDb(value: boolean | cdktn.IResolvable) {
     this._containedDb = value;
   }
   public resetContainedDb() {
@@ -5843,11 +6193,11 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktf.ComplexObjec
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -5859,11 +6209,11 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktf.ComplexObjec
   }
 
   // disable_escaping - computed: false, optional: true, required: false
-  private _disableEscaping?: boolean | cdktf.IResolvable; 
+  private _disableEscaping?: boolean | cdktn.IResolvable; 
   public get disableEscaping() {
     return this.getBooleanAttribute('disable_escaping');
   }
-  public set disableEscaping(value: boolean | cdktf.IResolvable) {
+  public set disableEscaping(value: boolean | cdktn.IResolvable) {
     this._disableEscaping = value;
   }
   public resetDisableEscaping() {
@@ -6096,11 +6446,11 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktf.ComplexObjec
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -6112,15 +6462,15 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class DatabaseSecretsMountMssqlList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountMssql[] | cdktf.IResolvable
+export class DatabaseSecretsMountMssqlList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountMssql[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6135,316 +6485,316 @@ export interface DatabaseSecretsMountMysql {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
   * x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
   */
   readonly tlsCertificateKey?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountMysqlToTerraform(struct?: DatabaseSecretsMountMysql | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMysqlToTerraform(struct?: DatabaseSecretsMountMysql | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    auth_type: cdktf.stringToTerraform(struct!.authType),
-    connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
-    max_idle_connections: cdktf.numberToTerraform(struct!.maxIdleConnections),
-    max_open_connections: cdktf.numberToTerraform(struct!.maxOpenConnections),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    password_wo: cdktf.stringToTerraform(struct!.passwordWo),
-    password_wo_version: cdktf.numberToTerraform(struct!.passwordWoVersion),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    service_account_json: cdktf.stringToTerraform(struct!.serviceAccountJson),
-    tls_ca: cdktf.stringToTerraform(struct!.tlsCa),
-    tls_certificate_key: cdktf.stringToTerraform(struct!.tlsCertificateKey),
-    username: cdktf.stringToTerraform(struct!.username),
-    username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
+    connection_url: cdktn.stringToTerraform(struct!.connectionUrl),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    max_connection_lifetime: cdktn.numberToTerraform(struct!.maxConnectionLifetime),
+    max_idle_connections: cdktn.numberToTerraform(struct!.maxIdleConnections),
+    max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    password_wo: cdktn.stringToTerraform(struct!.passwordWo),
+    password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    service_account_json: cdktn.stringToTerraform(struct!.serviceAccountJson),
+    tls_ca: cdktn.stringToTerraform(struct!.tlsCa),
+    tls_certificate_key: cdktn.stringToTerraform(struct!.tlsCertificateKey),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountMysqlToHclTerraform(struct?: DatabaseSecretsMountMysql | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMysqlToHclTerraform(struct?: DatabaseSecretsMountMysql | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     connection_url: {
-      value: cdktf.stringToHclTerraform(struct!.connectionUrl),
+      value: cdktn.stringToHclTerraform(struct!.connectionUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_connection_lifetime: {
-      value: cdktf.numberToHclTerraform(struct!.maxConnectionLifetime),
+      value: cdktn.numberToHclTerraform(struct!.maxConnectionLifetime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_idle_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxIdleConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxIdleConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_open_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxOpenConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxOpenConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo: {
-      value: cdktf.stringToHclTerraform(struct!.passwordWo),
+      value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.passwordWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.passwordWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_account_json: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountJson),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_ca: {
-      value: cdktf.stringToHclTerraform(struct!.tlsCa),
+      value: cdktn.stringToHclTerraform(struct!.tlsCa),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_certificate_key: {
-      value: cdktf.stringToHclTerraform(struct!.tlsCertificateKey),
+      value: cdktn.stringToHclTerraform(struct!.tlsCertificateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_template: {
-      value: cdktf.stringToHclTerraform(struct!.usernameTemplate),
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -6455,9 +6805,9 @@ export function databaseSecretsMountMysqlToHclTerraform(struct?: DatabaseSecrets
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountMysqlOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountMysqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6465,11 +6815,11 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountMysql | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountMysql | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6570,7 +6920,7 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountMysql | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountMysql | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6598,7 +6948,7 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktf.ComplexObjec
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6696,11 +7046,11 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktf.ComplexObjec
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -6981,11 +7331,11 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktf.ComplexObjec
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -6997,15 +7347,15 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class DatabaseSecretsMountMysqlList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountMysql[] | cdktf.IResolvable
+export class DatabaseSecretsMountMysqlList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountMysql[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7020,316 +7370,316 @@ export interface DatabaseSecretsMountMysqlAurora {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
   * x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
   */
   readonly tlsCertificateKey?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountMysqlAuroraToTerraform(struct?: DatabaseSecretsMountMysqlAurora | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMysqlAuroraToTerraform(struct?: DatabaseSecretsMountMysqlAurora | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    auth_type: cdktf.stringToTerraform(struct!.authType),
-    connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
-    max_idle_connections: cdktf.numberToTerraform(struct!.maxIdleConnections),
-    max_open_connections: cdktf.numberToTerraform(struct!.maxOpenConnections),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    password_wo: cdktf.stringToTerraform(struct!.passwordWo),
-    password_wo_version: cdktf.numberToTerraform(struct!.passwordWoVersion),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    service_account_json: cdktf.stringToTerraform(struct!.serviceAccountJson),
-    tls_ca: cdktf.stringToTerraform(struct!.tlsCa),
-    tls_certificate_key: cdktf.stringToTerraform(struct!.tlsCertificateKey),
-    username: cdktf.stringToTerraform(struct!.username),
-    username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
+    connection_url: cdktn.stringToTerraform(struct!.connectionUrl),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    max_connection_lifetime: cdktn.numberToTerraform(struct!.maxConnectionLifetime),
+    max_idle_connections: cdktn.numberToTerraform(struct!.maxIdleConnections),
+    max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    password_wo: cdktn.stringToTerraform(struct!.passwordWo),
+    password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    service_account_json: cdktn.stringToTerraform(struct!.serviceAccountJson),
+    tls_ca: cdktn.stringToTerraform(struct!.tlsCa),
+    tls_certificate_key: cdktn.stringToTerraform(struct!.tlsCertificateKey),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountMysqlAuroraToHclTerraform(struct?: DatabaseSecretsMountMysqlAurora | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMysqlAuroraToHclTerraform(struct?: DatabaseSecretsMountMysqlAurora | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     connection_url: {
-      value: cdktf.stringToHclTerraform(struct!.connectionUrl),
+      value: cdktn.stringToHclTerraform(struct!.connectionUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_connection_lifetime: {
-      value: cdktf.numberToHclTerraform(struct!.maxConnectionLifetime),
+      value: cdktn.numberToHclTerraform(struct!.maxConnectionLifetime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_idle_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxIdleConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxIdleConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_open_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxOpenConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxOpenConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo: {
-      value: cdktf.stringToHclTerraform(struct!.passwordWo),
+      value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.passwordWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.passwordWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_account_json: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountJson),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_ca: {
-      value: cdktf.stringToHclTerraform(struct!.tlsCa),
+      value: cdktn.stringToHclTerraform(struct!.tlsCa),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_certificate_key: {
-      value: cdktf.stringToHclTerraform(struct!.tlsCertificateKey),
+      value: cdktn.stringToHclTerraform(struct!.tlsCertificateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_template: {
-      value: cdktf.stringToHclTerraform(struct!.usernameTemplate),
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -7340,9 +7690,9 @@ export function databaseSecretsMountMysqlAuroraToHclTerraform(struct?: DatabaseS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7350,11 +7700,11 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountMysqlAurora | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountMysqlAurora | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7455,7 +7805,7 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountMysqlAurora | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountMysqlAurora | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7483,7 +7833,7 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktf.Comple
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7581,11 +7931,11 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktf.Comple
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -7866,11 +8216,11 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktf.Comple
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -7882,15 +8232,15 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktf.Comple
   }
 }
 
-export class DatabaseSecretsMountMysqlAuroraList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountMysqlAurora[] | cdktf.IResolvable
+export class DatabaseSecretsMountMysqlAuroraList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountMysqlAurora[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7905,316 +8255,316 @@ export interface DatabaseSecretsMountMysqlLegacy {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
   * x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
   */
   readonly tlsCertificateKey?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountMysqlLegacyToTerraform(struct?: DatabaseSecretsMountMysqlLegacy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMysqlLegacyToTerraform(struct?: DatabaseSecretsMountMysqlLegacy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    auth_type: cdktf.stringToTerraform(struct!.authType),
-    connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
-    max_idle_connections: cdktf.numberToTerraform(struct!.maxIdleConnections),
-    max_open_connections: cdktf.numberToTerraform(struct!.maxOpenConnections),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    password_wo: cdktf.stringToTerraform(struct!.passwordWo),
-    password_wo_version: cdktf.numberToTerraform(struct!.passwordWoVersion),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    service_account_json: cdktf.stringToTerraform(struct!.serviceAccountJson),
-    tls_ca: cdktf.stringToTerraform(struct!.tlsCa),
-    tls_certificate_key: cdktf.stringToTerraform(struct!.tlsCertificateKey),
-    username: cdktf.stringToTerraform(struct!.username),
-    username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
+    connection_url: cdktn.stringToTerraform(struct!.connectionUrl),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    max_connection_lifetime: cdktn.numberToTerraform(struct!.maxConnectionLifetime),
+    max_idle_connections: cdktn.numberToTerraform(struct!.maxIdleConnections),
+    max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    password_wo: cdktn.stringToTerraform(struct!.passwordWo),
+    password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    service_account_json: cdktn.stringToTerraform(struct!.serviceAccountJson),
+    tls_ca: cdktn.stringToTerraform(struct!.tlsCa),
+    tls_certificate_key: cdktn.stringToTerraform(struct!.tlsCertificateKey),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountMysqlLegacyToHclTerraform(struct?: DatabaseSecretsMountMysqlLegacy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMysqlLegacyToHclTerraform(struct?: DatabaseSecretsMountMysqlLegacy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     connection_url: {
-      value: cdktf.stringToHclTerraform(struct!.connectionUrl),
+      value: cdktn.stringToHclTerraform(struct!.connectionUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_connection_lifetime: {
-      value: cdktf.numberToHclTerraform(struct!.maxConnectionLifetime),
+      value: cdktn.numberToHclTerraform(struct!.maxConnectionLifetime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_idle_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxIdleConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxIdleConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_open_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxOpenConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxOpenConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo: {
-      value: cdktf.stringToHclTerraform(struct!.passwordWo),
+      value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.passwordWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.passwordWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_account_json: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountJson),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_ca: {
-      value: cdktf.stringToHclTerraform(struct!.tlsCa),
+      value: cdktn.stringToHclTerraform(struct!.tlsCa),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_certificate_key: {
-      value: cdktf.stringToHclTerraform(struct!.tlsCertificateKey),
+      value: cdktn.stringToHclTerraform(struct!.tlsCertificateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_template: {
-      value: cdktf.stringToHclTerraform(struct!.usernameTemplate),
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -8225,9 +8575,9 @@ export function databaseSecretsMountMysqlLegacyToHclTerraform(struct?: DatabaseS
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -8235,11 +8585,11 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountMysqlLegacy | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountMysqlLegacy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8340,7 +8690,7 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountMysqlLegacy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountMysqlLegacy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8368,7 +8718,7 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktf.Comple
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8466,11 +8816,11 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktf.Comple
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -8751,11 +9101,11 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktf.Comple
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -8767,15 +9117,15 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktf.Comple
   }
 }
 
-export class DatabaseSecretsMountMysqlLegacyList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountMysqlLegacy[] | cdktf.IResolvable
+export class DatabaseSecretsMountMysqlLegacyList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountMysqlLegacy[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -8790,316 +9140,316 @@ export interface DatabaseSecretsMountMysqlRds {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
   * x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
   */
   readonly tlsCertificateKey?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountMysqlRdsToTerraform(struct?: DatabaseSecretsMountMysqlRds | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMysqlRdsToTerraform(struct?: DatabaseSecretsMountMysqlRds | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    auth_type: cdktf.stringToTerraform(struct!.authType),
-    connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
-    max_idle_connections: cdktf.numberToTerraform(struct!.maxIdleConnections),
-    max_open_connections: cdktf.numberToTerraform(struct!.maxOpenConnections),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    password_wo: cdktf.stringToTerraform(struct!.passwordWo),
-    password_wo_version: cdktf.numberToTerraform(struct!.passwordWoVersion),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    service_account_json: cdktf.stringToTerraform(struct!.serviceAccountJson),
-    tls_ca: cdktf.stringToTerraform(struct!.tlsCa),
-    tls_certificate_key: cdktf.stringToTerraform(struct!.tlsCertificateKey),
-    username: cdktf.stringToTerraform(struct!.username),
-    username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
+    connection_url: cdktn.stringToTerraform(struct!.connectionUrl),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    max_connection_lifetime: cdktn.numberToTerraform(struct!.maxConnectionLifetime),
+    max_idle_connections: cdktn.numberToTerraform(struct!.maxIdleConnections),
+    max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    password_wo: cdktn.stringToTerraform(struct!.passwordWo),
+    password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    service_account_json: cdktn.stringToTerraform(struct!.serviceAccountJson),
+    tls_ca: cdktn.stringToTerraform(struct!.tlsCa),
+    tls_certificate_key: cdktn.stringToTerraform(struct!.tlsCertificateKey),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountMysqlRdsToHclTerraform(struct?: DatabaseSecretsMountMysqlRds | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountMysqlRdsToHclTerraform(struct?: DatabaseSecretsMountMysqlRds | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     connection_url: {
-      value: cdktf.stringToHclTerraform(struct!.connectionUrl),
+      value: cdktn.stringToHclTerraform(struct!.connectionUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_connection_lifetime: {
-      value: cdktf.numberToHclTerraform(struct!.maxConnectionLifetime),
+      value: cdktn.numberToHclTerraform(struct!.maxConnectionLifetime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_idle_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxIdleConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxIdleConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_open_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxOpenConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxOpenConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo: {
-      value: cdktf.stringToHclTerraform(struct!.passwordWo),
+      value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.passwordWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.passwordWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service_account_json: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountJson),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_ca: {
-      value: cdktf.stringToHclTerraform(struct!.tlsCa),
+      value: cdktn.stringToHclTerraform(struct!.tlsCa),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_certificate_key: {
-      value: cdktf.stringToHclTerraform(struct!.tlsCertificateKey),
+      value: cdktn.stringToHclTerraform(struct!.tlsCertificateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_template: {
-      value: cdktf.stringToHclTerraform(struct!.usernameTemplate),
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -9110,9 +9460,9 @@ export function databaseSecretsMountMysqlRdsToHclTerraform(struct?: DatabaseSecr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9120,11 +9470,11 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountMysqlRds | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountMysqlRds | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9225,7 +9575,7 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountMysqlRds | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountMysqlRds | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9253,7 +9603,7 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktf.ComplexOb
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9351,11 +9701,11 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktf.ComplexOb
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -9636,11 +9986,11 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktf.ComplexOb
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -9652,15 +10002,15 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DatabaseSecretsMountMysqlRdsList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountMysqlRds[] | cdktf.IResolvable
+export class DatabaseSecretsMountMysqlRdsList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountMysqlRds[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -9675,303 +10025,303 @@ export interface DatabaseSecretsMountOracle {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Set to true to disconnect any open sessions prior to running the revocation statements.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disconnect_sessions DatabaseSecretsMount#disconnect_sessions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disconnect_sessions DatabaseSecretsMount#disconnect_sessions}
   */
-  readonly disconnectSessions?: boolean | cdktf.IResolvable;
+  readonly disconnectSessions?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * If set, allows onboarding static roles with a rootless connection configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#self_managed DatabaseSecretsMount#self_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#self_managed DatabaseSecretsMount#self_managed}
   */
-  readonly selfManaged?: boolean | cdktf.IResolvable;
+  readonly selfManaged?: boolean | cdktn.IResolvable;
   /**
   * Set to true in order to split statements after semi-colons.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#split_statements DatabaseSecretsMount#split_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#split_statements DatabaseSecretsMount#split_statements}
   */
-  readonly splitStatements?: boolean | cdktf.IResolvable;
+  readonly splitStatements?: boolean | cdktn.IResolvable;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountOracleToTerraform(struct?: DatabaseSecretsMountOracle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountOracleToTerraform(struct?: DatabaseSecretsMountOracle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    disconnect_sessions: cdktf.booleanToTerraform(struct!.disconnectSessions),
-    max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
-    max_idle_connections: cdktf.numberToTerraform(struct!.maxIdleConnections),
-    max_open_connections: cdktf.numberToTerraform(struct!.maxOpenConnections),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    password_wo: cdktf.stringToTerraform(struct!.passwordWo),
-    password_wo_version: cdktf.numberToTerraform(struct!.passwordWoVersion),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    self_managed: cdktf.booleanToTerraform(struct!.selfManaged),
-    split_statements: cdktf.booleanToTerraform(struct!.splitStatements),
-    username: cdktf.stringToTerraform(struct!.username),
-    username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    connection_url: cdktn.stringToTerraform(struct!.connectionUrl),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    disconnect_sessions: cdktn.booleanToTerraform(struct!.disconnectSessions),
+    max_connection_lifetime: cdktn.numberToTerraform(struct!.maxConnectionLifetime),
+    max_idle_connections: cdktn.numberToTerraform(struct!.maxIdleConnections),
+    max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    password_wo: cdktn.stringToTerraform(struct!.passwordWo),
+    password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    self_managed: cdktn.booleanToTerraform(struct!.selfManaged),
+    split_statements: cdktn.booleanToTerraform(struct!.splitStatements),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountOracleToHclTerraform(struct?: DatabaseSecretsMountOracle | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountOracleToHclTerraform(struct?: DatabaseSecretsMountOracle | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     connection_url: {
-      value: cdktf.stringToHclTerraform(struct!.connectionUrl),
+      value: cdktn.stringToHclTerraform(struct!.connectionUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disconnect_sessions: {
-      value: cdktf.booleanToHclTerraform(struct!.disconnectSessions),
+      value: cdktn.booleanToHclTerraform(struct!.disconnectSessions),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_connection_lifetime: {
-      value: cdktf.numberToHclTerraform(struct!.maxConnectionLifetime),
+      value: cdktn.numberToHclTerraform(struct!.maxConnectionLifetime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_idle_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxIdleConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxIdleConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_open_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxOpenConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxOpenConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo: {
-      value: cdktf.stringToHclTerraform(struct!.passwordWo),
+      value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.passwordWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.passwordWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     self_managed: {
-      value: cdktf.booleanToHclTerraform(struct!.selfManaged),
+      value: cdktn.booleanToHclTerraform(struct!.selfManaged),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     split_statements: {
-      value: cdktf.booleanToHclTerraform(struct!.splitStatements),
+      value: cdktn.booleanToHclTerraform(struct!.splitStatements),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_template: {
-      value: cdktf.stringToHclTerraform(struct!.usernameTemplate),
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -9982,9 +10332,9 @@ export function databaseSecretsMountOracleToHclTerraform(struct?: DatabaseSecret
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountOracleOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountOracleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9992,11 +10342,11 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountOracle | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountOracle | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -10093,7 +10443,7 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountOracle | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountOracle | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -10120,7 +10470,7 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktf.ComplexObje
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10201,11 +10551,11 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktf.ComplexObje
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -10217,11 +10567,11 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktf.ComplexObje
   }
 
   // disconnect_sessions - computed: false, optional: true, required: false
-  private _disconnectSessions?: boolean | cdktf.IResolvable; 
+  private _disconnectSessions?: boolean | cdktn.IResolvable; 
   public get disconnectSessions() {
     return this.getBooleanAttribute('disconnect_sessions');
   }
-  public set disconnectSessions(value: boolean | cdktf.IResolvable) {
+  public set disconnectSessions(value: boolean | cdktn.IResolvable) {
     this._disconnectSessions = value;
   }
   public resetDisconnectSessions() {
@@ -10422,11 +10772,11 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktf.ComplexObje
   }
 
   // self_managed - computed: false, optional: true, required: false
-  private _selfManaged?: boolean | cdktf.IResolvable; 
+  private _selfManaged?: boolean | cdktn.IResolvable; 
   public get selfManaged() {
     return this.getBooleanAttribute('self_managed');
   }
-  public set selfManaged(value: boolean | cdktf.IResolvable) {
+  public set selfManaged(value: boolean | cdktn.IResolvable) {
     this._selfManaged = value;
   }
   public resetSelfManaged() {
@@ -10438,11 +10788,11 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktf.ComplexObje
   }
 
   // split_statements - computed: false, optional: true, required: false
-  private _splitStatements?: boolean | cdktf.IResolvable; 
+  private _splitStatements?: boolean | cdktn.IResolvable; 
   public get splitStatements() {
     return this.getBooleanAttribute('split_statements');
   }
-  public set splitStatements(value: boolean | cdktf.IResolvable) {
+  public set splitStatements(value: boolean | cdktn.IResolvable) {
     this._splitStatements = value;
   }
   public resetSplitStatements() {
@@ -10486,11 +10836,11 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktf.ComplexObje
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -10502,15 +10852,15 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class DatabaseSecretsMountOracleList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountOracle[] | cdktf.IResolvable
+export class DatabaseSecretsMountOracleList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountOracle[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10525,368 +10875,368 @@ export interface DatabaseSecretsMountPostgresql {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Disable special character escaping in username and password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
   */
-  readonly disableEscaping?: boolean | cdktf.IResolvable;
+  readonly disableEscaping?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * When set to `scram-sha-256`, passwords will be hashed by Vault before being sent to PostgreSQL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_authentication DatabaseSecretsMount#password_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_authentication DatabaseSecretsMount#password_authentication}
   */
   readonly passwordAuthentication?: string;
   /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * The secret key used for the x509 client certificate. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
   */
   readonly privateKey?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * If set, allows onboarding static roles with a rootless connection configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#self_managed DatabaseSecretsMount#self_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#self_managed DatabaseSecretsMount#self_managed}
   */
-  readonly selfManaged?: boolean | cdktf.IResolvable;
+  readonly selfManaged?: boolean | cdktn.IResolvable;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
   * The x509 CA file for validating the certificate presented by the PostgreSQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * The x509 client certificate for connecting to the database. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls_certificate DatabaseSecretsMount#tls_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_certificate DatabaseSecretsMount#tls_certificate}
   */
   readonly tlsCertificate?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountPostgresqlToTerraform(struct?: DatabaseSecretsMountPostgresql | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountPostgresqlToTerraform(struct?: DatabaseSecretsMountPostgresql | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    auth_type: cdktf.stringToTerraform(struct!.authType),
-    connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    disable_escaping: cdktf.booleanToTerraform(struct!.disableEscaping),
-    max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
-    max_idle_connections: cdktf.numberToTerraform(struct!.maxIdleConnections),
-    max_open_connections: cdktf.numberToTerraform(struct!.maxOpenConnections),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    password_authentication: cdktf.stringToTerraform(struct!.passwordAuthentication),
-    password_wo: cdktf.stringToTerraform(struct!.passwordWo),
-    password_wo_version: cdktf.numberToTerraform(struct!.passwordWoVersion),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    private_key: cdktf.stringToTerraform(struct!.privateKey),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    self_managed: cdktf.booleanToTerraform(struct!.selfManaged),
-    service_account_json: cdktf.stringToTerraform(struct!.serviceAccountJson),
-    tls_ca: cdktf.stringToTerraform(struct!.tlsCa),
-    tls_certificate: cdktf.stringToTerraform(struct!.tlsCertificate),
-    username: cdktf.stringToTerraform(struct!.username),
-    username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
+    connection_url: cdktn.stringToTerraform(struct!.connectionUrl),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    disable_escaping: cdktn.booleanToTerraform(struct!.disableEscaping),
+    max_connection_lifetime: cdktn.numberToTerraform(struct!.maxConnectionLifetime),
+    max_idle_connections: cdktn.numberToTerraform(struct!.maxIdleConnections),
+    max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    password_authentication: cdktn.stringToTerraform(struct!.passwordAuthentication),
+    password_wo: cdktn.stringToTerraform(struct!.passwordWo),
+    password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    private_key: cdktn.stringToTerraform(struct!.privateKey),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    self_managed: cdktn.booleanToTerraform(struct!.selfManaged),
+    service_account_json: cdktn.stringToTerraform(struct!.serviceAccountJson),
+    tls_ca: cdktn.stringToTerraform(struct!.tlsCa),
+    tls_certificate: cdktn.stringToTerraform(struct!.tlsCertificate),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountPostgresqlToHclTerraform(struct?: DatabaseSecretsMountPostgresql | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountPostgresqlToHclTerraform(struct?: DatabaseSecretsMountPostgresql | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     connection_url: {
-      value: cdktf.stringToHclTerraform(struct!.connectionUrl),
+      value: cdktn.stringToHclTerraform(struct!.connectionUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disable_escaping: {
-      value: cdktf.booleanToHclTerraform(struct!.disableEscaping),
+      value: cdktn.booleanToHclTerraform(struct!.disableEscaping),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_connection_lifetime: {
-      value: cdktf.numberToHclTerraform(struct!.maxConnectionLifetime),
+      value: cdktn.numberToHclTerraform(struct!.maxConnectionLifetime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_idle_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxIdleConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxIdleConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_open_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxOpenConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxOpenConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_authentication: {
-      value: cdktf.stringToHclTerraform(struct!.passwordAuthentication),
+      value: cdktn.stringToHclTerraform(struct!.passwordAuthentication),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo: {
-      value: cdktf.stringToHclTerraform(struct!.passwordWo),
+      value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.passwordWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.passwordWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_key: {
-      value: cdktf.stringToHclTerraform(struct!.privateKey),
+      value: cdktn.stringToHclTerraform(struct!.privateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     self_managed: {
-      value: cdktf.booleanToHclTerraform(struct!.selfManaged),
+      value: cdktn.booleanToHclTerraform(struct!.selfManaged),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     service_account_json: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccountJson),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccountJson),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_ca: {
-      value: cdktf.stringToHclTerraform(struct!.tlsCa),
+      value: cdktn.stringToHclTerraform(struct!.tlsCa),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tls_certificate: {
-      value: cdktf.stringToHclTerraform(struct!.tlsCertificate),
+      value: cdktn.stringToHclTerraform(struct!.tlsCertificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_template: {
-      value: cdktf.stringToHclTerraform(struct!.usernameTemplate),
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -10897,9 +11247,9 @@ export function databaseSecretsMountPostgresqlToHclTerraform(struct?: DatabaseSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountPostgresqlOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountPostgresqlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -10907,11 +11257,11 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountPostgresql | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountPostgresql | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11028,7 +11378,7 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountPostgresql | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountPostgresql | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11060,7 +11410,7 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktf.Complex
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11162,11 +11512,11 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktf.Complex
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -11178,11 +11528,11 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktf.Complex
   }
 
   // disable_escaping - computed: false, optional: true, required: false
-  private _disableEscaping?: boolean | cdktf.IResolvable; 
+  private _disableEscaping?: boolean | cdktn.IResolvable; 
   public get disableEscaping() {
     return this.getBooleanAttribute('disable_escaping');
   }
-  public set disableEscaping(value: boolean | cdktf.IResolvable) {
+  public set disableEscaping(value: boolean | cdktn.IResolvable) {
     this._disableEscaping = value;
   }
   public resetDisableEscaping() {
@@ -11415,11 +11765,11 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktf.Complex
   }
 
   // self_managed - computed: false, optional: true, required: false
-  private _selfManaged?: boolean | cdktf.IResolvable; 
+  private _selfManaged?: boolean | cdktn.IResolvable; 
   public get selfManaged() {
     return this.getBooleanAttribute('self_managed');
   }
-  public set selfManaged(value: boolean | cdktf.IResolvable) {
+  public set selfManaged(value: boolean | cdktn.IResolvable) {
     this._selfManaged = value;
   }
   public resetSelfManaged() {
@@ -11511,11 +11861,11 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktf.Complex
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -11527,15 +11877,15 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktf.Complex
   }
 }
 
-export class DatabaseSecretsMountPostgresqlList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountPostgresql[] | cdktf.IResolvable
+export class DatabaseSecretsMountPostgresqlList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountPostgresql[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -11550,238 +11900,238 @@ export interface DatabaseSecretsMountRedis {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * The contents of a PEM-encoded CA cert file to use to verify the Redis server's identity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
   */
   readonly caCert?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Specifies the host to connect to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
   */
   readonly host: string;
   /**
   * Specifies whether to skip verification of the server certificate when using TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
   */
-  readonly insecureTls?: boolean | cdktf.IResolvable;
+  readonly insecureTls?: boolean | cdktn.IResolvable;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * Specifies the password corresponding to the given username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password: string;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * The transport port to use to connect to Redis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
   */
   readonly port?: number;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * Specifies whether to use TLS when connecting to Redis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
   */
-  readonly tls?: boolean | cdktf.IResolvable;
+  readonly tls?: boolean | cdktn.IResolvable;
   /**
   * Specifies the username for Vault to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountRedisToTerraform(struct?: DatabaseSecretsMountRedis | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountRedisToTerraform(struct?: DatabaseSecretsMountRedis | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    ca_cert: cdktf.stringToTerraform(struct!.caCert),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    host: cdktf.stringToTerraform(struct!.host),
-    insecure_tls: cdktf.booleanToTerraform(struct!.insecureTls),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    port: cdktf.numberToTerraform(struct!.port),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    tls: cdktf.booleanToTerraform(struct!.tls),
-    username: cdktf.stringToTerraform(struct!.username),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    ca_cert: cdktn.stringToTerraform(struct!.caCert),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    host: cdktn.stringToTerraform(struct!.host),
+    insecure_tls: cdktn.booleanToTerraform(struct!.insecureTls),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    port: cdktn.numberToTerraform(struct!.port),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    tls: cdktn.booleanToTerraform(struct!.tls),
+    username: cdktn.stringToTerraform(struct!.username),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountRedisToHclTerraform(struct?: DatabaseSecretsMountRedis | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountRedisToHclTerraform(struct?: DatabaseSecretsMountRedis | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     ca_cert: {
-      value: cdktf.stringToHclTerraform(struct!.caCert),
+      value: cdktn.stringToHclTerraform(struct!.caCert),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     insecure_tls: {
-      value: cdktf.booleanToHclTerraform(struct!.insecureTls),
+      value: cdktn.booleanToHclTerraform(struct!.insecureTls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tls: {
-      value: cdktf.booleanToHclTerraform(struct!.tls),
+      value: cdktn.booleanToHclTerraform(struct!.tls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -11792,9 +12142,9 @@ export function databaseSecretsMountRedisToHclTerraform(struct?: DatabaseSecrets
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountRedisOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountRedisOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -11802,11 +12152,11 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktf.ComplexObjec
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountRedis | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountRedis | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -11883,7 +12233,7 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountRedis | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountRedis | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -11905,7 +12255,7 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktf.ComplexObjec
       this._username = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -11981,11 +12331,11 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktf.ComplexObjec
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -12010,11 +12360,11 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktf.ComplexObjec
   }
 
   // insecure_tls - computed: false, optional: true, required: false
-  private _insecureTls?: boolean | cdktf.IResolvable; 
+  private _insecureTls?: boolean | cdktn.IResolvable; 
   public get insecureTls() {
     return this.getBooleanAttribute('insecure_tls');
   }
-  public set insecureTls(value: boolean | cdktf.IResolvable) {
+  public set insecureTls(value: boolean | cdktn.IResolvable) {
     this._insecureTls = value;
   }
   public resetInsecureTls() {
@@ -12148,11 +12498,11 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktf.ComplexObjec
   }
 
   // tls - computed: false, optional: true, required: false
-  private _tls?: boolean | cdktf.IResolvable; 
+  private _tls?: boolean | cdktn.IResolvable; 
   public get tls() {
     return this.getBooleanAttribute('tls');
   }
-  public set tls(value: boolean | cdktf.IResolvable) {
+  public set tls(value: boolean | cdktn.IResolvable) {
     this._tls = value;
   }
   public resetTls() {
@@ -12177,11 +12527,11 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktf.ComplexObjec
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -12193,15 +12543,15 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktf.ComplexObjec
   }
 }
 
-export class DatabaseSecretsMountRedisList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountRedis[] | cdktf.IResolvable
+export class DatabaseSecretsMountRedisList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountRedis[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12216,199 +12566,199 @@ export interface DatabaseSecretsMountRedisElasticache {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The AWS secret key id to use to talk to ElastiCache. If omitted the credentials chain provider is used instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * The AWS region where the ElastiCache cluster is hosted. If omitted the plugin tries to infer the region from the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#region DatabaseSecretsMount#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#region DatabaseSecretsMount#region}
   */
   readonly region?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * The configuration endpoint for the ElastiCache cluster to connect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
   */
   readonly url: string;
   /**
   * The AWS access key id to use to talk to ElastiCache. If omitted the credentials chain provider is used instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountRedisElasticacheToTerraform(struct?: DatabaseSecretsMountRedisElasticache | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountRedisElasticacheToTerraform(struct?: DatabaseSecretsMountRedisElasticache | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    region: cdktf.stringToTerraform(struct!.region),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    url: cdktf.stringToTerraform(struct!.url),
-    username: cdktf.stringToTerraform(struct!.username),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    region: cdktn.stringToTerraform(struct!.region),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    url: cdktn.stringToTerraform(struct!.url),
+    username: cdktn.stringToTerraform(struct!.username),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountRedisElasticacheToHclTerraform(struct?: DatabaseSecretsMountRedisElasticache | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountRedisElasticacheToHclTerraform(struct?: DatabaseSecretsMountRedisElasticache | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -12419,9 +12769,9 @@ export function databaseSecretsMountRedisElasticacheToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -12429,11 +12779,11 @@ export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountRedisElasticache | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountRedisElasticache | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -12498,7 +12848,7 @@ export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountRedisElasticache | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountRedisElasticache | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -12517,7 +12867,7 @@ export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktf.C
       this._username = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -12574,11 +12924,11 @@ export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktf.C
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -12744,11 +13094,11 @@ export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktf.C
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -12760,15 +13110,15 @@ export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktf.C
   }
 }
 
-export class DatabaseSecretsMountRedisElasticacheList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountRedisElasticache[] | cdktf.IResolvable
+export class DatabaseSecretsMountRedisElasticacheList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountRedisElasticache[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -12783,277 +13133,277 @@ export interface DatabaseSecretsMountRedshift {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Disable special character escaping in username and password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
   */
-  readonly disableEscaping?: boolean | cdktf.IResolvable;
+  readonly disableEscaping?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountRedshiftToTerraform(struct?: DatabaseSecretsMountRedshift | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountRedshiftToTerraform(struct?: DatabaseSecretsMountRedshift | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    disable_escaping: cdktf.booleanToTerraform(struct!.disableEscaping),
-    max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
-    max_idle_connections: cdktf.numberToTerraform(struct!.maxIdleConnections),
-    max_open_connections: cdktf.numberToTerraform(struct!.maxOpenConnections),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    password_wo: cdktf.stringToTerraform(struct!.passwordWo),
-    password_wo_version: cdktf.numberToTerraform(struct!.passwordWoVersion),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    username: cdktf.stringToTerraform(struct!.username),
-    username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    connection_url: cdktn.stringToTerraform(struct!.connectionUrl),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    disable_escaping: cdktn.booleanToTerraform(struct!.disableEscaping),
+    max_connection_lifetime: cdktn.numberToTerraform(struct!.maxConnectionLifetime),
+    max_idle_connections: cdktn.numberToTerraform(struct!.maxIdleConnections),
+    max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    password_wo: cdktn.stringToTerraform(struct!.passwordWo),
+    password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountRedshiftToHclTerraform(struct?: DatabaseSecretsMountRedshift | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountRedshiftToHclTerraform(struct?: DatabaseSecretsMountRedshift | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     connection_url: {
-      value: cdktf.stringToHclTerraform(struct!.connectionUrl),
+      value: cdktn.stringToHclTerraform(struct!.connectionUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disable_escaping: {
-      value: cdktf.booleanToHclTerraform(struct!.disableEscaping),
+      value: cdktn.booleanToHclTerraform(struct!.disableEscaping),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_connection_lifetime: {
-      value: cdktf.numberToHclTerraform(struct!.maxConnectionLifetime),
+      value: cdktn.numberToHclTerraform(struct!.maxConnectionLifetime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_idle_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxIdleConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxIdleConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_open_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxOpenConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxOpenConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo: {
-      value: cdktf.stringToHclTerraform(struct!.passwordWo),
+      value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.passwordWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.passwordWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_template: {
-      value: cdktf.stringToHclTerraform(struct!.usernameTemplate),
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -13064,9 +13414,9 @@ export function databaseSecretsMountRedshiftToHclTerraform(struct?: DatabaseSecr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountRedshiftOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountRedshiftOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13074,11 +13424,11 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountRedshift | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountRedshift | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13167,7 +13517,7 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountRedshift | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountRedshift | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -13192,7 +13542,7 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktf.ComplexOb
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -13271,11 +13621,11 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktf.ComplexOb
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -13287,11 +13637,11 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktf.ComplexOb
   }
 
   // disable_escaping - computed: false, optional: true, required: false
-  private _disableEscaping?: boolean | cdktf.IResolvable; 
+  private _disableEscaping?: boolean | cdktn.IResolvable; 
   public get disableEscaping() {
     return this.getBooleanAttribute('disable_escaping');
   }
-  public set disableEscaping(value: boolean | cdktf.IResolvable) {
+  public set disableEscaping(value: boolean | cdktn.IResolvable) {
     this._disableEscaping = value;
   }
   public resetDisableEscaping() {
@@ -13524,11 +13874,11 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktf.ComplexOb
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -13540,15 +13890,15 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class DatabaseSecretsMountRedshiftList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountRedshift[] | cdktf.IResolvable
+export class DatabaseSecretsMountRedshiftList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountRedshift[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -13563,290 +13913,290 @@ export interface DatabaseSecretsMountSnowflake {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
   * The private key configured for the admin user in Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#private_key_wo DatabaseSecretsMount#private_key_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#private_key_wo DatabaseSecretsMount#private_key_wo}
   */
   readonly privateKeyWo?: string;
   /**
   * Version counter for the private key key-pair credentials write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#private_key_wo_version DatabaseSecretsMount#private_key_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#private_key_wo_version DatabaseSecretsMount#private_key_wo_version}
   */
   readonly privateKeyWoVersion?: number;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
-  readonly verifyConnection?: boolean | cdktf.IResolvable;
+  readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
-export function databaseSecretsMountSnowflakeToTerraform(struct?: DatabaseSecretsMountSnowflake | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountSnowflakeToTerraform(struct?: DatabaseSecretsMountSnowflake | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedRoles),
-    connection_url: cdktf.stringToTerraform(struct!.connectionUrl),
-    data: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.data),
-    disable_automated_rotation: cdktf.booleanToTerraform(struct!.disableAutomatedRotation),
-    max_connection_lifetime: cdktf.numberToTerraform(struct!.maxConnectionLifetime),
-    max_idle_connections: cdktf.numberToTerraform(struct!.maxIdleConnections),
-    max_open_connections: cdktf.numberToTerraform(struct!.maxOpenConnections),
-    name: cdktf.stringToTerraform(struct!.name),
-    password: cdktf.stringToTerraform(struct!.password),
-    password_wo: cdktf.stringToTerraform(struct!.passwordWo),
-    password_wo_version: cdktf.numberToTerraform(struct!.passwordWoVersion),
-    plugin_name: cdktf.stringToTerraform(struct!.pluginName),
-    private_key_wo: cdktf.stringToTerraform(struct!.privateKeyWo),
-    private_key_wo_version: cdktf.numberToTerraform(struct!.privateKeyWoVersion),
-    root_rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rootRotationStatements),
-    rotation_period: cdktf.numberToTerraform(struct!.rotationPeriod),
-    rotation_schedule: cdktf.stringToTerraform(struct!.rotationSchedule),
-    rotation_window: cdktf.numberToTerraform(struct!.rotationWindow),
-    username: cdktf.stringToTerraform(struct!.username),
-    username_template: cdktf.stringToTerraform(struct!.usernameTemplate),
-    verify_connection: cdktf.booleanToTerraform(struct!.verifyConnection),
+    allowed_roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedRoles),
+    connection_url: cdktn.stringToTerraform(struct!.connectionUrl),
+    data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
+    disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
+    max_connection_lifetime: cdktn.numberToTerraform(struct!.maxConnectionLifetime),
+    max_idle_connections: cdktn.numberToTerraform(struct!.maxIdleConnections),
+    max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
+    name: cdktn.stringToTerraform(struct!.name),
+    password: cdktn.stringToTerraform(struct!.password),
+    password_wo: cdktn.stringToTerraform(struct!.passwordWo),
+    password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
+    plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    private_key_wo: cdktn.stringToTerraform(struct!.privateKeyWo),
+    private_key_wo_version: cdktn.numberToTerraform(struct!.privateKeyWoVersion),
+    root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
+    rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
+    rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
+    rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    username: cdktn.stringToTerraform(struct!.username),
+    username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
+    verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
 }
 
 
-export function databaseSecretsMountSnowflakeToHclTerraform(struct?: DatabaseSecretsMountSnowflake | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function databaseSecretsMountSnowflakeToHclTerraform(struct?: DatabaseSecretsMountSnowflake | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedRoles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedRoles),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     connection_url: {
-      value: cdktf.stringToHclTerraform(struct!.connectionUrl),
+      value: cdktn.stringToHclTerraform(struct!.connectionUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     data: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.data),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.data),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_automated_rotation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableAutomatedRotation),
+      value: cdktn.booleanToHclTerraform(struct!.disableAutomatedRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_connection_lifetime: {
-      value: cdktf.numberToHclTerraform(struct!.maxConnectionLifetime),
+      value: cdktn.numberToHclTerraform(struct!.maxConnectionLifetime),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_idle_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxIdleConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxIdleConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_open_connections: {
-      value: cdktf.numberToHclTerraform(struct!.maxOpenConnections),
+      value: cdktn.numberToHclTerraform(struct!.maxOpenConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo: {
-      value: cdktf.stringToHclTerraform(struct!.passwordWo),
+      value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.passwordWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.passwordWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     plugin_name: {
-      value: cdktf.stringToHclTerraform(struct!.pluginName),
+      value: cdktn.stringToHclTerraform(struct!.pluginName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_key_wo: {
-      value: cdktf.stringToHclTerraform(struct!.privateKeyWo),
+      value: cdktn.stringToHclTerraform(struct!.privateKeyWo),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     private_key_wo_version: {
-      value: cdktf.numberToHclTerraform(struct!.privateKeyWoVersion),
+      value: cdktn.numberToHclTerraform(struct!.privateKeyWoVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     root_rotation_statements: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.rootRotationStatements),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.rootRotationStatements),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     rotation_period: {
-      value: cdktf.numberToHclTerraform(struct!.rotationPeriod),
+      value: cdktn.numberToHclTerraform(struct!.rotationPeriod),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     rotation_schedule: {
-      value: cdktf.stringToHclTerraform(struct!.rotationSchedule),
+      value: cdktn.stringToHclTerraform(struct!.rotationSchedule),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rotation_window: {
-      value: cdktf.numberToHclTerraform(struct!.rotationWindow),
+      value: cdktn.numberToHclTerraform(struct!.rotationWindow),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     username_template: {
-      value: cdktf.stringToHclTerraform(struct!.usernameTemplate),
+      value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verify_connection: {
-      value: cdktf.booleanToHclTerraform(struct!.verifyConnection),
+      value: cdktn.booleanToHclTerraform(struct!.verifyConnection),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -13857,9 +14207,9 @@ export function databaseSecretsMountSnowflakeToHclTerraform(struct?: DatabaseSec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DatabaseSecretsMountSnowflakeOutputReference extends cdktf.ComplexObject {
+export class DatabaseSecretsMountSnowflakeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -13867,11 +14217,11 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DatabaseSecretsMountSnowflake | cdktf.IResolvable | undefined {
+  public get internalValue(): DatabaseSecretsMountSnowflake | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -13964,7 +14314,7 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DatabaseSecretsMountSnowflake | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DatabaseSecretsMountSnowflake | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -13990,7 +14340,7 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktf.ComplexO
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -14070,11 +14420,11 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktf.ComplexO
   }
 
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -14339,11 +14689,11 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktf.ComplexO
   }
 
   // verify_connection - computed: false, optional: true, required: false
-  private _verifyConnection?: boolean | cdktf.IResolvable; 
+  private _verifyConnection?: boolean | cdktn.IResolvable; 
   public get verifyConnection() {
     return this.getBooleanAttribute('verify_connection');
   }
-  public set verifyConnection(value: boolean | cdktf.IResolvable) {
+  public set verifyConnection(value: boolean | cdktn.IResolvable) {
     this._verifyConnection = value;
   }
   public resetVerifyConnection() {
@@ -14355,15 +14705,15 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktf.ComplexO
   }
 }
 
-export class DatabaseSecretsMountSnowflakeList extends cdktf.ComplexList {
-  public internalValue? : DatabaseSecretsMountSnowflake[] | cdktf.IResolvable
+export class DatabaseSecretsMountSnowflakeList extends cdktn.ComplexList {
+  public internalValue? : DatabaseSecretsMountSnowflake[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -14376,9 +14726,9 @@ export class DatabaseSecretsMountSnowflakeList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount vault_database_secrets_mount}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount vault_database_secrets_mount}
 */
-export class DatabaseSecretsMount extends cdktf.TerraformResource {
+export class DatabaseSecretsMount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -14389,14 +14739,14 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatabaseSecretsMount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatabaseSecretsMount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseSecretsMount to import
-  * @param importFromId The id of the existing DatabaseSecretsMount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseSecretsMount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseSecretsMount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_database_secrets_mount", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_database_secrets_mount", importId: importFromId, provider });
       }
 
   // ===========
@@ -14404,7 +14754,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -14415,7 +14765,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
       terraformResourceType: 'vault_database_secrets_mount',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -14478,7 +14828,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   // allowed_managed_keys - computed: false, optional: true, required: false
   private _allowedManagedKeys?: string[]; 
   public get allowedManagedKeys() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_managed_keys'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_managed_keys'));
   }
   public set allowedManagedKeys(value: string[]) {
     this._allowedManagedKeys = value;
@@ -14593,11 +14943,11 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   }
 
   // external_entropy_access - computed: false, optional: true, required: false
-  private _externalEntropyAccess?: boolean | cdktf.IResolvable; 
+  private _externalEntropyAccess?: boolean | cdktn.IResolvable; 
   public get externalEntropyAccess() {
     return this.getBooleanAttribute('external_entropy_access');
   }
-  public set externalEntropyAccess(value: boolean | cdktf.IResolvable) {
+  public set externalEntropyAccess(value: boolean | cdktn.IResolvable) {
     this._externalEntropyAccess = value;
   }
   public resetExternalEntropyAccess() {
@@ -14609,11 +14959,11 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   }
 
   // force_no_cache - computed: true, optional: true, required: false
-  private _forceNoCache?: boolean | cdktf.IResolvable; 
+  private _forceNoCache?: boolean | cdktn.IResolvable; 
   public get forceNoCache() {
     return this.getBooleanAttribute('force_no_cache');
   }
-  public set forceNoCache(value: boolean | cdktf.IResolvable) {
+  public set forceNoCache(value: boolean | cdktn.IResolvable) {
     this._forceNoCache = value;
   }
   public resetForceNoCache() {
@@ -14673,11 +15023,11 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   }
 
   // local - computed: false, optional: true, required: false
-  private _local?: boolean | cdktf.IResolvable; 
+  private _local?: boolean | cdktn.IResolvable; 
   public get local() {
     return this.getBooleanAttribute('local');
   }
-  public set local(value: boolean | cdktf.IResolvable) {
+  public set local(value: boolean | cdktn.IResolvable) {
     this._local = value;
   }
   public resetLocal() {
@@ -14782,11 +15132,11 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   }
 
   // seal_wrap - computed: true, optional: true, required: false
-  private _sealWrap?: boolean | cdktf.IResolvable; 
+  private _sealWrap?: boolean | cdktn.IResolvable; 
   public get sealWrap() {
     return this.getBooleanAttribute('seal_wrap');
   }
-  public set sealWrap(value: boolean | cdktf.IResolvable) {
+  public set sealWrap(value: boolean | cdktn.IResolvable) {
     this._sealWrap = value;
   }
   public resetSealWrap() {
@@ -14802,7 +15152,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get cassandra() {
     return this._cassandra;
   }
-  public putCassandra(value: DatabaseSecretsMountCassandra[] | cdktf.IResolvable) {
+  public putCassandra(value: DatabaseSecretsMountCassandra[] | cdktn.IResolvable) {
     this._cassandra.internalValue = value;
   }
   public resetCassandra() {
@@ -14818,7 +15168,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get couchbase() {
     return this._couchbase;
   }
-  public putCouchbase(value: DatabaseSecretsMountCouchbase[] | cdktf.IResolvable) {
+  public putCouchbase(value: DatabaseSecretsMountCouchbase[] | cdktn.IResolvable) {
     this._couchbase.internalValue = value;
   }
   public resetCouchbase() {
@@ -14834,7 +15184,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get elasticsearch() {
     return this._elasticsearch;
   }
-  public putElasticsearch(value: DatabaseSecretsMountElasticsearch[] | cdktf.IResolvable) {
+  public putElasticsearch(value: DatabaseSecretsMountElasticsearch[] | cdktn.IResolvable) {
     this._elasticsearch.internalValue = value;
   }
   public resetElasticsearch() {
@@ -14850,7 +15200,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get hana() {
     return this._hana;
   }
-  public putHana(value: DatabaseSecretsMountHana[] | cdktf.IResolvable) {
+  public putHana(value: DatabaseSecretsMountHana[] | cdktn.IResolvable) {
     this._hana.internalValue = value;
   }
   public resetHana() {
@@ -14866,7 +15216,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get influxdb() {
     return this._influxdb;
   }
-  public putInfluxdb(value: DatabaseSecretsMountInfluxdb[] | cdktf.IResolvable) {
+  public putInfluxdb(value: DatabaseSecretsMountInfluxdb[] | cdktn.IResolvable) {
     this._influxdb.internalValue = value;
   }
   public resetInfluxdb() {
@@ -14882,7 +15232,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get mongodb() {
     return this._mongodb;
   }
-  public putMongodb(value: DatabaseSecretsMountMongodb[] | cdktf.IResolvable) {
+  public putMongodb(value: DatabaseSecretsMountMongodb[] | cdktn.IResolvable) {
     this._mongodb.internalValue = value;
   }
   public resetMongodb() {
@@ -14898,7 +15248,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get mongodbatlas() {
     return this._mongodbatlas;
   }
-  public putMongodbatlas(value: DatabaseSecretsMountMongodbatlas[] | cdktf.IResolvable) {
+  public putMongodbatlas(value: DatabaseSecretsMountMongodbatlas[] | cdktn.IResolvable) {
     this._mongodbatlas.internalValue = value;
   }
   public resetMongodbatlas() {
@@ -14914,7 +15264,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get mssql() {
     return this._mssql;
   }
-  public putMssql(value: DatabaseSecretsMountMssql[] | cdktf.IResolvable) {
+  public putMssql(value: DatabaseSecretsMountMssql[] | cdktn.IResolvable) {
     this._mssql.internalValue = value;
   }
   public resetMssql() {
@@ -14930,7 +15280,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get mysql() {
     return this._mysql;
   }
-  public putMysql(value: DatabaseSecretsMountMysql[] | cdktf.IResolvable) {
+  public putMysql(value: DatabaseSecretsMountMysql[] | cdktn.IResolvable) {
     this._mysql.internalValue = value;
   }
   public resetMysql() {
@@ -14946,7 +15296,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get mysqlAurora() {
     return this._mysqlAurora;
   }
-  public putMysqlAurora(value: DatabaseSecretsMountMysqlAurora[] | cdktf.IResolvable) {
+  public putMysqlAurora(value: DatabaseSecretsMountMysqlAurora[] | cdktn.IResolvable) {
     this._mysqlAurora.internalValue = value;
   }
   public resetMysqlAurora() {
@@ -14962,7 +15312,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get mysqlLegacy() {
     return this._mysqlLegacy;
   }
-  public putMysqlLegacy(value: DatabaseSecretsMountMysqlLegacy[] | cdktf.IResolvable) {
+  public putMysqlLegacy(value: DatabaseSecretsMountMysqlLegacy[] | cdktn.IResolvable) {
     this._mysqlLegacy.internalValue = value;
   }
   public resetMysqlLegacy() {
@@ -14978,7 +15328,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get mysqlRds() {
     return this._mysqlRds;
   }
-  public putMysqlRds(value: DatabaseSecretsMountMysqlRds[] | cdktf.IResolvable) {
+  public putMysqlRds(value: DatabaseSecretsMountMysqlRds[] | cdktn.IResolvable) {
     this._mysqlRds.internalValue = value;
   }
   public resetMysqlRds() {
@@ -14994,7 +15344,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get oracle() {
     return this._oracle;
   }
-  public putOracle(value: DatabaseSecretsMountOracle[] | cdktf.IResolvable) {
+  public putOracle(value: DatabaseSecretsMountOracle[] | cdktn.IResolvable) {
     this._oracle.internalValue = value;
   }
   public resetOracle() {
@@ -15010,7 +15360,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get postgresql() {
     return this._postgresql;
   }
-  public putPostgresql(value: DatabaseSecretsMountPostgresql[] | cdktf.IResolvable) {
+  public putPostgresql(value: DatabaseSecretsMountPostgresql[] | cdktn.IResolvable) {
     this._postgresql.internalValue = value;
   }
   public resetPostgresql() {
@@ -15026,7 +15376,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get redis() {
     return this._redis;
   }
-  public putRedis(value: DatabaseSecretsMountRedis[] | cdktf.IResolvable) {
+  public putRedis(value: DatabaseSecretsMountRedis[] | cdktn.IResolvable) {
     this._redis.internalValue = value;
   }
   public resetRedis() {
@@ -15042,7 +15392,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get redisElasticache() {
     return this._redisElasticache;
   }
-  public putRedisElasticache(value: DatabaseSecretsMountRedisElasticache[] | cdktf.IResolvable) {
+  public putRedisElasticache(value: DatabaseSecretsMountRedisElasticache[] | cdktn.IResolvable) {
     this._redisElasticache.internalValue = value;
   }
   public resetRedisElasticache() {
@@ -15058,7 +15408,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get redshift() {
     return this._redshift;
   }
-  public putRedshift(value: DatabaseSecretsMountRedshift[] | cdktf.IResolvable) {
+  public putRedshift(value: DatabaseSecretsMountRedshift[] | cdktn.IResolvable) {
     this._redshift.internalValue = value;
   }
   public resetRedshift() {
@@ -15074,7 +15424,7 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
   public get snowflake() {
     return this._snowflake;
   }
-  public putSnowflake(value: DatabaseSecretsMountSnowflake[] | cdktf.IResolvable) {
+  public putSnowflake(value: DatabaseSecretsMountSnowflake[] | cdktn.IResolvable) {
     this._snowflake.internalValue = value;
   }
   public resetSnowflake() {
@@ -15091,273 +15441,273 @@ export class DatabaseSecretsMount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_managed_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedManagedKeys),
-      allowed_response_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedResponseHeaders),
-      audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacRequestKeys),
-      audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacResponseKeys),
-      default_lease_ttl_seconds: cdktf.numberToTerraform(this._defaultLeaseTtlSeconds),
-      delegated_auth_accessors: cdktf.listMapper(cdktf.stringToTerraform, false)(this._delegatedAuthAccessors),
-      description: cdktf.stringToTerraform(this._description),
-      external_entropy_access: cdktf.booleanToTerraform(this._externalEntropyAccess),
-      force_no_cache: cdktf.booleanToTerraform(this._forceNoCache),
-      id: cdktf.stringToTerraform(this._id),
-      identity_token_key: cdktf.stringToTerraform(this._identityTokenKey),
-      listing_visibility: cdktf.stringToTerraform(this._listingVisibility),
-      local: cdktf.booleanToTerraform(this._local),
-      max_lease_ttl_seconds: cdktf.numberToTerraform(this._maxLeaseTtlSeconds),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
-      passthrough_request_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passthroughRequestHeaders),
-      path: cdktf.stringToTerraform(this._path),
-      plugin_version: cdktf.stringToTerraform(this._pluginVersion),
-      seal_wrap: cdktf.booleanToTerraform(this._sealWrap),
-      cassandra: cdktf.listMapper(databaseSecretsMountCassandraToTerraform, true)(this._cassandra.internalValue),
-      couchbase: cdktf.listMapper(databaseSecretsMountCouchbaseToTerraform, true)(this._couchbase.internalValue),
-      elasticsearch: cdktf.listMapper(databaseSecretsMountElasticsearchToTerraform, true)(this._elasticsearch.internalValue),
-      hana: cdktf.listMapper(databaseSecretsMountHanaToTerraform, true)(this._hana.internalValue),
-      influxdb: cdktf.listMapper(databaseSecretsMountInfluxdbToTerraform, true)(this._influxdb.internalValue),
-      mongodb: cdktf.listMapper(databaseSecretsMountMongodbToTerraform, true)(this._mongodb.internalValue),
-      mongodbatlas: cdktf.listMapper(databaseSecretsMountMongodbatlasToTerraform, true)(this._mongodbatlas.internalValue),
-      mssql: cdktf.listMapper(databaseSecretsMountMssqlToTerraform, true)(this._mssql.internalValue),
-      mysql: cdktf.listMapper(databaseSecretsMountMysqlToTerraform, true)(this._mysql.internalValue),
-      mysql_aurora: cdktf.listMapper(databaseSecretsMountMysqlAuroraToTerraform, true)(this._mysqlAurora.internalValue),
-      mysql_legacy: cdktf.listMapper(databaseSecretsMountMysqlLegacyToTerraform, true)(this._mysqlLegacy.internalValue),
-      mysql_rds: cdktf.listMapper(databaseSecretsMountMysqlRdsToTerraform, true)(this._mysqlRds.internalValue),
-      oracle: cdktf.listMapper(databaseSecretsMountOracleToTerraform, true)(this._oracle.internalValue),
-      postgresql: cdktf.listMapper(databaseSecretsMountPostgresqlToTerraform, true)(this._postgresql.internalValue),
-      redis: cdktf.listMapper(databaseSecretsMountRedisToTerraform, true)(this._redis.internalValue),
-      redis_elasticache: cdktf.listMapper(databaseSecretsMountRedisElasticacheToTerraform, true)(this._redisElasticache.internalValue),
-      redshift: cdktf.listMapper(databaseSecretsMountRedshiftToTerraform, true)(this._redshift.internalValue),
-      snowflake: cdktf.listMapper(databaseSecretsMountSnowflakeToTerraform, true)(this._snowflake.internalValue),
+      allowed_managed_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedManagedKeys),
+      allowed_response_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedResponseHeaders),
+      audit_non_hmac_request_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._auditNonHmacRequestKeys),
+      audit_non_hmac_response_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._auditNonHmacResponseKeys),
+      default_lease_ttl_seconds: cdktn.numberToTerraform(this._defaultLeaseTtlSeconds),
+      delegated_auth_accessors: cdktn.listMapper(cdktn.stringToTerraform, false)(this._delegatedAuthAccessors),
+      description: cdktn.stringToTerraform(this._description),
+      external_entropy_access: cdktn.booleanToTerraform(this._externalEntropyAccess),
+      force_no_cache: cdktn.booleanToTerraform(this._forceNoCache),
+      id: cdktn.stringToTerraform(this._id),
+      identity_token_key: cdktn.stringToTerraform(this._identityTokenKey),
+      listing_visibility: cdktn.stringToTerraform(this._listingVisibility),
+      local: cdktn.booleanToTerraform(this._local),
+      max_lease_ttl_seconds: cdktn.numberToTerraform(this._maxLeaseTtlSeconds),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      options: cdktn.hashMapper(cdktn.stringToTerraform)(this._options),
+      passthrough_request_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._passthroughRequestHeaders),
+      path: cdktn.stringToTerraform(this._path),
+      plugin_version: cdktn.stringToTerraform(this._pluginVersion),
+      seal_wrap: cdktn.booleanToTerraform(this._sealWrap),
+      cassandra: cdktn.listMapper(databaseSecretsMountCassandraToTerraform, true)(this._cassandra.internalValue),
+      couchbase: cdktn.listMapper(databaseSecretsMountCouchbaseToTerraform, true)(this._couchbase.internalValue),
+      elasticsearch: cdktn.listMapper(databaseSecretsMountElasticsearchToTerraform, true)(this._elasticsearch.internalValue),
+      hana: cdktn.listMapper(databaseSecretsMountHanaToTerraform, true)(this._hana.internalValue),
+      influxdb: cdktn.listMapper(databaseSecretsMountInfluxdbToTerraform, true)(this._influxdb.internalValue),
+      mongodb: cdktn.listMapper(databaseSecretsMountMongodbToTerraform, true)(this._mongodb.internalValue),
+      mongodbatlas: cdktn.listMapper(databaseSecretsMountMongodbatlasToTerraform, true)(this._mongodbatlas.internalValue),
+      mssql: cdktn.listMapper(databaseSecretsMountMssqlToTerraform, true)(this._mssql.internalValue),
+      mysql: cdktn.listMapper(databaseSecretsMountMysqlToTerraform, true)(this._mysql.internalValue),
+      mysql_aurora: cdktn.listMapper(databaseSecretsMountMysqlAuroraToTerraform, true)(this._mysqlAurora.internalValue),
+      mysql_legacy: cdktn.listMapper(databaseSecretsMountMysqlLegacyToTerraform, true)(this._mysqlLegacy.internalValue),
+      mysql_rds: cdktn.listMapper(databaseSecretsMountMysqlRdsToTerraform, true)(this._mysqlRds.internalValue),
+      oracle: cdktn.listMapper(databaseSecretsMountOracleToTerraform, true)(this._oracle.internalValue),
+      postgresql: cdktn.listMapper(databaseSecretsMountPostgresqlToTerraform, true)(this._postgresql.internalValue),
+      redis: cdktn.listMapper(databaseSecretsMountRedisToTerraform, true)(this._redis.internalValue),
+      redis_elasticache: cdktn.listMapper(databaseSecretsMountRedisElasticacheToTerraform, true)(this._redisElasticache.internalValue),
+      redshift: cdktn.listMapper(databaseSecretsMountRedshiftToTerraform, true)(this._redshift.internalValue),
+      snowflake: cdktn.listMapper(databaseSecretsMountSnowflakeToTerraform, true)(this._snowflake.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_managed_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedManagedKeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedManagedKeys),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       allowed_response_headers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedResponseHeaders),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedResponseHeaders),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       audit_non_hmac_request_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacRequestKeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._auditNonHmacRequestKeys),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       audit_non_hmac_response_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacResponseKeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._auditNonHmacResponseKeys),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       default_lease_ttl_seconds: {
-        value: cdktf.numberToHclTerraform(this._defaultLeaseTtlSeconds),
+        value: cdktn.numberToHclTerraform(this._defaultLeaseTtlSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       delegated_auth_accessors: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._delegatedAuthAccessors),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._delegatedAuthAccessors),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_entropy_access: {
-        value: cdktf.booleanToHclTerraform(this._externalEntropyAccess),
+        value: cdktn.booleanToHclTerraform(this._externalEntropyAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_no_cache: {
-        value: cdktf.booleanToHclTerraform(this._forceNoCache),
+        value: cdktn.booleanToHclTerraform(this._forceNoCache),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_token_key: {
-        value: cdktf.stringToHclTerraform(this._identityTokenKey),
+        value: cdktn.stringToHclTerraform(this._identityTokenKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       listing_visibility: {
-        value: cdktf.stringToHclTerraform(this._listingVisibility),
+        value: cdktn.stringToHclTerraform(this._listingVisibility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local: {
-        value: cdktf.booleanToHclTerraform(this._local),
+        value: cdktn.booleanToHclTerraform(this._local),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       max_lease_ttl_seconds: {
-        value: cdktf.numberToHclTerraform(this._maxLeaseTtlSeconds),
+        value: cdktn.numberToHclTerraform(this._maxLeaseTtlSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       options: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._options),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       passthrough_request_headers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._passthroughRequestHeaders),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._passthroughRequestHeaders),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       plugin_version: {
-        value: cdktf.stringToHclTerraform(this._pluginVersion),
+        value: cdktn.stringToHclTerraform(this._pluginVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       seal_wrap: {
-        value: cdktf.booleanToHclTerraform(this._sealWrap),
+        value: cdktn.booleanToHclTerraform(this._sealWrap),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cassandra: {
-        value: cdktf.listMapperHcl(databaseSecretsMountCassandraToHclTerraform, true)(this._cassandra.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountCassandraToHclTerraform, true)(this._cassandra.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountCassandraList",
       },
       couchbase: {
-        value: cdktf.listMapperHcl(databaseSecretsMountCouchbaseToHclTerraform, true)(this._couchbase.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountCouchbaseToHclTerraform, true)(this._couchbase.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountCouchbaseList",
       },
       elasticsearch: {
-        value: cdktf.listMapperHcl(databaseSecretsMountElasticsearchToHclTerraform, true)(this._elasticsearch.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountElasticsearchToHclTerraform, true)(this._elasticsearch.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountElasticsearchList",
       },
       hana: {
-        value: cdktf.listMapperHcl(databaseSecretsMountHanaToHclTerraform, true)(this._hana.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountHanaToHclTerraform, true)(this._hana.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountHanaList",
       },
       influxdb: {
-        value: cdktf.listMapperHcl(databaseSecretsMountInfluxdbToHclTerraform, true)(this._influxdb.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountInfluxdbToHclTerraform, true)(this._influxdb.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountInfluxdbList",
       },
       mongodb: {
-        value: cdktf.listMapperHcl(databaseSecretsMountMongodbToHclTerraform, true)(this._mongodb.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountMongodbToHclTerraform, true)(this._mongodb.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountMongodbList",
       },
       mongodbatlas: {
-        value: cdktf.listMapperHcl(databaseSecretsMountMongodbatlasToHclTerraform, true)(this._mongodbatlas.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountMongodbatlasToHclTerraform, true)(this._mongodbatlas.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountMongodbatlasList",
       },
       mssql: {
-        value: cdktf.listMapperHcl(databaseSecretsMountMssqlToHclTerraform, true)(this._mssql.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountMssqlToHclTerraform, true)(this._mssql.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountMssqlList",
       },
       mysql: {
-        value: cdktf.listMapperHcl(databaseSecretsMountMysqlToHclTerraform, true)(this._mysql.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountMysqlToHclTerraform, true)(this._mysql.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountMysqlList",
       },
       mysql_aurora: {
-        value: cdktf.listMapperHcl(databaseSecretsMountMysqlAuroraToHclTerraform, true)(this._mysqlAurora.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountMysqlAuroraToHclTerraform, true)(this._mysqlAurora.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountMysqlAuroraList",
       },
       mysql_legacy: {
-        value: cdktf.listMapperHcl(databaseSecretsMountMysqlLegacyToHclTerraform, true)(this._mysqlLegacy.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountMysqlLegacyToHclTerraform, true)(this._mysqlLegacy.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountMysqlLegacyList",
       },
       mysql_rds: {
-        value: cdktf.listMapperHcl(databaseSecretsMountMysqlRdsToHclTerraform, true)(this._mysqlRds.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountMysqlRdsToHclTerraform, true)(this._mysqlRds.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountMysqlRdsList",
       },
       oracle: {
-        value: cdktf.listMapperHcl(databaseSecretsMountOracleToHclTerraform, true)(this._oracle.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountOracleToHclTerraform, true)(this._oracle.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountOracleList",
       },
       postgresql: {
-        value: cdktf.listMapperHcl(databaseSecretsMountPostgresqlToHclTerraform, true)(this._postgresql.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountPostgresqlToHclTerraform, true)(this._postgresql.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountPostgresqlList",
       },
       redis: {
-        value: cdktf.listMapperHcl(databaseSecretsMountRedisToHclTerraform, true)(this._redis.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountRedisToHclTerraform, true)(this._redis.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountRedisList",
       },
       redis_elasticache: {
-        value: cdktf.listMapperHcl(databaseSecretsMountRedisElasticacheToHclTerraform, true)(this._redisElasticache.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountRedisElasticacheToHclTerraform, true)(this._redisElasticache.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountRedisElasticacheList",
       },
       redshift: {
-        value: cdktf.listMapperHcl(databaseSecretsMountRedshiftToHclTerraform, true)(this._redshift.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountRedshiftToHclTerraform, true)(this._redshift.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountRedshiftList",
       },
       snowflake: {
-        value: cdktf.listMapperHcl(databaseSecretsMountSnowflakeToHclTerraform, true)(this._snowflake.internalValue),
+        value: cdktn.listMapperHcl(databaseSecretsMountSnowflakeToHclTerraform, true)(this._snowflake.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "DatabaseSecretsMountSnowflakeList",

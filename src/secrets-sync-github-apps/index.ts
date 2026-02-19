@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_github_apps
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecretsSyncGithubAppsConfig extends cdktf.TerraformMetaArguments {
+export interface SecretsSyncGithubAppsConfig extends cdktn.TerraformMetaArguments {
   /**
   * The GitHub application ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_github_apps#app_id SecretsSyncGithubApps#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps#app_id SecretsSyncGithubApps#app_id}
   */
   readonly appId: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_github_apps#id SecretsSyncGithubApps#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps#id SecretsSyncGithubApps#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,27 +28,27 @@ export interface SecretsSyncGithubAppsConfig extends cdktf.TerraformMetaArgument
   /**
   * The user-defined name of the GitHub App configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_github_apps#name SecretsSyncGithubApps#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps#name SecretsSyncGithubApps#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_github_apps#namespace SecretsSyncGithubApps#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps#namespace SecretsSyncGithubApps#namespace}
   */
   readonly namespace?: string;
   /**
   * The content of a PEM formatted private key generated on GitHub for the app.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_github_apps#private_key SecretsSyncGithubApps#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps#private_key SecretsSyncGithubApps#private_key}
   */
   readonly privateKey: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps}
 */
-export class SecretsSyncGithubApps extends cdktf.TerraformResource {
+export class SecretsSyncGithubApps extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class SecretsSyncGithubApps extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecretsSyncGithubApps resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecretsSyncGithubApps resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsSyncGithubApps to import
-  * @param importFromId The id of the existing SecretsSyncGithubApps that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_github_apps#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretsSyncGithubApps that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsSyncGithubApps to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_secrets_sync_github_apps", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_secrets_sync_github_apps", importId: importFromId, provider });
       }
 
   // ===========
@@ -74,7 +74,7 @@ export class SecretsSyncGithubApps extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_github_apps vault_secrets_sync_github_apps} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class SecretsSyncGithubApps extends cdktf.TerraformResource {
       terraformResourceType: 'vault_secrets_sync_github_apps',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -189,42 +189,42 @@ export class SecretsSyncGithubApps extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_id: cdktf.numberToTerraform(this._appId),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      private_key: cdktf.stringToTerraform(this._privateKey),
+      app_id: cdktn.numberToTerraform(this._appId),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      private_key: cdktn.stringToTerraform(this._privateKey),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_id: {
-        value: cdktf.numberToHclTerraform(this._appId),
+        value: cdktn.numberToHclTerraform(this._appId),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_key: {
-        value: cdktf.stringToHclTerraform(this._privateKey),
+        value: cdktn.stringToHclTerraform(this._privateKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

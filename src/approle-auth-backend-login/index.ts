@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/approle_auth_backend_login
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApproleAuthBackendLoginConfig extends cdktf.TerraformMetaArguments {
+export interface ApproleAuthBackendLoginConfig extends cdktn.TerraformMetaArguments {
   /**
   * Unique name of the auth backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/approle_auth_backend_login#backend ApproleAuthBackendLogin#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#backend ApproleAuthBackendLogin#backend}
   */
   readonly backend?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/approle_auth_backend_login#id ApproleAuthBackendLogin#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#id ApproleAuthBackendLogin#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,27 +28,39 @@ export interface ApproleAuthBackendLoginConfig extends cdktf.TerraformMetaArgume
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/approle_auth_backend_login#namespace ApproleAuthBackendLogin#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#namespace ApproleAuthBackendLogin#namespace}
   */
   readonly namespace?: string;
   /**
   * The RoleID to log in with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/approle_auth_backend_login#role_id ApproleAuthBackendLogin#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#role_id ApproleAuthBackendLogin#role_id}
   */
   readonly roleId: string;
   /**
-  * The SecretID to log in with.
+  * The SecretID to log in with. Required unless `bind_secret_id` is set to false on the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/approle_auth_backend_login#secret_id ApproleAuthBackendLogin#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#secret_id ApproleAuthBackendLogin#secret_id}
   */
   readonly secretId?: string;
+  /**
+  * The SecretID to log in with. Write-only attribute that can accept ephemeral values. Required unless `bind_secret_id` is set to false on the role.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#secret_id_wo ApproleAuthBackendLogin#secret_id_wo}
+  */
+  readonly secretIdWo?: string;
+  /**
+  * Version counter for the write-only secret_id field. Increment this to trigger re-authentication with a new SecretID.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#secret_id_wo_version ApproleAuthBackendLogin#secret_id_wo_version}
+  */
+  readonly secretIdWoVersion?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/approle_auth_backend_login vault_approle_auth_backend_login}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login vault_approle_auth_backend_login}
 */
-export class ApproleAuthBackendLogin extends cdktf.TerraformResource {
+export class ApproleAuthBackendLogin extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +71,14 @@ export class ApproleAuthBackendLogin extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApproleAuthBackendLogin resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApproleAuthBackendLogin resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApproleAuthBackendLogin to import
-  * @param importFromId The id of the existing ApproleAuthBackendLogin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/approle_auth_backend_login#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApproleAuthBackendLogin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApproleAuthBackendLogin to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_approle_auth_backend_login", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_approle_auth_backend_login", importId: importFromId, provider });
       }
 
   // ===========
@@ -74,7 +86,7 @@ export class ApproleAuthBackendLogin extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/approle_auth_backend_login vault_approle_auth_backend_login} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login vault_approle_auth_backend_login} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +97,7 @@ export class ApproleAuthBackendLogin extends cdktf.TerraformResource {
       terraformResourceType: 'vault_approle_auth_backend_login',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -101,6 +113,8 @@ export class ApproleAuthBackendLogin extends cdktf.TerraformResource {
     this._namespace = config.namespace;
     this._roleId = config.roleId;
     this._secretId = config.secretId;
+    this._secretIdWo = config.secretIdWo;
+    this._secretIdWoVersion = config.secretIdWoVersion;
   }
 
   // ==========
@@ -160,7 +174,7 @@ export class ApproleAuthBackendLogin extends cdktf.TerraformResource {
   }
 
   // metadata - computed: true, optional: false, required: false
-  private _metadata = new cdktf.StringMap(this, "metadata");
+  private _metadata = new cdktn.StringMap(this, "metadata");
   public get metadata() {
     return this._metadata;
   }
@@ -220,51 +234,97 @@ export class ApproleAuthBackendLogin extends cdktf.TerraformResource {
     return this._secretId;
   }
 
+  // secret_id_wo - computed: false, optional: true, required: false
+  private _secretIdWo?: string; 
+  public get secretIdWo() {
+    return this.getStringAttribute('secret_id_wo');
+  }
+  public set secretIdWo(value: string) {
+    this._secretIdWo = value;
+  }
+  public resetSecretIdWo() {
+    this._secretIdWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretIdWoInput() {
+    return this._secretIdWo;
+  }
+
+  // secret_id_wo_version - computed: false, optional: true, required: false
+  private _secretIdWoVersion?: number; 
+  public get secretIdWoVersion() {
+    return this.getNumberAttribute('secret_id_wo_version');
+  }
+  public set secretIdWoVersion(value: number) {
+    this._secretIdWoVersion = value;
+  }
+  public resetSecretIdWoVersion() {
+    this._secretIdWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretIdWoVersionInput() {
+    return this._secretIdWoVersion;
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      role_id: cdktf.stringToTerraform(this._roleId),
-      secret_id: cdktf.stringToTerraform(this._secretId),
+      backend: cdktn.stringToTerraform(this._backend),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      role_id: cdktn.stringToTerraform(this._roleId),
+      secret_id: cdktn.stringToTerraform(this._secretId),
+      secret_id_wo: cdktn.stringToTerraform(this._secretIdWo),
+      secret_id_wo_version: cdktn.numberToTerraform(this._secretIdWoVersion),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_id: {
-        value: cdktf.stringToHclTerraform(this._roleId),
+        value: cdktn.stringToHclTerraform(this._roleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_id: {
-        value: cdktf.stringToHclTerraform(this._secretId),
+        value: cdktn.stringToHclTerraform(this._secretId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      secret_id_wo: {
+        value: cdktn.stringToHclTerraform(this._secretIdWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_id_wo_version: {
+        value: cdktn.numberToHclTerraform(this._secretIdWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
     };
 

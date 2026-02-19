@@ -1,54 +1,48 @@
 
-# CDKTF prebuilt bindings for hashicorp/vault provider version 5.6.0
+# CDKTN prebuilt bindings for hashicorp/vault provider version 5.7.0
 
-HashiCorp made the decision to stop publishing new versions of prebuilt [Terraform vault provider](https://registry.terraform.io/providers/hashicorp/vault/5.6.0) bindings for [CDK for Terraform](https://cdk.tf) on December 10, 2025. As such, this repository has been archived and is no longer supported in any way by HashiCorp. Previously-published versions of this prebuilt provider will still continue to be available on their respective package managers (e.g. npm, PyPi, Maven, NuGet), but these will not be compatible with new releases of `cdktf` past `0.21.0` and are no longer eligible for commercial support.
+This repo builds and publishes the [Terraform vault provider](https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs) bindings for [CDK Terrain](https://cdktn.io).
 
-As a reminder, you can continue to use the `hashicorp/vault` provider in your CDK for Terraform (CDKTF) projects, even with newer versions of CDKTF, but you will need to generate the bindings locally. The easiest way to do so is to use the [`provider add` command](https://developer.hashicorp.com/terraform/cdktf/cli-reference/commands#provider-add), optionally with the `--force-local` flag enabled:
-
-`cdktf provider add hashicorp/vault --force-local`
-
-For more information and additional examples, check out our documentation on [generating provider bindings manually](https://cdk.tf/imports).
-
-## Deprecated Packages
+## Available Packages
 
 ### NPM
 
-The npm package is available at [https://www.npmjs.com/package/@cdktf/provider-vault](https://www.npmjs.com/package/@cdktf/provider-vault).
+The npm package is available at [https://www.npmjs.com/package/@cdktn/provider-vault](https://www.npmjs.com/package/@cdktn/provider-vault).
 
-`npm install @cdktf/provider-vault`
+`npm install @cdktn/provider-vault`
 
 ### PyPI
 
-The PyPI package is available at [https://pypi.org/project/cdktf-cdktf-provider-vault](https://pypi.org/project/cdktf-cdktf-provider-vault).
+The PyPI package is available at [https://pypi.org/project/cdktn-provider-vault](https://pypi.org/project/cdktn-provider-vault).
 
-`pipenv install cdktf-cdktf-provider-vault`
+`pipenv install cdktn-provider-vault`
 
 ### Nuget
 
-The Nuget package is available at [https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Vault](https://www.nuget.org/packages/HashiCorp.Cdktf.Providers.Vault).
+The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Providers.Vault](https://www.nuget.org/packages/Io.Cdktn.Providers.Vault).
 
-`dotnet add package HashiCorp.Cdktf.Providers.Vault`
+`dotnet add package Io.Cdktn.Providers.Vault`
 
 ### Maven
 
-The Maven package is available at [https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-vault](https://mvnrepository.com/artifact/com.hashicorp/cdktf-provider-vault).
+The Maven package is available at [https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-vault](https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-vault).
 
 ```
 <dependency>
-    <groupId>com.hashicorp</groupId>
-    <artifactId>cdktf-provider-vault</artifactId>
+    <groupId>io.cdktn</groupId>
+    <artifactId>cdktn-provider-vault</artifactId>
     <version>[REPLACE WITH DESIRED VERSION]</version>
 </dependency>
 ```
 
 ### Go
 
-The go package is generated into the [`github.com/cdktf/cdktf-provider-vault-go`](https://github.com/cdktf/cdktf-provider-vault-go) package.
+The go package is generated into the [`github.com/cdktn-io/cdktn-provider-vault-go`](https://github.com/cdktn-io/cdktn-provider-vault-go) package.
 
-`go get github.com/cdktf/cdktf-provider-vault-go/vault/<version>`
+`go get github.com/cdktn-io/cdktn-provider-vault-go/vault/<version>`
 
 Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
-within the [go.mod](https://github.com/cdktf/cdktf-provider-vault-go/blob/main/vault/go.mod#L1) file.
+within the [go.mod](https://github.com/cdktn-io/cdktn-provider-vault-go/blob/main/vault/go.mod#L1) file.
 
 ## Docs
 
@@ -60,4 +54,41 @@ Find auto-generated docs for this provider here:
 - [C#](./docs/API.csharp.md)
 - [Go](./docs/API.go.md)
 
-You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktf/provider-vault).
+You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktn/provider-vault).
+
+## Versioning
+
+This project is explicitly not tracking the Terraform vault provider version 1:1. In fact, it always tracks `latest` of `~> 5.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdktn.io/docs/concepts/providers#import-providers).
+
+These are the upstream dependencies:
+
+- [CDK Terrain](https://cdktn.io) - Last official release
+- [Terraform vault provider](https://registry.terraform.io/providers/hashicorp/vault/5.7.0)
+- [Terraform Engine](https://terraform.io)
+
+If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.
+
+## Features / Issues / Bugs
+
+Please report bugs and issues to the [CDK Terrain](https://cdktn.io) project:
+
+- [Create bug report](https://github.com/open-constructs/cdk-terrain/issues)
+- [Create feature request](https://github.com/open-constructs/cdk-terrain/issues)
+
+## Contributing
+
+### Projen
+
+This is mostly based on [Projen](https://projen.io), which takes care of generating the entire repository.
+
+### cdktn-provider-project based on Projen
+
+There's a custom [project builder](https://github.com/cdktn-io/cdktn-provider-project) which encapsulate the common settings for all `cdktn` prebuilt providers.
+
+### Provider Version
+
+The provider version can be adjusted in [./.projenrc.js](./.projenrc.js).
+
+### Repository Management
+
+The repository is managed by [CDKTN Repository Manager](https://github.com/cdktn-io/cdktn-repository-manager/).

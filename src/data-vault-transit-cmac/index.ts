@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataVaultTransitCmacConfig extends cdktf.TerraformMetaArguments {
+export interface DataVaultTransitCmacConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a list of items for processing. When this parameter is set, any supplied 'input' or 'context' parameters will be ignored. Responses are returned in the 'batch_results' array component of the 'data' element of the response. Any batch output will preserve the order of the batch input. If the input data value of an item is invalid, the corresponding item in the 'batch_results' will have the key 'error' with a value describing the error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac#batch_input DataVaultTransitCmac#batch_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#batch_input DataVaultTransitCmac#batch_input}
   */
-  readonly batchInput?: { [key: string]: string }[] | cdktf.IResolvable;
+  readonly batchInput?: { [key: string]: string }[] | cdktn.IResolvable;
   /**
   * The results returned from Vault if using batch_input
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac#batch_results DataVaultTransitCmac#batch_results}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#batch_results DataVaultTransitCmac#batch_results}
   */
-  readonly batchResults?: { [key: string]: string }[] | cdktf.IResolvable;
+  readonly batchResults?: { [key: string]: string }[] | cdktn.IResolvable;
   /**
   * The CMAC returned from Vault if using input
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac#cmac DataVaultTransitCmac#cmac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#cmac DataVaultTransitCmac#cmac}
   */
   readonly cmac?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac#id DataVaultTransitCmac#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#id DataVaultTransitCmac#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,51 +40,51 @@ export interface DataVaultTransitCmacConfig extends cdktf.TerraformMetaArguments
   /**
   * Specifies the base64 encoded input data. One of input or batch_input must be supplied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac#input DataVaultTransitCmac#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#input DataVaultTransitCmac#input}
   */
   readonly input?: string;
   /**
   * The version of the key to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac#key_version DataVaultTransitCmac#key_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#key_version DataVaultTransitCmac#key_version}
   */
   readonly keyVersion?: number;
   /**
   * Specifies the MAC length to use (POST body parameter). The mac_length cannot be larger than the cipher's block size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac#mac_length DataVaultTransitCmac#mac_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#mac_length DataVaultTransitCmac#mac_length}
   */
   readonly macLength?: number;
   /**
   * Name of the CMAC key to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac#name DataVaultTransitCmac#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#name DataVaultTransitCmac#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac#namespace DataVaultTransitCmac#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#namespace DataVaultTransitCmac#namespace}
   */
   readonly namespace?: string;
   /**
   * The Transit secret backend the key belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac#path DataVaultTransitCmac#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#path DataVaultTransitCmac#path}
   */
   readonly path: string;
   /**
   * Specifies the MAC length to use (URL parameter). If provided, this value overrides mac_length. The url_mac_length cannot be larger than the cipher's block size.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac#url_mac_length DataVaultTransitCmac#url_mac_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#url_mac_length DataVaultTransitCmac#url_mac_length}
   */
   readonly urlMacLength?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac vault_transit_cmac}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac vault_transit_cmac}
 */
-export class DataVaultTransitCmac extends cdktf.TerraformDataSource {
+export class DataVaultTransitCmac extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -95,14 +95,14 @@ export class DataVaultTransitCmac extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataVaultTransitCmac resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataVaultTransitCmac resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultTransitCmac to import
-  * @param importFromId The id of the existing DataVaultTransitCmac that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultTransitCmac that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultTransitCmac to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_transit_cmac", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_transit_cmac", importId: importFromId, provider });
       }
 
   // ===========
@@ -110,7 +110,7 @@ export class DataVaultTransitCmac extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_cmac vault_transit_cmac} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac vault_transit_cmac} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -121,7 +121,7 @@ export class DataVaultTransitCmac extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_transit_cmac',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -150,11 +150,11 @@ export class DataVaultTransitCmac extends cdktf.TerraformDataSource {
   // ==========
 
   // batch_input - computed: false, optional: true, required: false
-  private _batchInput?: { [key: string]: string }[] | cdktf.IResolvable; 
+  private _batchInput?: { [key: string]: string }[] | cdktn.IResolvable; 
   public get batchInput() {
     return this.interpolationForAttribute('batch_input');
   }
-  public set batchInput(value: { [key: string]: string }[] | cdktf.IResolvable) {
+  public set batchInput(value: { [key: string]: string }[] | cdktn.IResolvable) {
     this._batchInput = value;
   }
   public resetBatchInput() {
@@ -166,11 +166,11 @@ export class DataVaultTransitCmac extends cdktf.TerraformDataSource {
   }
 
   // batch_results - computed: true, optional: true, required: false
-  private _batchResults?: { [key: string]: string }[] | cdktf.IResolvable; 
+  private _batchResults?: { [key: string]: string }[] | cdktn.IResolvable; 
   public get batchResults() {
     return this.interpolationForAttribute('batch_results');
   }
-  public set batchResults(value: { [key: string]: string }[] | cdktf.IResolvable) {
+  public set batchResults(value: { [key: string]: string }[] | cdktn.IResolvable) {
     this._batchResults = value;
   }
   public resetBatchResults() {
@@ -325,84 +325,84 @@ export class DataVaultTransitCmac extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      batch_input: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._batchInput),
-      batch_results: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._batchResults),
-      cmac: cdktf.stringToTerraform(this._cmac),
-      id: cdktf.stringToTerraform(this._id),
-      input: cdktf.stringToTerraform(this._input),
-      key_version: cdktf.numberToTerraform(this._keyVersion),
-      mac_length: cdktf.numberToTerraform(this._macLength),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      path: cdktf.stringToTerraform(this._path),
-      url_mac_length: cdktf.numberToTerraform(this._urlMacLength),
+      batch_input: cdktn.listMapper(cdktn.hashMapper(cdktn.stringToTerraform), false)(this._batchInput),
+      batch_results: cdktn.listMapper(cdktn.hashMapper(cdktn.stringToTerraform), false)(this._batchResults),
+      cmac: cdktn.stringToTerraform(this._cmac),
+      id: cdktn.stringToTerraform(this._id),
+      input: cdktn.stringToTerraform(this._input),
+      key_version: cdktn.numberToTerraform(this._keyVersion),
+      mac_length: cdktn.numberToTerraform(this._macLength),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      path: cdktn.stringToTerraform(this._path),
+      url_mac_length: cdktn.numberToTerraform(this._urlMacLength),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       batch_input: {
-        value: cdktf.listMapperHcl(cdktf.hashMapperHcl(cdktf.stringToHclTerraform), false)(this._batchInput),
+        value: cdktn.listMapperHcl(cdktn.hashMapperHcl(cdktn.stringToHclTerraform), false)(this._batchInput),
         isBlock: false,
         type: "list",
         storageClassType: "stringMapList",
       },
       batch_results: {
-        value: cdktf.listMapperHcl(cdktf.hashMapperHcl(cdktf.stringToHclTerraform), false)(this._batchResults),
+        value: cdktn.listMapperHcl(cdktn.hashMapperHcl(cdktn.stringToHclTerraform), false)(this._batchResults),
         isBlock: false,
         type: "list",
         storageClassType: "stringMapList",
       },
       cmac: {
-        value: cdktf.stringToHclTerraform(this._cmac),
+        value: cdktn.stringToHclTerraform(this._cmac),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       input: {
-        value: cdktf.stringToHclTerraform(this._input),
+        value: cdktn.stringToHclTerraform(this._input),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_version: {
-        value: cdktf.numberToHclTerraform(this._keyVersion),
+        value: cdktn.numberToHclTerraform(this._keyVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       mac_length: {
-        value: cdktf.numberToHclTerraform(this._macLength),
+        value: cdktn.numberToHclTerraform(this._macLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       url_mac_length: {
-        value: cdktf.numberToHclTerraform(this._urlMacLength),
+        value: cdktn.numberToHclTerraform(this._urlMacLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

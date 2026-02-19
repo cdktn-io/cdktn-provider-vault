@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_association
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SecretsSyncAssociationConfig extends cdktf.TerraformMetaArguments {
+export interface SecretsSyncAssociationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#id SecretsSyncAssociation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_association#id SecretsSyncAssociation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +22,31 @@ export interface SecretsSyncAssociationConfig extends cdktf.TerraformMetaArgumen
   /**
   * Specifies the mount where the secret is located.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#mount SecretsSyncAssociation#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_association#mount SecretsSyncAssociation#mount}
   */
   readonly mount: string;
   /**
   * Name of the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#name SecretsSyncAssociation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_association#name SecretsSyncAssociation#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#namespace SecretsSyncAssociation#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_association#namespace SecretsSyncAssociation#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the name of the secret to synchronize.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#secret_name SecretsSyncAssociation#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_association#secret_name SecretsSyncAssociation#secret_name}
   */
   readonly secretName: string;
   /**
   * Type of sync destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#type SecretsSyncAssociation#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_association#type SecretsSyncAssociation#type}
   */
   readonly type: string;
 }
@@ -54,8 +54,8 @@ export interface SecretsSyncAssociationMetadata {
 }
 
 export function secretsSyncAssociationMetadataToTerraform(struct?: SecretsSyncAssociationMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -64,8 +64,8 @@ export function secretsSyncAssociationMetadataToTerraform(struct?: SecretsSyncAs
 
 
 export function secretsSyncAssociationMetadataToHclTerraform(struct?: SecretsSyncAssociationMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -73,7 +73,7 @@ export function secretsSyncAssociationMetadataToHclTerraform(struct?: SecretsSyn
   return attrs;
 }
 
-export class SecretsSyncAssociationMetadataOutputReference extends cdktf.ComplexObject {
+export class SecretsSyncAssociationMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -82,7 +82,7 @@ export class SecretsSyncAssociationMetadataOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -117,14 +117,14 @@ export class SecretsSyncAssociationMetadataOutputReference extends cdktf.Complex
   }
 }
 
-export class SecretsSyncAssociationMetadataList extends cdktf.ComplexList {
+export class SecretsSyncAssociationMetadataList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -137,9 +137,9 @@ export class SecretsSyncAssociationMetadataList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association vault_secrets_sync_association}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_association vault_secrets_sync_association}
 */
-export class SecretsSyncAssociation extends cdktf.TerraformResource {
+export class SecretsSyncAssociation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -150,14 +150,14 @@ export class SecretsSyncAssociation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SecretsSyncAssociation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SecretsSyncAssociation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsSyncAssociation to import
-  * @param importFromId The id of the existing SecretsSyncAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretsSyncAssociation that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_association#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsSyncAssociation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_secrets_sync_association", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_secrets_sync_association", importId: importFromId, provider });
       }
 
   // ===========
@@ -165,7 +165,7 @@ export class SecretsSyncAssociation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/secrets_sync_association vault_secrets_sync_association} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_association vault_secrets_sync_association} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -176,7 +176,7 @@ export class SecretsSyncAssociation extends cdktf.TerraformResource {
       terraformResourceType: 'vault_secrets_sync_association',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -295,49 +295,49 @@ export class SecretsSyncAssociation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      mount: cdktf.stringToTerraform(this._mount),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      secret_name: cdktf.stringToTerraform(this._secretName),
-      type: cdktf.stringToTerraform(this._type),
+      id: cdktn.stringToTerraform(this._id),
+      mount: cdktn.stringToTerraform(this._mount),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      secret_name: cdktn.stringToTerraform(this._secretName),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mount: {
-        value: cdktf.stringToHclTerraform(this._mount),
+        value: cdktn.stringToHclTerraform(this._mount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_name: {
-        value: cdktf.stringToHclTerraform(this._secretName),
+        value: cdktn.stringToHclTerraform(this._secretName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

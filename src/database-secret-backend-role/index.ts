@@ -1,55 +1,55 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatabaseSecretBackendRoleConfig extends cdktf.TerraformMetaArguments {
+export interface DatabaseSecretBackendRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The path of the Database Secret Backend the role belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#backend DatabaseSecretBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#backend DatabaseSecretBackendRole#backend}
   */
   readonly backend: string;
   /**
   * Database statements to execute to create and configure a user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#creation_statements DatabaseSecretBackendRole#creation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#creation_statements DatabaseSecretBackendRole#creation_statements}
   */
   readonly creationStatements: string[];
   /**
   * Specifies the configuration for the given credential_type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#credential_config DatabaseSecretBackendRole#credential_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#credential_config DatabaseSecretBackendRole#credential_config}
   */
   readonly credentialConfig?: { [key: string]: string };
   /**
   * Specifies the type of credential that will be generated for the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#credential_type DatabaseSecretBackendRole#credential_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#credential_type DatabaseSecretBackendRole#credential_type}
   */
   readonly credentialType?: string;
   /**
   * Database connection to use for this role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#db_name DatabaseSecretBackendRole#db_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#db_name DatabaseSecretBackendRole#db_name}
   */
   readonly dbName: string;
   /**
   * Default TTL for leases associated with this role, in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#default_ttl DatabaseSecretBackendRole#default_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#default_ttl DatabaseSecretBackendRole#default_ttl}
   */
   readonly defaultTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#id DatabaseSecretBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#id DatabaseSecretBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,45 +58,45 @@ export interface DatabaseSecretBackendRoleConfig extends cdktf.TerraformMetaArgu
   /**
   * Maximum TTL for leases associated with this role, in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#max_ttl DatabaseSecretBackendRole#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#max_ttl DatabaseSecretBackendRole#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * Unique name for the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#name DatabaseSecretBackendRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#name DatabaseSecretBackendRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#namespace DatabaseSecretBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#namespace DatabaseSecretBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Database statements to execute to renew a user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#renew_statements DatabaseSecretBackendRole#renew_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#renew_statements DatabaseSecretBackendRole#renew_statements}
   */
   readonly renewStatements?: string[];
   /**
   * Database statements to execute to revoke a user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#revocation_statements DatabaseSecretBackendRole#revocation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#revocation_statements DatabaseSecretBackendRole#revocation_statements}
   */
   readonly revocationStatements?: string[];
   /**
   * Database statements to execute to rollback a create operation in the event of an error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#rollback_statements DatabaseSecretBackendRole#rollback_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#rollback_statements DatabaseSecretBackendRole#rollback_statements}
   */
   readonly rollbackStatements?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role}
 */
-export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
+export class DatabaseSecretBackendRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -107,14 +107,14 @@ export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatabaseSecretBackendRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatabaseSecretBackendRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseSecretBackendRole to import
-  * @param importFromId The id of the existing DatabaseSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseSecretBackendRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_database_secret_backend_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_database_secret_backend_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -122,7 +122,7 @@ export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_role vault_database_secret_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -133,7 +133,7 @@ export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_database_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -365,98 +365,98 @@ export class DatabaseSecretBackendRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      creation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._creationStatements),
-      credential_config: cdktf.hashMapper(cdktf.stringToTerraform)(this._credentialConfig),
-      credential_type: cdktf.stringToTerraform(this._credentialType),
-      db_name: cdktf.stringToTerraform(this._dbName),
-      default_ttl: cdktf.numberToTerraform(this._defaultTtl),
-      id: cdktf.stringToTerraform(this._id),
-      max_ttl: cdktf.numberToTerraform(this._maxTtl),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      renew_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._renewStatements),
-      revocation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._revocationStatements),
-      rollback_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rollbackStatements),
+      backend: cdktn.stringToTerraform(this._backend),
+      creation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(this._creationStatements),
+      credential_config: cdktn.hashMapper(cdktn.stringToTerraform)(this._credentialConfig),
+      credential_type: cdktn.stringToTerraform(this._credentialType),
+      db_name: cdktn.stringToTerraform(this._dbName),
+      default_ttl: cdktn.numberToTerraform(this._defaultTtl),
+      id: cdktn.stringToTerraform(this._id),
+      max_ttl: cdktn.numberToTerraform(this._maxTtl),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      renew_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(this._renewStatements),
+      revocation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(this._revocationStatements),
+      rollback_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(this._rollbackStatements),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creation_statements: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._creationStatements),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._creationStatements),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       credential_config: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._credentialConfig),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._credentialConfig),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       credential_type: {
-        value: cdktf.stringToHclTerraform(this._credentialType),
+        value: cdktn.stringToHclTerraform(this._credentialType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_name: {
-        value: cdktf.stringToHclTerraform(this._dbName),
+        value: cdktn.stringToHclTerraform(this._dbName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_ttl: {
-        value: cdktf.numberToHclTerraform(this._defaultTtl),
+        value: cdktn.numberToHclTerraform(this._defaultTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_ttl: {
-        value: cdktf.numberToHclTerraform(this._maxTtl),
+        value: cdktn.numberToHclTerraform(this._maxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       renew_statements: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._renewStatements),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._renewStatements),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       revocation_statements: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._revocationStatements),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._revocationStatements),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       rollback_statements: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._rollbackStatements),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._rollbackStatements),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

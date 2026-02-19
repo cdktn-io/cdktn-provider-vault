@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kv_secrets_list_v2
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secrets_list_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataVaultKvSecretsListV2Config extends cdktf.TerraformMetaArguments {
+export interface DataVaultKvSecretsListV2Config extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kv_secrets_list_v2#id DataVaultKvSecretsListV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secrets_list_v2#id DataVaultKvSecretsListV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,27 +22,27 @@ export interface DataVaultKvSecretsListV2Config extends cdktf.TerraformMetaArgum
   /**
   * Path where KV-V2 engine is mounted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kv_secrets_list_v2#mount DataVaultKvSecretsListV2#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secrets_list_v2#mount DataVaultKvSecretsListV2#mount}
   */
   readonly mount: string;
   /**
   * Full named path of the secret. For a nested secret, the name is the nested path excluding the mount and data prefix. For example, for a secret at 'kvv2/data/foo/bar/baz', the name is 'foo/bar/baz'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kv_secrets_list_v2#name DataVaultKvSecretsListV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secrets_list_v2#name DataVaultKvSecretsListV2#name}
   */
   readonly name?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kv_secrets_list_v2#namespace DataVaultKvSecretsListV2#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secrets_list_v2#namespace DataVaultKvSecretsListV2#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kv_secrets_list_v2 vault_kv_secrets_list_v2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secrets_list_v2 vault_kv_secrets_list_v2}
 */
-export class DataVaultKvSecretsListV2 extends cdktf.TerraformDataSource {
+export class DataVaultKvSecretsListV2 extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DataVaultKvSecretsListV2 extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataVaultKvSecretsListV2 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataVaultKvSecretsListV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultKvSecretsListV2 to import
-  * @param importFromId The id of the existing DataVaultKvSecretsListV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kv_secrets_list_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultKvSecretsListV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secrets_list_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultKvSecretsListV2 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_kv_secrets_list_v2", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_kv_secrets_list_v2", importId: importFromId, provider });
       }
 
   // ===========
@@ -68,7 +68,7 @@ export class DataVaultKvSecretsListV2 extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kv_secrets_list_v2 vault_kv_secrets_list_v2} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kv_secrets_list_v2 vault_kv_secrets_list_v2} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class DataVaultKvSecretsListV2 extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_kv_secrets_list_v2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -177,35 +177,35 @@ export class DataVaultKvSecretsListV2 extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      mount: cdktf.stringToTerraform(this._mount),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
+      id: cdktn.stringToTerraform(this._id),
+      mount: cdktn.stringToTerraform(this._mount),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mount: {
-        value: cdktf.stringToHclTerraform(this._mount),
+        value: cdktn.stringToHclTerraform(this._mount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
