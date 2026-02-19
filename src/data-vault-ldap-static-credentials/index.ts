@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/ldap_static_credentials
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/ldap_static_credentials
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataVaultLdapStaticCredentialsConfig extends cdktf.TerraformMetaArguments {
+export interface DataVaultLdapStaticCredentialsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/ldap_static_credentials#id DataVaultLdapStaticCredentials#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/ldap_static_credentials#id DataVaultLdapStaticCredentials#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,27 +22,27 @@ export interface DataVaultLdapStaticCredentialsConfig extends cdktf.TerraformMet
   /**
   * LDAP Secret Backend to read credentials from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/ldap_static_credentials#mount DataVaultLdapStaticCredentials#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/ldap_static_credentials#mount DataVaultLdapStaticCredentials#mount}
   */
   readonly mount: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/ldap_static_credentials#namespace DataVaultLdapStaticCredentials#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/ldap_static_credentials#namespace DataVaultLdapStaticCredentials#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/ldap_static_credentials#role_name DataVaultLdapStaticCredentials#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/ldap_static_credentials#role_name DataVaultLdapStaticCredentials#role_name}
   */
   readonly roleName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials}
 */
-export class DataVaultLdapStaticCredentials extends cdktf.TerraformDataSource {
+export class DataVaultLdapStaticCredentials extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class DataVaultLdapStaticCredentials extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataVaultLdapStaticCredentials resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataVaultLdapStaticCredentials resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultLdapStaticCredentials to import
-  * @param importFromId The id of the existing DataVaultLdapStaticCredentials that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/ldap_static_credentials#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultLdapStaticCredentials that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/ldap_static_credentials#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultLdapStaticCredentials to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_ldap_static_credentials", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_ldap_static_credentials", importId: importFromId, provider });
       }
 
   // ===========
@@ -68,7 +68,7 @@ export class DataVaultLdapStaticCredentials extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class DataVaultLdapStaticCredentials extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_ldap_static_credentials',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -199,35 +199,35 @@ export class DataVaultLdapStaticCredentials extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      mount: cdktf.stringToTerraform(this._mount),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      role_name: cdktf.stringToTerraform(this._roleName),
+      id: cdktn.stringToTerraform(this._id),
+      mount: cdktn.stringToTerraform(this._mount),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      role_name: cdktn.stringToTerraform(this._roleName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mount: {
-        value: cdktf.stringToHclTerraform(this._mount),
+        value: cdktn.stringToHclTerraform(this._mount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_name: {
-        value: cdktf.stringToHclTerraform(this._roleName),
+        value: cdktn.stringToHclTerraform(this._roleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_service_account_token
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_service_account_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataVaultKubernetesServiceAccountTokenConfig extends cdktf.TerraformMetaArguments {
+export interface DataVaultKubernetesServiceAccountTokenConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Kubernetes secret backend to generate service account tokens from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_service_account_token#backend DataVaultKubernetesServiceAccountToken#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_service_account_token#backend DataVaultKubernetesServiceAccountToken#backend}
   */
   readonly backend: string;
   /**
   * If true, generate a ClusterRoleBinding to grant permissions across the whole cluster instead of within a namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_service_account_token#cluster_role_binding DataVaultKubernetesServiceAccountToken#cluster_role_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_service_account_token#cluster_role_binding DataVaultKubernetesServiceAccountToken#cluster_role_binding}
   */
-  readonly clusterRoleBinding?: boolean | cdktf.IResolvable;
+  readonly clusterRoleBinding?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_service_account_token#id DataVaultKubernetesServiceAccountToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_service_account_token#id DataVaultKubernetesServiceAccountToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,33 +34,33 @@ export interface DataVaultKubernetesServiceAccountTokenConfig extends cdktf.Terr
   /**
   * The name of the Kubernetes namespace in which to generate the credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_service_account_token#kubernetes_namespace DataVaultKubernetesServiceAccountToken#kubernetes_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_service_account_token#kubernetes_namespace DataVaultKubernetesServiceAccountToken#kubernetes_namespace}
   */
   readonly kubernetesNamespace: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_service_account_token#namespace DataVaultKubernetesServiceAccountToken#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_service_account_token#namespace DataVaultKubernetesServiceAccountToken#namespace}
   */
   readonly namespace?: string;
   /**
   * The name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_service_account_token#role DataVaultKubernetesServiceAccountToken#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_service_account_token#role DataVaultKubernetesServiceAccountToken#role}
   */
   readonly role: string;
   /**
   * The TTL of the generated Kubernetes service account token, specified in seconds or as a Go duration format string
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_service_account_token#ttl DataVaultKubernetesServiceAccountToken#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_service_account_token#ttl DataVaultKubernetesServiceAccountToken#ttl}
   */
   readonly ttl?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token}
 */
-export class DataVaultKubernetesServiceAccountToken extends cdktf.TerraformDataSource {
+export class DataVaultKubernetesServiceAccountToken extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -71,14 +71,14 @@ export class DataVaultKubernetesServiceAccountToken extends cdktf.TerraformDataS
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataVaultKubernetesServiceAccountToken resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataVaultKubernetesServiceAccountToken resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultKubernetesServiceAccountToken to import
-  * @param importFromId The id of the existing DataVaultKubernetesServiceAccountToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_service_account_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultKubernetesServiceAccountToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_service_account_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultKubernetesServiceAccountToken to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_kubernetes_service_account_token", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_kubernetes_service_account_token", importId: importFromId, provider });
       }
 
   // ===========
@@ -86,7 +86,7 @@ export class DataVaultKubernetesServiceAccountToken extends cdktf.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/kubernetes_service_account_token vault_kubernetes_service_account_token} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class DataVaultKubernetesServiceAccountToken extends cdktf.TerraformDataS
       terraformResourceType: 'vault_kubernetes_service_account_token',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -135,11 +135,11 @@ export class DataVaultKubernetesServiceAccountToken extends cdktf.TerraformDataS
   }
 
   // cluster_role_binding - computed: false, optional: true, required: false
-  private _clusterRoleBinding?: boolean | cdktf.IResolvable; 
+  private _clusterRoleBinding?: boolean | cdktn.IResolvable; 
   public get clusterRoleBinding() {
     return this.getBooleanAttribute('cluster_role_binding');
   }
-  public set clusterRoleBinding(value: boolean | cdktf.IResolvable) {
+  public set clusterRoleBinding(value: boolean | cdktn.IResolvable) {
     this._clusterRoleBinding = value;
   }
   public resetClusterRoleBinding() {
@@ -260,56 +260,56 @@ export class DataVaultKubernetesServiceAccountToken extends cdktf.TerraformDataS
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      cluster_role_binding: cdktf.booleanToTerraform(this._clusterRoleBinding),
-      id: cdktf.stringToTerraform(this._id),
-      kubernetes_namespace: cdktf.stringToTerraform(this._kubernetesNamespace),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      role: cdktf.stringToTerraform(this._role),
-      ttl: cdktf.stringToTerraform(this._ttl),
+      backend: cdktn.stringToTerraform(this._backend),
+      cluster_role_binding: cdktn.booleanToTerraform(this._clusterRoleBinding),
+      id: cdktn.stringToTerraform(this._id),
+      kubernetes_namespace: cdktn.stringToTerraform(this._kubernetesNamespace),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      role: cdktn.stringToTerraform(this._role),
+      ttl: cdktn.stringToTerraform(this._ttl),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cluster_role_binding: {
-        value: cdktf.booleanToHclTerraform(this._clusterRoleBinding),
+        value: cdktn.booleanToHclTerraform(this._clusterRoleBinding),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kubernetes_namespace: {
-        value: cdktf.stringToHclTerraform(this._kubernetesNamespace),
+        value: cdktn.stringToHclTerraform(this._kubernetesNamespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ttl: {
-        value: cdktf.stringToHclTerraform(this._ttl),
+        value: cdktn.stringToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

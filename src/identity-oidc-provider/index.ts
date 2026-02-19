@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_provider
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IdentityOidcProviderConfig extends cdktf.TerraformMetaArguments {
+export interface IdentityOidcProviderConfig extends cdktn.TerraformMetaArguments {
   /**
   * The client IDs that are permitted to use the provider. If empty, no clients are allowed. If "*", all clients are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_provider#allowed_client_ids IdentityOidcProvider#allowed_client_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_provider#allowed_client_ids IdentityOidcProvider#allowed_client_ids}
   */
   readonly allowedClientIds?: string[];
   /**
   * Set to true if the issuer endpoint uses HTTPS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_provider#https_enabled IdentityOidcProvider#https_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_provider#https_enabled IdentityOidcProvider#https_enabled}
   */
-  readonly httpsEnabled?: boolean | cdktf.IResolvable;
+  readonly httpsEnabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_provider#id IdentityOidcProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_provider#id IdentityOidcProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,33 +34,33 @@ export interface IdentityOidcProviderConfig extends cdktf.TerraformMetaArguments
   /**
   * The host for the issuer. Can be either host or host:port.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_provider#issuer_host IdentityOidcProvider#issuer_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_provider#issuer_host IdentityOidcProvider#issuer_host}
   */
   readonly issuerHost?: string;
   /**
   * The name of the provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_provider#name IdentityOidcProvider#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_provider#name IdentityOidcProvider#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_provider#namespace IdentityOidcProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_provider#namespace IdentityOidcProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * The scopes available for requesting on the provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_provider#scopes_supported IdentityOidcProvider#scopes_supported}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_provider#scopes_supported IdentityOidcProvider#scopes_supported}
   */
   readonly scopesSupported?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider}
 */
-export class IdentityOidcProvider extends cdktf.TerraformResource {
+export class IdentityOidcProvider extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -71,14 +71,14 @@ export class IdentityOidcProvider extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IdentityOidcProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IdentityOidcProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityOidcProvider to import
-  * @param importFromId The id of the existing IdentityOidcProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityOidcProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityOidcProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_oidc_provider", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_oidc_provider", importId: importFromId, provider });
       }
 
   // ===========
@@ -86,7 +86,7 @@ export class IdentityOidcProvider extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_provider vault_identity_oidc_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class IdentityOidcProvider extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_oidc_provider',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -124,7 +124,7 @@ export class IdentityOidcProvider extends cdktf.TerraformResource {
   // allowed_client_ids - computed: false, optional: true, required: false
   private _allowedClientIds?: string[]; 
   public get allowedClientIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_client_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_client_ids'));
   }
   public set allowedClientIds(value: string[]) {
     this._allowedClientIds = value;
@@ -138,11 +138,11 @@ export class IdentityOidcProvider extends cdktf.TerraformResource {
   }
 
   // https_enabled - computed: false, optional: true, required: false
-  private _httpsEnabled?: boolean | cdktf.IResolvable; 
+  private _httpsEnabled?: boolean | cdktn.IResolvable; 
   public get httpsEnabled() {
     return this.getBooleanAttribute('https_enabled');
   }
-  public set httpsEnabled(value: boolean | cdktf.IResolvable) {
+  public set httpsEnabled(value: boolean | cdktn.IResolvable) {
     this._httpsEnabled = value;
   }
   public resetHttpsEnabled() {
@@ -222,7 +222,7 @@ export class IdentityOidcProvider extends cdktf.TerraformResource {
   // scopes_supported - computed: false, optional: true, required: false
   private _scopesSupported?: string[]; 
   public get scopesSupported() {
-    return cdktf.Fn.tolist(this.getListAttribute('scopes_supported'));
+    return cdktn.Fn.tolist(this.getListAttribute('scopes_supported'));
   }
   public set scopesSupported(value: string[]) {
     this._scopesSupported = value;
@@ -241,56 +241,56 @@ export class IdentityOidcProvider extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_client_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedClientIds),
-      https_enabled: cdktf.booleanToTerraform(this._httpsEnabled),
-      id: cdktf.stringToTerraform(this._id),
-      issuer_host: cdktf.stringToTerraform(this._issuerHost),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      scopes_supported: cdktf.listMapper(cdktf.stringToTerraform, false)(this._scopesSupported),
+      allowed_client_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedClientIds),
+      https_enabled: cdktn.booleanToTerraform(this._httpsEnabled),
+      id: cdktn.stringToTerraform(this._id),
+      issuer_host: cdktn.stringToTerraform(this._issuerHost),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      scopes_supported: cdktn.listMapper(cdktn.stringToTerraform, false)(this._scopesSupported),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_client_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedClientIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedClientIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       https_enabled: {
-        value: cdktf.booleanToHclTerraform(this._httpsEnabled),
+        value: cdktn.booleanToHclTerraform(this._httpsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       issuer_host: {
-        value: cdktf.stringToHclTerraform(this._issuerHost),
+        value: cdktn.stringToHclTerraform(this._issuerHost),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       scopes_supported: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._scopesSupported),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._scopesSupported),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

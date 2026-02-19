@@ -1,55 +1,55 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KubernetesSecretBackendRoleConfig extends cdktf.TerraformMetaArguments {
+export interface KubernetesSecretBackendRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * A label selector for Kubernetes namespaces in which credentials can begenerated. Accepts either a JSON or YAML object. The value should be of typeLabelSelector. If set with `allowed_kubernetes_namespace`, the conditions are `OR`ed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#allowed_kubernetes_namespace_selector KubernetesSecretBackendRole#allowed_kubernetes_namespace_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#allowed_kubernetes_namespace_selector KubernetesSecretBackendRole#allowed_kubernetes_namespace_selector}
   */
   readonly allowedKubernetesNamespaceSelector?: string;
   /**
   * The list of Kubernetes namespaces this role can generate credentials for. If set to '*' all namespaces are allowed. If set with`allowed_kubernetes_namespace_selector`, the conditions are `OR`ed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#allowed_kubernetes_namespaces KubernetesSecretBackendRole#allowed_kubernetes_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#allowed_kubernetes_namespaces KubernetesSecretBackendRole#allowed_kubernetes_namespaces}
   */
   readonly allowedKubernetesNamespaces?: string[];
   /**
   * The mount path for the Kubernetes secrets engine.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#backend KubernetesSecretBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#backend KubernetesSecretBackendRole#backend}
   */
   readonly backend: string;
   /**
   * Additional annotations to apply to all generated Kubernetes objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#extra_annotations KubernetesSecretBackendRole#extra_annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#extra_annotations KubernetesSecretBackendRole#extra_annotations}
   */
   readonly extraAnnotations?: { [key: string]: string };
   /**
   * Additional labels to apply to all generated Kubernetes objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#extra_labels KubernetesSecretBackendRole#extra_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#extra_labels KubernetesSecretBackendRole#extra_labels}
   */
   readonly extraLabels?: { [key: string]: string };
   /**
   * The Role or ClusterRole rules to use when generating a role. Accepts either JSON or YAML formatted rules. Mutually exclusive with 'service_account_name' and 'kubernetes_role_name'. If set, the entire chain of Kubernetes objects will be generated when credentials are requested.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#generated_role_rules KubernetesSecretBackendRole#generated_role_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#generated_role_rules KubernetesSecretBackendRole#generated_role_rules}
   */
   readonly generatedRoleRules?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#id KubernetesSecretBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#id KubernetesSecretBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,57 +58,57 @@ export interface KubernetesSecretBackendRoleConfig extends cdktf.TerraformMetaAr
   /**
   * The pre-existing Role or ClusterRole to bind a generated service account to. Mutually exclusive with 'service_account_name' and 'generated_role_rules'. If set, Kubernetes token, service account, and role binding objects will be created when credentials are requested.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#kubernetes_role_name KubernetesSecretBackendRole#kubernetes_role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#kubernetes_role_name KubernetesSecretBackendRole#kubernetes_role_name}
   */
   readonly kubernetesRoleName?: string;
   /**
   * Specifies whether the Kubernetes role is a Role or ClusterRole.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#kubernetes_role_type KubernetesSecretBackendRole#kubernetes_role_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#kubernetes_role_type KubernetesSecretBackendRole#kubernetes_role_type}
   */
   readonly kubernetesRoleType?: string;
   /**
   * The name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#name KubernetesSecretBackendRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#name KubernetesSecretBackendRole#name}
   */
   readonly name: string;
   /**
   * The name template to use when generating service accounts, roles and role bindings. If unset, a default template is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#name_template KubernetesSecretBackendRole#name_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#name_template KubernetesSecretBackendRole#name_template}
   */
   readonly nameTemplate?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#namespace KubernetesSecretBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#namespace KubernetesSecretBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * The pre-existing service account to generate tokens for. Mutually exclusive with 'kubernetes_role_name' and 'generated_role_rules'. If set, only a Kubernetes token will be created when credentials are requested.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#service_account_name KubernetesSecretBackendRole#service_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#service_account_name KubernetesSecretBackendRole#service_account_name}
   */
   readonly serviceAccountName?: string;
   /**
   * The default TTL for generated Kubernetes tokens in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#token_default_ttl KubernetesSecretBackendRole#token_default_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#token_default_ttl KubernetesSecretBackendRole#token_default_ttl}
   */
   readonly tokenDefaultTtl?: number;
   /**
   * The maximum TTL for generated Kubernetes tokens in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#token_max_ttl KubernetesSecretBackendRole#token_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#token_max_ttl KubernetesSecretBackendRole#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role}
 */
-export class KubernetesSecretBackendRole extends cdktf.TerraformResource {
+export class KubernetesSecretBackendRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -119,14 +119,14 @@ export class KubernetesSecretBackendRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KubernetesSecretBackendRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KubernetesSecretBackendRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KubernetesSecretBackendRole to import
-  * @param importFromId The id of the existing KubernetesSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KubernetesSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KubernetesSecretBackendRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_kubernetes_secret_backend_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_kubernetes_secret_backend_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -134,7 +134,7 @@ export class KubernetesSecretBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_secret_backend_role vault_kubernetes_secret_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -145,7 +145,7 @@ export class KubernetesSecretBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kubernetes_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -417,112 +417,112 @@ export class KubernetesSecretBackendRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_kubernetes_namespace_selector: cdktf.stringToTerraform(this._allowedKubernetesNamespaceSelector),
-      allowed_kubernetes_namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedKubernetesNamespaces),
-      backend: cdktf.stringToTerraform(this._backend),
-      extra_annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._extraAnnotations),
-      extra_labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._extraLabels),
-      generated_role_rules: cdktf.stringToTerraform(this._generatedRoleRules),
-      id: cdktf.stringToTerraform(this._id),
-      kubernetes_role_name: cdktf.stringToTerraform(this._kubernetesRoleName),
-      kubernetes_role_type: cdktf.stringToTerraform(this._kubernetesRoleType),
-      name: cdktf.stringToTerraform(this._name),
-      name_template: cdktf.stringToTerraform(this._nameTemplate),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      service_account_name: cdktf.stringToTerraform(this._serviceAccountName),
-      token_default_ttl: cdktf.numberToTerraform(this._tokenDefaultTtl),
-      token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
+      allowed_kubernetes_namespace_selector: cdktn.stringToTerraform(this._allowedKubernetesNamespaceSelector),
+      allowed_kubernetes_namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedKubernetesNamespaces),
+      backend: cdktn.stringToTerraform(this._backend),
+      extra_annotations: cdktn.hashMapper(cdktn.stringToTerraform)(this._extraAnnotations),
+      extra_labels: cdktn.hashMapper(cdktn.stringToTerraform)(this._extraLabels),
+      generated_role_rules: cdktn.stringToTerraform(this._generatedRoleRules),
+      id: cdktn.stringToTerraform(this._id),
+      kubernetes_role_name: cdktn.stringToTerraform(this._kubernetesRoleName),
+      kubernetes_role_type: cdktn.stringToTerraform(this._kubernetesRoleType),
+      name: cdktn.stringToTerraform(this._name),
+      name_template: cdktn.stringToTerraform(this._nameTemplate),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      service_account_name: cdktn.stringToTerraform(this._serviceAccountName),
+      token_default_ttl: cdktn.numberToTerraform(this._tokenDefaultTtl),
+      token_max_ttl: cdktn.numberToTerraform(this._tokenMaxTtl),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_kubernetes_namespace_selector: {
-        value: cdktf.stringToHclTerraform(this._allowedKubernetesNamespaceSelector),
+        value: cdktn.stringToHclTerraform(this._allowedKubernetesNamespaceSelector),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allowed_kubernetes_namespaces: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedKubernetesNamespaces),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedKubernetesNamespaces),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       extra_annotations: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._extraAnnotations),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._extraAnnotations),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       extra_labels: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._extraLabels),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._extraLabels),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       generated_role_rules: {
-        value: cdktf.stringToHclTerraform(this._generatedRoleRules),
+        value: cdktn.stringToHclTerraform(this._generatedRoleRules),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kubernetes_role_name: {
-        value: cdktf.stringToHclTerraform(this._kubernetesRoleName),
+        value: cdktn.stringToHclTerraform(this._kubernetesRoleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       kubernetes_role_type: {
-        value: cdktf.stringToHclTerraform(this._kubernetesRoleType),
+        value: cdktn.stringToHclTerraform(this._kubernetesRoleType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name_template: {
-        value: cdktf.stringToHclTerraform(this._nameTemplate),
+        value: cdktn.stringToHclTerraform(this._nameTemplate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_account_name: {
-        value: cdktf.stringToHclTerraform(this._serviceAccountName),
+        value: cdktn.stringToHclTerraform(this._serviceAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_default_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenDefaultTtl),
+        value: cdktn.numberToHclTerraform(this._tokenDefaultTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_max_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenMaxTtl),
+        value: cdktn.numberToHclTerraform(this._tokenMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

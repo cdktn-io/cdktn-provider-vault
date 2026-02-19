@@ -1,28 +1,28 @@
-# `awsAuthBackendLogin` Submodule <a name="`awsAuthBackendLogin` Submodule" id="@cdktf/provider-vault.awsAuthBackendLogin"></a>
+# `awsAuthBackendLogin` Submodule <a name="`awsAuthBackendLogin` Submodule" id="@cdktn/provider-vault.awsAuthBackendLogin"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AwsAuthBackendLogin <a name="AwsAuthBackendLogin" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin"></a>
+### AwsAuthBackendLogin <a name="AwsAuthBackendLogin" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer"></a>
 
 ```typescript
-import { awsAuthBackendLogin } from '@cdktf/provider-vault'
+import { awsAuthBackendLogin } from '@cdktn/provider-vault'
 
 new awsAuthBackendLogin.AwsAuthBackendLogin(scope: Construct, id: string, config?: AwsAuthBackendLoginConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig">AwsAuthBackendLoginConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig">AwsAuthBackendLoginConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig">AwsAuthBackendLoginConfig</a>
+- *Type:* <a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig">AwsAuthBackendLoginConfig</a>
 
 ---
 
@@ -50,45 +50,45 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetBackend">resetBackend</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamHttpRequestMethod">resetIamHttpRequestMethod</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamRequestBody">resetIamRequestBody</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamRequestHeaders">resetIamRequestHeaders</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamRequestUrl">resetIamRequestUrl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIdentity">resetIdentity</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetNamespace">resetNamespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetNonce">resetNonce</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetPkcs7">resetPkcs7</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetRole">resetRole</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetSignature">resetSignature</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetBackend">resetBackend</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamHttpRequestMethod">resetIamHttpRequestMethod</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamRequestBody">resetIamRequestBody</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamRequestHeaders">resetIamRequestHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamRequestUrl">resetIamRequestUrl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIdentity">resetIdentity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetNamespace">resetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetNonce">resetNonce</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetPkcs7">resetPkcs7</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetRole">resetRole</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetSignature">resetSignature</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toString"></a>
 
 ```typescript
 public toString(): string
@@ -96,25 +96,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -122,7 +122,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -130,7 +130,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -138,19 +138,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -158,7 +158,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -166,7 +166,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -174,151 +174,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -328,7 +328,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -336,7 +336,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -344,7 +344,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -352,7 +352,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -360,7 +360,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -368,7 +368,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -376,73 +376,73 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetBackend` <a name="resetBackend" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetBackend"></a>
+##### `resetBackend` <a name="resetBackend" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetBackend"></a>
 
 ```typescript
 public resetBackend(): void
 ```
 
-##### `resetIamHttpRequestMethod` <a name="resetIamHttpRequestMethod" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamHttpRequestMethod"></a>
+##### `resetIamHttpRequestMethod` <a name="resetIamHttpRequestMethod" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamHttpRequestMethod"></a>
 
 ```typescript
 public resetIamHttpRequestMethod(): void
 ```
 
-##### `resetIamRequestBody` <a name="resetIamRequestBody" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamRequestBody"></a>
+##### `resetIamRequestBody` <a name="resetIamRequestBody" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamRequestBody"></a>
 
 ```typescript
 public resetIamRequestBody(): void
 ```
 
-##### `resetIamRequestHeaders` <a name="resetIamRequestHeaders" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamRequestHeaders"></a>
+##### `resetIamRequestHeaders` <a name="resetIamRequestHeaders" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamRequestHeaders"></a>
 
 ```typescript
 public resetIamRequestHeaders(): void
 ```
 
-##### `resetIamRequestUrl` <a name="resetIamRequestUrl" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamRequestUrl"></a>
+##### `resetIamRequestUrl` <a name="resetIamRequestUrl" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIamRequestUrl"></a>
 
 ```typescript
 public resetIamRequestUrl(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetIdentity` <a name="resetIdentity" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIdentity"></a>
+##### `resetIdentity` <a name="resetIdentity" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetIdentity"></a>
 
 ```typescript
 public resetIdentity(): void
 ```
 
-##### `resetNamespace` <a name="resetNamespace" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetNamespace"></a>
+##### `resetNamespace` <a name="resetNamespace" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetNamespace"></a>
 
 ```typescript
 public resetNamespace(): void
 ```
 
-##### `resetNonce` <a name="resetNonce" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetNonce"></a>
+##### `resetNonce` <a name="resetNonce" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetNonce"></a>
 
 ```typescript
 public resetNonce(): void
 ```
 
-##### `resetPkcs7` <a name="resetPkcs7" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetPkcs7"></a>
+##### `resetPkcs7` <a name="resetPkcs7" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetPkcs7"></a>
 
 ```typescript
 public resetPkcs7(): void
 ```
 
-##### `resetRole` <a name="resetRole" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetRole"></a>
+##### `resetRole` <a name="resetRole" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetRole"></a>
 
 ```typescript
 public resetRole(): void
 ```
 
-##### `resetSignature` <a name="resetSignature" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetSignature"></a>
+##### `resetSignature` <a name="resetSignature" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.resetSignature"></a>
 
 ```typescript
 public resetSignature(): void
@@ -452,17 +452,17 @@ public resetSignature(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a AwsAuthBackendLogin resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a AwsAuthBackendLogin resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isConstruct"></a>
 
 ```typescript
-import { awsAuthBackendLogin } from '@cdktf/provider-vault'
+import { awsAuthBackendLogin } from '@cdktn/provider-vault'
 
 awsAuthBackendLogin.AwsAuthBackendLogin.isConstruct(x: any)
 ```
@@ -483,7 +483,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -491,45 +491,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformElement"></a>
 
 ```typescript
-import { awsAuthBackendLogin } from '@cdktf/provider-vault'
+import { awsAuthBackendLogin } from '@cdktn/provider-vault'
 
 awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformResource"></a>
 
 ```typescript
-import { awsAuthBackendLogin } from '@cdktf/provider-vault'
+import { awsAuthBackendLogin } from '@cdktn/provider-vault'
 
 awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.generateConfigForImport"></a>
 
 ```typescript
-import { awsAuthBackendLogin } from '@cdktf/provider-vault'
+import { awsAuthBackendLogin } from '@cdktn/provider-vault'
 
 awsAuthBackendLogin.AwsAuthBackendLogin.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a AwsAuthBackendLogin resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a AwsAuthBackendLogin resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -537,7 +537,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -545,19 +545,19 @@ The construct id used in the generated config for the AwsAuthBackendLogin to imp
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing AwsAuthBackendLogin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the AwsAuthBackendLogin to import is found.
 
@@ -567,56 +567,56 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.accessor">accessor</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.authType">authType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.clientToken">clientToken</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.leaseDuration">leaseDuration</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.leaseStartTime">leaseStartTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.metadata">metadata</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.policies">policies</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.renewable">renewable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamHttpRequestMethodInput">iamHttpRequestMethodInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestBodyInput">iamRequestBodyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestHeadersInput">iamRequestHeadersInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestUrlInput">iamRequestUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.identityInput">identityInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.nonceInput">nonceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.pkcs7Input">pkcs7Input</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.signatureInput">signatureInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.backend">backend</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamHttpRequestMethod">iamHttpRequestMethod</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestBody">iamRequestBody</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestHeaders">iamRequestHeaders</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestUrl">iamRequestUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.identity">identity</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.nonce">nonce</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.pkcs7">pkcs7</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.role">role</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.signature">signature</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.accessor">accessor</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.authType">authType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.clientToken">clientToken</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.leaseDuration">leaseDuration</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.leaseStartTime">leaseStartTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.metadata">metadata</a></code> | <code>cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.policies">policies</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.renewable">renewable</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamHttpRequestMethodInput">iamHttpRequestMethodInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestBodyInput">iamRequestBodyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestHeadersInput">iamRequestHeadersInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestUrlInput">iamRequestUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.identityInput">identityInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.nonceInput">nonceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.pkcs7Input">pkcs7Input</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.signatureInput">signatureInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.backend">backend</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamHttpRequestMethod">iamHttpRequestMethod</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestBody">iamRequestBody</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestHeaders">iamRequestHeaders</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestUrl">iamRequestUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.identity">identity</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.nonce">nonce</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.pkcs7">pkcs7</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.role">role</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.signature">signature</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -628,17 +628,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -648,7 +648,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -658,7 +658,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -668,7 +668,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -678,37 +678,37 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -718,47 +718,47 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `accessor`<sup>Required</sup> <a name="accessor" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.accessor"></a>
+##### `accessor`<sup>Required</sup> <a name="accessor" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.accessor"></a>
 
 ```typescript
 public readonly accessor: string;
@@ -768,7 +768,7 @@ public readonly accessor: string;
 
 ---
 
-##### `authType`<sup>Required</sup> <a name="authType" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.authType"></a>
+##### `authType`<sup>Required</sup> <a name="authType" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.authType"></a>
 
 ```typescript
 public readonly authType: string;
@@ -778,7 +778,7 @@ public readonly authType: string;
 
 ---
 
-##### `clientToken`<sup>Required</sup> <a name="clientToken" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.clientToken"></a>
+##### `clientToken`<sup>Required</sup> <a name="clientToken" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.clientToken"></a>
 
 ```typescript
 public readonly clientToken: string;
@@ -788,7 +788,7 @@ public readonly clientToken: string;
 
 ---
 
-##### `leaseDuration`<sup>Required</sup> <a name="leaseDuration" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.leaseDuration"></a>
+##### `leaseDuration`<sup>Required</sup> <a name="leaseDuration" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.leaseDuration"></a>
 
 ```typescript
 public readonly leaseDuration: number;
@@ -798,7 +798,7 @@ public readonly leaseDuration: number;
 
 ---
 
-##### `leaseStartTime`<sup>Required</sup> <a name="leaseStartTime" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.leaseStartTime"></a>
+##### `leaseStartTime`<sup>Required</sup> <a name="leaseStartTime" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.leaseStartTime"></a>
 
 ```typescript
 public readonly leaseStartTime: string;
@@ -808,17 +808,17 @@ public readonly leaseStartTime: string;
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.metadata"></a>
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.metadata"></a>
 
 ```typescript
 public readonly metadata: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
-##### `policies`<sup>Required</sup> <a name="policies" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.policies"></a>
+##### `policies`<sup>Required</sup> <a name="policies" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.policies"></a>
 
 ```typescript
 public readonly policies: string[];
@@ -828,17 +828,17 @@ public readonly policies: string[];
 
 ---
 
-##### `renewable`<sup>Required</sup> <a name="renewable" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.renewable"></a>
+##### `renewable`<sup>Required</sup> <a name="renewable" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.renewable"></a>
 
 ```typescript
 public readonly renewable: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `backendInput`<sup>Optional</sup> <a name="backendInput" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.backendInput"></a>
+##### `backendInput`<sup>Optional</sup> <a name="backendInput" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.backendInput"></a>
 
 ```typescript
 public readonly backendInput: string;
@@ -848,7 +848,7 @@ public readonly backendInput: string;
 
 ---
 
-##### `iamHttpRequestMethodInput`<sup>Optional</sup> <a name="iamHttpRequestMethodInput" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamHttpRequestMethodInput"></a>
+##### `iamHttpRequestMethodInput`<sup>Optional</sup> <a name="iamHttpRequestMethodInput" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamHttpRequestMethodInput"></a>
 
 ```typescript
 public readonly iamHttpRequestMethodInput: string;
@@ -858,7 +858,7 @@ public readonly iamHttpRequestMethodInput: string;
 
 ---
 
-##### `iamRequestBodyInput`<sup>Optional</sup> <a name="iamRequestBodyInput" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestBodyInput"></a>
+##### `iamRequestBodyInput`<sup>Optional</sup> <a name="iamRequestBodyInput" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestBodyInput"></a>
 
 ```typescript
 public readonly iamRequestBodyInput: string;
@@ -868,7 +868,7 @@ public readonly iamRequestBodyInput: string;
 
 ---
 
-##### `iamRequestHeadersInput`<sup>Optional</sup> <a name="iamRequestHeadersInput" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestHeadersInput"></a>
+##### `iamRequestHeadersInput`<sup>Optional</sup> <a name="iamRequestHeadersInput" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestHeadersInput"></a>
 
 ```typescript
 public readonly iamRequestHeadersInput: string;
@@ -878,7 +878,7 @@ public readonly iamRequestHeadersInput: string;
 
 ---
 
-##### `iamRequestUrlInput`<sup>Optional</sup> <a name="iamRequestUrlInput" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestUrlInput"></a>
+##### `iamRequestUrlInput`<sup>Optional</sup> <a name="iamRequestUrlInput" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestUrlInput"></a>
 
 ```typescript
 public readonly iamRequestUrlInput: string;
@@ -888,7 +888,7 @@ public readonly iamRequestUrlInput: string;
 
 ---
 
-##### `identityInput`<sup>Optional</sup> <a name="identityInput" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.identityInput"></a>
+##### `identityInput`<sup>Optional</sup> <a name="identityInput" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.identityInput"></a>
 
 ```typescript
 public readonly identityInput: string;
@@ -898,7 +898,7 @@ public readonly identityInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -908,7 +908,7 @@ public readonly idInput: string;
 
 ---
 
-##### `namespaceInput`<sup>Optional</sup> <a name="namespaceInput" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.namespaceInput"></a>
+##### `namespaceInput`<sup>Optional</sup> <a name="namespaceInput" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.namespaceInput"></a>
 
 ```typescript
 public readonly namespaceInput: string;
@@ -918,7 +918,7 @@ public readonly namespaceInput: string;
 
 ---
 
-##### `nonceInput`<sup>Optional</sup> <a name="nonceInput" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.nonceInput"></a>
+##### `nonceInput`<sup>Optional</sup> <a name="nonceInput" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.nonceInput"></a>
 
 ```typescript
 public readonly nonceInput: string;
@@ -928,7 +928,7 @@ public readonly nonceInput: string;
 
 ---
 
-##### `pkcs7Input`<sup>Optional</sup> <a name="pkcs7Input" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.pkcs7Input"></a>
+##### `pkcs7Input`<sup>Optional</sup> <a name="pkcs7Input" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.pkcs7Input"></a>
 
 ```typescript
 public readonly pkcs7Input: string;
@@ -938,7 +938,7 @@ public readonly pkcs7Input: string;
 
 ---
 
-##### `roleInput`<sup>Optional</sup> <a name="roleInput" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.roleInput"></a>
+##### `roleInput`<sup>Optional</sup> <a name="roleInput" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.roleInput"></a>
 
 ```typescript
 public readonly roleInput: string;
@@ -948,7 +948,7 @@ public readonly roleInput: string;
 
 ---
 
-##### `signatureInput`<sup>Optional</sup> <a name="signatureInput" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.signatureInput"></a>
+##### `signatureInput`<sup>Optional</sup> <a name="signatureInput" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.signatureInput"></a>
 
 ```typescript
 public readonly signatureInput: string;
@@ -958,7 +958,7 @@ public readonly signatureInput: string;
 
 ---
 
-##### `backend`<sup>Required</sup> <a name="backend" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.backend"></a>
+##### `backend`<sup>Required</sup> <a name="backend" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.backend"></a>
 
 ```typescript
 public readonly backend: string;
@@ -968,7 +968,7 @@ public readonly backend: string;
 
 ---
 
-##### `iamHttpRequestMethod`<sup>Required</sup> <a name="iamHttpRequestMethod" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamHttpRequestMethod"></a>
+##### `iamHttpRequestMethod`<sup>Required</sup> <a name="iamHttpRequestMethod" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamHttpRequestMethod"></a>
 
 ```typescript
 public readonly iamHttpRequestMethod: string;
@@ -978,7 +978,7 @@ public readonly iamHttpRequestMethod: string;
 
 ---
 
-##### `iamRequestBody`<sup>Required</sup> <a name="iamRequestBody" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestBody"></a>
+##### `iamRequestBody`<sup>Required</sup> <a name="iamRequestBody" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestBody"></a>
 
 ```typescript
 public readonly iamRequestBody: string;
@@ -988,7 +988,7 @@ public readonly iamRequestBody: string;
 
 ---
 
-##### `iamRequestHeaders`<sup>Required</sup> <a name="iamRequestHeaders" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestHeaders"></a>
+##### `iamRequestHeaders`<sup>Required</sup> <a name="iamRequestHeaders" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestHeaders"></a>
 
 ```typescript
 public readonly iamRequestHeaders: string;
@@ -998,7 +998,7 @@ public readonly iamRequestHeaders: string;
 
 ---
 
-##### `iamRequestUrl`<sup>Required</sup> <a name="iamRequestUrl" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestUrl"></a>
+##### `iamRequestUrl`<sup>Required</sup> <a name="iamRequestUrl" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.iamRequestUrl"></a>
 
 ```typescript
 public readonly iamRequestUrl: string;
@@ -1008,7 +1008,7 @@ public readonly iamRequestUrl: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1018,7 +1018,7 @@ public readonly id: string;
 
 ---
 
-##### `identity`<sup>Required</sup> <a name="identity" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.identity"></a>
+##### `identity`<sup>Required</sup> <a name="identity" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.identity"></a>
 
 ```typescript
 public readonly identity: string;
@@ -1028,7 +1028,7 @@ public readonly identity: string;
 
 ---
 
-##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.namespace"></a>
+##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.namespace"></a>
 
 ```typescript
 public readonly namespace: string;
@@ -1038,7 +1038,7 @@ public readonly namespace: string;
 
 ---
 
-##### `nonce`<sup>Required</sup> <a name="nonce" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.nonce"></a>
+##### `nonce`<sup>Required</sup> <a name="nonce" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.nonce"></a>
 
 ```typescript
 public readonly nonce: string;
@@ -1048,7 +1048,7 @@ public readonly nonce: string;
 
 ---
 
-##### `pkcs7`<sup>Required</sup> <a name="pkcs7" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.pkcs7"></a>
+##### `pkcs7`<sup>Required</sup> <a name="pkcs7" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.pkcs7"></a>
 
 ```typescript
 public readonly pkcs7: string;
@@ -1058,7 +1058,7 @@ public readonly pkcs7: string;
 
 ---
 
-##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.role"></a>
+##### `role`<sup>Required</sup> <a name="role" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.role"></a>
 
 ```typescript
 public readonly role: string;
@@ -1068,7 +1068,7 @@ public readonly role: string;
 
 ---
 
-##### `signature`<sup>Required</sup> <a name="signature" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.signature"></a>
+##### `signature`<sup>Required</sup> <a name="signature" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.signature"></a>
 
 ```typescript
 public readonly signature: string;
@@ -1082,11 +1082,11 @@ public readonly signature: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLogin.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1098,12 +1098,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AwsAuthBackendLoginConfig <a name="AwsAuthBackendLoginConfig" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig"></a>
+### AwsAuthBackendLoginConfig <a name="AwsAuthBackendLoginConfig" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.Initializer"></a>
 
 ```typescript
-import { awsAuthBackendLogin } from '@cdktf/provider-vault'
+import { awsAuthBackendLogin } from '@cdktn/provider-vault'
 
 const awsAuthBackendLoginConfig: awsAuthBackendLogin.AwsAuthBackendLoginConfig = { ... }
 ```
@@ -1112,99 +1112,99 @@ const awsAuthBackendLoginConfig: awsAuthBackendLogin.AwsAuthBackendLoginConfig =
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.backend">backend</a></code> | <code>string</code> | AWS Auth Backend to read the token from. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamHttpRequestMethod">iamHttpRequestMethod</a></code> | <code>string</code> | The HTTP method used in the signed request. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestBody">iamRequestBody</a></code> | <code>string</code> | The Base64-encoded body of the signed request. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestHeaders">iamRequestHeaders</a></code> | <code>string</code> | The Base64-encoded, JSON serialized representation of the sts:GetCallerIdentity HTTP request headers. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestUrl">iamRequestUrl</a></code> | <code>string</code> | The Base64-encoded HTTP URL used in the signed request. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#id AwsAuthBackendLogin#id}. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.identity">identity</a></code> | <code>string</code> | Base64-encoded EC2 instance identity document to authenticate with. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.nonce">nonce</a></code> | <code>string</code> | The nonce to be used for subsequent login requests. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.pkcs7">pkcs7</a></code> | <code>string</code> | PKCS7 signature of the identity document to authenticate with, with all newline characters removed. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.role">role</a></code> | <code>string</code> | AWS Auth Role to read the token from. |
-| <code><a href="#@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.signature">signature</a></code> | <code>string</code> | Base64-encoded SHA256 RSA signature of the instance identtiy document to authenticate with. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.backend">backend</a></code> | <code>string</code> | AWS Auth Backend to read the token from. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamHttpRequestMethod">iamHttpRequestMethod</a></code> | <code>string</code> | The HTTP method used in the signed request. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestBody">iamRequestBody</a></code> | <code>string</code> | The Base64-encoded body of the signed request. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestHeaders">iamRequestHeaders</a></code> | <code>string</code> | The Base64-encoded, JSON serialized representation of the sts:GetCallerIdentity HTTP request headers. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestUrl">iamRequestUrl</a></code> | <code>string</code> | The Base64-encoded HTTP URL used in the signed request. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#id AwsAuthBackendLogin#id}. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.identity">identity</a></code> | <code>string</code> | Base64-encoded EC2 instance identity document to authenticate with. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.nonce">nonce</a></code> | <code>string</code> | The nonce to be used for subsequent login requests. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.pkcs7">pkcs7</a></code> | <code>string</code> | PKCS7 signature of the identity document to authenticate with, with all newline characters removed. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.role">role</a></code> | <code>string</code> | AWS Auth Role to read the token from. |
+| <code><a href="#@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.signature">signature</a></code> | <code>string</code> | Base64-encoded SHA256 RSA signature of the instance identtiy document to authenticate with. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `backend`<sup>Optional</sup> <a name="backend" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.backend"></a>
+##### `backend`<sup>Optional</sup> <a name="backend" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.backend"></a>
 
 ```typescript
 public readonly backend: string;
@@ -1214,11 +1214,11 @@ public readonly backend: string;
 
 AWS Auth Backend to read the token from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#backend AwsAuthBackendLogin#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#backend AwsAuthBackendLogin#backend}
 
 ---
 
-##### `iamHttpRequestMethod`<sup>Optional</sup> <a name="iamHttpRequestMethod" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamHttpRequestMethod"></a>
+##### `iamHttpRequestMethod`<sup>Optional</sup> <a name="iamHttpRequestMethod" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamHttpRequestMethod"></a>
 
 ```typescript
 public readonly iamHttpRequestMethod: string;
@@ -1228,11 +1228,11 @@ public readonly iamHttpRequestMethod: string;
 
 The HTTP method used in the signed request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#iam_http_request_method AwsAuthBackendLogin#iam_http_request_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#iam_http_request_method AwsAuthBackendLogin#iam_http_request_method}
 
 ---
 
-##### `iamRequestBody`<sup>Optional</sup> <a name="iamRequestBody" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestBody"></a>
+##### `iamRequestBody`<sup>Optional</sup> <a name="iamRequestBody" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestBody"></a>
 
 ```typescript
 public readonly iamRequestBody: string;
@@ -1242,11 +1242,11 @@ public readonly iamRequestBody: string;
 
 The Base64-encoded body of the signed request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#iam_request_body AwsAuthBackendLogin#iam_request_body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#iam_request_body AwsAuthBackendLogin#iam_request_body}
 
 ---
 
-##### `iamRequestHeaders`<sup>Optional</sup> <a name="iamRequestHeaders" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestHeaders"></a>
+##### `iamRequestHeaders`<sup>Optional</sup> <a name="iamRequestHeaders" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestHeaders"></a>
 
 ```typescript
 public readonly iamRequestHeaders: string;
@@ -1256,11 +1256,11 @@ public readonly iamRequestHeaders: string;
 
 The Base64-encoded, JSON serialized representation of the sts:GetCallerIdentity HTTP request headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#iam_request_headers AwsAuthBackendLogin#iam_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#iam_request_headers AwsAuthBackendLogin#iam_request_headers}
 
 ---
 
-##### `iamRequestUrl`<sup>Optional</sup> <a name="iamRequestUrl" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestUrl"></a>
+##### `iamRequestUrl`<sup>Optional</sup> <a name="iamRequestUrl" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.iamRequestUrl"></a>
 
 ```typescript
 public readonly iamRequestUrl: string;
@@ -1270,11 +1270,11 @@ public readonly iamRequestUrl: string;
 
 The Base64-encoded HTTP URL used in the signed request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#iam_request_url AwsAuthBackendLogin#iam_request_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#iam_request_url AwsAuthBackendLogin#iam_request_url}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1282,14 +1282,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#id AwsAuthBackendLogin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#id AwsAuthBackendLogin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.identity"></a>
+##### `identity`<sup>Optional</sup> <a name="identity" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.identity"></a>
 
 ```typescript
 public readonly identity: string;
@@ -1299,11 +1299,11 @@ public readonly identity: string;
 
 Base64-encoded EC2 instance identity document to authenticate with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#identity AwsAuthBackendLogin#identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#identity AwsAuthBackendLogin#identity}
 
 ---
 
-##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.namespace"></a>
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.namespace"></a>
 
 ```typescript
 public readonly namespace: string;
@@ -1313,11 +1313,11 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#namespace AwsAuthBackendLogin#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#namespace AwsAuthBackendLogin#namespace}
 
 ---
 
-##### `nonce`<sup>Optional</sup> <a name="nonce" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.nonce"></a>
+##### `nonce`<sup>Optional</sup> <a name="nonce" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.nonce"></a>
 
 ```typescript
 public readonly nonce: string;
@@ -1327,11 +1327,11 @@ public readonly nonce: string;
 
 The nonce to be used for subsequent login requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#nonce AwsAuthBackendLogin#nonce}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#nonce AwsAuthBackendLogin#nonce}
 
 ---
 
-##### `pkcs7`<sup>Optional</sup> <a name="pkcs7" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.pkcs7"></a>
+##### `pkcs7`<sup>Optional</sup> <a name="pkcs7" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.pkcs7"></a>
 
 ```typescript
 public readonly pkcs7: string;
@@ -1341,11 +1341,11 @@ public readonly pkcs7: string;
 
 PKCS7 signature of the identity document to authenticate with, with all newline characters removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#pkcs7 AwsAuthBackendLogin#pkcs7}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#pkcs7 AwsAuthBackendLogin#pkcs7}
 
 ---
 
-##### `role`<sup>Optional</sup> <a name="role" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.role"></a>
+##### `role`<sup>Optional</sup> <a name="role" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.role"></a>
 
 ```typescript
 public readonly role: string;
@@ -1355,11 +1355,11 @@ public readonly role: string;
 
 AWS Auth Role to read the token from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#role AwsAuthBackendLogin#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#role AwsAuthBackendLogin#role}
 
 ---
 
-##### `signature`<sup>Optional</sup> <a name="signature" id="@cdktf/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.signature"></a>
+##### `signature`<sup>Optional</sup> <a name="signature" id="@cdktn/provider-vault.awsAuthBackendLogin.AwsAuthBackendLoginConfig.property.signature"></a>
 
 ```typescript
 public readonly signature: string;
@@ -1369,7 +1369,7 @@ public readonly signature: string;
 
 Base64-encoded SHA256 RSA signature of the instance identtiy document to authenticate with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#signature AwsAuthBackendLogin#signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#signature AwsAuthBackendLogin#signature}
 
 ---
 

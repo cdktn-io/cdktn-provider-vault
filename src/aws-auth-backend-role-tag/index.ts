@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AwsAuthBackendRoleTagConfig extends cdktf.TerraformMetaArguments {
+export interface AwsAuthBackendRoleTagConfig extends cdktn.TerraformMetaArguments {
   /**
   * Allows migration of the underlying instance where the client resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag#allow_instance_migration AwsAuthBackendRoleTag#allow_instance_migration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag#allow_instance_migration AwsAuthBackendRoleTag#allow_instance_migration}
   */
-  readonly allowInstanceMigration?: boolean | cdktf.IResolvable;
+  readonly allowInstanceMigration?: boolean | cdktn.IResolvable;
   /**
   * AWS auth backend to read tags from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag#backend AwsAuthBackendRoleTag#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag#backend AwsAuthBackendRoleTag#backend}
   */
   readonly backend?: string;
   /**
   * Only allow a single token to be granted per instance ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag#disallow_reauthentication AwsAuthBackendRoleTag#disallow_reauthentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag#disallow_reauthentication AwsAuthBackendRoleTag#disallow_reauthentication}
   */
-  readonly disallowReauthentication?: boolean | cdktf.IResolvable;
+  readonly disallowReauthentication?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag#id AwsAuthBackendRoleTag#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag#id AwsAuthBackendRoleTag#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,39 +40,39 @@ export interface AwsAuthBackendRoleTagConfig extends cdktf.TerraformMetaArgument
   /**
   * Instance ID for which this tag is intended. The created tag can only be used by the instance with the given ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag#instance_id AwsAuthBackendRoleTag#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag#instance_id AwsAuthBackendRoleTag#instance_id}
   */
   readonly instanceId?: string;
   /**
   * The maximum allowed lifetime of tokens issued using this role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag#max_ttl AwsAuthBackendRoleTag#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag#max_ttl AwsAuthBackendRoleTag#max_ttl}
   */
   readonly maxTtl?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag#namespace AwsAuthBackendRoleTag#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag#namespace AwsAuthBackendRoleTag#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be associated with the tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag#policies AwsAuthBackendRoleTag#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag#policies AwsAuthBackendRoleTag#policies}
   */
   readonly policies?: string[];
   /**
   * Name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag#role AwsAuthBackendRoleTag#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag#role AwsAuthBackendRoleTag#role}
   */
   readonly role: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag}
 */
-export class AwsAuthBackendRoleTag extends cdktf.TerraformResource {
+export class AwsAuthBackendRoleTag extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -83,14 +83,14 @@ export class AwsAuthBackendRoleTag extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AwsAuthBackendRoleTag resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AwsAuthBackendRoleTag resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsAuthBackendRoleTag to import
-  * @param importFromId The id of the existing AwsAuthBackendRoleTag that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsAuthBackendRoleTag that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsAuthBackendRoleTag to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_aws_auth_backend_role_tag", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_aws_auth_backend_role_tag", importId: importFromId, provider });
       }
 
   // ===========
@@ -98,7 +98,7 @@ export class AwsAuthBackendRoleTag extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_role_tag vault_aws_auth_backend_role_tag} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +109,7 @@ export class AwsAuthBackendRoleTag extends cdktf.TerraformResource {
       terraformResourceType: 'vault_aws_auth_backend_role_tag',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -136,11 +136,11 @@ export class AwsAuthBackendRoleTag extends cdktf.TerraformResource {
   // ==========
 
   // allow_instance_migration - computed: false, optional: true, required: false
-  private _allowInstanceMigration?: boolean | cdktf.IResolvable; 
+  private _allowInstanceMigration?: boolean | cdktn.IResolvable; 
   public get allowInstanceMigration() {
     return this.getBooleanAttribute('allow_instance_migration');
   }
-  public set allowInstanceMigration(value: boolean | cdktf.IResolvable) {
+  public set allowInstanceMigration(value: boolean | cdktn.IResolvable) {
     this._allowInstanceMigration = value;
   }
   public resetAllowInstanceMigration() {
@@ -168,11 +168,11 @@ export class AwsAuthBackendRoleTag extends cdktf.TerraformResource {
   }
 
   // disallow_reauthentication - computed: false, optional: true, required: false
-  private _disallowReauthentication?: boolean | cdktf.IResolvable; 
+  private _disallowReauthentication?: boolean | cdktn.IResolvable; 
   public get disallowReauthentication() {
     return this.getBooleanAttribute('disallow_reauthentication');
   }
-  public set disallowReauthentication(value: boolean | cdktf.IResolvable) {
+  public set disallowReauthentication(value: boolean | cdktn.IResolvable) {
     this._disallowReauthentication = value;
   }
   public resetDisallowReauthentication() {
@@ -250,7 +250,7 @@ export class AwsAuthBackendRoleTag extends cdktf.TerraformResource {
   // policies - computed: false, optional: true, required: false
   private _policies?: string[]; 
   public get policies() {
-    return cdktf.Fn.tolist(this.getListAttribute('policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('policies'));
   }
   public set policies(value: string[]) {
     this._policies = value;
@@ -292,70 +292,70 @@ export class AwsAuthBackendRoleTag extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_instance_migration: cdktf.booleanToTerraform(this._allowInstanceMigration),
-      backend: cdktf.stringToTerraform(this._backend),
-      disallow_reauthentication: cdktf.booleanToTerraform(this._disallowReauthentication),
-      id: cdktf.stringToTerraform(this._id),
-      instance_id: cdktf.stringToTerraform(this._instanceId),
-      max_ttl: cdktf.stringToTerraform(this._maxTtl),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
-      role: cdktf.stringToTerraform(this._role),
+      allow_instance_migration: cdktn.booleanToTerraform(this._allowInstanceMigration),
+      backend: cdktn.stringToTerraform(this._backend),
+      disallow_reauthentication: cdktn.booleanToTerraform(this._disallowReauthentication),
+      id: cdktn.stringToTerraform(this._id),
+      instance_id: cdktn.stringToTerraform(this._instanceId),
+      max_ttl: cdktn.stringToTerraform(this._maxTtl),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._policies),
+      role: cdktn.stringToTerraform(this._role),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allow_instance_migration: {
-        value: cdktf.booleanToHclTerraform(this._allowInstanceMigration),
+        value: cdktn.booleanToHclTerraform(this._allowInstanceMigration),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disallow_reauthentication: {
-        value: cdktf.booleanToHclTerraform(this._disallowReauthentication),
+        value: cdktn.booleanToHclTerraform(this._disallowReauthentication),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       instance_id: {
-        value: cdktf.stringToHclTerraform(this._instanceId),
+        value: cdktn.stringToHclTerraform(this._instanceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_ttl: {
-        value: cdktf.stringToHclTerraform(this._maxTtl),
+        value: cdktn.stringToHclTerraform(this._maxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policies: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policies),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._policies),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

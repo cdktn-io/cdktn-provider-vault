@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataVaultTransitSignConfig extends cdktf.TerraformMetaArguments {
+export interface DataVaultTransitSignConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies a list of items for processing. When this parameter is set, any supplied 'input' or 'context' parameters will be ignored. Responses are returned in the 'batch_results' array component of the 'data' element of the response. Any batch output will preserve the order of the batch input. If the input data value of an item is invalid, the corresponding item in the 'batch_results' will have the key 'error' with a value describing the error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#batch_input DataVaultTransitSign#batch_input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#batch_input DataVaultTransitSign#batch_input}
   */
-  readonly batchInput?: { [key: string]: string }[] | cdktf.IResolvable;
+  readonly batchInput?: { [key: string]: string }[] | cdktn.IResolvable;
   /**
   * The results returned from Vault if using batch_input
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#batch_results DataVaultTransitSign#batch_results}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#batch_results DataVaultTransitSign#batch_results}
   */
-  readonly batchResults?: { [key: string]: string }[] | cdktf.IResolvable;
+  readonly batchResults?: { [key: string]: string }[] | cdktn.IResolvable;
   /**
   * Base64 encoded context for key derivation. Required if key derivation is enabled; currently only available with ed25519 keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#context DataVaultTransitSign#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#context DataVaultTransitSign#context}
   */
   readonly context?: string;
   /**
   * Specifies the hash algorithm to use for supporting key types (notably, not including ed25519 which specifies its own hash algorithm).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#hash_algorithm DataVaultTransitSign#hash_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#hash_algorithm DataVaultTransitSign#hash_algorithm}
   */
   readonly hashAlgorithm?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#id DataVaultTransitSign#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#id DataVaultTransitSign#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,81 +46,81 @@ export interface DataVaultTransitSignConfig extends cdktf.TerraformMetaArguments
   /**
   * Specifies the base64 encoded input data. One of input or batch_input must be supplied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#input DataVaultTransitSign#input}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#input DataVaultTransitSign#input}
   */
   readonly input?: string;
   /**
   * The version of the key to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#key_version DataVaultTransitSign#key_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#key_version DataVaultTransitSign#key_version}
   */
   readonly keyVersion?: number;
   /**
   * Specifies the way in which the signature should be marshaled. This currently only applies to ECDSA keys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#marshaling_algorithm DataVaultTransitSign#marshaling_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#marshaling_algorithm DataVaultTransitSign#marshaling_algorithm}
   */
   readonly marshalingAlgorithm?: string;
   /**
   * Name of the signing key to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#name DataVaultTransitSign#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#name DataVaultTransitSign#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#namespace DataVaultTransitSign#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#namespace DataVaultTransitSign#namespace}
   */
   readonly namespace?: string;
   /**
   * The Transit secret backend the key belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#path DataVaultTransitSign#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#path DataVaultTransitSign#path}
   */
   readonly path: string;
   /**
   * Set to true when the input is already hashed. If the key type is rsa-2048, rsa-3072 or rsa-4096, then the algorithm used to hash the input should be indicated by the hash_algorithm parameter. Just as the value to sign should be the base64-encoded representation of the exact binary data you want signed, when set, input is expected to be base64-encoded binary hashed data, not hex-formatted. (As an example, on the command line, you could generate a suitable input via openssl dgst -sha256 -binary | base64.)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#prehashed DataVaultTransitSign#prehashed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#prehashed DataVaultTransitSign#prehashed}
   */
-  readonly prehashed?: boolean | cdktf.IResolvable;
+  readonly prehashed?: boolean | cdktn.IResolvable;
   /**
   * A user-supplied string that will be present in the reference field on the corresponding batch_results item in the response, to assist in understanding which result corresponds to a particular input. Only valid on batch requests when using ‘batch_input’ below.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#reference DataVaultTransitSign#reference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#reference DataVaultTransitSign#reference}
   */
   readonly reference?: string;
   /**
   * The salt length used to sign. This currently only applies to the RSA PSS signature scheme.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#salt_length DataVaultTransitSign#salt_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#salt_length DataVaultTransitSign#salt_length}
   */
   readonly saltLength?: string;
   /**
   * The signature returned from Vault if using input
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#signature DataVaultTransitSign#signature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#signature DataVaultTransitSign#signature}
   */
   readonly signature?: string;
   /**
   * When using a RSA key, specifies the RSA signature algorithm to use for signing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#signature_algorithm DataVaultTransitSign#signature_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#signature_algorithm DataVaultTransitSign#signature_algorithm}
   */
   readonly signatureAlgorithm?: string;
   /**
   * Base64 encoded context for Ed25519ctx and Ed25519ph signatures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#signature_context DataVaultTransitSign#signature_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#signature_context DataVaultTransitSign#signature_context}
   */
   readonly signatureContext?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign vault_transit_sign}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign vault_transit_sign}
 */
-export class DataVaultTransitSign extends cdktf.TerraformDataSource {
+export class DataVaultTransitSign extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -131,14 +131,14 @@ export class DataVaultTransitSign extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataVaultTransitSign resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataVaultTransitSign resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultTransitSign to import
-  * @param importFromId The id of the existing DataVaultTransitSign that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultTransitSign that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultTransitSign to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_transit_sign", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_transit_sign", importId: importFromId, provider });
       }
 
   // ===========
@@ -146,7 +146,7 @@ export class DataVaultTransitSign extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_sign vault_transit_sign} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_sign vault_transit_sign} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -157,7 +157,7 @@ export class DataVaultTransitSign extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_transit_sign',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -192,11 +192,11 @@ export class DataVaultTransitSign extends cdktf.TerraformDataSource {
   // ==========
 
   // batch_input - computed: false, optional: true, required: false
-  private _batchInput?: { [key: string]: string }[] | cdktf.IResolvable; 
+  private _batchInput?: { [key: string]: string }[] | cdktn.IResolvable; 
   public get batchInput() {
     return this.interpolationForAttribute('batch_input');
   }
-  public set batchInput(value: { [key: string]: string }[] | cdktf.IResolvable) {
+  public set batchInput(value: { [key: string]: string }[] | cdktn.IResolvable) {
     this._batchInput = value;
   }
   public resetBatchInput() {
@@ -208,11 +208,11 @@ export class DataVaultTransitSign extends cdktf.TerraformDataSource {
   }
 
   // batch_results - computed: true, optional: true, required: false
-  private _batchResults?: { [key: string]: string }[] | cdktf.IResolvable; 
+  private _batchResults?: { [key: string]: string }[] | cdktn.IResolvable; 
   public get batchResults() {
     return this.interpolationForAttribute('batch_results');
   }
-  public set batchResults(value: { [key: string]: string }[] | cdktf.IResolvable) {
+  public set batchResults(value: { [key: string]: string }[] | cdktn.IResolvable) {
     this._batchResults = value;
   }
   public resetBatchResults() {
@@ -362,11 +362,11 @@ export class DataVaultTransitSign extends cdktf.TerraformDataSource {
   }
 
   // prehashed - computed: false, optional: true, required: false
-  private _prehashed?: boolean | cdktf.IResolvable; 
+  private _prehashed?: boolean | cdktn.IResolvable; 
   public get prehashed() {
     return this.getBooleanAttribute('prehashed');
   }
-  public set prehashed(value: boolean | cdktf.IResolvable) {
+  public set prehashed(value: boolean | cdktn.IResolvable) {
     this._prehashed = value;
   }
   public resetPrehashed() {
@@ -463,126 +463,126 @@ export class DataVaultTransitSign extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      batch_input: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._batchInput),
-      batch_results: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._batchResults),
-      context: cdktf.stringToTerraform(this._context),
-      hash_algorithm: cdktf.stringToTerraform(this._hashAlgorithm),
-      id: cdktf.stringToTerraform(this._id),
-      input: cdktf.stringToTerraform(this._input),
-      key_version: cdktf.numberToTerraform(this._keyVersion),
-      marshaling_algorithm: cdktf.stringToTerraform(this._marshalingAlgorithm),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      path: cdktf.stringToTerraform(this._path),
-      prehashed: cdktf.booleanToTerraform(this._prehashed),
-      reference: cdktf.stringToTerraform(this._reference),
-      salt_length: cdktf.stringToTerraform(this._saltLength),
-      signature: cdktf.stringToTerraform(this._signature),
-      signature_algorithm: cdktf.stringToTerraform(this._signatureAlgorithm),
-      signature_context: cdktf.stringToTerraform(this._signatureContext),
+      batch_input: cdktn.listMapper(cdktn.hashMapper(cdktn.stringToTerraform), false)(this._batchInput),
+      batch_results: cdktn.listMapper(cdktn.hashMapper(cdktn.stringToTerraform), false)(this._batchResults),
+      context: cdktn.stringToTerraform(this._context),
+      hash_algorithm: cdktn.stringToTerraform(this._hashAlgorithm),
+      id: cdktn.stringToTerraform(this._id),
+      input: cdktn.stringToTerraform(this._input),
+      key_version: cdktn.numberToTerraform(this._keyVersion),
+      marshaling_algorithm: cdktn.stringToTerraform(this._marshalingAlgorithm),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      path: cdktn.stringToTerraform(this._path),
+      prehashed: cdktn.booleanToTerraform(this._prehashed),
+      reference: cdktn.stringToTerraform(this._reference),
+      salt_length: cdktn.stringToTerraform(this._saltLength),
+      signature: cdktn.stringToTerraform(this._signature),
+      signature_algorithm: cdktn.stringToTerraform(this._signatureAlgorithm),
+      signature_context: cdktn.stringToTerraform(this._signatureContext),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       batch_input: {
-        value: cdktf.listMapperHcl(cdktf.hashMapperHcl(cdktf.stringToHclTerraform), false)(this._batchInput),
+        value: cdktn.listMapperHcl(cdktn.hashMapperHcl(cdktn.stringToHclTerraform), false)(this._batchInput),
         isBlock: false,
         type: "list",
         storageClassType: "stringMapList",
       },
       batch_results: {
-        value: cdktf.listMapperHcl(cdktf.hashMapperHcl(cdktf.stringToHclTerraform), false)(this._batchResults),
+        value: cdktn.listMapperHcl(cdktn.hashMapperHcl(cdktn.stringToHclTerraform), false)(this._batchResults),
         isBlock: false,
         type: "list",
         storageClassType: "stringMapList",
       },
       context: {
-        value: cdktf.stringToHclTerraform(this._context),
+        value: cdktn.stringToHclTerraform(this._context),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hash_algorithm: {
-        value: cdktf.stringToHclTerraform(this._hashAlgorithm),
+        value: cdktn.stringToHclTerraform(this._hashAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       input: {
-        value: cdktf.stringToHclTerraform(this._input),
+        value: cdktn.stringToHclTerraform(this._input),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_version: {
-        value: cdktf.numberToHclTerraform(this._keyVersion),
+        value: cdktn.numberToHclTerraform(this._keyVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       marshaling_algorithm: {
-        value: cdktf.stringToHclTerraform(this._marshalingAlgorithm),
+        value: cdktn.stringToHclTerraform(this._marshalingAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       prehashed: {
-        value: cdktf.booleanToHclTerraform(this._prehashed),
+        value: cdktn.booleanToHclTerraform(this._prehashed),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       reference: {
-        value: cdktf.stringToHclTerraform(this._reference),
+        value: cdktn.stringToHclTerraform(this._reference),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       salt_length: {
-        value: cdktf.stringToHclTerraform(this._saltLength),
+        value: cdktn.stringToHclTerraform(this._saltLength),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       signature: {
-        value: cdktf.stringToHclTerraform(this._signature),
+        value: cdktn.stringToHclTerraform(this._signature),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       signature_algorithm: {
-        value: cdktf.stringToHclTerraform(this._signatureAlgorithm),
+        value: cdktn.stringToHclTerraform(this._signatureAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       signature_context: {
-        value: cdktf.stringToHclTerraform(this._signatureContext),
+        value: cdktn.stringToHclTerraform(this._signatureContext),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,115 +1,115 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AdSecretBackendConfig extends cdktf.TerraformMetaArguments {
+export interface AdSecretBackendConfig extends cdktn.TerraformMetaArguments {
   /**
   * Use anonymous binds when performing LDAP group searches (if true the initial credentials will still be used for the initial connection test).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#anonymous_group_search AdSecretBackend#anonymous_group_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#anonymous_group_search AdSecretBackend#anonymous_group_search}
   */
-  readonly anonymousGroupSearch?: boolean | cdktf.IResolvable;
+  readonly anonymousGroupSearch?: boolean | cdktn.IResolvable;
   /**
   * The mount path for a backend, for example, the path given in "$ vault auth enable -path=my-ad ad".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#backend AdSecretBackend#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#backend AdSecretBackend#backend}
   */
   readonly backend?: string;
   /**
   * Distinguished name of object to bind when performing user and group search.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#binddn AdSecretBackend#binddn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#binddn AdSecretBackend#binddn}
   */
   readonly binddn: string;
   /**
   * LDAP password for searching for the user DN.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#bindpass AdSecretBackend#bindpass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#bindpass AdSecretBackend#bindpass}
   */
   readonly bindpass: string;
   /**
   * If true, case sensitivity will be used when comparing usernames and groups for matching policies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#case_sensitive_names AdSecretBackend#case_sensitive_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#case_sensitive_names AdSecretBackend#case_sensitive_names}
   */
-  readonly caseSensitiveNames?: boolean | cdktf.IResolvable;
+  readonly caseSensitiveNames?: boolean | cdktn.IResolvable;
   /**
   * CA certificate to use when verifying LDAP server certificate, must be x509 PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#certificate AdSecretBackend#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#certificate AdSecretBackend#certificate}
   */
   readonly certificate?: string;
   /**
   * Client certificate to provide to the LDAP server, must be x509 PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#client_tls_cert AdSecretBackend#client_tls_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#client_tls_cert AdSecretBackend#client_tls_cert}
   */
   readonly clientTlsCert?: string;
   /**
   * Client certificate key to provide to the LDAP server, must be x509 PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#client_tls_key AdSecretBackend#client_tls_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#client_tls_key AdSecretBackend#client_tls_key}
   */
   readonly clientTlsKey?: string;
   /**
   * Default lease duration for secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#default_lease_ttl_seconds AdSecretBackend#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#default_lease_ttl_seconds AdSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * Denies an unauthenticated LDAP bind request if the user's password is empty; defaults to true
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#deny_null_bind AdSecretBackend#deny_null_bind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#deny_null_bind AdSecretBackend#deny_null_bind}
   */
-  readonly denyNullBind?: boolean | cdktf.IResolvable;
+  readonly denyNullBind?: boolean | cdktn.IResolvable;
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#description AdSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#description AdSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#disable_remount AdSecretBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#disable_remount AdSecretBackend#disable_remount}
   */
-  readonly disableRemount?: boolean | cdktf.IResolvable;
+  readonly disableRemount?: boolean | cdktn.IResolvable;
   /**
   * Use anonymous bind to discover the bind DN of a user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#discoverdn AdSecretBackend#discoverdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#discoverdn AdSecretBackend#discoverdn}
   */
-  readonly discoverdn?: boolean | cdktf.IResolvable;
+  readonly discoverdn?: boolean | cdktn.IResolvable;
   /**
   * LDAP attribute to follow on objects returned by <groupfilter> in order to enumerate user group membership. Examples: "cn" or "memberOf", etc. Default: cn
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#groupattr AdSecretBackend#groupattr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#groupattr AdSecretBackend#groupattr}
   */
   readonly groupattr?: string;
   /**
   * LDAP search base to use for group membership search (eg: ou=Groups,dc=example,dc=org)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#groupdn AdSecretBackend#groupdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#groupdn AdSecretBackend#groupdn}
   */
   readonly groupdn?: string;
   /**
   * Go template for querying group membership of user. The template can access the following context variables: UserDN, Username Example: (&(objectClass=group)(member:1.2.840.113556.1.4.1941:={{.UserDN}})) Default: (|(memberUid={{.Username}})(member={{.UserDN}})(uniqueMember={{.UserDN}}))
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#groupfilter AdSecretBackend#groupfilter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#groupfilter AdSecretBackend#groupfilter}
   */
   readonly groupfilter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#id AdSecretBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#id AdSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -118,117 +118,117 @@ export interface AdSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * Skip LDAP server SSL Certificate verification - insecure and not recommended for production use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#insecure_tls AdSecretBackend#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#insecure_tls AdSecretBackend#insecure_tls}
   */
-  readonly insecureTls?: boolean | cdktf.IResolvable;
+  readonly insecureTls?: boolean | cdktn.IResolvable;
   /**
   * The number of seconds after a Vault rotation where, if Active Directory shows a later rotation, it should be considered out-of-band.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#last_rotation_tolerance AdSecretBackend#last_rotation_tolerance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#last_rotation_tolerance AdSecretBackend#last_rotation_tolerance}
   */
   readonly lastRotationTolerance?: number;
   /**
   * Mark the secrets engine as local-only. Local engines are not replicated or removed by replication.Tolerance duration to use when checking the last rotation time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#local AdSecretBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#local AdSecretBackend#local}
   */
-  readonly local?: boolean | cdktf.IResolvable;
+  readonly local?: boolean | cdktn.IResolvable;
   /**
   * Maximum possible lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#max_lease_ttl_seconds AdSecretBackend#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#max_lease_ttl_seconds AdSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * In seconds, the maximum password time-to-live.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#max_ttl AdSecretBackend#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#max_ttl AdSecretBackend#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#namespace AdSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#namespace AdSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the password policy to use to generate passwords.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#password_policy AdSecretBackend#password_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#password_policy AdSecretBackend#password_policy}
   */
   readonly passwordPolicy?: string;
   /**
   * Timeout, in seconds, for the connection when making requests against the server before returning back an error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#request_timeout AdSecretBackend#request_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#request_timeout AdSecretBackend#request_timeout}
   */
   readonly requestTimeout?: number;
   /**
   * Issue a StartTLS command after establishing unencrypted connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#starttls AdSecretBackend#starttls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#starttls AdSecretBackend#starttls}
   */
-  readonly starttls?: boolean | cdktf.IResolvable;
+  readonly starttls?: boolean | cdktn.IResolvable;
   /**
   * Maximum TLS version to use. Accepted values are 'tls10', 'tls11', 'tls12' or 'tls13'. Defaults to 'tls12'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#tls_max_version AdSecretBackend#tls_max_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#tls_max_version AdSecretBackend#tls_max_version}
   */
   readonly tlsMaxVersion?: string;
   /**
   * Minimum TLS version to use. Accepted values are 'tls10', 'tls11', 'tls12' or 'tls13'. Defaults to 'tls12'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#tls_min_version AdSecretBackend#tls_min_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#tls_min_version AdSecretBackend#tls_min_version}
   */
   readonly tlsMinVersion?: string;
   /**
   * In seconds, the default password time-to-live.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#ttl AdSecretBackend#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#ttl AdSecretBackend#ttl}
   */
   readonly ttl?: number;
   /**
   * Enables userPrincipalDomain login with [username]@UPNDomain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#upndomain AdSecretBackend#upndomain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#upndomain AdSecretBackend#upndomain}
   */
   readonly upndomain?: string;
   /**
   * LDAP URL to connect to (default: ldap://127.0.0.1). Multiple URLs can be specified by concatenating them with commas; they will be tried in-order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#url AdSecretBackend#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#url AdSecretBackend#url}
   */
   readonly url?: string;
   /**
   * In Vault 1.1.1 a fix for handling group CN values of different cases unfortunately introduced a regression that could cause previously defined groups to not be found due to a change in the resulting name. If set true, the pre-1.1.1 behavior for matching group CNs will be used. This is only needed in some upgrade scenarios for backwards compatibility. It is enabled by default if the config is upgraded but disabled by default on new configurations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#use_pre111_group_cn_behavior AdSecretBackend#use_pre111_group_cn_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#use_pre111_group_cn_behavior AdSecretBackend#use_pre111_group_cn_behavior}
   */
-  readonly usePre111GroupCnBehavior?: boolean | cdktf.IResolvable;
+  readonly usePre111GroupCnBehavior?: boolean | cdktn.IResolvable;
   /**
   * If true, use the Active Directory tokenGroups constructed attribute of the user to find the group memberships. This will find all security groups including nested ones.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#use_token_groups AdSecretBackend#use_token_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#use_token_groups AdSecretBackend#use_token_groups}
   */
-  readonly useTokenGroups?: boolean | cdktf.IResolvable;
+  readonly useTokenGroups?: boolean | cdktn.IResolvable;
   /**
   * Attribute used for users (default: cn)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#userattr AdSecretBackend#userattr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#userattr AdSecretBackend#userattr}
   */
   readonly userattr?: string;
   /**
   * LDAP domain to use for users (eg: ou=People,dc=example,dc=org)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#userdn AdSecretBackend#userdn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#userdn AdSecretBackend#userdn}
   */
   readonly userdn?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend vault_ad_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend vault_ad_secret_backend}
 */
-export class AdSecretBackend extends cdktf.TerraformResource {
+export class AdSecretBackend extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -239,14 +239,14 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AdSecretBackend resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AdSecretBackend resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AdSecretBackend to import
-  * @param importFromId The id of the existing AdSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AdSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AdSecretBackend to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_ad_secret_backend", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_ad_secret_backend", importId: importFromId, provider });
       }
 
   // ===========
@@ -254,7 +254,7 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ad_secret_backend vault_ad_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_backend vault_ad_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -265,7 +265,7 @@ export class AdSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ad_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -318,11 +318,11 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   // ==========
 
   // anonymous_group_search - computed: false, optional: true, required: false
-  private _anonymousGroupSearch?: boolean | cdktf.IResolvable; 
+  private _anonymousGroupSearch?: boolean | cdktn.IResolvable; 
   public get anonymousGroupSearch() {
     return this.getBooleanAttribute('anonymous_group_search');
   }
-  public set anonymousGroupSearch(value: boolean | cdktf.IResolvable) {
+  public set anonymousGroupSearch(value: boolean | cdktn.IResolvable) {
     this._anonymousGroupSearch = value;
   }
   public resetAnonymousGroupSearch() {
@@ -376,11 +376,11 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   }
 
   // case_sensitive_names - computed: false, optional: true, required: false
-  private _caseSensitiveNames?: boolean | cdktf.IResolvable; 
+  private _caseSensitiveNames?: boolean | cdktn.IResolvable; 
   public get caseSensitiveNames() {
     return this.getBooleanAttribute('case_sensitive_names');
   }
-  public set caseSensitiveNames(value: boolean | cdktf.IResolvable) {
+  public set caseSensitiveNames(value: boolean | cdktn.IResolvable) {
     this._caseSensitiveNames = value;
   }
   public resetCaseSensitiveNames() {
@@ -456,11 +456,11 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   }
 
   // deny_null_bind - computed: false, optional: true, required: false
-  private _denyNullBind?: boolean | cdktf.IResolvable; 
+  private _denyNullBind?: boolean | cdktn.IResolvable; 
   public get denyNullBind() {
     return this.getBooleanAttribute('deny_null_bind');
   }
-  public set denyNullBind(value: boolean | cdktf.IResolvable) {
+  public set denyNullBind(value: boolean | cdktn.IResolvable) {
     this._denyNullBind = value;
   }
   public resetDenyNullBind() {
@@ -488,11 +488,11 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   }
 
   // disable_remount - computed: false, optional: true, required: false
-  private _disableRemount?: boolean | cdktf.IResolvable; 
+  private _disableRemount?: boolean | cdktn.IResolvable; 
   public get disableRemount() {
     return this.getBooleanAttribute('disable_remount');
   }
-  public set disableRemount(value: boolean | cdktf.IResolvable) {
+  public set disableRemount(value: boolean | cdktn.IResolvable) {
     this._disableRemount = value;
   }
   public resetDisableRemount() {
@@ -504,11 +504,11 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   }
 
   // discoverdn - computed: false, optional: true, required: false
-  private _discoverdn?: boolean | cdktf.IResolvable; 
+  private _discoverdn?: boolean | cdktn.IResolvable; 
   public get discoverdn() {
     return this.getBooleanAttribute('discoverdn');
   }
-  public set discoverdn(value: boolean | cdktf.IResolvable) {
+  public set discoverdn(value: boolean | cdktn.IResolvable) {
     this._discoverdn = value;
   }
   public resetDiscoverdn() {
@@ -584,11 +584,11 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   }
 
   // insecure_tls - computed: false, optional: true, required: false
-  private _insecureTls?: boolean | cdktf.IResolvable; 
+  private _insecureTls?: boolean | cdktn.IResolvable; 
   public get insecureTls() {
     return this.getBooleanAttribute('insecure_tls');
   }
-  public set insecureTls(value: boolean | cdktf.IResolvable) {
+  public set insecureTls(value: boolean | cdktn.IResolvable) {
     this._insecureTls = value;
   }
   public resetInsecureTls() {
@@ -616,11 +616,11 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   }
 
   // local - computed: false, optional: true, required: false
-  private _local?: boolean | cdktf.IResolvable; 
+  private _local?: boolean | cdktn.IResolvable; 
   public get local() {
     return this.getBooleanAttribute('local');
   }
-  public set local(value: boolean | cdktf.IResolvable) {
+  public set local(value: boolean | cdktn.IResolvable) {
     this._local = value;
   }
   public resetLocal() {
@@ -712,11 +712,11 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   }
 
   // starttls - computed: true, optional: true, required: false
-  private _starttls?: boolean | cdktf.IResolvable; 
+  private _starttls?: boolean | cdktn.IResolvable; 
   public get starttls() {
     return this.getBooleanAttribute('starttls');
   }
-  public set starttls(value: boolean | cdktf.IResolvable) {
+  public set starttls(value: boolean | cdktn.IResolvable) {
     this._starttls = value;
   }
   public resetStarttls() {
@@ -808,11 +808,11 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   }
 
   // use_pre111_group_cn_behavior - computed: true, optional: true, required: false
-  private _usePre111GroupCnBehavior?: boolean | cdktf.IResolvable; 
+  private _usePre111GroupCnBehavior?: boolean | cdktn.IResolvable; 
   public get usePre111GroupCnBehavior() {
     return this.getBooleanAttribute('use_pre111_group_cn_behavior');
   }
-  public set usePre111GroupCnBehavior(value: boolean | cdktf.IResolvable) {
+  public set usePre111GroupCnBehavior(value: boolean | cdktn.IResolvable) {
     this._usePre111GroupCnBehavior = value;
   }
   public resetUsePre111GroupCnBehavior() {
@@ -824,11 +824,11 @@ export class AdSecretBackend extends cdktf.TerraformResource {
   }
 
   // use_token_groups - computed: false, optional: true, required: false
-  private _useTokenGroups?: boolean | cdktf.IResolvable; 
+  private _useTokenGroups?: boolean | cdktn.IResolvable; 
   public get useTokenGroups() {
     return this.getBooleanAttribute('use_token_groups');
   }
-  public set useTokenGroups(value: boolean | cdktf.IResolvable) {
+  public set useTokenGroups(value: boolean | cdktn.IResolvable) {
     this._useTokenGroups = value;
   }
   public resetUseTokenGroups() {
@@ -877,252 +877,252 @@ export class AdSecretBackend extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      anonymous_group_search: cdktf.booleanToTerraform(this._anonymousGroupSearch),
-      backend: cdktf.stringToTerraform(this._backend),
-      binddn: cdktf.stringToTerraform(this._binddn),
-      bindpass: cdktf.stringToTerraform(this._bindpass),
-      case_sensitive_names: cdktf.booleanToTerraform(this._caseSensitiveNames),
-      certificate: cdktf.stringToTerraform(this._certificate),
-      client_tls_cert: cdktf.stringToTerraform(this._clientTlsCert),
-      client_tls_key: cdktf.stringToTerraform(this._clientTlsKey),
-      default_lease_ttl_seconds: cdktf.numberToTerraform(this._defaultLeaseTtlSeconds),
-      deny_null_bind: cdktf.booleanToTerraform(this._denyNullBind),
-      description: cdktf.stringToTerraform(this._description),
-      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
-      discoverdn: cdktf.booleanToTerraform(this._discoverdn),
-      groupattr: cdktf.stringToTerraform(this._groupattr),
-      groupdn: cdktf.stringToTerraform(this._groupdn),
-      groupfilter: cdktf.stringToTerraform(this._groupfilter),
-      id: cdktf.stringToTerraform(this._id),
-      insecure_tls: cdktf.booleanToTerraform(this._insecureTls),
-      last_rotation_tolerance: cdktf.numberToTerraform(this._lastRotationTolerance),
-      local: cdktf.booleanToTerraform(this._local),
-      max_lease_ttl_seconds: cdktf.numberToTerraform(this._maxLeaseTtlSeconds),
-      max_ttl: cdktf.numberToTerraform(this._maxTtl),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      password_policy: cdktf.stringToTerraform(this._passwordPolicy),
-      request_timeout: cdktf.numberToTerraform(this._requestTimeout),
-      starttls: cdktf.booleanToTerraform(this._starttls),
-      tls_max_version: cdktf.stringToTerraform(this._tlsMaxVersion),
-      tls_min_version: cdktf.stringToTerraform(this._tlsMinVersion),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      upndomain: cdktf.stringToTerraform(this._upndomain),
-      url: cdktf.stringToTerraform(this._url),
-      use_pre111_group_cn_behavior: cdktf.booleanToTerraform(this._usePre111GroupCnBehavior),
-      use_token_groups: cdktf.booleanToTerraform(this._useTokenGroups),
-      userattr: cdktf.stringToTerraform(this._userattr),
-      userdn: cdktf.stringToTerraform(this._userdn),
+      anonymous_group_search: cdktn.booleanToTerraform(this._anonymousGroupSearch),
+      backend: cdktn.stringToTerraform(this._backend),
+      binddn: cdktn.stringToTerraform(this._binddn),
+      bindpass: cdktn.stringToTerraform(this._bindpass),
+      case_sensitive_names: cdktn.booleanToTerraform(this._caseSensitiveNames),
+      certificate: cdktn.stringToTerraform(this._certificate),
+      client_tls_cert: cdktn.stringToTerraform(this._clientTlsCert),
+      client_tls_key: cdktn.stringToTerraform(this._clientTlsKey),
+      default_lease_ttl_seconds: cdktn.numberToTerraform(this._defaultLeaseTtlSeconds),
+      deny_null_bind: cdktn.booleanToTerraform(this._denyNullBind),
+      description: cdktn.stringToTerraform(this._description),
+      disable_remount: cdktn.booleanToTerraform(this._disableRemount),
+      discoverdn: cdktn.booleanToTerraform(this._discoverdn),
+      groupattr: cdktn.stringToTerraform(this._groupattr),
+      groupdn: cdktn.stringToTerraform(this._groupdn),
+      groupfilter: cdktn.stringToTerraform(this._groupfilter),
+      id: cdktn.stringToTerraform(this._id),
+      insecure_tls: cdktn.booleanToTerraform(this._insecureTls),
+      last_rotation_tolerance: cdktn.numberToTerraform(this._lastRotationTolerance),
+      local: cdktn.booleanToTerraform(this._local),
+      max_lease_ttl_seconds: cdktn.numberToTerraform(this._maxLeaseTtlSeconds),
+      max_ttl: cdktn.numberToTerraform(this._maxTtl),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      password_policy: cdktn.stringToTerraform(this._passwordPolicy),
+      request_timeout: cdktn.numberToTerraform(this._requestTimeout),
+      starttls: cdktn.booleanToTerraform(this._starttls),
+      tls_max_version: cdktn.stringToTerraform(this._tlsMaxVersion),
+      tls_min_version: cdktn.stringToTerraform(this._tlsMinVersion),
+      ttl: cdktn.numberToTerraform(this._ttl),
+      upndomain: cdktn.stringToTerraform(this._upndomain),
+      url: cdktn.stringToTerraform(this._url),
+      use_pre111_group_cn_behavior: cdktn.booleanToTerraform(this._usePre111GroupCnBehavior),
+      use_token_groups: cdktn.booleanToTerraform(this._useTokenGroups),
+      userattr: cdktn.stringToTerraform(this._userattr),
+      userdn: cdktn.stringToTerraform(this._userdn),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       anonymous_group_search: {
-        value: cdktf.booleanToHclTerraform(this._anonymousGroupSearch),
+        value: cdktn.booleanToHclTerraform(this._anonymousGroupSearch),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       binddn: {
-        value: cdktf.stringToHclTerraform(this._binddn),
+        value: cdktn.stringToHclTerraform(this._binddn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bindpass: {
-        value: cdktf.stringToHclTerraform(this._bindpass),
+        value: cdktn.stringToHclTerraform(this._bindpass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       case_sensitive_names: {
-        value: cdktf.booleanToHclTerraform(this._caseSensitiveNames),
+        value: cdktn.booleanToHclTerraform(this._caseSensitiveNames),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       certificate: {
-        value: cdktf.stringToHclTerraform(this._certificate),
+        value: cdktn.stringToHclTerraform(this._certificate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_tls_cert: {
-        value: cdktf.stringToHclTerraform(this._clientTlsCert),
+        value: cdktn.stringToHclTerraform(this._clientTlsCert),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_tls_key: {
-        value: cdktf.stringToHclTerraform(this._clientTlsKey),
+        value: cdktn.stringToHclTerraform(this._clientTlsKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_lease_ttl_seconds: {
-        value: cdktf.numberToHclTerraform(this._defaultLeaseTtlSeconds),
+        value: cdktn.numberToHclTerraform(this._defaultLeaseTtlSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       deny_null_bind: {
-        value: cdktf.booleanToHclTerraform(this._denyNullBind),
+        value: cdktn.booleanToHclTerraform(this._denyNullBind),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_remount: {
-        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        value: cdktn.booleanToHclTerraform(this._disableRemount),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       discoverdn: {
-        value: cdktf.booleanToHclTerraform(this._discoverdn),
+        value: cdktn.booleanToHclTerraform(this._discoverdn),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       groupattr: {
-        value: cdktf.stringToHclTerraform(this._groupattr),
+        value: cdktn.stringToHclTerraform(this._groupattr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       groupdn: {
-        value: cdktf.stringToHclTerraform(this._groupdn),
+        value: cdktn.stringToHclTerraform(this._groupdn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       groupfilter: {
-        value: cdktf.stringToHclTerraform(this._groupfilter),
+        value: cdktn.stringToHclTerraform(this._groupfilter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       insecure_tls: {
-        value: cdktf.booleanToHclTerraform(this._insecureTls),
+        value: cdktn.booleanToHclTerraform(this._insecureTls),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       last_rotation_tolerance: {
-        value: cdktf.numberToHclTerraform(this._lastRotationTolerance),
+        value: cdktn.numberToHclTerraform(this._lastRotationTolerance),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       local: {
-        value: cdktf.booleanToHclTerraform(this._local),
+        value: cdktn.booleanToHclTerraform(this._local),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       max_lease_ttl_seconds: {
-        value: cdktf.numberToHclTerraform(this._maxLeaseTtlSeconds),
+        value: cdktn.numberToHclTerraform(this._maxLeaseTtlSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_ttl: {
-        value: cdktf.numberToHclTerraform(this._maxTtl),
+        value: cdktn.numberToHclTerraform(this._maxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password_policy: {
-        value: cdktf.stringToHclTerraform(this._passwordPolicy),
+        value: cdktn.stringToHclTerraform(this._passwordPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_timeout: {
-        value: cdktf.numberToHclTerraform(this._requestTimeout),
+        value: cdktn.numberToHclTerraform(this._requestTimeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       starttls: {
-        value: cdktf.booleanToHclTerraform(this._starttls),
+        value: cdktn.booleanToHclTerraform(this._starttls),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tls_max_version: {
-        value: cdktf.stringToHclTerraform(this._tlsMaxVersion),
+        value: cdktn.stringToHclTerraform(this._tlsMaxVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tls_min_version: {
-        value: cdktf.stringToHclTerraform(this._tlsMinVersion),
+        value: cdktn.stringToHclTerraform(this._tlsMinVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       upndomain: {
-        value: cdktf.stringToHclTerraform(this._upndomain),
+        value: cdktn.stringToHclTerraform(this._upndomain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_pre111_group_cn_behavior: {
-        value: cdktf.booleanToHclTerraform(this._usePre111GroupCnBehavior),
+        value: cdktn.booleanToHclTerraform(this._usePre111GroupCnBehavior),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       use_token_groups: {
-        value: cdktf.booleanToHclTerraform(this._useTokenGroups),
+        value: cdktn.booleanToHclTerraform(this._useTokenGroups),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       userattr: {
-        value: cdktf.stringToHclTerraform(this._userattr),
+        value: cdktn.stringToHclTerraform(this._userattr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       userdn: {
-        value: cdktf.stringToHclTerraform(this._userdn),
+        value: cdktn.stringToHclTerraform(this._userdn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

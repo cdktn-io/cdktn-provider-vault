@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DatabaseSecretBackendStaticRoleConfig extends cdktf.TerraformMetaArguments {
+export interface DatabaseSecretBackendStaticRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The path of the Database Secret Backend the role belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#backend DatabaseSecretBackendStaticRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#backend DatabaseSecretBackendStaticRole#backend}
   */
   readonly backend: string;
   /**
   * The configuration for the credential type.Full documentation for the allowed values can be found under "https://developer.hashicorp.com/vault/api-docs/secret/databases#credential_config".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#credential_config DatabaseSecretBackendStaticRole#credential_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#credential_config DatabaseSecretBackendStaticRole#credential_config}
   */
   readonly credentialConfig?: { [key: string]: string };
   /**
   * The credential type for the user, can be one of "password", "rsa_private_key" or "client_certificate".The configuration can be done in `credential_config`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#credential_type DatabaseSecretBackendStaticRole#credential_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#credential_type DatabaseSecretBackendStaticRole#credential_type}
   */
   readonly credentialType?: string;
   /**
   * Database connection to use for this role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#db_name DatabaseSecretBackendStaticRole#db_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#db_name DatabaseSecretBackendStaticRole#db_name}
   */
   readonly dbName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#id DatabaseSecretBackendStaticRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,75 +46,75 @@ export interface DatabaseSecretBackendStaticRoleConfig extends cdktf.TerraformMe
   /**
   * Unique name for the static role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#name DatabaseSecretBackendStaticRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#name DatabaseSecretBackendStaticRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#namespace DatabaseSecretBackendStaticRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#namespace DatabaseSecretBackendStaticRole#namespace}
   */
   readonly namespace?: string;
   /**
   * The password corresponding to the username in the database. This is a write-only field. Requires Vault 1.19+. Deprecates 'self_managed_password' which was introduced in Vault 1.18.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#password_wo DatabaseSecretBackendStaticRole#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#password_wo DatabaseSecretBackendStaticRole#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * The version of the password_wo field. Used for tracking changes to the write-only password field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#password_wo_version DatabaseSecretBackendStaticRole#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#password_wo_version DatabaseSecretBackendStaticRole#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * The amount of time Vault should wait before rotating the password, in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#rotation_period DatabaseSecretBackendStaticRole#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#rotation_period DatabaseSecretBackendStaticRole#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * A cron-style string that will define the schedule on which rotations should occur.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#rotation_schedule DatabaseSecretBackendStaticRole#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#rotation_schedule DatabaseSecretBackendStaticRole#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * Database statements to execute to rotate the password for the configured database user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#rotation_statements DatabaseSecretBackendStaticRole#rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#rotation_statements DatabaseSecretBackendStaticRole#rotation_statements}
   */
   readonly rotationStatements?: string[];
   /**
   * The amount of time in seconds in which the rotations are allowed to occur starting from a given rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#rotation_window DatabaseSecretBackendStaticRole#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#rotation_window DatabaseSecretBackendStaticRole#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * The password corresponding to the username in the database. Required when using the Rootless Password Rotation workflow for static roles. Deprecated in favor of password_wo field introduced in Vault 1.19.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#self_managed_password DatabaseSecretBackendStaticRole#self_managed_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#self_managed_password DatabaseSecretBackendStaticRole#self_managed_password}
   */
   readonly selfManagedPassword?: string;
   /**
   * Skip rotation of the password on import.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#skip_import_rotation DatabaseSecretBackendStaticRole#skip_import_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#skip_import_rotation DatabaseSecretBackendStaticRole#skip_import_rotation}
   */
-  readonly skipImportRotation?: boolean | cdktf.IResolvable;
+  readonly skipImportRotation?: boolean | cdktn.IResolvable;
   /**
   * The database username that this role corresponds to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#username DatabaseSecretBackendStaticRole#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#username DatabaseSecretBackendStaticRole#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role}
 */
-export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
+export class DatabaseSecretBackendStaticRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -125,14 +125,14 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DatabaseSecretBackendStaticRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DatabaseSecretBackendStaticRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseSecretBackendStaticRole to import
-  * @param importFromId The id of the existing DatabaseSecretBackendStaticRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseSecretBackendStaticRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseSecretBackendStaticRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_database_secret_backend_static_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_database_secret_backend_static_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -140,7 +140,7 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secret_backend_static_role vault_database_secret_backend_static_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -151,7 +151,7 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_database_secret_backend_static_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -400,11 +400,11 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
   }
 
   // skip_import_rotation - computed: false, optional: true, required: false
-  private _skipImportRotation?: boolean | cdktf.IResolvable; 
+  private _skipImportRotation?: boolean | cdktn.IResolvable; 
   public get skipImportRotation() {
     return this.getBooleanAttribute('skip_import_rotation');
   }
-  public set skipImportRotation(value: boolean | cdktf.IResolvable) {
+  public set skipImportRotation(value: boolean | cdktn.IResolvable) {
     this._skipImportRotation = value;
   }
   public resetSkipImportRotation() {
@@ -434,119 +434,119 @@ export class DatabaseSecretBackendStaticRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      credential_config: cdktf.hashMapper(cdktf.stringToTerraform)(this._credentialConfig),
-      credential_type: cdktf.stringToTerraform(this._credentialType),
-      db_name: cdktf.stringToTerraform(this._dbName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      password_wo: cdktf.stringToTerraform(this._passwordWo),
-      password_wo_version: cdktf.numberToTerraform(this._passwordWoVersion),
-      rotation_period: cdktf.numberToTerraform(this._rotationPeriod),
-      rotation_schedule: cdktf.stringToTerraform(this._rotationSchedule),
-      rotation_statements: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rotationStatements),
-      rotation_window: cdktf.numberToTerraform(this._rotationWindow),
-      self_managed_password: cdktf.stringToTerraform(this._selfManagedPassword),
-      skip_import_rotation: cdktf.booleanToTerraform(this._skipImportRotation),
-      username: cdktf.stringToTerraform(this._username),
+      backend: cdktn.stringToTerraform(this._backend),
+      credential_config: cdktn.hashMapper(cdktn.stringToTerraform)(this._credentialConfig),
+      credential_type: cdktn.stringToTerraform(this._credentialType),
+      db_name: cdktn.stringToTerraform(this._dbName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      password_wo: cdktn.stringToTerraform(this._passwordWo),
+      password_wo_version: cdktn.numberToTerraform(this._passwordWoVersion),
+      rotation_period: cdktn.numberToTerraform(this._rotationPeriod),
+      rotation_schedule: cdktn.stringToTerraform(this._rotationSchedule),
+      rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(this._rotationStatements),
+      rotation_window: cdktn.numberToTerraform(this._rotationWindow),
+      self_managed_password: cdktn.stringToTerraform(this._selfManagedPassword),
+      skip_import_rotation: cdktn.booleanToTerraform(this._skipImportRotation),
+      username: cdktn.stringToTerraform(this._username),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       credential_config: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._credentialConfig),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._credentialConfig),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       credential_type: {
-        value: cdktf.stringToHclTerraform(this._credentialType),
+        value: cdktn.stringToHclTerraform(this._credentialType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       db_name: {
-        value: cdktf.stringToHclTerraform(this._dbName),
+        value: cdktn.stringToHclTerraform(this._dbName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password_wo: {
-        value: cdktf.stringToHclTerraform(this._passwordWo),
+        value: cdktn.stringToHclTerraform(this._passwordWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       password_wo_version: {
-        value: cdktf.numberToHclTerraform(this._passwordWoVersion),
+        value: cdktn.numberToHclTerraform(this._passwordWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       rotation_period: {
-        value: cdktf.numberToHclTerraform(this._rotationPeriod),
+        value: cdktn.numberToHclTerraform(this._rotationPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       rotation_schedule: {
-        value: cdktf.stringToHclTerraform(this._rotationSchedule),
+        value: cdktn.stringToHclTerraform(this._rotationSchedule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rotation_statements: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._rotationStatements),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._rotationStatements),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       rotation_window: {
-        value: cdktf.numberToHclTerraform(this._rotationWindow),
+        value: cdktn.numberToHclTerraform(this._rotationWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       self_managed_password: {
-        value: cdktf.stringToHclTerraform(this._selfManagedPassword),
+        value: cdktn.stringToHclTerraform(this._selfManagedPassword),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_import_rotation: {
-        value: cdktf.booleanToHclTerraform(this._skipImportRotation),
+        value: cdktn.booleanToHclTerraform(this._skipImportRotation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       username: {
-        value: cdktf.stringToHclTerraform(this._username),
+        value: cdktn.stringToHclTerraform(this._username),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

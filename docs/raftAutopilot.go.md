@@ -1,28 +1,28 @@
-# `raftAutopilot` Submodule <a name="`raftAutopilot` Submodule" id="@cdktf/provider-vault.raftAutopilot"></a>
+# `raftAutopilot` Submodule <a name="`raftAutopilot` Submodule" id="@cdktn/provider-vault.raftAutopilot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### RaftAutopilot <a name="RaftAutopilot" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot"></a>
+### RaftAutopilot <a name="RaftAutopilot" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot vault_raft_autopilot}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot vault_raft_autopilot}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/raftautopilot"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/raftautopilot"
 
 raftautopilot.NewRaftAutopilot(scope Construct, id *string, config RaftAutopilotConfig) RaftAutopilot
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig">RaftAutopilotConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig">RaftAutopilotConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig">RaftAutopilotConfig</a>
+- *Type:* <a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig">RaftAutopilotConfig</a>
 
 ---
 
@@ -50,42 +50,42 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetCleanupDeadServers">ResetCleanupDeadServers</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetDeadServerLastContactThreshold">ResetDeadServerLastContactThreshold</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetDisableUpgradeMigration">ResetDisableUpgradeMigration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetLastContactThreshold">ResetLastContactThreshold</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetMaxTrailingLogs">ResetMaxTrailingLogs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetMinQuorum">ResetMinQuorum</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetNamespace">ResetNamespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetServerStabilizationTime">ResetServerStabilizationTime</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetCleanupDeadServers">ResetCleanupDeadServers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetDeadServerLastContactThreshold">ResetDeadServerLastContactThreshold</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetDisableUpgradeMigration">ResetDisableUpgradeMigration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetLastContactThreshold">ResetLastContactThreshold</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetMaxTrailingLogs">ResetMaxTrailingLogs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetMinQuorum">ResetMinQuorum</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetServerStabilizationTime">ResetServerStabilizationTime</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.toString"></a>
 
 ```go
 func ToString() *string
@@ -93,25 +93,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -119,7 +119,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -127,7 +127,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -135,19 +135,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -155,7 +155,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -163,7 +163,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -171,151 +171,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -325,7 +325,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -333,7 +333,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -341,7 +341,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -357,7 +357,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -365,7 +365,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -373,55 +373,55 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetCleanupDeadServers` <a name="ResetCleanupDeadServers" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetCleanupDeadServers"></a>
+##### `ResetCleanupDeadServers` <a name="ResetCleanupDeadServers" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetCleanupDeadServers"></a>
 
 ```go
 func ResetCleanupDeadServers()
 ```
 
-##### `ResetDeadServerLastContactThreshold` <a name="ResetDeadServerLastContactThreshold" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetDeadServerLastContactThreshold"></a>
+##### `ResetDeadServerLastContactThreshold` <a name="ResetDeadServerLastContactThreshold" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetDeadServerLastContactThreshold"></a>
 
 ```go
 func ResetDeadServerLastContactThreshold()
 ```
 
-##### `ResetDisableUpgradeMigration` <a name="ResetDisableUpgradeMigration" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetDisableUpgradeMigration"></a>
+##### `ResetDisableUpgradeMigration` <a name="ResetDisableUpgradeMigration" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetDisableUpgradeMigration"></a>
 
 ```go
 func ResetDisableUpgradeMigration()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetLastContactThreshold` <a name="ResetLastContactThreshold" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetLastContactThreshold"></a>
+##### `ResetLastContactThreshold` <a name="ResetLastContactThreshold" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetLastContactThreshold"></a>
 
 ```go
 func ResetLastContactThreshold()
 ```
 
-##### `ResetMaxTrailingLogs` <a name="ResetMaxTrailingLogs" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetMaxTrailingLogs"></a>
+##### `ResetMaxTrailingLogs` <a name="ResetMaxTrailingLogs" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetMaxTrailingLogs"></a>
 
 ```go
 func ResetMaxTrailingLogs()
 ```
 
-##### `ResetMinQuorum` <a name="ResetMinQuorum" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetMinQuorum"></a>
+##### `ResetMinQuorum` <a name="ResetMinQuorum" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetMinQuorum"></a>
 
 ```go
 func ResetMinQuorum()
 ```
 
-##### `ResetNamespace` <a name="ResetNamespace" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetNamespace"></a>
+##### `ResetNamespace` <a name="ResetNamespace" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetNamespace"></a>
 
 ```go
 func ResetNamespace()
 ```
 
-##### `ResetServerStabilizationTime` <a name="ResetServerStabilizationTime" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.resetServerStabilizationTime"></a>
+##### `ResetServerStabilizationTime` <a name="ResetServerStabilizationTime" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.resetServerStabilizationTime"></a>
 
 ```go
 func ResetServerStabilizationTime()
@@ -431,17 +431,17 @@ func ResetServerStabilizationTime()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a RaftAutopilot resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a RaftAutopilot resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/raftautopilot"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/raftautopilot"
 
 raftautopilot.RaftAutopilot_IsConstruct(x interface{}) *bool
 ```
@@ -462,7 +462,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -470,45 +470,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/raftautopilot"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/raftautopilot"
 
 raftautopilot.RaftAutopilot_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/raftautopilot"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/raftautopilot"
 
 raftautopilot.RaftAutopilot_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/raftautopilot"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/raftautopilot"
 
 raftautopilot.RaftAutopilot_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a RaftAutopilot resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a RaftAutopilot resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -516,7 +516,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -524,19 +524,19 @@ The construct id used in the generated config for the RaftAutopilot to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing RaftAutopilot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the RaftAutopilot to import is found.
 
@@ -546,42 +546,42 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.cleanupDeadServersInput">CleanupDeadServersInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.deadServerLastContactThresholdInput">DeadServerLastContactThresholdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.disableUpgradeMigrationInput">DisableUpgradeMigrationInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.lastContactThresholdInput">LastContactThresholdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.maxTrailingLogsInput">MaxTrailingLogsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.minQuorumInput">MinQuorumInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.serverStabilizationTimeInput">ServerStabilizationTimeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.cleanupDeadServers">CleanupDeadServers</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.deadServerLastContactThreshold">DeadServerLastContactThreshold</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.disableUpgradeMigration">DisableUpgradeMigration</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.lastContactThreshold">LastContactThreshold</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.maxTrailingLogs">MaxTrailingLogs</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.minQuorum">MinQuorum</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.serverStabilizationTime">ServerStabilizationTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.cleanupDeadServersInput">CleanupDeadServersInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.deadServerLastContactThresholdInput">DeadServerLastContactThresholdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.disableUpgradeMigrationInput">DisableUpgradeMigrationInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.lastContactThresholdInput">LastContactThresholdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.maxTrailingLogsInput">MaxTrailingLogsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.minQuorumInput">MinQuorumInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.serverStabilizationTimeInput">ServerStabilizationTimeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.cleanupDeadServers">CleanupDeadServers</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.deadServerLastContactThreshold">DeadServerLastContactThreshold</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.disableUpgradeMigration">DisableUpgradeMigration</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.lastContactThreshold">LastContactThreshold</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.maxTrailingLogs">MaxTrailingLogs</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.minQuorum">MinQuorum</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.serverStabilizationTime">ServerStabilizationTime</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.node"></a>
 
 ```go
 func Node() Node
@@ -593,17 +593,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -613,7 +613,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -623,7 +623,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -633,7 +633,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -643,17 +643,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -663,7 +663,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -673,7 +673,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -683,37 +683,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -723,7 +723,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `CleanupDeadServersInput`<sup>Optional</sup> <a name="CleanupDeadServersInput" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.cleanupDeadServersInput"></a>
+##### `CleanupDeadServersInput`<sup>Optional</sup> <a name="CleanupDeadServersInput" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.cleanupDeadServersInput"></a>
 
 ```go
 func CleanupDeadServersInput() interface{}
@@ -733,7 +733,7 @@ func CleanupDeadServersInput() interface{}
 
 ---
 
-##### `DeadServerLastContactThresholdInput`<sup>Optional</sup> <a name="DeadServerLastContactThresholdInput" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.deadServerLastContactThresholdInput"></a>
+##### `DeadServerLastContactThresholdInput`<sup>Optional</sup> <a name="DeadServerLastContactThresholdInput" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.deadServerLastContactThresholdInput"></a>
 
 ```go
 func DeadServerLastContactThresholdInput() *string
@@ -743,7 +743,7 @@ func DeadServerLastContactThresholdInput() *string
 
 ---
 
-##### `DisableUpgradeMigrationInput`<sup>Optional</sup> <a name="DisableUpgradeMigrationInput" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.disableUpgradeMigrationInput"></a>
+##### `DisableUpgradeMigrationInput`<sup>Optional</sup> <a name="DisableUpgradeMigrationInput" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.disableUpgradeMigrationInput"></a>
 
 ```go
 func DisableUpgradeMigrationInput() interface{}
@@ -753,7 +753,7 @@ func DisableUpgradeMigrationInput() interface{}
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -763,7 +763,7 @@ func IdInput() *string
 
 ---
 
-##### `LastContactThresholdInput`<sup>Optional</sup> <a name="LastContactThresholdInput" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.lastContactThresholdInput"></a>
+##### `LastContactThresholdInput`<sup>Optional</sup> <a name="LastContactThresholdInput" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.lastContactThresholdInput"></a>
 
 ```go
 func LastContactThresholdInput() *string
@@ -773,7 +773,7 @@ func LastContactThresholdInput() *string
 
 ---
 
-##### `MaxTrailingLogsInput`<sup>Optional</sup> <a name="MaxTrailingLogsInput" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.maxTrailingLogsInput"></a>
+##### `MaxTrailingLogsInput`<sup>Optional</sup> <a name="MaxTrailingLogsInput" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.maxTrailingLogsInput"></a>
 
 ```go
 func MaxTrailingLogsInput() *f64
@@ -783,7 +783,7 @@ func MaxTrailingLogsInput() *f64
 
 ---
 
-##### `MinQuorumInput`<sup>Optional</sup> <a name="MinQuorumInput" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.minQuorumInput"></a>
+##### `MinQuorumInput`<sup>Optional</sup> <a name="MinQuorumInput" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.minQuorumInput"></a>
 
 ```go
 func MinQuorumInput() *f64
@@ -793,7 +793,7 @@ func MinQuorumInput() *f64
 
 ---
 
-##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.namespaceInput"></a>
+##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.namespaceInput"></a>
 
 ```go
 func NamespaceInput() *string
@@ -803,7 +803,7 @@ func NamespaceInput() *string
 
 ---
 
-##### `ServerStabilizationTimeInput`<sup>Optional</sup> <a name="ServerStabilizationTimeInput" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.serverStabilizationTimeInput"></a>
+##### `ServerStabilizationTimeInput`<sup>Optional</sup> <a name="ServerStabilizationTimeInput" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.serverStabilizationTimeInput"></a>
 
 ```go
 func ServerStabilizationTimeInput() *string
@@ -813,7 +813,7 @@ func ServerStabilizationTimeInput() *string
 
 ---
 
-##### `CleanupDeadServers`<sup>Required</sup> <a name="CleanupDeadServers" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.cleanupDeadServers"></a>
+##### `CleanupDeadServers`<sup>Required</sup> <a name="CleanupDeadServers" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.cleanupDeadServers"></a>
 
 ```go
 func CleanupDeadServers() interface{}
@@ -823,7 +823,7 @@ func CleanupDeadServers() interface{}
 
 ---
 
-##### `DeadServerLastContactThreshold`<sup>Required</sup> <a name="DeadServerLastContactThreshold" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.deadServerLastContactThreshold"></a>
+##### `DeadServerLastContactThreshold`<sup>Required</sup> <a name="DeadServerLastContactThreshold" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.deadServerLastContactThreshold"></a>
 
 ```go
 func DeadServerLastContactThreshold() *string
@@ -833,7 +833,7 @@ func DeadServerLastContactThreshold() *string
 
 ---
 
-##### `DisableUpgradeMigration`<sup>Required</sup> <a name="DisableUpgradeMigration" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.disableUpgradeMigration"></a>
+##### `DisableUpgradeMigration`<sup>Required</sup> <a name="DisableUpgradeMigration" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.disableUpgradeMigration"></a>
 
 ```go
 func DisableUpgradeMigration() interface{}
@@ -843,7 +843,7 @@ func DisableUpgradeMigration() interface{}
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.id"></a>
 
 ```go
 func Id() *string
@@ -853,7 +853,7 @@ func Id() *string
 
 ---
 
-##### `LastContactThreshold`<sup>Required</sup> <a name="LastContactThreshold" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.lastContactThreshold"></a>
+##### `LastContactThreshold`<sup>Required</sup> <a name="LastContactThreshold" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.lastContactThreshold"></a>
 
 ```go
 func LastContactThreshold() *string
@@ -863,7 +863,7 @@ func LastContactThreshold() *string
 
 ---
 
-##### `MaxTrailingLogs`<sup>Required</sup> <a name="MaxTrailingLogs" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.maxTrailingLogs"></a>
+##### `MaxTrailingLogs`<sup>Required</sup> <a name="MaxTrailingLogs" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.maxTrailingLogs"></a>
 
 ```go
 func MaxTrailingLogs() *f64
@@ -873,7 +873,7 @@ func MaxTrailingLogs() *f64
 
 ---
 
-##### `MinQuorum`<sup>Required</sup> <a name="MinQuorum" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.minQuorum"></a>
+##### `MinQuorum`<sup>Required</sup> <a name="MinQuorum" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.minQuorum"></a>
 
 ```go
 func MinQuorum() *f64
@@ -883,7 +883,7 @@ func MinQuorum() *f64
 
 ---
 
-##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.namespace"></a>
+##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.namespace"></a>
 
 ```go
 func Namespace() *string
@@ -893,7 +893,7 @@ func Namespace() *string
 
 ---
 
-##### `ServerStabilizationTime`<sup>Required</sup> <a name="ServerStabilizationTime" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.serverStabilizationTime"></a>
+##### `ServerStabilizationTime`<sup>Required</sup> <a name="ServerStabilizationTime" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.serverStabilizationTime"></a>
 
 ```go
 func ServerStabilizationTime() *string
@@ -907,11 +907,11 @@ func ServerStabilizationTime() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilot.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilot.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -923,20 +923,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### RaftAutopilotConfig <a name="RaftAutopilotConfig" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig"></a>
+### RaftAutopilotConfig <a name="RaftAutopilotConfig" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/raftautopilot"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/raftautopilot"
 
 &raftautopilot.RaftAutopilotConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	CleanupDeadServers: interface{},
 	DeadServerLastContactThreshold: *string,
@@ -954,26 +954,26 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/raftautopilot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.cleanupDeadServers">CleanupDeadServers</a></code> | <code>interface{}</code> | Specifies whether to remove dead server nodes periodically or when a new server joins. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.deadServerLastContactThreshold">DeadServerLastContactThreshold</a></code> | <code>*string</code> | Limit the amount of time a server can go without leader contact before being considered failed. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.disableUpgradeMigration">DisableUpgradeMigration</a></code> | <code>interface{}</code> | Disables automatically upgrading Vault using autopilot. (Enterprise-only). |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#id RaftAutopilot#id}. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.lastContactThreshold">LastContactThreshold</a></code> | <code>*string</code> | Limit the amount of time a server can go without leader contact before being considered unhealthy. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.maxTrailingLogs">MaxTrailingLogs</a></code> | <code>*f64</code> | Maximum number of log entries in the Raft log that a server can be behind its leader before being considered unhealthy. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.minQuorum">MinQuorum</a></code> | <code>*f64</code> | Minimum number of servers allowed in a cluster before autopilot can prune dead servers. |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.serverStabilizationTime">ServerStabilizationTime</a></code> | <code>*string</code> | Minimum amount of time a server must be stable in the 'healthy' state before being added to the cluster. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.cleanupDeadServers">CleanupDeadServers</a></code> | <code>interface{}</code> | Specifies whether to remove dead server nodes periodically or when a new server joins. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.deadServerLastContactThreshold">DeadServerLastContactThreshold</a></code> | <code>*string</code> | Limit the amount of time a server can go without leader contact before being considered failed. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.disableUpgradeMigration">DisableUpgradeMigration</a></code> | <code>interface{}</code> | Disables automatically upgrading Vault using autopilot. (Enterprise-only). |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#id RaftAutopilot#id}. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.lastContactThreshold">LastContactThreshold</a></code> | <code>*string</code> | Limit the amount of time a server can go without leader contact before being considered unhealthy. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.maxTrailingLogs">MaxTrailingLogs</a></code> | <code>*f64</code> | Maximum number of log entries in the Raft log that a server can be behind its leader before being considered unhealthy. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.minQuorum">MinQuorum</a></code> | <code>*f64</code> | Minimum number of servers allowed in a cluster before autopilot can prune dead servers. |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.serverStabilizationTime">ServerStabilizationTime</a></code> | <code>*string</code> | Minimum amount of time a server must be stable in the 'healthy' state before being added to the cluster. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -983,7 +983,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -993,47 +993,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1043,7 +1043,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `CleanupDeadServers`<sup>Optional</sup> <a name="CleanupDeadServers" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.cleanupDeadServers"></a>
+##### `CleanupDeadServers`<sup>Optional</sup> <a name="CleanupDeadServers" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.cleanupDeadServers"></a>
 
 ```go
 CleanupDeadServers interface{}
@@ -1055,11 +1055,11 @@ Specifies whether to remove dead server nodes periodically or when a new server 
 
 This requires that min-quorum is also set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#cleanup_dead_servers RaftAutopilot#cleanup_dead_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#cleanup_dead_servers RaftAutopilot#cleanup_dead_servers}
 
 ---
 
-##### `DeadServerLastContactThreshold`<sup>Optional</sup> <a name="DeadServerLastContactThreshold" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.deadServerLastContactThreshold"></a>
+##### `DeadServerLastContactThreshold`<sup>Optional</sup> <a name="DeadServerLastContactThreshold" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.deadServerLastContactThreshold"></a>
 
 ```go
 DeadServerLastContactThreshold *string
@@ -1071,11 +1071,11 @@ Limit the amount of time a server can go without leader contact before being con
 
 This only takes effect when cleanup_dead_servers is set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
 
 ---
 
-##### `DisableUpgradeMigration`<sup>Optional</sup> <a name="DisableUpgradeMigration" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.disableUpgradeMigration"></a>
+##### `DisableUpgradeMigration`<sup>Optional</sup> <a name="DisableUpgradeMigration" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.disableUpgradeMigration"></a>
 
 ```go
 DisableUpgradeMigration interface{}
@@ -1085,11 +1085,11 @@ DisableUpgradeMigration interface{}
 
 Disables automatically upgrading Vault using autopilot. (Enterprise-only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1097,14 +1097,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#id RaftAutopilot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#id RaftAutopilot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `LastContactThreshold`<sup>Optional</sup> <a name="LastContactThreshold" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.lastContactThreshold"></a>
+##### `LastContactThreshold`<sup>Optional</sup> <a name="LastContactThreshold" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.lastContactThreshold"></a>
 
 ```go
 LastContactThreshold *string
@@ -1114,11 +1114,11 @@ LastContactThreshold *string
 
 Limit the amount of time a server can go without leader contact before being considered unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#last_contact_threshold RaftAutopilot#last_contact_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#last_contact_threshold RaftAutopilot#last_contact_threshold}
 
 ---
 
-##### `MaxTrailingLogs`<sup>Optional</sup> <a name="MaxTrailingLogs" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.maxTrailingLogs"></a>
+##### `MaxTrailingLogs`<sup>Optional</sup> <a name="MaxTrailingLogs" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.maxTrailingLogs"></a>
 
 ```go
 MaxTrailingLogs *f64
@@ -1128,11 +1128,11 @@ MaxTrailingLogs *f64
 
 Maximum number of log entries in the Raft log that a server can be behind its leader before being considered unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#max_trailing_logs RaftAutopilot#max_trailing_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#max_trailing_logs RaftAutopilot#max_trailing_logs}
 
 ---
 
-##### `MinQuorum`<sup>Optional</sup> <a name="MinQuorum" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.minQuorum"></a>
+##### `MinQuorum`<sup>Optional</sup> <a name="MinQuorum" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.minQuorum"></a>
 
 ```go
 MinQuorum *f64
@@ -1144,11 +1144,11 @@ Minimum number of servers allowed in a cluster before autopilot can prune dead s
 
 This should at least be 3. Applicable only for voting nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#min_quorum RaftAutopilot#min_quorum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#min_quorum RaftAutopilot#min_quorum}
 
 ---
 
-##### `Namespace`<sup>Optional</sup> <a name="Namespace" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.namespace"></a>
+##### `Namespace`<sup>Optional</sup> <a name="Namespace" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.namespace"></a>
 
 ```go
 Namespace *string
@@ -1158,11 +1158,11 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#namespace RaftAutopilot#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#namespace RaftAutopilot#namespace}
 
 ---
 
-##### `ServerStabilizationTime`<sup>Optional</sup> <a name="ServerStabilizationTime" id="@cdktf/provider-vault.raftAutopilot.RaftAutopilotConfig.property.serverStabilizationTime"></a>
+##### `ServerStabilizationTime`<sup>Optional</sup> <a name="ServerStabilizationTime" id="@cdktn/provider-vault.raftAutopilot.RaftAutopilotConfig.property.serverStabilizationTime"></a>
 
 ```go
 ServerStabilizationTime *string
@@ -1172,7 +1172,7 @@ ServerStabilizationTime *string
 
 Minimum amount of time a server must be stable in the 'healthy' state before being added to the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#server_stabilization_time RaftAutopilot#server_stabilization_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#server_stabilization_time RaftAutopilot#server_stabilization_time}
 
 ---
 

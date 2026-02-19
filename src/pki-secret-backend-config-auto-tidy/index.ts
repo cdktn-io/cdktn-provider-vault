@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PkiSecretBackendConfigAutoTidyConfig extends cdktf.TerraformMetaArguments {
+export interface PkiSecretBackendConfigAutoTidyConfig extends cdktn.TerraformMetaArguments {
   /**
   * The amount of time that must pass after creation that an account with no orders is marked revoked, and the amount of time after being marked revoked or deactivated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#acme_account_safety_buffer PkiSecretBackendConfigAutoTidy#acme_account_safety_buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#acme_account_safety_buffer PkiSecretBackendConfigAutoTidy#acme_account_safety_buffer}
   */
   readonly acmeAccountSafetyBuffer?: string;
   /**
   * The path of the PKI secret backend the resource belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#backend PkiSecretBackendConfigAutoTidy#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#backend PkiSecretBackendConfigAutoTidy#backend}
   */
   readonly backend: string;
   /**
   * Specifies whether automatic tidy is enabled or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#enabled PkiSecretBackendConfigAutoTidy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#enabled PkiSecretBackendConfigAutoTidy#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#id PkiSecretBackendConfigAutoTidy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#id PkiSecretBackendConfigAutoTidy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,129 +40,129 @@ export interface PkiSecretBackendConfigAutoTidyConfig extends cdktf.TerraformMet
   /**
   * Interval at which to run an auto-tidy operation. This is the time between tidy invocations (after one finishes to the start of the next).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#interval_duration PkiSecretBackendConfigAutoTidy#interval_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#interval_duration PkiSecretBackendConfigAutoTidy#interval_duration}
   */
   readonly intervalDuration?: string;
   /**
   * The amount of extra time that must have passed beyond issuer's expiration before it is removed from the backend storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#issuer_safety_buffer PkiSecretBackendConfigAutoTidy#issuer_safety_buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#issuer_safety_buffer PkiSecretBackendConfigAutoTidy#issuer_safety_buffer}
   */
   readonly issuerSafetyBuffer?: string;
   /**
   * This configures whether stored certificate are counted upon initialization of the backend, and whether during normal operation, a running count of certificates stored is maintained.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#maintain_stored_certificate_counts PkiSecretBackendConfigAutoTidy#maintain_stored_certificate_counts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#maintain_stored_certificate_counts PkiSecretBackendConfigAutoTidy#maintain_stored_certificate_counts}
   */
-  readonly maintainStoredCertificateCounts?: boolean | cdktf.IResolvable;
+  readonly maintainStoredCertificateCounts?: boolean | cdktn.IResolvable;
   /**
   * The maximum amount of time auto-tidy will be delayed after startup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#max_startup_backoff_duration PkiSecretBackendConfigAutoTidy#max_startup_backoff_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#max_startup_backoff_duration PkiSecretBackendConfigAutoTidy#max_startup_backoff_duration}
   */
   readonly maxStartupBackoffDuration?: string;
   /**
   * The minimum amount of time auto-tidy will be delayed after startup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#min_startup_backoff_duration PkiSecretBackendConfigAutoTidy#min_startup_backoff_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#min_startup_backoff_duration PkiSecretBackendConfigAutoTidy#min_startup_backoff_duration}
   */
   readonly minStartupBackoffDuration?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#namespace PkiSecretBackendConfigAutoTidy#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#namespace PkiSecretBackendConfigAutoTidy#namespace}
   */
   readonly namespace?: string;
   /**
   * The amount of time to wait between processing certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#pause_duration PkiSecretBackendConfigAutoTidy#pause_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#pause_duration PkiSecretBackendConfigAutoTidy#pause_duration}
   */
   readonly pauseDuration?: string;
   /**
   * This configures whether the stored certificate count is published to the metrics consumer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#publish_stored_certificate_count_metrics PkiSecretBackendConfigAutoTidy#publish_stored_certificate_count_metrics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#publish_stored_certificate_count_metrics PkiSecretBackendConfigAutoTidy#publish_stored_certificate_count_metrics}
   */
-  readonly publishStoredCertificateCountMetrics?: boolean | cdktf.IResolvable;
+  readonly publishStoredCertificateCountMetrics?: boolean | cdktn.IResolvable;
   /**
   * The amount of time that must pass from the cross-cluster revocation request being initiated to when it will be slated for removal.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#revocation_queue_safety_buffer PkiSecretBackendConfigAutoTidy#revocation_queue_safety_buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#revocation_queue_safety_buffer PkiSecretBackendConfigAutoTidy#revocation_queue_safety_buffer}
   */
   readonly revocationQueueSafetyBuffer?: string;
   /**
   * The amount of extra time that must have passed beyond certificate expiration before it is removed from the backend storage and/or revocation list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#safety_buffer PkiSecretBackendConfigAutoTidy#safety_buffer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#safety_buffer PkiSecretBackendConfigAutoTidy#safety_buffer}
   */
   readonly safetyBuffer?: string;
   /**
   * Set to true to enable tidying ACME accounts, orders and authorizations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_acme PkiSecretBackendConfigAutoTidy#tidy_acme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_acme PkiSecretBackendConfigAutoTidy#tidy_acme}
   */
-  readonly tidyAcme?: boolean | cdktf.IResolvable;
+  readonly tidyAcme?: boolean | cdktn.IResolvable;
   /**
   * Set to true to enable tidying up certificate metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_cert_metadata PkiSecretBackendConfigAutoTidy#tidy_cert_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_cert_metadata PkiSecretBackendConfigAutoTidy#tidy_cert_metadata}
   */
-  readonly tidyCertMetadata?: boolean | cdktf.IResolvable;
+  readonly tidyCertMetadata?: boolean | cdktn.IResolvable;
   /**
   * Set to true to enable tidying up the certificate store
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_cert_store PkiSecretBackendConfigAutoTidy#tidy_cert_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_cert_store PkiSecretBackendConfigAutoTidy#tidy_cert_store}
   */
-  readonly tidyCertStore?: boolean | cdktf.IResolvable;
+  readonly tidyCertStore?: boolean | cdktn.IResolvable;
   /**
   * Set to true to enable tidying up the CMPv2 nonce store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_cmpv2_nonce_store PkiSecretBackendConfigAutoTidy#tidy_cmpv2_nonce_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_cmpv2_nonce_store PkiSecretBackendConfigAutoTidy#tidy_cmpv2_nonce_store}
   */
-  readonly tidyCmpv2NonceStore?: boolean | cdktf.IResolvable;
+  readonly tidyCmpv2NonceStore?: boolean | cdktn.IResolvable;
   /**
   * Set to true to enable tidying up the cross-cluster revoked certificate store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_cross_cluster_revoked_certs PkiSecretBackendConfigAutoTidy#tidy_cross_cluster_revoked_certs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_cross_cluster_revoked_certs PkiSecretBackendConfigAutoTidy#tidy_cross_cluster_revoked_certs}
   */
-  readonly tidyCrossClusterRevokedCerts?: boolean | cdktf.IResolvable;
+  readonly tidyCrossClusterRevokedCerts?: boolean | cdktn.IResolvable;
   /**
   * Set to true to automatically remove expired issuers past the issuer_safety_buffer. No keys will be removed as part of this operation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_expired_issuers PkiSecretBackendConfigAutoTidy#tidy_expired_issuers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_expired_issuers PkiSecretBackendConfigAutoTidy#tidy_expired_issuers}
   */
-  readonly tidyExpiredIssuers?: boolean | cdktf.IResolvable;
+  readonly tidyExpiredIssuers?: boolean | cdktn.IResolvable;
   /**
   * Set to true to move the legacy ca_bundle from /config/ca_bundle to /config/ca_bundle.bak.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_move_legacy_ca_bundle PkiSecretBackendConfigAutoTidy#tidy_move_legacy_ca_bundle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_move_legacy_ca_bundle PkiSecretBackendConfigAutoTidy#tidy_move_legacy_ca_bundle}
   */
-  readonly tidyMoveLegacyCaBundle?: boolean | cdktf.IResolvable;
+  readonly tidyMoveLegacyCaBundle?: boolean | cdktn.IResolvable;
   /**
   * Set to true to remove stale revocation queue entries that haven't been confirmed by any active cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_revocation_queue PkiSecretBackendConfigAutoTidy#tidy_revocation_queue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_revocation_queue PkiSecretBackendConfigAutoTidy#tidy_revocation_queue}
   */
-  readonly tidyRevocationQueue?: boolean | cdktf.IResolvable;
+  readonly tidyRevocationQueue?: boolean | cdktn.IResolvable;
   /**
   * Set to true to validate issuer associations on revocation entries. This helps increase the performance of CRL building and OCSP responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_revoked_cert_issuer_associations PkiSecretBackendConfigAutoTidy#tidy_revoked_cert_issuer_associations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_revoked_cert_issuer_associations PkiSecretBackendConfigAutoTidy#tidy_revoked_cert_issuer_associations}
   */
-  readonly tidyRevokedCertIssuerAssociations?: boolean | cdktf.IResolvable;
+  readonly tidyRevokedCertIssuerAssociations?: boolean | cdktn.IResolvable;
   /**
   * Set to true to remove all invalid and expired certificates from storage. A revoked storage entry is considered invalid if the entry is empty, or the value within the entry is empty. If a certificate is removed due to expiry, the entry will also be removed from the CRL, and the CRL will be rotated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_revoked_certs PkiSecretBackendConfigAutoTidy#tidy_revoked_certs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#tidy_revoked_certs PkiSecretBackendConfigAutoTidy#tidy_revoked_certs}
   */
-  readonly tidyRevokedCerts?: boolean | cdktf.IResolvable;
+  readonly tidyRevokedCerts?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy}
 */
-export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
+export class PkiSecretBackendConfigAutoTidy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -173,14 +173,14 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PkiSecretBackendConfigAutoTidy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PkiSecretBackendConfigAutoTidy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PkiSecretBackendConfigAutoTidy to import
-  * @param importFromId The id of the existing PkiSecretBackendConfigAutoTidy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PkiSecretBackendConfigAutoTidy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PkiSecretBackendConfigAutoTidy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_config_auto_tidy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_config_auto_tidy", importId: importFromId, provider });
       }
 
   // ===========
@@ -188,7 +188,7 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_auto_tidy vault_pki_secret_backend_config_auto_tidy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -199,7 +199,7 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_config_auto_tidy',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -270,11 +270,11 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -331,11 +331,11 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   }
 
   // maintain_stored_certificate_counts - computed: false, optional: true, required: false
-  private _maintainStoredCertificateCounts?: boolean | cdktf.IResolvable; 
+  private _maintainStoredCertificateCounts?: boolean | cdktn.IResolvable; 
   public get maintainStoredCertificateCounts() {
     return this.getBooleanAttribute('maintain_stored_certificate_counts');
   }
-  public set maintainStoredCertificateCounts(value: boolean | cdktf.IResolvable) {
+  public set maintainStoredCertificateCounts(value: boolean | cdktn.IResolvable) {
     this._maintainStoredCertificateCounts = value;
   }
   public resetMaintainStoredCertificateCounts() {
@@ -411,11 +411,11 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   }
 
   // publish_stored_certificate_count_metrics - computed: false, optional: true, required: false
-  private _publishStoredCertificateCountMetrics?: boolean | cdktf.IResolvable; 
+  private _publishStoredCertificateCountMetrics?: boolean | cdktn.IResolvable; 
   public get publishStoredCertificateCountMetrics() {
     return this.getBooleanAttribute('publish_stored_certificate_count_metrics');
   }
-  public set publishStoredCertificateCountMetrics(value: boolean | cdktf.IResolvable) {
+  public set publishStoredCertificateCountMetrics(value: boolean | cdktn.IResolvable) {
     this._publishStoredCertificateCountMetrics = value;
   }
   public resetPublishStoredCertificateCountMetrics() {
@@ -459,11 +459,11 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   }
 
   // tidy_acme - computed: false, optional: true, required: false
-  private _tidyAcme?: boolean | cdktf.IResolvable; 
+  private _tidyAcme?: boolean | cdktn.IResolvable; 
   public get tidyAcme() {
     return this.getBooleanAttribute('tidy_acme');
   }
-  public set tidyAcme(value: boolean | cdktf.IResolvable) {
+  public set tidyAcme(value: boolean | cdktn.IResolvable) {
     this._tidyAcme = value;
   }
   public resetTidyAcme() {
@@ -475,11 +475,11 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   }
 
   // tidy_cert_metadata - computed: false, optional: true, required: false
-  private _tidyCertMetadata?: boolean | cdktf.IResolvable; 
+  private _tidyCertMetadata?: boolean | cdktn.IResolvable; 
   public get tidyCertMetadata() {
     return this.getBooleanAttribute('tidy_cert_metadata');
   }
-  public set tidyCertMetadata(value: boolean | cdktf.IResolvable) {
+  public set tidyCertMetadata(value: boolean | cdktn.IResolvable) {
     this._tidyCertMetadata = value;
   }
   public resetTidyCertMetadata() {
@@ -491,11 +491,11 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   }
 
   // tidy_cert_store - computed: false, optional: true, required: false
-  private _tidyCertStore?: boolean | cdktf.IResolvable; 
+  private _tidyCertStore?: boolean | cdktn.IResolvable; 
   public get tidyCertStore() {
     return this.getBooleanAttribute('tidy_cert_store');
   }
-  public set tidyCertStore(value: boolean | cdktf.IResolvable) {
+  public set tidyCertStore(value: boolean | cdktn.IResolvable) {
     this._tidyCertStore = value;
   }
   public resetTidyCertStore() {
@@ -507,11 +507,11 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   }
 
   // tidy_cmpv2_nonce_store - computed: false, optional: true, required: false
-  private _tidyCmpv2NonceStore?: boolean | cdktf.IResolvable; 
+  private _tidyCmpv2NonceStore?: boolean | cdktn.IResolvable; 
   public get tidyCmpv2NonceStore() {
     return this.getBooleanAttribute('tidy_cmpv2_nonce_store');
   }
-  public set tidyCmpv2NonceStore(value: boolean | cdktf.IResolvable) {
+  public set tidyCmpv2NonceStore(value: boolean | cdktn.IResolvable) {
     this._tidyCmpv2NonceStore = value;
   }
   public resetTidyCmpv2NonceStore() {
@@ -523,11 +523,11 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   }
 
   // tidy_cross_cluster_revoked_certs - computed: false, optional: true, required: false
-  private _tidyCrossClusterRevokedCerts?: boolean | cdktf.IResolvable; 
+  private _tidyCrossClusterRevokedCerts?: boolean | cdktn.IResolvable; 
   public get tidyCrossClusterRevokedCerts() {
     return this.getBooleanAttribute('tidy_cross_cluster_revoked_certs');
   }
-  public set tidyCrossClusterRevokedCerts(value: boolean | cdktf.IResolvable) {
+  public set tidyCrossClusterRevokedCerts(value: boolean | cdktn.IResolvable) {
     this._tidyCrossClusterRevokedCerts = value;
   }
   public resetTidyCrossClusterRevokedCerts() {
@@ -539,11 +539,11 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   }
 
   // tidy_expired_issuers - computed: false, optional: true, required: false
-  private _tidyExpiredIssuers?: boolean | cdktf.IResolvable; 
+  private _tidyExpiredIssuers?: boolean | cdktn.IResolvable; 
   public get tidyExpiredIssuers() {
     return this.getBooleanAttribute('tidy_expired_issuers');
   }
-  public set tidyExpiredIssuers(value: boolean | cdktf.IResolvable) {
+  public set tidyExpiredIssuers(value: boolean | cdktn.IResolvable) {
     this._tidyExpiredIssuers = value;
   }
   public resetTidyExpiredIssuers() {
@@ -555,11 +555,11 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   }
 
   // tidy_move_legacy_ca_bundle - computed: false, optional: true, required: false
-  private _tidyMoveLegacyCaBundle?: boolean | cdktf.IResolvable; 
+  private _tidyMoveLegacyCaBundle?: boolean | cdktn.IResolvable; 
   public get tidyMoveLegacyCaBundle() {
     return this.getBooleanAttribute('tidy_move_legacy_ca_bundle');
   }
-  public set tidyMoveLegacyCaBundle(value: boolean | cdktf.IResolvable) {
+  public set tidyMoveLegacyCaBundle(value: boolean | cdktn.IResolvable) {
     this._tidyMoveLegacyCaBundle = value;
   }
   public resetTidyMoveLegacyCaBundle() {
@@ -571,11 +571,11 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   }
 
   // tidy_revocation_queue - computed: false, optional: true, required: false
-  private _tidyRevocationQueue?: boolean | cdktf.IResolvable; 
+  private _tidyRevocationQueue?: boolean | cdktn.IResolvable; 
   public get tidyRevocationQueue() {
     return this.getBooleanAttribute('tidy_revocation_queue');
   }
-  public set tidyRevocationQueue(value: boolean | cdktf.IResolvable) {
+  public set tidyRevocationQueue(value: boolean | cdktn.IResolvable) {
     this._tidyRevocationQueue = value;
   }
   public resetTidyRevocationQueue() {
@@ -587,11 +587,11 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   }
 
   // tidy_revoked_cert_issuer_associations - computed: false, optional: true, required: false
-  private _tidyRevokedCertIssuerAssociations?: boolean | cdktf.IResolvable; 
+  private _tidyRevokedCertIssuerAssociations?: boolean | cdktn.IResolvable; 
   public get tidyRevokedCertIssuerAssociations() {
     return this.getBooleanAttribute('tidy_revoked_cert_issuer_associations');
   }
-  public set tidyRevokedCertIssuerAssociations(value: boolean | cdktf.IResolvable) {
+  public set tidyRevokedCertIssuerAssociations(value: boolean | cdktn.IResolvable) {
     this._tidyRevokedCertIssuerAssociations = value;
   }
   public resetTidyRevokedCertIssuerAssociations() {
@@ -603,11 +603,11 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
   }
 
   // tidy_revoked_certs - computed: false, optional: true, required: false
-  private _tidyRevokedCerts?: boolean | cdktf.IResolvable; 
+  private _tidyRevokedCerts?: boolean | cdktn.IResolvable; 
   public get tidyRevokedCerts() {
     return this.getBooleanAttribute('tidy_revoked_certs');
   }
-  public set tidyRevokedCerts(value: boolean | cdktf.IResolvable) {
+  public set tidyRevokedCerts(value: boolean | cdktn.IResolvable) {
     this._tidyRevokedCerts = value;
   }
   public resetTidyRevokedCerts() {
@@ -624,175 +624,175 @@ export class PkiSecretBackendConfigAutoTidy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      acme_account_safety_buffer: cdktf.stringToTerraform(this._acmeAccountSafetyBuffer),
-      backend: cdktf.stringToTerraform(this._backend),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      interval_duration: cdktf.stringToTerraform(this._intervalDuration),
-      issuer_safety_buffer: cdktf.stringToTerraform(this._issuerSafetyBuffer),
-      maintain_stored_certificate_counts: cdktf.booleanToTerraform(this._maintainStoredCertificateCounts),
-      max_startup_backoff_duration: cdktf.stringToTerraform(this._maxStartupBackoffDuration),
-      min_startup_backoff_duration: cdktf.stringToTerraform(this._minStartupBackoffDuration),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      pause_duration: cdktf.stringToTerraform(this._pauseDuration),
-      publish_stored_certificate_count_metrics: cdktf.booleanToTerraform(this._publishStoredCertificateCountMetrics),
-      revocation_queue_safety_buffer: cdktf.stringToTerraform(this._revocationQueueSafetyBuffer),
-      safety_buffer: cdktf.stringToTerraform(this._safetyBuffer),
-      tidy_acme: cdktf.booleanToTerraform(this._tidyAcme),
-      tidy_cert_metadata: cdktf.booleanToTerraform(this._tidyCertMetadata),
-      tidy_cert_store: cdktf.booleanToTerraform(this._tidyCertStore),
-      tidy_cmpv2_nonce_store: cdktf.booleanToTerraform(this._tidyCmpv2NonceStore),
-      tidy_cross_cluster_revoked_certs: cdktf.booleanToTerraform(this._tidyCrossClusterRevokedCerts),
-      tidy_expired_issuers: cdktf.booleanToTerraform(this._tidyExpiredIssuers),
-      tidy_move_legacy_ca_bundle: cdktf.booleanToTerraform(this._tidyMoveLegacyCaBundle),
-      tidy_revocation_queue: cdktf.booleanToTerraform(this._tidyRevocationQueue),
-      tidy_revoked_cert_issuer_associations: cdktf.booleanToTerraform(this._tidyRevokedCertIssuerAssociations),
-      tidy_revoked_certs: cdktf.booleanToTerraform(this._tidyRevokedCerts),
+      acme_account_safety_buffer: cdktn.stringToTerraform(this._acmeAccountSafetyBuffer),
+      backend: cdktn.stringToTerraform(this._backend),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      interval_duration: cdktn.stringToTerraform(this._intervalDuration),
+      issuer_safety_buffer: cdktn.stringToTerraform(this._issuerSafetyBuffer),
+      maintain_stored_certificate_counts: cdktn.booleanToTerraform(this._maintainStoredCertificateCounts),
+      max_startup_backoff_duration: cdktn.stringToTerraform(this._maxStartupBackoffDuration),
+      min_startup_backoff_duration: cdktn.stringToTerraform(this._minStartupBackoffDuration),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      pause_duration: cdktn.stringToTerraform(this._pauseDuration),
+      publish_stored_certificate_count_metrics: cdktn.booleanToTerraform(this._publishStoredCertificateCountMetrics),
+      revocation_queue_safety_buffer: cdktn.stringToTerraform(this._revocationQueueSafetyBuffer),
+      safety_buffer: cdktn.stringToTerraform(this._safetyBuffer),
+      tidy_acme: cdktn.booleanToTerraform(this._tidyAcme),
+      tidy_cert_metadata: cdktn.booleanToTerraform(this._tidyCertMetadata),
+      tidy_cert_store: cdktn.booleanToTerraform(this._tidyCertStore),
+      tidy_cmpv2_nonce_store: cdktn.booleanToTerraform(this._tidyCmpv2NonceStore),
+      tidy_cross_cluster_revoked_certs: cdktn.booleanToTerraform(this._tidyCrossClusterRevokedCerts),
+      tidy_expired_issuers: cdktn.booleanToTerraform(this._tidyExpiredIssuers),
+      tidy_move_legacy_ca_bundle: cdktn.booleanToTerraform(this._tidyMoveLegacyCaBundle),
+      tidy_revocation_queue: cdktn.booleanToTerraform(this._tidyRevocationQueue),
+      tidy_revoked_cert_issuer_associations: cdktn.booleanToTerraform(this._tidyRevokedCertIssuerAssociations),
+      tidy_revoked_certs: cdktn.booleanToTerraform(this._tidyRevokedCerts),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       acme_account_safety_buffer: {
-        value: cdktf.stringToHclTerraform(this._acmeAccountSafetyBuffer),
+        value: cdktn.stringToHclTerraform(this._acmeAccountSafetyBuffer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       interval_duration: {
-        value: cdktf.stringToHclTerraform(this._intervalDuration),
+        value: cdktn.stringToHclTerraform(this._intervalDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       issuer_safety_buffer: {
-        value: cdktf.stringToHclTerraform(this._issuerSafetyBuffer),
+        value: cdktn.stringToHclTerraform(this._issuerSafetyBuffer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       maintain_stored_certificate_counts: {
-        value: cdktf.booleanToHclTerraform(this._maintainStoredCertificateCounts),
+        value: cdktn.booleanToHclTerraform(this._maintainStoredCertificateCounts),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       max_startup_backoff_duration: {
-        value: cdktf.stringToHclTerraform(this._maxStartupBackoffDuration),
+        value: cdktn.stringToHclTerraform(this._maxStartupBackoffDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       min_startup_backoff_duration: {
-        value: cdktf.stringToHclTerraform(this._minStartupBackoffDuration),
+        value: cdktn.stringToHclTerraform(this._minStartupBackoffDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pause_duration: {
-        value: cdktf.stringToHclTerraform(this._pauseDuration),
+        value: cdktn.stringToHclTerraform(this._pauseDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       publish_stored_certificate_count_metrics: {
-        value: cdktf.booleanToHclTerraform(this._publishStoredCertificateCountMetrics),
+        value: cdktn.booleanToHclTerraform(this._publishStoredCertificateCountMetrics),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       revocation_queue_safety_buffer: {
-        value: cdktf.stringToHclTerraform(this._revocationQueueSafetyBuffer),
+        value: cdktn.stringToHclTerraform(this._revocationQueueSafetyBuffer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       safety_buffer: {
-        value: cdktf.stringToHclTerraform(this._safetyBuffer),
+        value: cdktn.stringToHclTerraform(this._safetyBuffer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tidy_acme: {
-        value: cdktf.booleanToHclTerraform(this._tidyAcme),
+        value: cdktn.booleanToHclTerraform(this._tidyAcme),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tidy_cert_metadata: {
-        value: cdktf.booleanToHclTerraform(this._tidyCertMetadata),
+        value: cdktn.booleanToHclTerraform(this._tidyCertMetadata),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tidy_cert_store: {
-        value: cdktf.booleanToHclTerraform(this._tidyCertStore),
+        value: cdktn.booleanToHclTerraform(this._tidyCertStore),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tidy_cmpv2_nonce_store: {
-        value: cdktf.booleanToHclTerraform(this._tidyCmpv2NonceStore),
+        value: cdktn.booleanToHclTerraform(this._tidyCmpv2NonceStore),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tidy_cross_cluster_revoked_certs: {
-        value: cdktf.booleanToHclTerraform(this._tidyCrossClusterRevokedCerts),
+        value: cdktn.booleanToHclTerraform(this._tidyCrossClusterRevokedCerts),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tidy_expired_issuers: {
-        value: cdktf.booleanToHclTerraform(this._tidyExpiredIssuers),
+        value: cdktn.booleanToHclTerraform(this._tidyExpiredIssuers),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tidy_move_legacy_ca_bundle: {
-        value: cdktf.booleanToHclTerraform(this._tidyMoveLegacyCaBundle),
+        value: cdktn.booleanToHclTerraform(this._tidyMoveLegacyCaBundle),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tidy_revocation_queue: {
-        value: cdktf.booleanToHclTerraform(this._tidyRevocationQueue),
+        value: cdktn.booleanToHclTerraform(this._tidyRevocationQueue),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tidy_revoked_cert_issuer_associations: {
-        value: cdktf.booleanToHclTerraform(this._tidyRevokedCertIssuerAssociations),
+        value: cdktn.booleanToHclTerraform(this._tidyRevokedCertIssuerAssociations),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tidy_revoked_certs: {
-        value: cdktf.booleanToHclTerraform(this._tidyRevokedCerts),
+        value: cdktn.booleanToHclTerraform(this._tidyRevokedCerts),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

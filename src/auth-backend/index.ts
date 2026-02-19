@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AuthBackendConfig extends cdktf.TerraformMetaArguments {
+export interface AuthBackendConfig extends cdktn.TerraformMetaArguments {
   /**
   * The description of the auth backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#description AuthBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#description AuthBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#disable_remount AuthBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#disable_remount AuthBackend#disable_remount}
   */
-  readonly disableRemount?: boolean | cdktf.IResolvable;
+  readonly disableRemount?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#id AuthBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#id AuthBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,141 +34,141 @@ export interface AuthBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The key to use for signing identity tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#identity_token_key AuthBackend#identity_token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#identity_token_key AuthBackend#identity_token_key}
   */
   readonly identityTokenKey?: string;
   /**
   * Specifies if the auth method is local only
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#local AuthBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#local AuthBackend#local}
   */
-  readonly local?: boolean | cdktf.IResolvable;
+  readonly local?: boolean | cdktn.IResolvable;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#namespace AuthBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#namespace AuthBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * path to mount the backend. This defaults to the type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#path AuthBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#path AuthBackend#path}
   */
   readonly path?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#tune AuthBackend#tune}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#tune AuthBackend#tune}
   */
-  readonly tune?: AuthBackendTune[] | cdktf.IResolvable;
+  readonly tune?: AuthBackendTune[] | cdktn.IResolvable;
   /**
   * Name of the auth backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#type AuthBackend#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#type AuthBackend#type}
   */
   readonly type: string;
 }
 export interface AuthBackendTune {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#allowed_response_headers AuthBackend#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#allowed_response_headers AuthBackend#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#audit_non_hmac_request_keys AuthBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#audit_non_hmac_request_keys AuthBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#audit_non_hmac_response_keys AuthBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#audit_non_hmac_response_keys AuthBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#default_lease_ttl AuthBackend#default_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#default_lease_ttl AuthBackend#default_lease_ttl}
   */
   readonly defaultLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#listing_visibility AuthBackend#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#listing_visibility AuthBackend#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#max_lease_ttl AuthBackend#max_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#max_lease_ttl AuthBackend#max_lease_ttl}
   */
   readonly maxLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#passthrough_request_headers AuthBackend#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#passthrough_request_headers AuthBackend#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#token_type AuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#token_type AuthBackend#token_type}
   */
   readonly tokenType?: string;
 }
 
-export function authBackendTuneToTerraform(struct?: AuthBackendTune | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function authBackendTuneToTerraform(struct?: AuthBackendTune | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_response_headers: struct!.allowedResponseHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedResponseHeaders),
-    audit_non_hmac_request_keys: struct!.auditNonHmacRequestKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacRequestKeys),
-    audit_non_hmac_response_keys: struct!.auditNonHmacResponseKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacResponseKeys),
-    default_lease_ttl: struct!.defaultLeaseTtl === undefined ? null : cdktf.stringToTerraform(struct!.defaultLeaseTtl),
-    listing_visibility: struct!.listingVisibility === undefined ? null : cdktf.stringToTerraform(struct!.listingVisibility),
-    max_lease_ttl: struct!.maxLeaseTtl === undefined ? null : cdktf.stringToTerraform(struct!.maxLeaseTtl),
-    passthrough_request_headers: struct!.passthroughRequestHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.passthroughRequestHeaders),
-    token_type: struct!.tokenType === undefined ? null : cdktf.stringToTerraform(struct!.tokenType),
+    allowed_response_headers: struct!.allowedResponseHeaders === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedResponseHeaders),
+    audit_non_hmac_request_keys: struct!.auditNonHmacRequestKeys === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.auditNonHmacRequestKeys),
+    audit_non_hmac_response_keys: struct!.auditNonHmacResponseKeys === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.auditNonHmacResponseKeys),
+    default_lease_ttl: struct!.defaultLeaseTtl === undefined ? null : cdktn.stringToTerraform(struct!.defaultLeaseTtl),
+    listing_visibility: struct!.listingVisibility === undefined ? null : cdktn.stringToTerraform(struct!.listingVisibility),
+    max_lease_ttl: struct!.maxLeaseTtl === undefined ? null : cdktn.stringToTerraform(struct!.maxLeaseTtl),
+    passthrough_request_headers: struct!.passthroughRequestHeaders === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.passthroughRequestHeaders),
+    token_type: struct!.tokenType === undefined ? null : cdktn.stringToTerraform(struct!.tokenType),
   }
 }
 
 
-export function authBackendTuneToHclTerraform(struct?: AuthBackendTune | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function authBackendTuneToHclTerraform(struct?: AuthBackendTune | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_response_headers: {
-      value: struct!.allowedResponseHeaders === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedResponseHeaders),
+      value: struct!.allowedResponseHeaders === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedResponseHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     audit_non_hmac_request_keys: {
-      value: struct!.auditNonHmacRequestKeys === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacRequestKeys),
+      value: struct!.auditNonHmacRequestKeys === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.auditNonHmacRequestKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     audit_non_hmac_response_keys: {
-      value: struct!.auditNonHmacResponseKeys === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacResponseKeys),
+      value: struct!.auditNonHmacResponseKeys === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.auditNonHmacResponseKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     default_lease_ttl: {
-      value: struct!.defaultLeaseTtl === undefined ? null : cdktf.stringToHclTerraform(struct!.defaultLeaseTtl),
+      value: struct!.defaultLeaseTtl === undefined ? null : cdktn.stringToHclTerraform(struct!.defaultLeaseTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     listing_visibility: {
-      value: struct!.listingVisibility === undefined ? null : cdktf.stringToHclTerraform(struct!.listingVisibility),
+      value: struct!.listingVisibility === undefined ? null : cdktn.stringToHclTerraform(struct!.listingVisibility),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_lease_ttl: {
-      value: struct!.maxLeaseTtl === undefined ? null : cdktf.stringToHclTerraform(struct!.maxLeaseTtl),
+      value: struct!.maxLeaseTtl === undefined ? null : cdktn.stringToHclTerraform(struct!.maxLeaseTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     passthrough_request_headers: {
-      value: struct!.passthroughRequestHeaders === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.passthroughRequestHeaders),
+      value: struct!.passthroughRequestHeaders === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.passthroughRequestHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     token_type: {
-      value: struct!.tokenType === undefined ? null : cdktf.stringToHclTerraform(struct!.tokenType),
+      value: struct!.tokenType === undefined ? null : cdktn.stringToHclTerraform(struct!.tokenType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -179,9 +179,9 @@ export function authBackendTuneToHclTerraform(struct?: AuthBackendTune | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AuthBackendTuneOutputReference extends cdktf.ComplexObject {
+export class AuthBackendTuneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -189,11 +189,11 @@ export class AuthBackendTuneOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AuthBackendTune | cdktf.IResolvable | undefined {
+  public get internalValue(): AuthBackendTune | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -234,7 +234,7 @@ export class AuthBackendTuneOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AuthBackendTune | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AuthBackendTune | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -247,7 +247,7 @@ export class AuthBackendTuneOutputReference extends cdktf.ComplexObject {
       this._passthroughRequestHeaders = undefined;
       this._tokenType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -394,15 +394,15 @@ export class AuthBackendTuneOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class AuthBackendTuneList extends cdktf.ComplexList {
-  public internalValue? : AuthBackendTune[] | cdktf.IResolvable
+export class AuthBackendTuneList extends cdktn.ComplexList {
+  public internalValue? : AuthBackendTune[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -415,9 +415,9 @@ export class AuthBackendTuneList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend vault_auth_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend vault_auth_backend}
 */
-export class AuthBackend extends cdktf.TerraformResource {
+export class AuthBackend extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -428,14 +428,14 @@ export class AuthBackend extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AuthBackend resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AuthBackend resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AuthBackend to import
-  * @param importFromId The id of the existing AuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AuthBackend to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_auth_backend", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_auth_backend", importId: importFromId, provider });
       }
 
   // ===========
@@ -443,7 +443,7 @@ export class AuthBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/auth_backend vault_auth_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/auth_backend vault_auth_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -454,7 +454,7 @@ export class AuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -502,11 +502,11 @@ export class AuthBackend extends cdktf.TerraformResource {
   }
 
   // disable_remount - computed: false, optional: true, required: false
-  private _disableRemount?: boolean | cdktf.IResolvable; 
+  private _disableRemount?: boolean | cdktn.IResolvable; 
   public get disableRemount() {
     return this.getBooleanAttribute('disable_remount');
   }
-  public set disableRemount(value: boolean | cdktf.IResolvable) {
+  public set disableRemount(value: boolean | cdktn.IResolvable) {
     this._disableRemount = value;
   }
   public resetDisableRemount() {
@@ -550,11 +550,11 @@ export class AuthBackend extends cdktf.TerraformResource {
   }
 
   // local - computed: false, optional: true, required: false
-  private _local?: boolean | cdktf.IResolvable; 
+  private _local?: boolean | cdktn.IResolvable; 
   public get local() {
     return this.getBooleanAttribute('local');
   }
-  public set local(value: boolean | cdktf.IResolvable) {
+  public set local(value: boolean | cdktn.IResolvable) {
     this._local = value;
   }
   public resetLocal() {
@@ -602,7 +602,7 @@ export class AuthBackend extends cdktf.TerraformResource {
   public get tune() {
     return this._tune;
   }
-  public putTune(value: AuthBackendTune[] | cdktf.IResolvable) {
+  public putTune(value: AuthBackendTune[] | cdktn.IResolvable) {
     this._tune.internalValue = value;
   }
   public resetTune() {
@@ -632,70 +632,70 @@ export class AuthBackend extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: cdktf.stringToTerraform(this._description),
-      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
-      id: cdktf.stringToTerraform(this._id),
-      identity_token_key: cdktf.stringToTerraform(this._identityTokenKey),
-      local: cdktf.booleanToTerraform(this._local),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      path: cdktf.stringToTerraform(this._path),
-      tune: cdktf.listMapper(authBackendTuneToTerraform, false)(this._tune.internalValue),
-      type: cdktf.stringToTerraform(this._type),
+      description: cdktn.stringToTerraform(this._description),
+      disable_remount: cdktn.booleanToTerraform(this._disableRemount),
+      id: cdktn.stringToTerraform(this._id),
+      identity_token_key: cdktn.stringToTerraform(this._identityTokenKey),
+      local: cdktn.booleanToTerraform(this._local),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      path: cdktn.stringToTerraform(this._path),
+      tune: cdktn.listMapper(authBackendTuneToTerraform, false)(this._tune.internalValue),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_remount: {
-        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        value: cdktn.booleanToHclTerraform(this._disableRemount),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_token_key: {
-        value: cdktf.stringToHclTerraform(this._identityTokenKey),
+        value: cdktn.stringToHclTerraform(this._identityTokenKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local: {
-        value: cdktf.booleanToHclTerraform(this._local),
+        value: cdktn.booleanToHclTerraform(this._local),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tune: {
-        value: cdktf.listMapperHcl(authBackendTuneToHclTerraform, false)(this._tune.internalValue),
+        value: cdktn.listMapperHcl(authBackendTuneToHclTerraform, false)(this._tune.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AuthBackendTuneList",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

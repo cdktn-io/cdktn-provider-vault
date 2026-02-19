@@ -1,61 +1,61 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PkiSecretBackendCertConfig extends cdktf.TerraformMetaArguments {
+export interface PkiSecretBackendCertConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of alternative names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
   */
   readonly altNames?: string[];
   /**
   * If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
   */
-  readonly autoRenew?: boolean | cdktf.IResolvable;
+  readonly autoRenew?: boolean | cdktn.IResolvable;
   /**
   * The PKI secret backend the resource belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
   */
   readonly backend: string;
   /**
   * A base 64 encoded value or an empty string to associate with the certificate's serial number. The role's no_store_metadata must be set to false, otherwise an error is returned when specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#cert_metadata PkiSecretBackendCert#cert_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#cert_metadata PkiSecretBackendCert#cert_metadata}
   */
   readonly certMetadata?: string;
   /**
   * CN of the certificate to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
   */
   readonly commonName: string;
   /**
   * Flag to exclude CN from SANs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
   */
-  readonly excludeCnFromSans?: boolean | cdktf.IResolvable;
+  readonly excludeCnFromSans?: boolean | cdktn.IResolvable;
   /**
   * The format of data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -64,87 +64,87 @@ export interface PkiSecretBackendCertConfig extends cdktf.TerraformMetaArguments
   /**
   * List of alternative IPs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
   */
   readonly ipSans?: string[];
   /**
   * Specifies the default issuer of this request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
   */
   readonly issuerRef?: string;
   /**
   * Generate a new certificate when the expiration is within this number of seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
   */
   readonly minSecondsRemaining?: number;
   /**
   * Name of the role to create the certificate against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
   */
   readonly namespace?: string;
   /**
   * Set the Not After field of the certificate with specified date value. The value format should be given in UTC format YYYY-MM-ddTHH:MM:SSZ. Supports the Y10K end date for IEEE 802.1AR-2018 standard devices, 9999-12-31T23:59:59Z.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#not_after PkiSecretBackendCert#not_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#not_after PkiSecretBackendCert#not_after}
   */
   readonly notAfter?: string;
   /**
   * List of other SANs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
   */
   readonly otherSans?: string[];
   /**
   * The private key format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
   */
   readonly privateKeyFormat?: string;
   /**
   * Revoke the certificate upon resource destruction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
   */
-  readonly revoke?: boolean | cdktf.IResolvable;
+  readonly revoke?: boolean | cdktn.IResolvable;
   /**
   * Revoke the certificate with private key method upon resource destruction.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#revoke_with_key PkiSecretBackendCert#revoke_with_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#revoke_with_key PkiSecretBackendCert#revoke_with_key}
   */
-  readonly revokeWithKey?: boolean | cdktf.IResolvable;
+  readonly revokeWithKey?: boolean | cdktn.IResolvable;
   /**
   * Time to live.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
   */
   readonly ttl?: string;
   /**
   * List of alternative URIs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
   */
   readonly uriSans?: string[];
   /**
   * List of Subject User IDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#user_ids PkiSecretBackendCert#user_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#user_ids PkiSecretBackendCert#user_ids}
   */
   readonly userIds?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}
 */
-export class PkiSecretBackendCert extends cdktf.TerraformResource {
+export class PkiSecretBackendCert extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -155,14 +155,14 @@ export class PkiSecretBackendCert extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PkiSecretBackendCert resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PkiSecretBackendCert resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PkiSecretBackendCert to import
-  * @param importFromId The id of the existing PkiSecretBackendCert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PkiSecretBackendCert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PkiSecretBackendCert to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_cert", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_cert", importId: importFromId, provider });
       }
 
   // ===========
@@ -170,7 +170,7 @@ export class PkiSecretBackendCert extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -181,7 +181,7 @@ export class PkiSecretBackendCert extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_cert',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -236,11 +236,11 @@ export class PkiSecretBackendCert extends cdktf.TerraformResource {
   }
 
   // auto_renew - computed: false, optional: true, required: false
-  private _autoRenew?: boolean | cdktf.IResolvable; 
+  private _autoRenew?: boolean | cdktn.IResolvable; 
   public get autoRenew() {
     return this.getBooleanAttribute('auto_renew');
   }
-  public set autoRenew(value: boolean | cdktf.IResolvable) {
+  public set autoRenew(value: boolean | cdktn.IResolvable) {
     this._autoRenew = value;
   }
   public resetAutoRenew() {
@@ -304,11 +304,11 @@ export class PkiSecretBackendCert extends cdktf.TerraformResource {
   }
 
   // exclude_cn_from_sans - computed: false, optional: true, required: false
-  private _excludeCnFromSans?: boolean | cdktf.IResolvable; 
+  private _excludeCnFromSans?: boolean | cdktn.IResolvable; 
   public get excludeCnFromSans() {
     return this.getBooleanAttribute('exclude_cn_from_sans');
   }
-  public set excludeCnFromSans(value: boolean | cdktf.IResolvable) {
+  public set excludeCnFromSans(value: boolean | cdktn.IResolvable) {
     this._excludeCnFromSans = value;
   }
   public resetExcludeCnFromSans() {
@@ -502,11 +502,11 @@ export class PkiSecretBackendCert extends cdktf.TerraformResource {
   }
 
   // revoke - computed: false, optional: true, required: false
-  private _revoke?: boolean | cdktf.IResolvable; 
+  private _revoke?: boolean | cdktn.IResolvable; 
   public get revoke() {
     return this.getBooleanAttribute('revoke');
   }
-  public set revoke(value: boolean | cdktf.IResolvable) {
+  public set revoke(value: boolean | cdktn.IResolvable) {
     this._revoke = value;
   }
   public resetRevoke() {
@@ -518,11 +518,11 @@ export class PkiSecretBackendCert extends cdktf.TerraformResource {
   }
 
   // revoke_with_key - computed: false, optional: true, required: false
-  private _revokeWithKey?: boolean | cdktf.IResolvable; 
+  private _revokeWithKey?: boolean | cdktn.IResolvable; 
   public get revokeWithKey() {
     return this.getBooleanAttribute('revoke_with_key');
   }
-  public set revokeWithKey(value: boolean | cdktf.IResolvable) {
+  public set revokeWithKey(value: boolean | cdktn.IResolvable) {
     this._revokeWithKey = value;
   }
   public resetRevokeWithKey() {
@@ -592,154 +592,154 @@ export class PkiSecretBackendCert extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alt_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._altNames),
-      auto_renew: cdktf.booleanToTerraform(this._autoRenew),
-      backend: cdktf.stringToTerraform(this._backend),
-      cert_metadata: cdktf.stringToTerraform(this._certMetadata),
-      common_name: cdktf.stringToTerraform(this._commonName),
-      exclude_cn_from_sans: cdktf.booleanToTerraform(this._excludeCnFromSans),
-      format: cdktf.stringToTerraform(this._format),
-      id: cdktf.stringToTerraform(this._id),
-      ip_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipSans),
-      issuer_ref: cdktf.stringToTerraform(this._issuerRef),
-      min_seconds_remaining: cdktf.numberToTerraform(this._minSecondsRemaining),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      not_after: cdktf.stringToTerraform(this._notAfter),
-      other_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._otherSans),
-      private_key_format: cdktf.stringToTerraform(this._privateKeyFormat),
-      revoke: cdktf.booleanToTerraform(this._revoke),
-      revoke_with_key: cdktf.booleanToTerraform(this._revokeWithKey),
-      ttl: cdktf.stringToTerraform(this._ttl),
-      uri_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._uriSans),
-      user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userIds),
+      alt_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._altNames),
+      auto_renew: cdktn.booleanToTerraform(this._autoRenew),
+      backend: cdktn.stringToTerraform(this._backend),
+      cert_metadata: cdktn.stringToTerraform(this._certMetadata),
+      common_name: cdktn.stringToTerraform(this._commonName),
+      exclude_cn_from_sans: cdktn.booleanToTerraform(this._excludeCnFromSans),
+      format: cdktn.stringToTerraform(this._format),
+      id: cdktn.stringToTerraform(this._id),
+      ip_sans: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ipSans),
+      issuer_ref: cdktn.stringToTerraform(this._issuerRef),
+      min_seconds_remaining: cdktn.numberToTerraform(this._minSecondsRemaining),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      not_after: cdktn.stringToTerraform(this._notAfter),
+      other_sans: cdktn.listMapper(cdktn.stringToTerraform, false)(this._otherSans),
+      private_key_format: cdktn.stringToTerraform(this._privateKeyFormat),
+      revoke: cdktn.booleanToTerraform(this._revoke),
+      revoke_with_key: cdktn.booleanToTerraform(this._revokeWithKey),
+      ttl: cdktn.stringToTerraform(this._ttl),
+      uri_sans: cdktn.listMapper(cdktn.stringToTerraform, false)(this._uriSans),
+      user_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._userIds),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alt_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._altNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._altNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       auto_renew: {
-        value: cdktf.booleanToHclTerraform(this._autoRenew),
+        value: cdktn.booleanToHclTerraform(this._autoRenew),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cert_metadata: {
-        value: cdktf.stringToHclTerraform(this._certMetadata),
+        value: cdktn.stringToHclTerraform(this._certMetadata),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       common_name: {
-        value: cdktf.stringToHclTerraform(this._commonName),
+        value: cdktn.stringToHclTerraform(this._commonName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       exclude_cn_from_sans: {
-        value: cdktf.booleanToHclTerraform(this._excludeCnFromSans),
+        value: cdktn.booleanToHclTerraform(this._excludeCnFromSans),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       format: {
-        value: cdktf.stringToHclTerraform(this._format),
+        value: cdktn.stringToHclTerraform(this._format),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_sans: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipSans),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ipSans),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       issuer_ref: {
-        value: cdktf.stringToHclTerraform(this._issuerRef),
+        value: cdktn.stringToHclTerraform(this._issuerRef),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       min_seconds_remaining: {
-        value: cdktf.numberToHclTerraform(this._minSecondsRemaining),
+        value: cdktn.numberToHclTerraform(this._minSecondsRemaining),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       not_after: {
-        value: cdktf.stringToHclTerraform(this._notAfter),
+        value: cdktn.stringToHclTerraform(this._notAfter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       other_sans: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._otherSans),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._otherSans),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       private_key_format: {
-        value: cdktf.stringToHclTerraform(this._privateKeyFormat),
+        value: cdktn.stringToHclTerraform(this._privateKeyFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       revoke: {
-        value: cdktf.booleanToHclTerraform(this._revoke),
+        value: cdktn.booleanToHclTerraform(this._revoke),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       revoke_with_key: {
-        value: cdktf.booleanToHclTerraform(this._revokeWithKey),
+        value: cdktn.booleanToHclTerraform(this._revokeWithKey),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ttl: {
-        value: cdktf.stringToHclTerraform(this._ttl),
+        value: cdktn.stringToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       uri_sans: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._uriSans),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._uriSans),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       user_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._userIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._userIds),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

@@ -1,79 +1,79 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PkiSecretBackendRootCertConfig extends cdktf.TerraformMetaArguments {
+export interface PkiSecretBackendRootCertConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of alternative names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#alt_names PkiSecretBackendRootCert#alt_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#alt_names PkiSecretBackendRootCert#alt_names}
   */
   readonly altNames?: string[];
   /**
   * The PKI secret backend the resource belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#backend PkiSecretBackendRootCert#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#backend PkiSecretBackendRootCert#backend}
   */
   readonly backend: string;
   /**
   * CN of root to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#common_name PkiSecretBackendRootCert#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#common_name PkiSecretBackendRootCert#common_name}
   */
   readonly commonName: string;
   /**
   * The country.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#country PkiSecretBackendRootCert#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#country PkiSecretBackendRootCert#country}
   */
   readonly country?: string;
   /**
   * Flag to exclude CN from SANs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#exclude_cn_from_sans PkiSecretBackendRootCert#exclude_cn_from_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#exclude_cn_from_sans PkiSecretBackendRootCert#exclude_cn_from_sans}
   */
-  readonly excludeCnFromSans?: boolean | cdktf.IResolvable;
+  readonly excludeCnFromSans?: boolean | cdktn.IResolvable;
   /**
   * List of domains for which certificates are not allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#excluded_dns_domains PkiSecretBackendRootCert#excluded_dns_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#excluded_dns_domains PkiSecretBackendRootCert#excluded_dns_domains}
   */
   readonly excludedDnsDomains?: string[];
   /**
   * List of email addresses for which certificates are not allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#excluded_email_addresses PkiSecretBackendRootCert#excluded_email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#excluded_email_addresses PkiSecretBackendRootCert#excluded_email_addresses}
   */
   readonly excludedEmailAddresses?: string[];
   /**
   * List of IP ranges for which certificates are not allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#excluded_ip_ranges PkiSecretBackendRootCert#excluded_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#excluded_ip_ranges PkiSecretBackendRootCert#excluded_ip_ranges}
   */
   readonly excludedIpRanges?: string[];
   /**
   * List of URI domains for which certificates are not allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#excluded_uri_domains PkiSecretBackendRootCert#excluded_uri_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#excluded_uri_domains PkiSecretBackendRootCert#excluded_uri_domains}
   */
   readonly excludedUriDomains?: string[];
   /**
   * The format of data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#format PkiSecretBackendRootCert#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#format PkiSecretBackendRootCert#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#id PkiSecretBackendRootCert#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#id PkiSecretBackendRootCert#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -82,177 +82,177 @@ export interface PkiSecretBackendRootCertConfig extends cdktf.TerraformMetaArgum
   /**
   * List of alternative IPs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#ip_sans PkiSecretBackendRootCert#ip_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#ip_sans PkiSecretBackendRootCert#ip_sans}
   */
   readonly ipSans?: string[];
   /**
   * Provides a name to the specified issuer. The name must be unique across all issuers and not be the reserved value 'default'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#issuer_name PkiSecretBackendRootCert#issuer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#issuer_name PkiSecretBackendRootCert#issuer_name}
   */
   readonly issuerName?: string;
   /**
   * The number of bits to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#key_bits PkiSecretBackendRootCert#key_bits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#key_bits PkiSecretBackendRootCert#key_bits}
   */
   readonly keyBits?: number;
   /**
   * When a new key is created with this request, optionally specifies the name for this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#key_name PkiSecretBackendRootCert#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#key_name PkiSecretBackendRootCert#key_name}
   */
   readonly keyName?: string;
   /**
   * Specifies the key to use for generating this request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#key_ref PkiSecretBackendRootCert#key_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#key_ref PkiSecretBackendRootCert#key_ref}
   */
   readonly keyRef?: string;
   /**
   * The desired key type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#key_type PkiSecretBackendRootCert#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#key_type PkiSecretBackendRootCert#key_type}
   */
   readonly keyType?: string;
   /**
   * The locality.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#locality PkiSecretBackendRootCert#locality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#locality PkiSecretBackendRootCert#locality}
   */
   readonly locality?: string;
   /**
   * The ID of the previously configured managed key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#managed_key_id PkiSecretBackendRootCert#managed_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#managed_key_id PkiSecretBackendRootCert#managed_key_id}
   */
   readonly managedKeyId?: string;
   /**
   * The name of the previously configured managed key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#managed_key_name PkiSecretBackendRootCert#managed_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#managed_key_name PkiSecretBackendRootCert#managed_key_name}
   */
   readonly managedKeyName?: string;
   /**
   * The maximum path length to encode in the generated certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#max_path_length PkiSecretBackendRootCert#max_path_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#max_path_length PkiSecretBackendRootCert#max_path_length}
   */
   readonly maxPathLength?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#namespace PkiSecretBackendRootCert#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#namespace PkiSecretBackendRootCert#namespace}
   */
   readonly namespace?: string;
   /**
   * Set the Not After field of the certificate with specified date value. The value format should be given in UTC format YYYY-MM-ddTHH:MM:SSZ. Supports the Y10K end date for IEEE 802.1AR-2018 standard devices, 9999-12-31T23:59:59Z.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#not_after PkiSecretBackendRootCert#not_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#not_after PkiSecretBackendRootCert#not_after}
   */
   readonly notAfter?: string;
   /**
   * Specifies the duration by which to backdate the NotBefore property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#not_before_duration PkiSecretBackendRootCert#not_before_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#not_before_duration PkiSecretBackendRootCert#not_before_duration}
   */
   readonly notBeforeDuration?: string;
   /**
   * The organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#organization PkiSecretBackendRootCert#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#organization PkiSecretBackendRootCert#organization}
   */
   readonly organization?: string;
   /**
   * List of other SANs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#other_sans PkiSecretBackendRootCert#other_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#other_sans PkiSecretBackendRootCert#other_sans}
   */
   readonly otherSans?: string[];
   /**
   * The organization unit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#ou PkiSecretBackendRootCert#ou}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#ou PkiSecretBackendRootCert#ou}
   */
   readonly ou?: string;
   /**
   * List of domains for which certificates are allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#permitted_dns_domains PkiSecretBackendRootCert#permitted_dns_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#permitted_dns_domains PkiSecretBackendRootCert#permitted_dns_domains}
   */
   readonly permittedDnsDomains?: string[];
   /**
   * List of email addresses for which certificates are allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#permitted_email_addresses PkiSecretBackendRootCert#permitted_email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#permitted_email_addresses PkiSecretBackendRootCert#permitted_email_addresses}
   */
   readonly permittedEmailAddresses?: string[];
   /**
   * List of IP ranges for which certificates are allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#permitted_ip_ranges PkiSecretBackendRootCert#permitted_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#permitted_ip_ranges PkiSecretBackendRootCert#permitted_ip_ranges}
   */
   readonly permittedIpRanges?: string[];
   /**
   * List of URI domains for which certificates are allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#permitted_uri_domains PkiSecretBackendRootCert#permitted_uri_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#permitted_uri_domains PkiSecretBackendRootCert#permitted_uri_domains}
   */
   readonly permittedUriDomains?: string[];
   /**
   * The postal code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#postal_code PkiSecretBackendRootCert#postal_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#postal_code PkiSecretBackendRootCert#postal_code}
   */
   readonly postalCode?: string;
   /**
   * The private key format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#private_key_format PkiSecretBackendRootCert#private_key_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#private_key_format PkiSecretBackendRootCert#private_key_format}
   */
   readonly privateKeyFormat?: string;
   /**
   * The province.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#province PkiSecretBackendRootCert#province}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#province PkiSecretBackendRootCert#province}
   */
   readonly province?: string;
   /**
   * The number of bits to use in the signature algorithm.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#signature_bits PkiSecretBackendRootCert#signature_bits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#signature_bits PkiSecretBackendRootCert#signature_bits}
   */
   readonly signatureBits?: number;
   /**
   * The street address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#street_address PkiSecretBackendRootCert#street_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#street_address PkiSecretBackendRootCert#street_address}
   */
   readonly streetAddress?: string;
   /**
   * Time to live.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#ttl PkiSecretBackendRootCert#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#ttl PkiSecretBackendRootCert#ttl}
   */
   readonly ttl?: string;
   /**
   * Type of root to create. Must be either "existing", "exported", "internal" or "kms"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#type PkiSecretBackendRootCert#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#type PkiSecretBackendRootCert#type}
   */
   readonly type: string;
   /**
   * List of alternative URIs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#uri_sans PkiSecretBackendRootCert#uri_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#uri_sans PkiSecretBackendRootCert#uri_sans}
   */
   readonly uriSans?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}
 */
-export class PkiSecretBackendRootCert extends cdktf.TerraformResource {
+export class PkiSecretBackendRootCert extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -263,14 +263,14 @@ export class PkiSecretBackendRootCert extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PkiSecretBackendRootCert resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PkiSecretBackendRootCert resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PkiSecretBackendRootCert to import
-  * @param importFromId The id of the existing PkiSecretBackendRootCert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PkiSecretBackendRootCert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PkiSecretBackendRootCert to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_root_cert", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_root_cert", importId: importFromId, provider });
       }
 
   // ===========
@@ -278,7 +278,7 @@ export class PkiSecretBackendRootCert extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -289,7 +289,7 @@ export class PkiSecretBackendRootCert extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_root_cert',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -409,11 +409,11 @@ export class PkiSecretBackendRootCert extends cdktf.TerraformResource {
   }
 
   // exclude_cn_from_sans - computed: false, optional: true, required: false
-  private _excludeCnFromSans?: boolean | cdktf.IResolvable; 
+  private _excludeCnFromSans?: boolean | cdktn.IResolvable; 
   public get excludeCnFromSans() {
     return this.getBooleanAttribute('exclude_cn_from_sans');
   }
-  public set excludeCnFromSans(value: boolean | cdktf.IResolvable) {
+  public set excludeCnFromSans(value: boolean | cdktn.IResolvable) {
     this._excludeCnFromSans = value;
   }
   public resetExcludeCnFromSans() {
@@ -991,280 +991,280 @@ export class PkiSecretBackendRootCert extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alt_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._altNames),
-      backend: cdktf.stringToTerraform(this._backend),
-      common_name: cdktf.stringToTerraform(this._commonName),
-      country: cdktf.stringToTerraform(this._country),
-      exclude_cn_from_sans: cdktf.booleanToTerraform(this._excludeCnFromSans),
-      excluded_dns_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludedDnsDomains),
-      excluded_email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludedEmailAddresses),
-      excluded_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludedIpRanges),
-      excluded_uri_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._excludedUriDomains),
-      format: cdktf.stringToTerraform(this._format),
-      id: cdktf.stringToTerraform(this._id),
-      ip_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipSans),
-      issuer_name: cdktf.stringToTerraform(this._issuerName),
-      key_bits: cdktf.numberToTerraform(this._keyBits),
-      key_name: cdktf.stringToTerraform(this._keyName),
-      key_ref: cdktf.stringToTerraform(this._keyRef),
-      key_type: cdktf.stringToTerraform(this._keyType),
-      locality: cdktf.stringToTerraform(this._locality),
-      managed_key_id: cdktf.stringToTerraform(this._managedKeyId),
-      managed_key_name: cdktf.stringToTerraform(this._managedKeyName),
-      max_path_length: cdktf.numberToTerraform(this._maxPathLength),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      not_after: cdktf.stringToTerraform(this._notAfter),
-      not_before_duration: cdktf.stringToTerraform(this._notBeforeDuration),
-      organization: cdktf.stringToTerraform(this._organization),
-      other_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._otherSans),
-      ou: cdktf.stringToTerraform(this._ou),
-      permitted_dns_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._permittedDnsDomains),
-      permitted_email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._permittedEmailAddresses),
-      permitted_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(this._permittedIpRanges),
-      permitted_uri_domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._permittedUriDomains),
-      postal_code: cdktf.stringToTerraform(this._postalCode),
-      private_key_format: cdktf.stringToTerraform(this._privateKeyFormat),
-      province: cdktf.stringToTerraform(this._province),
-      signature_bits: cdktf.numberToTerraform(this._signatureBits),
-      street_address: cdktf.stringToTerraform(this._streetAddress),
-      ttl: cdktf.stringToTerraform(this._ttl),
-      type: cdktf.stringToTerraform(this._type),
-      uri_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._uriSans),
+      alt_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._altNames),
+      backend: cdktn.stringToTerraform(this._backend),
+      common_name: cdktn.stringToTerraform(this._commonName),
+      country: cdktn.stringToTerraform(this._country),
+      exclude_cn_from_sans: cdktn.booleanToTerraform(this._excludeCnFromSans),
+      excluded_dns_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(this._excludedDnsDomains),
+      excluded_email_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._excludedEmailAddresses),
+      excluded_ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._excludedIpRanges),
+      excluded_uri_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(this._excludedUriDomains),
+      format: cdktn.stringToTerraform(this._format),
+      id: cdktn.stringToTerraform(this._id),
+      ip_sans: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ipSans),
+      issuer_name: cdktn.stringToTerraform(this._issuerName),
+      key_bits: cdktn.numberToTerraform(this._keyBits),
+      key_name: cdktn.stringToTerraform(this._keyName),
+      key_ref: cdktn.stringToTerraform(this._keyRef),
+      key_type: cdktn.stringToTerraform(this._keyType),
+      locality: cdktn.stringToTerraform(this._locality),
+      managed_key_id: cdktn.stringToTerraform(this._managedKeyId),
+      managed_key_name: cdktn.stringToTerraform(this._managedKeyName),
+      max_path_length: cdktn.numberToTerraform(this._maxPathLength),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      not_after: cdktn.stringToTerraform(this._notAfter),
+      not_before_duration: cdktn.stringToTerraform(this._notBeforeDuration),
+      organization: cdktn.stringToTerraform(this._organization),
+      other_sans: cdktn.listMapper(cdktn.stringToTerraform, false)(this._otherSans),
+      ou: cdktn.stringToTerraform(this._ou),
+      permitted_dns_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(this._permittedDnsDomains),
+      permitted_email_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(this._permittedEmailAddresses),
+      permitted_ip_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(this._permittedIpRanges),
+      permitted_uri_domains: cdktn.listMapper(cdktn.stringToTerraform, false)(this._permittedUriDomains),
+      postal_code: cdktn.stringToTerraform(this._postalCode),
+      private_key_format: cdktn.stringToTerraform(this._privateKeyFormat),
+      province: cdktn.stringToTerraform(this._province),
+      signature_bits: cdktn.numberToTerraform(this._signatureBits),
+      street_address: cdktn.stringToTerraform(this._streetAddress),
+      ttl: cdktn.stringToTerraform(this._ttl),
+      type: cdktn.stringToTerraform(this._type),
+      uri_sans: cdktn.listMapper(cdktn.stringToTerraform, false)(this._uriSans),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alt_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._altNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._altNames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       common_name: {
-        value: cdktf.stringToHclTerraform(this._commonName),
+        value: cdktn.stringToHclTerraform(this._commonName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       country: {
-        value: cdktf.stringToHclTerraform(this._country),
+        value: cdktn.stringToHclTerraform(this._country),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       exclude_cn_from_sans: {
-        value: cdktf.booleanToHclTerraform(this._excludeCnFromSans),
+        value: cdktn.booleanToHclTerraform(this._excludeCnFromSans),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       excluded_dns_domains: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludedDnsDomains),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._excludedDnsDomains),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       excluded_email_addresses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludedEmailAddresses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._excludedEmailAddresses),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       excluded_ip_ranges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludedIpRanges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._excludedIpRanges),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       excluded_uri_domains: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._excludedUriDomains),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._excludedUriDomains),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       format: {
-        value: cdktf.stringToHclTerraform(this._format),
+        value: cdktn.stringToHclTerraform(this._format),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ip_sans: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipSans),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ipSans),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       issuer_name: {
-        value: cdktf.stringToHclTerraform(this._issuerName),
+        value: cdktn.stringToHclTerraform(this._issuerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_bits: {
-        value: cdktf.numberToHclTerraform(this._keyBits),
+        value: cdktn.numberToHclTerraform(this._keyBits),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       key_name: {
-        value: cdktf.stringToHclTerraform(this._keyName),
+        value: cdktn.stringToHclTerraform(this._keyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_ref: {
-        value: cdktf.stringToHclTerraform(this._keyRef),
+        value: cdktn.stringToHclTerraform(this._keyRef),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_type: {
-        value: cdktf.stringToHclTerraform(this._keyType),
+        value: cdktn.stringToHclTerraform(this._keyType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       locality: {
-        value: cdktf.stringToHclTerraform(this._locality),
+        value: cdktn.stringToHclTerraform(this._locality),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_key_id: {
-        value: cdktf.stringToHclTerraform(this._managedKeyId),
+        value: cdktn.stringToHclTerraform(this._managedKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_key_name: {
-        value: cdktf.stringToHclTerraform(this._managedKeyName),
+        value: cdktn.stringToHclTerraform(this._managedKeyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_path_length: {
-        value: cdktf.numberToHclTerraform(this._maxPathLength),
+        value: cdktn.numberToHclTerraform(this._maxPathLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       not_after: {
-        value: cdktf.stringToHclTerraform(this._notAfter),
+        value: cdktn.stringToHclTerraform(this._notAfter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       not_before_duration: {
-        value: cdktf.stringToHclTerraform(this._notBeforeDuration),
+        value: cdktn.stringToHclTerraform(this._notBeforeDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization: {
-        value: cdktf.stringToHclTerraform(this._organization),
+        value: cdktn.stringToHclTerraform(this._organization),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       other_sans: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._otherSans),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._otherSans),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       ou: {
-        value: cdktf.stringToHclTerraform(this._ou),
+        value: cdktn.stringToHclTerraform(this._ou),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permitted_dns_domains: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._permittedDnsDomains),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._permittedDnsDomains),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       permitted_email_addresses: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._permittedEmailAddresses),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._permittedEmailAddresses),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       permitted_ip_ranges: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._permittedIpRanges),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._permittedIpRanges),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       permitted_uri_domains: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._permittedUriDomains),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._permittedUriDomains),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       postal_code: {
-        value: cdktf.stringToHclTerraform(this._postalCode),
+        value: cdktn.stringToHclTerraform(this._postalCode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_key_format: {
-        value: cdktf.stringToHclTerraform(this._privateKeyFormat),
+        value: cdktn.stringToHclTerraform(this._privateKeyFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       province: {
-        value: cdktf.stringToHclTerraform(this._province),
+        value: cdktn.stringToHclTerraform(this._province),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       signature_bits: {
-        value: cdktf.numberToHclTerraform(this._signatureBits),
+        value: cdktn.numberToHclTerraform(this._signatureBits),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       street_address: {
-        value: cdktf.stringToHclTerraform(this._streetAddress),
+        value: cdktn.stringToHclTerraform(this._streetAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ttl: {
-        value: cdktf.stringToHclTerraform(this._ttl),
+        value: cdktn.stringToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       uri_sans: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._uriSans),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._uriSans),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

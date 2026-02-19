@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RaftAutopilotConfig extends cdktf.TerraformMetaArguments {
+export interface RaftAutopilotConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies whether to remove dead server nodes periodically or when a new server joins. This requires that min-quorum is also set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#cleanup_dead_servers RaftAutopilot#cleanup_dead_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#cleanup_dead_servers RaftAutopilot#cleanup_dead_servers}
   */
-  readonly cleanupDeadServers?: boolean | cdktf.IResolvable;
+  readonly cleanupDeadServers?: boolean | cdktn.IResolvable;
   /**
   * Limit the amount of time a server can go without leader contact before being considered failed. This only takes effect when cleanup_dead_servers is set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#dead_server_last_contact_threshold RaftAutopilot#dead_server_last_contact_threshold}
   */
   readonly deadServerLastContactThreshold?: string;
   /**
   * Disables automatically upgrading Vault using autopilot. (Enterprise-only)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#disable_upgrade_migration RaftAutopilot#disable_upgrade_migration}
   */
-  readonly disableUpgradeMigration?: boolean | cdktf.IResolvable;
+  readonly disableUpgradeMigration?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#id RaftAutopilot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#id RaftAutopilot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,39 +40,39 @@ export interface RaftAutopilotConfig extends cdktf.TerraformMetaArguments {
   /**
   * Limit the amount of time a server can go without leader contact before being considered unhealthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#last_contact_threshold RaftAutopilot#last_contact_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#last_contact_threshold RaftAutopilot#last_contact_threshold}
   */
   readonly lastContactThreshold?: string;
   /**
   * Maximum number of log entries in the Raft log that a server can be behind its leader before being considered unhealthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#max_trailing_logs RaftAutopilot#max_trailing_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#max_trailing_logs RaftAutopilot#max_trailing_logs}
   */
   readonly maxTrailingLogs?: number;
   /**
   * Minimum number of servers allowed in a cluster before autopilot can prune dead servers. This should at least be 3. Applicable only for voting nodes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#min_quorum RaftAutopilot#min_quorum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#min_quorum RaftAutopilot#min_quorum}
   */
   readonly minQuorum?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#namespace RaftAutopilot#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#namespace RaftAutopilot#namespace}
   */
   readonly namespace?: string;
   /**
   * Minimum amount of time a server must be stable in the 'healthy' state before being added to the cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#server_stabilization_time RaftAutopilot#server_stabilization_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#server_stabilization_time RaftAutopilot#server_stabilization_time}
   */
   readonly serverStabilizationTime?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot vault_raft_autopilot}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot vault_raft_autopilot}
 */
-export class RaftAutopilot extends cdktf.TerraformResource {
+export class RaftAutopilot extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -83,14 +83,14 @@ export class RaftAutopilot extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RaftAutopilot resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RaftAutopilot resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RaftAutopilot to import
-  * @param importFromId The id of the existing RaftAutopilot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RaftAutopilot that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RaftAutopilot to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_raft_autopilot", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_raft_autopilot", importId: importFromId, provider });
       }
 
   // ===========
@@ -98,7 +98,7 @@ export class RaftAutopilot extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_autopilot vault_raft_autopilot} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_autopilot vault_raft_autopilot} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +109,7 @@ export class RaftAutopilot extends cdktf.TerraformResource {
       terraformResourceType: 'vault_raft_autopilot',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -136,11 +136,11 @@ export class RaftAutopilot extends cdktf.TerraformResource {
   // ==========
 
   // cleanup_dead_servers - computed: false, optional: true, required: false
-  private _cleanupDeadServers?: boolean | cdktf.IResolvable; 
+  private _cleanupDeadServers?: boolean | cdktn.IResolvable; 
   public get cleanupDeadServers() {
     return this.getBooleanAttribute('cleanup_dead_servers');
   }
-  public set cleanupDeadServers(value: boolean | cdktf.IResolvable) {
+  public set cleanupDeadServers(value: boolean | cdktn.IResolvable) {
     this._cleanupDeadServers = value;
   }
   public resetCleanupDeadServers() {
@@ -168,11 +168,11 @@ export class RaftAutopilot extends cdktf.TerraformResource {
   }
 
   // disable_upgrade_migration - computed: false, optional: true, required: false
-  private _disableUpgradeMigration?: boolean | cdktf.IResolvable; 
+  private _disableUpgradeMigration?: boolean | cdktn.IResolvable; 
   public get disableUpgradeMigration() {
     return this.getBooleanAttribute('disable_upgrade_migration');
   }
-  public set disableUpgradeMigration(value: boolean | cdktf.IResolvable) {
+  public set disableUpgradeMigration(value: boolean | cdktn.IResolvable) {
     this._disableUpgradeMigration = value;
   }
   public resetDisableUpgradeMigration() {
@@ -285,70 +285,70 @@ export class RaftAutopilot extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cleanup_dead_servers: cdktf.booleanToTerraform(this._cleanupDeadServers),
-      dead_server_last_contact_threshold: cdktf.stringToTerraform(this._deadServerLastContactThreshold),
-      disable_upgrade_migration: cdktf.booleanToTerraform(this._disableUpgradeMigration),
-      id: cdktf.stringToTerraform(this._id),
-      last_contact_threshold: cdktf.stringToTerraform(this._lastContactThreshold),
-      max_trailing_logs: cdktf.numberToTerraform(this._maxTrailingLogs),
-      min_quorum: cdktf.numberToTerraform(this._minQuorum),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      server_stabilization_time: cdktf.stringToTerraform(this._serverStabilizationTime),
+      cleanup_dead_servers: cdktn.booleanToTerraform(this._cleanupDeadServers),
+      dead_server_last_contact_threshold: cdktn.stringToTerraform(this._deadServerLastContactThreshold),
+      disable_upgrade_migration: cdktn.booleanToTerraform(this._disableUpgradeMigration),
+      id: cdktn.stringToTerraform(this._id),
+      last_contact_threshold: cdktn.stringToTerraform(this._lastContactThreshold),
+      max_trailing_logs: cdktn.numberToTerraform(this._maxTrailingLogs),
+      min_quorum: cdktn.numberToTerraform(this._minQuorum),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      server_stabilization_time: cdktn.stringToTerraform(this._serverStabilizationTime),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cleanup_dead_servers: {
-        value: cdktf.booleanToHclTerraform(this._cleanupDeadServers),
+        value: cdktn.booleanToHclTerraform(this._cleanupDeadServers),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       dead_server_last_contact_threshold: {
-        value: cdktf.stringToHclTerraform(this._deadServerLastContactThreshold),
+        value: cdktn.stringToHclTerraform(this._deadServerLastContactThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_upgrade_migration: {
-        value: cdktf.booleanToHclTerraform(this._disableUpgradeMigration),
+        value: cdktn.booleanToHclTerraform(this._disableUpgradeMigration),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       last_contact_threshold: {
-        value: cdktf.stringToHclTerraform(this._lastContactThreshold),
+        value: cdktn.stringToHclTerraform(this._lastContactThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_trailing_logs: {
-        value: cdktf.numberToHclTerraform(this._maxTrailingLogs),
+        value: cdktn.numberToHclTerraform(this._maxTrailingLogs),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       min_quorum: {
-        value: cdktf.numberToHclTerraform(this._minQuorum),
+        value: cdktn.numberToHclTerraform(this._minQuorum),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       server_stabilization_time: {
-        value: cdktf.stringToHclTerraform(this._serverStabilizationTime),
+        value: cdktn.stringToHclTerraform(this._serverStabilizationTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

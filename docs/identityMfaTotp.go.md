@@ -1,28 +1,28 @@
-# `identityMfaTotp` Submodule <a name="`identityMfaTotp` Submodule" id="@cdktf/provider-vault.identityMfaTotp"></a>
+# `identityMfaTotp` Submodule <a name="`identityMfaTotp` Submodule" id="@cdktn/provider-vault.identityMfaTotp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### IdentityMfaTotp <a name="IdentityMfaTotp" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp"></a>
+### IdentityMfaTotp <a name="IdentityMfaTotp" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_totp vault_identity_mfa_totp}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitymfatotp"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitymfatotp"
 
 identitymfatotp.NewIdentityMfaTotp(scope Construct, id *string, config IdentityMfaTotpConfig) IdentityMfaTotp
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig">IdentityMfaTotpConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig">IdentityMfaTotpConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig">IdentityMfaTotpConfig</a>
+- *Type:* <a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig">IdentityMfaTotpConfig</a>
 
 ---
 
@@ -50,42 +50,42 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetAlgorithm">ResetAlgorithm</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetDigits">ResetDigits</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetKeySize">ResetKeySize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetMaxValidationAttempts">ResetMaxValidationAttempts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetNamespace">ResetNamespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetPeriod">ResetPeriod</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetQrSize">ResetQrSize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetSkew">ResetSkew</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetAlgorithm">ResetAlgorithm</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetDigits">ResetDigits</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetKeySize">ResetKeySize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetMaxValidationAttempts">ResetMaxValidationAttempts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetPeriod">ResetPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetQrSize">ResetQrSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetSkew">ResetSkew</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.toString"></a>
 
 ```go
 func ToString() *string
@@ -93,25 +93,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -119,7 +119,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -127,7 +127,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -135,19 +135,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -155,7 +155,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -163,7 +163,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -171,151 +171,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -325,7 +325,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -333,7 +333,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -341,7 +341,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -357,7 +357,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -365,7 +365,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -373,55 +373,55 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAlgorithm` <a name="ResetAlgorithm" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetAlgorithm"></a>
+##### `ResetAlgorithm` <a name="ResetAlgorithm" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetAlgorithm"></a>
 
 ```go
 func ResetAlgorithm()
 ```
 
-##### `ResetDigits` <a name="ResetDigits" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetDigits"></a>
+##### `ResetDigits` <a name="ResetDigits" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetDigits"></a>
 
 ```go
 func ResetDigits()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetKeySize` <a name="ResetKeySize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetKeySize"></a>
+##### `ResetKeySize` <a name="ResetKeySize" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetKeySize"></a>
 
 ```go
 func ResetKeySize()
 ```
 
-##### `ResetMaxValidationAttempts` <a name="ResetMaxValidationAttempts" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetMaxValidationAttempts"></a>
+##### `ResetMaxValidationAttempts` <a name="ResetMaxValidationAttempts" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetMaxValidationAttempts"></a>
 
 ```go
 func ResetMaxValidationAttempts()
 ```
 
-##### `ResetNamespace` <a name="ResetNamespace" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetNamespace"></a>
+##### `ResetNamespace` <a name="ResetNamespace" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetNamespace"></a>
 
 ```go
 func ResetNamespace()
 ```
 
-##### `ResetPeriod` <a name="ResetPeriod" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetPeriod"></a>
+##### `ResetPeriod` <a name="ResetPeriod" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetPeriod"></a>
 
 ```go
 func ResetPeriod()
 ```
 
-##### `ResetQrSize` <a name="ResetQrSize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetQrSize"></a>
+##### `ResetQrSize` <a name="ResetQrSize" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetQrSize"></a>
 
 ```go
 func ResetQrSize()
 ```
 
-##### `ResetSkew` <a name="ResetSkew" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.resetSkew"></a>
+##### `ResetSkew` <a name="ResetSkew" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.resetSkew"></a>
 
 ```go
 func ResetSkew()
@@ -431,17 +431,17 @@ func ResetSkew()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a IdentityMfaTotp resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a IdentityMfaTotp resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitymfatotp"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitymfatotp"
 
 identitymfatotp.IdentityMfaTotp_IsConstruct(x interface{}) *bool
 ```
@@ -462,7 +462,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -470,45 +470,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitymfatotp"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitymfatotp"
 
 identitymfatotp.IdentityMfaTotp_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitymfatotp"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitymfatotp"
 
 identitymfatotp.IdentityMfaTotp_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitymfatotp"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitymfatotp"
 
 identitymfatotp.IdentityMfaTotp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a IdentityMfaTotp resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a IdentityMfaTotp resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -516,7 +516,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -524,19 +524,19 @@ The construct id used in the generated config for the IdentityMfaTotp to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing IdentityMfaTotp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_totp#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_totp#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the IdentityMfaTotp to import is found.
 
@@ -546,51 +546,51 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.methodId">MethodId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.mountAccessor">MountAccessor</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespacePath">NamespacePath</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.type">Type</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.uuid">Uuid</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithmInput">AlgorithmInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.digitsInput">DigitsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.issuerInput">IssuerInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.keySizeInput">KeySizeInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttemptsInput">MaxValidationAttemptsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.periodInput">PeriodInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSizeInput">QrSizeInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skewInput">SkewInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithm">Algorithm</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.digits">Digits</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.issuer">Issuer</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.keySize">KeySize</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttempts">MaxValidationAttempts</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.period">Period</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize">QrSize</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skew">Skew</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.methodId">MethodId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.mountAccessor">MountAccessor</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceId">NamespaceId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespacePath">NamespacePath</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.uuid">Uuid</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithmInput">AlgorithmInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.digitsInput">DigitsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.issuerInput">IssuerInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.keySizeInput">KeySizeInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttemptsInput">MaxValidationAttemptsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.periodInput">PeriodInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSizeInput">QrSizeInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skewInput">SkewInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithm">Algorithm</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.digits">Digits</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.issuer">Issuer</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.keySize">KeySize</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttempts">MaxValidationAttempts</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.period">Period</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize">QrSize</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skew">Skew</a></code> | <code>*f64</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.node"></a>
 
 ```go
 func Node() Node
@@ -602,17 +602,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -622,7 +622,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -632,7 +632,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -642,7 +642,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -652,17 +652,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -672,7 +672,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -682,7 +682,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -692,37 +692,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -732,7 +732,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `MethodId`<sup>Required</sup> <a name="MethodId" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.methodId"></a>
+##### `MethodId`<sup>Required</sup> <a name="MethodId" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.methodId"></a>
 
 ```go
 func MethodId() *string
@@ -742,7 +742,7 @@ func MethodId() *string
 
 ---
 
-##### `MountAccessor`<sup>Required</sup> <a name="MountAccessor" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.mountAccessor"></a>
+##### `MountAccessor`<sup>Required</sup> <a name="MountAccessor" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.mountAccessor"></a>
 
 ```go
 func MountAccessor() *string
@@ -752,7 +752,7 @@ func MountAccessor() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.name"></a>
 
 ```go
 func Name() *string
@@ -762,7 +762,7 @@ func Name() *string
 
 ---
 
-##### `NamespaceId`<sup>Required</sup> <a name="NamespaceId" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceId"></a>
+##### `NamespaceId`<sup>Required</sup> <a name="NamespaceId" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceId"></a>
 
 ```go
 func NamespaceId() *string
@@ -772,7 +772,7 @@ func NamespaceId() *string
 
 ---
 
-##### `NamespacePath`<sup>Required</sup> <a name="NamespacePath" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespacePath"></a>
+##### `NamespacePath`<sup>Required</sup> <a name="NamespacePath" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespacePath"></a>
 
 ```go
 func NamespacePath() *string
@@ -782,7 +782,7 @@ func NamespacePath() *string
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.type"></a>
 
 ```go
 func Type() *string
@@ -792,7 +792,7 @@ func Type() *string
 
 ---
 
-##### `Uuid`<sup>Required</sup> <a name="Uuid" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.uuid"></a>
+##### `Uuid`<sup>Required</sup> <a name="Uuid" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.uuid"></a>
 
 ```go
 func Uuid() *string
@@ -802,7 +802,7 @@ func Uuid() *string
 
 ---
 
-##### `AlgorithmInput`<sup>Optional</sup> <a name="AlgorithmInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithmInput"></a>
+##### `AlgorithmInput`<sup>Optional</sup> <a name="AlgorithmInput" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithmInput"></a>
 
 ```go
 func AlgorithmInput() *string
@@ -812,7 +812,7 @@ func AlgorithmInput() *string
 
 ---
 
-##### `DigitsInput`<sup>Optional</sup> <a name="DigitsInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.digitsInput"></a>
+##### `DigitsInput`<sup>Optional</sup> <a name="DigitsInput" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.digitsInput"></a>
 
 ```go
 func DigitsInput() *f64
@@ -822,7 +822,7 @@ func DigitsInput() *f64
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -832,7 +832,7 @@ func IdInput() *string
 
 ---
 
-##### `IssuerInput`<sup>Optional</sup> <a name="IssuerInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.issuerInput"></a>
+##### `IssuerInput`<sup>Optional</sup> <a name="IssuerInput" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.issuerInput"></a>
 
 ```go
 func IssuerInput() *string
@@ -842,7 +842,7 @@ func IssuerInput() *string
 
 ---
 
-##### `KeySizeInput`<sup>Optional</sup> <a name="KeySizeInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.keySizeInput"></a>
+##### `KeySizeInput`<sup>Optional</sup> <a name="KeySizeInput" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.keySizeInput"></a>
 
 ```go
 func KeySizeInput() *f64
@@ -852,7 +852,7 @@ func KeySizeInput() *f64
 
 ---
 
-##### `MaxValidationAttemptsInput`<sup>Optional</sup> <a name="MaxValidationAttemptsInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttemptsInput"></a>
+##### `MaxValidationAttemptsInput`<sup>Optional</sup> <a name="MaxValidationAttemptsInput" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttemptsInput"></a>
 
 ```go
 func MaxValidationAttemptsInput() *f64
@@ -862,7 +862,7 @@ func MaxValidationAttemptsInput() *f64
 
 ---
 
-##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceInput"></a>
+##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespaceInput"></a>
 
 ```go
 func NamespaceInput() *string
@@ -872,7 +872,7 @@ func NamespaceInput() *string
 
 ---
 
-##### `PeriodInput`<sup>Optional</sup> <a name="PeriodInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.periodInput"></a>
+##### `PeriodInput`<sup>Optional</sup> <a name="PeriodInput" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.periodInput"></a>
 
 ```go
 func PeriodInput() *f64
@@ -882,7 +882,7 @@ func PeriodInput() *f64
 
 ---
 
-##### `QrSizeInput`<sup>Optional</sup> <a name="QrSizeInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSizeInput"></a>
+##### `QrSizeInput`<sup>Optional</sup> <a name="QrSizeInput" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSizeInput"></a>
 
 ```go
 func QrSizeInput() *f64
@@ -892,7 +892,7 @@ func QrSizeInput() *f64
 
 ---
 
-##### `SkewInput`<sup>Optional</sup> <a name="SkewInput" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skewInput"></a>
+##### `SkewInput`<sup>Optional</sup> <a name="SkewInput" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skewInput"></a>
 
 ```go
 func SkewInput() *f64
@@ -902,7 +902,7 @@ func SkewInput() *f64
 
 ---
 
-##### `Algorithm`<sup>Required</sup> <a name="Algorithm" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithm"></a>
+##### `Algorithm`<sup>Required</sup> <a name="Algorithm" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.algorithm"></a>
 
 ```go
 func Algorithm() *string
@@ -912,7 +912,7 @@ func Algorithm() *string
 
 ---
 
-##### `Digits`<sup>Required</sup> <a name="Digits" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.digits"></a>
+##### `Digits`<sup>Required</sup> <a name="Digits" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.digits"></a>
 
 ```go
 func Digits() *f64
@@ -922,7 +922,7 @@ func Digits() *f64
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.id"></a>
 
 ```go
 func Id() *string
@@ -932,7 +932,7 @@ func Id() *string
 
 ---
 
-##### `Issuer`<sup>Required</sup> <a name="Issuer" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.issuer"></a>
+##### `Issuer`<sup>Required</sup> <a name="Issuer" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.issuer"></a>
 
 ```go
 func Issuer() *string
@@ -942,7 +942,7 @@ func Issuer() *string
 
 ---
 
-##### `KeySize`<sup>Required</sup> <a name="KeySize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.keySize"></a>
+##### `KeySize`<sup>Required</sup> <a name="KeySize" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.keySize"></a>
 
 ```go
 func KeySize() *f64
@@ -952,7 +952,7 @@ func KeySize() *f64
 
 ---
 
-##### `MaxValidationAttempts`<sup>Required</sup> <a name="MaxValidationAttempts" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttempts"></a>
+##### `MaxValidationAttempts`<sup>Required</sup> <a name="MaxValidationAttempts" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.maxValidationAttempts"></a>
 
 ```go
 func MaxValidationAttempts() *f64
@@ -962,7 +962,7 @@ func MaxValidationAttempts() *f64
 
 ---
 
-##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespace"></a>
+##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.namespace"></a>
 
 ```go
 func Namespace() *string
@@ -972,7 +972,7 @@ func Namespace() *string
 
 ---
 
-##### `Period`<sup>Required</sup> <a name="Period" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.period"></a>
+##### `Period`<sup>Required</sup> <a name="Period" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.period"></a>
 
 ```go
 func Period() *f64
@@ -982,7 +982,7 @@ func Period() *f64
 
 ---
 
-##### `QrSize`<sup>Required</sup> <a name="QrSize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize"></a>
+##### `QrSize`<sup>Required</sup> <a name="QrSize" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.qrSize"></a>
 
 ```go
 func QrSize() *f64
@@ -992,7 +992,7 @@ func QrSize() *f64
 
 ---
 
-##### `Skew`<sup>Required</sup> <a name="Skew" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skew"></a>
+##### `Skew`<sup>Required</sup> <a name="Skew" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.skew"></a>
 
 ```go
 func Skew() *f64
@@ -1006,11 +1006,11 @@ func Skew() *f64
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotp.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotp.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1022,20 +1022,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### IdentityMfaTotpConfig <a name="IdentityMfaTotpConfig" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig"></a>
+### IdentityMfaTotpConfig <a name="IdentityMfaTotpConfig" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitymfatotp"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitymfatotp"
 
 &identitymfatotp.IdentityMfaTotpConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Issuer: *string,
 	Algorithm: *string,
@@ -1054,27 +1054,27 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/identitymfatotp"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.issuer">Issuer</a></code> | <code>*string</code> | The name of the key's issuing organization. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.algorithm">Algorithm</a></code> | <code>*string</code> | Specifies the hashing algorithm used to generate the TOTP code. Options include SHA1, SHA256, SHA512. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.digits">Digits</a></code> | <code>*f64</code> | The number of digits in the generated TOTP token. This value can either be 6 or 8. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.keySize">KeySize</a></code> | <code>*f64</code> | Specifies the size in bytes of the generated key. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.maxValidationAttempts">MaxValidationAttempts</a></code> | <code>*f64</code> | The maximum number of consecutive failed validation attempts allowed. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.period">Period</a></code> | <code>*f64</code> | The length of time in seconds used to generate a counter for the TOTP token calculation. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.qrSize">QrSize</a></code> | <code>*f64</code> | The pixel size of the generated square QR code. |
-| <code><a href="#@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.skew">Skew</a></code> | <code>*f64</code> | The number of delay periods that are allowed when validating a TOTP token. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.issuer">Issuer</a></code> | <code>*string</code> | The name of the key's issuing organization. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.algorithm">Algorithm</a></code> | <code>*string</code> | Specifies the hashing algorithm used to generate the TOTP code. Options include SHA1, SHA256, SHA512. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.digits">Digits</a></code> | <code>*f64</code> | The number of digits in the generated TOTP token. This value can either be 6 or 8. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.keySize">KeySize</a></code> | <code>*f64</code> | Specifies the size in bytes of the generated key. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.maxValidationAttempts">MaxValidationAttempts</a></code> | <code>*f64</code> | The maximum number of consecutive failed validation attempts allowed. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.period">Period</a></code> | <code>*f64</code> | The length of time in seconds used to generate a counter for the TOTP token calculation. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.qrSize">QrSize</a></code> | <code>*f64</code> | The pixel size of the generated square QR code. |
+| <code><a href="#@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.skew">Skew</a></code> | <code>*f64</code> | The number of delay periods that are allowed when validating a TOTP token. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1084,7 +1084,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1094,47 +1094,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1144,7 +1144,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Issuer`<sup>Required</sup> <a name="Issuer" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.issuer"></a>
+##### `Issuer`<sup>Required</sup> <a name="Issuer" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.issuer"></a>
 
 ```go
 Issuer *string
@@ -1154,11 +1154,11 @@ Issuer *string
 
 The name of the key's issuing organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_totp#issuer IdentityMfaTotp#issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_totp#issuer IdentityMfaTotp#issuer}
 
 ---
 
-##### `Algorithm`<sup>Optional</sup> <a name="Algorithm" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.algorithm"></a>
+##### `Algorithm`<sup>Optional</sup> <a name="Algorithm" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.algorithm"></a>
 
 ```go
 Algorithm *string
@@ -1168,11 +1168,11 @@ Algorithm *string
 
 Specifies the hashing algorithm used to generate the TOTP code. Options include SHA1, SHA256, SHA512.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_totp#algorithm IdentityMfaTotp#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_totp#algorithm IdentityMfaTotp#algorithm}
 
 ---
 
-##### `Digits`<sup>Optional</sup> <a name="Digits" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.digits"></a>
+##### `Digits`<sup>Optional</sup> <a name="Digits" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.digits"></a>
 
 ```go
 Digits *f64
@@ -1182,11 +1182,11 @@ Digits *f64
 
 The number of digits in the generated TOTP token. This value can either be 6 or 8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_totp#digits IdentityMfaTotp#digits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_totp#digits IdentityMfaTotp#digits}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1194,14 +1194,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_totp#id IdentityMfaTotp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `KeySize`<sup>Optional</sup> <a name="KeySize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.keySize"></a>
+##### `KeySize`<sup>Optional</sup> <a name="KeySize" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.keySize"></a>
 
 ```go
 KeySize *f64
@@ -1211,11 +1211,11 @@ KeySize *f64
 
 Specifies the size in bytes of the generated key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_totp#key_size IdentityMfaTotp#key_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_totp#key_size IdentityMfaTotp#key_size}
 
 ---
 
-##### `MaxValidationAttempts`<sup>Optional</sup> <a name="MaxValidationAttempts" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.maxValidationAttempts"></a>
+##### `MaxValidationAttempts`<sup>Optional</sup> <a name="MaxValidationAttempts" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.maxValidationAttempts"></a>
 
 ```go
 MaxValidationAttempts *f64
@@ -1225,11 +1225,11 @@ MaxValidationAttempts *f64
 
 The maximum number of consecutive failed validation attempts allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_totp#max_validation_attempts IdentityMfaTotp#max_validation_attempts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_totp#max_validation_attempts IdentityMfaTotp#max_validation_attempts}
 
 ---
 
-##### `Namespace`<sup>Optional</sup> <a name="Namespace" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.namespace"></a>
+##### `Namespace`<sup>Optional</sup> <a name="Namespace" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.namespace"></a>
 
 ```go
 Namespace *string
@@ -1239,11 +1239,11 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_totp#namespace IdentityMfaTotp#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_totp#namespace IdentityMfaTotp#namespace}
 
 ---
 
-##### `Period`<sup>Optional</sup> <a name="Period" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.period"></a>
+##### `Period`<sup>Optional</sup> <a name="Period" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.period"></a>
 
 ```go
 Period *f64
@@ -1253,11 +1253,11 @@ Period *f64
 
 The length of time in seconds used to generate a counter for the TOTP token calculation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_totp#period IdentityMfaTotp#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_totp#period IdentityMfaTotp#period}
 
 ---
 
-##### `QrSize`<sup>Optional</sup> <a name="QrSize" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.qrSize"></a>
+##### `QrSize`<sup>Optional</sup> <a name="QrSize" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.qrSize"></a>
 
 ```go
 QrSize *f64
@@ -1267,11 +1267,11 @@ QrSize *f64
 
 The pixel size of the generated square QR code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_totp#qr_size IdentityMfaTotp#qr_size}
 
 ---
 
-##### `Skew`<sup>Optional</sup> <a name="Skew" id="@cdktf/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.skew"></a>
+##### `Skew`<sup>Optional</sup> <a name="Skew" id="@cdktn/provider-vault.identityMfaTotp.IdentityMfaTotpConfig.property.skew"></a>
 
 ```go
 Skew *f64
@@ -1283,7 +1283,7 @@ The number of delay periods that are allowed when validating a TOTP token.
 
 This value can either be 0 or 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_totp#skew IdentityMfaTotp#skew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_totp#skew IdentityMfaTotp#skew}
 
 ---
 

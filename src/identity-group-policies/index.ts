@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_policies
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IdentityGroupPoliciesConfig extends cdktf.TerraformMetaArguments {
+export interface IdentityGroupPoliciesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Should the resource manage policies exclusively? Beware of race conditions when disabling exclusive management
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_policies#exclusive IdentityGroupPolicies#exclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies#exclusive IdentityGroupPolicies#exclusive}
   */
-  readonly exclusive?: boolean | cdktf.IResolvable;
+  readonly exclusive?: boolean | cdktn.IResolvable;
   /**
   * ID of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_policies#group_id IdentityGroupPolicies#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies#group_id IdentityGroupPolicies#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_policies#id IdentityGroupPolicies#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies#id IdentityGroupPolicies#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,21 +34,21 @@ export interface IdentityGroupPoliciesConfig extends cdktf.TerraformMetaArgument
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_policies#namespace IdentityGroupPolicies#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies#namespace IdentityGroupPolicies#namespace}
   */
   readonly namespace?: string;
   /**
   * Policies to be tied to the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_policies#policies IdentityGroupPolicies#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies#policies IdentityGroupPolicies#policies}
   */
   readonly policies: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_policies vault_identity_group_policies}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies vault_identity_group_policies}
 */
-export class IdentityGroupPolicies extends cdktf.TerraformResource {
+export class IdentityGroupPolicies extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class IdentityGroupPolicies extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IdentityGroupPolicies resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IdentityGroupPolicies resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityGroupPolicies to import
-  * @param importFromId The id of the existing IdentityGroupPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityGroupPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityGroupPolicies to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_group_policies", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_group_policies", importId: importFromId, provider });
       }
 
   // ===========
@@ -74,7 +74,7 @@ export class IdentityGroupPolicies extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_policies vault_identity_group_policies} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class IdentityGroupPolicies extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_group_policies',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -108,11 +108,11 @@ export class IdentityGroupPolicies extends cdktf.TerraformResource {
   // ==========
 
   // exclusive - computed: false, optional: true, required: false
-  private _exclusive?: boolean | cdktf.IResolvable; 
+  private _exclusive?: boolean | cdktn.IResolvable; 
   public get exclusive() {
     return this.getBooleanAttribute('exclusive');
   }
-  public set exclusive(value: boolean | cdktf.IResolvable) {
+  public set exclusive(value: boolean | cdktn.IResolvable) {
     this._exclusive = value;
   }
   public resetExclusive() {
@@ -176,7 +176,7 @@ export class IdentityGroupPolicies extends cdktf.TerraformResource {
   // policies - computed: false, optional: false, required: true
   private _policies?: string[]; 
   public get policies() {
-    return cdktf.Fn.tolist(this.getListAttribute('policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('policies'));
   }
   public set policies(value: string[]) {
     this._policies = value;
@@ -192,42 +192,42 @@ export class IdentityGroupPolicies extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      exclusive: cdktf.booleanToTerraform(this._exclusive),
-      group_id: cdktf.stringToTerraform(this._groupId),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._policies),
+      exclusive: cdktn.booleanToTerraform(this._exclusive),
+      group_id: cdktn.stringToTerraform(this._groupId),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._policies),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       exclusive: {
-        value: cdktf.booleanToHclTerraform(this._exclusive),
+        value: cdktn.booleanToHclTerraform(this._exclusive),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       group_id: {
-        value: cdktf.stringToHclTerraform(this._groupId),
+        value: cdktn.stringToHclTerraform(this._groupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policies: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._policies),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._policies),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

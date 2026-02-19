@@ -1,28 +1,28 @@
-# `nomadSecretBackend` Submodule <a name="`nomadSecretBackend` Submodule" id="@cdktf/provider-vault.nomadSecretBackend"></a>
+# `nomadSecretBackend` Submodule <a name="`nomadSecretBackend` Submodule" id="@cdktn/provider-vault.nomadSecretBackend"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### NomadSecretBackend <a name="NomadSecretBackend" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend"></a>
+### NomadSecretBackend <a name="NomadSecretBackend" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer"></a>
 
 ```typescript
-import { nomadSecretBackend } from '@cdktf/provider-vault'
+import { nomadSecretBackend } from '@cdktn/provider-vault'
 
 new nomadSecretBackend.NomadSecretBackend(scope: Construct, id: string, config?: NomadSecretBackendConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig">NomadSecretBackendConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig">NomadSecretBackendConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig">NomadSecretBackendConfig</a>
+- *Type:* <a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig">NomadSecretBackendConfig</a>
 
 ---
 
@@ -50,62 +50,66 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAddress">resetAddress</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAllowedManagedKeys">resetAllowedManagedKeys</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAllowedResponseHeaders">resetAllowedResponseHeaders</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAuditNonHmacRequestKeys">resetAuditNonHmacRequestKeys</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAuditNonHmacResponseKeys">resetAuditNonHmacResponseKeys</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetBackend">resetBackend</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetCaCert">resetCaCert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetClientCert">resetClientCert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetClientKey">resetClientKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDefaultLeaseTtlSeconds">resetDefaultLeaseTtlSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDelegatedAuthAccessors">resetDelegatedAuthAccessors</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDisableRemount">resetDisableRemount</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetExternalEntropyAccess">resetExternalEntropyAccess</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetForceNoCache">resetForceNoCache</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetIdentityTokenKey">resetIdentityTokenKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetListingVisibility">resetListingVisibility</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetLocal">resetLocal</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetMaxLeaseTtlSeconds">resetMaxLeaseTtlSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetMaxTokenNameLength">resetMaxTokenNameLength</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetMaxTtl">resetMaxTtl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetNamespace">resetNamespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetOptions">resetOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetPassthroughRequestHeaders">resetPassthroughRequestHeaders</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetPluginVersion">resetPluginVersion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetSealWrap">resetSealWrap</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetToken">resetToken</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetTtl">resetTtl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAddress">resetAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAllowedManagedKeys">resetAllowedManagedKeys</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAllowedResponseHeaders">resetAllowedResponseHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAuditNonHmacRequestKeys">resetAuditNonHmacRequestKeys</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAuditNonHmacResponseKeys">resetAuditNonHmacResponseKeys</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetBackend">resetBackend</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetCaCert">resetCaCert</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetClientCert">resetClientCert</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetClientKey">resetClientKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetClientKeyWo">resetClientKeyWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetClientKeyWoVersion">resetClientKeyWoVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDefaultLeaseTtlSeconds">resetDefaultLeaseTtlSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDelegatedAuthAccessors">resetDelegatedAuthAccessors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDisableRemount">resetDisableRemount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetExternalEntropyAccess">resetExternalEntropyAccess</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetForceNoCache">resetForceNoCache</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetIdentityTokenKey">resetIdentityTokenKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetListingVisibility">resetListingVisibility</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetLocal">resetLocal</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetMaxLeaseTtlSeconds">resetMaxLeaseTtlSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetMaxTokenNameLength">resetMaxTokenNameLength</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetMaxTtl">resetMaxTtl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetNamespace">resetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetOptions">resetOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetPassthroughRequestHeaders">resetPassthroughRequestHeaders</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetPluginVersion">resetPluginVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetSealWrap">resetSealWrap</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetToken">resetToken</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetTokenWo">resetTokenWo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetTokenWoVersion">resetTokenWoVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetTtl">resetTtl</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.toString"></a>
 
 ```typescript
 public toString(): string
@@ -113,25 +117,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -139,7 +143,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -147,7 +151,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -155,19 +159,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -175,7 +179,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -183,7 +187,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -191,151 +195,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -345,7 +349,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -353,7 +357,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -361,7 +365,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -369,7 +373,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -377,7 +381,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -385,7 +389,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -393,175 +397,199 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAddress` <a name="resetAddress" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAddress"></a>
+##### `resetAddress` <a name="resetAddress" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAddress"></a>
 
 ```typescript
 public resetAddress(): void
 ```
 
-##### `resetAllowedManagedKeys` <a name="resetAllowedManagedKeys" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAllowedManagedKeys"></a>
+##### `resetAllowedManagedKeys` <a name="resetAllowedManagedKeys" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAllowedManagedKeys"></a>
 
 ```typescript
 public resetAllowedManagedKeys(): void
 ```
 
-##### `resetAllowedResponseHeaders` <a name="resetAllowedResponseHeaders" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAllowedResponseHeaders"></a>
+##### `resetAllowedResponseHeaders` <a name="resetAllowedResponseHeaders" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAllowedResponseHeaders"></a>
 
 ```typescript
 public resetAllowedResponseHeaders(): void
 ```
 
-##### `resetAuditNonHmacRequestKeys` <a name="resetAuditNonHmacRequestKeys" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAuditNonHmacRequestKeys"></a>
+##### `resetAuditNonHmacRequestKeys` <a name="resetAuditNonHmacRequestKeys" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAuditNonHmacRequestKeys"></a>
 
 ```typescript
 public resetAuditNonHmacRequestKeys(): void
 ```
 
-##### `resetAuditNonHmacResponseKeys` <a name="resetAuditNonHmacResponseKeys" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAuditNonHmacResponseKeys"></a>
+##### `resetAuditNonHmacResponseKeys` <a name="resetAuditNonHmacResponseKeys" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetAuditNonHmacResponseKeys"></a>
 
 ```typescript
 public resetAuditNonHmacResponseKeys(): void
 ```
 
-##### `resetBackend` <a name="resetBackend" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetBackend"></a>
+##### `resetBackend` <a name="resetBackend" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetBackend"></a>
 
 ```typescript
 public resetBackend(): void
 ```
 
-##### `resetCaCert` <a name="resetCaCert" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetCaCert"></a>
+##### `resetCaCert` <a name="resetCaCert" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetCaCert"></a>
 
 ```typescript
 public resetCaCert(): void
 ```
 
-##### `resetClientCert` <a name="resetClientCert" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetClientCert"></a>
+##### `resetClientCert` <a name="resetClientCert" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetClientCert"></a>
 
 ```typescript
 public resetClientCert(): void
 ```
 
-##### `resetClientKey` <a name="resetClientKey" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetClientKey"></a>
+##### `resetClientKey` <a name="resetClientKey" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetClientKey"></a>
 
 ```typescript
 public resetClientKey(): void
 ```
 
-##### `resetDefaultLeaseTtlSeconds` <a name="resetDefaultLeaseTtlSeconds" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDefaultLeaseTtlSeconds"></a>
+##### `resetClientKeyWo` <a name="resetClientKeyWo" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetClientKeyWo"></a>
+
+```typescript
+public resetClientKeyWo(): void
+```
+
+##### `resetClientKeyWoVersion` <a name="resetClientKeyWoVersion" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetClientKeyWoVersion"></a>
+
+```typescript
+public resetClientKeyWoVersion(): void
+```
+
+##### `resetDefaultLeaseTtlSeconds` <a name="resetDefaultLeaseTtlSeconds" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDefaultLeaseTtlSeconds"></a>
 
 ```typescript
 public resetDefaultLeaseTtlSeconds(): void
 ```
 
-##### `resetDelegatedAuthAccessors` <a name="resetDelegatedAuthAccessors" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDelegatedAuthAccessors"></a>
+##### `resetDelegatedAuthAccessors` <a name="resetDelegatedAuthAccessors" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDelegatedAuthAccessors"></a>
 
 ```typescript
 public resetDelegatedAuthAccessors(): void
 ```
 
-##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDescription"></a>
+##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDescription"></a>
 
 ```typescript
 public resetDescription(): void
 ```
 
-##### `resetDisableRemount` <a name="resetDisableRemount" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDisableRemount"></a>
+##### `resetDisableRemount` <a name="resetDisableRemount" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetDisableRemount"></a>
 
 ```typescript
 public resetDisableRemount(): void
 ```
 
-##### `resetExternalEntropyAccess` <a name="resetExternalEntropyAccess" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetExternalEntropyAccess"></a>
+##### `resetExternalEntropyAccess` <a name="resetExternalEntropyAccess" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetExternalEntropyAccess"></a>
 
 ```typescript
 public resetExternalEntropyAccess(): void
 ```
 
-##### `resetForceNoCache` <a name="resetForceNoCache" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetForceNoCache"></a>
+##### `resetForceNoCache` <a name="resetForceNoCache" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetForceNoCache"></a>
 
 ```typescript
 public resetForceNoCache(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetIdentityTokenKey` <a name="resetIdentityTokenKey" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetIdentityTokenKey"></a>
+##### `resetIdentityTokenKey` <a name="resetIdentityTokenKey" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetIdentityTokenKey"></a>
 
 ```typescript
 public resetIdentityTokenKey(): void
 ```
 
-##### `resetListingVisibility` <a name="resetListingVisibility" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetListingVisibility"></a>
+##### `resetListingVisibility` <a name="resetListingVisibility" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetListingVisibility"></a>
 
 ```typescript
 public resetListingVisibility(): void
 ```
 
-##### `resetLocal` <a name="resetLocal" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetLocal"></a>
+##### `resetLocal` <a name="resetLocal" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetLocal"></a>
 
 ```typescript
 public resetLocal(): void
 ```
 
-##### `resetMaxLeaseTtlSeconds` <a name="resetMaxLeaseTtlSeconds" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetMaxLeaseTtlSeconds"></a>
+##### `resetMaxLeaseTtlSeconds` <a name="resetMaxLeaseTtlSeconds" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetMaxLeaseTtlSeconds"></a>
 
 ```typescript
 public resetMaxLeaseTtlSeconds(): void
 ```
 
-##### `resetMaxTokenNameLength` <a name="resetMaxTokenNameLength" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetMaxTokenNameLength"></a>
+##### `resetMaxTokenNameLength` <a name="resetMaxTokenNameLength" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetMaxTokenNameLength"></a>
 
 ```typescript
 public resetMaxTokenNameLength(): void
 ```
 
-##### `resetMaxTtl` <a name="resetMaxTtl" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetMaxTtl"></a>
+##### `resetMaxTtl` <a name="resetMaxTtl" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetMaxTtl"></a>
 
 ```typescript
 public resetMaxTtl(): void
 ```
 
-##### `resetNamespace` <a name="resetNamespace" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetNamespace"></a>
+##### `resetNamespace` <a name="resetNamespace" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetNamespace"></a>
 
 ```typescript
 public resetNamespace(): void
 ```
 
-##### `resetOptions` <a name="resetOptions" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetOptions"></a>
+##### `resetOptions` <a name="resetOptions" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetOptions"></a>
 
 ```typescript
 public resetOptions(): void
 ```
 
-##### `resetPassthroughRequestHeaders` <a name="resetPassthroughRequestHeaders" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetPassthroughRequestHeaders"></a>
+##### `resetPassthroughRequestHeaders` <a name="resetPassthroughRequestHeaders" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetPassthroughRequestHeaders"></a>
 
 ```typescript
 public resetPassthroughRequestHeaders(): void
 ```
 
-##### `resetPluginVersion` <a name="resetPluginVersion" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetPluginVersion"></a>
+##### `resetPluginVersion` <a name="resetPluginVersion" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetPluginVersion"></a>
 
 ```typescript
 public resetPluginVersion(): void
 ```
 
-##### `resetSealWrap` <a name="resetSealWrap" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetSealWrap"></a>
+##### `resetSealWrap` <a name="resetSealWrap" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetSealWrap"></a>
 
 ```typescript
 public resetSealWrap(): void
 ```
 
-##### `resetToken` <a name="resetToken" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetToken"></a>
+##### `resetToken` <a name="resetToken" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetToken"></a>
 
 ```typescript
 public resetToken(): void
 ```
 
-##### `resetTtl` <a name="resetTtl" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.resetTtl"></a>
+##### `resetTokenWo` <a name="resetTokenWo" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetTokenWo"></a>
+
+```typescript
+public resetTokenWo(): void
+```
+
+##### `resetTokenWoVersion` <a name="resetTokenWoVersion" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetTokenWoVersion"></a>
+
+```typescript
+public resetTokenWoVersion(): void
+```
+
+##### `resetTtl` <a name="resetTtl" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.resetTtl"></a>
 
 ```typescript
 public resetTtl(): void
@@ -571,17 +599,17 @@ public resetTtl(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a NomadSecretBackend resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a NomadSecretBackend resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.isConstruct"></a>
 
 ```typescript
-import { nomadSecretBackend } from '@cdktf/provider-vault'
+import { nomadSecretBackend } from '@cdktn/provider-vault'
 
 nomadSecretBackend.NomadSecretBackend.isConstruct(x: any)
 ```
@@ -602,7 +630,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -610,45 +638,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformElement"></a>
 
 ```typescript
-import { nomadSecretBackend } from '@cdktf/provider-vault'
+import { nomadSecretBackend } from '@cdktn/provider-vault'
 
 nomadSecretBackend.NomadSecretBackend.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformResource"></a>
 
 ```typescript
-import { nomadSecretBackend } from '@cdktf/provider-vault'
+import { nomadSecretBackend } from '@cdktn/provider-vault'
 
 nomadSecretBackend.NomadSecretBackend.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.generateConfigForImport"></a>
 
 ```typescript
-import { nomadSecretBackend } from '@cdktf/provider-vault'
+import { nomadSecretBackend } from '@cdktn/provider-vault'
 
 nomadSecretBackend.NomadSecretBackend.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a NomadSecretBackend resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a NomadSecretBackend resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -656,7 +684,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -664,19 +692,19 @@ The construct id used in the generated config for the NomadSecretBackend to impo
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing NomadSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the NomadSecretBackend to import is found.
 
@@ -686,83 +714,91 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.accessor">accessor</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.addressInput">addressInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedManagedKeysInput">allowedManagedKeysInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedResponseHeadersInput">allowedResponseHeadersInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacRequestKeysInput">auditNonHmacRequestKeysInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacResponseKeysInput">auditNonHmacResponseKeysInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.caCertInput">caCertInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientCertInput">clientCertInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyInput">clientKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.defaultLeaseTtlSecondsInput">defaultLeaseTtlSecondsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.delegatedAuthAccessorsInput">delegatedAuthAccessorsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.disableRemountInput">disableRemountInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.externalEntropyAccessInput">externalEntropyAccessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.forceNoCacheInput">forceNoCacheInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.identityTokenKeyInput">identityTokenKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.listingVisibilityInput">listingVisibilityInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.localInput">localInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxLeaseTtlSecondsInput">maxLeaseTtlSecondsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTokenNameLengthInput">maxTokenNameLengthInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTtlInput">maxTtlInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.optionsInput">optionsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.passthroughRequestHeadersInput">passthroughRequestHeadersInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.pluginVersionInput">pluginVersionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.sealWrapInput">sealWrapInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenInput">tokenInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.ttlInput">ttlInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.address">address</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedManagedKeys">allowedManagedKeys</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedResponseHeaders">allowedResponseHeaders</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacRequestKeys">auditNonHmacRequestKeys</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacResponseKeys">auditNonHmacResponseKeys</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.backend">backend</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.caCert">caCert</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientCert">clientCert</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKey">clientKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.defaultLeaseTtlSeconds">defaultLeaseTtlSeconds</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.delegatedAuthAccessors">delegatedAuthAccessors</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.disableRemount">disableRemount</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.forceNoCache">forceNoCache</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.identityTokenKey">identityTokenKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.local">local</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTokenNameLength">maxTokenNameLength</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTtl">maxTtl</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.pluginVersion">pluginVersion</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.sealWrap">sealWrap</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.token">token</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.ttl">ttl</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.accessor">accessor</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.addressInput">addressInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedManagedKeysInput">allowedManagedKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedResponseHeadersInput">allowedResponseHeadersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacRequestKeysInput">auditNonHmacRequestKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacResponseKeysInput">auditNonHmacResponseKeysInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.caCertInput">caCertInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientCertInput">clientCertInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyInput">clientKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyWoInput">clientKeyWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyWoVersionInput">clientKeyWoVersionInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.defaultLeaseTtlSecondsInput">defaultLeaseTtlSecondsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.delegatedAuthAccessorsInput">delegatedAuthAccessorsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.disableRemountInput">disableRemountInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.externalEntropyAccessInput">externalEntropyAccessInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.forceNoCacheInput">forceNoCacheInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.identityTokenKeyInput">identityTokenKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.listingVisibilityInput">listingVisibilityInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.localInput">localInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxLeaseTtlSecondsInput">maxLeaseTtlSecondsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTokenNameLengthInput">maxTokenNameLengthInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTtlInput">maxTtlInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.optionsInput">optionsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.passthroughRequestHeadersInput">passthroughRequestHeadersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.pluginVersionInput">pluginVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.sealWrapInput">sealWrapInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenInput">tokenInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenWoInput">tokenWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenWoVersionInput">tokenWoVersionInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.ttlInput">ttlInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.address">address</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedManagedKeys">allowedManagedKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedResponseHeaders">allowedResponseHeaders</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacRequestKeys">auditNonHmacRequestKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacResponseKeys">auditNonHmacResponseKeys</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.backend">backend</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.caCert">caCert</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientCert">clientCert</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKey">clientKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyWo">clientKeyWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyWoVersion">clientKeyWoVersion</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.defaultLeaseTtlSeconds">defaultLeaseTtlSeconds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.delegatedAuthAccessors">delegatedAuthAccessors</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.disableRemount">disableRemount</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.forceNoCache">forceNoCache</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.identityTokenKey">identityTokenKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.local">local</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTokenNameLength">maxTokenNameLength</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTtl">maxTtl</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.pluginVersion">pluginVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.sealWrap">sealWrap</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.token">token</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenWo">tokenWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenWoVersion">tokenWoVersion</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.ttl">ttl</a></code> | <code>number</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -774,17 +810,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -794,7 +830,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -804,7 +840,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -814,7 +850,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -824,37 +860,37 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -864,47 +900,47 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `accessor`<sup>Required</sup> <a name="accessor" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.accessor"></a>
+##### `accessor`<sup>Required</sup> <a name="accessor" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.accessor"></a>
 
 ```typescript
 public readonly accessor: string;
@@ -914,7 +950,7 @@ public readonly accessor: string;
 
 ---
 
-##### `addressInput`<sup>Optional</sup> <a name="addressInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.addressInput"></a>
+##### `addressInput`<sup>Optional</sup> <a name="addressInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.addressInput"></a>
 
 ```typescript
 public readonly addressInput: string;
@@ -924,7 +960,7 @@ public readonly addressInput: string;
 
 ---
 
-##### `allowedManagedKeysInput`<sup>Optional</sup> <a name="allowedManagedKeysInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedManagedKeysInput"></a>
+##### `allowedManagedKeysInput`<sup>Optional</sup> <a name="allowedManagedKeysInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedManagedKeysInput"></a>
 
 ```typescript
 public readonly allowedManagedKeysInput: string[];
@@ -934,7 +970,7 @@ public readonly allowedManagedKeysInput: string[];
 
 ---
 
-##### `allowedResponseHeadersInput`<sup>Optional</sup> <a name="allowedResponseHeadersInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedResponseHeadersInput"></a>
+##### `allowedResponseHeadersInput`<sup>Optional</sup> <a name="allowedResponseHeadersInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedResponseHeadersInput"></a>
 
 ```typescript
 public readonly allowedResponseHeadersInput: string[];
@@ -944,7 +980,7 @@ public readonly allowedResponseHeadersInput: string[];
 
 ---
 
-##### `auditNonHmacRequestKeysInput`<sup>Optional</sup> <a name="auditNonHmacRequestKeysInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacRequestKeysInput"></a>
+##### `auditNonHmacRequestKeysInput`<sup>Optional</sup> <a name="auditNonHmacRequestKeysInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacRequestKeysInput"></a>
 
 ```typescript
 public readonly auditNonHmacRequestKeysInput: string[];
@@ -954,7 +990,7 @@ public readonly auditNonHmacRequestKeysInput: string[];
 
 ---
 
-##### `auditNonHmacResponseKeysInput`<sup>Optional</sup> <a name="auditNonHmacResponseKeysInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacResponseKeysInput"></a>
+##### `auditNonHmacResponseKeysInput`<sup>Optional</sup> <a name="auditNonHmacResponseKeysInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacResponseKeysInput"></a>
 
 ```typescript
 public readonly auditNonHmacResponseKeysInput: string[];
@@ -964,7 +1000,7 @@ public readonly auditNonHmacResponseKeysInput: string[];
 
 ---
 
-##### `backendInput`<sup>Optional</sup> <a name="backendInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.backendInput"></a>
+##### `backendInput`<sup>Optional</sup> <a name="backendInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.backendInput"></a>
 
 ```typescript
 public readonly backendInput: string;
@@ -974,7 +1010,7 @@ public readonly backendInput: string;
 
 ---
 
-##### `caCertInput`<sup>Optional</sup> <a name="caCertInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.caCertInput"></a>
+##### `caCertInput`<sup>Optional</sup> <a name="caCertInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.caCertInput"></a>
 
 ```typescript
 public readonly caCertInput: string;
@@ -984,7 +1020,7 @@ public readonly caCertInput: string;
 
 ---
 
-##### `clientCertInput`<sup>Optional</sup> <a name="clientCertInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientCertInput"></a>
+##### `clientCertInput`<sup>Optional</sup> <a name="clientCertInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientCertInput"></a>
 
 ```typescript
 public readonly clientCertInput: string;
@@ -994,7 +1030,7 @@ public readonly clientCertInput: string;
 
 ---
 
-##### `clientKeyInput`<sup>Optional</sup> <a name="clientKeyInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyInput"></a>
+##### `clientKeyInput`<sup>Optional</sup> <a name="clientKeyInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyInput"></a>
 
 ```typescript
 public readonly clientKeyInput: string;
@@ -1004,7 +1040,27 @@ public readonly clientKeyInput: string;
 
 ---
 
-##### `defaultLeaseTtlSecondsInput`<sup>Optional</sup> <a name="defaultLeaseTtlSecondsInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.defaultLeaseTtlSecondsInput"></a>
+##### `clientKeyWoInput`<sup>Optional</sup> <a name="clientKeyWoInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyWoInput"></a>
+
+```typescript
+public readonly clientKeyWoInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientKeyWoVersionInput`<sup>Optional</sup> <a name="clientKeyWoVersionInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyWoVersionInput"></a>
+
+```typescript
+public readonly clientKeyWoVersionInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `defaultLeaseTtlSecondsInput`<sup>Optional</sup> <a name="defaultLeaseTtlSecondsInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.defaultLeaseTtlSecondsInput"></a>
 
 ```typescript
 public readonly defaultLeaseTtlSecondsInput: number;
@@ -1014,7 +1070,7 @@ public readonly defaultLeaseTtlSecondsInput: number;
 
 ---
 
-##### `delegatedAuthAccessorsInput`<sup>Optional</sup> <a name="delegatedAuthAccessorsInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.delegatedAuthAccessorsInput"></a>
+##### `delegatedAuthAccessorsInput`<sup>Optional</sup> <a name="delegatedAuthAccessorsInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.delegatedAuthAccessorsInput"></a>
 
 ```typescript
 public readonly delegatedAuthAccessorsInput: string[];
@@ -1024,7 +1080,7 @@ public readonly delegatedAuthAccessorsInput: string[];
 
 ---
 
-##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.descriptionInput"></a>
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.descriptionInput"></a>
 
 ```typescript
 public readonly descriptionInput: string;
@@ -1034,37 +1090,37 @@ public readonly descriptionInput: string;
 
 ---
 
-##### `disableRemountInput`<sup>Optional</sup> <a name="disableRemountInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.disableRemountInput"></a>
+##### `disableRemountInput`<sup>Optional</sup> <a name="disableRemountInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.disableRemountInput"></a>
 
 ```typescript
 public readonly disableRemountInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `externalEntropyAccessInput`<sup>Optional</sup> <a name="externalEntropyAccessInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.externalEntropyAccessInput"></a>
+##### `externalEntropyAccessInput`<sup>Optional</sup> <a name="externalEntropyAccessInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.externalEntropyAccessInput"></a>
 
 ```typescript
 public readonly externalEntropyAccessInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `forceNoCacheInput`<sup>Optional</sup> <a name="forceNoCacheInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.forceNoCacheInput"></a>
+##### `forceNoCacheInput`<sup>Optional</sup> <a name="forceNoCacheInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.forceNoCacheInput"></a>
 
 ```typescript
 public readonly forceNoCacheInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `identityTokenKeyInput`<sup>Optional</sup> <a name="identityTokenKeyInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.identityTokenKeyInput"></a>
+##### `identityTokenKeyInput`<sup>Optional</sup> <a name="identityTokenKeyInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.identityTokenKeyInput"></a>
 
 ```typescript
 public readonly identityTokenKeyInput: string;
@@ -1074,7 +1130,7 @@ public readonly identityTokenKeyInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -1084,7 +1140,7 @@ public readonly idInput: string;
 
 ---
 
-##### `listingVisibilityInput`<sup>Optional</sup> <a name="listingVisibilityInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.listingVisibilityInput"></a>
+##### `listingVisibilityInput`<sup>Optional</sup> <a name="listingVisibilityInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.listingVisibilityInput"></a>
 
 ```typescript
 public readonly listingVisibilityInput: string;
@@ -1094,17 +1150,17 @@ public readonly listingVisibilityInput: string;
 
 ---
 
-##### `localInput`<sup>Optional</sup> <a name="localInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.localInput"></a>
+##### `localInput`<sup>Optional</sup> <a name="localInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.localInput"></a>
 
 ```typescript
 public readonly localInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `maxLeaseTtlSecondsInput`<sup>Optional</sup> <a name="maxLeaseTtlSecondsInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxLeaseTtlSecondsInput"></a>
+##### `maxLeaseTtlSecondsInput`<sup>Optional</sup> <a name="maxLeaseTtlSecondsInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxLeaseTtlSecondsInput"></a>
 
 ```typescript
 public readonly maxLeaseTtlSecondsInput: number;
@@ -1114,7 +1170,7 @@ public readonly maxLeaseTtlSecondsInput: number;
 
 ---
 
-##### `maxTokenNameLengthInput`<sup>Optional</sup> <a name="maxTokenNameLengthInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTokenNameLengthInput"></a>
+##### `maxTokenNameLengthInput`<sup>Optional</sup> <a name="maxTokenNameLengthInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTokenNameLengthInput"></a>
 
 ```typescript
 public readonly maxTokenNameLengthInput: number;
@@ -1124,7 +1180,7 @@ public readonly maxTokenNameLengthInput: number;
 
 ---
 
-##### `maxTtlInput`<sup>Optional</sup> <a name="maxTtlInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTtlInput"></a>
+##### `maxTtlInput`<sup>Optional</sup> <a name="maxTtlInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTtlInput"></a>
 
 ```typescript
 public readonly maxTtlInput: number;
@@ -1134,7 +1190,7 @@ public readonly maxTtlInput: number;
 
 ---
 
-##### `namespaceInput`<sup>Optional</sup> <a name="namespaceInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.namespaceInput"></a>
+##### `namespaceInput`<sup>Optional</sup> <a name="namespaceInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.namespaceInput"></a>
 
 ```typescript
 public readonly namespaceInput: string;
@@ -1144,7 +1200,7 @@ public readonly namespaceInput: string;
 
 ---
 
-##### `optionsInput`<sup>Optional</sup> <a name="optionsInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.optionsInput"></a>
+##### `optionsInput`<sup>Optional</sup> <a name="optionsInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.optionsInput"></a>
 
 ```typescript
 public readonly optionsInput: {[ key: string ]: string};
@@ -1154,7 +1210,7 @@ public readonly optionsInput: {[ key: string ]: string};
 
 ---
 
-##### `passthroughRequestHeadersInput`<sup>Optional</sup> <a name="passthroughRequestHeadersInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.passthroughRequestHeadersInput"></a>
+##### `passthroughRequestHeadersInput`<sup>Optional</sup> <a name="passthroughRequestHeadersInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.passthroughRequestHeadersInput"></a>
 
 ```typescript
 public readonly passthroughRequestHeadersInput: string[];
@@ -1164,7 +1220,7 @@ public readonly passthroughRequestHeadersInput: string[];
 
 ---
 
-##### `pluginVersionInput`<sup>Optional</sup> <a name="pluginVersionInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.pluginVersionInput"></a>
+##### `pluginVersionInput`<sup>Optional</sup> <a name="pluginVersionInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.pluginVersionInput"></a>
 
 ```typescript
 public readonly pluginVersionInput: string;
@@ -1174,17 +1230,17 @@ public readonly pluginVersionInput: string;
 
 ---
 
-##### `sealWrapInput`<sup>Optional</sup> <a name="sealWrapInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.sealWrapInput"></a>
+##### `sealWrapInput`<sup>Optional</sup> <a name="sealWrapInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.sealWrapInput"></a>
 
 ```typescript
 public readonly sealWrapInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `tokenInput`<sup>Optional</sup> <a name="tokenInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenInput"></a>
+##### `tokenInput`<sup>Optional</sup> <a name="tokenInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenInput"></a>
 
 ```typescript
 public readonly tokenInput: string;
@@ -1194,7 +1250,27 @@ public readonly tokenInput: string;
 
 ---
 
-##### `ttlInput`<sup>Optional</sup> <a name="ttlInput" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.ttlInput"></a>
+##### `tokenWoInput`<sup>Optional</sup> <a name="tokenWoInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenWoInput"></a>
+
+```typescript
+public readonly tokenWoInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tokenWoVersionInput`<sup>Optional</sup> <a name="tokenWoVersionInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenWoVersionInput"></a>
+
+```typescript
+public readonly tokenWoVersionInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `ttlInput`<sup>Optional</sup> <a name="ttlInput" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.ttlInput"></a>
 
 ```typescript
 public readonly ttlInput: number;
@@ -1204,7 +1280,7 @@ public readonly ttlInput: number;
 
 ---
 
-##### `address`<sup>Required</sup> <a name="address" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.address"></a>
+##### `address`<sup>Required</sup> <a name="address" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.address"></a>
 
 ```typescript
 public readonly address: string;
@@ -1214,7 +1290,7 @@ public readonly address: string;
 
 ---
 
-##### `allowedManagedKeys`<sup>Required</sup> <a name="allowedManagedKeys" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedManagedKeys"></a>
+##### `allowedManagedKeys`<sup>Required</sup> <a name="allowedManagedKeys" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedManagedKeys"></a>
 
 ```typescript
 public readonly allowedManagedKeys: string[];
@@ -1224,7 +1300,7 @@ public readonly allowedManagedKeys: string[];
 
 ---
 
-##### `allowedResponseHeaders`<sup>Required</sup> <a name="allowedResponseHeaders" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedResponseHeaders"></a>
+##### `allowedResponseHeaders`<sup>Required</sup> <a name="allowedResponseHeaders" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.allowedResponseHeaders"></a>
 
 ```typescript
 public readonly allowedResponseHeaders: string[];
@@ -1234,7 +1310,7 @@ public readonly allowedResponseHeaders: string[];
 
 ---
 
-##### `auditNonHmacRequestKeys`<sup>Required</sup> <a name="auditNonHmacRequestKeys" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacRequestKeys"></a>
+##### `auditNonHmacRequestKeys`<sup>Required</sup> <a name="auditNonHmacRequestKeys" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacRequestKeys"></a>
 
 ```typescript
 public readonly auditNonHmacRequestKeys: string[];
@@ -1244,7 +1320,7 @@ public readonly auditNonHmacRequestKeys: string[];
 
 ---
 
-##### `auditNonHmacResponseKeys`<sup>Required</sup> <a name="auditNonHmacResponseKeys" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacResponseKeys"></a>
+##### `auditNonHmacResponseKeys`<sup>Required</sup> <a name="auditNonHmacResponseKeys" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.auditNonHmacResponseKeys"></a>
 
 ```typescript
 public readonly auditNonHmacResponseKeys: string[];
@@ -1254,7 +1330,7 @@ public readonly auditNonHmacResponseKeys: string[];
 
 ---
 
-##### `backend`<sup>Required</sup> <a name="backend" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.backend"></a>
+##### `backend`<sup>Required</sup> <a name="backend" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.backend"></a>
 
 ```typescript
 public readonly backend: string;
@@ -1264,7 +1340,7 @@ public readonly backend: string;
 
 ---
 
-##### `caCert`<sup>Required</sup> <a name="caCert" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.caCert"></a>
+##### `caCert`<sup>Required</sup> <a name="caCert" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.caCert"></a>
 
 ```typescript
 public readonly caCert: string;
@@ -1274,7 +1350,7 @@ public readonly caCert: string;
 
 ---
 
-##### `clientCert`<sup>Required</sup> <a name="clientCert" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientCert"></a>
+##### `clientCert`<sup>Required</sup> <a name="clientCert" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientCert"></a>
 
 ```typescript
 public readonly clientCert: string;
@@ -1284,7 +1360,7 @@ public readonly clientCert: string;
 
 ---
 
-##### `clientKey`<sup>Required</sup> <a name="clientKey" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKey"></a>
+##### `clientKey`<sup>Required</sup> <a name="clientKey" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKey"></a>
 
 ```typescript
 public readonly clientKey: string;
@@ -1294,7 +1370,27 @@ public readonly clientKey: string;
 
 ---
 
-##### `defaultLeaseTtlSeconds`<sup>Required</sup> <a name="defaultLeaseTtlSeconds" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.defaultLeaseTtlSeconds"></a>
+##### `clientKeyWo`<sup>Required</sup> <a name="clientKeyWo" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyWo"></a>
+
+```typescript
+public readonly clientKeyWo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `clientKeyWoVersion`<sup>Required</sup> <a name="clientKeyWoVersion" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyWoVersion"></a>
+
+```typescript
+public readonly clientKeyWoVersion: number;
+```
+
+- *Type:* number
+
+---
+
+##### `defaultLeaseTtlSeconds`<sup>Required</sup> <a name="defaultLeaseTtlSeconds" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.defaultLeaseTtlSeconds"></a>
 
 ```typescript
 public readonly defaultLeaseTtlSeconds: number;
@@ -1304,7 +1400,7 @@ public readonly defaultLeaseTtlSeconds: number;
 
 ---
 
-##### `delegatedAuthAccessors`<sup>Required</sup> <a name="delegatedAuthAccessors" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.delegatedAuthAccessors"></a>
+##### `delegatedAuthAccessors`<sup>Required</sup> <a name="delegatedAuthAccessors" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.delegatedAuthAccessors"></a>
 
 ```typescript
 public readonly delegatedAuthAccessors: string[];
@@ -1314,7 +1410,7 @@ public readonly delegatedAuthAccessors: string[];
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -1324,37 +1420,37 @@ public readonly description: string;
 
 ---
 
-##### `disableRemount`<sup>Required</sup> <a name="disableRemount" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.disableRemount"></a>
+##### `disableRemount`<sup>Required</sup> <a name="disableRemount" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.disableRemount"></a>
 
 ```typescript
 public readonly disableRemount: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `externalEntropyAccess`<sup>Required</sup> <a name="externalEntropyAccess" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.externalEntropyAccess"></a>
+##### `externalEntropyAccess`<sup>Required</sup> <a name="externalEntropyAccess" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.externalEntropyAccess"></a>
 
 ```typescript
 public readonly externalEntropyAccess: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `forceNoCache`<sup>Required</sup> <a name="forceNoCache" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.forceNoCache"></a>
+##### `forceNoCache`<sup>Required</sup> <a name="forceNoCache" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.forceNoCache"></a>
 
 ```typescript
 public readonly forceNoCache: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1364,7 +1460,7 @@ public readonly id: string;
 
 ---
 
-##### `identityTokenKey`<sup>Required</sup> <a name="identityTokenKey" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.identityTokenKey"></a>
+##### `identityTokenKey`<sup>Required</sup> <a name="identityTokenKey" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.identityTokenKey"></a>
 
 ```typescript
 public readonly identityTokenKey: string;
@@ -1374,7 +1470,7 @@ public readonly identityTokenKey: string;
 
 ---
 
-##### `listingVisibility`<sup>Required</sup> <a name="listingVisibility" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.listingVisibility"></a>
+##### `listingVisibility`<sup>Required</sup> <a name="listingVisibility" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.listingVisibility"></a>
 
 ```typescript
 public readonly listingVisibility: string;
@@ -1384,17 +1480,17 @@ public readonly listingVisibility: string;
 
 ---
 
-##### `local`<sup>Required</sup> <a name="local" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.local"></a>
+##### `local`<sup>Required</sup> <a name="local" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.local"></a>
 
 ```typescript
 public readonly local: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `maxLeaseTtlSeconds`<sup>Required</sup> <a name="maxLeaseTtlSeconds" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxLeaseTtlSeconds"></a>
+##### `maxLeaseTtlSeconds`<sup>Required</sup> <a name="maxLeaseTtlSeconds" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxLeaseTtlSeconds"></a>
 
 ```typescript
 public readonly maxLeaseTtlSeconds: number;
@@ -1404,7 +1500,7 @@ public readonly maxLeaseTtlSeconds: number;
 
 ---
 
-##### `maxTokenNameLength`<sup>Required</sup> <a name="maxTokenNameLength" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTokenNameLength"></a>
+##### `maxTokenNameLength`<sup>Required</sup> <a name="maxTokenNameLength" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTokenNameLength"></a>
 
 ```typescript
 public readonly maxTokenNameLength: number;
@@ -1414,7 +1510,7 @@ public readonly maxTokenNameLength: number;
 
 ---
 
-##### `maxTtl`<sup>Required</sup> <a name="maxTtl" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTtl"></a>
+##### `maxTtl`<sup>Required</sup> <a name="maxTtl" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.maxTtl"></a>
 
 ```typescript
 public readonly maxTtl: number;
@@ -1424,7 +1520,7 @@ public readonly maxTtl: number;
 
 ---
 
-##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.namespace"></a>
+##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.namespace"></a>
 
 ```typescript
 public readonly namespace: string;
@@ -1434,7 +1530,7 @@ public readonly namespace: string;
 
 ---
 
-##### `options`<sup>Required</sup> <a name="options" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.options"></a>
+##### `options`<sup>Required</sup> <a name="options" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.options"></a>
 
 ```typescript
 public readonly options: {[ key: string ]: string};
@@ -1444,7 +1540,7 @@ public readonly options: {[ key: string ]: string};
 
 ---
 
-##### `passthroughRequestHeaders`<sup>Required</sup> <a name="passthroughRequestHeaders" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.passthroughRequestHeaders"></a>
+##### `passthroughRequestHeaders`<sup>Required</sup> <a name="passthroughRequestHeaders" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.passthroughRequestHeaders"></a>
 
 ```typescript
 public readonly passthroughRequestHeaders: string[];
@@ -1454,7 +1550,7 @@ public readonly passthroughRequestHeaders: string[];
 
 ---
 
-##### `pluginVersion`<sup>Required</sup> <a name="pluginVersion" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.pluginVersion"></a>
+##### `pluginVersion`<sup>Required</sup> <a name="pluginVersion" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.pluginVersion"></a>
 
 ```typescript
 public readonly pluginVersion: string;
@@ -1464,17 +1560,17 @@ public readonly pluginVersion: string;
 
 ---
 
-##### `sealWrap`<sup>Required</sup> <a name="sealWrap" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.sealWrap"></a>
+##### `sealWrap`<sup>Required</sup> <a name="sealWrap" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.sealWrap"></a>
 
 ```typescript
 public readonly sealWrap: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `token`<sup>Required</sup> <a name="token" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.token"></a>
+##### `token`<sup>Required</sup> <a name="token" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.token"></a>
 
 ```typescript
 public readonly token: string;
@@ -1484,7 +1580,27 @@ public readonly token: string;
 
 ---
 
-##### `ttl`<sup>Required</sup> <a name="ttl" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.ttl"></a>
+##### `tokenWo`<sup>Required</sup> <a name="tokenWo" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenWo"></a>
+
+```typescript
+public readonly tokenWo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tokenWoVersion`<sup>Required</sup> <a name="tokenWoVersion" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenWoVersion"></a>
+
+```typescript
+public readonly tokenWoVersion: number;
+```
+
+- *Type:* number
+
+---
+
+##### `ttl`<sup>Required</sup> <a name="ttl" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.ttl"></a>
 
 ```typescript
 public readonly ttl: number;
@@ -1498,11 +1614,11 @@ public readonly ttl: number;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1514,12 +1630,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### NomadSecretBackendConfig <a name="NomadSecretBackendConfig" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig"></a>
+### NomadSecretBackendConfig <a name="NomadSecretBackendConfig" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.Initializer"></a>
 
 ```typescript
-import { nomadSecretBackend } from '@cdktf/provider-vault'
+import { nomadSecretBackend } from '@cdktn/provider-vault'
 
 const nomadSecretBackendConfig: nomadSecretBackend.NomadSecretBackendConfig = { ... }
 ```
@@ -1528,116 +1644,120 @@ const nomadSecretBackendConfig: nomadSecretBackend.NomadSecretBackendConfig = { 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.address">address</a></code> | <code>string</code> | Specifies the address of the Nomad instance, provided as "protocol://host:port" like "http://127.0.0.1:4646". |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.allowedManagedKeys">allowedManagedKeys</a></code> | <code>string[]</code> | List of managed key registry entry names that the mount in question is allowed to access. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.allowedResponseHeaders">allowedResponseHeaders</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.auditNonHmacRequestKeys">auditNonHmacRequestKeys</a></code> | <code>string[]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the request data object. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.auditNonHmacResponseKeys">auditNonHmacResponseKeys</a></code> | <code>string[]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the response data object. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.backend">backend</a></code> | <code>string</code> | The mount path for the Nomad backend. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.caCert">caCert</a></code> | <code>string</code> | CA certificate to use when verifying Nomad server certificate, must be x509 PEM encoded. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.clientCert">clientCert</a></code> | <code>string</code> | Client certificate used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_key. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.clientKey">clientKey</a></code> | <code>string</code> | Client key used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.defaultLeaseTtlSeconds">defaultLeaseTtlSeconds</a></code> | <code>number</code> | Default lease duration for secrets in seconds. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.delegatedAuthAccessors">delegatedAuthAccessors</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.description">description</a></code> | <code>string</code> | Human-friendly description of the mount for the backend. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.disableRemount">disableRemount</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.forceNoCache">forceNoCache</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, disables caching. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#id NomadSecretBackend#id}. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.identityTokenKey">identityTokenKey</a></code> | <code>string</code> | The key to use for signing plugin workload identity tokens. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.local">local</a></code> | <code>boolean \| cdktf.IResolvable</code> | Mark the secrets engine as local-only. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>number</code> | Maximum possible lease duration for secrets in seconds. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.maxTokenNameLength">maxTokenNameLength</a></code> | <code>number</code> | Specifies the maximum length to use for the name of the Nomad token generated with Generate Credential. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.maxTtl">maxTtl</a></code> | <code>number</code> | Maximum possible lease duration for secrets in seconds. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | Specifies mount type specific options that are passed to the backend. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.pluginVersion">pluginVersion</a></code> | <code>string</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.sealWrap">sealWrap</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.token">token</a></code> | <code>string</code> | Specifies the Nomad Management token to use. |
-| <code><a href="#@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.ttl">ttl</a></code> | <code>number</code> | Maximum possible lease duration for secrets in seconds. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.address">address</a></code> | <code>string</code> | Specifies the address of the Nomad instance, provided as "protocol://host:port" like "http://127.0.0.1:4646". |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.allowedManagedKeys">allowedManagedKeys</a></code> | <code>string[]</code> | List of managed key registry entry names that the mount in question is allowed to access. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.allowedResponseHeaders">allowedResponseHeaders</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.auditNonHmacRequestKeys">auditNonHmacRequestKeys</a></code> | <code>string[]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the request data object. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.auditNonHmacResponseKeys">auditNonHmacResponseKeys</a></code> | <code>string[]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the response data object. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.backend">backend</a></code> | <code>string</code> | The mount path for the Nomad backend. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.caCert">caCert</a></code> | <code>string</code> | CA certificate to use when verifying Nomad server certificate, must be x509 PEM encoded. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.clientCert">clientCert</a></code> | <code>string</code> | Client certificate used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_key. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.clientKey">clientKey</a></code> | <code>string</code> | Client key used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.clientKeyWo">clientKeyWo</a></code> | <code>string</code> | Write-only client key used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.clientKeyWoVersion">clientKeyWoVersion</a></code> | <code>number</code> | Version counter for write-only client_key. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.defaultLeaseTtlSeconds">defaultLeaseTtlSeconds</a></code> | <code>number</code> | Default lease duration for secrets in seconds. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.delegatedAuthAccessors">delegatedAuthAccessors</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.description">description</a></code> | <code>string</code> | Human-friendly description of the mount for the backend. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.disableRemount">disableRemount</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set, opts out of mount migration on path updates. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.forceNoCache">forceNoCache</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, disables caching. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#id NomadSecretBackend#id}. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.identityTokenKey">identityTokenKey</a></code> | <code>string</code> | The key to use for signing plugin workload identity tokens. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.local">local</a></code> | <code>boolean \| cdktn.IResolvable</code> | Mark the secrets engine as local-only. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.maxLeaseTtlSeconds">maxLeaseTtlSeconds</a></code> | <code>number</code> | Maximum possible lease duration for secrets in seconds. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.maxTokenNameLength">maxTokenNameLength</a></code> | <code>number</code> | Specifies the maximum length to use for the name of the Nomad token generated with Generate Credential. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.maxTtl">maxTtl</a></code> | <code>number</code> | Maximum possible lease duration for secrets in seconds. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | Specifies mount type specific options that are passed to the backend. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.pluginVersion">pluginVersion</a></code> | <code>string</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.sealWrap">sealWrap</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.token">token</a></code> | <code>string</code> | Specifies the Nomad Management token to use. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.tokenWo">tokenWo</a></code> | <code>string</code> | Write-only Nomad Management token to use. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.tokenWoVersion">tokenWoVersion</a></code> | <code>number</code> | Version counter for write-only token. |
+| <code><a href="#@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.ttl">ttl</a></code> | <code>number</code> | Maximum possible lease duration for secrets in seconds. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `address`<sup>Optional</sup> <a name="address" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.address"></a>
+##### `address`<sup>Optional</sup> <a name="address" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.address"></a>
 
 ```typescript
 public readonly address: string;
@@ -1647,11 +1767,11 @@ public readonly address: string;
 
 Specifies the address of the Nomad instance, provided as "protocol://host:port" like "http://127.0.0.1:4646".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#address NomadSecretBackend#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#address NomadSecretBackend#address}
 
 ---
 
-##### `allowedManagedKeys`<sup>Optional</sup> <a name="allowedManagedKeys" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.allowedManagedKeys"></a>
+##### `allowedManagedKeys`<sup>Optional</sup> <a name="allowedManagedKeys" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.allowedManagedKeys"></a>
 
 ```typescript
 public readonly allowedManagedKeys: string[];
@@ -1661,11 +1781,11 @@ public readonly allowedManagedKeys: string[];
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#allowed_managed_keys NomadSecretBackend#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#allowed_managed_keys NomadSecretBackend#allowed_managed_keys}
 
 ---
 
-##### `allowedResponseHeaders`<sup>Optional</sup> <a name="allowedResponseHeaders" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.allowedResponseHeaders"></a>
+##### `allowedResponseHeaders`<sup>Optional</sup> <a name="allowedResponseHeaders" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.allowedResponseHeaders"></a>
 
 ```typescript
 public readonly allowedResponseHeaders: string[];
@@ -1675,11 +1795,11 @@ public readonly allowedResponseHeaders: string[];
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#allowed_response_headers NomadSecretBackend#allowed_response_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#allowed_response_headers NomadSecretBackend#allowed_response_headers}
 
 ---
 
-##### `auditNonHmacRequestKeys`<sup>Optional</sup> <a name="auditNonHmacRequestKeys" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.auditNonHmacRequestKeys"></a>
+##### `auditNonHmacRequestKeys`<sup>Optional</sup> <a name="auditNonHmacRequestKeys" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.auditNonHmacRequestKeys"></a>
 
 ```typescript
 public readonly auditNonHmacRequestKeys: string[];
@@ -1689,11 +1809,11 @@ public readonly auditNonHmacRequestKeys: string[];
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#audit_non_hmac_request_keys NomadSecretBackend#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#audit_non_hmac_request_keys NomadSecretBackend#audit_non_hmac_request_keys}
 
 ---
 
-##### `auditNonHmacResponseKeys`<sup>Optional</sup> <a name="auditNonHmacResponseKeys" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.auditNonHmacResponseKeys"></a>
+##### `auditNonHmacResponseKeys`<sup>Optional</sup> <a name="auditNonHmacResponseKeys" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.auditNonHmacResponseKeys"></a>
 
 ```typescript
 public readonly auditNonHmacResponseKeys: string[];
@@ -1703,11 +1823,11 @@ public readonly auditNonHmacResponseKeys: string[];
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#audit_non_hmac_response_keys NomadSecretBackend#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#audit_non_hmac_response_keys NomadSecretBackend#audit_non_hmac_response_keys}
 
 ---
 
-##### `backend`<sup>Optional</sup> <a name="backend" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.backend"></a>
+##### `backend`<sup>Optional</sup> <a name="backend" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.backend"></a>
 
 ```typescript
 public readonly backend: string;
@@ -1717,11 +1837,11 @@ public readonly backend: string;
 
 The mount path for the Nomad backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#backend NomadSecretBackend#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#backend NomadSecretBackend#backend}
 
 ---
 
-##### `caCert`<sup>Optional</sup> <a name="caCert" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.caCert"></a>
+##### `caCert`<sup>Optional</sup> <a name="caCert" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.caCert"></a>
 
 ```typescript
 public readonly caCert: string;
@@ -1731,11 +1851,11 @@ public readonly caCert: string;
 
 CA certificate to use when verifying Nomad server certificate, must be x509 PEM encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#ca_cert NomadSecretBackend#ca_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#ca_cert NomadSecretBackend#ca_cert}
 
 ---
 
-##### `clientCert`<sup>Optional</sup> <a name="clientCert" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.clientCert"></a>
+##### `clientCert`<sup>Optional</sup> <a name="clientCert" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.clientCert"></a>
 
 ```typescript
 public readonly clientCert: string;
@@ -1745,11 +1865,11 @@ public readonly clientCert: string;
 
 Client certificate used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#client_cert NomadSecretBackend#client_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#client_cert NomadSecretBackend#client_cert}
 
 ---
 
-##### `clientKey`<sup>Optional</sup> <a name="clientKey" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.clientKey"></a>
+##### `clientKey`<sup>Optional</sup> <a name="clientKey" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.clientKey"></a>
 
 ```typescript
 public readonly clientKey: string;
@@ -1759,11 +1879,39 @@ public readonly clientKey: string;
 
 Client key used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#client_key NomadSecretBackend#client_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#client_key NomadSecretBackend#client_key}
 
 ---
 
-##### `defaultLeaseTtlSeconds`<sup>Optional</sup> <a name="defaultLeaseTtlSeconds" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.defaultLeaseTtlSeconds"></a>
+##### `clientKeyWo`<sup>Optional</sup> <a name="clientKeyWo" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.clientKeyWo"></a>
+
+```typescript
+public readonly clientKeyWo: string;
+```
+
+- *Type:* string
+
+Write-only client key used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#client_key_wo NomadSecretBackend#client_key_wo}
+
+---
+
+##### `clientKeyWoVersion`<sup>Optional</sup> <a name="clientKeyWoVersion" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.clientKeyWoVersion"></a>
+
+```typescript
+public readonly clientKeyWoVersion: number;
+```
+
+- *Type:* number
+
+Version counter for write-only client_key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#client_key_wo_version NomadSecretBackend#client_key_wo_version}
+
+---
+
+##### `defaultLeaseTtlSeconds`<sup>Optional</sup> <a name="defaultLeaseTtlSeconds" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.defaultLeaseTtlSeconds"></a>
 
 ```typescript
 public readonly defaultLeaseTtlSeconds: number;
@@ -1773,11 +1921,11 @@ public readonly defaultLeaseTtlSeconds: number;
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#default_lease_ttl_seconds NomadSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#default_lease_ttl_seconds NomadSecretBackend#default_lease_ttl_seconds}
 
 ---
 
-##### `delegatedAuthAccessors`<sup>Optional</sup> <a name="delegatedAuthAccessors" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.delegatedAuthAccessors"></a>
+##### `delegatedAuthAccessors`<sup>Optional</sup> <a name="delegatedAuthAccessors" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.delegatedAuthAccessors"></a>
 
 ```typescript
 public readonly delegatedAuthAccessors: string[];
@@ -1787,11 +1935,11 @@ public readonly delegatedAuthAccessors: string[];
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#delegated_auth_accessors NomadSecretBackend#delegated_auth_accessors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#delegated_auth_accessors NomadSecretBackend#delegated_auth_accessors}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -1801,53 +1949,53 @@ public readonly description: string;
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#description NomadSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#description NomadSecretBackend#description}
 
 ---
 
-##### `disableRemount`<sup>Optional</sup> <a name="disableRemount" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.disableRemount"></a>
+##### `disableRemount`<sup>Optional</sup> <a name="disableRemount" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.disableRemount"></a>
 
 ```typescript
 public readonly disableRemount: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#disable_remount NomadSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#disable_remount NomadSecretBackend#disable_remount}
 
 ---
 
-##### `externalEntropyAccess`<sup>Optional</sup> <a name="externalEntropyAccess" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.externalEntropyAccess"></a>
+##### `externalEntropyAccess`<sup>Optional</sup> <a name="externalEntropyAccess" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.externalEntropyAccess"></a>
 
 ```typescript
 public readonly externalEntropyAccess: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#external_entropy_access NomadSecretBackend#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#external_entropy_access NomadSecretBackend#external_entropy_access}
 
 ---
 
-##### `forceNoCache`<sup>Optional</sup> <a name="forceNoCache" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.forceNoCache"></a>
+##### `forceNoCache`<sup>Optional</sup> <a name="forceNoCache" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.forceNoCache"></a>
 
 ```typescript
 public readonly forceNoCache: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, disables caching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#force_no_cache NomadSecretBackend#force_no_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#force_no_cache NomadSecretBackend#force_no_cache}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1855,14 +2003,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#id NomadSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#id NomadSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `identityTokenKey`<sup>Optional</sup> <a name="identityTokenKey" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.identityTokenKey"></a>
+##### `identityTokenKey`<sup>Optional</sup> <a name="identityTokenKey" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.identityTokenKey"></a>
 
 ```typescript
 public readonly identityTokenKey: string;
@@ -1872,11 +2020,11 @@ public readonly identityTokenKey: string;
 
 The key to use for signing plugin workload identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#identity_token_key NomadSecretBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#identity_token_key NomadSecretBackend#identity_token_key}
 
 ---
 
-##### `listingVisibility`<sup>Optional</sup> <a name="listingVisibility" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.listingVisibility"></a>
+##### `listingVisibility`<sup>Optional</sup> <a name="listingVisibility" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.listingVisibility"></a>
 
 ```typescript
 public readonly listingVisibility: string;
@@ -1886,27 +2034,27 @@ public readonly listingVisibility: string;
 
 Specifies whether to show this mount in the UI-specific listing endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#listing_visibility NomadSecretBackend#listing_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#listing_visibility NomadSecretBackend#listing_visibility}
 
 ---
 
-##### `local`<sup>Optional</sup> <a name="local" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.local"></a>
+##### `local`<sup>Optional</sup> <a name="local" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.local"></a>
 
 ```typescript
 public readonly local: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Mark the secrets engine as local-only.
 
 Local engines are not replicated or removed by replication. Tolerance duration to use when checking the last rotation time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#local NomadSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#local NomadSecretBackend#local}
 
 ---
 
-##### `maxLeaseTtlSeconds`<sup>Optional</sup> <a name="maxLeaseTtlSeconds" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.maxLeaseTtlSeconds"></a>
+##### `maxLeaseTtlSeconds`<sup>Optional</sup> <a name="maxLeaseTtlSeconds" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.maxLeaseTtlSeconds"></a>
 
 ```typescript
 public readonly maxLeaseTtlSeconds: number;
@@ -1916,11 +2064,11 @@ public readonly maxLeaseTtlSeconds: number;
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#max_lease_ttl_seconds NomadSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#max_lease_ttl_seconds NomadSecretBackend#max_lease_ttl_seconds}
 
 ---
 
-##### `maxTokenNameLength`<sup>Optional</sup> <a name="maxTokenNameLength" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.maxTokenNameLength"></a>
+##### `maxTokenNameLength`<sup>Optional</sup> <a name="maxTokenNameLength" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.maxTokenNameLength"></a>
 
 ```typescript
 public readonly maxTokenNameLength: number;
@@ -1932,11 +2080,11 @@ Specifies the maximum length to use for the name of the Nomad token generated wi
 
 If omitted, 0 is used and ignored, defaulting to the max value allowed by the Nomad version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#max_token_name_length NomadSecretBackend#max_token_name_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#max_token_name_length NomadSecretBackend#max_token_name_length}
 
 ---
 
-##### `maxTtl`<sup>Optional</sup> <a name="maxTtl" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.maxTtl"></a>
+##### `maxTtl`<sup>Optional</sup> <a name="maxTtl" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.maxTtl"></a>
 
 ```typescript
 public readonly maxTtl: number;
@@ -1946,11 +2094,11 @@ public readonly maxTtl: number;
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#max_ttl NomadSecretBackend#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#max_ttl NomadSecretBackend#max_ttl}
 
 ---
 
-##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.namespace"></a>
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.namespace"></a>
 
 ```typescript
 public readonly namespace: string;
@@ -1960,11 +2108,11 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#namespace NomadSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#namespace NomadSecretBackend#namespace}
 
 ---
 
-##### `options`<sup>Optional</sup> <a name="options" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.options"></a>
+##### `options`<sup>Optional</sup> <a name="options" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.options"></a>
 
 ```typescript
 public readonly options: {[ key: string ]: string};
@@ -1974,11 +2122,11 @@ public readonly options: {[ key: string ]: string};
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#options NomadSecretBackend#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#options NomadSecretBackend#options}
 
 ---
 
-##### `passthroughRequestHeaders`<sup>Optional</sup> <a name="passthroughRequestHeaders" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.passthroughRequestHeaders"></a>
+##### `passthroughRequestHeaders`<sup>Optional</sup> <a name="passthroughRequestHeaders" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.passthroughRequestHeaders"></a>
 
 ```typescript
 public readonly passthroughRequestHeaders: string[];
@@ -1988,11 +2136,11 @@ public readonly passthroughRequestHeaders: string[];
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#passthrough_request_headers NomadSecretBackend#passthrough_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#passthrough_request_headers NomadSecretBackend#passthrough_request_headers}
 
 ---
 
-##### `pluginVersion`<sup>Optional</sup> <a name="pluginVersion" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.pluginVersion"></a>
+##### `pluginVersion`<sup>Optional</sup> <a name="pluginVersion" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.pluginVersion"></a>
 
 ```typescript
 public readonly pluginVersion: string;
@@ -2002,25 +2150,25 @@ public readonly pluginVersion: string;
 
 Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#plugin_version NomadSecretBackend#plugin_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#plugin_version NomadSecretBackend#plugin_version}
 
 ---
 
-##### `sealWrap`<sup>Optional</sup> <a name="sealWrap" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.sealWrap"></a>
+##### `sealWrap`<sup>Optional</sup> <a name="sealWrap" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.sealWrap"></a>
 
 ```typescript
 public readonly sealWrap: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#seal_wrap NomadSecretBackend#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#seal_wrap NomadSecretBackend#seal_wrap}
 
 ---
 
-##### `token`<sup>Optional</sup> <a name="token" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.token"></a>
+##### `token`<sup>Optional</sup> <a name="token" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.token"></a>
 
 ```typescript
 public readonly token: string;
@@ -2030,11 +2178,39 @@ public readonly token: string;
 
 Specifies the Nomad Management token to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#token NomadSecretBackend#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#token NomadSecretBackend#token}
 
 ---
 
-##### `ttl`<sup>Optional</sup> <a name="ttl" id="@cdktf/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.ttl"></a>
+##### `tokenWo`<sup>Optional</sup> <a name="tokenWo" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.tokenWo"></a>
+
+```typescript
+public readonly tokenWo: string;
+```
+
+- *Type:* string
+
+Write-only Nomad Management token to use.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#token_wo NomadSecretBackend#token_wo}
+
+---
+
+##### `tokenWoVersion`<sup>Optional</sup> <a name="tokenWoVersion" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.tokenWoVersion"></a>
+
+```typescript
+public readonly tokenWoVersion: number;
+```
+
+- *Type:* number
+
+Version counter for write-only token.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#token_wo_version NomadSecretBackend#token_wo_version}
+
+---
+
+##### `ttl`<sup>Optional</sup> <a name="ttl" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackendConfig.property.ttl"></a>
 
 ```typescript
 public readonly ttl: number;
@@ -2044,7 +2220,7 @@ public readonly ttl: number;
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#ttl NomadSecretBackend#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#ttl NomadSecretBackend#ttl}
 
 ---
 

@@ -1,109 +1,121 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NomadSecretBackendConfig extends cdktf.TerraformMetaArguments {
+export interface NomadSecretBackendConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the address of the Nomad instance, provided as "protocol://host:port" like "http://127.0.0.1:4646".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#address NomadSecretBackend#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#address NomadSecretBackend#address}
   */
   readonly address?: string;
   /**
   * List of managed key registry entry names that the mount in question is allowed to access
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#allowed_managed_keys NomadSecretBackend#allowed_managed_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#allowed_managed_keys NomadSecretBackend#allowed_managed_keys}
   */
   readonly allowedManagedKeys?: string[];
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#allowed_response_headers NomadSecretBackend#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#allowed_response_headers NomadSecretBackend#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#audit_non_hmac_request_keys NomadSecretBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#audit_non_hmac_request_keys NomadSecretBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#audit_non_hmac_response_keys NomadSecretBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#audit_non_hmac_response_keys NomadSecretBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
   * The mount path for the Nomad backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#backend NomadSecretBackend#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#backend NomadSecretBackend#backend}
   */
   readonly backend?: string;
   /**
   * CA certificate to use when verifying Nomad server certificate, must be x509 PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#ca_cert NomadSecretBackend#ca_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#ca_cert NomadSecretBackend#ca_cert}
   */
   readonly caCert?: string;
   /**
   * Client certificate used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#client_cert NomadSecretBackend#client_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#client_cert NomadSecretBackend#client_cert}
   */
   readonly clientCert?: string;
   /**
   * Client key used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#client_key NomadSecretBackend#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#client_key NomadSecretBackend#client_key}
   */
   readonly clientKey?: string;
   /**
+  * Write-only client key used for Nomad's TLS communication, must be x509 PEM encoded and if this is set you need to also set client_cert.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#client_key_wo NomadSecretBackend#client_key_wo}
+  */
+  readonly clientKeyWo?: string;
+  /**
+  * Version counter for write-only client_key.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#client_key_wo_version NomadSecretBackend#client_key_wo_version}
+  */
+  readonly clientKeyWoVersion?: number;
+  /**
   * Default lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#default_lease_ttl_seconds NomadSecretBackend#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#default_lease_ttl_seconds NomadSecretBackend#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#delegated_auth_accessors NomadSecretBackend#delegated_auth_accessors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#delegated_auth_accessors NomadSecretBackend#delegated_auth_accessors}
   */
   readonly delegatedAuthAccessors?: string[];
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#description NomadSecretBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#description NomadSecretBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#disable_remount NomadSecretBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#disable_remount NomadSecretBackend#disable_remount}
   */
-  readonly disableRemount?: boolean | cdktf.IResolvable;
+  readonly disableRemount?: boolean | cdktn.IResolvable;
   /**
   * Enable the secrets engine to access Vault's external entropy source
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#external_entropy_access NomadSecretBackend#external_entropy_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#external_entropy_access NomadSecretBackend#external_entropy_access}
   */
-  readonly externalEntropyAccess?: boolean | cdktf.IResolvable;
+  readonly externalEntropyAccess?: boolean | cdktn.IResolvable;
   /**
   * If set to true, disables caching.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#force_no_cache NomadSecretBackend#force_no_cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#force_no_cache NomadSecretBackend#force_no_cache}
   */
-  readonly forceNoCache?: boolean | cdktf.IResolvable;
+  readonly forceNoCache?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#id NomadSecretBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#id NomadSecretBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -112,87 +124,99 @@ export interface NomadSecretBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The key to use for signing plugin workload identity tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#identity_token_key NomadSecretBackend#identity_token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#identity_token_key NomadSecretBackend#identity_token_key}
   */
   readonly identityTokenKey?: string;
   /**
   * Specifies whether to show this mount in the UI-specific listing endpoint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#listing_visibility NomadSecretBackend#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#listing_visibility NomadSecretBackend#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
   * Mark the secrets engine as local-only. Local engines are not replicated or removed by replication. Tolerance duration to use when checking the last rotation time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#local NomadSecretBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#local NomadSecretBackend#local}
   */
-  readonly local?: boolean | cdktf.IResolvable;
+  readonly local?: boolean | cdktn.IResolvable;
   /**
   * Maximum possible lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#max_lease_ttl_seconds NomadSecretBackend#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#max_lease_ttl_seconds NomadSecretBackend#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Specifies the maximum length to use for the name of the Nomad token generated with Generate Credential. If omitted, 0 is used and ignored, defaulting to the max value allowed by the Nomad version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#max_token_name_length NomadSecretBackend#max_token_name_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#max_token_name_length NomadSecretBackend#max_token_name_length}
   */
   readonly maxTokenNameLength?: number;
   /**
   * Maximum possible lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#max_ttl NomadSecretBackend#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#max_ttl NomadSecretBackend#max_ttl}
   */
   readonly maxTtl?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#namespace NomadSecretBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#namespace NomadSecretBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies mount type specific options that are passed to the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#options NomadSecretBackend#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#options NomadSecretBackend#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#passthrough_request_headers NomadSecretBackend#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#passthrough_request_headers NomadSecretBackend#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
   * Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#plugin_version NomadSecretBackend#plugin_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#plugin_version NomadSecretBackend#plugin_version}
   */
   readonly pluginVersion?: string;
   /**
   * Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#seal_wrap NomadSecretBackend#seal_wrap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#seal_wrap NomadSecretBackend#seal_wrap}
   */
-  readonly sealWrap?: boolean | cdktf.IResolvable;
+  readonly sealWrap?: boolean | cdktn.IResolvable;
   /**
   * Specifies the Nomad Management token to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#token NomadSecretBackend#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#token NomadSecretBackend#token}
   */
   readonly token?: string;
   /**
+  * Write-only Nomad Management token to use.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#token_wo NomadSecretBackend#token_wo}
+  */
+  readonly tokenWo?: string;
+  /**
+  * Version counter for write-only token.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#token_wo_version NomadSecretBackend#token_wo_version}
+  */
+  readonly tokenWoVersion?: number;
+  /**
   * Maximum possible lease duration for secrets in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#ttl NomadSecretBackend#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#ttl NomadSecretBackend#ttl}
   */
   readonly ttl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend}
 */
-export class NomadSecretBackend extends cdktf.TerraformResource {
+export class NomadSecretBackend extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -203,14 +227,14 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NomadSecretBackend resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NomadSecretBackend resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NomadSecretBackend to import
-  * @param importFromId The id of the existing NomadSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NomadSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NomadSecretBackend to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_nomad_secret_backend", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_nomad_secret_backend", importId: importFromId, provider });
       }
 
   // ===========
@@ -218,7 +242,7 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/nomad_secret_backend vault_nomad_secret_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -229,7 +253,7 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_nomad_secret_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -249,6 +273,8 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
     this._caCert = config.caCert;
     this._clientCert = config.clientCert;
     this._clientKey = config.clientKey;
+    this._clientKeyWo = config.clientKeyWo;
+    this._clientKeyWoVersion = config.clientKeyWoVersion;
     this._defaultLeaseTtlSeconds = config.defaultLeaseTtlSeconds;
     this._delegatedAuthAccessors = config.delegatedAuthAccessors;
     this._description = config.description;
@@ -268,6 +294,8 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
     this._pluginVersion = config.pluginVersion;
     this._sealWrap = config.sealWrap;
     this._token = config.token;
+    this._tokenWo = config.tokenWo;
+    this._tokenWoVersion = config.tokenWoVersion;
     this._ttl = config.ttl;
   }
 
@@ -299,7 +327,7 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   // allowed_managed_keys - computed: false, optional: true, required: false
   private _allowedManagedKeys?: string[]; 
   public get allowedManagedKeys() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_managed_keys'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_managed_keys'));
   }
   public set allowedManagedKeys(value: string[]) {
     this._allowedManagedKeys = value;
@@ -424,6 +452,38 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
     return this._clientKey;
   }
 
+  // client_key_wo - computed: false, optional: true, required: false
+  private _clientKeyWo?: string; 
+  public get clientKeyWo() {
+    return this.getStringAttribute('client_key_wo');
+  }
+  public set clientKeyWo(value: string) {
+    this._clientKeyWo = value;
+  }
+  public resetClientKeyWo() {
+    this._clientKeyWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientKeyWoInput() {
+    return this._clientKeyWo;
+  }
+
+  // client_key_wo_version - computed: false, optional: true, required: false
+  private _clientKeyWoVersion?: number; 
+  public get clientKeyWoVersion() {
+    return this.getNumberAttribute('client_key_wo_version');
+  }
+  public set clientKeyWoVersion(value: number) {
+    this._clientKeyWoVersion = value;
+  }
+  public resetClientKeyWoVersion() {
+    this._clientKeyWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientKeyWoVersionInput() {
+    return this._clientKeyWoVersion;
+  }
+
   // default_lease_ttl_seconds - computed: true, optional: true, required: false
   private _defaultLeaseTtlSeconds?: number; 
   public get defaultLeaseTtlSeconds() {
@@ -473,11 +533,11 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   }
 
   // disable_remount - computed: false, optional: true, required: false
-  private _disableRemount?: boolean | cdktf.IResolvable; 
+  private _disableRemount?: boolean | cdktn.IResolvable; 
   public get disableRemount() {
     return this.getBooleanAttribute('disable_remount');
   }
-  public set disableRemount(value: boolean | cdktf.IResolvable) {
+  public set disableRemount(value: boolean | cdktn.IResolvable) {
     this._disableRemount = value;
   }
   public resetDisableRemount() {
@@ -489,11 +549,11 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   }
 
   // external_entropy_access - computed: false, optional: true, required: false
-  private _externalEntropyAccess?: boolean | cdktf.IResolvable; 
+  private _externalEntropyAccess?: boolean | cdktn.IResolvable; 
   public get externalEntropyAccess() {
     return this.getBooleanAttribute('external_entropy_access');
   }
-  public set externalEntropyAccess(value: boolean | cdktf.IResolvable) {
+  public set externalEntropyAccess(value: boolean | cdktn.IResolvable) {
     this._externalEntropyAccess = value;
   }
   public resetExternalEntropyAccess() {
@@ -505,11 +565,11 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   }
 
   // force_no_cache - computed: true, optional: true, required: false
-  private _forceNoCache?: boolean | cdktf.IResolvable; 
+  private _forceNoCache?: boolean | cdktn.IResolvable; 
   public get forceNoCache() {
     return this.getBooleanAttribute('force_no_cache');
   }
-  public set forceNoCache(value: boolean | cdktf.IResolvable) {
+  public set forceNoCache(value: boolean | cdktn.IResolvable) {
     this._forceNoCache = value;
   }
   public resetForceNoCache() {
@@ -569,11 +629,11 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   }
 
   // local - computed: false, optional: true, required: false
-  private _local?: boolean | cdktf.IResolvable; 
+  private _local?: boolean | cdktn.IResolvable; 
   public get local() {
     return this.getBooleanAttribute('local');
   }
-  public set local(value: boolean | cdktf.IResolvable) {
+  public set local(value: boolean | cdktn.IResolvable) {
     this._local = value;
   }
   public resetLocal() {
@@ -697,11 +757,11 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
   }
 
   // seal_wrap - computed: true, optional: true, required: false
-  private _sealWrap?: boolean | cdktf.IResolvable; 
+  private _sealWrap?: boolean | cdktn.IResolvable; 
   public get sealWrap() {
     return this.getBooleanAttribute('seal_wrap');
   }
-  public set sealWrap(value: boolean | cdktf.IResolvable) {
+  public set sealWrap(value: boolean | cdktn.IResolvable) {
     this._sealWrap = value;
   }
   public resetSealWrap() {
@@ -728,6 +788,38 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
     return this._token;
   }
 
+  // token_wo - computed: false, optional: true, required: false
+  private _tokenWo?: string; 
+  public get tokenWo() {
+    return this.getStringAttribute('token_wo');
+  }
+  public set tokenWo(value: string) {
+    this._tokenWo = value;
+  }
+  public resetTokenWo() {
+    this._tokenWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenWoInput() {
+    return this._tokenWo;
+  }
+
+  // token_wo_version - computed: false, optional: true, required: false
+  private _tokenWoVersion?: number; 
+  public get tokenWoVersion() {
+    return this.getNumberAttribute('token_wo_version');
+  }
+  public set tokenWoVersion(value: number) {
+    this._tokenWoVersion = value;
+  }
+  public resetTokenWoVersion() {
+    this._tokenWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenWoVersionInput() {
+    return this._tokenWoVersion;
+  }
+
   // ttl - computed: true, optional: true, required: false
   private _ttl?: number; 
   public get ttl() {
@@ -750,210 +842,238 @@ export class NomadSecretBackend extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address: cdktf.stringToTerraform(this._address),
-      allowed_managed_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedManagedKeys),
-      allowed_response_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedResponseHeaders),
-      audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacRequestKeys),
-      audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._auditNonHmacResponseKeys),
-      backend: cdktf.stringToTerraform(this._backend),
-      ca_cert: cdktf.stringToTerraform(this._caCert),
-      client_cert: cdktf.stringToTerraform(this._clientCert),
-      client_key: cdktf.stringToTerraform(this._clientKey),
-      default_lease_ttl_seconds: cdktf.numberToTerraform(this._defaultLeaseTtlSeconds),
-      delegated_auth_accessors: cdktf.listMapper(cdktf.stringToTerraform, false)(this._delegatedAuthAccessors),
-      description: cdktf.stringToTerraform(this._description),
-      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
-      external_entropy_access: cdktf.booleanToTerraform(this._externalEntropyAccess),
-      force_no_cache: cdktf.booleanToTerraform(this._forceNoCache),
-      id: cdktf.stringToTerraform(this._id),
-      identity_token_key: cdktf.stringToTerraform(this._identityTokenKey),
-      listing_visibility: cdktf.stringToTerraform(this._listingVisibility),
-      local: cdktf.booleanToTerraform(this._local),
-      max_lease_ttl_seconds: cdktf.numberToTerraform(this._maxLeaseTtlSeconds),
-      max_token_name_length: cdktf.numberToTerraform(this._maxTokenNameLength),
-      max_ttl: cdktf.numberToTerraform(this._maxTtl),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
-      passthrough_request_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._passthroughRequestHeaders),
-      plugin_version: cdktf.stringToTerraform(this._pluginVersion),
-      seal_wrap: cdktf.booleanToTerraform(this._sealWrap),
-      token: cdktf.stringToTerraform(this._token),
-      ttl: cdktf.numberToTerraform(this._ttl),
+      address: cdktn.stringToTerraform(this._address),
+      allowed_managed_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedManagedKeys),
+      allowed_response_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedResponseHeaders),
+      audit_non_hmac_request_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._auditNonHmacRequestKeys),
+      audit_non_hmac_response_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._auditNonHmacResponseKeys),
+      backend: cdktn.stringToTerraform(this._backend),
+      ca_cert: cdktn.stringToTerraform(this._caCert),
+      client_cert: cdktn.stringToTerraform(this._clientCert),
+      client_key: cdktn.stringToTerraform(this._clientKey),
+      client_key_wo: cdktn.stringToTerraform(this._clientKeyWo),
+      client_key_wo_version: cdktn.numberToTerraform(this._clientKeyWoVersion),
+      default_lease_ttl_seconds: cdktn.numberToTerraform(this._defaultLeaseTtlSeconds),
+      delegated_auth_accessors: cdktn.listMapper(cdktn.stringToTerraform, false)(this._delegatedAuthAccessors),
+      description: cdktn.stringToTerraform(this._description),
+      disable_remount: cdktn.booleanToTerraform(this._disableRemount),
+      external_entropy_access: cdktn.booleanToTerraform(this._externalEntropyAccess),
+      force_no_cache: cdktn.booleanToTerraform(this._forceNoCache),
+      id: cdktn.stringToTerraform(this._id),
+      identity_token_key: cdktn.stringToTerraform(this._identityTokenKey),
+      listing_visibility: cdktn.stringToTerraform(this._listingVisibility),
+      local: cdktn.booleanToTerraform(this._local),
+      max_lease_ttl_seconds: cdktn.numberToTerraform(this._maxLeaseTtlSeconds),
+      max_token_name_length: cdktn.numberToTerraform(this._maxTokenNameLength),
+      max_ttl: cdktn.numberToTerraform(this._maxTtl),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      options: cdktn.hashMapper(cdktn.stringToTerraform)(this._options),
+      passthrough_request_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._passthroughRequestHeaders),
+      plugin_version: cdktn.stringToTerraform(this._pluginVersion),
+      seal_wrap: cdktn.booleanToTerraform(this._sealWrap),
+      token: cdktn.stringToTerraform(this._token),
+      token_wo: cdktn.stringToTerraform(this._tokenWo),
+      token_wo_version: cdktn.numberToTerraform(this._tokenWoVersion),
+      ttl: cdktn.numberToTerraform(this._ttl),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       address: {
-        value: cdktf.stringToHclTerraform(this._address),
+        value: cdktn.stringToHclTerraform(this._address),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allowed_managed_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedManagedKeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedManagedKeys),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       allowed_response_headers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedResponseHeaders),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedResponseHeaders),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       audit_non_hmac_request_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacRequestKeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._auditNonHmacRequestKeys),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       audit_non_hmac_response_keys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._auditNonHmacResponseKeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._auditNonHmacResponseKeys),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ca_cert: {
-        value: cdktf.stringToHclTerraform(this._caCert),
+        value: cdktn.stringToHclTerraform(this._caCert),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_cert: {
-        value: cdktf.stringToHclTerraform(this._clientCert),
+        value: cdktn.stringToHclTerraform(this._clientCert),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_key: {
-        value: cdktf.stringToHclTerraform(this._clientKey),
+        value: cdktn.stringToHclTerraform(this._clientKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
+      client_key_wo: {
+        value: cdktn.stringToHclTerraform(this._clientKeyWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_key_wo_version: {
+        value: cdktn.numberToHclTerraform(this._clientKeyWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       default_lease_ttl_seconds: {
-        value: cdktf.numberToHclTerraform(this._defaultLeaseTtlSeconds),
+        value: cdktn.numberToHclTerraform(this._defaultLeaseTtlSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       delegated_auth_accessors: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._delegatedAuthAccessors),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._delegatedAuthAccessors),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_remount: {
-        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        value: cdktn.booleanToHclTerraform(this._disableRemount),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       external_entropy_access: {
-        value: cdktf.booleanToHclTerraform(this._externalEntropyAccess),
+        value: cdktn.booleanToHclTerraform(this._externalEntropyAccess),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       force_no_cache: {
-        value: cdktf.booleanToHclTerraform(this._forceNoCache),
+        value: cdktn.booleanToHclTerraform(this._forceNoCache),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_token_key: {
-        value: cdktf.stringToHclTerraform(this._identityTokenKey),
+        value: cdktn.stringToHclTerraform(this._identityTokenKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       listing_visibility: {
-        value: cdktf.stringToHclTerraform(this._listingVisibility),
+        value: cdktn.stringToHclTerraform(this._listingVisibility),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       local: {
-        value: cdktf.booleanToHclTerraform(this._local),
+        value: cdktn.booleanToHclTerraform(this._local),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       max_lease_ttl_seconds: {
-        value: cdktf.numberToHclTerraform(this._maxLeaseTtlSeconds),
+        value: cdktn.numberToHclTerraform(this._maxLeaseTtlSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_token_name_length: {
-        value: cdktf.numberToHclTerraform(this._maxTokenNameLength),
+        value: cdktn.numberToHclTerraform(this._maxTokenNameLength),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_ttl: {
-        value: cdktf.numberToHclTerraform(this._maxTtl),
+        value: cdktn.numberToHclTerraform(this._maxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       options: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._options),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       passthrough_request_headers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._passthroughRequestHeaders),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._passthroughRequestHeaders),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       plugin_version: {
-        value: cdktf.stringToHclTerraform(this._pluginVersion),
+        value: cdktn.stringToHclTerraform(this._pluginVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       seal_wrap: {
-        value: cdktf.booleanToHclTerraform(this._sealWrap),
+        value: cdktn.booleanToHclTerraform(this._sealWrap),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       token: {
-        value: cdktf.stringToHclTerraform(this._token),
+        value: cdktn.stringToHclTerraform(this._token),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
+      token_wo: {
+        value: cdktn.stringToHclTerraform(this._tokenWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      token_wo_version: {
+        value: cdktn.numberToHclTerraform(this._tokenWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

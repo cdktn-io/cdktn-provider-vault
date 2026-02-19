@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_duo
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IdentityMfaDuoConfig extends cdktf.TerraformMetaArguments {
+export interface IdentityMfaDuoConfig extends cdktn.TerraformMetaArguments {
   /**
   * API hostname for Duo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#api_hostname IdentityMfaDuo#api_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_duo#api_hostname IdentityMfaDuo#api_hostname}
   */
   readonly apiHostname: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_duo#id IdentityMfaDuo#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,45 +28,45 @@ export interface IdentityMfaDuoConfig extends cdktf.TerraformMetaArguments {
   /**
   * Integration key for Duo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#integration_key IdentityMfaDuo#integration_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_duo#integration_key IdentityMfaDuo#integration_key}
   */
   readonly integrationKey: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#namespace IdentityMfaDuo#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_duo#namespace IdentityMfaDuo#namespace}
   */
   readonly namespace?: string;
   /**
   * Push information for Duo.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#push_info IdentityMfaDuo#push_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_duo#push_info IdentityMfaDuo#push_info}
   */
   readonly pushInfo?: string;
   /**
   * Secret key for Duo
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#secret_key IdentityMfaDuo#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_duo#secret_key IdentityMfaDuo#secret_key}
   */
   readonly secretKey: string;
   /**
   * Require passcode upon MFA validation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#use_passcode IdentityMfaDuo#use_passcode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_duo#use_passcode IdentityMfaDuo#use_passcode}
   */
-  readonly usePasscode?: boolean | cdktf.IResolvable;
+  readonly usePasscode?: boolean | cdktn.IResolvable;
   /**
   * A template string for mapping Identity names to MFA methods.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#username_format IdentityMfaDuo#username_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_duo#username_format IdentityMfaDuo#username_format}
   */
   readonly usernameFormat?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo}
 */
-export class IdentityMfaDuo extends cdktf.TerraformResource {
+export class IdentityMfaDuo extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class IdentityMfaDuo extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IdentityMfaDuo resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IdentityMfaDuo resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityMfaDuo to import
-  * @param importFromId The id of the existing IdentityMfaDuo that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityMfaDuo that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_duo#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityMfaDuo to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_mfa_duo", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_mfa_duo", importId: importFromId, provider });
       }
 
   // ===========
@@ -92,7 +92,7 @@ export class IdentityMfaDuo extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_duo vault_identity_mfa_duo} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +103,7 @@ export class IdentityMfaDuo extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_mfa_duo',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -246,11 +246,11 @@ export class IdentityMfaDuo extends cdktf.TerraformResource {
   }
 
   // use_passcode - computed: false, optional: true, required: false
-  private _usePasscode?: boolean | cdktf.IResolvable; 
+  private _usePasscode?: boolean | cdktn.IResolvable; 
   public get usePasscode() {
     return this.getBooleanAttribute('use_passcode');
   }
-  public set usePasscode(value: boolean | cdktf.IResolvable) {
+  public set usePasscode(value: boolean | cdktn.IResolvable) {
     this._usePasscode = value;
   }
   public resetUsePasscode() {
@@ -288,63 +288,63 @@ export class IdentityMfaDuo extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_hostname: cdktf.stringToTerraform(this._apiHostname),
-      id: cdktf.stringToTerraform(this._id),
-      integration_key: cdktf.stringToTerraform(this._integrationKey),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      push_info: cdktf.stringToTerraform(this._pushInfo),
-      secret_key: cdktf.stringToTerraform(this._secretKey),
-      use_passcode: cdktf.booleanToTerraform(this._usePasscode),
-      username_format: cdktf.stringToTerraform(this._usernameFormat),
+      api_hostname: cdktn.stringToTerraform(this._apiHostname),
+      id: cdktn.stringToTerraform(this._id),
+      integration_key: cdktn.stringToTerraform(this._integrationKey),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      push_info: cdktn.stringToTerraform(this._pushInfo),
+      secret_key: cdktn.stringToTerraform(this._secretKey),
+      use_passcode: cdktn.booleanToTerraform(this._usePasscode),
+      username_format: cdktn.stringToTerraform(this._usernameFormat),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       api_hostname: {
-        value: cdktf.stringToHclTerraform(this._apiHostname),
+        value: cdktn.stringToHclTerraform(this._apiHostname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       integration_key: {
-        value: cdktf.stringToHclTerraform(this._integrationKey),
+        value: cdktn.stringToHclTerraform(this._integrationKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       push_info: {
-        value: cdktf.stringToHclTerraform(this._pushInfo),
+        value: cdktn.stringToHclTerraform(this._pushInfo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_key: {
-        value: cdktf.stringToHclTerraform(this._secretKey),
+        value: cdktn.stringToHclTerraform(this._secretKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       use_passcode: {
-        value: cdktf.booleanToHclTerraform(this._usePasscode),
+        value: cdktn.booleanToHclTerraform(this._usePasscode),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       username_format: {
-        value: cdktf.stringToHclTerraform(this._usernameFormat),
+        value: cdktn.stringToHclTerraform(this._usernameFormat),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

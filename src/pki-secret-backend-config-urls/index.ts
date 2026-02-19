@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_urls
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_urls
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PkiSecretBackendConfigUrlsConfig extends cdktf.TerraformMetaArguments {
+export interface PkiSecretBackendConfigUrlsConfig extends cdktn.TerraformMetaArguments {
   /**
   * The path of the PKI secret backend the resource belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_urls#backend PkiSecretBackendConfigUrls#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_urls#backend PkiSecretBackendConfigUrls#backend}
   */
   readonly backend: string;
   /**
   * Specifies the URL values for the CRL Distribution Points field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_urls#crl_distribution_points PkiSecretBackendConfigUrls#crl_distribution_points}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_urls#crl_distribution_points PkiSecretBackendConfigUrls#crl_distribution_points}
   */
   readonly crlDistributionPoints?: string[];
   /**
   * Specifies that templating of AIA fields is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_urls#enable_templating PkiSecretBackendConfigUrls#enable_templating}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_urls#enable_templating PkiSecretBackendConfigUrls#enable_templating}
   */
-  readonly enableTemplating?: boolean | cdktf.IResolvable;
+  readonly enableTemplating?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_urls#id PkiSecretBackendConfigUrls#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_urls#id PkiSecretBackendConfigUrls#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,27 +40,27 @@ export interface PkiSecretBackendConfigUrlsConfig extends cdktf.TerraformMetaArg
   /**
   * Specifies the URL values for the Issuing Certificate field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_urls#issuing_certificates PkiSecretBackendConfigUrls#issuing_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_urls#issuing_certificates PkiSecretBackendConfigUrls#issuing_certificates}
   */
   readonly issuingCertificates?: string[];
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_urls#namespace PkiSecretBackendConfigUrls#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_urls#namespace PkiSecretBackendConfigUrls#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the URL values for the OCSP Servers field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_urls#ocsp_servers PkiSecretBackendConfigUrls#ocsp_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_urls#ocsp_servers PkiSecretBackendConfigUrls#ocsp_servers}
   */
   readonly ocspServers?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls}
 */
-export class PkiSecretBackendConfigUrls extends cdktf.TerraformResource {
+export class PkiSecretBackendConfigUrls extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -71,14 +71,14 @@ export class PkiSecretBackendConfigUrls extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PkiSecretBackendConfigUrls resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PkiSecretBackendConfigUrls resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PkiSecretBackendConfigUrls to import
-  * @param importFromId The id of the existing PkiSecretBackendConfigUrls that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_urls#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PkiSecretBackendConfigUrls that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_urls#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PkiSecretBackendConfigUrls to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_config_urls", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_config_urls", importId: importFromId, provider });
       }
 
   // ===========
@@ -86,7 +86,7 @@ export class PkiSecretBackendConfigUrls extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +97,7 @@ export class PkiSecretBackendConfigUrls extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_config_urls',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -151,11 +151,11 @@ export class PkiSecretBackendConfigUrls extends cdktf.TerraformResource {
   }
 
   // enable_templating - computed: false, optional: true, required: false
-  private _enableTemplating?: boolean | cdktf.IResolvable; 
+  private _enableTemplating?: boolean | cdktn.IResolvable; 
   public get enableTemplating() {
     return this.getBooleanAttribute('enable_templating');
   }
-  public set enableTemplating(value: boolean | cdktf.IResolvable) {
+  public set enableTemplating(value: boolean | cdktn.IResolvable) {
     this._enableTemplating = value;
   }
   public resetEnableTemplating() {
@@ -236,56 +236,56 @@ export class PkiSecretBackendConfigUrls extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      crl_distribution_points: cdktf.listMapper(cdktf.stringToTerraform, false)(this._crlDistributionPoints),
-      enable_templating: cdktf.booleanToTerraform(this._enableTemplating),
-      id: cdktf.stringToTerraform(this._id),
-      issuing_certificates: cdktf.listMapper(cdktf.stringToTerraform, false)(this._issuingCertificates),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      ocsp_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ocspServers),
+      backend: cdktn.stringToTerraform(this._backend),
+      crl_distribution_points: cdktn.listMapper(cdktn.stringToTerraform, false)(this._crlDistributionPoints),
+      enable_templating: cdktn.booleanToTerraform(this._enableTemplating),
+      id: cdktn.stringToTerraform(this._id),
+      issuing_certificates: cdktn.listMapper(cdktn.stringToTerraform, false)(this._issuingCertificates),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      ocsp_servers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ocspServers),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       crl_distribution_points: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._crlDistributionPoints),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._crlDistributionPoints),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       enable_templating: {
-        value: cdktf.booleanToHclTerraform(this._enableTemplating),
+        value: cdktn.booleanToHclTerraform(this._enableTemplating),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       issuing_certificates: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._issuingCertificates),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._issuingCertificates),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ocsp_servers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ocspServers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ocspServers),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

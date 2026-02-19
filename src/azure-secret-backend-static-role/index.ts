@@ -1,83 +1,83 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AzureSecretBackendStaticRoleConfig extends cdktf.TerraformMetaArguments {
+export interface AzureSecretBackendStaticRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Application object ID for an existing service principal that is managed by the static role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role#application_object_id AzureSecretBackendStaticRole#application_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role#application_object_id AzureSecretBackendStaticRole#application_object_id}
   */
   readonly applicationObjectId: string;
   /**
   * The path where the Azure secrets backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role#backend AzureSecretBackendStaticRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role#backend AzureSecretBackendStaticRole#backend}
   */
   readonly backend: string;
   /**
   * The plaintext secret value of the credential you want to import.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role#client_secret AzureSecretBackendStaticRole#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role#client_secret AzureSecretBackendStaticRole#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * A future expiration time for the imported credential, in RFC3339 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role#expiration AzureSecretBackendStaticRole#expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role#expiration AzureSecretBackendStaticRole#expiration}
   */
   readonly expiration?: string;
   /**
   * A map of string key/value pairs that will be stored as metadata on the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role#metadata AzureSecretBackendStaticRole#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role#metadata AzureSecretBackendStaticRole#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role#namespace AzureSecretBackendStaticRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role#namespace AzureSecretBackendStaticRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the static role to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role#role AzureSecretBackendStaticRole#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role#role AzureSecretBackendStaticRole#role}
   */
   readonly role: string;
   /**
   * The secret ID of the Azure password credential you want to import.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role#secret_id AzureSecretBackendStaticRole#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role#secret_id AzureSecretBackendStaticRole#secret_id}
   */
   readonly secretId?: string;
   /**
   * If true, skip rotation of the client secret on import.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role#skip_import_rotation AzureSecretBackendStaticRole#skip_import_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role#skip_import_rotation AzureSecretBackendStaticRole#skip_import_rotation}
   */
-  readonly skipImportRotation?: boolean | cdktf.IResolvable;
+  readonly skipImportRotation?: boolean | cdktn.IResolvable;
   /**
   * Timespan of 1 year (31536000) or more during which the role credentials are valid.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role#ttl AzureSecretBackendStaticRole#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role#ttl AzureSecretBackendStaticRole#ttl}
   */
   readonly ttl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}
 */
-export class AzureSecretBackendStaticRole extends cdktf.TerraformResource {
+export class AzureSecretBackendStaticRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -88,14 +88,14 @@ export class AzureSecretBackendStaticRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AzureSecretBackendStaticRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AzureSecretBackendStaticRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzureSecretBackendStaticRole to import
-  * @param importFromId The id of the existing AzureSecretBackendStaticRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AzureSecretBackendStaticRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzureSecretBackendStaticRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_azure_secret_backend_static_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_azure_secret_backend_static_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -103,7 +103,7 @@ export class AzureSecretBackendStaticRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +114,7 @@ export class AzureSecretBackendStaticRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_azure_secret_backend_static_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -266,11 +266,11 @@ export class AzureSecretBackendStaticRole extends cdktf.TerraformResource {
   }
 
   // skip_import_rotation - computed: false, optional: true, required: false
-  private _skipImportRotation?: boolean | cdktf.IResolvable; 
+  private _skipImportRotation?: boolean | cdktn.IResolvable; 
   public get skipImportRotation() {
     return this.getBooleanAttribute('skip_import_rotation');
   }
-  public set skipImportRotation(value: boolean | cdktf.IResolvable) {
+  public set skipImportRotation(value: boolean | cdktn.IResolvable) {
     this._skipImportRotation = value;
   }
   public resetSkipImportRotation() {
@@ -303,77 +303,77 @@ export class AzureSecretBackendStaticRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_object_id: cdktf.stringToTerraform(this._applicationObjectId),
-      backend: cdktf.stringToTerraform(this._backend),
-      client_secret: cdktf.stringToTerraform(this._clientSecret),
-      expiration: cdktf.stringToTerraform(this._expiration),
-      metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      role: cdktf.stringToTerraform(this._role),
-      secret_id: cdktf.stringToTerraform(this._secretId),
-      skip_import_rotation: cdktf.booleanToTerraform(this._skipImportRotation),
-      ttl: cdktf.numberToTerraform(this._ttl),
+      application_object_id: cdktn.stringToTerraform(this._applicationObjectId),
+      backend: cdktn.stringToTerraform(this._backend),
+      client_secret: cdktn.stringToTerraform(this._clientSecret),
+      expiration: cdktn.stringToTerraform(this._expiration),
+      metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._metadata),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      role: cdktn.stringToTerraform(this._role),
+      secret_id: cdktn.stringToTerraform(this._secretId),
+      skip_import_rotation: cdktn.booleanToTerraform(this._skipImportRotation),
+      ttl: cdktn.numberToTerraform(this._ttl),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_object_id: {
-        value: cdktf.stringToHclTerraform(this._applicationObjectId),
+        value: cdktn.stringToHclTerraform(this._applicationObjectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_secret: {
-        value: cdktf.stringToHclTerraform(this._clientSecret),
+        value: cdktn.stringToHclTerraform(this._clientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expiration: {
-        value: cdktf.stringToHclTerraform(this._expiration),
+        value: cdktn.stringToHclTerraform(this._expiration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._metadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._metadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_id: {
-        value: cdktf.stringToHclTerraform(this._secretId),
+        value: cdktn.stringToHclTerraform(this._secretId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       skip_import_rotation: {
-        value: cdktf.booleanToHclTerraform(this._skipImportRotation),
+        value: cdktn.booleanToHclTerraform(this._skipImportRotation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

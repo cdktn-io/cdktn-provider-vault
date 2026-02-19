@@ -1,33 +1,33 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MfaTotpConfig extends cdktf.TerraformMetaArguments {
+export interface MfaTotpConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the hashing algorithm used to generate the TOTP code. Options include 'SHA1', 'SHA256' and 'SHA512'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp#algorithm MfaTotp#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp#algorithm MfaTotp#algorithm}
   */
   readonly algorithm?: string;
   /**
   * The number of digits in the generated TOTP token. This value can either be 6 or 8.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp#digits MfaTotp#digits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp#digits MfaTotp#digits}
   */
   readonly digits?: number;
   /**
   * ID computed by Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp#id MfaTotp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp#id MfaTotp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,51 +36,57 @@ export interface MfaTotpConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the key's issuing organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp#issuer MfaTotp#issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp#issuer MfaTotp#issuer}
   */
   readonly issuer: string;
   /**
   * Specifies the size in bytes of the generated key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp#key_size MfaTotp#key_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp#key_size MfaTotp#key_size}
   */
   readonly keySize?: number;
   /**
+  * The maximum number of consecutive failed validation attempts allowed. Must be a positive integer. Vault defaults this value to 5 if not provided or if set to 0.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp#max_validation_attempts MfaTotp#max_validation_attempts}
+  */
+  readonly maxValidationAttempts?: number;
+  /**
   * Name of the MFA method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp#name MfaTotp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp#name MfaTotp#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp#namespace MfaTotp#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp#namespace MfaTotp#namespace}
   */
   readonly namespace?: string;
   /**
   * The length of time used to generate a counter for the TOTP token calculation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp#period MfaTotp#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp#period MfaTotp#period}
   */
   readonly period?: number;
   /**
   * The pixel size of the generated square QR code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp#qr_size MfaTotp#qr_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp#qr_size MfaTotp#qr_size}
   */
   readonly qrSize?: number;
   /**
   * The number of delay periods that are allowed when validating a TOTP token. This value can either be 0 or 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp#skew MfaTotp#skew}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp#skew MfaTotp#skew}
   */
   readonly skew?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp vault_mfa_totp}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp vault_mfa_totp}
 */
-export class MfaTotp extends cdktf.TerraformResource {
+export class MfaTotp extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -91,14 +97,14 @@ export class MfaTotp extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MfaTotp resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MfaTotp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MfaTotp to import
-  * @param importFromId The id of the existing MfaTotp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MfaTotp that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MfaTotp to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_mfa_totp", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_mfa_totp", importId: importFromId, provider });
       }
 
   // ===========
@@ -106,7 +112,7 @@ export class MfaTotp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/mfa_totp vault_mfa_totp} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_totp vault_mfa_totp} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -117,7 +123,7 @@ export class MfaTotp extends cdktf.TerraformResource {
       terraformResourceType: 'vault_mfa_totp',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -133,6 +139,7 @@ export class MfaTotp extends cdktf.TerraformResource {
     this._id = config.id;
     this._issuer = config.issuer;
     this._keySize = config.keySize;
+    this._maxValidationAttempts = config.maxValidationAttempts;
     this._name = config.name;
     this._namespace = config.namespace;
     this._period = config.period;
@@ -221,6 +228,22 @@ export class MfaTotp extends cdktf.TerraformResource {
     return this._keySize;
   }
 
+  // max_validation_attempts - computed: false, optional: true, required: false
+  private _maxValidationAttempts?: number; 
+  public get maxValidationAttempts() {
+    return this.getNumberAttribute('max_validation_attempts');
+  }
+  public set maxValidationAttempts(value: number) {
+    this._maxValidationAttempts = value;
+  }
+  public resetMaxValidationAttempts() {
+    this._maxValidationAttempts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxValidationAttemptsInput() {
+    return this._maxValidationAttempts;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -304,77 +327,84 @@ export class MfaTotp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      algorithm: cdktf.stringToTerraform(this._algorithm),
-      digits: cdktf.numberToTerraform(this._digits),
-      id: cdktf.stringToTerraform(this._id),
-      issuer: cdktf.stringToTerraform(this._issuer),
-      key_size: cdktf.numberToTerraform(this._keySize),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      period: cdktf.numberToTerraform(this._period),
-      qr_size: cdktf.numberToTerraform(this._qrSize),
-      skew: cdktf.numberToTerraform(this._skew),
+      algorithm: cdktn.stringToTerraform(this._algorithm),
+      digits: cdktn.numberToTerraform(this._digits),
+      id: cdktn.stringToTerraform(this._id),
+      issuer: cdktn.stringToTerraform(this._issuer),
+      key_size: cdktn.numberToTerraform(this._keySize),
+      max_validation_attempts: cdktn.numberToTerraform(this._maxValidationAttempts),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      period: cdktn.numberToTerraform(this._period),
+      qr_size: cdktn.numberToTerraform(this._qrSize),
+      skew: cdktn.numberToTerraform(this._skew),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       algorithm: {
-        value: cdktf.stringToHclTerraform(this._algorithm),
+        value: cdktn.stringToHclTerraform(this._algorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       digits: {
-        value: cdktf.numberToHclTerraform(this._digits),
+        value: cdktn.numberToHclTerraform(this._digits),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       issuer: {
-        value: cdktf.stringToHclTerraform(this._issuer),
+        value: cdktn.stringToHclTerraform(this._issuer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_size: {
-        value: cdktf.numberToHclTerraform(this._keySize),
+        value: cdktn.numberToHclTerraform(this._keySize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      max_validation_attempts: {
+        value: cdktn.numberToHclTerraform(this._maxValidationAttempts),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       period: {
-        value: cdktf.numberToHclTerraform(this._period),
+        value: cdktn.numberToHclTerraform(this._period),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       qr_size: {
-        value: cdktf.numberToHclTerraform(this._qrSize),
+        value: cdktn.numberToHclTerraform(this._qrSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       skew: {
-        value: cdktf.numberToHclTerraform(this._skew),
+        value: cdktn.numberToHclTerraform(this._skew),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

@@ -1,62 +1,62 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KubernetesAuthBackendRoleConfig extends cdktf.TerraformMetaArguments {
+export interface KubernetesAuthBackendRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The metadata to be tied to generated entity alias.
   *   This should be a list or map containing the metadata in key value pairs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#alias_metadata KubernetesAuthBackendRole#alias_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#alias_metadata KubernetesAuthBackendRole#alias_metadata}
   */
   readonly aliasMetadata?: { [key: string]: string };
   /**
   * Configures how identity aliases are generated. Valid choices are: serviceaccount_uid, serviceaccount_name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#alias_name_source KubernetesAuthBackendRole#alias_name_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#alias_name_source KubernetesAuthBackendRole#alias_name_source}
   */
   readonly aliasNameSource?: string;
   /**
   * Optional Audience claim to verify in the JWT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#audience KubernetesAuthBackendRole#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#audience KubernetesAuthBackendRole#audience}
   */
   readonly audience?: string;
   /**
   * Unique name of the kubernetes backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#backend KubernetesAuthBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#backend KubernetesAuthBackendRole#backend}
   */
   readonly backend?: string;
   /**
   * List of service account names able to access this role. If set to `["*"]` all names are allowed, both this and bound_service_account_namespaces can not be "*".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_names KubernetesAuthBackendRole#bound_service_account_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_names KubernetesAuthBackendRole#bound_service_account_names}
   */
   readonly boundServiceAccountNames: string[];
   /**
   * A label selector for Kubernetes namespaces allowed to access this role. Accepts either a JSON or YAML object. The value should be of type LabelSelector. Currently, label selectors with matchExpressions are not supported. To use label selectors, Vault must have permission to read namespaces on the Kubernetes cluster. If set with bound_service_account_namespaces, the conditions are ORed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_namespace_selector KubernetesAuthBackendRole#bound_service_account_namespace_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_namespace_selector KubernetesAuthBackendRole#bound_service_account_namespace_selector}
   */
   readonly boundServiceAccountNamespaceSelector?: string;
   /**
   * List of namespaces allowed to access this role. If set to `["*"]` all namespaces are allowed, both this and bound_service_account_names can not be set to "*".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_namespaces KubernetesAuthBackendRole#bound_service_account_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#bound_service_account_namespaces KubernetesAuthBackendRole#bound_service_account_namespaces}
   */
   readonly boundServiceAccountNamespaces?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#id KubernetesAuthBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#id KubernetesAuthBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -65,75 +65,75 @@ export interface KubernetesAuthBackendRoleConfig extends cdktf.TerraformMetaArgu
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#namespace KubernetesAuthBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#namespace KubernetesAuthBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#role_name KubernetesAuthBackendRole#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#role_name KubernetesAuthBackendRole#role_name}
   */
   readonly roleName: string;
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#token_bound_cidrs KubernetesAuthBackendRole#token_bound_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#token_bound_cidrs KubernetesAuthBackendRole#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#token_explicit_max_ttl KubernetesAuthBackendRole#token_explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#token_explicit_max_ttl KubernetesAuthBackendRole#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#token_max_ttl KubernetesAuthBackendRole#token_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#token_max_ttl KubernetesAuthBackendRole#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#token_no_default_policy KubernetesAuthBackendRole#token_no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#token_no_default_policy KubernetesAuthBackendRole#token_no_default_policy}
   */
-  readonly tokenNoDefaultPolicy?: boolean | cdktf.IResolvable;
+  readonly tokenNoDefaultPolicy?: boolean | cdktn.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#token_num_uses KubernetesAuthBackendRole#token_num_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#token_num_uses KubernetesAuthBackendRole#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#token_period KubernetesAuthBackendRole#token_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#token_period KubernetesAuthBackendRole#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#token_policies KubernetesAuthBackendRole#token_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#token_policies KubernetesAuthBackendRole#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#token_ttl KubernetesAuthBackendRole#token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#token_ttl KubernetesAuthBackendRole#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#token_type KubernetesAuthBackendRole#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#token_type KubernetesAuthBackendRole#token_type}
   */
   readonly tokenType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role}
 */
-export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
+export class KubernetesAuthBackendRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -144,14 +144,14 @@ export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KubernetesAuthBackendRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KubernetesAuthBackendRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KubernetesAuthBackendRole to import
-  * @param importFromId The id of the existing KubernetesAuthBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KubernetesAuthBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KubernetesAuthBackendRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_kubernetes_auth_backend_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_kubernetes_auth_backend_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -159,7 +159,7 @@ export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kubernetes_auth_backend_role vault_kubernetes_auth_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -170,7 +170,7 @@ export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kubernetes_auth_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -273,7 +273,7 @@ export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
   // bound_service_account_names - computed: false, optional: false, required: true
   private _boundServiceAccountNames?: string[]; 
   public get boundServiceAccountNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('bound_service_account_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('bound_service_account_names'));
   }
   public set boundServiceAccountNames(value: string[]) {
     this._boundServiceAccountNames = value;
@@ -302,7 +302,7 @@ export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
   // bound_service_account_namespaces - computed: false, optional: true, required: false
   private _boundServiceAccountNamespaces?: string[]; 
   public get boundServiceAccountNamespaces() {
-    return cdktf.Fn.tolist(this.getListAttribute('bound_service_account_namespaces'));
+    return cdktn.Fn.tolist(this.getListAttribute('bound_service_account_namespaces'));
   }
   public set boundServiceAccountNamespaces(value: string[]) {
     this._boundServiceAccountNamespaces = value;
@@ -363,7 +363,7 @@ export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
   // token_bound_cidrs - computed: false, optional: true, required: false
   private _tokenBoundCidrs?: string[]; 
   public get tokenBoundCidrs() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_bound_cidrs'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_bound_cidrs'));
   }
   public set tokenBoundCidrs(value: string[]) {
     this._tokenBoundCidrs = value;
@@ -409,11 +409,11 @@ export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
   }
 
   // token_no_default_policy - computed: false, optional: true, required: false
-  private _tokenNoDefaultPolicy?: boolean | cdktf.IResolvable; 
+  private _tokenNoDefaultPolicy?: boolean | cdktn.IResolvable; 
   public get tokenNoDefaultPolicy() {
     return this.getBooleanAttribute('token_no_default_policy');
   }
-  public set tokenNoDefaultPolicy(value: boolean | cdktf.IResolvable) {
+  public set tokenNoDefaultPolicy(value: boolean | cdktn.IResolvable) {
     this._tokenNoDefaultPolicy = value;
   }
   public resetTokenNoDefaultPolicy() {
@@ -459,7 +459,7 @@ export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
   // token_policies - computed: false, optional: true, required: false
   private _tokenPolicies?: string[]; 
   public get tokenPolicies() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_policies'));
   }
   public set tokenPolicies(value: string[]) {
     this._tokenPolicies = value;
@@ -510,140 +510,140 @@ export class KubernetesAuthBackendRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias_metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._aliasMetadata),
-      alias_name_source: cdktf.stringToTerraform(this._aliasNameSource),
-      audience: cdktf.stringToTerraform(this._audience),
-      backend: cdktf.stringToTerraform(this._backend),
-      bound_service_account_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._boundServiceAccountNames),
-      bound_service_account_namespace_selector: cdktf.stringToTerraform(this._boundServiceAccountNamespaceSelector),
-      bound_service_account_namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(this._boundServiceAccountNamespaces),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      role_name: cdktf.stringToTerraform(this._roleName),
-      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenBoundCidrs),
-      token_explicit_max_ttl: cdktf.numberToTerraform(this._tokenExplicitMaxTtl),
-      token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
-      token_no_default_policy: cdktf.booleanToTerraform(this._tokenNoDefaultPolicy),
-      token_num_uses: cdktf.numberToTerraform(this._tokenNumUses),
-      token_period: cdktf.numberToTerraform(this._tokenPeriod),
-      token_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenPolicies),
-      token_ttl: cdktf.numberToTerraform(this._tokenTtl),
-      token_type: cdktf.stringToTerraform(this._tokenType),
+      alias_metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._aliasMetadata),
+      alias_name_source: cdktn.stringToTerraform(this._aliasNameSource),
+      audience: cdktn.stringToTerraform(this._audience),
+      backend: cdktn.stringToTerraform(this._backend),
+      bound_service_account_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._boundServiceAccountNames),
+      bound_service_account_namespace_selector: cdktn.stringToTerraform(this._boundServiceAccountNamespaceSelector),
+      bound_service_account_namespaces: cdktn.listMapper(cdktn.stringToTerraform, false)(this._boundServiceAccountNamespaces),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      role_name: cdktn.stringToTerraform(this._roleName),
+      token_bound_cidrs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenBoundCidrs),
+      token_explicit_max_ttl: cdktn.numberToTerraform(this._tokenExplicitMaxTtl),
+      token_max_ttl: cdktn.numberToTerraform(this._tokenMaxTtl),
+      token_no_default_policy: cdktn.booleanToTerraform(this._tokenNoDefaultPolicy),
+      token_num_uses: cdktn.numberToTerraform(this._tokenNumUses),
+      token_period: cdktn.numberToTerraform(this._tokenPeriod),
+      token_policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenPolicies),
+      token_ttl: cdktn.numberToTerraform(this._tokenTtl),
+      token_type: cdktn.stringToTerraform(this._tokenType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias_metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._aliasMetadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._aliasMetadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       alias_name_source: {
-        value: cdktf.stringToHclTerraform(this._aliasNameSource),
+        value: cdktn.stringToHclTerraform(this._aliasNameSource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       audience: {
-        value: cdktf.stringToHclTerraform(this._audience),
+        value: cdktn.stringToHclTerraform(this._audience),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bound_service_account_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundServiceAccountNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._boundServiceAccountNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       bound_service_account_namespace_selector: {
-        value: cdktf.stringToHclTerraform(this._boundServiceAccountNamespaceSelector),
+        value: cdktn.stringToHclTerraform(this._boundServiceAccountNamespaceSelector),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bound_service_account_namespaces: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundServiceAccountNamespaces),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._boundServiceAccountNamespaces),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_name: {
-        value: cdktf.stringToHclTerraform(this._roleName),
+        value: cdktn.stringToHclTerraform(this._roleName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_bound_cidrs: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenBoundCidrs),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenBoundCidrs),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       token_explicit_max_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenExplicitMaxTtl),
+        value: cdktn.numberToHclTerraform(this._tokenExplicitMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_max_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenMaxTtl),
+        value: cdktn.numberToHclTerraform(this._tokenMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_no_default_policy: {
-        value: cdktf.booleanToHclTerraform(this._tokenNoDefaultPolicy),
+        value: cdktn.booleanToHclTerraform(this._tokenNoDefaultPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       token_num_uses: {
-        value: cdktf.numberToHclTerraform(this._tokenNumUses),
+        value: cdktn.numberToHclTerraform(this._tokenNumUses),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_period: {
-        value: cdktf.numberToHclTerraform(this._tokenPeriod),
+        value: cdktn.numberToHclTerraform(this._tokenPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_policies: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenPolicies),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenPolicies),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       token_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenTtl),
+        value: cdktn.numberToHclTerraform(this._tokenTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_type: {
-        value: cdktf.stringToHclTerraform(this._tokenType),
+        value: cdktn.stringToHclTerraform(this._tokenType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SshSecretBackendCaConfig extends cdktf.TerraformMetaArguments {
+export interface SshSecretBackendCaConfig extends cdktn.TerraformMetaArguments {
   /**
   * The path of the SSH Secret Backend where the CA should be configured
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca#backend SshSecretBackendCa#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca#backend SshSecretBackendCa#backend}
   */
   readonly backend?: string;
   /**
   * Whether Vault should generate the signing key pair internally.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca#generate_signing_key SshSecretBackendCa#generate_signing_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca#generate_signing_key SshSecretBackendCa#generate_signing_key}
   */
-  readonly generateSigningKey?: boolean | cdktf.IResolvable;
+  readonly generateSigningKey?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca#id SshSecretBackendCa#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca#id SshSecretBackendCa#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,51 +34,51 @@ export interface SshSecretBackendCaConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the desired key bits for the generated SSH CA key when `generate_signing_key` is set to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca#key_bits SshSecretBackendCa#key_bits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca#key_bits SshSecretBackendCa#key_bits}
   */
   readonly keyBits?: number;
   /**
   * Specifies the desired key type for the generated SSH CA key when `generate_signing_key` is set to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca#key_type SshSecretBackendCa#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca#key_type SshSecretBackendCa#key_type}
   */
   readonly keyType?: string;
   /**
   * The id of the managed key to use. When using a managed key, this field or managed_key_name is required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca#managed_key_id SshSecretBackendCa#managed_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca#managed_key_id SshSecretBackendCa#managed_key_id}
   */
   readonly managedKeyId?: string;
   /**
   * The name of the managed key to use. When using a managed key, this field or managed_key_id is required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca#managed_key_name SshSecretBackendCa#managed_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca#managed_key_name SshSecretBackendCa#managed_key_name}
   */
   readonly managedKeyName?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca#namespace SshSecretBackendCa#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca#namespace SshSecretBackendCa#namespace}
   */
   readonly namespace?: string;
   /**
   * Private key part the SSH CA key pair; required if generate_signing_key is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca#private_key SshSecretBackendCa#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca#private_key SshSecretBackendCa#private_key}
   */
   readonly privateKey?: string;
   /**
   * Public key part the SSH CA key pair; required if generate_signing_key is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca#public_key SshSecretBackendCa#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca#public_key SshSecretBackendCa#public_key}
   */
   readonly publicKey?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca}
 */
-export class SshSecretBackendCa extends cdktf.TerraformResource {
+export class SshSecretBackendCa extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -89,14 +89,14 @@ export class SshSecretBackendCa extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SshSecretBackendCa resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SshSecretBackendCa resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SshSecretBackendCa to import
-  * @param importFromId The id of the existing SshSecretBackendCa that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SshSecretBackendCa that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SshSecretBackendCa to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_ssh_secret_backend_ca", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_ssh_secret_backend_ca", importId: importFromId, provider });
       }
 
   // ===========
@@ -104,7 +104,7 @@ export class SshSecretBackendCa extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_ca vault_ssh_secret_backend_ca} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -115,7 +115,7 @@ export class SshSecretBackendCa extends cdktf.TerraformResource {
       terraformResourceType: 'vault_ssh_secret_backend_ca',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -159,11 +159,11 @@ export class SshSecretBackendCa extends cdktf.TerraformResource {
   }
 
   // generate_signing_key - computed: false, optional: true, required: false
-  private _generateSigningKey?: boolean | cdktf.IResolvable; 
+  private _generateSigningKey?: boolean | cdktn.IResolvable; 
   public get generateSigningKey() {
     return this.getBooleanAttribute('generate_signing_key');
   }
-  public set generateSigningKey(value: boolean | cdktf.IResolvable) {
+  public set generateSigningKey(value: boolean | cdktn.IResolvable) {
     this._generateSigningKey = value;
   }
   public resetGenerateSigningKey() {
@@ -308,77 +308,77 @@ export class SshSecretBackendCa extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      generate_signing_key: cdktf.booleanToTerraform(this._generateSigningKey),
-      id: cdktf.stringToTerraform(this._id),
-      key_bits: cdktf.numberToTerraform(this._keyBits),
-      key_type: cdktf.stringToTerraform(this._keyType),
-      managed_key_id: cdktf.stringToTerraform(this._managedKeyId),
-      managed_key_name: cdktf.stringToTerraform(this._managedKeyName),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      private_key: cdktf.stringToTerraform(this._privateKey),
-      public_key: cdktf.stringToTerraform(this._publicKey),
+      backend: cdktn.stringToTerraform(this._backend),
+      generate_signing_key: cdktn.booleanToTerraform(this._generateSigningKey),
+      id: cdktn.stringToTerraform(this._id),
+      key_bits: cdktn.numberToTerraform(this._keyBits),
+      key_type: cdktn.stringToTerraform(this._keyType),
+      managed_key_id: cdktn.stringToTerraform(this._managedKeyId),
+      managed_key_name: cdktn.stringToTerraform(this._managedKeyName),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      private_key: cdktn.stringToTerraform(this._privateKey),
+      public_key: cdktn.stringToTerraform(this._publicKey),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       generate_signing_key: {
-        value: cdktf.booleanToHclTerraform(this._generateSigningKey),
+        value: cdktn.booleanToHclTerraform(this._generateSigningKey),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_bits: {
-        value: cdktf.numberToHclTerraform(this._keyBits),
+        value: cdktn.numberToHclTerraform(this._keyBits),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       key_type: {
-        value: cdktf.stringToHclTerraform(this._keyType),
+        value: cdktn.stringToHclTerraform(this._keyType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_key_id: {
-        value: cdktf.stringToHclTerraform(this._managedKeyId),
+        value: cdktn.stringToHclTerraform(this._managedKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       managed_key_name: {
-        value: cdktf.stringToHclTerraform(this._managedKeyName),
+        value: cdktn.stringToHclTerraform(this._managedKeyName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_key: {
-        value: cdktf.stringToHclTerraform(this._privateKey),
+        value: cdktn.stringToHclTerraform(this._privateKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       public_key: {
-        value: cdktf.stringToHclTerraform(this._publicKey),
+        value: cdktn.stringToHclTerraform(this._publicKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

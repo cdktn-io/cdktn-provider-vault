@@ -1,28 +1,28 @@
-# `transformTransformation` Submodule <a name="`transformTransformation` Submodule" id="@cdktf/provider-vault.transformTransformation"></a>
+# `transformTransformation` Submodule <a name="`transformTransformation` Submodule" id="@cdktn/provider-vault.transformTransformation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### TransformTransformation <a name="TransformTransformation" id="@cdktf/provider-vault.transformTransformation.TransformTransformation"></a>
+### TransformTransformation <a name="TransformTransformation" id="@cdktn/provider-vault.transformTransformation.TransformTransformation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation vault_transform_transformation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation vault_transform_transformation}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/transformtransformation"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtransformation"
 
 transformtransformation.NewTransformTransformation(scope Construct, id *string, config TransformTransformationConfig) TransformTransformation
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig">TransformTransformationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig">TransformTransformationConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig">TransformTransformationConfig</a>
+- *Type:* <a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig">TransformTransformationConfig</a>
 
 ---
 
@@ -50,42 +50,42 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.resetAllowedRoles">ResetAllowedRoles</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.resetDeletionAllowed">ResetDeletionAllowed</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.resetMaskingCharacter">ResetMaskingCharacter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.resetNamespace">ResetNamespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.resetTemplate">ResetTemplate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.resetTemplates">ResetTemplates</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.resetTweakSource">ResetTweakSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.resetType">ResetType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetAllowedRoles">ResetAllowedRoles</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetDeletionAllowed">ResetDeletionAllowed</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetMaskingCharacter">ResetMaskingCharacter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetTemplate">ResetTemplate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetTemplates">ResetTemplates</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetTweakSource">ResetTweakSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetType">ResetType</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.toString"></a>
 
 ```go
 func ToString() *string
@@ -93,25 +93,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -119,7 +119,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -127,7 +127,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -135,19 +135,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -155,7 +155,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -163,7 +163,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -171,151 +171,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -325,7 +325,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -333,7 +333,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -341,7 +341,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -357,7 +357,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -365,7 +365,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -373,55 +373,55 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAllowedRoles` <a name="ResetAllowedRoles" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.resetAllowedRoles"></a>
+##### `ResetAllowedRoles` <a name="ResetAllowedRoles" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.resetAllowedRoles"></a>
 
 ```go
 func ResetAllowedRoles()
 ```
 
-##### `ResetDeletionAllowed` <a name="ResetDeletionAllowed" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.resetDeletionAllowed"></a>
+##### `ResetDeletionAllowed` <a name="ResetDeletionAllowed" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.resetDeletionAllowed"></a>
 
 ```go
 func ResetDeletionAllowed()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetMaskingCharacter` <a name="ResetMaskingCharacter" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.resetMaskingCharacter"></a>
+##### `ResetMaskingCharacter` <a name="ResetMaskingCharacter" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.resetMaskingCharacter"></a>
 
 ```go
 func ResetMaskingCharacter()
 ```
 
-##### `ResetNamespace` <a name="ResetNamespace" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.resetNamespace"></a>
+##### `ResetNamespace` <a name="ResetNamespace" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.resetNamespace"></a>
 
 ```go
 func ResetNamespace()
 ```
 
-##### `ResetTemplate` <a name="ResetTemplate" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.resetTemplate"></a>
+##### `ResetTemplate` <a name="ResetTemplate" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.resetTemplate"></a>
 
 ```go
 func ResetTemplate()
 ```
 
-##### `ResetTemplates` <a name="ResetTemplates" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.resetTemplates"></a>
+##### `ResetTemplates` <a name="ResetTemplates" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.resetTemplates"></a>
 
 ```go
 func ResetTemplates()
 ```
 
-##### `ResetTweakSource` <a name="ResetTweakSource" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.resetTweakSource"></a>
+##### `ResetTweakSource` <a name="ResetTweakSource" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.resetTweakSource"></a>
 
 ```go
 func ResetTweakSource()
 ```
 
-##### `ResetType` <a name="ResetType" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.resetType"></a>
+##### `ResetType` <a name="ResetType" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.resetType"></a>
 
 ```go
 func ResetType()
@@ -431,17 +431,17 @@ func ResetType()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a TransformTransformation resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a TransformTransformation resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/transformtransformation"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtransformation"
 
 transformtransformation.TransformTransformation_IsConstruct(x interface{}) *bool
 ```
@@ -462,7 +462,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -470,45 +470,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/transformtransformation"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtransformation"
 
 transformtransformation.TransformTransformation_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/transformtransformation"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtransformation"
 
 transformtransformation.TransformTransformation_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/transformtransformation"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtransformation"
 
 transformtransformation.TransformTransformation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a TransformTransformation resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a TransformTransformation resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -516,7 +516,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -524,19 +524,19 @@ The construct id used in the generated config for the TransformTransformation to
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing TransformTransformation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the TransformTransformation to import is found.
 
@@ -546,46 +546,46 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.deletionAllowedInput">DeletionAllowedInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.maskingCharacterInput">MaskingCharacterInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.pathInput">PathInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.templateInput">TemplateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.templatesInput">TemplatesInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.tweakSourceInput">TweakSourceInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.deletionAllowed">DeletionAllowed</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.maskingCharacter">MaskingCharacter</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.path">Path</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.template">Template</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.templates">Templates</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.tweakSource">TweakSource</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.allowedRolesInput">AllowedRolesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.deletionAllowedInput">DeletionAllowedInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.maskingCharacterInput">MaskingCharacterInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.pathInput">PathInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.templateInput">TemplateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.templatesInput">TemplatesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.tweakSourceInput">TweakSourceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.deletionAllowed">DeletionAllowed</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.maskingCharacter">MaskingCharacter</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.path">Path</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.template">Template</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.templates">Templates</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.tweakSource">TweakSource</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.type">Type</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.node"></a>
 
 ```go
 func Node() Node
@@ -597,17 +597,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -617,7 +617,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -627,7 +627,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -637,7 +637,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -647,17 +647,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -667,7 +667,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -677,7 +677,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -687,37 +687,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -727,7 +727,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `AllowedRolesInput`<sup>Optional</sup> <a name="AllowedRolesInput" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.allowedRolesInput"></a>
+##### `AllowedRolesInput`<sup>Optional</sup> <a name="AllowedRolesInput" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.allowedRolesInput"></a>
 
 ```go
 func AllowedRolesInput() *[]*string
@@ -737,7 +737,7 @@ func AllowedRolesInput() *[]*string
 
 ---
 
-##### `DeletionAllowedInput`<sup>Optional</sup> <a name="DeletionAllowedInput" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.deletionAllowedInput"></a>
+##### `DeletionAllowedInput`<sup>Optional</sup> <a name="DeletionAllowedInput" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.deletionAllowedInput"></a>
 
 ```go
 func DeletionAllowedInput() interface{}
@@ -747,7 +747,7 @@ func DeletionAllowedInput() interface{}
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -757,7 +757,7 @@ func IdInput() *string
 
 ---
 
-##### `MaskingCharacterInput`<sup>Optional</sup> <a name="MaskingCharacterInput" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.maskingCharacterInput"></a>
+##### `MaskingCharacterInput`<sup>Optional</sup> <a name="MaskingCharacterInput" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.maskingCharacterInput"></a>
 
 ```go
 func MaskingCharacterInput() *string
@@ -767,7 +767,7 @@ func MaskingCharacterInput() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -777,7 +777,7 @@ func NameInput() *string
 
 ---
 
-##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.namespaceInput"></a>
+##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.namespaceInput"></a>
 
 ```go
 func NamespaceInput() *string
@@ -787,7 +787,7 @@ func NamespaceInput() *string
 
 ---
 
-##### `PathInput`<sup>Optional</sup> <a name="PathInput" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.pathInput"></a>
+##### `PathInput`<sup>Optional</sup> <a name="PathInput" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.pathInput"></a>
 
 ```go
 func PathInput() *string
@@ -797,7 +797,7 @@ func PathInput() *string
 
 ---
 
-##### `TemplateInput`<sup>Optional</sup> <a name="TemplateInput" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.templateInput"></a>
+##### `TemplateInput`<sup>Optional</sup> <a name="TemplateInput" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.templateInput"></a>
 
 ```go
 func TemplateInput() *string
@@ -807,7 +807,7 @@ func TemplateInput() *string
 
 ---
 
-##### `TemplatesInput`<sup>Optional</sup> <a name="TemplatesInput" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.templatesInput"></a>
+##### `TemplatesInput`<sup>Optional</sup> <a name="TemplatesInput" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.templatesInput"></a>
 
 ```go
 func TemplatesInput() *[]*string
@@ -817,7 +817,7 @@ func TemplatesInput() *[]*string
 
 ---
 
-##### `TweakSourceInput`<sup>Optional</sup> <a name="TweakSourceInput" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.tweakSourceInput"></a>
+##### `TweakSourceInput`<sup>Optional</sup> <a name="TweakSourceInput" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.tweakSourceInput"></a>
 
 ```go
 func TweakSourceInput() *string
@@ -827,7 +827,7 @@ func TweakSourceInput() *string
 
 ---
 
-##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.typeInput"></a>
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.typeInput"></a>
 
 ```go
 func TypeInput() *string
@@ -837,7 +837,7 @@ func TypeInput() *string
 
 ---
 
-##### `AllowedRoles`<sup>Required</sup> <a name="AllowedRoles" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.allowedRoles"></a>
+##### `AllowedRoles`<sup>Required</sup> <a name="AllowedRoles" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.allowedRoles"></a>
 
 ```go
 func AllowedRoles() *[]*string
@@ -847,7 +847,7 @@ func AllowedRoles() *[]*string
 
 ---
 
-##### `DeletionAllowed`<sup>Required</sup> <a name="DeletionAllowed" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.deletionAllowed"></a>
+##### `DeletionAllowed`<sup>Required</sup> <a name="DeletionAllowed" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.deletionAllowed"></a>
 
 ```go
 func DeletionAllowed() interface{}
@@ -857,7 +857,7 @@ func DeletionAllowed() interface{}
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.id"></a>
 
 ```go
 func Id() *string
@@ -867,7 +867,7 @@ func Id() *string
 
 ---
 
-##### `MaskingCharacter`<sup>Required</sup> <a name="MaskingCharacter" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.maskingCharacter"></a>
+##### `MaskingCharacter`<sup>Required</sup> <a name="MaskingCharacter" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.maskingCharacter"></a>
 
 ```go
 func MaskingCharacter() *string
@@ -877,7 +877,7 @@ func MaskingCharacter() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.name"></a>
 
 ```go
 func Name() *string
@@ -887,7 +887,7 @@ func Name() *string
 
 ---
 
-##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.namespace"></a>
+##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.namespace"></a>
 
 ```go
 func Namespace() *string
@@ -897,7 +897,7 @@ func Namespace() *string
 
 ---
 
-##### `Path`<sup>Required</sup> <a name="Path" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.path"></a>
+##### `Path`<sup>Required</sup> <a name="Path" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.path"></a>
 
 ```go
 func Path() *string
@@ -907,7 +907,7 @@ func Path() *string
 
 ---
 
-##### `Template`<sup>Required</sup> <a name="Template" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.template"></a>
+##### `Template`<sup>Required</sup> <a name="Template" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.template"></a>
 
 ```go
 func Template() *string
@@ -917,7 +917,7 @@ func Template() *string
 
 ---
 
-##### `Templates`<sup>Required</sup> <a name="Templates" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.templates"></a>
+##### `Templates`<sup>Required</sup> <a name="Templates" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.templates"></a>
 
 ```go
 func Templates() *[]*string
@@ -927,7 +927,7 @@ func Templates() *[]*string
 
 ---
 
-##### `TweakSource`<sup>Required</sup> <a name="TweakSource" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.tweakSource"></a>
+##### `TweakSource`<sup>Required</sup> <a name="TweakSource" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.tweakSource"></a>
 
 ```go
 func TweakSource() *string
@@ -937,7 +937,7 @@ func TweakSource() *string
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.type"></a>
 
 ```go
 func Type() *string
@@ -951,11 +951,11 @@ func Type() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformation.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-vault.transformTransformation.TransformTransformation.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -967,20 +967,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### TransformTransformationConfig <a name="TransformTransformationConfig" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig"></a>
+### TransformTransformationConfig <a name="TransformTransformationConfig" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/transformtransformation"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtransformation"
 
 &transformtransformation.TransformTransformationConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
 	Path: *string,
@@ -1000,28 +1000,28 @@ import "github.com/cdktf/cdktf-provider-vault-go/vault/v15/transformtransformati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.name">Name</a></code> | <code>*string</code> | The name of the transformation. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.path">Path</a></code> | <code>*string</code> | The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws". |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | The set of roles allowed to perform this transformation. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.deletionAllowed">DeletionAllowed</a></code> | <code>interface{}</code> | If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#id TransformTransformation#id}. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.maskingCharacter">MaskingCharacter</a></code> | <code>*string</code> | The character used to replace data when in masking mode. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.template">Template</a></code> | <code>*string</code> | The name of the template to use. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.templates">Templates</a></code> | <code>*[]*string</code> | Templates configured for transformation. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.tweakSource">TweakSource</a></code> | <code>*string</code> | The source of where the tweak value comes from. Only valid when in FPE mode. |
-| <code><a href="#@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.type">Type</a></code> | <code>*string</code> | The type of transformation to perform. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.name">Name</a></code> | <code>*string</code> | The name of the transformation. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.path">Path</a></code> | <code>*string</code> | The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws". |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.allowedRoles">AllowedRoles</a></code> | <code>*[]*string</code> | The set of roles allowed to perform this transformation. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.deletionAllowed">DeletionAllowed</a></code> | <code>interface{}</code> | If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#id TransformTransformation#id}. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.maskingCharacter">MaskingCharacter</a></code> | <code>*string</code> | The character used to replace data when in masking mode. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.template">Template</a></code> | <code>*string</code> | The name of the template to use. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.templates">Templates</a></code> | <code>*[]*string</code> | Templates configured for transformation. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.tweakSource">TweakSource</a></code> | <code>*string</code> | The source of where the tweak value comes from. Only valid when in FPE mode. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.type">Type</a></code> | <code>*string</code> | The type of transformation to perform. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1031,7 +1031,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1041,47 +1041,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1091,7 +1091,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.name"></a>
 
 ```go
 Name *string
@@ -1101,11 +1101,11 @@ Name *string
 
 The name of the transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#name TransformTransformation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#name TransformTransformation#name}
 
 ---
 
-##### `Path`<sup>Required</sup> <a name="Path" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.path"></a>
+##### `Path`<sup>Required</sup> <a name="Path" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.path"></a>
 
 ```go
 Path *string
@@ -1115,11 +1115,11 @@ Path *string
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#path TransformTransformation#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#path TransformTransformation#path}
 
 ---
 
-##### `AllowedRoles`<sup>Optional</sup> <a name="AllowedRoles" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.allowedRoles"></a>
+##### `AllowedRoles`<sup>Optional</sup> <a name="AllowedRoles" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.allowedRoles"></a>
 
 ```go
 AllowedRoles *[]*string
@@ -1129,11 +1129,11 @@ AllowedRoles *[]*string
 
 The set of roles allowed to perform this transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
 
 ---
 
-##### `DeletionAllowed`<sup>Optional</sup> <a name="DeletionAllowed" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.deletionAllowed"></a>
+##### `DeletionAllowed`<sup>Optional</sup> <a name="DeletionAllowed" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.deletionAllowed"></a>
 
 ```go
 DeletionAllowed interface{}
@@ -1143,11 +1143,11 @@ DeletionAllowed interface{}
 
 If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.id"></a>
 
 ```go
 Id *string
@@ -1155,14 +1155,14 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#id TransformTransformation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#id TransformTransformation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `MaskingCharacter`<sup>Optional</sup> <a name="MaskingCharacter" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.maskingCharacter"></a>
+##### `MaskingCharacter`<sup>Optional</sup> <a name="MaskingCharacter" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.maskingCharacter"></a>
 
 ```go
 MaskingCharacter *string
@@ -1172,11 +1172,11 @@ MaskingCharacter *string
 
 The character used to replace data when in masking mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
 
 ---
 
-##### `Namespace`<sup>Optional</sup> <a name="Namespace" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.namespace"></a>
+##### `Namespace`<sup>Optional</sup> <a name="Namespace" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.namespace"></a>
 
 ```go
 Namespace *string
@@ -1186,11 +1186,11 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
 
 ---
 
-##### `Template`<sup>Optional</sup> <a name="Template" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.template"></a>
+##### `Template`<sup>Optional</sup> <a name="Template" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.template"></a>
 
 ```go
 Template *string
@@ -1200,11 +1200,11 @@ Template *string
 
 The name of the template to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#template TransformTransformation#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#template TransformTransformation#template}
 
 ---
 
-##### `Templates`<sup>Optional</sup> <a name="Templates" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.templates"></a>
+##### `Templates`<sup>Optional</sup> <a name="Templates" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.templates"></a>
 
 ```go
 Templates *[]*string
@@ -1214,11 +1214,11 @@ Templates *[]*string
 
 Templates configured for transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
 
 ---
 
-##### `TweakSource`<sup>Optional</sup> <a name="TweakSource" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.tweakSource"></a>
+##### `TweakSource`<sup>Optional</sup> <a name="TweakSource" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.tweakSource"></a>
 
 ```go
 TweakSource *string
@@ -1228,11 +1228,11 @@ TweakSource *string
 
 The source of where the tweak value comes from. Only valid when in FPE mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
 
 ---
 
-##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktf/provider-vault.transformTransformation.TransformTransformationConfig.property.type"></a>
+##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.type"></a>
 
 ```go
 Type *string
@@ -1242,7 +1242,7 @@ Type *string
 
 The type of transformation to perform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transform_transformation#type TransformTransformation#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transform_transformation#type TransformTransformation#type}
 
 ---
 

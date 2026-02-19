@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ManagedKeysConfig extends cdktf.TerraformMetaArguments {
+export interface ManagedKeysConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#id ManagedKeys#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#id ManagedKeys#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,212 +22,212 @@ export interface ManagedKeysConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
   */
   readonly namespace?: string;
   /**
   * aws block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#aws ManagedKeys#aws}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#aws ManagedKeys#aws}
   */
-  readonly aws?: ManagedKeysAws[] | cdktf.IResolvable;
+  readonly aws?: ManagedKeysAws[] | cdktn.IResolvable;
   /**
   * azure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#azure ManagedKeys#azure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#azure ManagedKeys#azure}
   */
-  readonly azure?: ManagedKeysAzure[] | cdktf.IResolvable;
+  readonly azure?: ManagedKeysAzure[] | cdktn.IResolvable;
   /**
   * pkcs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
   */
-  readonly pkcs?: ManagedKeysPkcs[] | cdktf.IResolvable;
+  readonly pkcs?: ManagedKeysPkcs[] | cdktn.IResolvable;
 }
 export interface ManagedKeysAws {
   /**
   * The AWS access key to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#access_key ManagedKeys#access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#access_key ManagedKeys#access_key}
   */
   readonly accessKey: string;
   /**
   * If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
   */
-  readonly allowGenerateKey?: boolean | cdktf.IResolvable;
+  readonly allowGenerateKey?: boolean | cdktn.IResolvable;
   /**
   * Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
   */
-  readonly allowReplaceKey?: boolean | cdktf.IResolvable;
+  readonly allowReplaceKey?: boolean | cdktn.IResolvable;
   /**
   * Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
   */
-  readonly allowStoreKey?: boolean | cdktf.IResolvable;
+  readonly allowStoreKey?: boolean | cdktn.IResolvable;
   /**
   * Allow usage from any mount point within the namespace if 'true'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
   */
-  readonly anyMount?: boolean | cdktf.IResolvable;
+  readonly anyMount?: boolean | cdktn.IResolvable;
   /**
   * The curve to use for an ECDSA key. Used when key_type is 'ECDSA'. Required if 'allow_generate_key' is true
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#curve ManagedKeys#curve}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#curve ManagedKeys#curve}
   */
   readonly curve?: string;
   /**
   * Used to specify a custom AWS endpoint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#endpoint ManagedKeys#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#endpoint ManagedKeys#endpoint}
   */
   readonly endpoint?: string;
   /**
   * The size in bits for an RSA key. This field is required when 'key_type' is 'RSA'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
   */
   readonly keyBits: string;
   /**
   * The type of key to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
   */
   readonly keyType: string;
   /**
   * An identifier for the key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#kms_key ManagedKeys#kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#kms_key ManagedKeys#kms_key}
   */
   readonly kmsKey: string;
   /**
   * A unique lowercase name that serves as identifying the key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#name ManagedKeys#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#name ManagedKeys#name}
   */
   readonly name: string;
   /**
   * The AWS region where the keys are stored (or will be stored)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#region ManagedKeys#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#region ManagedKeys#region}
   */
   readonly region?: string;
   /**
   * The AWS secret key to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#secret_key ManagedKeys#secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#secret_key ManagedKeys#secret_key}
   */
   readonly secretKey: string;
 }
 
-export function managedKeysAwsToTerraform(struct?: ManagedKeysAws | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedKeysAwsToTerraform(struct?: ManagedKeysAws | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_key: cdktf.stringToTerraform(struct!.accessKey),
-    allow_generate_key: cdktf.booleanToTerraform(struct!.allowGenerateKey),
-    allow_replace_key: cdktf.booleanToTerraform(struct!.allowReplaceKey),
-    allow_store_key: cdktf.booleanToTerraform(struct!.allowStoreKey),
-    any_mount: cdktf.booleanToTerraform(struct!.anyMount),
-    curve: cdktf.stringToTerraform(struct!.curve),
-    endpoint: cdktf.stringToTerraform(struct!.endpoint),
-    key_bits: cdktf.stringToTerraform(struct!.keyBits),
-    key_type: cdktf.stringToTerraform(struct!.keyType),
-    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
-    name: cdktf.stringToTerraform(struct!.name),
-    region: cdktf.stringToTerraform(struct!.region),
-    secret_key: cdktf.stringToTerraform(struct!.secretKey),
+    access_key: cdktn.stringToTerraform(struct!.accessKey),
+    allow_generate_key: cdktn.booleanToTerraform(struct!.allowGenerateKey),
+    allow_replace_key: cdktn.booleanToTerraform(struct!.allowReplaceKey),
+    allow_store_key: cdktn.booleanToTerraform(struct!.allowStoreKey),
+    any_mount: cdktn.booleanToTerraform(struct!.anyMount),
+    curve: cdktn.stringToTerraform(struct!.curve),
+    endpoint: cdktn.stringToTerraform(struct!.endpoint),
+    key_bits: cdktn.stringToTerraform(struct!.keyBits),
+    key_type: cdktn.stringToTerraform(struct!.keyType),
+    kms_key: cdktn.stringToTerraform(struct!.kmsKey),
+    name: cdktn.stringToTerraform(struct!.name),
+    region: cdktn.stringToTerraform(struct!.region),
+    secret_key: cdktn.stringToTerraform(struct!.secretKey),
   }
 }
 
 
-export function managedKeysAwsToHclTerraform(struct?: ManagedKeysAws | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedKeysAwsToHclTerraform(struct?: ManagedKeysAws | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_key: {
-      value: cdktf.stringToHclTerraform(struct!.accessKey),
+      value: cdktn.stringToHclTerraform(struct!.accessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     allow_generate_key: {
-      value: cdktf.booleanToHclTerraform(struct!.allowGenerateKey),
+      value: cdktn.booleanToHclTerraform(struct!.allowGenerateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_replace_key: {
-      value: cdktf.booleanToHclTerraform(struct!.allowReplaceKey),
+      value: cdktn.booleanToHclTerraform(struct!.allowReplaceKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_store_key: {
-      value: cdktf.booleanToHclTerraform(struct!.allowStoreKey),
+      value: cdktn.booleanToHclTerraform(struct!.allowStoreKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     any_mount: {
-      value: cdktf.booleanToHclTerraform(struct!.anyMount),
+      value: cdktn.booleanToHclTerraform(struct!.anyMount),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     curve: {
-      value: cdktf.stringToHclTerraform(struct!.curve),
+      value: cdktn.stringToHclTerraform(struct!.curve),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.endpoint),
+      value: cdktn.stringToHclTerraform(struct!.endpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_bits: {
-      value: cdktf.stringToHclTerraform(struct!.keyBits),
+      value: cdktn.stringToHclTerraform(struct!.keyBits),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_type: {
-      value: cdktf.stringToHclTerraform(struct!.keyType),
+      value: cdktn.stringToHclTerraform(struct!.keyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kms_key: {
-      value: cdktf.stringToHclTerraform(struct!.kmsKey),
+      value: cdktn.stringToHclTerraform(struct!.kmsKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     region: {
-      value: cdktf.stringToHclTerraform(struct!.region),
+      value: cdktn.stringToHclTerraform(struct!.region),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_key: {
-      value: cdktf.stringToHclTerraform(struct!.secretKey),
+      value: cdktn.stringToHclTerraform(struct!.secretKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -238,9 +238,9 @@ export function managedKeysAwsToHclTerraform(struct?: ManagedKeysAws | cdktf.IRe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedKeysAwsOutputReference extends cdktf.ComplexObject {
+export class ManagedKeysAwsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -248,11 +248,11 @@ export class ManagedKeysAwsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ManagedKeysAws | cdktf.IResolvable | undefined {
+  public get internalValue(): ManagedKeysAws | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -313,7 +313,7 @@ export class ManagedKeysAwsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ManagedKeysAws | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ManagedKeysAws | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -331,7 +331,7 @@ export class ManagedKeysAwsOutputReference extends cdktf.ComplexObject {
       this._region = undefined;
       this._secretKey = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -368,11 +368,11 @@ export class ManagedKeysAwsOutputReference extends cdktf.ComplexObject {
   }
 
   // allow_generate_key - computed: true, optional: true, required: false
-  private _allowGenerateKey?: boolean | cdktf.IResolvable; 
+  private _allowGenerateKey?: boolean | cdktn.IResolvable; 
   public get allowGenerateKey() {
     return this.getBooleanAttribute('allow_generate_key');
   }
-  public set allowGenerateKey(value: boolean | cdktf.IResolvable) {
+  public set allowGenerateKey(value: boolean | cdktn.IResolvable) {
     this._allowGenerateKey = value;
   }
   public resetAllowGenerateKey() {
@@ -384,11 +384,11 @@ export class ManagedKeysAwsOutputReference extends cdktf.ComplexObject {
   }
 
   // allow_replace_key - computed: true, optional: true, required: false
-  private _allowReplaceKey?: boolean | cdktf.IResolvable; 
+  private _allowReplaceKey?: boolean | cdktn.IResolvable; 
   public get allowReplaceKey() {
     return this.getBooleanAttribute('allow_replace_key');
   }
-  public set allowReplaceKey(value: boolean | cdktf.IResolvable) {
+  public set allowReplaceKey(value: boolean | cdktn.IResolvable) {
     this._allowReplaceKey = value;
   }
   public resetAllowReplaceKey() {
@@ -400,11 +400,11 @@ export class ManagedKeysAwsOutputReference extends cdktf.ComplexObject {
   }
 
   // allow_store_key - computed: true, optional: true, required: false
-  private _allowStoreKey?: boolean | cdktf.IResolvable; 
+  private _allowStoreKey?: boolean | cdktn.IResolvable; 
   public get allowStoreKey() {
     return this.getBooleanAttribute('allow_store_key');
   }
-  public set allowStoreKey(value: boolean | cdktf.IResolvable) {
+  public set allowStoreKey(value: boolean | cdktn.IResolvable) {
     this._allowStoreKey = value;
   }
   public resetAllowStoreKey() {
@@ -416,11 +416,11 @@ export class ManagedKeysAwsOutputReference extends cdktf.ComplexObject {
   }
 
   // any_mount - computed: true, optional: true, required: false
-  private _anyMount?: boolean | cdktf.IResolvable; 
+  private _anyMount?: boolean | cdktn.IResolvable; 
   public get anyMount() {
     return this.getBooleanAttribute('any_mount');
   }
-  public set anyMount(value: boolean | cdktf.IResolvable) {
+  public set anyMount(value: boolean | cdktn.IResolvable) {
     this._anyMount = value;
   }
   public resetAnyMount() {
@@ -550,15 +550,15 @@ export class ManagedKeysAwsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ManagedKeysAwsList extends cdktf.ComplexList {
-  public internalValue? : ManagedKeysAws[] | cdktf.IResolvable
+export class ManagedKeysAwsList extends cdktn.ComplexList {
+  public internalValue? : ManagedKeysAws[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -573,199 +573,199 @@ export interface ManagedKeysAzure {
   /**
   * If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
   */
-  readonly allowGenerateKey?: boolean | cdktf.IResolvable;
+  readonly allowGenerateKey?: boolean | cdktn.IResolvable;
   /**
   * Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
   */
-  readonly allowReplaceKey?: boolean | cdktf.IResolvable;
+  readonly allowReplaceKey?: boolean | cdktn.IResolvable;
   /**
   * Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
   */
-  readonly allowStoreKey?: boolean | cdktf.IResolvable;
+  readonly allowStoreKey?: boolean | cdktn.IResolvable;
   /**
   * Allow usage from any mount point within the namespace if 'true'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
   */
-  readonly anyMount?: boolean | cdktf.IResolvable;
+  readonly anyMount?: boolean | cdktn.IResolvable;
   /**
   * The client id for credentials to query the Azure APIs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#client_id ManagedKeys#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#client_id ManagedKeys#client_id}
   */
   readonly clientId: string;
   /**
   * The client secret for credentials to query the Azure APIs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#client_secret ManagedKeys#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#client_secret ManagedKeys#client_secret}
   */
   readonly clientSecret: string;
   /**
   * The Azure Cloud environment API endpoints to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#environment ManagedKeys#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#environment ManagedKeys#environment}
   */
   readonly environment?: string;
   /**
   * The size in bits for an RSA key. This field is required when 'key_type' is 'RSA' or when 'allow_generate_key' is true
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
   */
   readonly keyBits?: string;
   /**
   * The Key Vault key to use for encryption and decryption
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#key_name ManagedKeys#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_name ManagedKeys#key_name}
   */
   readonly keyName: string;
   /**
   * The type of key to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
   */
   readonly keyType: string;
   /**
   * A unique lowercase name that serves as identifying the key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#name ManagedKeys#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#name ManagedKeys#name}
   */
   readonly name: string;
   /**
   * The Azure Key Vault resource's DNS Suffix to connect to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#resource ManagedKeys#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#resource ManagedKeys#resource}
   */
   readonly resource?: string;
   /**
   * The tenant id for the Azure Active Directory organization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#tenant_id ManagedKeys#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#tenant_id ManagedKeys#tenant_id}
   */
   readonly tenantId: string;
   /**
   * The Key Vault vault to use the encryption keys for encryption and decryption
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#vault_name ManagedKeys#vault_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#vault_name ManagedKeys#vault_name}
   */
   readonly vaultName: string;
 }
 
-export function managedKeysAzureToTerraform(struct?: ManagedKeysAzure | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedKeysAzureToTerraform(struct?: ManagedKeysAzure | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_generate_key: cdktf.booleanToTerraform(struct!.allowGenerateKey),
-    allow_replace_key: cdktf.booleanToTerraform(struct!.allowReplaceKey),
-    allow_store_key: cdktf.booleanToTerraform(struct!.allowStoreKey),
-    any_mount: cdktf.booleanToTerraform(struct!.anyMount),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    environment: cdktf.stringToTerraform(struct!.environment),
-    key_bits: cdktf.stringToTerraform(struct!.keyBits),
-    key_name: cdktf.stringToTerraform(struct!.keyName),
-    key_type: cdktf.stringToTerraform(struct!.keyType),
-    name: cdktf.stringToTerraform(struct!.name),
-    resource: cdktf.stringToTerraform(struct!.resource),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
-    vault_name: cdktf.stringToTerraform(struct!.vaultName),
+    allow_generate_key: cdktn.booleanToTerraform(struct!.allowGenerateKey),
+    allow_replace_key: cdktn.booleanToTerraform(struct!.allowReplaceKey),
+    allow_store_key: cdktn.booleanToTerraform(struct!.allowStoreKey),
+    any_mount: cdktn.booleanToTerraform(struct!.anyMount),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    environment: cdktn.stringToTerraform(struct!.environment),
+    key_bits: cdktn.stringToTerraform(struct!.keyBits),
+    key_name: cdktn.stringToTerraform(struct!.keyName),
+    key_type: cdktn.stringToTerraform(struct!.keyType),
+    name: cdktn.stringToTerraform(struct!.name),
+    resource: cdktn.stringToTerraform(struct!.resource),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
+    vault_name: cdktn.stringToTerraform(struct!.vaultName),
   }
 }
 
 
-export function managedKeysAzureToHclTerraform(struct?: ManagedKeysAzure | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedKeysAzureToHclTerraform(struct?: ManagedKeysAzure | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_generate_key: {
-      value: cdktf.booleanToHclTerraform(struct!.allowGenerateKey),
+      value: cdktn.booleanToHclTerraform(struct!.allowGenerateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_replace_key: {
-      value: cdktf.booleanToHclTerraform(struct!.allowReplaceKey),
+      value: cdktn.booleanToHclTerraform(struct!.allowReplaceKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_store_key: {
-      value: cdktf.booleanToHclTerraform(struct!.allowStoreKey),
+      value: cdktn.booleanToHclTerraform(struct!.allowStoreKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     any_mount: {
-      value: cdktf.booleanToHclTerraform(struct!.anyMount),
+      value: cdktn.booleanToHclTerraform(struct!.anyMount),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     environment: {
-      value: cdktf.stringToHclTerraform(struct!.environment),
+      value: cdktn.stringToHclTerraform(struct!.environment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_bits: {
-      value: cdktf.stringToHclTerraform(struct!.keyBits),
+      value: cdktn.stringToHclTerraform(struct!.keyBits),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_name: {
-      value: cdktf.stringToHclTerraform(struct!.keyName),
+      value: cdktn.stringToHclTerraform(struct!.keyName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_type: {
-      value: cdktf.stringToHclTerraform(struct!.keyType),
+      value: cdktn.stringToHclTerraform(struct!.keyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vault_name: {
-      value: cdktf.stringToHclTerraform(struct!.vaultName),
+      value: cdktn.stringToHclTerraform(struct!.vaultName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -776,9 +776,9 @@ export function managedKeysAzureToHclTerraform(struct?: ManagedKeysAzure | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedKeysAzureOutputReference extends cdktf.ComplexObject {
+export class ManagedKeysAzureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -786,11 +786,11 @@ export class ManagedKeysAzureOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ManagedKeysAzure | cdktf.IResolvable | undefined {
+  public get internalValue(): ManagedKeysAzure | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -855,7 +855,7 @@ export class ManagedKeysAzureOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ManagedKeysAzure | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ManagedKeysAzure | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -874,7 +874,7 @@ export class ManagedKeysAzureOutputReference extends cdktf.ComplexObject {
       this._tenantId = undefined;
       this._vaultName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -899,11 +899,11 @@ export class ManagedKeysAzureOutputReference extends cdktf.ComplexObject {
   }
 
   // allow_generate_key - computed: true, optional: true, required: false
-  private _allowGenerateKey?: boolean | cdktf.IResolvable; 
+  private _allowGenerateKey?: boolean | cdktn.IResolvable; 
   public get allowGenerateKey() {
     return this.getBooleanAttribute('allow_generate_key');
   }
-  public set allowGenerateKey(value: boolean | cdktf.IResolvable) {
+  public set allowGenerateKey(value: boolean | cdktn.IResolvable) {
     this._allowGenerateKey = value;
   }
   public resetAllowGenerateKey() {
@@ -915,11 +915,11 @@ export class ManagedKeysAzureOutputReference extends cdktf.ComplexObject {
   }
 
   // allow_replace_key - computed: true, optional: true, required: false
-  private _allowReplaceKey?: boolean | cdktf.IResolvable; 
+  private _allowReplaceKey?: boolean | cdktn.IResolvable; 
   public get allowReplaceKey() {
     return this.getBooleanAttribute('allow_replace_key');
   }
-  public set allowReplaceKey(value: boolean | cdktf.IResolvable) {
+  public set allowReplaceKey(value: boolean | cdktn.IResolvable) {
     this._allowReplaceKey = value;
   }
   public resetAllowReplaceKey() {
@@ -931,11 +931,11 @@ export class ManagedKeysAzureOutputReference extends cdktf.ComplexObject {
   }
 
   // allow_store_key - computed: true, optional: true, required: false
-  private _allowStoreKey?: boolean | cdktf.IResolvable; 
+  private _allowStoreKey?: boolean | cdktn.IResolvable; 
   public get allowStoreKey() {
     return this.getBooleanAttribute('allow_store_key');
   }
-  public set allowStoreKey(value: boolean | cdktf.IResolvable) {
+  public set allowStoreKey(value: boolean | cdktn.IResolvable) {
     this._allowStoreKey = value;
   }
   public resetAllowStoreKey() {
@@ -947,11 +947,11 @@ export class ManagedKeysAzureOutputReference extends cdktf.ComplexObject {
   }
 
   // any_mount - computed: true, optional: true, required: false
-  private _anyMount?: boolean | cdktf.IResolvable; 
+  private _anyMount?: boolean | cdktn.IResolvable; 
   public get anyMount() {
     return this.getBooleanAttribute('any_mount');
   }
-  public set anyMount(value: boolean | cdktf.IResolvable) {
+  public set anyMount(value: boolean | cdktn.IResolvable) {
     this._anyMount = value;
   }
   public resetAnyMount() {
@@ -1107,15 +1107,15 @@ export class ManagedKeysAzureOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ManagedKeysAzureList extends cdktf.ComplexList {
-  public internalValue? : ManagedKeysAzure[] | cdktf.IResolvable
+export class ManagedKeysAzureList extends cdktn.ComplexList {
+  public internalValue? : ManagedKeysAzure[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1130,212 +1130,212 @@ export interface ManagedKeysPkcs {
   /**
   * If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
   */
-  readonly allowGenerateKey?: boolean | cdktf.IResolvable;
+  readonly allowGenerateKey?: boolean | cdktn.IResolvable;
   /**
   * Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
   */
-  readonly allowReplaceKey?: boolean | cdktf.IResolvable;
+  readonly allowReplaceKey?: boolean | cdktn.IResolvable;
   /**
   * Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
   */
-  readonly allowStoreKey?: boolean | cdktf.IResolvable;
+  readonly allowStoreKey?: boolean | cdktn.IResolvable;
   /**
   * Allow usage from any mount point within the namespace if 'true'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
   */
-  readonly anyMount?: boolean | cdktf.IResolvable;
+  readonly anyMount?: boolean | cdktn.IResolvable;
   /**
   * Supplies the curve value when using the 'CKM_ECDSA' mechanism. Required if 'allow_generate_key' is true
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#curve ManagedKeys#curve}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#curve ManagedKeys#curve}
   */
   readonly curve?: string;
   /**
   * Force all operations to open up a read-write session to the HSM
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#force_rw_session ManagedKeys#force_rw_session}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#force_rw_session ManagedKeys#force_rw_session}
   */
   readonly forceRwSession?: string;
   /**
   * Supplies the size in bits of the key when using 'CKM_RSA_PKCS_PSS', 'CKM_RSA_PKCS_OAEP' or 'CKM_RSA_PKCS' as a value for 'mechanism'. Required if 'allow_generate_key' is true
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
   */
   readonly keyBits?: string;
   /**
   * The id of a PKCS#11 key to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#key_id ManagedKeys#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_id ManagedKeys#key_id}
   */
-  readonly keyId: string;
+  readonly keyId?: string;
   /**
   * The label of the key to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#key_label ManagedKeys#key_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_label ManagedKeys#key_label}
   */
-  readonly keyLabel: string;
+  readonly keyLabel?: string;
   /**
   * The name of the kms_library stanza to use from Vault's config to lookup the local library path
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#library ManagedKeys#library}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#library ManagedKeys#library}
   */
   readonly library: string;
   /**
   * The encryption/decryption mechanism to use, specified as a hexadecimal (prefixed by 0x) string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#mechanism ManagedKeys#mechanism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#mechanism ManagedKeys#mechanism}
   */
   readonly mechanism: string;
   /**
   * A unique lowercase name that serves as identifying the key
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#name ManagedKeys#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#name ManagedKeys#name}
   */
   readonly name: string;
   /**
   * The PIN for login
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#pin ManagedKeys#pin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#pin ManagedKeys#pin}
   */
   readonly pin: string;
   /**
   * The slot number to use, specified as a string in a decimal format (e.g. '2305843009213693953')
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#slot ManagedKeys#slot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#slot ManagedKeys#slot}
   */
   readonly slot?: string;
   /**
   * The slot token label to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#token_label ManagedKeys#token_label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#token_label ManagedKeys#token_label}
   */
   readonly tokenLabel?: string;
 }
 
-export function managedKeysPkcsToTerraform(struct?: ManagedKeysPkcs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedKeysPkcsToTerraform(struct?: ManagedKeysPkcs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_generate_key: cdktf.booleanToTerraform(struct!.allowGenerateKey),
-    allow_replace_key: cdktf.booleanToTerraform(struct!.allowReplaceKey),
-    allow_store_key: cdktf.booleanToTerraform(struct!.allowStoreKey),
-    any_mount: cdktf.booleanToTerraform(struct!.anyMount),
-    curve: cdktf.stringToTerraform(struct!.curve),
-    force_rw_session: cdktf.stringToTerraform(struct!.forceRwSession),
-    key_bits: cdktf.stringToTerraform(struct!.keyBits),
-    key_id: cdktf.stringToTerraform(struct!.keyId),
-    key_label: cdktf.stringToTerraform(struct!.keyLabel),
-    library: cdktf.stringToTerraform(struct!.library),
-    mechanism: cdktf.stringToTerraform(struct!.mechanism),
-    name: cdktf.stringToTerraform(struct!.name),
-    pin: cdktf.stringToTerraform(struct!.pin),
-    slot: cdktf.stringToTerraform(struct!.slot),
-    token_label: cdktf.stringToTerraform(struct!.tokenLabel),
+    allow_generate_key: cdktn.booleanToTerraform(struct!.allowGenerateKey),
+    allow_replace_key: cdktn.booleanToTerraform(struct!.allowReplaceKey),
+    allow_store_key: cdktn.booleanToTerraform(struct!.allowStoreKey),
+    any_mount: cdktn.booleanToTerraform(struct!.anyMount),
+    curve: cdktn.stringToTerraform(struct!.curve),
+    force_rw_session: cdktn.stringToTerraform(struct!.forceRwSession),
+    key_bits: cdktn.stringToTerraform(struct!.keyBits),
+    key_id: cdktn.stringToTerraform(struct!.keyId),
+    key_label: cdktn.stringToTerraform(struct!.keyLabel),
+    library: cdktn.stringToTerraform(struct!.library),
+    mechanism: cdktn.stringToTerraform(struct!.mechanism),
+    name: cdktn.stringToTerraform(struct!.name),
+    pin: cdktn.stringToTerraform(struct!.pin),
+    slot: cdktn.stringToTerraform(struct!.slot),
+    token_label: cdktn.stringToTerraform(struct!.tokenLabel),
   }
 }
 
 
-export function managedKeysPkcsToHclTerraform(struct?: ManagedKeysPkcs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedKeysPkcsToHclTerraform(struct?: ManagedKeysPkcs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_generate_key: {
-      value: cdktf.booleanToHclTerraform(struct!.allowGenerateKey),
+      value: cdktn.booleanToHclTerraform(struct!.allowGenerateKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_replace_key: {
-      value: cdktf.booleanToHclTerraform(struct!.allowReplaceKey),
+      value: cdktn.booleanToHclTerraform(struct!.allowReplaceKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     allow_store_key: {
-      value: cdktf.booleanToHclTerraform(struct!.allowStoreKey),
+      value: cdktn.booleanToHclTerraform(struct!.allowStoreKey),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     any_mount: {
-      value: cdktf.booleanToHclTerraform(struct!.anyMount),
+      value: cdktn.booleanToHclTerraform(struct!.anyMount),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     curve: {
-      value: cdktf.stringToHclTerraform(struct!.curve),
+      value: cdktn.stringToHclTerraform(struct!.curve),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     force_rw_session: {
-      value: cdktf.stringToHclTerraform(struct!.forceRwSession),
+      value: cdktn.stringToHclTerraform(struct!.forceRwSession),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_bits: {
-      value: cdktf.stringToHclTerraform(struct!.keyBits),
+      value: cdktn.stringToHclTerraform(struct!.keyBits),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_id: {
-      value: cdktf.stringToHclTerraform(struct!.keyId),
+      value: cdktn.stringToHclTerraform(struct!.keyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_label: {
-      value: cdktf.stringToHclTerraform(struct!.keyLabel),
+      value: cdktn.stringToHclTerraform(struct!.keyLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     library: {
-      value: cdktf.stringToHclTerraform(struct!.library),
+      value: cdktn.stringToHclTerraform(struct!.library),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mechanism: {
-      value: cdktf.stringToHclTerraform(struct!.mechanism),
+      value: cdktn.stringToHclTerraform(struct!.mechanism),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pin: {
-      value: cdktf.stringToHclTerraform(struct!.pin),
+      value: cdktn.stringToHclTerraform(struct!.pin),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     slot: {
-      value: cdktf.stringToHclTerraform(struct!.slot),
+      value: cdktn.stringToHclTerraform(struct!.slot),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token_label: {
-      value: cdktf.stringToHclTerraform(struct!.tokenLabel),
+      value: cdktn.stringToHclTerraform(struct!.tokenLabel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1346,9 +1346,9 @@ export function managedKeysPkcsToHclTerraform(struct?: ManagedKeysPkcs | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedKeysPkcsOutputReference extends cdktf.ComplexObject {
+export class ManagedKeysPkcsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1356,11 +1356,11 @@ export class ManagedKeysPkcsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ManagedKeysPkcs | cdktf.IResolvable | undefined {
+  public get internalValue(): ManagedKeysPkcs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1429,7 +1429,7 @@ export class ManagedKeysPkcsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ManagedKeysPkcs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ManagedKeysPkcs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1449,7 +1449,7 @@ export class ManagedKeysPkcsOutputReference extends cdktf.ComplexObject {
       this._slot = undefined;
       this._tokenLabel = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1475,11 +1475,11 @@ export class ManagedKeysPkcsOutputReference extends cdktf.ComplexObject {
   }
 
   // allow_generate_key - computed: true, optional: true, required: false
-  private _allowGenerateKey?: boolean | cdktf.IResolvable; 
+  private _allowGenerateKey?: boolean | cdktn.IResolvable; 
   public get allowGenerateKey() {
     return this.getBooleanAttribute('allow_generate_key');
   }
-  public set allowGenerateKey(value: boolean | cdktf.IResolvable) {
+  public set allowGenerateKey(value: boolean | cdktn.IResolvable) {
     this._allowGenerateKey = value;
   }
   public resetAllowGenerateKey() {
@@ -1491,11 +1491,11 @@ export class ManagedKeysPkcsOutputReference extends cdktf.ComplexObject {
   }
 
   // allow_replace_key - computed: true, optional: true, required: false
-  private _allowReplaceKey?: boolean | cdktf.IResolvable; 
+  private _allowReplaceKey?: boolean | cdktn.IResolvable; 
   public get allowReplaceKey() {
     return this.getBooleanAttribute('allow_replace_key');
   }
-  public set allowReplaceKey(value: boolean | cdktf.IResolvable) {
+  public set allowReplaceKey(value: boolean | cdktn.IResolvable) {
     this._allowReplaceKey = value;
   }
   public resetAllowReplaceKey() {
@@ -1507,11 +1507,11 @@ export class ManagedKeysPkcsOutputReference extends cdktf.ComplexObject {
   }
 
   // allow_store_key - computed: true, optional: true, required: false
-  private _allowStoreKey?: boolean | cdktf.IResolvable; 
+  private _allowStoreKey?: boolean | cdktn.IResolvable; 
   public get allowStoreKey() {
     return this.getBooleanAttribute('allow_store_key');
   }
-  public set allowStoreKey(value: boolean | cdktf.IResolvable) {
+  public set allowStoreKey(value: boolean | cdktn.IResolvable) {
     this._allowStoreKey = value;
   }
   public resetAllowStoreKey() {
@@ -1523,11 +1523,11 @@ export class ManagedKeysPkcsOutputReference extends cdktf.ComplexObject {
   }
 
   // any_mount - computed: true, optional: true, required: false
-  private _anyMount?: boolean | cdktf.IResolvable; 
+  private _anyMount?: boolean | cdktn.IResolvable; 
   public get anyMount() {
     return this.getBooleanAttribute('any_mount');
   }
-  public set anyMount(value: boolean | cdktf.IResolvable) {
+  public set anyMount(value: boolean | cdktn.IResolvable) {
     this._anyMount = value;
   }
   public resetAnyMount() {
@@ -1586,7 +1586,7 @@ export class ManagedKeysPkcsOutputReference extends cdktf.ComplexObject {
     return this._keyBits;
   }
 
-  // key_id - computed: false, optional: false, required: true
+  // key_id - computed: false, optional: true, required: false
   private _keyId?: string; 
   public get keyId() {
     return this.getStringAttribute('key_id');
@@ -1594,18 +1594,24 @@ export class ManagedKeysPkcsOutputReference extends cdktf.ComplexObject {
   public set keyId(value: string) {
     this._keyId = value;
   }
+  public resetKeyId() {
+    this._keyId = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get keyIdInput() {
     return this._keyId;
   }
 
-  // key_label - computed: false, optional: false, required: true
+  // key_label - computed: false, optional: true, required: false
   private _keyLabel?: string; 
   public get keyLabel() {
     return this.getStringAttribute('key_label');
   }
   public set keyLabel(value: string) {
     this._keyLabel = value;
+  }
+  public resetKeyLabel() {
+    this._keyLabel = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get keyLabelInput() {
@@ -1702,15 +1708,15 @@ export class ManagedKeysPkcsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ManagedKeysPkcsList extends cdktf.ComplexList {
-  public internalValue? : ManagedKeysPkcs[] | cdktf.IResolvable
+export class ManagedKeysPkcsList extends cdktn.ComplexList {
+  public internalValue? : ManagedKeysPkcs[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1723,9 +1729,9 @@ export class ManagedKeysPkcsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys vault_managed_keys}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys vault_managed_keys}
 */
-export class ManagedKeys extends cdktf.TerraformResource {
+export class ManagedKeys extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1736,14 +1742,14 @@ export class ManagedKeys extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ManagedKeys resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ManagedKeys resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedKeys to import
-  * @param importFromId The id of the existing ManagedKeys that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedKeys that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedKeys to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_managed_keys", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_managed_keys", importId: importFromId, provider });
       }
 
   // ===========
@@ -1751,7 +1757,7 @@ export class ManagedKeys extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/managed_keys vault_managed_keys} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys vault_managed_keys} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1762,7 +1768,7 @@ export class ManagedKeys extends cdktf.TerraformResource {
       terraformResourceType: 'vault_managed_keys',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1821,7 +1827,7 @@ export class ManagedKeys extends cdktf.TerraformResource {
   public get aws() {
     return this._aws;
   }
-  public putAws(value: ManagedKeysAws[] | cdktf.IResolvable) {
+  public putAws(value: ManagedKeysAws[] | cdktn.IResolvable) {
     this._aws.internalValue = value;
   }
   public resetAws() {
@@ -1837,7 +1843,7 @@ export class ManagedKeys extends cdktf.TerraformResource {
   public get azure() {
     return this._azure;
   }
-  public putAzure(value: ManagedKeysAzure[] | cdktf.IResolvable) {
+  public putAzure(value: ManagedKeysAzure[] | cdktn.IResolvable) {
     this._azure.internalValue = value;
   }
   public resetAzure() {
@@ -1853,7 +1859,7 @@ export class ManagedKeys extends cdktf.TerraformResource {
   public get pkcs() {
     return this._pkcs;
   }
-  public putPkcs(value: ManagedKeysPkcs[] | cdktf.IResolvable) {
+  public putPkcs(value: ManagedKeysPkcs[] | cdktn.IResolvable) {
     this._pkcs.internalValue = value;
   }
   public resetPkcs() {
@@ -1870,42 +1876,42 @@ export class ManagedKeys extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      aws: cdktf.listMapper(managedKeysAwsToTerraform, true)(this._aws.internalValue),
-      azure: cdktf.listMapper(managedKeysAzureToTerraform, true)(this._azure.internalValue),
-      pkcs: cdktf.listMapper(managedKeysPkcsToTerraform, true)(this._pkcs.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      aws: cdktn.listMapper(managedKeysAwsToTerraform, true)(this._aws.internalValue),
+      azure: cdktn.listMapper(managedKeysAzureToTerraform, true)(this._azure.internalValue),
+      pkcs: cdktn.listMapper(managedKeysPkcsToTerraform, true)(this._pkcs.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws: {
-        value: cdktf.listMapperHcl(managedKeysAwsToHclTerraform, true)(this._aws.internalValue),
+        value: cdktn.listMapperHcl(managedKeysAwsToHclTerraform, true)(this._aws.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ManagedKeysAwsList",
       },
       azure: {
-        value: cdktf.listMapperHcl(managedKeysAzureToHclTerraform, true)(this._azure.internalValue),
+        value: cdktn.listMapperHcl(managedKeysAzureToHclTerraform, true)(this._azure.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ManagedKeysAzureList",
       },
       pkcs: {
-        value: cdktf.listMapperHcl(managedKeysPkcsToHclTerraform, true)(this._pkcs.internalValue),
+        value: cdktn.listMapperHcl(managedKeysPkcsToHclTerraform, true)(this._pkcs.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ManagedKeysPkcsList",

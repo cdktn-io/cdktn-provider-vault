@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_decrypt
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_decrypt
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataVaultTransitDecryptConfig extends cdktf.TerraformMetaArguments {
+export interface DataVaultTransitDecryptConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Transit secret backend the key belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_decrypt#backend DataVaultTransitDecrypt#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_decrypt#backend DataVaultTransitDecrypt#backend}
   */
   readonly backend: string;
   /**
   * Transit encrypted cipher text.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_decrypt#ciphertext DataVaultTransitDecrypt#ciphertext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_decrypt#ciphertext DataVaultTransitDecrypt#ciphertext}
   */
   readonly ciphertext: string;
   /**
   * Specifies the context for key derivation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_decrypt#context DataVaultTransitDecrypt#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_decrypt#context DataVaultTransitDecrypt#context}
   */
   readonly context?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,21 +40,21 @@ export interface DataVaultTransitDecryptConfig extends cdktf.TerraformMetaArgume
   /**
   * Name of the decryption key to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_decrypt#key DataVaultTransitDecrypt#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_decrypt#key DataVaultTransitDecrypt#key}
   */
   readonly key: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_decrypt#namespace DataVaultTransitDecrypt#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_decrypt#namespace DataVaultTransitDecrypt#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_decrypt vault_transit_decrypt}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_decrypt vault_transit_decrypt}
 */
-export class DataVaultTransitDecrypt extends cdktf.TerraformDataSource {
+export class DataVaultTransitDecrypt extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class DataVaultTransitDecrypt extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataVaultTransitDecrypt resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataVaultTransitDecrypt resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultTransitDecrypt to import
-  * @param importFromId The id of the existing DataVaultTransitDecrypt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_decrypt#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultTransitDecrypt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_decrypt#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultTransitDecrypt to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_transit_decrypt", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_transit_decrypt", importId: importFromId, provider });
       }
 
   // ===========
@@ -80,7 +80,7 @@ export class DataVaultTransitDecrypt extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/transit_decrypt vault_transit_decrypt} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_decrypt vault_transit_decrypt} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,7 @@ export class DataVaultTransitDecrypt extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_transit_decrypt',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -212,49 +212,49 @@ export class DataVaultTransitDecrypt extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      ciphertext: cdktf.stringToTerraform(this._ciphertext),
-      context: cdktf.stringToTerraform(this._context),
-      id: cdktf.stringToTerraform(this._id),
-      key: cdktf.stringToTerraform(this._key),
-      namespace: cdktf.stringToTerraform(this._namespace),
+      backend: cdktn.stringToTerraform(this._backend),
+      ciphertext: cdktn.stringToTerraform(this._ciphertext),
+      context: cdktn.stringToTerraform(this._context),
+      id: cdktn.stringToTerraform(this._id),
+      key: cdktn.stringToTerraform(this._key),
+      namespace: cdktn.stringToTerraform(this._namespace),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ciphertext: {
-        value: cdktf.stringToHclTerraform(this._ciphertext),
+        value: cdktn.stringToHclTerraform(this._ciphertext),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       context: {
-        value: cdktf.stringToHclTerraform(this._context),
+        value: cdktn.stringToHclTerraform(this._context),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key: {
-        value: cdktf.stringToHclTerraform(this._key),
+        value: cdktn.stringToHclTerraform(this._key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

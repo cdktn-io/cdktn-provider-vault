@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_secret
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GenericSecretConfig extends cdktf.TerraformMetaArguments {
+export interface GenericSecretConfig extends cdktn.TerraformMetaArguments {
   /**
   * JSON-encoded secret data to write.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_secret#data_json GenericSecret#data_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#data_json GenericSecret#data_json}
   */
   readonly dataJson: string;
   /**
   * Only applicable for kv-v2 stores. If set, permanently deletes all versions for the specified key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_secret#delete_all_versions GenericSecret#delete_all_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#delete_all_versions GenericSecret#delete_all_versions}
   */
-  readonly deleteAllVersions?: boolean | cdktf.IResolvable;
+  readonly deleteAllVersions?: boolean | cdktn.IResolvable;
   /**
   * Don't attempt to read the token from Vault if true; drift won't be detected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_secret#disable_read GenericSecret#disable_read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#disable_read GenericSecret#disable_read}
   */
-  readonly disableRead?: boolean | cdktf.IResolvable;
+  readonly disableRead?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_secret#id GenericSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#id GenericSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,21 +40,21 @@ export interface GenericSecretConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_secret#namespace GenericSecret#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#namespace GenericSecret#namespace}
   */
   readonly namespace?: string;
   /**
   * Full path where the generic secret will be written.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_secret#path GenericSecret#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#path GenericSecret#path}
   */
   readonly path: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_secret vault_generic_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret vault_generic_secret}
 */
-export class GenericSecret extends cdktf.TerraformResource {
+export class GenericSecret extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class GenericSecret extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GenericSecret resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GenericSecret resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GenericSecret to import
-  * @param importFromId The id of the existing GenericSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GenericSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GenericSecret to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_generic_secret", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_generic_secret", importId: importFromId, provider });
       }
 
   // ===========
@@ -80,7 +80,7 @@ export class GenericSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/generic_secret vault_generic_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret vault_generic_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,7 @@ export class GenericSecret extends cdktf.TerraformResource {
       terraformResourceType: 'vault_generic_secret',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -115,7 +115,7 @@ export class GenericSecret extends cdktf.TerraformResource {
   // ==========
 
   // data - computed: true, optional: false, required: false
-  private _data = new cdktf.StringMap(this, "data");
+  private _data = new cdktn.StringMap(this, "data");
   public get data() {
     return this._data;
   }
@@ -134,11 +134,11 @@ export class GenericSecret extends cdktf.TerraformResource {
   }
 
   // delete_all_versions - computed: false, optional: true, required: false
-  private _deleteAllVersions?: boolean | cdktf.IResolvable; 
+  private _deleteAllVersions?: boolean | cdktn.IResolvable; 
   public get deleteAllVersions() {
     return this.getBooleanAttribute('delete_all_versions');
   }
-  public set deleteAllVersions(value: boolean | cdktf.IResolvable) {
+  public set deleteAllVersions(value: boolean | cdktn.IResolvable) {
     this._deleteAllVersions = value;
   }
   public resetDeleteAllVersions() {
@@ -150,11 +150,11 @@ export class GenericSecret extends cdktf.TerraformResource {
   }
 
   // disable_read - computed: false, optional: true, required: false
-  private _disableRead?: boolean | cdktf.IResolvable; 
+  private _disableRead?: boolean | cdktn.IResolvable; 
   public get disableRead() {
     return this.getBooleanAttribute('disable_read');
   }
-  public set disableRead(value: boolean | cdktf.IResolvable) {
+  public set disableRead(value: boolean | cdktn.IResolvable) {
     this._disableRead = value;
   }
   public resetDisableRead() {
@@ -216,49 +216,49 @@ export class GenericSecret extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      data_json: cdktf.stringToTerraform(this._dataJson),
-      delete_all_versions: cdktf.booleanToTerraform(this._deleteAllVersions),
-      disable_read: cdktf.booleanToTerraform(this._disableRead),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      path: cdktf.stringToTerraform(this._path),
+      data_json: cdktn.stringToTerraform(this._dataJson),
+      delete_all_versions: cdktn.booleanToTerraform(this._deleteAllVersions),
+      disable_read: cdktn.booleanToTerraform(this._disableRead),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      path: cdktn.stringToTerraform(this._path),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       data_json: {
-        value: cdktf.stringToHclTerraform(this._dataJson),
+        value: cdktn.stringToHclTerraform(this._dataJson),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delete_all_versions: {
-        value: cdktf.booleanToHclTerraform(this._deleteAllVersions),
+        value: cdktn.booleanToHclTerraform(this._deleteAllVersions),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       disable_read: {
-        value: cdktf.booleanToHclTerraform(this._disableRead),
+        value: cdktn.booleanToHclTerraform(this._disableRead),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

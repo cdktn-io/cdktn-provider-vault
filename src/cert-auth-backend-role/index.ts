@@ -1,171 +1,183 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CertAuthBackendRoleConfig extends cdktf.TerraformMetaArguments {
+export interface CertAuthBackendRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The metadata to be tied to generated entity alias.
   *   This should be a list or map containing the metadata in key value pairs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#alias_metadata CertAuthBackendRole#alias_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#alias_metadata CertAuthBackendRole#alias_metadata}
   */
   readonly aliasMetadata?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#allowed_common_names CertAuthBackendRole#allowed_common_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#allowed_common_names CertAuthBackendRole#allowed_common_names}
   */
   readonly allowedCommonNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#allowed_dns_sans CertAuthBackendRole#allowed_dns_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#allowed_dns_sans CertAuthBackendRole#allowed_dns_sans}
   */
   readonly allowedDnsSans?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#allowed_email_sans CertAuthBackendRole#allowed_email_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#allowed_email_sans CertAuthBackendRole#allowed_email_sans}
   */
   readonly allowedEmailSans?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#allowed_names CertAuthBackendRole#allowed_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#allowed_names CertAuthBackendRole#allowed_names}
   */
   readonly allowedNames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#allowed_organizational_units CertAuthBackendRole#allowed_organizational_units}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#allowed_organizational_units CertAuthBackendRole#allowed_organizational_units}
   */
   readonly allowedOrganizationalUnits?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#allowed_uri_sans CertAuthBackendRole#allowed_uri_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#allowed_uri_sans CertAuthBackendRole#allowed_uri_sans}
   */
   readonly allowedUriSans?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#backend CertAuthBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#backend CertAuthBackendRole#backend}
   */
   readonly backend?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#certificate CertAuthBackendRole#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#certificate CertAuthBackendRole#certificate}
   */
   readonly certificate: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#display_name CertAuthBackendRole#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#display_name CertAuthBackendRole#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#id CertAuthBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#id CertAuthBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#name CertAuthBackendRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#name CertAuthBackendRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#namespace CertAuthBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#namespace CertAuthBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Any additional CA certificates needed to verify OCSP responses. Provided as base64 encoded PEM data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#ocsp_ca_certificates CertAuthBackendRole#ocsp_ca_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#ocsp_ca_certificates CertAuthBackendRole#ocsp_ca_certificates}
   */
   readonly ocspCaCertificates?: string;
   /**
   * If enabled, validate certificates' revocation status using OCSP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#ocsp_enabled CertAuthBackendRole#ocsp_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#ocsp_enabled CertAuthBackendRole#ocsp_enabled}
   */
-  readonly ocspEnabled?: boolean | cdktf.IResolvable;
+  readonly ocspEnabled?: boolean | cdktn.IResolvable;
   /**
   * If true and an OCSP response cannot be fetched or is of an unknown status, the login will proceed as if the certificate has not been revoked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#ocsp_fail_open CertAuthBackendRole#ocsp_fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#ocsp_fail_open CertAuthBackendRole#ocsp_fail_open}
   */
-  readonly ocspFailOpen?: boolean | cdktf.IResolvable;
+  readonly ocspFailOpen?: boolean | cdktn.IResolvable;
+  /**
+  * The number of retries to attempt when connecting to an OCSP server. Defaults to 4 retries. Must be a non-negative value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#ocsp_max_retries CertAuthBackendRole#ocsp_max_retries}
+  */
+  readonly ocspMaxRetries?: number;
   /**
   * If set to true, rather than accepting the first successful OCSP response, query all servers and consider the certificate valid only if all servers agree.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#ocsp_query_all_servers CertAuthBackendRole#ocsp_query_all_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#ocsp_query_all_servers CertAuthBackendRole#ocsp_query_all_servers}
   */
-  readonly ocspQueryAllServers?: boolean | cdktf.IResolvable;
+  readonly ocspQueryAllServers?: boolean | cdktn.IResolvable;
   /**
   * A comma-separated list of OCSP server addresses. If unset, the OCSP server is determined from the AuthorityInformationAccess extension on the certificate being inspected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#ocsp_servers_override CertAuthBackendRole#ocsp_servers_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#ocsp_servers_override CertAuthBackendRole#ocsp_servers_override}
   */
   readonly ocspServersOverride?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#required_extensions CertAuthBackendRole#required_extensions}
+  * The maximum age in seconds of the 'thisUpdate' field in an OCSP response before it is considered too old. Defaults to 0 (disabled). Must be a non-negative value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#ocsp_this_update_max_age CertAuthBackendRole#ocsp_this_update_max_age}
+  */
+  readonly ocspThisUpdateMaxAge?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#required_extensions CertAuthBackendRole#required_extensions}
   */
   readonly requiredExtensions?: string[];
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#token_bound_cidrs CertAuthBackendRole#token_bound_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#token_bound_cidrs CertAuthBackendRole#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#token_explicit_max_ttl CertAuthBackendRole#token_explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#token_explicit_max_ttl CertAuthBackendRole#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#token_max_ttl CertAuthBackendRole#token_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#token_max_ttl CertAuthBackendRole#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#token_no_default_policy CertAuthBackendRole#token_no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#token_no_default_policy CertAuthBackendRole#token_no_default_policy}
   */
-  readonly tokenNoDefaultPolicy?: boolean | cdktf.IResolvable;
+  readonly tokenNoDefaultPolicy?: boolean | cdktn.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#token_num_uses CertAuthBackendRole#token_num_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#token_num_uses CertAuthBackendRole#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#token_period CertAuthBackendRole#token_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#token_period CertAuthBackendRole#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#token_policies CertAuthBackendRole#token_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#token_policies CertAuthBackendRole#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#token_ttl CertAuthBackendRole#token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#token_ttl CertAuthBackendRole#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#token_type CertAuthBackendRole#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#token_type CertAuthBackendRole#token_type}
   */
   readonly tokenType?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role}
 */
-export class CertAuthBackendRole extends cdktf.TerraformResource {
+export class CertAuthBackendRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -176,14 +188,14 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CertAuthBackendRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CertAuthBackendRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CertAuthBackendRole to import
-  * @param importFromId The id of the existing CertAuthBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CertAuthBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CertAuthBackendRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_cert_auth_backend_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_cert_auth_backend_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -191,7 +203,7 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/cert_auth_backend_role vault_cert_auth_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -202,7 +214,7 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_cert_auth_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -229,8 +241,10 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
     this._ocspCaCertificates = config.ocspCaCertificates;
     this._ocspEnabled = config.ocspEnabled;
     this._ocspFailOpen = config.ocspFailOpen;
+    this._ocspMaxRetries = config.ocspMaxRetries;
     this._ocspQueryAllServers = config.ocspQueryAllServers;
     this._ocspServersOverride = config.ocspServersOverride;
+    this._ocspThisUpdateMaxAge = config.ocspThisUpdateMaxAge;
     this._requiredExtensions = config.requiredExtensions;
     this._tokenBoundCidrs = config.tokenBoundCidrs;
     this._tokenExplicitMaxTtl = config.tokenExplicitMaxTtl;
@@ -266,7 +280,7 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   // allowed_common_names - computed: true, optional: true, required: false
   private _allowedCommonNames?: string[]; 
   public get allowedCommonNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_common_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_common_names'));
   }
   public set allowedCommonNames(value: string[]) {
     this._allowedCommonNames = value;
@@ -282,7 +296,7 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   // allowed_dns_sans - computed: true, optional: true, required: false
   private _allowedDnsSans?: string[]; 
   public get allowedDnsSans() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_dns_sans'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_dns_sans'));
   }
   public set allowedDnsSans(value: string[]) {
     this._allowedDnsSans = value;
@@ -298,7 +312,7 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   // allowed_email_sans - computed: true, optional: true, required: false
   private _allowedEmailSans?: string[]; 
   public get allowedEmailSans() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_email_sans'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_email_sans'));
   }
   public set allowedEmailSans(value: string[]) {
     this._allowedEmailSans = value;
@@ -314,7 +328,7 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   // allowed_names - computed: true, optional: true, required: false
   private _allowedNames?: string[]; 
   public get allowedNames() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_names'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_names'));
   }
   public set allowedNames(value: string[]) {
     this._allowedNames = value;
@@ -330,7 +344,7 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   // allowed_organizational_units - computed: false, optional: true, required: false
   private _allowedOrganizationalUnits?: string[]; 
   public get allowedOrganizationalUnits() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_organizational_units'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_organizational_units'));
   }
   public set allowedOrganizationalUnits(value: string[]) {
     this._allowedOrganizationalUnits = value;
@@ -346,7 +360,7 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   // allowed_uri_sans - computed: true, optional: true, required: false
   private _allowedUriSans?: string[]; 
   public get allowedUriSans() {
-    return cdktf.Fn.tolist(this.getListAttribute('allowed_uri_sans'));
+    return cdktn.Fn.tolist(this.getListAttribute('allowed_uri_sans'));
   }
   public set allowedUriSans(value: string[]) {
     this._allowedUriSans = value;
@@ -466,11 +480,11 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   }
 
   // ocsp_enabled - computed: true, optional: true, required: false
-  private _ocspEnabled?: boolean | cdktf.IResolvable; 
+  private _ocspEnabled?: boolean | cdktn.IResolvable; 
   public get ocspEnabled() {
     return this.getBooleanAttribute('ocsp_enabled');
   }
-  public set ocspEnabled(value: boolean | cdktf.IResolvable) {
+  public set ocspEnabled(value: boolean | cdktn.IResolvable) {
     this._ocspEnabled = value;
   }
   public resetOcspEnabled() {
@@ -482,11 +496,11 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   }
 
   // ocsp_fail_open - computed: true, optional: true, required: false
-  private _ocspFailOpen?: boolean | cdktf.IResolvable; 
+  private _ocspFailOpen?: boolean | cdktn.IResolvable; 
   public get ocspFailOpen() {
     return this.getBooleanAttribute('ocsp_fail_open');
   }
-  public set ocspFailOpen(value: boolean | cdktf.IResolvable) {
+  public set ocspFailOpen(value: boolean | cdktn.IResolvable) {
     this._ocspFailOpen = value;
   }
   public resetOcspFailOpen() {
@@ -497,12 +511,28 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
     return this._ocspFailOpen;
   }
 
+  // ocsp_max_retries - computed: false, optional: true, required: false
+  private _ocspMaxRetries?: number; 
+  public get ocspMaxRetries() {
+    return this.getNumberAttribute('ocsp_max_retries');
+  }
+  public set ocspMaxRetries(value: number) {
+    this._ocspMaxRetries = value;
+  }
+  public resetOcspMaxRetries() {
+    this._ocspMaxRetries = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ocspMaxRetriesInput() {
+    return this._ocspMaxRetries;
+  }
+
   // ocsp_query_all_servers - computed: true, optional: true, required: false
-  private _ocspQueryAllServers?: boolean | cdktf.IResolvable; 
+  private _ocspQueryAllServers?: boolean | cdktn.IResolvable; 
   public get ocspQueryAllServers() {
     return this.getBooleanAttribute('ocsp_query_all_servers');
   }
-  public set ocspQueryAllServers(value: boolean | cdktf.IResolvable) {
+  public set ocspQueryAllServers(value: boolean | cdktn.IResolvable) {
     this._ocspQueryAllServers = value;
   }
   public resetOcspQueryAllServers() {
@@ -516,7 +546,7 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   // ocsp_servers_override - computed: false, optional: true, required: false
   private _ocspServersOverride?: string[]; 
   public get ocspServersOverride() {
-    return cdktf.Fn.tolist(this.getListAttribute('ocsp_servers_override'));
+    return cdktn.Fn.tolist(this.getListAttribute('ocsp_servers_override'));
   }
   public set ocspServersOverride(value: string[]) {
     this._ocspServersOverride = value;
@@ -529,10 +559,26 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
     return this._ocspServersOverride;
   }
 
+  // ocsp_this_update_max_age - computed: false, optional: true, required: false
+  private _ocspThisUpdateMaxAge?: number; 
+  public get ocspThisUpdateMaxAge() {
+    return this.getNumberAttribute('ocsp_this_update_max_age');
+  }
+  public set ocspThisUpdateMaxAge(value: number) {
+    this._ocspThisUpdateMaxAge = value;
+  }
+  public resetOcspThisUpdateMaxAge() {
+    this._ocspThisUpdateMaxAge = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ocspThisUpdateMaxAgeInput() {
+    return this._ocspThisUpdateMaxAge;
+  }
+
   // required_extensions - computed: true, optional: true, required: false
   private _requiredExtensions?: string[]; 
   public get requiredExtensions() {
-    return cdktf.Fn.tolist(this.getListAttribute('required_extensions'));
+    return cdktn.Fn.tolist(this.getListAttribute('required_extensions'));
   }
   public set requiredExtensions(value: string[]) {
     this._requiredExtensions = value;
@@ -548,7 +594,7 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   // token_bound_cidrs - computed: false, optional: true, required: false
   private _tokenBoundCidrs?: string[]; 
   public get tokenBoundCidrs() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_bound_cidrs'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_bound_cidrs'));
   }
   public set tokenBoundCidrs(value: string[]) {
     this._tokenBoundCidrs = value;
@@ -594,11 +640,11 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   }
 
   // token_no_default_policy - computed: false, optional: true, required: false
-  private _tokenNoDefaultPolicy?: boolean | cdktf.IResolvable; 
+  private _tokenNoDefaultPolicy?: boolean | cdktn.IResolvable; 
   public get tokenNoDefaultPolicy() {
     return this.getBooleanAttribute('token_no_default_policy');
   }
-  public set tokenNoDefaultPolicy(value: boolean | cdktf.IResolvable) {
+  public set tokenNoDefaultPolicy(value: boolean | cdktn.IResolvable) {
     this._tokenNoDefaultPolicy = value;
   }
   public resetTokenNoDefaultPolicy() {
@@ -644,7 +690,7 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
   // token_policies - computed: false, optional: true, required: false
   private _tokenPolicies?: string[]; 
   public get tokenPolicies() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_policies'));
   }
   public set tokenPolicies(value: string[]) {
     this._tokenPolicies = value;
@@ -695,203 +741,217 @@ export class CertAuthBackendRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias_metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._aliasMetadata),
-      allowed_common_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedCommonNames),
-      allowed_dns_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedDnsSans),
-      allowed_email_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedEmailSans),
-      allowed_names: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedNames),
-      allowed_organizational_units: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedOrganizationalUnits),
-      allowed_uri_sans: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedUriSans),
-      backend: cdktf.stringToTerraform(this._backend),
-      certificate: cdktf.stringToTerraform(this._certificate),
-      display_name: cdktf.stringToTerraform(this._displayName),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      ocsp_ca_certificates: cdktf.stringToTerraform(this._ocspCaCertificates),
-      ocsp_enabled: cdktf.booleanToTerraform(this._ocspEnabled),
-      ocsp_fail_open: cdktf.booleanToTerraform(this._ocspFailOpen),
-      ocsp_query_all_servers: cdktf.booleanToTerraform(this._ocspQueryAllServers),
-      ocsp_servers_override: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ocspServersOverride),
-      required_extensions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._requiredExtensions),
-      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenBoundCidrs),
-      token_explicit_max_ttl: cdktf.numberToTerraform(this._tokenExplicitMaxTtl),
-      token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
-      token_no_default_policy: cdktf.booleanToTerraform(this._tokenNoDefaultPolicy),
-      token_num_uses: cdktf.numberToTerraform(this._tokenNumUses),
-      token_period: cdktf.numberToTerraform(this._tokenPeriod),
-      token_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenPolicies),
-      token_ttl: cdktf.numberToTerraform(this._tokenTtl),
-      token_type: cdktf.stringToTerraform(this._tokenType),
+      alias_metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._aliasMetadata),
+      allowed_common_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedCommonNames),
+      allowed_dns_sans: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedDnsSans),
+      allowed_email_sans: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedEmailSans),
+      allowed_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedNames),
+      allowed_organizational_units: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedOrganizationalUnits),
+      allowed_uri_sans: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedUriSans),
+      backend: cdktn.stringToTerraform(this._backend),
+      certificate: cdktn.stringToTerraform(this._certificate),
+      display_name: cdktn.stringToTerraform(this._displayName),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      ocsp_ca_certificates: cdktn.stringToTerraform(this._ocspCaCertificates),
+      ocsp_enabled: cdktn.booleanToTerraform(this._ocspEnabled),
+      ocsp_fail_open: cdktn.booleanToTerraform(this._ocspFailOpen),
+      ocsp_max_retries: cdktn.numberToTerraform(this._ocspMaxRetries),
+      ocsp_query_all_servers: cdktn.booleanToTerraform(this._ocspQueryAllServers),
+      ocsp_servers_override: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ocspServersOverride),
+      ocsp_this_update_max_age: cdktn.numberToTerraform(this._ocspThisUpdateMaxAge),
+      required_extensions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._requiredExtensions),
+      token_bound_cidrs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenBoundCidrs),
+      token_explicit_max_ttl: cdktn.numberToTerraform(this._tokenExplicitMaxTtl),
+      token_max_ttl: cdktn.numberToTerraform(this._tokenMaxTtl),
+      token_no_default_policy: cdktn.booleanToTerraform(this._tokenNoDefaultPolicy),
+      token_num_uses: cdktn.numberToTerraform(this._tokenNumUses),
+      token_period: cdktn.numberToTerraform(this._tokenPeriod),
+      token_policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenPolicies),
+      token_ttl: cdktn.numberToTerraform(this._tokenTtl),
+      token_type: cdktn.stringToTerraform(this._tokenType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias_metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._aliasMetadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._aliasMetadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       allowed_common_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedCommonNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedCommonNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       allowed_dns_sans: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedDnsSans),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedDnsSans),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       allowed_email_sans: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedEmailSans),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedEmailSans),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       allowed_names: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedNames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedNames),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       allowed_organizational_units: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedOrganizationalUnits),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedOrganizationalUnits),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       allowed_uri_sans: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedUriSans),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedUriSans),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate: {
-        value: cdktf.stringToHclTerraform(this._certificate),
+        value: cdktn.stringToHclTerraform(this._certificate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       display_name: {
-        value: cdktf.stringToHclTerraform(this._displayName),
+        value: cdktn.stringToHclTerraform(this._displayName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ocsp_ca_certificates: {
-        value: cdktf.stringToHclTerraform(this._ocspCaCertificates),
+        value: cdktn.stringToHclTerraform(this._ocspCaCertificates),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ocsp_enabled: {
-        value: cdktf.booleanToHclTerraform(this._ocspEnabled),
+        value: cdktn.booleanToHclTerraform(this._ocspEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ocsp_fail_open: {
-        value: cdktf.booleanToHclTerraform(this._ocspFailOpen),
+        value: cdktn.booleanToHclTerraform(this._ocspFailOpen),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
+      ocsp_max_retries: {
+        value: cdktn.numberToHclTerraform(this._ocspMaxRetries),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       ocsp_query_all_servers: {
-        value: cdktf.booleanToHclTerraform(this._ocspQueryAllServers),
+        value: cdktn.booleanToHclTerraform(this._ocspQueryAllServers),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ocsp_servers_override: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ocspServersOverride),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._ocspServersOverride),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
+      ocsp_this_update_max_age: {
+        value: cdktn.numberToHclTerraform(this._ocspThisUpdateMaxAge),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       required_extensions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._requiredExtensions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._requiredExtensions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       token_bound_cidrs: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenBoundCidrs),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenBoundCidrs),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       token_explicit_max_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenExplicitMaxTtl),
+        value: cdktn.numberToHclTerraform(this._tokenExplicitMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_max_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenMaxTtl),
+        value: cdktn.numberToHclTerraform(this._tokenMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_no_default_policy: {
-        value: cdktf.booleanToHclTerraform(this._tokenNoDefaultPolicy),
+        value: cdktn.booleanToHclTerraform(this._tokenNoDefaultPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       token_num_uses: {
-        value: cdktf.numberToHclTerraform(this._tokenNumUses),
+        value: cdktn.numberToHclTerraform(this._tokenNumUses),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_period: {
-        value: cdktf.numberToHclTerraform(this._tokenPeriod),
+        value: cdktn.numberToHclTerraform(this._tokenPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_policies: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenPolicies),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenPolicies),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       token_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenTtl),
+        value: cdktn.numberToHclTerraform(this._tokenTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_type: {
-        value: cdktf.stringToHclTerraform(this._tokenType),
+        value: cdktn.stringToHclTerraform(this._tokenType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

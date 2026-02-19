@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GcpSecretRolesetConfig extends cdktf.TerraformMetaArguments {
+export interface GcpSecretRolesetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Path where the GCP secrets engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset#backend GcpSecretRoleset#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#backend GcpSecretRoleset#backend}
   */
   readonly backend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset#id GcpSecretRoleset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#id GcpSecretRoleset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,81 +28,81 @@ export interface GcpSecretRolesetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset#namespace GcpSecretRoleset#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#namespace GcpSecretRoleset#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the GCP project that this roleset's service account will belong to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset#project GcpSecretRoleset#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#project GcpSecretRoleset#project}
   */
   readonly project: string;
   /**
   * Name of the RoleSet to create
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset#roleset GcpSecretRoleset#roleset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#roleset GcpSecretRoleset#roleset}
   */
   readonly roleset: string;
   /**
   * Type of secret generated for this role set. Defaults to `access_token`. Accepted values: `access_token`, `service_account_key`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset#secret_type GcpSecretRoleset#secret_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#secret_type GcpSecretRoleset#secret_type}
   */
   readonly secretType?: string;
   /**
   * List of OAuth scopes to assign to `access_token` secrets generated under this role set (`access_token` role sets only) 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset#token_scopes GcpSecretRoleset#token_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#token_scopes GcpSecretRoleset#token_scopes}
   */
   readonly tokenScopes?: string[];
   /**
   * binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset#binding GcpSecretRoleset#binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#binding GcpSecretRoleset#binding}
   */
-  readonly binding: GcpSecretRolesetBinding[] | cdktf.IResolvable;
+  readonly binding: GcpSecretRolesetBinding[] | cdktn.IResolvable;
 }
 export interface GcpSecretRolesetBinding {
   /**
   * Resource name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset#resource GcpSecretRoleset#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#resource GcpSecretRoleset#resource}
   */
   readonly resource: string;
   /**
   * List of roles to apply to the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset#roles GcpSecretRoleset#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#roles GcpSecretRoleset#roles}
   */
   readonly roles: string[];
 }
 
-export function gcpSecretRolesetBindingToTerraform(struct?: GcpSecretRolesetBinding | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gcpSecretRolesetBindingToTerraform(struct?: GcpSecretRolesetBinding | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource: cdktf.stringToTerraform(struct!.resource),
-    roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
+    resource: cdktn.stringToTerraform(struct!.resource),
+    roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.roles),
   }
 }
 
 
-export function gcpSecretRolesetBindingToHclTerraform(struct?: GcpSecretRolesetBinding | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gcpSecretRolesetBindingToHclTerraform(struct?: GcpSecretRolesetBinding | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.roles),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -113,9 +113,9 @@ export function gcpSecretRolesetBindingToHclTerraform(struct?: GcpSecretRolesetB
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GcpSecretRolesetBindingOutputReference extends cdktf.ComplexObject {
+export class GcpSecretRolesetBindingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -123,11 +123,11 @@ export class GcpSecretRolesetBindingOutputReference extends cdktf.ComplexObject 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GcpSecretRolesetBinding | cdktf.IResolvable | undefined {
+  public get internalValue(): GcpSecretRolesetBinding | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -144,14 +144,14 @@ export class GcpSecretRolesetBindingOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GcpSecretRolesetBinding | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GcpSecretRolesetBinding | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._resource = undefined;
       this._roles = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -179,7 +179,7 @@ export class GcpSecretRolesetBindingOutputReference extends cdktf.ComplexObject 
   // roles - computed: false, optional: false, required: true
   private _roles?: string[]; 
   public get roles() {
-    return cdktf.Fn.tolist(this.getListAttribute('roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('roles'));
   }
   public set roles(value: string[]) {
     this._roles = value;
@@ -190,15 +190,15 @@ export class GcpSecretRolesetBindingOutputReference extends cdktf.ComplexObject 
   }
 }
 
-export class GcpSecretRolesetBindingList extends cdktf.ComplexList {
-  public internalValue? : GcpSecretRolesetBinding[] | cdktf.IResolvable
+export class GcpSecretRolesetBindingList extends cdktn.ComplexList {
+  public internalValue? : GcpSecretRolesetBinding[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -211,9 +211,9 @@ export class GcpSecretRolesetBindingList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset vault_gcp_secret_roleset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset vault_gcp_secret_roleset}
 */
-export class GcpSecretRoleset extends cdktf.TerraformResource {
+export class GcpSecretRoleset extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -224,14 +224,14 @@ export class GcpSecretRoleset extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GcpSecretRoleset resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GcpSecretRoleset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GcpSecretRoleset to import
-  * @param importFromId The id of the existing GcpSecretRoleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GcpSecretRoleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GcpSecretRoleset to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_gcp_secret_roleset", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_gcp_secret_roleset", importId: importFromId, provider });
       }
 
   // ===========
@@ -239,7 +239,7 @@ export class GcpSecretRoleset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_roleset vault_gcp_secret_roleset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset vault_gcp_secret_roleset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -250,7 +250,7 @@ export class GcpSecretRoleset extends cdktf.TerraformResource {
       terraformResourceType: 'vault_gcp_secret_roleset',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -370,7 +370,7 @@ export class GcpSecretRoleset extends cdktf.TerraformResource {
   // token_scopes - computed: false, optional: true, required: false
   private _tokenScopes?: string[]; 
   public get tokenScopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_scopes'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_scopes'));
   }
   public set tokenScopes(value: string[]) {
     this._tokenScopes = value;
@@ -388,7 +388,7 @@ export class GcpSecretRoleset extends cdktf.TerraformResource {
   public get binding() {
     return this._binding;
   }
-  public putBinding(value: GcpSecretRolesetBinding[] | cdktf.IResolvable) {
+  public putBinding(value: GcpSecretRolesetBinding[] | cdktn.IResolvable) {
     this._binding.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -402,63 +402,63 @@ export class GcpSecretRoleset extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      project: cdktf.stringToTerraform(this._project),
-      roleset: cdktf.stringToTerraform(this._roleset),
-      secret_type: cdktf.stringToTerraform(this._secretType),
-      token_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenScopes),
-      binding: cdktf.listMapper(gcpSecretRolesetBindingToTerraform, true)(this._binding.internalValue),
+      backend: cdktn.stringToTerraform(this._backend),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      project: cdktn.stringToTerraform(this._project),
+      roleset: cdktn.stringToTerraform(this._roleset),
+      secret_type: cdktn.stringToTerraform(this._secretType),
+      token_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenScopes),
+      binding: cdktn.listMapper(gcpSecretRolesetBindingToTerraform, true)(this._binding.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project: {
-        value: cdktf.stringToHclTerraform(this._project),
+        value: cdktn.stringToHclTerraform(this._project),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       roleset: {
-        value: cdktf.stringToHclTerraform(this._roleset),
+        value: cdktn.stringToHclTerraform(this._roleset),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_type: {
-        value: cdktf.stringToHclTerraform(this._secretType),
+        value: cdktn.stringToHclTerraform(this._secretType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenScopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenScopes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       binding: {
-        value: cdktf.listMapperHcl(gcpSecretRolesetBindingToHclTerraform, true)(this._binding.internalValue),
+        value: cdktn.listMapperHcl(gcpSecretRolesetBindingToHclTerraform, true)(this._binding.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "GcpSecretRolesetBindingList",

@@ -1,32 +1,32 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_member_entity_ids
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_member_entity_ids
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IdentityGroupMemberEntityIdsConfig extends cdktf.TerraformMetaArguments {
+export interface IdentityGroupMemberEntityIdsConfig extends cdktn.TerraformMetaArguments {
   /**
   * If set to true, allows the resource to manage member entity ids
   * exclusively. Beware of race conditions when disabling exclusive management
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_member_entity_ids#exclusive IdentityGroupMemberEntityIds#exclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_member_entity_ids#exclusive IdentityGroupMemberEntityIds#exclusive}
   */
-  readonly exclusive?: boolean | cdktf.IResolvable;
+  readonly exclusive?: boolean | cdktn.IResolvable;
   /**
   * ID of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_member_entity_ids#group_id IdentityGroupMemberEntityIds#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_member_entity_ids#group_id IdentityGroupMemberEntityIds#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_member_entity_ids#id IdentityGroupMemberEntityIds#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_member_entity_ids#id IdentityGroupMemberEntityIds#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,21 +35,21 @@ export interface IdentityGroupMemberEntityIdsConfig extends cdktf.TerraformMetaA
   /**
   * Entity IDs to be assigned as group members.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_member_entity_ids#member_entity_ids IdentityGroupMemberEntityIds#member_entity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_member_entity_ids#member_entity_ids IdentityGroupMemberEntityIds#member_entity_ids}
   */
   readonly memberEntityIds?: string[];
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_member_entity_ids#namespace IdentityGroupMemberEntityIds#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_member_entity_ids#namespace IdentityGroupMemberEntityIds#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids}
 */
-export class IdentityGroupMemberEntityIds extends cdktf.TerraformResource {
+export class IdentityGroupMemberEntityIds extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -60,14 +60,14 @@ export class IdentityGroupMemberEntityIds extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IdentityGroupMemberEntityIds resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IdentityGroupMemberEntityIds resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityGroupMemberEntityIds to import
-  * @param importFromId The id of the existing IdentityGroupMemberEntityIds that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_member_entity_ids#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityGroupMemberEntityIds that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_member_entity_ids#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityGroupMemberEntityIds to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_group_member_entity_ids", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_group_member_entity_ids", importId: importFromId, provider });
       }
 
   // ===========
@@ -75,7 +75,7 @@ export class IdentityGroupMemberEntityIds extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_member_entity_ids vault_identity_group_member_entity_ids} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -86,7 +86,7 @@ export class IdentityGroupMemberEntityIds extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_group_member_entity_ids',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -109,11 +109,11 @@ export class IdentityGroupMemberEntityIds extends cdktf.TerraformResource {
   // ==========
 
   // exclusive - computed: false, optional: true, required: false
-  private _exclusive?: boolean | cdktf.IResolvable; 
+  private _exclusive?: boolean | cdktn.IResolvable; 
   public get exclusive() {
     return this.getBooleanAttribute('exclusive');
   }
-  public set exclusive(value: boolean | cdktf.IResolvable) {
+  public set exclusive(value: boolean | cdktn.IResolvable) {
     this._exclusive = value;
   }
   public resetExclusive() {
@@ -156,7 +156,7 @@ export class IdentityGroupMemberEntityIds extends cdktf.TerraformResource {
   // member_entity_ids - computed: false, optional: true, required: false
   private _memberEntityIds?: string[]; 
   public get memberEntityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('member_entity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('member_entity_ids'));
   }
   public set memberEntityIds(value: string[]) {
     this._memberEntityIds = value;
@@ -191,42 +191,42 @@ export class IdentityGroupMemberEntityIds extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      exclusive: cdktf.booleanToTerraform(this._exclusive),
-      group_id: cdktf.stringToTerraform(this._groupId),
-      id: cdktf.stringToTerraform(this._id),
-      member_entity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._memberEntityIds),
-      namespace: cdktf.stringToTerraform(this._namespace),
+      exclusive: cdktn.booleanToTerraform(this._exclusive),
+      group_id: cdktn.stringToTerraform(this._groupId),
+      id: cdktn.stringToTerraform(this._id),
+      member_entity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._memberEntityIds),
+      namespace: cdktn.stringToTerraform(this._namespace),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       exclusive: {
-        value: cdktf.booleanToHclTerraform(this._exclusive),
+        value: cdktn.booleanToHclTerraform(this._exclusive),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       group_id: {
-        value: cdktf.stringToHclTerraform(this._groupId),
+        value: cdktn.stringToHclTerraform(this._groupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       member_entity_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._memberEntityIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._memberEntityIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

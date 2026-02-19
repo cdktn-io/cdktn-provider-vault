@@ -1,151 +1,151 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GcpAuthBackendRoleConfig extends cdktf.TerraformMetaArguments {
+export interface GcpAuthBackendRoleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#add_group_aliases GcpAuthBackendRole#add_group_aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#add_group_aliases GcpAuthBackendRole#add_group_aliases}
   */
-  readonly addGroupAliases?: boolean | cdktf.IResolvable;
+  readonly addGroupAliases?: boolean | cdktn.IResolvable;
   /**
   * The metadata to be tied to generated entity alias.
   *   This should be a list or map containing the metadata in key value pairs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#alias_metadata GcpAuthBackendRole#alias_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#alias_metadata GcpAuthBackendRole#alias_metadata}
   */
   readonly aliasMetadata?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#allow_gce_inference GcpAuthBackendRole#allow_gce_inference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#allow_gce_inference GcpAuthBackendRole#allow_gce_inference}
   */
-  readonly allowGceInference?: boolean | cdktf.IResolvable;
+  readonly allowGceInference?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#backend GcpAuthBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#backend GcpAuthBackendRole#backend}
   */
   readonly backend?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#bound_instance_groups GcpAuthBackendRole#bound_instance_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#bound_instance_groups GcpAuthBackendRole#bound_instance_groups}
   */
   readonly boundInstanceGroups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#bound_labels GcpAuthBackendRole#bound_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#bound_labels GcpAuthBackendRole#bound_labels}
   */
   readonly boundLabels?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#bound_projects GcpAuthBackendRole#bound_projects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#bound_projects GcpAuthBackendRole#bound_projects}
   */
   readonly boundProjects?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#bound_regions GcpAuthBackendRole#bound_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#bound_regions GcpAuthBackendRole#bound_regions}
   */
   readonly boundRegions?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#bound_service_accounts GcpAuthBackendRole#bound_service_accounts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#bound_service_accounts GcpAuthBackendRole#bound_service_accounts}
   */
   readonly boundServiceAccounts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#bound_zones GcpAuthBackendRole#bound_zones}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#bound_zones GcpAuthBackendRole#bound_zones}
   */
   readonly boundZones?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#id GcpAuthBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#id GcpAuthBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#max_jwt_exp GcpAuthBackendRole#max_jwt_exp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#max_jwt_exp GcpAuthBackendRole#max_jwt_exp}
   */
   readonly maxJwtExp?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#namespace GcpAuthBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#namespace GcpAuthBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#role GcpAuthBackendRole#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#role GcpAuthBackendRole#role}
   */
   readonly role: string;
   /**
   * The role_id is the stable, unique identifier for the role generated by vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#role_id GcpAuthBackendRole#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#role_id GcpAuthBackendRole#role_id}
   */
   readonly roleId?: string;
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#token_bound_cidrs GcpAuthBackendRole#token_bound_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#token_bound_cidrs GcpAuthBackendRole#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#token_explicit_max_ttl GcpAuthBackendRole#token_explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#token_explicit_max_ttl GcpAuthBackendRole#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#token_max_ttl GcpAuthBackendRole#token_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#token_max_ttl GcpAuthBackendRole#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#token_no_default_policy GcpAuthBackendRole#token_no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#token_no_default_policy GcpAuthBackendRole#token_no_default_policy}
   */
-  readonly tokenNoDefaultPolicy?: boolean | cdktf.IResolvable;
+  readonly tokenNoDefaultPolicy?: boolean | cdktn.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#token_num_uses GcpAuthBackendRole#token_num_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#token_num_uses GcpAuthBackendRole#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#token_period GcpAuthBackendRole#token_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#token_period GcpAuthBackendRole#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#token_policies GcpAuthBackendRole#token_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#token_policies GcpAuthBackendRole#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#token_ttl GcpAuthBackendRole#token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#token_ttl GcpAuthBackendRole#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#token_type GcpAuthBackendRole#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#token_type GcpAuthBackendRole#token_type}
   */
   readonly tokenType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#type GcpAuthBackendRole#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#type GcpAuthBackendRole#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role}
 */
-export class GcpAuthBackendRole extends cdktf.TerraformResource {
+export class GcpAuthBackendRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -156,14 +156,14 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GcpAuthBackendRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GcpAuthBackendRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GcpAuthBackendRole to import
-  * @param importFromId The id of the existing GcpAuthBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GcpAuthBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GcpAuthBackendRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_gcp_auth_backend_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_gcp_auth_backend_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -171,7 +171,7 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_auth_backend_role vault_gcp_auth_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -182,7 +182,7 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_gcp_auth_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -225,11 +225,11 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
   // ==========
 
   // add_group_aliases - computed: true, optional: true, required: false
-  private _addGroupAliases?: boolean | cdktf.IResolvable; 
+  private _addGroupAliases?: boolean | cdktn.IResolvable; 
   public get addGroupAliases() {
     return this.getBooleanAttribute('add_group_aliases');
   }
-  public set addGroupAliases(value: boolean | cdktf.IResolvable) {
+  public set addGroupAliases(value: boolean | cdktn.IResolvable) {
     this._addGroupAliases = value;
   }
   public resetAddGroupAliases() {
@@ -257,11 +257,11 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
   }
 
   // allow_gce_inference - computed: true, optional: true, required: false
-  private _allowGceInference?: boolean | cdktf.IResolvable; 
+  private _allowGceInference?: boolean | cdktn.IResolvable; 
   public get allowGceInference() {
     return this.getBooleanAttribute('allow_gce_inference');
   }
-  public set allowGceInference(value: boolean | cdktf.IResolvable) {
+  public set allowGceInference(value: boolean | cdktn.IResolvable) {
     this._allowGceInference = value;
   }
   public resetAllowGceInference() {
@@ -291,7 +291,7 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
   // bound_instance_groups - computed: true, optional: true, required: false
   private _boundInstanceGroups?: string[]; 
   public get boundInstanceGroups() {
-    return cdktf.Fn.tolist(this.getListAttribute('bound_instance_groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('bound_instance_groups'));
   }
   public set boundInstanceGroups(value: string[]) {
     this._boundInstanceGroups = value;
@@ -307,7 +307,7 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
   // bound_labels - computed: true, optional: true, required: false
   private _boundLabels?: string[]; 
   public get boundLabels() {
-    return cdktf.Fn.tolist(this.getListAttribute('bound_labels'));
+    return cdktn.Fn.tolist(this.getListAttribute('bound_labels'));
   }
   public set boundLabels(value: string[]) {
     this._boundLabels = value;
@@ -323,7 +323,7 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
   // bound_projects - computed: false, optional: true, required: false
   private _boundProjects?: string[]; 
   public get boundProjects() {
-    return cdktf.Fn.tolist(this.getListAttribute('bound_projects'));
+    return cdktn.Fn.tolist(this.getListAttribute('bound_projects'));
   }
   public set boundProjects(value: string[]) {
     this._boundProjects = value;
@@ -339,7 +339,7 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
   // bound_regions - computed: true, optional: true, required: false
   private _boundRegions?: string[]; 
   public get boundRegions() {
-    return cdktf.Fn.tolist(this.getListAttribute('bound_regions'));
+    return cdktn.Fn.tolist(this.getListAttribute('bound_regions'));
   }
   public set boundRegions(value: string[]) {
     this._boundRegions = value;
@@ -355,7 +355,7 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
   // bound_service_accounts - computed: true, optional: true, required: false
   private _boundServiceAccounts?: string[]; 
   public get boundServiceAccounts() {
-    return cdktf.Fn.tolist(this.getListAttribute('bound_service_accounts'));
+    return cdktn.Fn.tolist(this.getListAttribute('bound_service_accounts'));
   }
   public set boundServiceAccounts(value: string[]) {
     this._boundServiceAccounts = value;
@@ -371,7 +371,7 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
   // bound_zones - computed: true, optional: true, required: false
   private _boundZones?: string[]; 
   public get boundZones() {
-    return cdktf.Fn.tolist(this.getListAttribute('bound_zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('bound_zones'));
   }
   public set boundZones(value: string[]) {
     this._boundZones = value;
@@ -464,7 +464,7 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
   // token_bound_cidrs - computed: false, optional: true, required: false
   private _tokenBoundCidrs?: string[]; 
   public get tokenBoundCidrs() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_bound_cidrs'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_bound_cidrs'));
   }
   public set tokenBoundCidrs(value: string[]) {
     this._tokenBoundCidrs = value;
@@ -510,11 +510,11 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
   }
 
   // token_no_default_policy - computed: false, optional: true, required: false
-  private _tokenNoDefaultPolicy?: boolean | cdktf.IResolvable; 
+  private _tokenNoDefaultPolicy?: boolean | cdktn.IResolvable; 
   public get tokenNoDefaultPolicy() {
     return this.getBooleanAttribute('token_no_default_policy');
   }
-  public set tokenNoDefaultPolicy(value: boolean | cdktf.IResolvable) {
+  public set tokenNoDefaultPolicy(value: boolean | cdktn.IResolvable) {
     this._tokenNoDefaultPolicy = value;
   }
   public resetTokenNoDefaultPolicy() {
@@ -560,7 +560,7 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
   // token_policies - computed: false, optional: true, required: false
   private _tokenPolicies?: string[]; 
   public get tokenPolicies() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_policies'));
   }
   public set tokenPolicies(value: string[]) {
     this._tokenPolicies = value;
@@ -624,182 +624,182 @@ export class GcpAuthBackendRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      add_group_aliases: cdktf.booleanToTerraform(this._addGroupAliases),
-      alias_metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._aliasMetadata),
-      allow_gce_inference: cdktf.booleanToTerraform(this._allowGceInference),
-      backend: cdktf.stringToTerraform(this._backend),
-      bound_instance_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._boundInstanceGroups),
-      bound_labels: cdktf.listMapper(cdktf.stringToTerraform, false)(this._boundLabels),
-      bound_projects: cdktf.listMapper(cdktf.stringToTerraform, false)(this._boundProjects),
-      bound_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._boundRegions),
-      bound_service_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._boundServiceAccounts),
-      bound_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._boundZones),
-      id: cdktf.stringToTerraform(this._id),
-      max_jwt_exp: cdktf.stringToTerraform(this._maxJwtExp),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      role: cdktf.stringToTerraform(this._role),
-      role_id: cdktf.stringToTerraform(this._roleId),
-      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenBoundCidrs),
-      token_explicit_max_ttl: cdktf.numberToTerraform(this._tokenExplicitMaxTtl),
-      token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
-      token_no_default_policy: cdktf.booleanToTerraform(this._tokenNoDefaultPolicy),
-      token_num_uses: cdktf.numberToTerraform(this._tokenNumUses),
-      token_period: cdktf.numberToTerraform(this._tokenPeriod),
-      token_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenPolicies),
-      token_ttl: cdktf.numberToTerraform(this._tokenTtl),
-      token_type: cdktf.stringToTerraform(this._tokenType),
-      type: cdktf.stringToTerraform(this._type),
+      add_group_aliases: cdktn.booleanToTerraform(this._addGroupAliases),
+      alias_metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._aliasMetadata),
+      allow_gce_inference: cdktn.booleanToTerraform(this._allowGceInference),
+      backend: cdktn.stringToTerraform(this._backend),
+      bound_instance_groups: cdktn.listMapper(cdktn.stringToTerraform, false)(this._boundInstanceGroups),
+      bound_labels: cdktn.listMapper(cdktn.stringToTerraform, false)(this._boundLabels),
+      bound_projects: cdktn.listMapper(cdktn.stringToTerraform, false)(this._boundProjects),
+      bound_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._boundRegions),
+      bound_service_accounts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._boundServiceAccounts),
+      bound_zones: cdktn.listMapper(cdktn.stringToTerraform, false)(this._boundZones),
+      id: cdktn.stringToTerraform(this._id),
+      max_jwt_exp: cdktn.stringToTerraform(this._maxJwtExp),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      role: cdktn.stringToTerraform(this._role),
+      role_id: cdktn.stringToTerraform(this._roleId),
+      token_bound_cidrs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenBoundCidrs),
+      token_explicit_max_ttl: cdktn.numberToTerraform(this._tokenExplicitMaxTtl),
+      token_max_ttl: cdktn.numberToTerraform(this._tokenMaxTtl),
+      token_no_default_policy: cdktn.booleanToTerraform(this._tokenNoDefaultPolicy),
+      token_num_uses: cdktn.numberToTerraform(this._tokenNumUses),
+      token_period: cdktn.numberToTerraform(this._tokenPeriod),
+      token_policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenPolicies),
+      token_ttl: cdktn.numberToTerraform(this._tokenTtl),
+      token_type: cdktn.stringToTerraform(this._tokenType),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       add_group_aliases: {
-        value: cdktf.booleanToHclTerraform(this._addGroupAliases),
+        value: cdktn.booleanToHclTerraform(this._addGroupAliases),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       alias_metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._aliasMetadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._aliasMetadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       allow_gce_inference: {
-        value: cdktf.booleanToHclTerraform(this._allowGceInference),
+        value: cdktn.booleanToHclTerraform(this._allowGceInference),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bound_instance_groups: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundInstanceGroups),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._boundInstanceGroups),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       bound_labels: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundLabels),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._boundLabels),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       bound_projects: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundProjects),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._boundProjects),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       bound_regions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundRegions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._boundRegions),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       bound_service_accounts: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundServiceAccounts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._boundServiceAccounts),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       bound_zones: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._boundZones),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._boundZones),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_jwt_exp: {
-        value: cdktf.stringToHclTerraform(this._maxJwtExp),
+        value: cdktn.stringToHclTerraform(this._maxJwtExp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role_id: {
-        value: cdktf.stringToHclTerraform(this._roleId),
+        value: cdktn.stringToHclTerraform(this._roleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_bound_cidrs: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenBoundCidrs),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenBoundCidrs),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       token_explicit_max_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenExplicitMaxTtl),
+        value: cdktn.numberToHclTerraform(this._tokenExplicitMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_max_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenMaxTtl),
+        value: cdktn.numberToHclTerraform(this._tokenMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_no_default_policy: {
-        value: cdktf.booleanToHclTerraform(this._tokenNoDefaultPolicy),
+        value: cdktn.booleanToHclTerraform(this._tokenNoDefaultPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       token_num_uses: {
-        value: cdktf.numberToHclTerraform(this._tokenNumUses),
+        value: cdktn.numberToHclTerraform(this._tokenNumUses),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_period: {
-        value: cdktf.numberToHclTerraform(this._tokenPeriod),
+        value: cdktn.numberToHclTerraform(this._tokenPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_policies: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenPolicies),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenPolicies),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       token_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenTtl),
+        value: cdktn.numberToHclTerraform(this._tokenTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_type: {
-        value: cdktf.stringToHclTerraform(this._tokenType),
+        value: cdktn.stringToHclTerraform(this._tokenType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

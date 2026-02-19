@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AzureSecretBackendRoleConfig extends cdktf.TerraformMetaArguments {
+export interface AzureSecretBackendRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Application Object ID for an existing service principal that will be used instead of creating dynamic service principals.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#application_object_id AzureSecretBackendRole#application_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#application_object_id AzureSecretBackendRole#application_object_id}
   */
   readonly applicationObjectId?: string;
   /**
   * Unique name of the auth backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#backend AzureSecretBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#backend AzureSecretBackendRole#backend}
   */
   readonly backend?: string;
   /**
   * Human-friendly description of the mount for the backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#description AzureSecretBackendRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#description AzureSecretBackendRole#description}
   */
   readonly description?: string;
   /**
   * Specifies the explicit maximum lifetime of the lease and service principal.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#explicit_max_ttl AzureSecretBackendRole#explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#explicit_max_ttl AzureSecretBackendRole#explicit_max_ttl}
   */
   readonly explicitMaxTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#id AzureSecretBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#id AzureSecretBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,90 +46,90 @@ export interface AzureSecretBackendRoleConfig extends cdktf.TerraformMetaArgumen
   /**
   * Specifies the maximum TTL for service principals generated using this role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#max_ttl AzureSecretBackendRole#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#max_ttl AzureSecretBackendRole#max_ttl}
   */
   readonly maxTtl?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#namespace AzureSecretBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#namespace AzureSecretBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Indicates whether the applications and service principals created by Vault will be permanently deleted when the corresponding leases expire.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#permanently_delete AzureSecretBackendRole#permanently_delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#permanently_delete AzureSecretBackendRole#permanently_delete}
   */
-  readonly permanentlyDelete?: boolean | cdktf.IResolvable;
+  readonly permanentlyDelete?: boolean | cdktn.IResolvable;
   /**
   * If true, persists the created service principal and application for the lifetime of the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#persist_app AzureSecretBackendRole#persist_app}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#persist_app AzureSecretBackendRole#persist_app}
   */
-  readonly persistApp?: boolean | cdktf.IResolvable;
+  readonly persistApp?: boolean | cdktn.IResolvable;
   /**
   * Name of the role to create
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#role AzureSecretBackendRole#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#role AzureSecretBackendRole#role}
   */
   readonly role: string;
   /**
   * Specifies the security principal types that are allowed to sign in to the application. Valid values are: AzureADMyOrg, AzureADMultipleOrgs, AzureADandPersonalMicrosoftAccount, PersonalMicrosoftAccount
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#sign_in_audience AzureSecretBackendRole#sign_in_audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#sign_in_audience AzureSecretBackendRole#sign_in_audience}
   */
   readonly signInAudience?: string;
   /**
   * Comma-separated strings of Azure tags to attach to an application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#tags AzureSecretBackendRole#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#tags AzureSecretBackendRole#tags}
   */
   readonly tags?: string[];
   /**
   * Specifies the default TTL for service principals generated using this role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#ttl AzureSecretBackendRole#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#ttl AzureSecretBackendRole#ttl}
   */
   readonly ttl?: string;
   /**
   * azure_groups block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#azure_groups AzureSecretBackendRole#azure_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#azure_groups AzureSecretBackendRole#azure_groups}
   */
-  readonly azureGroups?: AzureSecretBackendRoleAzureGroups[] | cdktf.IResolvable;
+  readonly azureGroups?: AzureSecretBackendRoleAzureGroups[] | cdktn.IResolvable;
   /**
   * azure_roles block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#azure_roles AzureSecretBackendRole#azure_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#azure_roles AzureSecretBackendRole#azure_roles}
   */
-  readonly azureRoles?: AzureSecretBackendRoleAzureRoles[] | cdktf.IResolvable;
+  readonly azureRoles?: AzureSecretBackendRoleAzureRoles[] | cdktn.IResolvable;
 }
 export interface AzureSecretBackendRoleAzureGroups {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#group_name AzureSecretBackendRole#group_name}
   */
   readonly groupName: string;
 }
 
-export function azureSecretBackendRoleAzureGroupsToTerraform(struct?: AzureSecretBackendRoleAzureGroups | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azureSecretBackendRoleAzureGroupsToTerraform(struct?: AzureSecretBackendRoleAzureGroups | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_name: cdktf.stringToTerraform(struct!.groupName),
+    group_name: cdktn.stringToTerraform(struct!.groupName),
   }
 }
 
 
-export function azureSecretBackendRoleAzureGroupsToHclTerraform(struct?: AzureSecretBackendRoleAzureGroups | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azureSecretBackendRoleAzureGroupsToHclTerraform(struct?: AzureSecretBackendRoleAzureGroups | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_name: {
-      value: cdktf.stringToHclTerraform(struct!.groupName),
+      value: cdktn.stringToHclTerraform(struct!.groupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -140,9 +140,9 @@ export function azureSecretBackendRoleAzureGroupsToHclTerraform(struct?: AzureSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AzureSecretBackendRoleAzureGroupsOutputReference extends cdktf.ComplexObject {
+export class AzureSecretBackendRoleAzureGroupsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -150,11 +150,11 @@ export class AzureSecretBackendRoleAzureGroupsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AzureSecretBackendRoleAzureGroups | cdktf.IResolvable | undefined {
+  public get internalValue(): AzureSecretBackendRoleAzureGroups | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -167,13 +167,13 @@ export class AzureSecretBackendRoleAzureGroupsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AzureSecretBackendRoleAzureGroups | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AzureSecretBackendRoleAzureGroups | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._groupName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -203,15 +203,15 @@ export class AzureSecretBackendRoleAzureGroupsOutputReference extends cdktf.Comp
   }
 }
 
-export class AzureSecretBackendRoleAzureGroupsList extends cdktf.ComplexList {
-  public internalValue? : AzureSecretBackendRoleAzureGroups[] | cdktf.IResolvable
+export class AzureSecretBackendRoleAzureGroupsList extends cdktn.ComplexList {
+  public internalValue? : AzureSecretBackendRoleAzureGroups[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -224,52 +224,52 @@ export class AzureSecretBackendRoleAzureGroupsList extends cdktf.ComplexList {
 }
 export interface AzureSecretBackendRoleAzureRoles {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#role_id AzureSecretBackendRole#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#role_id AzureSecretBackendRole#role_id}
   */
   readonly roleId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#role_name AzureSecretBackendRole#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#role_name AzureSecretBackendRole#role_name}
   */
   readonly roleName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#scope AzureSecretBackendRole#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#scope AzureSecretBackendRole#scope}
   */
   readonly scope: string;
 }
 
-export function azureSecretBackendRoleAzureRolesToTerraform(struct?: AzureSecretBackendRoleAzureRoles | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azureSecretBackendRoleAzureRolesToTerraform(struct?: AzureSecretBackendRoleAzureRoles | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    role_id: cdktf.stringToTerraform(struct!.roleId),
-    role_name: cdktf.stringToTerraform(struct!.roleName),
-    scope: cdktf.stringToTerraform(struct!.scope),
+    role_id: cdktn.stringToTerraform(struct!.roleId),
+    role_name: cdktn.stringToTerraform(struct!.roleName),
+    scope: cdktn.stringToTerraform(struct!.scope),
   }
 }
 
 
-export function azureSecretBackendRoleAzureRolesToHclTerraform(struct?: AzureSecretBackendRoleAzureRoles | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function azureSecretBackendRoleAzureRolesToHclTerraform(struct?: AzureSecretBackendRoleAzureRoles | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     role_id: {
-      value: cdktf.stringToHclTerraform(struct!.roleId),
+      value: cdktn.stringToHclTerraform(struct!.roleId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role_name: {
-      value: cdktf.stringToHclTerraform(struct!.roleName),
+      value: cdktn.stringToHclTerraform(struct!.roleName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -280,9 +280,9 @@ export function azureSecretBackendRoleAzureRolesToHclTerraform(struct?: AzureSec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AzureSecretBackendRoleAzureRolesOutputReference extends cdktf.ComplexObject {
+export class AzureSecretBackendRoleAzureRolesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -290,11 +290,11 @@ export class AzureSecretBackendRoleAzureRolesOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AzureSecretBackendRoleAzureRoles | cdktf.IResolvable | undefined {
+  public get internalValue(): AzureSecretBackendRoleAzureRoles | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -315,7 +315,7 @@ export class AzureSecretBackendRoleAzureRolesOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AzureSecretBackendRoleAzureRoles | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AzureSecretBackendRoleAzureRoles | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -323,7 +323,7 @@ export class AzureSecretBackendRoleAzureRolesOutputReference extends cdktf.Compl
       this._roleName = undefined;
       this._scope = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -382,15 +382,15 @@ export class AzureSecretBackendRoleAzureRolesOutputReference extends cdktf.Compl
   }
 }
 
-export class AzureSecretBackendRoleAzureRolesList extends cdktf.ComplexList {
-  public internalValue? : AzureSecretBackendRoleAzureRoles[] | cdktf.IResolvable
+export class AzureSecretBackendRoleAzureRolesList extends cdktn.ComplexList {
+  public internalValue? : AzureSecretBackendRoleAzureRoles[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -403,9 +403,9 @@ export class AzureSecretBackendRoleAzureRolesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role}
 */
-export class AzureSecretBackendRole extends cdktf.TerraformResource {
+export class AzureSecretBackendRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -416,14 +416,14 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AzureSecretBackendRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AzureSecretBackendRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzureSecretBackendRole to import
-  * @param importFromId The id of the existing AzureSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AzureSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzureSecretBackendRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_azure_secret_backend_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_azure_secret_backend_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -431,7 +431,7 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_secret_backend_role vault_azure_secret_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -442,7 +442,7 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_azure_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -587,11 +587,11 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
   }
 
   // permanently_delete - computed: true, optional: true, required: false
-  private _permanentlyDelete?: boolean | cdktf.IResolvable; 
+  private _permanentlyDelete?: boolean | cdktn.IResolvable; 
   public get permanentlyDelete() {
     return this.getBooleanAttribute('permanently_delete');
   }
-  public set permanentlyDelete(value: boolean | cdktf.IResolvable) {
+  public set permanentlyDelete(value: boolean | cdktn.IResolvable) {
     this._permanentlyDelete = value;
   }
   public resetPermanentlyDelete() {
@@ -603,11 +603,11 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
   }
 
   // persist_app - computed: false, optional: true, required: false
-  private _persistApp?: boolean | cdktf.IResolvable; 
+  private _persistApp?: boolean | cdktn.IResolvable; 
   public get persistApp() {
     return this.getBooleanAttribute('persist_app');
   }
-  public set persistApp(value: boolean | cdktf.IResolvable) {
+  public set persistApp(value: boolean | cdktn.IResolvable) {
     this._persistApp = value;
   }
   public resetPersistApp() {
@@ -684,7 +684,7 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
   public get azureGroups() {
     return this._azureGroups;
   }
-  public putAzureGroups(value: AzureSecretBackendRoleAzureGroups[] | cdktf.IResolvable) {
+  public putAzureGroups(value: AzureSecretBackendRoleAzureGroups[] | cdktn.IResolvable) {
     this._azureGroups.internalValue = value;
   }
   public resetAzureGroups() {
@@ -700,7 +700,7 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
   public get azureRoles() {
     return this._azureRoles;
   }
-  public putAzureRoles(value: AzureSecretBackendRoleAzureRoles[] | cdktf.IResolvable) {
+  public putAzureRoles(value: AzureSecretBackendRoleAzureRoles[] | cdktn.IResolvable) {
     this._azureRoles.internalValue = value;
   }
   public resetAzureRoles() {
@@ -717,112 +717,112 @@ export class AzureSecretBackendRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      application_object_id: cdktf.stringToTerraform(this._applicationObjectId),
-      backend: cdktf.stringToTerraform(this._backend),
-      description: cdktf.stringToTerraform(this._description),
-      explicit_max_ttl: cdktf.stringToTerraform(this._explicitMaxTtl),
-      id: cdktf.stringToTerraform(this._id),
-      max_ttl: cdktf.stringToTerraform(this._maxTtl),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      permanently_delete: cdktf.booleanToTerraform(this._permanentlyDelete),
-      persist_app: cdktf.booleanToTerraform(this._persistApp),
-      role: cdktf.stringToTerraform(this._role),
-      sign_in_audience: cdktf.stringToTerraform(this._signInAudience),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      ttl: cdktf.stringToTerraform(this._ttl),
-      azure_groups: cdktf.listMapper(azureSecretBackendRoleAzureGroupsToTerraform, true)(this._azureGroups.internalValue),
-      azure_roles: cdktf.listMapper(azureSecretBackendRoleAzureRolesToTerraform, true)(this._azureRoles.internalValue),
+      application_object_id: cdktn.stringToTerraform(this._applicationObjectId),
+      backend: cdktn.stringToTerraform(this._backend),
+      description: cdktn.stringToTerraform(this._description),
+      explicit_max_ttl: cdktn.stringToTerraform(this._explicitMaxTtl),
+      id: cdktn.stringToTerraform(this._id),
+      max_ttl: cdktn.stringToTerraform(this._maxTtl),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      permanently_delete: cdktn.booleanToTerraform(this._permanentlyDelete),
+      persist_app: cdktn.booleanToTerraform(this._persistApp),
+      role: cdktn.stringToTerraform(this._role),
+      sign_in_audience: cdktn.stringToTerraform(this._signInAudience),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
+      ttl: cdktn.stringToTerraform(this._ttl),
+      azure_groups: cdktn.listMapper(azureSecretBackendRoleAzureGroupsToTerraform, true)(this._azureGroups.internalValue),
+      azure_roles: cdktn.listMapper(azureSecretBackendRoleAzureRolesToTerraform, true)(this._azureRoles.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       application_object_id: {
-        value: cdktf.stringToHclTerraform(this._applicationObjectId),
+        value: cdktn.stringToHclTerraform(this._applicationObjectId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       explicit_max_ttl: {
-        value: cdktf.stringToHclTerraform(this._explicitMaxTtl),
+        value: cdktn.stringToHclTerraform(this._explicitMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_ttl: {
-        value: cdktf.stringToHclTerraform(this._maxTtl),
+        value: cdktn.stringToHclTerraform(this._maxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permanently_delete: {
-        value: cdktf.booleanToHclTerraform(this._permanentlyDelete),
+        value: cdktn.booleanToHclTerraform(this._permanentlyDelete),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       persist_app: {
-        value: cdktf.booleanToHclTerraform(this._persistApp),
+        value: cdktn.booleanToHclTerraform(this._persistApp),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sign_in_audience: {
-        value: cdktf.stringToHclTerraform(this._signInAudience),
+        value: cdktn.stringToHclTerraform(this._signInAudience),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       ttl: {
-        value: cdktf.stringToHclTerraform(this._ttl),
+        value: cdktn.stringToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_groups: {
-        value: cdktf.listMapperHcl(azureSecretBackendRoleAzureGroupsToHclTerraform, true)(this._azureGroups.internalValue),
+        value: cdktn.listMapperHcl(azureSecretBackendRoleAzureGroupsToHclTerraform, true)(this._azureGroups.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AzureSecretBackendRoleAzureGroupsList",
       },
       azure_roles: {
-        value: cdktf.listMapperHcl(azureSecretBackendRoleAzureRolesToHclTerraform, true)(this._azureRoles.internalValue),
+        value: cdktn.listMapperHcl(azureSecretBackendRoleAzureRolesToHclTerraform, true)(this._azureRoles.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AzureSecretBackendRoleAzureRolesList",

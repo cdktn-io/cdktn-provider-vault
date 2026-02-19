@@ -1,54 +1,54 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OktaAuthBackendConfig extends cdktf.TerraformMetaArguments {
+export interface OktaAuthBackendConfig extends cdktn.TerraformMetaArguments {
   /**
   * The metadata to be tied to generated entity alias.
   *   This should be a list or map containing the metadata in key value pairs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#alias_metadata OktaAuthBackend#alias_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#alias_metadata OktaAuthBackend#alias_metadata}
   */
   readonly aliasMetadata?: { [key: string]: string };
   /**
   * The Okta url. Examples: oktapreview.com, okta.com (default)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#base_url OktaAuthBackend#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#base_url OktaAuthBackend#base_url}
   */
   readonly baseUrl?: string;
   /**
   * When true, requests by Okta for a MFA check will be bypassed. This also disallows certain status checks on the account, such as whether the password is expired.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#bypass_okta_mfa OktaAuthBackend#bypass_okta_mfa}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#bypass_okta_mfa OktaAuthBackend#bypass_okta_mfa}
   */
-  readonly bypassOktaMfa?: boolean | cdktf.IResolvable;
+  readonly bypassOktaMfa?: boolean | cdktn.IResolvable;
   /**
   * The description of the auth backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#description OktaAuthBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#description OktaAuthBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#disable_remount OktaAuthBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#disable_remount OktaAuthBackend#disable_remount}
   */
-  readonly disableRemount?: boolean | cdktf.IResolvable;
+  readonly disableRemount?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#group OktaAuthBackend#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#group OktaAuthBackend#group}
   */
-  readonly group?: OktaAuthBackendGroup[] | cdktf.IResolvable;
+  readonly group?: OktaAuthBackendGroup[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#id OktaAuthBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#id OktaAuthBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -57,127 +57,127 @@ export interface OktaAuthBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#namespace OktaAuthBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#namespace OktaAuthBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * The Okta organization. This will be the first part of the url https://XXX.okta.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#organization OktaAuthBackend#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#organization OktaAuthBackend#organization}
   */
   readonly organization: string;
   /**
   * path to mount the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#path OktaAuthBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#path OktaAuthBackend#path}
   */
   readonly path?: string;
   /**
   * The Okta API token. This is required to query Okta for user group membership. If this is not supplied only locally configured groups will be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#token OktaAuthBackend#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token OktaAuthBackend#token}
   */
   readonly token?: string;
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#token_bound_cidrs OktaAuthBackend#token_bound_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_bound_cidrs OktaAuthBackend#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#token_explicit_max_ttl OktaAuthBackend#token_explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_explicit_max_ttl OktaAuthBackend#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#token_max_ttl OktaAuthBackend#token_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_max_ttl OktaAuthBackend#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#token_no_default_policy OktaAuthBackend#token_no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_no_default_policy OktaAuthBackend#token_no_default_policy}
   */
-  readonly tokenNoDefaultPolicy?: boolean | cdktf.IResolvable;
+  readonly tokenNoDefaultPolicy?: boolean | cdktn.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#token_num_uses OktaAuthBackend#token_num_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_num_uses OktaAuthBackend#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#token_period OktaAuthBackend#token_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_period OktaAuthBackend#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#token_policies OktaAuthBackend#token_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_policies OktaAuthBackend#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#token_ttl OktaAuthBackend#token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_ttl OktaAuthBackend#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#token_type OktaAuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_type OktaAuthBackend#token_type}
   */
   readonly tokenType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#tune OktaAuthBackend#tune}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#tune OktaAuthBackend#tune}
   */
-  readonly tune?: OktaAuthBackendTune[] | cdktf.IResolvable;
+  readonly tune?: OktaAuthBackendTune[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#user OktaAuthBackend#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#user OktaAuthBackend#user}
   */
-  readonly user?: OktaAuthBackendUser[] | cdktf.IResolvable;
+  readonly user?: OktaAuthBackendUser[] | cdktn.IResolvable;
 }
 export interface OktaAuthBackendGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#group_name OktaAuthBackend#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#group_name OktaAuthBackend#group_name}
   */
   readonly groupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}
   */
   readonly policies?: string[];
 }
 
-export function oktaAuthBackendGroupToTerraform(struct?: OktaAuthBackendGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oktaAuthBackendGroupToTerraform(struct?: OktaAuthBackendGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_name: struct!.groupName === undefined ? null : cdktf.stringToTerraform(struct!.groupName),
-    policies: struct!.policies === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.policies),
+    group_name: struct!.groupName === undefined ? null : cdktn.stringToTerraform(struct!.groupName),
+    policies: struct!.policies === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.policies),
   }
 }
 
 
-export function oktaAuthBackendGroupToHclTerraform(struct?: OktaAuthBackendGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oktaAuthBackendGroupToHclTerraform(struct?: OktaAuthBackendGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     group_name: {
-      value: struct!.groupName === undefined ? null : cdktf.stringToHclTerraform(struct!.groupName),
+      value: struct!.groupName === undefined ? null : cdktn.stringToHclTerraform(struct!.groupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     policies: {
-      value: struct!.policies === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.policies),
+      value: struct!.policies === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.policies),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -188,9 +188,9 @@ export function oktaAuthBackendGroupToHclTerraform(struct?: OktaAuthBackendGroup
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OktaAuthBackendGroupOutputReference extends cdktf.ComplexObject {
+export class OktaAuthBackendGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -198,11 +198,11 @@ export class OktaAuthBackendGroupOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OktaAuthBackendGroup | cdktf.IResolvable | undefined {
+  public get internalValue(): OktaAuthBackendGroup | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -219,14 +219,14 @@ export class OktaAuthBackendGroupOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OktaAuthBackendGroup | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OktaAuthBackendGroup | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._groupName = undefined;
       this._policies = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -257,7 +257,7 @@ export class OktaAuthBackendGroupOutputReference extends cdktf.ComplexObject {
   // policies - computed: true, optional: true, required: false
   private _policies?: string[]; 
   public get policies() {
-    return cdktf.Fn.tolist(this.getListAttribute('policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('policies'));
   }
   public set policies(value: string[]) {
     this._policies = value;
@@ -271,15 +271,15 @@ export class OktaAuthBackendGroupOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class OktaAuthBackendGroupList extends cdktf.ComplexList {
-  public internalValue? : OktaAuthBackendGroup[] | cdktf.IResolvable
+export class OktaAuthBackendGroupList extends cdktn.ComplexList {
+  public internalValue? : OktaAuthBackendGroup[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -292,107 +292,107 @@ export class OktaAuthBackendGroupList extends cdktf.ComplexList {
 }
 export interface OktaAuthBackendTune {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#allowed_response_headers OktaAuthBackend#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#allowed_response_headers OktaAuthBackend#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#audit_non_hmac_request_keys OktaAuthBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#audit_non_hmac_request_keys OktaAuthBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#audit_non_hmac_response_keys OktaAuthBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#audit_non_hmac_response_keys OktaAuthBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#default_lease_ttl OktaAuthBackend#default_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#default_lease_ttl OktaAuthBackend#default_lease_ttl}
   */
   readonly defaultLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#listing_visibility OktaAuthBackend#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#listing_visibility OktaAuthBackend#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#max_lease_ttl OktaAuthBackend#max_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#max_lease_ttl OktaAuthBackend#max_lease_ttl}
   */
   readonly maxLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#passthrough_request_headers OktaAuthBackend#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#passthrough_request_headers OktaAuthBackend#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#token_type OktaAuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_type OktaAuthBackend#token_type}
   */
   readonly tokenType?: string;
 }
 
-export function oktaAuthBackendTuneToTerraform(struct?: OktaAuthBackendTune | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oktaAuthBackendTuneToTerraform(struct?: OktaAuthBackendTune | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_response_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedResponseHeaders),
-    audit_non_hmac_request_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacRequestKeys),
-    audit_non_hmac_response_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacResponseKeys),
-    default_lease_ttl: cdktf.stringToTerraform(struct!.defaultLeaseTtl),
-    listing_visibility: cdktf.stringToTerraform(struct!.listingVisibility),
-    max_lease_ttl: cdktf.stringToTerraform(struct!.maxLeaseTtl),
-    passthrough_request_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.passthroughRequestHeaders),
-    token_type: cdktf.stringToTerraform(struct!.tokenType),
+    allowed_response_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedResponseHeaders),
+    audit_non_hmac_request_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.auditNonHmacRequestKeys),
+    audit_non_hmac_response_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.auditNonHmacResponseKeys),
+    default_lease_ttl: cdktn.stringToTerraform(struct!.defaultLeaseTtl),
+    listing_visibility: cdktn.stringToTerraform(struct!.listingVisibility),
+    max_lease_ttl: cdktn.stringToTerraform(struct!.maxLeaseTtl),
+    passthrough_request_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.passthroughRequestHeaders),
+    token_type: cdktn.stringToTerraform(struct!.tokenType),
   }
 }
 
 
-export function oktaAuthBackendTuneToHclTerraform(struct?: OktaAuthBackendTune | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oktaAuthBackendTuneToHclTerraform(struct?: OktaAuthBackendTune | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_response_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedResponseHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedResponseHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     audit_non_hmac_request_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacRequestKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.auditNonHmacRequestKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     audit_non_hmac_response_keys: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacResponseKeys),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.auditNonHmacResponseKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     default_lease_ttl: {
-      value: cdktf.stringToHclTerraform(struct!.defaultLeaseTtl),
+      value: cdktn.stringToHclTerraform(struct!.defaultLeaseTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     listing_visibility: {
-      value: cdktf.stringToHclTerraform(struct!.listingVisibility),
+      value: cdktn.stringToHclTerraform(struct!.listingVisibility),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_lease_ttl: {
-      value: cdktf.stringToHclTerraform(struct!.maxLeaseTtl),
+      value: cdktn.stringToHclTerraform(struct!.maxLeaseTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     passthrough_request_headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.passthroughRequestHeaders),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.passthroughRequestHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     token_type: {
-      value: cdktf.stringToHclTerraform(struct!.tokenType),
+      value: cdktn.stringToHclTerraform(struct!.tokenType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -403,9 +403,9 @@ export function oktaAuthBackendTuneToHclTerraform(struct?: OktaAuthBackendTune |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OktaAuthBackendTuneOutputReference extends cdktf.ComplexObject {
+export class OktaAuthBackendTuneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -413,11 +413,11 @@ export class OktaAuthBackendTuneOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OktaAuthBackendTune | cdktf.IResolvable | undefined {
+  public get internalValue(): OktaAuthBackendTune | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -458,7 +458,7 @@ export class OktaAuthBackendTuneOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OktaAuthBackendTune | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OktaAuthBackendTune | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -471,7 +471,7 @@ export class OktaAuthBackendTuneOutputReference extends cdktf.ComplexObject {
       this._passthroughRequestHeaders = undefined;
       this._tokenType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -618,15 +618,15 @@ export class OktaAuthBackendTuneOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class OktaAuthBackendTuneList extends cdktf.ComplexList {
-  public internalValue? : OktaAuthBackendTune[] | cdktf.IResolvable
+export class OktaAuthBackendTuneList extends cdktn.ComplexList {
+  public internalValue? : OktaAuthBackendTune[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -639,52 +639,52 @@ export class OktaAuthBackendTuneList extends cdktf.ComplexList {
 }
 export interface OktaAuthBackendUser {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#groups OktaAuthBackend#groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#groups OktaAuthBackend#groups}
   */
   readonly groups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}
   */
   readonly policies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#username OktaAuthBackend#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#username OktaAuthBackend#username}
   */
   readonly username?: string;
 }
 
-export function oktaAuthBackendUserToTerraform(struct?: OktaAuthBackendUser | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oktaAuthBackendUserToTerraform(struct?: OktaAuthBackendUser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    groups: struct!.groups === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groups),
-    policies: struct!.policies === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.policies),
-    username: struct!.username === undefined ? null : cdktf.stringToTerraform(struct!.username),
+    groups: struct!.groups === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groups),
+    policies: struct!.policies === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.policies),
+    username: struct!.username === undefined ? null : cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function oktaAuthBackendUserToHclTerraform(struct?: OktaAuthBackendUser | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function oktaAuthBackendUserToHclTerraform(struct?: OktaAuthBackendUser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     groups: {
-      value: struct!.groups === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groups),
+      value: struct!.groups === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groups),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     policies: {
-      value: struct!.policies === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.policies),
+      value: struct!.policies === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.policies),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     username: {
-      value: struct!.username === undefined ? null : cdktf.stringToHclTerraform(struct!.username),
+      value: struct!.username === undefined ? null : cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -695,9 +695,9 @@ export function oktaAuthBackendUserToHclTerraform(struct?: OktaAuthBackendUser |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OktaAuthBackendUserOutputReference extends cdktf.ComplexObject {
+export class OktaAuthBackendUserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -705,11 +705,11 @@ export class OktaAuthBackendUserOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): OktaAuthBackendUser | cdktf.IResolvable | undefined {
+  public get internalValue(): OktaAuthBackendUser | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -730,7 +730,7 @@ export class OktaAuthBackendUserOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OktaAuthBackendUser | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OktaAuthBackendUser | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -738,7 +738,7 @@ export class OktaAuthBackendUserOutputReference extends cdktf.ComplexObject {
       this._policies = undefined;
       this._username = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -754,7 +754,7 @@ export class OktaAuthBackendUserOutputReference extends cdktf.ComplexObject {
   // groups - computed: true, optional: true, required: false
   private _groups?: string[]; 
   public get groups() {
-    return cdktf.Fn.tolist(this.getListAttribute('groups'));
+    return cdktn.Fn.tolist(this.getListAttribute('groups'));
   }
   public set groups(value: string[]) {
     this._groups = value;
@@ -770,7 +770,7 @@ export class OktaAuthBackendUserOutputReference extends cdktf.ComplexObject {
   // policies - computed: true, optional: true, required: false
   private _policies?: string[]; 
   public get policies() {
-    return cdktf.Fn.tolist(this.getListAttribute('policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('policies'));
   }
   public set policies(value: string[]) {
     this._policies = value;
@@ -800,15 +800,15 @@ export class OktaAuthBackendUserOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class OktaAuthBackendUserList extends cdktf.ComplexList {
-  public internalValue? : OktaAuthBackendUser[] | cdktf.IResolvable
+export class OktaAuthBackendUserList extends cdktn.ComplexList {
+  public internalValue? : OktaAuthBackendUser[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -821,9 +821,9 @@ export class OktaAuthBackendUserList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend vault_okta_auth_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend vault_okta_auth_backend}
 */
-export class OktaAuthBackend extends cdktf.TerraformResource {
+export class OktaAuthBackend extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -834,14 +834,14 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OktaAuthBackend resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OktaAuthBackend resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OktaAuthBackend to import
-  * @param importFromId The id of the existing OktaAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OktaAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OktaAuthBackend to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_okta_auth_backend", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_okta_auth_backend", importId: importFromId, provider });
       }
 
   // ===========
@@ -849,7 +849,7 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -860,7 +860,7 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_okta_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -937,11 +937,11 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
   }
 
   // bypass_okta_mfa - computed: false, optional: true, required: false
-  private _bypassOktaMfa?: boolean | cdktf.IResolvable; 
+  private _bypassOktaMfa?: boolean | cdktn.IResolvable; 
   public get bypassOktaMfa() {
     return this.getBooleanAttribute('bypass_okta_mfa');
   }
-  public set bypassOktaMfa(value: boolean | cdktf.IResolvable) {
+  public set bypassOktaMfa(value: boolean | cdktn.IResolvable) {
     this._bypassOktaMfa = value;
   }
   public resetBypassOktaMfa() {
@@ -969,11 +969,11 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
   }
 
   // disable_remount - computed: false, optional: true, required: false
-  private _disableRemount?: boolean | cdktf.IResolvable; 
+  private _disableRemount?: boolean | cdktn.IResolvable; 
   public get disableRemount() {
     return this.getBooleanAttribute('disable_remount');
   }
-  public set disableRemount(value: boolean | cdktf.IResolvable) {
+  public set disableRemount(value: boolean | cdktn.IResolvable) {
     this._disableRemount = value;
   }
   public resetDisableRemount() {
@@ -989,7 +989,7 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
   public get group() {
     return this._group;
   }
-  public putGroup(value: OktaAuthBackendGroup[] | cdktf.IResolvable) {
+  public putGroup(value: OktaAuthBackendGroup[] | cdktn.IResolvable) {
     this._group.internalValue = value;
   }
   public resetGroup() {
@@ -1080,7 +1080,7 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
   // token_bound_cidrs - computed: false, optional: true, required: false
   private _tokenBoundCidrs?: string[]; 
   public get tokenBoundCidrs() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_bound_cidrs'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_bound_cidrs'));
   }
   public set tokenBoundCidrs(value: string[]) {
     this._tokenBoundCidrs = value;
@@ -1126,11 +1126,11 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
   }
 
   // token_no_default_policy - computed: false, optional: true, required: false
-  private _tokenNoDefaultPolicy?: boolean | cdktf.IResolvable; 
+  private _tokenNoDefaultPolicy?: boolean | cdktn.IResolvable; 
   public get tokenNoDefaultPolicy() {
     return this.getBooleanAttribute('token_no_default_policy');
   }
-  public set tokenNoDefaultPolicy(value: boolean | cdktf.IResolvable) {
+  public set tokenNoDefaultPolicy(value: boolean | cdktn.IResolvable) {
     this._tokenNoDefaultPolicy = value;
   }
   public resetTokenNoDefaultPolicy() {
@@ -1176,7 +1176,7 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
   // token_policies - computed: false, optional: true, required: false
   private _tokenPolicies?: string[]; 
   public get tokenPolicies() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_policies'));
   }
   public set tokenPolicies(value: string[]) {
     this._tokenPolicies = value;
@@ -1226,7 +1226,7 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
   public get tune() {
     return this._tune;
   }
-  public putTune(value: OktaAuthBackendTune[] | cdktf.IResolvable) {
+  public putTune(value: OktaAuthBackendTune[] | cdktn.IResolvable) {
     this._tune.internalValue = value;
   }
   public resetTune() {
@@ -1242,7 +1242,7 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
   public get user() {
     return this._user;
   }
-  public putUser(value: OktaAuthBackendUser[] | cdktf.IResolvable) {
+  public putUser(value: OktaAuthBackendUser[] | cdktn.IResolvable) {
     this._user.internalValue = value;
   }
   public resetUser() {
@@ -1259,161 +1259,161 @@ export class OktaAuthBackend extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias_metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._aliasMetadata),
-      base_url: cdktf.stringToTerraform(this._baseUrl),
-      bypass_okta_mfa: cdktf.booleanToTerraform(this._bypassOktaMfa),
-      description: cdktf.stringToTerraform(this._description),
-      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
-      group: cdktf.listMapper(oktaAuthBackendGroupToTerraform, false)(this._group.internalValue),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      organization: cdktf.stringToTerraform(this._organization),
-      path: cdktf.stringToTerraform(this._path),
-      token: cdktf.stringToTerraform(this._token),
-      token_bound_cidrs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenBoundCidrs),
-      token_explicit_max_ttl: cdktf.numberToTerraform(this._tokenExplicitMaxTtl),
-      token_max_ttl: cdktf.numberToTerraform(this._tokenMaxTtl),
-      token_no_default_policy: cdktf.booleanToTerraform(this._tokenNoDefaultPolicy),
-      token_num_uses: cdktf.numberToTerraform(this._tokenNumUses),
-      token_period: cdktf.numberToTerraform(this._tokenPeriod),
-      token_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenPolicies),
-      token_ttl: cdktf.numberToTerraform(this._tokenTtl),
-      token_type: cdktf.stringToTerraform(this._tokenType),
-      tune: cdktf.listMapper(oktaAuthBackendTuneToTerraform, false)(this._tune.internalValue),
-      user: cdktf.listMapper(oktaAuthBackendUserToTerraform, false)(this._user.internalValue),
+      alias_metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._aliasMetadata),
+      base_url: cdktn.stringToTerraform(this._baseUrl),
+      bypass_okta_mfa: cdktn.booleanToTerraform(this._bypassOktaMfa),
+      description: cdktn.stringToTerraform(this._description),
+      disable_remount: cdktn.booleanToTerraform(this._disableRemount),
+      group: cdktn.listMapper(oktaAuthBackendGroupToTerraform, false)(this._group.internalValue),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      organization: cdktn.stringToTerraform(this._organization),
+      path: cdktn.stringToTerraform(this._path),
+      token: cdktn.stringToTerraform(this._token),
+      token_bound_cidrs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenBoundCidrs),
+      token_explicit_max_ttl: cdktn.numberToTerraform(this._tokenExplicitMaxTtl),
+      token_max_ttl: cdktn.numberToTerraform(this._tokenMaxTtl),
+      token_no_default_policy: cdktn.booleanToTerraform(this._tokenNoDefaultPolicy),
+      token_num_uses: cdktn.numberToTerraform(this._tokenNumUses),
+      token_period: cdktn.numberToTerraform(this._tokenPeriod),
+      token_policies: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenPolicies),
+      token_ttl: cdktn.numberToTerraform(this._tokenTtl),
+      token_type: cdktn.stringToTerraform(this._tokenType),
+      tune: cdktn.listMapper(oktaAuthBackendTuneToTerraform, false)(this._tune.internalValue),
+      user: cdktn.listMapper(oktaAuthBackendUserToTerraform, false)(this._user.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias_metadata: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._aliasMetadata),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._aliasMetadata),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       base_url: {
-        value: cdktf.stringToHclTerraform(this._baseUrl),
+        value: cdktn.stringToHclTerraform(this._baseUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bypass_okta_mfa: {
-        value: cdktf.booleanToHclTerraform(this._bypassOktaMfa),
+        value: cdktn.booleanToHclTerraform(this._bypassOktaMfa),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_remount: {
-        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        value: cdktn.booleanToHclTerraform(this._disableRemount),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       group: {
-        value: cdktf.listMapperHcl(oktaAuthBackendGroupToHclTerraform, false)(this._group.internalValue),
+        value: cdktn.listMapperHcl(oktaAuthBackendGroupToHclTerraform, false)(this._group.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "OktaAuthBackendGroupList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization: {
-        value: cdktf.stringToHclTerraform(this._organization),
+        value: cdktn.stringToHclTerraform(this._organization),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token: {
-        value: cdktf.stringToHclTerraform(this._token),
+        value: cdktn.stringToHclTerraform(this._token),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_bound_cidrs: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenBoundCidrs),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenBoundCidrs),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       token_explicit_max_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenExplicitMaxTtl),
+        value: cdktn.numberToHclTerraform(this._tokenExplicitMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_max_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenMaxTtl),
+        value: cdktn.numberToHclTerraform(this._tokenMaxTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_no_default_policy: {
-        value: cdktf.booleanToHclTerraform(this._tokenNoDefaultPolicy),
+        value: cdktn.booleanToHclTerraform(this._tokenNoDefaultPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       token_num_uses: {
-        value: cdktf.numberToHclTerraform(this._tokenNumUses),
+        value: cdktn.numberToHclTerraform(this._tokenNumUses),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_period: {
-        value: cdktf.numberToHclTerraform(this._tokenPeriod),
+        value: cdktn.numberToHclTerraform(this._tokenPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_policies: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenPolicies),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenPolicies),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       token_ttl: {
-        value: cdktf.numberToHclTerraform(this._tokenTtl),
+        value: cdktn.numberToHclTerraform(this._tokenTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       token_type: {
-        value: cdktf.stringToHclTerraform(this._tokenType),
+        value: cdktn.stringToHclTerraform(this._tokenType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tune: {
-        value: cdktf.listMapperHcl(oktaAuthBackendTuneToHclTerraform, false)(this._tune.internalValue),
+        value: cdktn.listMapperHcl(oktaAuthBackendTuneToHclTerraform, false)(this._tune.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "OktaAuthBackendTuneList",
       },
       user: {
-        value: cdktf.listMapperHcl(oktaAuthBackendUserToHclTerraform, false)(this._user.internalValue),
+        value: cdktn.listMapperHcl(oktaAuthBackendUserToHclTerraform, false)(this._user.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "OktaAuthBackendUserList",

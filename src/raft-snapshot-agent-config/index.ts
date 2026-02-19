@@ -1,145 +1,145 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RaftSnapshotAgentConfigConfig extends cdktf.TerraformMetaArguments {
+export interface RaftSnapshotAgentConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * AWS access key ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#aws_access_key_id RaftSnapshotAgentConfig#aws_access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#aws_access_key_id RaftSnapshotAgentConfig#aws_access_key_id}
   */
   readonly awsAccessKeyId?: string;
   /**
   * S3 bucket to write snapshots to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#aws_s3_bucket RaftSnapshotAgentConfig#aws_s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#aws_s3_bucket RaftSnapshotAgentConfig#aws_s3_bucket}
   */
   readonly awsS3Bucket?: string;
   /**
   * Disable TLS for the S3 endpoint. This should only be used for testing purposes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#aws_s3_disable_tls RaftSnapshotAgentConfig#aws_s3_disable_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#aws_s3_disable_tls RaftSnapshotAgentConfig#aws_s3_disable_tls}
   */
-  readonly awsS3DisableTls?: boolean | cdktf.IResolvable;
+  readonly awsS3DisableTls?: boolean | cdktn.IResolvable;
   /**
   * Use KMS to encrypt bucket contents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#aws_s3_enable_kms RaftSnapshotAgentConfig#aws_s3_enable_kms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#aws_s3_enable_kms RaftSnapshotAgentConfig#aws_s3_enable_kms}
   */
-  readonly awsS3EnableKms?: boolean | cdktf.IResolvable;
+  readonly awsS3EnableKms?: boolean | cdktn.IResolvable;
   /**
   * AWS endpoint. This is typically only set when using a non-AWS S3 implementation like Minio.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#aws_s3_endpoint RaftSnapshotAgentConfig#aws_s3_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#aws_s3_endpoint RaftSnapshotAgentConfig#aws_s3_endpoint}
   */
   readonly awsS3Endpoint?: string;
   /**
   * Use the endpoint/bucket URL style instead of bucket.endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#aws_s3_force_path_style RaftSnapshotAgentConfig#aws_s3_force_path_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#aws_s3_force_path_style RaftSnapshotAgentConfig#aws_s3_force_path_style}
   */
-  readonly awsS3ForcePathStyle?: boolean | cdktf.IResolvable;
+  readonly awsS3ForcePathStyle?: boolean | cdktn.IResolvable;
   /**
   * Use named KMS key, when aws_s3_enable_kms=true
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#aws_s3_kms_key RaftSnapshotAgentConfig#aws_s3_kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#aws_s3_kms_key RaftSnapshotAgentConfig#aws_s3_kms_key}
   */
   readonly awsS3KmsKey?: string;
   /**
   * AWS region bucket is in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#aws_s3_region RaftSnapshotAgentConfig#aws_s3_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#aws_s3_region RaftSnapshotAgentConfig#aws_s3_region}
   */
   readonly awsS3Region?: string;
   /**
   * Use AES256 to encrypt bucket contents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#aws_s3_server_side_encryption RaftSnapshotAgentConfig#aws_s3_server_side_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#aws_s3_server_side_encryption RaftSnapshotAgentConfig#aws_s3_server_side_encryption}
   */
-  readonly awsS3ServerSideEncryption?: boolean | cdktf.IResolvable;
+  readonly awsS3ServerSideEncryption?: boolean | cdktn.IResolvable;
   /**
   * AWS secret access key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#aws_secret_access_key RaftSnapshotAgentConfig#aws_secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#aws_secret_access_key RaftSnapshotAgentConfig#aws_secret_access_key}
   */
   readonly awsSecretAccessKey?: string;
   /**
   * AWS session token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#aws_session_token RaftSnapshotAgentConfig#aws_session_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#aws_session_token RaftSnapshotAgentConfig#aws_session_token}
   */
   readonly awsSessionToken?: string;
   /**
   * Azure account key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#azure_account_key RaftSnapshotAgentConfig#azure_account_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#azure_account_key RaftSnapshotAgentConfig#azure_account_key}
   */
   readonly azureAccountKey?: string;
   /**
   * Azure account name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#azure_account_name RaftSnapshotAgentConfig#azure_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#azure_account_name RaftSnapshotAgentConfig#azure_account_name}
   */
   readonly azureAccountName?: string;
   /**
   * Azure blob environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#azure_blob_environment RaftSnapshotAgentConfig#azure_blob_environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#azure_blob_environment RaftSnapshotAgentConfig#azure_blob_environment}
   */
   readonly azureBlobEnvironment?: string;
   /**
   * Azure container name to write snapshots to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#azure_container_name RaftSnapshotAgentConfig#azure_container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#azure_container_name RaftSnapshotAgentConfig#azure_container_name}
   */
   readonly azureContainerName?: string;
   /**
   * Azure blob storage endpoint. This is typically only set when using a non-Azure implementation like Azurite.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#azure_endpoint RaftSnapshotAgentConfig#azure_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#azure_endpoint RaftSnapshotAgentConfig#azure_endpoint}
   */
   readonly azureEndpoint?: string;
   /**
   * The file or object name of snapshot files will start with this string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#file_prefix RaftSnapshotAgentConfig#file_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#file_prefix RaftSnapshotAgentConfig#file_prefix}
   */
   readonly filePrefix?: string;
   /**
   * Disable TLS for the GCS endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#google_disable_tls RaftSnapshotAgentConfig#google_disable_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#google_disable_tls RaftSnapshotAgentConfig#google_disable_tls}
   */
-  readonly googleDisableTls?: boolean | cdktf.IResolvable;
+  readonly googleDisableTls?: boolean | cdktn.IResolvable;
   /**
   * GCS endpoint. This is typically only set when using a non-Google GCS implementation like fake-gcs-server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#google_endpoint RaftSnapshotAgentConfig#google_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#google_endpoint RaftSnapshotAgentConfig#google_endpoint}
   */
   readonly googleEndpoint?: string;
   /**
   * GCS bucket to write snapshots to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#google_gcs_bucket RaftSnapshotAgentConfig#google_gcs_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#google_gcs_bucket RaftSnapshotAgentConfig#google_gcs_bucket}
   */
   readonly googleGcsBucket?: string;
   /**
   * Google service account key in JSON format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#google_service_account_key RaftSnapshotAgentConfig#google_service_account_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#google_service_account_key RaftSnapshotAgentConfig#google_service_account_key}
   */
   readonly googleServiceAccountKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#id RaftSnapshotAgentConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#id RaftSnapshotAgentConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -148,51 +148,51 @@ export interface RaftSnapshotAgentConfigConfig extends cdktf.TerraformMetaArgume
   /**
   * Number of seconds between snapshots.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#interval_seconds RaftSnapshotAgentConfig#interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#interval_seconds RaftSnapshotAgentConfig#interval_seconds}
   */
   readonly intervalSeconds: number;
   /**
   * The maximum space, in bytes, to use for snapshots.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#local_max_space RaftSnapshotAgentConfig#local_max_space}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#local_max_space RaftSnapshotAgentConfig#local_max_space}
   */
   readonly localMaxSpace?: number;
   /**
   * Name of the snapshot agent configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#name RaftSnapshotAgentConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#name RaftSnapshotAgentConfig#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#namespace RaftSnapshotAgentConfig#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#namespace RaftSnapshotAgentConfig#namespace}
   */
   readonly namespace?: string;
   /**
   * The directory or bucket prefix to to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#path_prefix RaftSnapshotAgentConfig#path_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#path_prefix RaftSnapshotAgentConfig#path_prefix}
   */
   readonly pathPrefix: string;
   /**
   * How many snapshots are to be kept.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#retain RaftSnapshotAgentConfig#retain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#retain RaftSnapshotAgentConfig#retain}
   */
   readonly retain?: number;
   /**
   * What storage service to send snapshots to. One of "local", "azure-blob", "aws-s3", or "google-gcs".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#storage_type RaftSnapshotAgentConfig#storage_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#storage_type RaftSnapshotAgentConfig#storage_type}
   */
   readonly storageType: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config}
 */
-export class RaftSnapshotAgentConfig extends cdktf.TerraformResource {
+export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -203,14 +203,14 @@ export class RaftSnapshotAgentConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RaftSnapshotAgentConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RaftSnapshotAgentConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RaftSnapshotAgentConfig to import
-  * @param importFromId The id of the existing RaftSnapshotAgentConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RaftSnapshotAgentConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RaftSnapshotAgentConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_raft_snapshot_agent_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_raft_snapshot_agent_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -218,7 +218,7 @@ export class RaftSnapshotAgentConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -229,7 +229,7 @@ export class RaftSnapshotAgentConfig extends cdktf.TerraformResource {
       terraformResourceType: 'vault_raft_snapshot_agent_config',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -308,11 +308,11 @@ export class RaftSnapshotAgentConfig extends cdktf.TerraformResource {
   }
 
   // aws_s3_disable_tls - computed: false, optional: true, required: false
-  private _awsS3DisableTls?: boolean | cdktf.IResolvable; 
+  private _awsS3DisableTls?: boolean | cdktn.IResolvable; 
   public get awsS3DisableTls() {
     return this.getBooleanAttribute('aws_s3_disable_tls');
   }
-  public set awsS3DisableTls(value: boolean | cdktf.IResolvable) {
+  public set awsS3DisableTls(value: boolean | cdktn.IResolvable) {
     this._awsS3DisableTls = value;
   }
   public resetAwsS3DisableTls() {
@@ -324,11 +324,11 @@ export class RaftSnapshotAgentConfig extends cdktf.TerraformResource {
   }
 
   // aws_s3_enable_kms - computed: false, optional: true, required: false
-  private _awsS3EnableKms?: boolean | cdktf.IResolvable; 
+  private _awsS3EnableKms?: boolean | cdktn.IResolvable; 
   public get awsS3EnableKms() {
     return this.getBooleanAttribute('aws_s3_enable_kms');
   }
-  public set awsS3EnableKms(value: boolean | cdktf.IResolvable) {
+  public set awsS3EnableKms(value: boolean | cdktn.IResolvable) {
     this._awsS3EnableKms = value;
   }
   public resetAwsS3EnableKms() {
@@ -356,11 +356,11 @@ export class RaftSnapshotAgentConfig extends cdktf.TerraformResource {
   }
 
   // aws_s3_force_path_style - computed: false, optional: true, required: false
-  private _awsS3ForcePathStyle?: boolean | cdktf.IResolvable; 
+  private _awsS3ForcePathStyle?: boolean | cdktn.IResolvable; 
   public get awsS3ForcePathStyle() {
     return this.getBooleanAttribute('aws_s3_force_path_style');
   }
-  public set awsS3ForcePathStyle(value: boolean | cdktf.IResolvable) {
+  public set awsS3ForcePathStyle(value: boolean | cdktn.IResolvable) {
     this._awsS3ForcePathStyle = value;
   }
   public resetAwsS3ForcePathStyle() {
@@ -404,11 +404,11 @@ export class RaftSnapshotAgentConfig extends cdktf.TerraformResource {
   }
 
   // aws_s3_server_side_encryption - computed: false, optional: true, required: false
-  private _awsS3ServerSideEncryption?: boolean | cdktf.IResolvable; 
+  private _awsS3ServerSideEncryption?: boolean | cdktn.IResolvable; 
   public get awsS3ServerSideEncryption() {
     return this.getBooleanAttribute('aws_s3_server_side_encryption');
   }
-  public set awsS3ServerSideEncryption(value: boolean | cdktf.IResolvable) {
+  public set awsS3ServerSideEncryption(value: boolean | cdktn.IResolvable) {
     this._awsS3ServerSideEncryption = value;
   }
   public resetAwsS3ServerSideEncryption() {
@@ -548,11 +548,11 @@ export class RaftSnapshotAgentConfig extends cdktf.TerraformResource {
   }
 
   // google_disable_tls - computed: false, optional: true, required: false
-  private _googleDisableTls?: boolean | cdktf.IResolvable; 
+  private _googleDisableTls?: boolean | cdktn.IResolvable; 
   public get googleDisableTls() {
     return this.getBooleanAttribute('google_disable_tls');
   }
-  public set googleDisableTls(value: boolean | cdktf.IResolvable) {
+  public set googleDisableTls(value: boolean | cdktn.IResolvable) {
     this._googleDisableTls = value;
   }
   public resetGoogleDisableTls() {
@@ -733,210 +733,210 @@ export class RaftSnapshotAgentConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      aws_access_key_id: cdktf.stringToTerraform(this._awsAccessKeyId),
-      aws_s3_bucket: cdktf.stringToTerraform(this._awsS3Bucket),
-      aws_s3_disable_tls: cdktf.booleanToTerraform(this._awsS3DisableTls),
-      aws_s3_enable_kms: cdktf.booleanToTerraform(this._awsS3EnableKms),
-      aws_s3_endpoint: cdktf.stringToTerraform(this._awsS3Endpoint),
-      aws_s3_force_path_style: cdktf.booleanToTerraform(this._awsS3ForcePathStyle),
-      aws_s3_kms_key: cdktf.stringToTerraform(this._awsS3KmsKey),
-      aws_s3_region: cdktf.stringToTerraform(this._awsS3Region),
-      aws_s3_server_side_encryption: cdktf.booleanToTerraform(this._awsS3ServerSideEncryption),
-      aws_secret_access_key: cdktf.stringToTerraform(this._awsSecretAccessKey),
-      aws_session_token: cdktf.stringToTerraform(this._awsSessionToken),
-      azure_account_key: cdktf.stringToTerraform(this._azureAccountKey),
-      azure_account_name: cdktf.stringToTerraform(this._azureAccountName),
-      azure_blob_environment: cdktf.stringToTerraform(this._azureBlobEnvironment),
-      azure_container_name: cdktf.stringToTerraform(this._azureContainerName),
-      azure_endpoint: cdktf.stringToTerraform(this._azureEndpoint),
-      file_prefix: cdktf.stringToTerraform(this._filePrefix),
-      google_disable_tls: cdktf.booleanToTerraform(this._googleDisableTls),
-      google_endpoint: cdktf.stringToTerraform(this._googleEndpoint),
-      google_gcs_bucket: cdktf.stringToTerraform(this._googleGcsBucket),
-      google_service_account_key: cdktf.stringToTerraform(this._googleServiceAccountKey),
-      id: cdktf.stringToTerraform(this._id),
-      interval_seconds: cdktf.numberToTerraform(this._intervalSeconds),
-      local_max_space: cdktf.numberToTerraform(this._localMaxSpace),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      path_prefix: cdktf.stringToTerraform(this._pathPrefix),
-      retain: cdktf.numberToTerraform(this._retain),
-      storage_type: cdktf.stringToTerraform(this._storageType),
+      aws_access_key_id: cdktn.stringToTerraform(this._awsAccessKeyId),
+      aws_s3_bucket: cdktn.stringToTerraform(this._awsS3Bucket),
+      aws_s3_disable_tls: cdktn.booleanToTerraform(this._awsS3DisableTls),
+      aws_s3_enable_kms: cdktn.booleanToTerraform(this._awsS3EnableKms),
+      aws_s3_endpoint: cdktn.stringToTerraform(this._awsS3Endpoint),
+      aws_s3_force_path_style: cdktn.booleanToTerraform(this._awsS3ForcePathStyle),
+      aws_s3_kms_key: cdktn.stringToTerraform(this._awsS3KmsKey),
+      aws_s3_region: cdktn.stringToTerraform(this._awsS3Region),
+      aws_s3_server_side_encryption: cdktn.booleanToTerraform(this._awsS3ServerSideEncryption),
+      aws_secret_access_key: cdktn.stringToTerraform(this._awsSecretAccessKey),
+      aws_session_token: cdktn.stringToTerraform(this._awsSessionToken),
+      azure_account_key: cdktn.stringToTerraform(this._azureAccountKey),
+      azure_account_name: cdktn.stringToTerraform(this._azureAccountName),
+      azure_blob_environment: cdktn.stringToTerraform(this._azureBlobEnvironment),
+      azure_container_name: cdktn.stringToTerraform(this._azureContainerName),
+      azure_endpoint: cdktn.stringToTerraform(this._azureEndpoint),
+      file_prefix: cdktn.stringToTerraform(this._filePrefix),
+      google_disable_tls: cdktn.booleanToTerraform(this._googleDisableTls),
+      google_endpoint: cdktn.stringToTerraform(this._googleEndpoint),
+      google_gcs_bucket: cdktn.stringToTerraform(this._googleGcsBucket),
+      google_service_account_key: cdktn.stringToTerraform(this._googleServiceAccountKey),
+      id: cdktn.stringToTerraform(this._id),
+      interval_seconds: cdktn.numberToTerraform(this._intervalSeconds),
+      local_max_space: cdktn.numberToTerraform(this._localMaxSpace),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      path_prefix: cdktn.stringToTerraform(this._pathPrefix),
+      retain: cdktn.numberToTerraform(this._retain),
+      storage_type: cdktn.stringToTerraform(this._storageType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       aws_access_key_id: {
-        value: cdktf.stringToHclTerraform(this._awsAccessKeyId),
+        value: cdktn.stringToHclTerraform(this._awsAccessKeyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_s3_bucket: {
-        value: cdktf.stringToHclTerraform(this._awsS3Bucket),
+        value: cdktn.stringToHclTerraform(this._awsS3Bucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_s3_disable_tls: {
-        value: cdktf.booleanToHclTerraform(this._awsS3DisableTls),
+        value: cdktn.booleanToHclTerraform(this._awsS3DisableTls),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       aws_s3_enable_kms: {
-        value: cdktf.booleanToHclTerraform(this._awsS3EnableKms),
+        value: cdktn.booleanToHclTerraform(this._awsS3EnableKms),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       aws_s3_endpoint: {
-        value: cdktf.stringToHclTerraform(this._awsS3Endpoint),
+        value: cdktn.stringToHclTerraform(this._awsS3Endpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_s3_force_path_style: {
-        value: cdktf.booleanToHclTerraform(this._awsS3ForcePathStyle),
+        value: cdktn.booleanToHclTerraform(this._awsS3ForcePathStyle),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       aws_s3_kms_key: {
-        value: cdktf.stringToHclTerraform(this._awsS3KmsKey),
+        value: cdktn.stringToHclTerraform(this._awsS3KmsKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_s3_region: {
-        value: cdktf.stringToHclTerraform(this._awsS3Region),
+        value: cdktn.stringToHclTerraform(this._awsS3Region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_s3_server_side_encryption: {
-        value: cdktf.booleanToHclTerraform(this._awsS3ServerSideEncryption),
+        value: cdktn.booleanToHclTerraform(this._awsS3ServerSideEncryption),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       aws_secret_access_key: {
-        value: cdktf.stringToHclTerraform(this._awsSecretAccessKey),
+        value: cdktn.stringToHclTerraform(this._awsSecretAccessKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       aws_session_token: {
-        value: cdktf.stringToHclTerraform(this._awsSessionToken),
+        value: cdktn.stringToHclTerraform(this._awsSessionToken),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_account_key: {
-        value: cdktf.stringToHclTerraform(this._azureAccountKey),
+        value: cdktn.stringToHclTerraform(this._azureAccountKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_account_name: {
-        value: cdktf.stringToHclTerraform(this._azureAccountName),
+        value: cdktn.stringToHclTerraform(this._azureAccountName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_blob_environment: {
-        value: cdktf.stringToHclTerraform(this._azureBlobEnvironment),
+        value: cdktn.stringToHclTerraform(this._azureBlobEnvironment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_container_name: {
-        value: cdktf.stringToHclTerraform(this._azureContainerName),
+        value: cdktn.stringToHclTerraform(this._azureContainerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       azure_endpoint: {
-        value: cdktf.stringToHclTerraform(this._azureEndpoint),
+        value: cdktn.stringToHclTerraform(this._azureEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file_prefix: {
-        value: cdktf.stringToHclTerraform(this._filePrefix),
+        value: cdktn.stringToHclTerraform(this._filePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       google_disable_tls: {
-        value: cdktf.booleanToHclTerraform(this._googleDisableTls),
+        value: cdktn.booleanToHclTerraform(this._googleDisableTls),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       google_endpoint: {
-        value: cdktf.stringToHclTerraform(this._googleEndpoint),
+        value: cdktn.stringToHclTerraform(this._googleEndpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       google_gcs_bucket: {
-        value: cdktf.stringToHclTerraform(this._googleGcsBucket),
+        value: cdktn.stringToHclTerraform(this._googleGcsBucket),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       google_service_account_key: {
-        value: cdktf.stringToHclTerraform(this._googleServiceAccountKey),
+        value: cdktn.stringToHclTerraform(this._googleServiceAccountKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       interval_seconds: {
-        value: cdktf.numberToHclTerraform(this._intervalSeconds),
+        value: cdktn.numberToHclTerraform(this._intervalSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       local_max_space: {
-        value: cdktf.numberToHclTerraform(this._localMaxSpace),
+        value: cdktn.numberToHclTerraform(this._localMaxSpace),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path_prefix: {
-        value: cdktf.stringToHclTerraform(this._pathPrefix),
+        value: cdktn.stringToHclTerraform(this._pathPrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retain: {
-        value: cdktf.numberToHclTerraform(this._retain),
+        value: cdktn.numberToHclTerraform(this._retain),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       storage_type: {
-        value: cdktf.stringToHclTerraform(this._storageType),
+        value: cdktn.stringToHclTerraform(this._storageType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

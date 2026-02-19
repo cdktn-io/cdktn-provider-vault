@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IdentityOidcClientConfig extends cdktf.TerraformMetaArguments {
+export interface IdentityOidcClientConfig extends cdktn.TerraformMetaArguments {
   /**
   * The time-to-live for access tokens obtained by the client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client#access_token_ttl IdentityOidcClient#access_token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client#access_token_ttl IdentityOidcClient#access_token_ttl}
   */
   readonly accessTokenTtl?: number;
   /**
   * A list of assignment resources associated with the client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client#assignments IdentityOidcClient#assignments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client#assignments IdentityOidcClient#assignments}
   */
   readonly assignments?: string[];
   /**
   * The client type based on its ability to maintain confidentiality of credentials.Defaults to 'confidential'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client#client_type IdentityOidcClient#client_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client#client_type IdentityOidcClient#client_type}
   */
   readonly clientType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client#id IdentityOidcClient#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client#id IdentityOidcClient#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,39 +40,39 @@ export interface IdentityOidcClientConfig extends cdktf.TerraformMetaArguments {
   /**
   * The time-to-live for ID tokens obtained by the client. The value should be less than the verification_ttl on the key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client#id_token_ttl IdentityOidcClient#id_token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client#id_token_ttl IdentityOidcClient#id_token_ttl}
   */
   readonly idTokenTtl?: number;
   /**
   * A reference to a named key resource in Vault. This cannot be modified after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client#key IdentityOidcClient#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client#key IdentityOidcClient#key}
   */
   readonly key?: string;
   /**
   * The name of the client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client#name IdentityOidcClient#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client#name IdentityOidcClient#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client#namespace IdentityOidcClient#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client#namespace IdentityOidcClient#namespace}
   */
   readonly namespace?: string;
   /**
   * Redirection URI values used by the client. One of these values must exactly match the redirect_uri parameter value used in each authentication request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client#redirect_uris IdentityOidcClient#redirect_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client#redirect_uris IdentityOidcClient#redirect_uris}
   */
   readonly redirectUris?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client vault_identity_oidc_client}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client vault_identity_oidc_client}
 */
-export class IdentityOidcClient extends cdktf.TerraformResource {
+export class IdentityOidcClient extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -83,14 +83,14 @@ export class IdentityOidcClient extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IdentityOidcClient resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IdentityOidcClient resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityOidcClient to import
-  * @param importFromId The id of the existing IdentityOidcClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityOidcClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityOidcClient to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_oidc_client", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_oidc_client", importId: importFromId, provider });
       }
 
   // ===========
@@ -98,7 +98,7 @@ export class IdentityOidcClient extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_client vault_identity_oidc_client} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_client vault_identity_oidc_client} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -109,7 +109,7 @@ export class IdentityOidcClient extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_oidc_client',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -154,7 +154,7 @@ export class IdentityOidcClient extends cdktf.TerraformResource {
   // assignments - computed: false, optional: true, required: false
   private _assignments?: string[]; 
   public get assignments() {
-    return cdktf.Fn.tolist(this.getListAttribute('assignments'));
+    return cdktn.Fn.tolist(this.getListAttribute('assignments'));
   }
   public set assignments(value: string[]) {
     this._assignments = value;
@@ -273,7 +273,7 @@ export class IdentityOidcClient extends cdktf.TerraformResource {
   // redirect_uris - computed: false, optional: true, required: false
   private _redirectUris?: string[]; 
   public get redirectUris() {
-    return cdktf.Fn.tolist(this.getListAttribute('redirect_uris'));
+    return cdktn.Fn.tolist(this.getListAttribute('redirect_uris'));
   }
   public set redirectUris(value: string[]) {
     this._redirectUris = value;
@@ -292,70 +292,70 @@ export class IdentityOidcClient extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      access_token_ttl: cdktf.numberToTerraform(this._accessTokenTtl),
-      assignments: cdktf.listMapper(cdktf.stringToTerraform, false)(this._assignments),
-      client_type: cdktf.stringToTerraform(this._clientType),
-      id: cdktf.stringToTerraform(this._id),
-      id_token_ttl: cdktf.numberToTerraform(this._idTokenTtl),
-      key: cdktf.stringToTerraform(this._key),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      redirect_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(this._redirectUris),
+      access_token_ttl: cdktn.numberToTerraform(this._accessTokenTtl),
+      assignments: cdktn.listMapper(cdktn.stringToTerraform, false)(this._assignments),
+      client_type: cdktn.stringToTerraform(this._clientType),
+      id: cdktn.stringToTerraform(this._id),
+      id_token_ttl: cdktn.numberToTerraform(this._idTokenTtl),
+      key: cdktn.stringToTerraform(this._key),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      redirect_uris: cdktn.listMapper(cdktn.stringToTerraform, false)(this._redirectUris),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       access_token_ttl: {
-        value: cdktf.numberToHclTerraform(this._accessTokenTtl),
+        value: cdktn.numberToHclTerraform(this._accessTokenTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       assignments: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._assignments),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._assignments),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       client_type: {
-        value: cdktf.stringToHclTerraform(this._clientType),
+        value: cdktn.stringToHclTerraform(this._clientType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id_token_ttl: {
-        value: cdktf.numberToHclTerraform(this._idTokenTtl),
+        value: cdktn.numberToHclTerraform(this._idTokenTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       key: {
-        value: cdktf.stringToHclTerraform(this._key),
+        value: cdktn.stringToHclTerraform(this._key),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       redirect_uris: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._redirectUris),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._redirectUris),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

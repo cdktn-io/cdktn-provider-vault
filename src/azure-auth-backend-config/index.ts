@@ -1,49 +1,61 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AzureAuthBackendConfigConfig extends cdktf.TerraformMetaArguments {
+export interface AzureAuthBackendConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Unique name of the auth backend to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#backend AzureAuthBackendConfig#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#backend AzureAuthBackendConfig#backend}
   */
   readonly backend?: string;
   /**
   * The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#client_id AzureAuthBackendConfig#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#client_id AzureAuthBackendConfig#client_id}
   */
   readonly clientId?: string;
   /**
-  * The client secret for credentials to query the Azure APIs
+  * The client secret for credentials to query the Azure APIs. Mutually exclusive with 'client_secret_wo'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#client_secret AzureAuthBackendConfig#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#client_secret AzureAuthBackendConfig#client_secret}
   */
   readonly clientSecret?: string;
   /**
+  * The client secret for credentials to query the Azure APIs. This field is write-only and will never be stored in state. Mutually exclusive with 'client_secret'. Requires 'client_secret_wo_version' to trigger updates.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#client_secret_wo AzureAuthBackendConfig#client_secret_wo}
+  */
+  readonly clientSecretWo?: string;
+  /**
+  * Version counter for the write-only client secret. Increment this value to trigger rotation of the client secret. Required when using 'client_secret_wo'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#client_secret_wo_version AzureAuthBackendConfig#client_secret_wo_version}
+  */
+  readonly clientSecretWoVersion?: number;
+  /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#disable_automated_rotation AzureAuthBackendConfig#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#disable_automated_rotation AzureAuthBackendConfig#disable_automated_rotation}
   */
-  readonly disableAutomatedRotation?: boolean | cdktf.IResolvable;
+  readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#environment AzureAuthBackendConfig#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#environment AzureAuthBackendConfig#environment}
   */
   readonly environment?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#id AzureAuthBackendConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#id AzureAuthBackendConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,75 +64,75 @@ export interface AzureAuthBackendConfigConfig extends cdktf.TerraformMetaArgumen
   /**
   * The audience claim value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#identity_token_audience AzureAuthBackendConfig#identity_token_audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#identity_token_audience AzureAuthBackendConfig#identity_token_audience}
   */
   readonly identityTokenAudience?: string;
   /**
   * The TTL of generated identity tokens in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#identity_token_ttl AzureAuthBackendConfig#identity_token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#identity_token_ttl AzureAuthBackendConfig#identity_token_ttl}
   */
   readonly identityTokenTtl?: number;
   /**
   * Maximum number of retries for Azure API requests. Defaults to 3.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#max_retries AzureAuthBackendConfig#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#max_retries AzureAuthBackendConfig#max_retries}
   */
   readonly maxRetries?: number;
   /**
   * The maximum delay in seconds between retries for Azure API requests. Defaults to 60.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#max_retry_delay AzureAuthBackendConfig#max_retry_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#max_retry_delay AzureAuthBackendConfig#max_retry_delay}
   */
   readonly maxRetryDelay?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#namespace AzureAuthBackendConfig#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#namespace AzureAuthBackendConfig#namespace}
   */
   readonly namespace?: string;
   /**
   * The configured URL for the application registered in Azure Active Directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#resource AzureAuthBackendConfig#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#resource AzureAuthBackendConfig#resource}
   */
   readonly resource: string;
   /**
   * The initial delay in seconds between retries for Azure API requests. Defaults to 4.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#retry_delay AzureAuthBackendConfig#retry_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#retry_delay AzureAuthBackendConfig#retry_delay}
   */
   readonly retryDelay?: number;
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#rotation_period AzureAuthBackendConfig#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#rotation_period AzureAuthBackendConfig#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#rotation_schedule AzureAuthBackendConfig#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#rotation_schedule AzureAuthBackendConfig#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#rotation_window AzureAuthBackendConfig#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#rotation_window AzureAuthBackendConfig#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * The tenant id for the Azure Active Directory organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#tenant_id AzureAuthBackendConfig#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#tenant_id AzureAuthBackendConfig#tenant_id}
   */
   readonly tenantId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}
 */
-export class AzureAuthBackendConfig extends cdktf.TerraformResource {
+export class AzureAuthBackendConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -131,14 +143,14 @@ export class AzureAuthBackendConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AzureAuthBackendConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AzureAuthBackendConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzureAuthBackendConfig to import
-  * @param importFromId The id of the existing AzureAuthBackendConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AzureAuthBackendConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzureAuthBackendConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_azure_auth_backend_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_azure_auth_backend_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -146,7 +158,7 @@ export class AzureAuthBackendConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -157,7 +169,7 @@ export class AzureAuthBackendConfig extends cdktf.TerraformResource {
       terraformResourceType: 'vault_azure_auth_backend_config',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -171,6 +183,8 @@ export class AzureAuthBackendConfig extends cdktf.TerraformResource {
     this._backend = config.backend;
     this._clientId = config.clientId;
     this._clientSecret = config.clientSecret;
+    this._clientSecretWo = config.clientSecretWo;
+    this._clientSecretWoVersion = config.clientSecretWoVersion;
     this._disableAutomatedRotation = config.disableAutomatedRotation;
     this._environment = config.environment;
     this._id = config.id;
@@ -239,12 +253,44 @@ export class AzureAuthBackendConfig extends cdktf.TerraformResource {
     return this._clientSecret;
   }
 
+  // client_secret_wo - computed: false, optional: true, required: false
+  private _clientSecretWo?: string; 
+  public get clientSecretWo() {
+    return this.getStringAttribute('client_secret_wo');
+  }
+  public set clientSecretWo(value: string) {
+    this._clientSecretWo = value;
+  }
+  public resetClientSecretWo() {
+    this._clientSecretWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretWoInput() {
+    return this._clientSecretWo;
+  }
+
+  // client_secret_wo_version - computed: false, optional: true, required: false
+  private _clientSecretWoVersion?: number; 
+  public get clientSecretWoVersion() {
+    return this.getNumberAttribute('client_secret_wo_version');
+  }
+  public set clientSecretWoVersion(value: number) {
+    this._clientSecretWoVersion = value;
+  }
+  public resetClientSecretWoVersion() {
+    this._clientSecretWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientSecretWoVersionInput() {
+    return this._clientSecretWoVersion;
+  }
+
   // disable_automated_rotation - computed: false, optional: true, required: false
-  private _disableAutomatedRotation?: boolean | cdktf.IResolvable; 
+  private _disableAutomatedRotation?: boolean | cdktn.IResolvable; 
   public get disableAutomatedRotation() {
     return this.getBooleanAttribute('disable_automated_rotation');
   }
-  public set disableAutomatedRotation(value: boolean | cdktf.IResolvable) {
+  public set disableAutomatedRotation(value: boolean | cdktn.IResolvable) {
     this._disableAutomatedRotation = value;
   }
   public resetDisableAutomatedRotation() {
@@ -463,126 +509,140 @@ export class AzureAuthBackendConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      client_id: cdktf.stringToTerraform(this._clientId),
-      client_secret: cdktf.stringToTerraform(this._clientSecret),
-      disable_automated_rotation: cdktf.booleanToTerraform(this._disableAutomatedRotation),
-      environment: cdktf.stringToTerraform(this._environment),
-      id: cdktf.stringToTerraform(this._id),
-      identity_token_audience: cdktf.stringToTerraform(this._identityTokenAudience),
-      identity_token_ttl: cdktf.numberToTerraform(this._identityTokenTtl),
-      max_retries: cdktf.numberToTerraform(this._maxRetries),
-      max_retry_delay: cdktf.numberToTerraform(this._maxRetryDelay),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      resource: cdktf.stringToTerraform(this._resource),
-      retry_delay: cdktf.numberToTerraform(this._retryDelay),
-      rotation_period: cdktf.numberToTerraform(this._rotationPeriod),
-      rotation_schedule: cdktf.stringToTerraform(this._rotationSchedule),
-      rotation_window: cdktf.numberToTerraform(this._rotationWindow),
-      tenant_id: cdktf.stringToTerraform(this._tenantId),
+      backend: cdktn.stringToTerraform(this._backend),
+      client_id: cdktn.stringToTerraform(this._clientId),
+      client_secret: cdktn.stringToTerraform(this._clientSecret),
+      client_secret_wo: cdktn.stringToTerraform(this._clientSecretWo),
+      client_secret_wo_version: cdktn.numberToTerraform(this._clientSecretWoVersion),
+      disable_automated_rotation: cdktn.booleanToTerraform(this._disableAutomatedRotation),
+      environment: cdktn.stringToTerraform(this._environment),
+      id: cdktn.stringToTerraform(this._id),
+      identity_token_audience: cdktn.stringToTerraform(this._identityTokenAudience),
+      identity_token_ttl: cdktn.numberToTerraform(this._identityTokenTtl),
+      max_retries: cdktn.numberToTerraform(this._maxRetries),
+      max_retry_delay: cdktn.numberToTerraform(this._maxRetryDelay),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      resource: cdktn.stringToTerraform(this._resource),
+      retry_delay: cdktn.numberToTerraform(this._retryDelay),
+      rotation_period: cdktn.numberToTerraform(this._rotationPeriod),
+      rotation_schedule: cdktn.stringToTerraform(this._rotationSchedule),
+      rotation_window: cdktn.numberToTerraform(this._rotationWindow),
+      tenant_id: cdktn.stringToTerraform(this._tenantId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_id: {
-        value: cdktf.stringToHclTerraform(this._clientId),
+        value: cdktn.stringToHclTerraform(this._clientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_secret: {
-        value: cdktf.stringToHclTerraform(this._clientSecret),
+        value: cdktn.stringToHclTerraform(this._clientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
+      client_secret_wo: {
+        value: cdktn.stringToHclTerraform(this._clientSecretWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_secret_wo_version: {
+        value: cdktn.numberToHclTerraform(this._clientSecretWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       disable_automated_rotation: {
-        value: cdktf.booleanToHclTerraform(this._disableAutomatedRotation),
+        value: cdktn.booleanToHclTerraform(this._disableAutomatedRotation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       environment: {
-        value: cdktf.stringToHclTerraform(this._environment),
+        value: cdktn.stringToHclTerraform(this._environment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_token_audience: {
-        value: cdktf.stringToHclTerraform(this._identityTokenAudience),
+        value: cdktn.stringToHclTerraform(this._identityTokenAudience),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity_token_ttl: {
-        value: cdktf.numberToHclTerraform(this._identityTokenTtl),
+        value: cdktn.numberToHclTerraform(this._identityTokenTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_retries: {
-        value: cdktf.numberToHclTerraform(this._maxRetries),
+        value: cdktn.numberToHclTerraform(this._maxRetries),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_retry_delay: {
-        value: cdktf.numberToHclTerraform(this._maxRetryDelay),
+        value: cdktn.numberToHclTerraform(this._maxRetryDelay),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       resource: {
-        value: cdktf.stringToHclTerraform(this._resource),
+        value: cdktn.stringToHclTerraform(this._resource),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retry_delay: {
-        value: cdktf.numberToHclTerraform(this._retryDelay),
+        value: cdktn.numberToHclTerraform(this._retryDelay),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       rotation_period: {
-        value: cdktf.numberToHclTerraform(this._rotationPeriod),
+        value: cdktn.numberToHclTerraform(this._rotationPeriod),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       rotation_schedule: {
-        value: cdktf.stringToHclTerraform(this._rotationSchedule),
+        value: cdktn.stringToHclTerraform(this._rotationSchedule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rotation_window: {
-        value: cdktf.numberToHclTerraform(this._rotationWindow),
+        value: cdktn.numberToHclTerraform(this._rotationWindow),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       tenant_id: {
-        value: cdktf.stringToHclTerraform(this._tenantId),
+        value: cdktn.stringToHclTerraform(this._tenantId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

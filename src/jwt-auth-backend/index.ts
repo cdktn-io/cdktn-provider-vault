@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface JwtAuthBackendConfig extends cdktf.TerraformMetaArguments {
+export interface JwtAuthBackendConfig extends cdktn.TerraformMetaArguments {
   /**
   * The value against which to match the iss claim in a JWT
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#bound_issuer JwtAuthBackend#bound_issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#bound_issuer JwtAuthBackend#bound_issuer}
   */
   readonly boundIssuer?: string;
   /**
   * The default role to use if none is provided during login
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#default_role JwtAuthBackend#default_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#default_role JwtAuthBackend#default_role}
   */
   readonly defaultRole?: string;
   /**
   * The description of the auth backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#description JwtAuthBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#description JwtAuthBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#disable_remount JwtAuthBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#disable_remount JwtAuthBackend#disable_remount}
   */
-  readonly disableRemount?: boolean | cdktf.IResolvable;
+  readonly disableRemount?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#id JwtAuthBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#id JwtAuthBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,213 +46,225 @@ export interface JwtAuthBackendConfig extends cdktf.TerraformMetaArguments {
   /**
   * The CA certificate or chain of certificates, in PEM format, to use to validate connections to the JWKS URL. If not set, system certificates are used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#jwks_ca_pem JwtAuthBackend#jwks_ca_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#jwks_ca_pem JwtAuthBackend#jwks_ca_pem}
   */
   readonly jwksCaPem?: string;
   /**
   * List of JWKS URL and optional CA certificate pairs. Cannot be used with 'jwks_url' or 'jwks_ca_pem'. Requires Vault 1.16+.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#jwks_pairs JwtAuthBackend#jwks_pairs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#jwks_pairs JwtAuthBackend#jwks_pairs}
   */
-  readonly jwksPairs?: { [key: string]: string }[] | cdktf.IResolvable;
+  readonly jwksPairs?: { [key: string]: string }[] | cdktn.IResolvable;
   /**
   * JWKS URL to use to authenticate signatures. Cannot be used with 'oidc_discovery_url' or 'jwt_validation_pubkeys'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#jwks_url JwtAuthBackend#jwks_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#jwks_url JwtAuthBackend#jwks_url}
   */
   readonly jwksUrl?: string;
   /**
   * A list of supported signing algorithms. Defaults to [RS256]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#jwt_supported_algs JwtAuthBackend#jwt_supported_algs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#jwt_supported_algs JwtAuthBackend#jwt_supported_algs}
   */
   readonly jwtSupportedAlgs?: string[];
   /**
   * A list of PEM-encoded public keys to use to authenticate signatures locally. Cannot be used with 'jwks_url' or 'oidc_discovery_url'. 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#jwt_validation_pubkeys JwtAuthBackend#jwt_validation_pubkeys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#jwt_validation_pubkeys JwtAuthBackend#jwt_validation_pubkeys}
   */
   readonly jwtValidationPubkeys?: string[];
   /**
   * Specifies if the auth method is local only
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#local JwtAuthBackend#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#local JwtAuthBackend#local}
   */
-  readonly local?: boolean | cdktf.IResolvable;
+  readonly local?: boolean | cdktn.IResolvable;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#namespace JwtAuthBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#namespace JwtAuthBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * Pass namespace in the OIDC state parameter instead of as a separate query parameter. With this setting, the allowed redirect URL(s) in Vault and on the provider side should not contain a namespace query parameter. This means only one redirect URL entry needs to be maintained on the OIDC provider side for all vault namespaces that will be authenticating against it. Defaults to true for new configs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#namespace_in_state JwtAuthBackend#namespace_in_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#namespace_in_state JwtAuthBackend#namespace_in_state}
   */
-  readonly namespaceInState?: boolean | cdktf.IResolvable;
+  readonly namespaceInState?: boolean | cdktn.IResolvable;
   /**
   * Client ID used for OIDC
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#oidc_client_id JwtAuthBackend#oidc_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#oidc_client_id JwtAuthBackend#oidc_client_id}
   */
   readonly oidcClientId?: string;
   /**
   * Client Secret used for OIDC
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#oidc_client_secret JwtAuthBackend#oidc_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#oidc_client_secret JwtAuthBackend#oidc_client_secret}
   */
   readonly oidcClientSecret?: string;
   /**
+  * Write-only Client Secret used for OIDC. This field is recommended over oidc_client_secret for enhanced security.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#oidc_client_secret_wo JwtAuthBackend#oidc_client_secret_wo}
+  */
+  readonly oidcClientSecretWo?: string;
+  /**
+  * Version counter for write-only oidc_client_secret field. Increment this value to force update of the secret.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#oidc_client_secret_wo_version JwtAuthBackend#oidc_client_secret_wo_version}
+  */
+  readonly oidcClientSecretWoVersion?: number;
+  /**
   * The CA certificate or chain of certificates, in PEM format, to use to validate connections to the OIDC Discovery URL. If not set, system certificates are used
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#oidc_discovery_ca_pem JwtAuthBackend#oidc_discovery_ca_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#oidc_discovery_ca_pem JwtAuthBackend#oidc_discovery_ca_pem}
   */
   readonly oidcDiscoveryCaPem?: string;
   /**
   * The OIDC Discovery URL, without any .well-known component (base path). Cannot be used with 'jwks_url' or 'jwt_validation_pubkeys'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#oidc_discovery_url JwtAuthBackend#oidc_discovery_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#oidc_discovery_url JwtAuthBackend#oidc_discovery_url}
   */
   readonly oidcDiscoveryUrl?: string;
   /**
   * The response mode to be used in the OAuth2 request. Allowed values are 'query' and 'form_post'. Defaults to 'query'. If using Vault namespaces, and oidc_response_mode is 'form_post', then 'namespace_in_state' should be set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#oidc_response_mode JwtAuthBackend#oidc_response_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#oidc_response_mode JwtAuthBackend#oidc_response_mode}
   */
   readonly oidcResponseMode?: string;
   /**
   * The response types to request. Allowed values are 'code' and 'id_token'. Defaults to 'code'. Note: 'id_token' may only be used if 'oidc_response_mode' is set to 'form_post'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#oidc_response_types JwtAuthBackend#oidc_response_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#oidc_response_types JwtAuthBackend#oidc_response_types}
   */
   readonly oidcResponseTypes?: string[];
   /**
   * path to mount the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#path JwtAuthBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#path JwtAuthBackend#path}
   */
   readonly path?: string;
   /**
   * Provider specific handling configuration
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#provider_config JwtAuthBackend#provider_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#provider_config JwtAuthBackend#provider_config}
   */
   readonly providerConfig?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#tune JwtAuthBackend#tune}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#tune JwtAuthBackend#tune}
   */
-  readonly tune?: JwtAuthBackendTune[] | cdktf.IResolvable;
+  readonly tune?: JwtAuthBackendTune[] | cdktn.IResolvable;
   /**
   * Type of backend. Can be either 'jwt' or 'oidc'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#type JwtAuthBackend#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#type JwtAuthBackend#type}
   */
   readonly type?: string;
 }
 export interface JwtAuthBackendTune {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#allowed_response_headers JwtAuthBackend#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#allowed_response_headers JwtAuthBackend#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#audit_non_hmac_request_keys JwtAuthBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#audit_non_hmac_request_keys JwtAuthBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#audit_non_hmac_response_keys JwtAuthBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#audit_non_hmac_response_keys JwtAuthBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#default_lease_ttl JwtAuthBackend#default_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#default_lease_ttl JwtAuthBackend#default_lease_ttl}
   */
   readonly defaultLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#listing_visibility JwtAuthBackend#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#listing_visibility JwtAuthBackend#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#max_lease_ttl JwtAuthBackend#max_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#max_lease_ttl JwtAuthBackend#max_lease_ttl}
   */
   readonly maxLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#passthrough_request_headers JwtAuthBackend#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#passthrough_request_headers JwtAuthBackend#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#token_type JwtAuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#token_type JwtAuthBackend#token_type}
   */
   readonly tokenType?: string;
 }
 
-export function jwtAuthBackendTuneToTerraform(struct?: JwtAuthBackendTune | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jwtAuthBackendTuneToTerraform(struct?: JwtAuthBackendTune | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_response_headers: struct!.allowedResponseHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedResponseHeaders),
-    audit_non_hmac_request_keys: struct!.auditNonHmacRequestKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacRequestKeys),
-    audit_non_hmac_response_keys: struct!.auditNonHmacResponseKeys === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.auditNonHmacResponseKeys),
-    default_lease_ttl: struct!.defaultLeaseTtl === undefined ? null : cdktf.stringToTerraform(struct!.defaultLeaseTtl),
-    listing_visibility: struct!.listingVisibility === undefined ? null : cdktf.stringToTerraform(struct!.listingVisibility),
-    max_lease_ttl: struct!.maxLeaseTtl === undefined ? null : cdktf.stringToTerraform(struct!.maxLeaseTtl),
-    passthrough_request_headers: struct!.passthroughRequestHeaders === undefined ? null : cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.passthroughRequestHeaders),
-    token_type: struct!.tokenType === undefined ? null : cdktf.stringToTerraform(struct!.tokenType),
+    allowed_response_headers: struct!.allowedResponseHeaders === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedResponseHeaders),
+    audit_non_hmac_request_keys: struct!.auditNonHmacRequestKeys === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.auditNonHmacRequestKeys),
+    audit_non_hmac_response_keys: struct!.auditNonHmacResponseKeys === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.auditNonHmacResponseKeys),
+    default_lease_ttl: struct!.defaultLeaseTtl === undefined ? null : cdktn.stringToTerraform(struct!.defaultLeaseTtl),
+    listing_visibility: struct!.listingVisibility === undefined ? null : cdktn.stringToTerraform(struct!.listingVisibility),
+    max_lease_ttl: struct!.maxLeaseTtl === undefined ? null : cdktn.stringToTerraform(struct!.maxLeaseTtl),
+    passthrough_request_headers: struct!.passthroughRequestHeaders === undefined ? null : cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.passthroughRequestHeaders),
+    token_type: struct!.tokenType === undefined ? null : cdktn.stringToTerraform(struct!.tokenType),
   }
 }
 
 
-export function jwtAuthBackendTuneToHclTerraform(struct?: JwtAuthBackendTune | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function jwtAuthBackendTuneToHclTerraform(struct?: JwtAuthBackendTune | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_response_headers: {
-      value: struct!.allowedResponseHeaders === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedResponseHeaders),
+      value: struct!.allowedResponseHeaders === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedResponseHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     audit_non_hmac_request_keys: {
-      value: struct!.auditNonHmacRequestKeys === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacRequestKeys),
+      value: struct!.auditNonHmacRequestKeys === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.auditNonHmacRequestKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     audit_non_hmac_response_keys: {
-      value: struct!.auditNonHmacResponseKeys === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.auditNonHmacResponseKeys),
+      value: struct!.auditNonHmacResponseKeys === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.auditNonHmacResponseKeys),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     default_lease_ttl: {
-      value: struct!.defaultLeaseTtl === undefined ? null : cdktf.stringToHclTerraform(struct!.defaultLeaseTtl),
+      value: struct!.defaultLeaseTtl === undefined ? null : cdktn.stringToHclTerraform(struct!.defaultLeaseTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     listing_visibility: {
-      value: struct!.listingVisibility === undefined ? null : cdktf.stringToHclTerraform(struct!.listingVisibility),
+      value: struct!.listingVisibility === undefined ? null : cdktn.stringToHclTerraform(struct!.listingVisibility),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     max_lease_ttl: {
-      value: struct!.maxLeaseTtl === undefined ? null : cdktf.stringToHclTerraform(struct!.maxLeaseTtl),
+      value: struct!.maxLeaseTtl === undefined ? null : cdktn.stringToHclTerraform(struct!.maxLeaseTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     passthrough_request_headers: {
-      value: struct!.passthroughRequestHeaders === undefined ? null : cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.passthroughRequestHeaders),
+      value: struct!.passthroughRequestHeaders === undefined ? null : cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.passthroughRequestHeaders),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     token_type: {
-      value: struct!.tokenType === undefined ? null : cdktf.stringToHclTerraform(struct!.tokenType),
+      value: struct!.tokenType === undefined ? null : cdktn.stringToHclTerraform(struct!.tokenType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -263,9 +275,9 @@ export function jwtAuthBackendTuneToHclTerraform(struct?: JwtAuthBackendTune | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class JwtAuthBackendTuneOutputReference extends cdktf.ComplexObject {
+export class JwtAuthBackendTuneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -273,11 +285,11 @@ export class JwtAuthBackendTuneOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): JwtAuthBackendTune | cdktf.IResolvable | undefined {
+  public get internalValue(): JwtAuthBackendTune | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -318,7 +330,7 @@ export class JwtAuthBackendTuneOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: JwtAuthBackendTune | cdktf.IResolvable | undefined) {
+  public set internalValue(value: JwtAuthBackendTune | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -331,7 +343,7 @@ export class JwtAuthBackendTuneOutputReference extends cdktf.ComplexObject {
       this._passthroughRequestHeaders = undefined;
       this._tokenType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -478,15 +490,15 @@ export class JwtAuthBackendTuneOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class JwtAuthBackendTuneList extends cdktf.ComplexList {
-  public internalValue? : JwtAuthBackendTune[] | cdktf.IResolvable
+export class JwtAuthBackendTuneList extends cdktn.ComplexList {
+  public internalValue? : JwtAuthBackendTune[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -499,9 +511,9 @@ export class JwtAuthBackendTuneList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend}
 */
-export class JwtAuthBackend extends cdktf.TerraformResource {
+export class JwtAuthBackend extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -512,14 +524,14 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a JwtAuthBackend resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a JwtAuthBackend resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the JwtAuthBackend to import
-  * @param importFromId The id of the existing JwtAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing JwtAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the JwtAuthBackend to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_jwt_auth_backend", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_jwt_auth_backend", importId: importFromId, provider });
       }
 
   // ===========
@@ -527,7 +539,7 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -538,7 +550,7 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
       terraformResourceType: 'vault_jwt_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -564,6 +576,8 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
     this._namespaceInState = config.namespaceInState;
     this._oidcClientId = config.oidcClientId;
     this._oidcClientSecret = config.oidcClientSecret;
+    this._oidcClientSecretWo = config.oidcClientSecretWo;
+    this._oidcClientSecretWoVersion = config.oidcClientSecretWoVersion;
     this._oidcDiscoveryCaPem = config.oidcDiscoveryCaPem;
     this._oidcDiscoveryUrl = config.oidcDiscoveryUrl;
     this._oidcResponseMode = config.oidcResponseMode;
@@ -632,11 +646,11 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
   }
 
   // disable_remount - computed: false, optional: true, required: false
-  private _disableRemount?: boolean | cdktf.IResolvable; 
+  private _disableRemount?: boolean | cdktn.IResolvable; 
   public get disableRemount() {
     return this.getBooleanAttribute('disable_remount');
   }
-  public set disableRemount(value: boolean | cdktf.IResolvable) {
+  public set disableRemount(value: boolean | cdktn.IResolvable) {
     this._disableRemount = value;
   }
   public resetDisableRemount() {
@@ -680,11 +694,11 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
   }
 
   // jwks_pairs - computed: false, optional: true, required: false
-  private _jwksPairs?: { [key: string]: string }[] | cdktf.IResolvable; 
+  private _jwksPairs?: { [key: string]: string }[] | cdktn.IResolvable; 
   public get jwksPairs() {
     return this.interpolationForAttribute('jwks_pairs');
   }
-  public set jwksPairs(value: { [key: string]: string }[] | cdktf.IResolvable) {
+  public set jwksPairs(value: { [key: string]: string }[] | cdktn.IResolvable) {
     this._jwksPairs = value;
   }
   public resetJwksPairs() {
@@ -744,11 +758,11 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
   }
 
   // local - computed: false, optional: true, required: false
-  private _local?: boolean | cdktf.IResolvable; 
+  private _local?: boolean | cdktn.IResolvable; 
   public get local() {
     return this.getBooleanAttribute('local');
   }
-  public set local(value: boolean | cdktf.IResolvable) {
+  public set local(value: boolean | cdktn.IResolvable) {
     this._local = value;
   }
   public resetLocal() {
@@ -776,11 +790,11 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
   }
 
   // namespace_in_state - computed: false, optional: true, required: false
-  private _namespaceInState?: boolean | cdktf.IResolvable; 
+  private _namespaceInState?: boolean | cdktn.IResolvable; 
   public get namespaceInState() {
     return this.getBooleanAttribute('namespace_in_state');
   }
-  public set namespaceInState(value: boolean | cdktf.IResolvable) {
+  public set namespaceInState(value: boolean | cdktn.IResolvable) {
     this._namespaceInState = value;
   }
   public resetNamespaceInState() {
@@ -821,6 +835,38 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get oidcClientSecretInput() {
     return this._oidcClientSecret;
+  }
+
+  // oidc_client_secret_wo - computed: false, optional: true, required: false
+  private _oidcClientSecretWo?: string; 
+  public get oidcClientSecretWo() {
+    return this.getStringAttribute('oidc_client_secret_wo');
+  }
+  public set oidcClientSecretWo(value: string) {
+    this._oidcClientSecretWo = value;
+  }
+  public resetOidcClientSecretWo() {
+    this._oidcClientSecretWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oidcClientSecretWoInput() {
+    return this._oidcClientSecretWo;
+  }
+
+  // oidc_client_secret_wo_version - computed: false, optional: true, required: false
+  private _oidcClientSecretWoVersion?: number; 
+  public get oidcClientSecretWoVersion() {
+    return this.getNumberAttribute('oidc_client_secret_wo_version');
+  }
+  public set oidcClientSecretWoVersion(value: number) {
+    this._oidcClientSecretWoVersion = value;
+  }
+  public resetOidcClientSecretWoVersion() {
+    this._oidcClientSecretWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oidcClientSecretWoVersionInput() {
+    return this._oidcClientSecretWoVersion;
   }
 
   // oidc_discovery_ca_pem - computed: false, optional: true, required: false
@@ -924,7 +970,7 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
   public get tune() {
     return this._tune;
   }
-  public putTune(value: JwtAuthBackendTune[] | cdktf.IResolvable) {
+  public putTune(value: JwtAuthBackendTune[] | cdktn.IResolvable) {
     this._tune.internalValue = value;
   }
   public resetTune() {
@@ -957,168 +1003,182 @@ export class JwtAuthBackend extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bound_issuer: cdktf.stringToTerraform(this._boundIssuer),
-      default_role: cdktf.stringToTerraform(this._defaultRole),
-      description: cdktf.stringToTerraform(this._description),
-      disable_remount: cdktf.booleanToTerraform(this._disableRemount),
-      id: cdktf.stringToTerraform(this._id),
-      jwks_ca_pem: cdktf.stringToTerraform(this._jwksCaPem),
-      jwks_pairs: cdktf.listMapper(cdktf.hashMapper(cdktf.stringToTerraform), false)(this._jwksPairs),
-      jwks_url: cdktf.stringToTerraform(this._jwksUrl),
-      jwt_supported_algs: cdktf.listMapper(cdktf.stringToTerraform, false)(this._jwtSupportedAlgs),
-      jwt_validation_pubkeys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._jwtValidationPubkeys),
-      local: cdktf.booleanToTerraform(this._local),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      namespace_in_state: cdktf.booleanToTerraform(this._namespaceInState),
-      oidc_client_id: cdktf.stringToTerraform(this._oidcClientId),
-      oidc_client_secret: cdktf.stringToTerraform(this._oidcClientSecret),
-      oidc_discovery_ca_pem: cdktf.stringToTerraform(this._oidcDiscoveryCaPem),
-      oidc_discovery_url: cdktf.stringToTerraform(this._oidcDiscoveryUrl),
-      oidc_response_mode: cdktf.stringToTerraform(this._oidcResponseMode),
-      oidc_response_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._oidcResponseTypes),
-      path: cdktf.stringToTerraform(this._path),
-      provider_config: cdktf.hashMapper(cdktf.stringToTerraform)(this._providerConfig),
-      tune: cdktf.listMapper(jwtAuthBackendTuneToTerraform, false)(this._tune.internalValue),
-      type: cdktf.stringToTerraform(this._type),
+      bound_issuer: cdktn.stringToTerraform(this._boundIssuer),
+      default_role: cdktn.stringToTerraform(this._defaultRole),
+      description: cdktn.stringToTerraform(this._description),
+      disable_remount: cdktn.booleanToTerraform(this._disableRemount),
+      id: cdktn.stringToTerraform(this._id),
+      jwks_ca_pem: cdktn.stringToTerraform(this._jwksCaPem),
+      jwks_pairs: cdktn.listMapper(cdktn.hashMapper(cdktn.stringToTerraform), false)(this._jwksPairs),
+      jwks_url: cdktn.stringToTerraform(this._jwksUrl),
+      jwt_supported_algs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._jwtSupportedAlgs),
+      jwt_validation_pubkeys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._jwtValidationPubkeys),
+      local: cdktn.booleanToTerraform(this._local),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      namespace_in_state: cdktn.booleanToTerraform(this._namespaceInState),
+      oidc_client_id: cdktn.stringToTerraform(this._oidcClientId),
+      oidc_client_secret: cdktn.stringToTerraform(this._oidcClientSecret),
+      oidc_client_secret_wo: cdktn.stringToTerraform(this._oidcClientSecretWo),
+      oidc_client_secret_wo_version: cdktn.numberToTerraform(this._oidcClientSecretWoVersion),
+      oidc_discovery_ca_pem: cdktn.stringToTerraform(this._oidcDiscoveryCaPem),
+      oidc_discovery_url: cdktn.stringToTerraform(this._oidcDiscoveryUrl),
+      oidc_response_mode: cdktn.stringToTerraform(this._oidcResponseMode),
+      oidc_response_types: cdktn.listMapper(cdktn.stringToTerraform, false)(this._oidcResponseTypes),
+      path: cdktn.stringToTerraform(this._path),
+      provider_config: cdktn.hashMapper(cdktn.stringToTerraform)(this._providerConfig),
+      tune: cdktn.listMapper(jwtAuthBackendTuneToTerraform, false)(this._tune.internalValue),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bound_issuer: {
-        value: cdktf.stringToHclTerraform(this._boundIssuer),
+        value: cdktn.stringToHclTerraform(this._boundIssuer),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_role: {
-        value: cdktf.stringToHclTerraform(this._defaultRole),
+        value: cdktn.stringToHclTerraform(this._defaultRole),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_remount: {
-        value: cdktf.booleanToHclTerraform(this._disableRemount),
+        value: cdktn.booleanToHclTerraform(this._disableRemount),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       jwks_ca_pem: {
-        value: cdktf.stringToHclTerraform(this._jwksCaPem),
+        value: cdktn.stringToHclTerraform(this._jwksCaPem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       jwks_pairs: {
-        value: cdktf.listMapperHcl(cdktf.hashMapperHcl(cdktf.stringToHclTerraform), false)(this._jwksPairs),
+        value: cdktn.listMapperHcl(cdktn.hashMapperHcl(cdktn.stringToHclTerraform), false)(this._jwksPairs),
         isBlock: false,
         type: "list",
         storageClassType: "stringMapList",
       },
       jwks_url: {
-        value: cdktf.stringToHclTerraform(this._jwksUrl),
+        value: cdktn.stringToHclTerraform(this._jwksUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       jwt_supported_algs: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._jwtSupportedAlgs),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._jwtSupportedAlgs),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       jwt_validation_pubkeys: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._jwtValidationPubkeys),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._jwtValidationPubkeys),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       local: {
-        value: cdktf.booleanToHclTerraform(this._local),
+        value: cdktn.booleanToHclTerraform(this._local),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace_in_state: {
-        value: cdktf.booleanToHclTerraform(this._namespaceInState),
+        value: cdktn.booleanToHclTerraform(this._namespaceInState),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       oidc_client_id: {
-        value: cdktf.stringToHclTerraform(this._oidcClientId),
+        value: cdktn.stringToHclTerraform(this._oidcClientId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oidc_client_secret: {
-        value: cdktf.stringToHclTerraform(this._oidcClientSecret),
+        value: cdktn.stringToHclTerraform(this._oidcClientSecret),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
+      oidc_client_secret_wo: {
+        value: cdktn.stringToHclTerraform(this._oidcClientSecretWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      oidc_client_secret_wo_version: {
+        value: cdktn.numberToHclTerraform(this._oidcClientSecretWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       oidc_discovery_ca_pem: {
-        value: cdktf.stringToHclTerraform(this._oidcDiscoveryCaPem),
+        value: cdktn.stringToHclTerraform(this._oidcDiscoveryCaPem),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oidc_discovery_url: {
-        value: cdktf.stringToHclTerraform(this._oidcDiscoveryUrl),
+        value: cdktn.stringToHclTerraform(this._oidcDiscoveryUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oidc_response_mode: {
-        value: cdktf.stringToHclTerraform(this._oidcResponseMode),
+        value: cdktn.stringToHclTerraform(this._oidcResponseMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       oidc_response_types: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._oidcResponseTypes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._oidcResponseTypes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       provider_config: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._providerConfig),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._providerConfig),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       tune: {
-        value: cdktf.listMapperHcl(jwtAuthBackendTuneToHclTerraform, false)(this._tune.internalValue),
+        value: cdktn.listMapperHcl(jwtAuthBackendTuneToHclTerraform, false)(this._tune.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "JwtAuthBackendTuneList",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

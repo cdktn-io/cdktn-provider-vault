@@ -1,28 +1,28 @@
-# `transitSecretBackendKey` Submodule <a name="`transitSecretBackendKey` Submodule" id="@cdktf/provider-vault.transitSecretBackendKey"></a>
+# `transitSecretBackendKey` Submodule <a name="`transitSecretBackendKey` Submodule" id="@cdktn/provider-vault.transitSecretBackendKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### TransitSecretBackendKey <a name="TransitSecretBackendKey" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey"></a>
+### TransitSecretBackendKey <a name="TransitSecretBackendKey" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key vault_transit_secret_backend_key}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer"></a>
 
 ```typescript
-import { transitSecretBackendKey } from '@cdktf/provider-vault'
+import { transitSecretBackendKey } from '@cdktn/provider-vault'
 
 new transitSecretBackendKey.TransitSecretBackendKey(scope: Construct, id: string, config: TransitSecretBackendKeyConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig">TransitSecretBackendKeyConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig">TransitSecretBackendKeyConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig">TransitSecretBackendKeyConfig</a>
+- *Type:* <a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig">TransitSecretBackendKeyConfig</a>
 
 ---
 
@@ -50,48 +50,51 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetAllowPlaintextBackup">resetAllowPlaintextBackup</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetAutoRotatePeriod">resetAutoRotatePeriod</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetConvergentEncryption">resetConvergentEncryption</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetDeletionAllowed">resetDeletionAllowed</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetDerived">resetDerived</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetExportable">resetExportable</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetHybridKeyTypeEc">resetHybridKeyTypeEc</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetHybridKeyTypePqc">resetHybridKeyTypePqc</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetKeySize">resetKeySize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetMinDecryptionVersion">resetMinDecryptionVersion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetMinEncryptionVersion">resetMinEncryptionVersion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetNamespace">resetNamespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetParameterSet">resetParameterSet</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetType">resetType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetAllowPlaintextBackup">resetAllowPlaintextBackup</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetAutoRotatePeriod">resetAutoRotatePeriod</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetContext">resetContext</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetConvergentEncryption">resetConvergentEncryption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetDeletionAllowed">resetDeletionAllowed</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetDerived">resetDerived</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetExportable">resetExportable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetHybridKeyTypeEc">resetHybridKeyTypeEc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetHybridKeyTypePqc">resetHybridKeyTypePqc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetKeySize">resetKeySize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetManagedKeyId">resetManagedKeyId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetManagedKeyName">resetManagedKeyName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetMinDecryptionVersion">resetMinDecryptionVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetMinEncryptionVersion">resetMinEncryptionVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetNamespace">resetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetParameterSet">resetParameterSet</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetType">resetType</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toString"></a>
 
 ```typescript
 public toString(): string
@@ -99,25 +102,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -125,7 +128,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -133,7 +136,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -141,19 +144,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -161,7 +164,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -169,7 +172,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -177,151 +180,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -331,7 +334,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -339,7 +342,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -347,7 +350,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -355,7 +358,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -363,7 +366,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -371,7 +374,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -379,91 +382,109 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAllowPlaintextBackup` <a name="resetAllowPlaintextBackup" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetAllowPlaintextBackup"></a>
+##### `resetAllowPlaintextBackup` <a name="resetAllowPlaintextBackup" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetAllowPlaintextBackup"></a>
 
 ```typescript
 public resetAllowPlaintextBackup(): void
 ```
 
-##### `resetAutoRotatePeriod` <a name="resetAutoRotatePeriod" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetAutoRotatePeriod"></a>
+##### `resetAutoRotatePeriod` <a name="resetAutoRotatePeriod" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetAutoRotatePeriod"></a>
 
 ```typescript
 public resetAutoRotatePeriod(): void
 ```
 
-##### `resetConvergentEncryption` <a name="resetConvergentEncryption" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetConvergentEncryption"></a>
+##### `resetContext` <a name="resetContext" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetContext"></a>
+
+```typescript
+public resetContext(): void
+```
+
+##### `resetConvergentEncryption` <a name="resetConvergentEncryption" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetConvergentEncryption"></a>
 
 ```typescript
 public resetConvergentEncryption(): void
 ```
 
-##### `resetDeletionAllowed` <a name="resetDeletionAllowed" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetDeletionAllowed"></a>
+##### `resetDeletionAllowed` <a name="resetDeletionAllowed" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetDeletionAllowed"></a>
 
 ```typescript
 public resetDeletionAllowed(): void
 ```
 
-##### `resetDerived` <a name="resetDerived" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetDerived"></a>
+##### `resetDerived` <a name="resetDerived" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetDerived"></a>
 
 ```typescript
 public resetDerived(): void
 ```
 
-##### `resetExportable` <a name="resetExportable" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetExportable"></a>
+##### `resetExportable` <a name="resetExportable" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetExportable"></a>
 
 ```typescript
 public resetExportable(): void
 ```
 
-##### `resetHybridKeyTypeEc` <a name="resetHybridKeyTypeEc" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetHybridKeyTypeEc"></a>
+##### `resetHybridKeyTypeEc` <a name="resetHybridKeyTypeEc" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetHybridKeyTypeEc"></a>
 
 ```typescript
 public resetHybridKeyTypeEc(): void
 ```
 
-##### `resetHybridKeyTypePqc` <a name="resetHybridKeyTypePqc" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetHybridKeyTypePqc"></a>
+##### `resetHybridKeyTypePqc` <a name="resetHybridKeyTypePqc" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetHybridKeyTypePqc"></a>
 
 ```typescript
 public resetHybridKeyTypePqc(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetKeySize` <a name="resetKeySize" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetKeySize"></a>
+##### `resetKeySize` <a name="resetKeySize" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetKeySize"></a>
 
 ```typescript
 public resetKeySize(): void
 ```
 
-##### `resetMinDecryptionVersion` <a name="resetMinDecryptionVersion" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetMinDecryptionVersion"></a>
+##### `resetManagedKeyId` <a name="resetManagedKeyId" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetManagedKeyId"></a>
+
+```typescript
+public resetManagedKeyId(): void
+```
+
+##### `resetManagedKeyName` <a name="resetManagedKeyName" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetManagedKeyName"></a>
+
+```typescript
+public resetManagedKeyName(): void
+```
+
+##### `resetMinDecryptionVersion` <a name="resetMinDecryptionVersion" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetMinDecryptionVersion"></a>
 
 ```typescript
 public resetMinDecryptionVersion(): void
 ```
 
-##### `resetMinEncryptionVersion` <a name="resetMinEncryptionVersion" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetMinEncryptionVersion"></a>
+##### `resetMinEncryptionVersion` <a name="resetMinEncryptionVersion" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetMinEncryptionVersion"></a>
 
 ```typescript
 public resetMinEncryptionVersion(): void
 ```
 
-##### `resetNamespace` <a name="resetNamespace" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetNamespace"></a>
+##### `resetNamespace` <a name="resetNamespace" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetNamespace"></a>
 
 ```typescript
 public resetNamespace(): void
 ```
 
-##### `resetParameterSet` <a name="resetParameterSet" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetParameterSet"></a>
+##### `resetParameterSet` <a name="resetParameterSet" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetParameterSet"></a>
 
 ```typescript
 public resetParameterSet(): void
 ```
 
-##### `resetType` <a name="resetType" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetType"></a>
+##### `resetType` <a name="resetType" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.resetType"></a>
 
 ```typescript
 public resetType(): void
@@ -473,17 +494,17 @@ public resetType(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a TransitSecretBackendKey resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a TransitSecretBackendKey resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isConstruct"></a>
 
 ```typescript
-import { transitSecretBackendKey } from '@cdktf/provider-vault'
+import { transitSecretBackendKey } from '@cdktn/provider-vault'
 
 transitSecretBackendKey.TransitSecretBackendKey.isConstruct(x: any)
 ```
@@ -504,7 +525,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -512,45 +533,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformElement"></a>
 
 ```typescript
-import { transitSecretBackendKey } from '@cdktf/provider-vault'
+import { transitSecretBackendKey } from '@cdktn/provider-vault'
 
 transitSecretBackendKey.TransitSecretBackendKey.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformResource"></a>
 
 ```typescript
-import { transitSecretBackendKey } from '@cdktf/provider-vault'
+import { transitSecretBackendKey } from '@cdktn/provider-vault'
 
 transitSecretBackendKey.TransitSecretBackendKey.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.generateConfigForImport"></a>
 
 ```typescript
-import { transitSecretBackendKey } from '@cdktf/provider-vault'
+import { transitSecretBackendKey } from '@cdktn/provider-vault'
 
 transitSecretBackendKey.TransitSecretBackendKey.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a TransitSecretBackendKey resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a TransitSecretBackendKey resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -558,7 +579,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -566,19 +587,19 @@ The construct id used in the generated config for the TransitSecretBackendKey to
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing TransitSecretBackendKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the TransitSecretBackendKey to import is found.
 
@@ -588,65 +609,71 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keys">keys</a></code> | <code>cdktf.StringMapList</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.latestVersion">latestVersion</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minAvailableVersion">minAvailableVersion</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsDecryption">supportsDecryption</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsDerivation">supportsDerivation</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsEncryption">supportsEncryption</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsSigning">supportsSigning</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.allowPlaintextBackupInput">allowPlaintextBackupInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.autoRotatePeriodInput">autoRotatePeriodInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.convergentEncryptionInput">convergentEncryptionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.deletionAllowedInput">deletionAllowedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.derivedInput">derivedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.exportableInput">exportableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypeEcInput">hybridKeyTypeEcInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypePqcInput">hybridKeyTypePqcInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keySizeInput">keySizeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minDecryptionVersionInput">minDecryptionVersionInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minEncryptionVersionInput">minEncryptionVersionInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.parameterSetInput">parameterSetInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.allowPlaintextBackup">allowPlaintextBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.autoRotatePeriod">autoRotatePeriod</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.backend">backend</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.convergentEncryption">convergentEncryption</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.deletionAllowed">deletionAllowed</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.derived">derived</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.exportable">exportable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypeEc">hybridKeyTypeEc</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypePqc">hybridKeyTypePqc</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keySize">keySize</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minDecryptionVersion">minDecryptionVersion</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minEncryptionVersion">minEncryptionVersion</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.parameterSet">parameterSet</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keys">keys</a></code> | <code>cdktn.StringMapList</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.latestVersion">latestVersion</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minAvailableVersion">minAvailableVersion</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsDecryption">supportsDecryption</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsDerivation">supportsDerivation</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsEncryption">supportsEncryption</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsSigning">supportsSigning</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.allowPlaintextBackupInput">allowPlaintextBackupInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.autoRotatePeriodInput">autoRotatePeriodInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.contextInput">contextInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.convergentEncryptionInput">convergentEncryptionInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.deletionAllowedInput">deletionAllowedInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.derivedInput">derivedInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.exportableInput">exportableInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypeEcInput">hybridKeyTypeEcInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypePqcInput">hybridKeyTypePqcInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keySizeInput">keySizeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.managedKeyIdInput">managedKeyIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.managedKeyNameInput">managedKeyNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minDecryptionVersionInput">minDecryptionVersionInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minEncryptionVersionInput">minEncryptionVersionInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.parameterSetInput">parameterSetInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.allowPlaintextBackup">allowPlaintextBackup</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.autoRotatePeriod">autoRotatePeriod</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.backend">backend</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.context">context</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.convergentEncryption">convergentEncryption</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.deletionAllowed">deletionAllowed</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.derived">derived</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.exportable">exportable</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypeEc">hybridKeyTypeEc</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypePqc">hybridKeyTypePqc</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keySize">keySize</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.managedKeyId">managedKeyId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.managedKeyName">managedKeyName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minDecryptionVersion">minDecryptionVersion</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minEncryptionVersion">minEncryptionVersion</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.parameterSet">parameterSet</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.type">type</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -658,17 +685,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -678,7 +705,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -688,7 +715,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -698,7 +725,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -708,37 +735,37 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -748,57 +775,57 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `keys`<sup>Required</sup> <a name="keys" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keys"></a>
+##### `keys`<sup>Required</sup> <a name="keys" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keys"></a>
 
 ```typescript
 public readonly keys: StringMapList;
 ```
 
-- *Type:* cdktf.StringMapList
+- *Type:* cdktn.StringMapList
 
 ---
 
-##### `latestVersion`<sup>Required</sup> <a name="latestVersion" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.latestVersion"></a>
+##### `latestVersion`<sup>Required</sup> <a name="latestVersion" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.latestVersion"></a>
 
 ```typescript
 public readonly latestVersion: number;
@@ -808,7 +835,7 @@ public readonly latestVersion: number;
 
 ---
 
-##### `minAvailableVersion`<sup>Required</sup> <a name="minAvailableVersion" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minAvailableVersion"></a>
+##### `minAvailableVersion`<sup>Required</sup> <a name="minAvailableVersion" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minAvailableVersion"></a>
 
 ```typescript
 public readonly minAvailableVersion: number;
@@ -818,57 +845,57 @@ public readonly minAvailableVersion: number;
 
 ---
 
-##### `supportsDecryption`<sup>Required</sup> <a name="supportsDecryption" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsDecryption"></a>
+##### `supportsDecryption`<sup>Required</sup> <a name="supportsDecryption" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsDecryption"></a>
 
 ```typescript
 public readonly supportsDecryption: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `supportsDerivation`<sup>Required</sup> <a name="supportsDerivation" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsDerivation"></a>
+##### `supportsDerivation`<sup>Required</sup> <a name="supportsDerivation" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsDerivation"></a>
 
 ```typescript
 public readonly supportsDerivation: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `supportsEncryption`<sup>Required</sup> <a name="supportsEncryption" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsEncryption"></a>
+##### `supportsEncryption`<sup>Required</sup> <a name="supportsEncryption" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsEncryption"></a>
 
 ```typescript
 public readonly supportsEncryption: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `supportsSigning`<sup>Required</sup> <a name="supportsSigning" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsSigning"></a>
+##### `supportsSigning`<sup>Required</sup> <a name="supportsSigning" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.supportsSigning"></a>
 
 ```typescript
 public readonly supportsSigning: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `allowPlaintextBackupInput`<sup>Optional</sup> <a name="allowPlaintextBackupInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.allowPlaintextBackupInput"></a>
+##### `allowPlaintextBackupInput`<sup>Optional</sup> <a name="allowPlaintextBackupInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.allowPlaintextBackupInput"></a>
 
 ```typescript
 public readonly allowPlaintextBackupInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `autoRotatePeriodInput`<sup>Optional</sup> <a name="autoRotatePeriodInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.autoRotatePeriodInput"></a>
+##### `autoRotatePeriodInput`<sup>Optional</sup> <a name="autoRotatePeriodInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.autoRotatePeriodInput"></a>
 
 ```typescript
 public readonly autoRotatePeriodInput: number;
@@ -878,7 +905,7 @@ public readonly autoRotatePeriodInput: number;
 
 ---
 
-##### `backendInput`<sup>Optional</sup> <a name="backendInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.backendInput"></a>
+##### `backendInput`<sup>Optional</sup> <a name="backendInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.backendInput"></a>
 
 ```typescript
 public readonly backendInput: string;
@@ -888,47 +915,57 @@ public readonly backendInput: string;
 
 ---
 
-##### `convergentEncryptionInput`<sup>Optional</sup> <a name="convergentEncryptionInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.convergentEncryptionInput"></a>
+##### `contextInput`<sup>Optional</sup> <a name="contextInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.contextInput"></a>
+
+```typescript
+public readonly contextInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `convergentEncryptionInput`<sup>Optional</sup> <a name="convergentEncryptionInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.convergentEncryptionInput"></a>
 
 ```typescript
 public readonly convergentEncryptionInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `deletionAllowedInput`<sup>Optional</sup> <a name="deletionAllowedInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.deletionAllowedInput"></a>
+##### `deletionAllowedInput`<sup>Optional</sup> <a name="deletionAllowedInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.deletionAllowedInput"></a>
 
 ```typescript
 public readonly deletionAllowedInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `derivedInput`<sup>Optional</sup> <a name="derivedInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.derivedInput"></a>
+##### `derivedInput`<sup>Optional</sup> <a name="derivedInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.derivedInput"></a>
 
 ```typescript
 public readonly derivedInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `exportableInput`<sup>Optional</sup> <a name="exportableInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.exportableInput"></a>
+##### `exportableInput`<sup>Optional</sup> <a name="exportableInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.exportableInput"></a>
 
 ```typescript
 public readonly exportableInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `hybridKeyTypeEcInput`<sup>Optional</sup> <a name="hybridKeyTypeEcInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypeEcInput"></a>
+##### `hybridKeyTypeEcInput`<sup>Optional</sup> <a name="hybridKeyTypeEcInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypeEcInput"></a>
 
 ```typescript
 public readonly hybridKeyTypeEcInput: string;
@@ -938,7 +975,7 @@ public readonly hybridKeyTypeEcInput: string;
 
 ---
 
-##### `hybridKeyTypePqcInput`<sup>Optional</sup> <a name="hybridKeyTypePqcInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypePqcInput"></a>
+##### `hybridKeyTypePqcInput`<sup>Optional</sup> <a name="hybridKeyTypePqcInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypePqcInput"></a>
 
 ```typescript
 public readonly hybridKeyTypePqcInput: string;
@@ -948,7 +985,7 @@ public readonly hybridKeyTypePqcInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -958,7 +995,7 @@ public readonly idInput: string;
 
 ---
 
-##### `keySizeInput`<sup>Optional</sup> <a name="keySizeInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keySizeInput"></a>
+##### `keySizeInput`<sup>Optional</sup> <a name="keySizeInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keySizeInput"></a>
 
 ```typescript
 public readonly keySizeInput: number;
@@ -968,7 +1005,27 @@ public readonly keySizeInput: number;
 
 ---
 
-##### `minDecryptionVersionInput`<sup>Optional</sup> <a name="minDecryptionVersionInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minDecryptionVersionInput"></a>
+##### `managedKeyIdInput`<sup>Optional</sup> <a name="managedKeyIdInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.managedKeyIdInput"></a>
+
+```typescript
+public readonly managedKeyIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedKeyNameInput`<sup>Optional</sup> <a name="managedKeyNameInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.managedKeyNameInput"></a>
+
+```typescript
+public readonly managedKeyNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `minDecryptionVersionInput`<sup>Optional</sup> <a name="minDecryptionVersionInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minDecryptionVersionInput"></a>
 
 ```typescript
 public readonly minDecryptionVersionInput: number;
@@ -978,7 +1035,7 @@ public readonly minDecryptionVersionInput: number;
 
 ---
 
-##### `minEncryptionVersionInput`<sup>Optional</sup> <a name="minEncryptionVersionInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minEncryptionVersionInput"></a>
+##### `minEncryptionVersionInput`<sup>Optional</sup> <a name="minEncryptionVersionInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minEncryptionVersionInput"></a>
 
 ```typescript
 public readonly minEncryptionVersionInput: number;
@@ -988,7 +1045,7 @@ public readonly minEncryptionVersionInput: number;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -998,7 +1055,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `namespaceInput`<sup>Optional</sup> <a name="namespaceInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.namespaceInput"></a>
+##### `namespaceInput`<sup>Optional</sup> <a name="namespaceInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.namespaceInput"></a>
 
 ```typescript
 public readonly namespaceInput: string;
@@ -1008,7 +1065,7 @@ public readonly namespaceInput: string;
 
 ---
 
-##### `parameterSetInput`<sup>Optional</sup> <a name="parameterSetInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.parameterSetInput"></a>
+##### `parameterSetInput`<sup>Optional</sup> <a name="parameterSetInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.parameterSetInput"></a>
 
 ```typescript
 public readonly parameterSetInput: string;
@@ -1018,7 +1075,7 @@ public readonly parameterSetInput: string;
 
 ---
 
-##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.typeInput"></a>
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.typeInput"></a>
 
 ```typescript
 public readonly typeInput: string;
@@ -1028,17 +1085,17 @@ public readonly typeInput: string;
 
 ---
 
-##### `allowPlaintextBackup`<sup>Required</sup> <a name="allowPlaintextBackup" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.allowPlaintextBackup"></a>
+##### `allowPlaintextBackup`<sup>Required</sup> <a name="allowPlaintextBackup" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.allowPlaintextBackup"></a>
 
 ```typescript
 public readonly allowPlaintextBackup: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `autoRotatePeriod`<sup>Required</sup> <a name="autoRotatePeriod" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.autoRotatePeriod"></a>
+##### `autoRotatePeriod`<sup>Required</sup> <a name="autoRotatePeriod" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.autoRotatePeriod"></a>
 
 ```typescript
 public readonly autoRotatePeriod: number;
@@ -1048,7 +1105,7 @@ public readonly autoRotatePeriod: number;
 
 ---
 
-##### `backend`<sup>Required</sup> <a name="backend" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.backend"></a>
+##### `backend`<sup>Required</sup> <a name="backend" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.backend"></a>
 
 ```typescript
 public readonly backend: string;
@@ -1058,47 +1115,57 @@ public readonly backend: string;
 
 ---
 
-##### `convergentEncryption`<sup>Required</sup> <a name="convergentEncryption" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.convergentEncryption"></a>
+##### `context`<sup>Required</sup> <a name="context" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.context"></a>
+
+```typescript
+public readonly context: string;
+```
+
+- *Type:* string
+
+---
+
+##### `convergentEncryption`<sup>Required</sup> <a name="convergentEncryption" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.convergentEncryption"></a>
 
 ```typescript
 public readonly convergentEncryption: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `deletionAllowed`<sup>Required</sup> <a name="deletionAllowed" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.deletionAllowed"></a>
+##### `deletionAllowed`<sup>Required</sup> <a name="deletionAllowed" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.deletionAllowed"></a>
 
 ```typescript
 public readonly deletionAllowed: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `derived`<sup>Required</sup> <a name="derived" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.derived"></a>
+##### `derived`<sup>Required</sup> <a name="derived" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.derived"></a>
 
 ```typescript
 public readonly derived: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `exportable`<sup>Required</sup> <a name="exportable" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.exportable"></a>
+##### `exportable`<sup>Required</sup> <a name="exportable" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.exportable"></a>
 
 ```typescript
 public readonly exportable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `hybridKeyTypeEc`<sup>Required</sup> <a name="hybridKeyTypeEc" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypeEc"></a>
+##### `hybridKeyTypeEc`<sup>Required</sup> <a name="hybridKeyTypeEc" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypeEc"></a>
 
 ```typescript
 public readonly hybridKeyTypeEc: string;
@@ -1108,7 +1175,7 @@ public readonly hybridKeyTypeEc: string;
 
 ---
 
-##### `hybridKeyTypePqc`<sup>Required</sup> <a name="hybridKeyTypePqc" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypePqc"></a>
+##### `hybridKeyTypePqc`<sup>Required</sup> <a name="hybridKeyTypePqc" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.hybridKeyTypePqc"></a>
 
 ```typescript
 public readonly hybridKeyTypePqc: string;
@@ -1118,7 +1185,7 @@ public readonly hybridKeyTypePqc: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1128,7 +1195,7 @@ public readonly id: string;
 
 ---
 
-##### `keySize`<sup>Required</sup> <a name="keySize" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keySize"></a>
+##### `keySize`<sup>Required</sup> <a name="keySize" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.keySize"></a>
 
 ```typescript
 public readonly keySize: number;
@@ -1138,7 +1205,27 @@ public readonly keySize: number;
 
 ---
 
-##### `minDecryptionVersion`<sup>Required</sup> <a name="minDecryptionVersion" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minDecryptionVersion"></a>
+##### `managedKeyId`<sup>Required</sup> <a name="managedKeyId" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.managedKeyId"></a>
+
+```typescript
+public readonly managedKeyId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `managedKeyName`<sup>Required</sup> <a name="managedKeyName" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.managedKeyName"></a>
+
+```typescript
+public readonly managedKeyName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `minDecryptionVersion`<sup>Required</sup> <a name="minDecryptionVersion" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minDecryptionVersion"></a>
 
 ```typescript
 public readonly minDecryptionVersion: number;
@@ -1148,7 +1235,7 @@ public readonly minDecryptionVersion: number;
 
 ---
 
-##### `minEncryptionVersion`<sup>Required</sup> <a name="minEncryptionVersion" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minEncryptionVersion"></a>
+##### `minEncryptionVersion`<sup>Required</sup> <a name="minEncryptionVersion" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.minEncryptionVersion"></a>
 
 ```typescript
 public readonly minEncryptionVersion: number;
@@ -1158,7 +1245,7 @@ public readonly minEncryptionVersion: number;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1168,7 +1255,7 @@ public readonly name: string;
 
 ---
 
-##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.namespace"></a>
+##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.namespace"></a>
 
 ```typescript
 public readonly namespace: string;
@@ -1178,7 +1265,7 @@ public readonly namespace: string;
 
 ---
 
-##### `parameterSet`<sup>Required</sup> <a name="parameterSet" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.parameterSet"></a>
+##### `parameterSet`<sup>Required</sup> <a name="parameterSet" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.parameterSet"></a>
 
 ```typescript
 public readonly parameterSet: string;
@@ -1188,7 +1275,7 @@ public readonly parameterSet: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -1202,11 +1289,11 @@ public readonly type: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKey.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1218,12 +1305,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### TransitSecretBackendKeyConfig <a name="TransitSecretBackendKeyConfig" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig"></a>
+### TransitSecretBackendKeyConfig <a name="TransitSecretBackendKeyConfig" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.Initializer"></a>
 
 ```typescript
-import { transitSecretBackendKey } from '@cdktf/provider-vault'
+import { transitSecretBackendKey } from '@cdktn/provider-vault'
 
 const transitSecretBackendKeyConfig: transitSecretBackendKey.TransitSecretBackendKeyConfig = { ... }
 ```
@@ -1232,104 +1319,107 @@ const transitSecretBackendKeyConfig: transitSecretBackendKey.TransitSecretBacken
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.backend">backend</a></code> | <code>string</code> | The Transit secret backend the resource belongs to. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.name">name</a></code> | <code>string</code> | Name of the encryption key to create. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.allowPlaintextBackup">allowPlaintextBackup</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set, enables taking backup of named key in the plaintext format. Once set, this cannot be disabled. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.autoRotatePeriod">autoRotatePeriod</a></code> | <code>number</code> | Amount of seconds the key should live before being automatically rotated. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.convergentEncryption">convergentEncryption</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not to support convergent encryption, where the same plaintext creates the same ciphertext. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.deletionAllowed">deletionAllowed</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies if the key is allowed to be deleted. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.derived">derived</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies if key derivation is to be used. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.exportable">exportable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables keys to be exportable. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.hybridKeyTypeEc">hybridKeyTypeEc</a></code> | <code>string</code> | The elliptic curve algorithm to use for hybrid signatures. Supported key types are `ecdsa-p256`, `ecdsa-p384`, `ecdsa-p521`, and `ed25519`. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.hybridKeyTypePqc">hybridKeyTypePqc</a></code> | <code>string</code> | The post-quantum algorithm to use for hybrid signatures. Currently, ML-DSA is the only supported key type. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#id TransitSecretBackendKey#id}. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.keySize">keySize</a></code> | <code>number</code> | The key size in bytes for algorithms that allow variable key sizes. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.minDecryptionVersion">minDecryptionVersion</a></code> | <code>number</code> | Minimum key version to use for decryption. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.minEncryptionVersion">minEncryptionVersion</a></code> | <code>number</code> | Minimum key version to use for encryption. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.parameterSet">parameterSet</a></code> | <code>string</code> | The parameter set to use for ML-DSA. |
-| <code><a href="#@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.type">type</a></code> | <code>string</code> | Specifies the type of key to create. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.backend">backend</a></code> | <code>string</code> | The Transit secret backend the resource belongs to. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.name">name</a></code> | <code>string</code> | Name of the encryption key to create. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.allowPlaintextBackup">allowPlaintextBackup</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set, enables taking backup of named key in the plaintext format. Once set, this cannot be disabled. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.autoRotatePeriod">autoRotatePeriod</a></code> | <code>number</code> | Amount of seconds the key should live before being automatically rotated. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.context">context</a></code> | <code>string</code> | Base64 encoded context for key derivation. Required if derived is set to true. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.convergentEncryption">convergentEncryption</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not to support convergent encryption, where the same plaintext creates the same ciphertext. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.deletionAllowed">deletionAllowed</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies if the key is allowed to be deleted. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.derived">derived</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies if key derivation is to be used. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.exportable">exportable</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables keys to be exportable. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.hybridKeyTypeEc">hybridKeyTypeEc</a></code> | <code>string</code> | The elliptic curve algorithm to use for hybrid signatures. Supported key types are `ecdsa-p256`, `ecdsa-p384`, `ecdsa-p521`, and `ed25519`. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.hybridKeyTypePqc">hybridKeyTypePqc</a></code> | <code>string</code> | The post-quantum algorithm to use for hybrid signatures. Currently, ML-DSA is the only supported key type. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#id TransitSecretBackendKey#id}. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.keySize">keySize</a></code> | <code>number</code> | The key size in bytes for algorithms that allow variable key sizes. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.managedKeyId">managedKeyId</a></code> | <code>string</code> | The UUID of the managed key to use when the key type is managed_key. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.managedKeyName">managedKeyName</a></code> | <code>string</code> | The name of the managed key to use when the key type is managed_key. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.minDecryptionVersion">minDecryptionVersion</a></code> | <code>number</code> | Minimum key version to use for decryption. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.minEncryptionVersion">minEncryptionVersion</a></code> | <code>number</code> | Minimum key version to use for encryption. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.parameterSet">parameterSet</a></code> | <code>string</code> | The parameter set to use for ML-DSA. |
+| <code><a href="#@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.type">type</a></code> | <code>string</code> | Specifies the type of key to create. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `backend`<sup>Required</sup> <a name="backend" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.backend"></a>
+##### `backend`<sup>Required</sup> <a name="backend" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.backend"></a>
 
 ```typescript
 public readonly backend: string;
@@ -1339,11 +1429,11 @@ public readonly backend: string;
 
 The Transit secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#backend TransitSecretBackendKey#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#backend TransitSecretBackendKey#backend}
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1353,25 +1443,25 @@ public readonly name: string;
 
 Name of the encryption key to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#name TransitSecretBackendKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#name TransitSecretBackendKey#name}
 
 ---
 
-##### `allowPlaintextBackup`<sup>Optional</sup> <a name="allowPlaintextBackup" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.allowPlaintextBackup"></a>
+##### `allowPlaintextBackup`<sup>Optional</sup> <a name="allowPlaintextBackup" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.allowPlaintextBackup"></a>
 
 ```typescript
 public readonly allowPlaintextBackup: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set, enables taking backup of named key in the plaintext format. Once set, this cannot be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#allow_plaintext_backup TransitSecretBackendKey#allow_plaintext_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#allow_plaintext_backup TransitSecretBackendKey#allow_plaintext_backup}
 
 ---
 
-##### `autoRotatePeriod`<sup>Optional</sup> <a name="autoRotatePeriod" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.autoRotatePeriod"></a>
+##### `autoRotatePeriod`<sup>Optional</sup> <a name="autoRotatePeriod" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.autoRotatePeriod"></a>
 
 ```typescript
 public readonly autoRotatePeriod: number;
@@ -1383,73 +1473,87 @@ Amount of seconds the key should live before being automatically rotated.
 
 A value of 0 disables automatic rotation for the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#auto_rotate_period TransitSecretBackendKey#auto_rotate_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#auto_rotate_period TransitSecretBackendKey#auto_rotate_period}
 
 ---
 
-##### `convergentEncryption`<sup>Optional</sup> <a name="convergentEncryption" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.convergentEncryption"></a>
+##### `context`<sup>Optional</sup> <a name="context" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.context"></a>
+
+```typescript
+public readonly context: string;
+```
+
+- *Type:* string
+
+Base64 encoded context for key derivation. Required if derived is set to true.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#context TransitSecretBackendKey#context}
+
+---
+
+##### `convergentEncryption`<sup>Optional</sup> <a name="convergentEncryption" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.convergentEncryption"></a>
 
 ```typescript
 public readonly convergentEncryption: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not to support convergent encryption, where the same plaintext creates the same ciphertext.
 
 This requires derived to be set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#convergent_encryption TransitSecretBackendKey#convergent_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#convergent_encryption TransitSecretBackendKey#convergent_encryption}
 
 ---
 
-##### `deletionAllowed`<sup>Optional</sup> <a name="deletionAllowed" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.deletionAllowed"></a>
+##### `deletionAllowed`<sup>Optional</sup> <a name="deletionAllowed" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.deletionAllowed"></a>
 
 ```typescript
 public readonly deletionAllowed: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies if the key is allowed to be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#deletion_allowed TransitSecretBackendKey#deletion_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#deletion_allowed TransitSecretBackendKey#deletion_allowed}
 
 ---
 
-##### `derived`<sup>Optional</sup> <a name="derived" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.derived"></a>
+##### `derived`<sup>Optional</sup> <a name="derived" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.derived"></a>
 
 ```typescript
 public readonly derived: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies if key derivation is to be used.
 
 If enabled, all encrypt/decrypt requests to this key must provide a context which is used for key derivation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#derived TransitSecretBackendKey#derived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#derived TransitSecretBackendKey#derived}
 
 ---
 
-##### `exportable`<sup>Optional</sup> <a name="exportable" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.exportable"></a>
+##### `exportable`<sup>Optional</sup> <a name="exportable" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.exportable"></a>
 
 ```typescript
 public readonly exportable: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables keys to be exportable.
 
 This allows for all the valid keys in the key ring to be exported. Once set, this cannot be disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#exportable TransitSecretBackendKey#exportable}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#exportable TransitSecretBackendKey#exportable}
 
 ---
 
-##### `hybridKeyTypeEc`<sup>Optional</sup> <a name="hybridKeyTypeEc" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.hybridKeyTypeEc"></a>
+##### `hybridKeyTypeEc`<sup>Optional</sup> <a name="hybridKeyTypeEc" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.hybridKeyTypeEc"></a>
 
 ```typescript
 public readonly hybridKeyTypeEc: string;
@@ -1459,11 +1563,11 @@ public readonly hybridKeyTypeEc: string;
 
 The elliptic curve algorithm to use for hybrid signatures. Supported key types are `ecdsa-p256`, `ecdsa-p384`, `ecdsa-p521`, and `ed25519`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#hybrid_key_type_ec TransitSecretBackendKey#hybrid_key_type_ec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#hybrid_key_type_ec TransitSecretBackendKey#hybrid_key_type_ec}
 
 ---
 
-##### `hybridKeyTypePqc`<sup>Optional</sup> <a name="hybridKeyTypePqc" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.hybridKeyTypePqc"></a>
+##### `hybridKeyTypePqc`<sup>Optional</sup> <a name="hybridKeyTypePqc" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.hybridKeyTypePqc"></a>
 
 ```typescript
 public readonly hybridKeyTypePqc: string;
@@ -1473,11 +1577,11 @@ public readonly hybridKeyTypePqc: string;
 
 The post-quantum algorithm to use for hybrid signatures. Currently, ML-DSA is the only supported key type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#hybrid_key_type_pqc TransitSecretBackendKey#hybrid_key_type_pqc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#hybrid_key_type_pqc TransitSecretBackendKey#hybrid_key_type_pqc}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1485,14 +1589,14 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#id TransitSecretBackendKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#id TransitSecretBackendKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `keySize`<sup>Optional</sup> <a name="keySize" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.keySize"></a>
+##### `keySize`<sup>Optional</sup> <a name="keySize" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.keySize"></a>
 
 ```typescript
 public readonly keySize: number;
@@ -1504,11 +1608,39 @@ The key size in bytes for algorithms that allow variable key sizes.
 
 Currently only applicable to HMAC; this value must be between 32 and 512.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#key_size TransitSecretBackendKey#key_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#key_size TransitSecretBackendKey#key_size}
 
 ---
 
-##### `minDecryptionVersion`<sup>Optional</sup> <a name="minDecryptionVersion" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.minDecryptionVersion"></a>
+##### `managedKeyId`<sup>Optional</sup> <a name="managedKeyId" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.managedKeyId"></a>
+
+```typescript
+public readonly managedKeyId: string;
+```
+
+- *Type:* string
+
+The UUID of the managed key to use when the key type is managed_key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#managed_key_id TransitSecretBackendKey#managed_key_id}
+
+---
+
+##### `managedKeyName`<sup>Optional</sup> <a name="managedKeyName" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.managedKeyName"></a>
+
+```typescript
+public readonly managedKeyName: string;
+```
+
+- *Type:* string
+
+The name of the managed key to use when the key type is managed_key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#managed_key_name TransitSecretBackendKey#managed_key_name}
+
+---
+
+##### `minDecryptionVersion`<sup>Optional</sup> <a name="minDecryptionVersion" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.minDecryptionVersion"></a>
 
 ```typescript
 public readonly minDecryptionVersion: number;
@@ -1518,11 +1650,11 @@ public readonly minDecryptionVersion: number;
 
 Minimum key version to use for decryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#min_decryption_version TransitSecretBackendKey#min_decryption_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#min_decryption_version TransitSecretBackendKey#min_decryption_version}
 
 ---
 
-##### `minEncryptionVersion`<sup>Optional</sup> <a name="minEncryptionVersion" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.minEncryptionVersion"></a>
+##### `minEncryptionVersion`<sup>Optional</sup> <a name="minEncryptionVersion" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.minEncryptionVersion"></a>
 
 ```typescript
 public readonly minEncryptionVersion: number;
@@ -1532,11 +1664,11 @@ public readonly minEncryptionVersion: number;
 
 Minimum key version to use for encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#min_encryption_version TransitSecretBackendKey#min_encryption_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#min_encryption_version TransitSecretBackendKey#min_encryption_version}
 
 ---
 
-##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.namespace"></a>
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.namespace"></a>
 
 ```typescript
 public readonly namespace: string;
@@ -1546,11 +1678,11 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#namespace TransitSecretBackendKey#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#namespace TransitSecretBackendKey#namespace}
 
 ---
 
-##### `parameterSet`<sup>Optional</sup> <a name="parameterSet" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.parameterSet"></a>
+##### `parameterSet`<sup>Optional</sup> <a name="parameterSet" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.parameterSet"></a>
 
 ```typescript
 public readonly parameterSet: string;
@@ -1562,11 +1694,11 @@ The parameter set to use for ML-DSA.
 
 Required for ML-DSA and hybrid keys.  Valid values for ML-DSA are `44`, `65`, and `87`. Valid values for SLH-DSA are `slh-dsa-sha2-128s`, `slh-dsa-shake-128s`, `slh-dsa-sha2-128f`, `slh-dsa-shake-128`, `slh-dsa-sha2-192s`, `slh-dsa-shake-192s`, `slh-dsa-sha2-192f`, `slh-dsa-shake-192f`, `slh-dsa-sha2-256s`, `slh-dsa-shake-256s`, `slh-dsa-sha2-256f`, and `slh-dsa-shake-256f`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#parameter_set TransitSecretBackendKey#parameter_set}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#parameter_set TransitSecretBackendKey#parameter_set}
 
 ---
 
-##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.type"></a>
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-vault.transitSecretBackendKey.TransitSecretBackendKeyConfig.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -1578,7 +1710,7 @@ Specifies the type of key to create.
 
 The currently-supported types are: `aes128-gcm96`, `aes256-gcm96` (default), `chacha20-poly1305`, `ed25519`, `ecdsa-p256`, `ecdsa-p384`, `ecdsa-p521`, `hmac`, `rsa-2048`, `rsa-3072`, `rsa-4096`, `managed_key`, `aes128-cmac`, `aes192-cmac`, `aes256-cmac`, `ml-dsa`, `hybrid`, and `slh-dsa`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/transit_secret_backend_key#type TransitSecretBackendKey#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/transit_secret_backend_key#type TransitSecretBackendKey#type}
 
 ---
 

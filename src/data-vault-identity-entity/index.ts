@@ -1,49 +1,49 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_entity
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataVaultIdentityEntityConfig extends cdktf.TerraformMetaArguments {
+export interface DataVaultIdentityEntityConfig extends cdktn.TerraformMetaArguments {
   /**
   * ID of the alias.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_entity#alias_id DataVaultIdentityEntity#alias_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity#alias_id DataVaultIdentityEntity#alias_id}
   */
   readonly aliasId?: string;
   /**
   * Accessor of the mount to which the alias belongs to. This should be supplied in conjunction with `alias_name`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_entity#alias_mount_accessor DataVaultIdentityEntity#alias_mount_accessor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity#alias_mount_accessor DataVaultIdentityEntity#alias_mount_accessor}
   */
   readonly aliasMountAccessor?: string;
   /**
   * Name of the alias. This should be supplied in conjunction with `alias_mount_accessor`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_entity#alias_name DataVaultIdentityEntity#alias_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity#alias_name DataVaultIdentityEntity#alias_name}
   */
   readonly aliasName?: string;
   /**
   * ID of the entity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_entity#entity_id DataVaultIdentityEntity#entity_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity#entity_id DataVaultIdentityEntity#entity_id}
   */
   readonly entityId?: string;
   /**
   * Name of the entity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_entity#entity_name DataVaultIdentityEntity#entity_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity#entity_name DataVaultIdentityEntity#entity_name}
   */
   readonly entityName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_entity#id DataVaultIdentityEntity#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity#id DataVaultIdentityEntity#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,7 +52,7 @@ export interface DataVaultIdentityEntityConfig extends cdktf.TerraformMetaArgume
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_entity#namespace DataVaultIdentityEntity#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity#namespace DataVaultIdentityEntity#namespace}
   */
   readonly namespace?: string;
 }
@@ -60,8 +60,8 @@ export interface DataVaultIdentityEntityAliases {
 }
 
 export function dataVaultIdentityEntityAliasesToTerraform(struct?: DataVaultIdentityEntityAliases): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -70,8 +70,8 @@ export function dataVaultIdentityEntityAliasesToTerraform(struct?: DataVaultIden
 
 
 export function dataVaultIdentityEntityAliasesToHclTerraform(struct?: DataVaultIdentityEntityAliases): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -79,7 +79,7 @@ export function dataVaultIdentityEntityAliasesToHclTerraform(struct?: DataVaultI
   return attrs;
 }
 
-export class DataVaultIdentityEntityAliasesOutputReference extends cdktf.ComplexObject {
+export class DataVaultIdentityEntityAliasesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -88,7 +88,7 @@ export class DataVaultIdentityEntityAliasesOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -129,11 +129,11 @@ export class DataVaultIdentityEntityAliasesOutputReference extends cdktf.Complex
 
   // merged_from_canonical_ids - computed: true, optional: false, required: false
   public get mergedFromCanonicalIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('merged_from_canonical_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('merged_from_canonical_ids'));
   }
 
   // metadata - computed: true, optional: false, required: false
-  private _metadata = new cdktf.StringMap(this, "metadata");
+  private _metadata = new cdktn.StringMap(this, "metadata");
   public get metadata() {
     return this._metadata;
   }
@@ -159,14 +159,14 @@ export class DataVaultIdentityEntityAliasesOutputReference extends cdktf.Complex
   }
 }
 
-export class DataVaultIdentityEntityAliasesList extends cdktf.ComplexList {
+export class DataVaultIdentityEntityAliasesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -179,9 +179,9 @@ export class DataVaultIdentityEntityAliasesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_entity vault_identity_entity}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity vault_identity_entity}
 */
-export class DataVaultIdentityEntity extends cdktf.TerraformDataSource {
+export class DataVaultIdentityEntity extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -192,14 +192,14 @@ export class DataVaultIdentityEntity extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataVaultIdentityEntity resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataVaultIdentityEntity resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultIdentityEntity to import
-  * @param importFromId The id of the existing DataVaultIdentityEntity that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_entity#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultIdentityEntity that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultIdentityEntity to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_entity", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_entity", importId: importFromId, provider });
       }
 
   // ===========
@@ -207,7 +207,7 @@ export class DataVaultIdentityEntity extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/data-sources/identity_entity vault_identity_entity} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/identity_entity vault_identity_entity} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -218,7 +218,7 @@ export class DataVaultIdentityEntity extends cdktf.TerraformDataSource {
       terraformResourceType: 'vault_identity_entity',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -308,7 +308,7 @@ export class DataVaultIdentityEntity extends cdktf.TerraformDataSource {
 
   // direct_group_ids - computed: true, optional: false, required: false
   public get directGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('direct_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('direct_group_ids'));
   }
 
   // disabled - computed: true, optional: false, required: false
@@ -350,7 +350,7 @@ export class DataVaultIdentityEntity extends cdktf.TerraformDataSource {
 
   // group_ids - computed: true, optional: false, required: false
   public get groupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('group_ids'));
   }
 
   // id - computed: true, optional: true, required: false
@@ -371,7 +371,7 @@ export class DataVaultIdentityEntity extends cdktf.TerraformDataSource {
 
   // inherited_group_ids - computed: true, optional: false, required: false
   public get inheritedGroupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('inherited_group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('inherited_group_ids'));
   }
 
   // last_update_time - computed: true, optional: false, required: false
@@ -381,11 +381,11 @@ export class DataVaultIdentityEntity extends cdktf.TerraformDataSource {
 
   // merged_entity_ids - computed: true, optional: false, required: false
   public get mergedEntityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('merged_entity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('merged_entity_ids'));
   }
 
   // metadata - computed: true, optional: false, required: false
-  private _metadata = new cdktf.StringMap(this, "metadata");
+  private _metadata = new cdktn.StringMap(this, "metadata");
   public get metadata() {
     return this._metadata;
   }
@@ -413,7 +413,7 @@ export class DataVaultIdentityEntity extends cdktf.TerraformDataSource {
 
   // policies - computed: true, optional: false, required: false
   public get policies() {
-    return cdktf.Fn.tolist(this.getListAttribute('policies'));
+    return cdktn.Fn.tolist(this.getListAttribute('policies'));
   }
 
   // =========
@@ -422,56 +422,56 @@ export class DataVaultIdentityEntity extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      alias_id: cdktf.stringToTerraform(this._aliasId),
-      alias_mount_accessor: cdktf.stringToTerraform(this._aliasMountAccessor),
-      alias_name: cdktf.stringToTerraform(this._aliasName),
-      entity_id: cdktf.stringToTerraform(this._entityId),
-      entity_name: cdktf.stringToTerraform(this._entityName),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
+      alias_id: cdktn.stringToTerraform(this._aliasId),
+      alias_mount_accessor: cdktn.stringToTerraform(this._aliasMountAccessor),
+      alias_name: cdktn.stringToTerraform(this._aliasName),
+      entity_id: cdktn.stringToTerraform(this._entityId),
+      entity_name: cdktn.stringToTerraform(this._entityName),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       alias_id: {
-        value: cdktf.stringToHclTerraform(this._aliasId),
+        value: cdktn.stringToHclTerraform(this._aliasId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias_mount_accessor: {
-        value: cdktf.stringToHclTerraform(this._aliasMountAccessor),
+        value: cdktn.stringToHclTerraform(this._aliasMountAccessor),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias_name: {
-        value: cdktf.stringToHclTerraform(this._aliasName),
+        value: cdktn.stringToHclTerraform(this._aliasName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entity_id: {
-        value: cdktf.stringToHclTerraform(this._entityId),
+        value: cdktn.stringToHclTerraform(this._entityId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entity_name: {
-        value: cdktf.stringToHclTerraform(this._entityName),
+        value: cdktn.stringToHclTerraform(this._entityName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

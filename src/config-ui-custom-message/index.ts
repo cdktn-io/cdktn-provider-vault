@@ -1,69 +1,69 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ConfigUiCustomMessageConfig extends cdktf.TerraformMetaArguments {
+export interface ConfigUiCustomMessageConfig extends cdktn.TerraformMetaArguments {
   /**
   * A flag indicating whether the custom message is displayed pre-login (false) or post-login (true)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message#authenticated ConfigUiCustomMessage#authenticated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#authenticated ConfigUiCustomMessage#authenticated}
   */
-  readonly authenticated?: boolean | cdktf.IResolvable;
+  readonly authenticated?: boolean | cdktn.IResolvable;
   /**
   * The ending time of the active period of the custom message. Can be omitted for non-expiring message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message#end_time ConfigUiCustomMessage#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#end_time ConfigUiCustomMessage#end_time}
   */
   readonly endTime?: string;
   /**
   * The base64-encoded content of the custom message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message#message_base64 ConfigUiCustomMessage#message_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#message_base64 ConfigUiCustomMessage#message_base64}
   */
   readonly messageBase64: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message#namespace ConfigUiCustomMessage#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#namespace ConfigUiCustomMessage#namespace}
   */
   readonly namespace?: string;
   /**
   * A map containing additional options for the custom message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message#options ConfigUiCustomMessage#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#options ConfigUiCustomMessage#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * The starting time of the active period of the custom message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message#start_time ConfigUiCustomMessage#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#start_time ConfigUiCustomMessage#start_time}
   */
   readonly startTime: string;
   /**
   * The title of the custom message
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
   */
   readonly title: string;
   /**
   * The display type of custom message. Allowed values are banner and modal
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message#type ConfigUiCustomMessage#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#type ConfigUiCustomMessage#type}
   */
   readonly type?: string;
   /**
   * link block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message#link ConfigUiCustomMessage#link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#link ConfigUiCustomMessage#link}
   */
   readonly link?: ConfigUiCustomMessageLink;
 }
@@ -71,43 +71,43 @@ export interface ConfigUiCustomMessageLink {
   /**
   * The URL of the hyperlink
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message#href ConfigUiCustomMessage#href}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#href ConfigUiCustomMessage#href}
   */
   readonly href: string;
   /**
   * The title of the hyperlink
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
   */
   readonly title: string;
 }
 
 export function configUiCustomMessageLinkToTerraform(struct?: ConfigUiCustomMessageLinkOutputReference | ConfigUiCustomMessageLink): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    href: cdktf.stringToTerraform(struct!.href),
-    title: cdktf.stringToTerraform(struct!.title),
+    href: cdktn.stringToTerraform(struct!.href),
+    title: cdktn.stringToTerraform(struct!.title),
   }
 }
 
 
 export function configUiCustomMessageLinkToHclTerraform(struct?: ConfigUiCustomMessageLinkOutputReference | ConfigUiCustomMessageLink): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     href: {
-      value: cdktf.stringToHclTerraform(struct!.href),
+      value: cdktn.stringToHclTerraform(struct!.href),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     title: {
-      value: cdktf.stringToHclTerraform(struct!.title),
+      value: cdktn.stringToHclTerraform(struct!.title),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,14 +118,14 @@ export function configUiCustomMessageLinkToHclTerraform(struct?: ConfigUiCustomM
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ConfigUiCustomMessageLinkOutputReference extends cdktf.ComplexObject {
+export class ConfigUiCustomMessageLinkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -184,9 +184,9 @@ export class ConfigUiCustomMessageLinkOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message}
 */
-export class ConfigUiCustomMessage extends cdktf.TerraformResource {
+export class ConfigUiCustomMessage extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -197,14 +197,14 @@ export class ConfigUiCustomMessage extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ConfigUiCustomMessage resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ConfigUiCustomMessage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigUiCustomMessage to import
-  * @param importFromId The id of the existing ConfigUiCustomMessage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConfigUiCustomMessage that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigUiCustomMessage to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_config_ui_custom_message", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_config_ui_custom_message", importId: importFromId, provider });
       }
 
   // ===========
@@ -212,7 +212,7 @@ export class ConfigUiCustomMessage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -223,7 +223,7 @@ export class ConfigUiCustomMessage extends cdktf.TerraformResource {
       terraformResourceType: 'vault_config_ui_custom_message',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -250,11 +250,11 @@ export class ConfigUiCustomMessage extends cdktf.TerraformResource {
   // ==========
 
   // authenticated - computed: false, optional: true, required: false
-  private _authenticated?: boolean | cdktf.IResolvable; 
+  private _authenticated?: boolean | cdktn.IResolvable; 
   public get authenticated() {
     return this.getBooleanAttribute('authenticated');
   }
-  public set authenticated(value: boolean | cdktf.IResolvable) {
+  public set authenticated(value: boolean | cdktn.IResolvable) {
     this._authenticated = value;
   }
   public resetAuthenticated() {
@@ -395,14 +395,14 @@ export class ConfigUiCustomMessage extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      authenticated: cdktf.booleanToTerraform(this._authenticated),
-      end_time: cdktf.stringToTerraform(this._endTime),
-      message_base64: cdktf.stringToTerraform(this._messageBase64),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      options: cdktf.hashMapper(cdktf.stringToTerraform)(this._options),
-      start_time: cdktf.stringToTerraform(this._startTime),
-      title: cdktf.stringToTerraform(this._title),
-      type: cdktf.stringToTerraform(this._type),
+      authenticated: cdktn.booleanToTerraform(this._authenticated),
+      end_time: cdktn.stringToTerraform(this._endTime),
+      message_base64: cdktn.stringToTerraform(this._messageBase64),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      options: cdktn.hashMapper(cdktn.stringToTerraform)(this._options),
+      start_time: cdktn.stringToTerraform(this._startTime),
+      title: cdktn.stringToTerraform(this._title),
+      type: cdktn.stringToTerraform(this._type),
       link: configUiCustomMessageLinkToTerraform(this._link.internalValue),
     };
   }
@@ -410,49 +410,49 @@ export class ConfigUiCustomMessage extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       authenticated: {
-        value: cdktf.booleanToHclTerraform(this._authenticated),
+        value: cdktn.booleanToHclTerraform(this._authenticated),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       end_time: {
-        value: cdktf.stringToHclTerraform(this._endTime),
+        value: cdktn.stringToHclTerraform(this._endTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       message_base64: {
-        value: cdktf.stringToHclTerraform(this._messageBase64),
+        value: cdktn.stringToHclTerraform(this._messageBase64),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       options: {
-        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._options),
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._options),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
       },
       start_time: {
-        value: cdktf.stringToHclTerraform(this._startTime),
+        value: cdktn.stringToHclTerraform(this._startTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       title: {
-        value: cdktf.stringToHclTerraform(this._title),
+        value: cdktn.stringToHclTerraform(this._title),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

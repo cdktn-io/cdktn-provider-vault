@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface GcpSecretStaticAccountConfig extends cdktf.TerraformMetaArguments {
+export interface GcpSecretStaticAccountConfig extends cdktn.TerraformMetaArguments {
   /**
   * Path where the GCP secrets engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account#backend GcpSecretStaticAccount#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account#backend GcpSecretStaticAccount#backend}
   */
   readonly backend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account#id GcpSecretStaticAccount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account#id GcpSecretStaticAccount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,81 +28,81 @@ export interface GcpSecretStaticAccountConfig extends cdktf.TerraformMetaArgumen
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account#namespace GcpSecretStaticAccount#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account#namespace GcpSecretStaticAccount#namespace}
   */
   readonly namespace?: string;
   /**
   * Type of secret generated for this static account. Defaults to `access_token`. Accepted values: `access_token`, `service_account_key`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account#secret_type GcpSecretStaticAccount#secret_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account#secret_type GcpSecretStaticAccount#secret_type}
   */
   readonly secretType?: string;
   /**
   * Email of the GCP service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account#service_account_email GcpSecretStaticAccount#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account#service_account_email GcpSecretStaticAccount#service_account_email}
   */
   readonly serviceAccountEmail: string;
   /**
   * Name of the Static Account to create
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account#static_account GcpSecretStaticAccount#static_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account#static_account GcpSecretStaticAccount#static_account}
   */
   readonly staticAccount: string;
   /**
   * List of OAuth scopes to assign to `access_token` secrets generated under this static account (`access_token` static accounts only) 
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account#token_scopes GcpSecretStaticAccount#token_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account#token_scopes GcpSecretStaticAccount#token_scopes}
   */
   readonly tokenScopes?: string[];
   /**
   * binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account#binding GcpSecretStaticAccount#binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account#binding GcpSecretStaticAccount#binding}
   */
-  readonly binding?: GcpSecretStaticAccountBinding[] | cdktf.IResolvable;
+  readonly binding?: GcpSecretStaticAccountBinding[] | cdktn.IResolvable;
 }
 export interface GcpSecretStaticAccountBinding {
   /**
   * Resource name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account#resource GcpSecretStaticAccount#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account#resource GcpSecretStaticAccount#resource}
   */
   readonly resource: string;
   /**
   * List of roles to apply to the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account#roles GcpSecretStaticAccount#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account#roles GcpSecretStaticAccount#roles}
   */
   readonly roles: string[];
 }
 
-export function gcpSecretStaticAccountBindingToTerraform(struct?: GcpSecretStaticAccountBinding | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gcpSecretStaticAccountBindingToTerraform(struct?: GcpSecretStaticAccountBinding | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource: cdktf.stringToTerraform(struct!.resource),
-    roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
+    resource: cdktn.stringToTerraform(struct!.resource),
+    roles: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.roles),
   }
 }
 
 
-export function gcpSecretStaticAccountBindingToHclTerraform(struct?: GcpSecretStaticAccountBinding | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function gcpSecretStaticAccountBindingToHclTerraform(struct?: GcpSecretStaticAccountBinding | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resource: {
-      value: cdktf.stringToHclTerraform(struct!.resource),
+      value: cdktn.stringToHclTerraform(struct!.resource),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     roles: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.roles),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.roles),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
@@ -113,9 +113,9 @@ export function gcpSecretStaticAccountBindingToHclTerraform(struct?: GcpSecretSt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class GcpSecretStaticAccountBindingOutputReference extends cdktf.ComplexObject {
+export class GcpSecretStaticAccountBindingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -123,11 +123,11 @@ export class GcpSecretStaticAccountBindingOutputReference extends cdktf.ComplexO
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): GcpSecretStaticAccountBinding | cdktf.IResolvable | undefined {
+  public get internalValue(): GcpSecretStaticAccountBinding | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -144,14 +144,14 @@ export class GcpSecretStaticAccountBindingOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GcpSecretStaticAccountBinding | cdktf.IResolvable | undefined) {
+  public set internalValue(value: GcpSecretStaticAccountBinding | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._resource = undefined;
       this._roles = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -179,7 +179,7 @@ export class GcpSecretStaticAccountBindingOutputReference extends cdktf.ComplexO
   // roles - computed: false, optional: false, required: true
   private _roles?: string[]; 
   public get roles() {
-    return cdktf.Fn.tolist(this.getListAttribute('roles'));
+    return cdktn.Fn.tolist(this.getListAttribute('roles'));
   }
   public set roles(value: string[]) {
     this._roles = value;
@@ -190,15 +190,15 @@ export class GcpSecretStaticAccountBindingOutputReference extends cdktf.ComplexO
   }
 }
 
-export class GcpSecretStaticAccountBindingList extends cdktf.ComplexList {
-  public internalValue? : GcpSecretStaticAccountBinding[] | cdktf.IResolvable
+export class GcpSecretStaticAccountBindingList extends cdktn.ComplexList {
+  public internalValue? : GcpSecretStaticAccountBinding[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -211,9 +211,9 @@ export class GcpSecretStaticAccountBindingList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account}
 */
-export class GcpSecretStaticAccount extends cdktf.TerraformResource {
+export class GcpSecretStaticAccount extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -224,14 +224,14 @@ export class GcpSecretStaticAccount extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a GcpSecretStaticAccount resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a GcpSecretStaticAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GcpSecretStaticAccount to import
-  * @param importFromId The id of the existing GcpSecretStaticAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GcpSecretStaticAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GcpSecretStaticAccount to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_gcp_secret_static_account", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_gcp_secret_static_account", importId: importFromId, provider });
       }
 
   // ===========
@@ -239,7 +239,7 @@ export class GcpSecretStaticAccount extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_static_account vault_gcp_secret_static_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -250,7 +250,7 @@ export class GcpSecretStaticAccount extends cdktf.TerraformResource {
       terraformResourceType: 'vault_gcp_secret_static_account',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -370,7 +370,7 @@ export class GcpSecretStaticAccount extends cdktf.TerraformResource {
   // token_scopes - computed: false, optional: true, required: false
   private _tokenScopes?: string[]; 
   public get tokenScopes() {
-    return cdktf.Fn.tolist(this.getListAttribute('token_scopes'));
+    return cdktn.Fn.tolist(this.getListAttribute('token_scopes'));
   }
   public set tokenScopes(value: string[]) {
     this._tokenScopes = value;
@@ -388,7 +388,7 @@ export class GcpSecretStaticAccount extends cdktf.TerraformResource {
   public get binding() {
     return this._binding;
   }
-  public putBinding(value: GcpSecretStaticAccountBinding[] | cdktf.IResolvable) {
+  public putBinding(value: GcpSecretStaticAccountBinding[] | cdktn.IResolvable) {
     this._binding.internalValue = value;
   }
   public resetBinding() {
@@ -405,63 +405,63 @@ export class GcpSecretStaticAccount extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      id: cdktf.stringToTerraform(this._id),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      secret_type: cdktf.stringToTerraform(this._secretType),
-      service_account_email: cdktf.stringToTerraform(this._serviceAccountEmail),
-      static_account: cdktf.stringToTerraform(this._staticAccount),
-      token_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenScopes),
-      binding: cdktf.listMapper(gcpSecretStaticAccountBindingToTerraform, true)(this._binding.internalValue),
+      backend: cdktn.stringToTerraform(this._backend),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      secret_type: cdktn.stringToTerraform(this._secretType),
+      service_account_email: cdktn.stringToTerraform(this._serviceAccountEmail),
+      static_account: cdktn.stringToTerraform(this._staticAccount),
+      token_scopes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenScopes),
+      binding: cdktn.listMapper(gcpSecretStaticAccountBindingToTerraform, true)(this._binding.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret_type: {
-        value: cdktf.stringToHclTerraform(this._secretType),
+        value: cdktn.stringToHclTerraform(this._secretType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       service_account_email: {
-        value: cdktf.stringToHclTerraform(this._serviceAccountEmail),
+        value: cdktn.stringToHclTerraform(this._serviceAccountEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       static_account: {
-        value: cdktf.stringToHclTerraform(this._staticAccount),
+        value: cdktn.stringToHclTerraform(this._staticAccount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_scopes: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenScopes),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenScopes),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       binding: {
-        value: cdktf.listMapperHcl(gcpSecretStaticAccountBindingToHclTerraform, true)(this._binding.internalValue),
+        value: cdktn.listMapperHcl(gcpSecretStaticAccountBindingToHclTerraform, true)(this._binding.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "GcpSecretStaticAccountBindingList",

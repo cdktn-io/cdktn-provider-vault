@@ -1,49 +1,49 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PkiSecretBackendConfigScepConfig extends cdktf.TerraformMetaArguments {
+export interface PkiSecretBackendConfigScepConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of allowed digest algorithms for SCEP requests
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#allowed_digest_algorithms PkiSecretBackendConfigScep#allowed_digest_algorithms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#allowed_digest_algorithms PkiSecretBackendConfigScep#allowed_digest_algorithms}
   */
   readonly allowedDigestAlgorithms?: string[];
   /**
   * List of allowed encryption algorithms for SCEP requests
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#allowed_encryption_algorithms PkiSecretBackendConfigScep#allowed_encryption_algorithms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#allowed_encryption_algorithms PkiSecretBackendConfigScep#allowed_encryption_algorithms}
   */
   readonly allowedEncryptionAlgorithms?: string[];
   /**
   * The PKI secret backend the resource belongs to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#backend PkiSecretBackendConfigScep#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#backend PkiSecretBackendConfigScep#backend}
   */
   readonly backend: string;
   /**
   * Specifies the behavior for requests using the default SCEP label. Can be sign-verbatim or a role given by role:<role_name>
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#default_path_policy PkiSecretBackendConfigScep#default_path_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#default_path_policy PkiSecretBackendConfigScep#default_path_policy}
   */
   readonly defaultPathPolicy?: string;
   /**
   * Specifies whether SCEP is enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#enabled PkiSecretBackendConfigScep#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#enabled PkiSecretBackendConfigScep#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#id PkiSecretBackendConfigScep#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#id PkiSecretBackendConfigScep#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,75 +52,75 @@ export interface PkiSecretBackendConfigScepConfig extends cdktf.TerraformMetaArg
   /**
   * The level of logging verbosity, affects only SCEP logs on this mount
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#log_level PkiSecretBackendConfigScep#log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#log_level PkiSecretBackendConfigScep#log_level}
   */
   readonly logLevel?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#namespace PkiSecretBackendConfigScep#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#namespace PkiSecretBackendConfigScep#namespace}
   */
   readonly namespace?: string;
   /**
   * If true, only return the issuer CA, otherwise the entire CA certificate chain will be returned if available from the PKI mount
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#restrict_ca_chain_to_issuer PkiSecretBackendConfigScep#restrict_ca_chain_to_issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#restrict_ca_chain_to_issuer PkiSecretBackendConfigScep#restrict_ca_chain_to_issuer}
   */
-  readonly restrictCaChainToIssuer?: boolean | cdktf.IResolvable;
+  readonly restrictCaChainToIssuer?: boolean | cdktn.IResolvable;
   /**
   * authenticators block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#authenticators PkiSecretBackendConfigScep#authenticators}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#authenticators PkiSecretBackendConfigScep#authenticators}
   */
   readonly authenticators?: PkiSecretBackendConfigScepAuthenticators;
   /**
   * external_validation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#external_validation PkiSecretBackendConfigScep#external_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#external_validation PkiSecretBackendConfigScep#external_validation}
   */
-  readonly externalValidation?: PkiSecretBackendConfigScepExternalValidation[] | cdktf.IResolvable;
+  readonly externalValidation?: PkiSecretBackendConfigScepExternalValidation[] | cdktn.IResolvable;
 }
 export interface PkiSecretBackendConfigScepAuthenticators {
   /**
   * The accessor and cert_role properties for cert auth backends
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#cert PkiSecretBackendConfigScep#cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#cert PkiSecretBackendConfigScep#cert}
   */
   readonly cert?: { [key: string]: string };
   /**
   * The accessor property for SCEP auth backends
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#scep PkiSecretBackendConfigScep#scep}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#scep PkiSecretBackendConfigScep#scep}
   */
   readonly scep?: { [key: string]: string };
 }
 
 export function pkiSecretBackendConfigScepAuthenticatorsToTerraform(struct?: PkiSecretBackendConfigScepAuthenticatorsOutputReference | PkiSecretBackendConfigScepAuthenticators): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cert: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.cert),
-    scep: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.scep),
+    cert: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.cert),
+    scep: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.scep),
   }
 }
 
 
 export function pkiSecretBackendConfigScepAuthenticatorsToHclTerraform(struct?: PkiSecretBackendConfigScepAuthenticatorsOutputReference | PkiSecretBackendConfigScepAuthenticators): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cert: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.cert),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.cert),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     scep: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.scep),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.scep),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -131,14 +131,14 @@ export function pkiSecretBackendConfigScepAuthenticatorsToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PkiSecretBackendConfigScepAuthenticatorsOutputReference extends cdktf.ComplexObject {
+export class PkiSecretBackendConfigScepAuthenticatorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
@@ -205,30 +205,30 @@ export interface PkiSecretBackendConfigScepExternalValidation {
   /**
   * The credentials to enable Microsoft Intune validation of SCEP requests
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#intune PkiSecretBackendConfigScep#intune}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#intune PkiSecretBackendConfigScep#intune}
   */
   readonly intune?: { [key: string]: string };
 }
 
-export function pkiSecretBackendConfigScepExternalValidationToTerraform(struct?: PkiSecretBackendConfigScepExternalValidation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pkiSecretBackendConfigScepExternalValidationToTerraform(struct?: PkiSecretBackendConfigScepExternalValidation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    intune: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.intune),
+    intune: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.intune),
   }
 }
 
 
-export function pkiSecretBackendConfigScepExternalValidationToHclTerraform(struct?: PkiSecretBackendConfigScepExternalValidation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pkiSecretBackendConfigScepExternalValidationToHclTerraform(struct?: PkiSecretBackendConfigScepExternalValidation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     intune: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.intune),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.intune),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
@@ -239,9 +239,9 @@ export function pkiSecretBackendConfigScepExternalValidationToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PkiSecretBackendConfigScepExternalValidationOutputReference extends cdktf.ComplexObject {
+export class PkiSecretBackendConfigScepExternalValidationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -249,11 +249,11 @@ export class PkiSecretBackendConfigScepExternalValidationOutputReference extends
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): PkiSecretBackendConfigScepExternalValidation | cdktf.IResolvable | undefined {
+  public get internalValue(): PkiSecretBackendConfigScepExternalValidation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -266,13 +266,13 @@ export class PkiSecretBackendConfigScepExternalValidationOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PkiSecretBackendConfigScepExternalValidation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PkiSecretBackendConfigScepExternalValidation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._intune = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -300,15 +300,15 @@ export class PkiSecretBackendConfigScepExternalValidationOutputReference extends
   }
 }
 
-export class PkiSecretBackendConfigScepExternalValidationList extends cdktf.ComplexList {
-  public internalValue? : PkiSecretBackendConfigScepExternalValidation[] | cdktf.IResolvable
+export class PkiSecretBackendConfigScepExternalValidationList extends cdktn.ComplexList {
+  public internalValue? : PkiSecretBackendConfigScepExternalValidation[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -321,9 +321,9 @@ export class PkiSecretBackendConfigScepExternalValidationList extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep}
 */
-export class PkiSecretBackendConfigScep extends cdktf.TerraformResource {
+export class PkiSecretBackendConfigScep extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -334,14 +334,14 @@ export class PkiSecretBackendConfigScep extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PkiSecretBackendConfigScep resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PkiSecretBackendConfigScep resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PkiSecretBackendConfigScep to import
-  * @param importFromId The id of the existing PkiSecretBackendConfigScep that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PkiSecretBackendConfigScep that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PkiSecretBackendConfigScep to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_config_scep", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_pki_secret_backend_config_scep", importId: importFromId, provider });
       }
 
   // ===========
@@ -349,7 +349,7 @@ export class PkiSecretBackendConfigScep extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_config_scep vault_pki_secret_backend_config_scep} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -360,7 +360,7 @@ export class PkiSecretBackendConfigScep extends cdktf.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_config_scep',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -450,11 +450,11 @@ export class PkiSecretBackendConfigScep extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -519,11 +519,11 @@ export class PkiSecretBackendConfigScep extends cdktf.TerraformResource {
   }
 
   // restrict_ca_chain_to_issuer - computed: false, optional: true, required: false
-  private _restrictCaChainToIssuer?: boolean | cdktf.IResolvable; 
+  private _restrictCaChainToIssuer?: boolean | cdktn.IResolvable; 
   public get restrictCaChainToIssuer() {
     return this.getBooleanAttribute('restrict_ca_chain_to_issuer');
   }
-  public set restrictCaChainToIssuer(value: boolean | cdktf.IResolvable) {
+  public set restrictCaChainToIssuer(value: boolean | cdktn.IResolvable) {
     this._restrictCaChainToIssuer = value;
   }
   public resetRestrictCaChainToIssuer() {
@@ -555,7 +555,7 @@ export class PkiSecretBackendConfigScep extends cdktf.TerraformResource {
   public get externalValidation() {
     return this._externalValidation;
   }
-  public putExternalValidation(value: PkiSecretBackendConfigScepExternalValidation[] | cdktf.IResolvable) {
+  public putExternalValidation(value: PkiSecretBackendConfigScepExternalValidation[] | cdktn.IResolvable) {
     this._externalValidation.internalValue = value;
   }
   public resetExternalValidation() {
@@ -572,72 +572,72 @@ export class PkiSecretBackendConfigScep extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allowed_digest_algorithms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedDigestAlgorithms),
-      allowed_encryption_algorithms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedEncryptionAlgorithms),
-      backend: cdktf.stringToTerraform(this._backend),
-      default_path_policy: cdktf.stringToTerraform(this._defaultPathPolicy),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      id: cdktf.stringToTerraform(this._id),
-      log_level: cdktf.stringToTerraform(this._logLevel),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      restrict_ca_chain_to_issuer: cdktf.booleanToTerraform(this._restrictCaChainToIssuer),
+      allowed_digest_algorithms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedDigestAlgorithms),
+      allowed_encryption_algorithms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedEncryptionAlgorithms),
+      backend: cdktn.stringToTerraform(this._backend),
+      default_path_policy: cdktn.stringToTerraform(this._defaultPathPolicy),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      id: cdktn.stringToTerraform(this._id),
+      log_level: cdktn.stringToTerraform(this._logLevel),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      restrict_ca_chain_to_issuer: cdktn.booleanToTerraform(this._restrictCaChainToIssuer),
       authenticators: pkiSecretBackendConfigScepAuthenticatorsToTerraform(this._authenticators.internalValue),
-      external_validation: cdktf.listMapper(pkiSecretBackendConfigScepExternalValidationToTerraform, true)(this._externalValidation.internalValue),
+      external_validation: cdktn.listMapper(pkiSecretBackendConfigScepExternalValidationToTerraform, true)(this._externalValidation.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       allowed_digest_algorithms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedDigestAlgorithms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedDigestAlgorithms),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       allowed_encryption_algorithms: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedEncryptionAlgorithms),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedEncryptionAlgorithms),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_path_policy: {
-        value: cdktf.stringToHclTerraform(this._defaultPathPolicy),
+        value: cdktn.stringToHclTerraform(this._defaultPathPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       log_level: {
-        value: cdktf.stringToHclTerraform(this._logLevel),
+        value: cdktn.stringToHclTerraform(this._logLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       restrict_ca_chain_to_issuer: {
-        value: cdktf.booleanToHclTerraform(this._restrictCaChainToIssuer),
+        value: cdktn.booleanToHclTerraform(this._restrictCaChainToIssuer),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -649,7 +649,7 @@ export class PkiSecretBackendConfigScep extends cdktf.TerraformResource {
         storageClassType: "PkiSecretBackendConfigScepAuthenticatorsList",
       },
       external_validation: {
-        value: cdktf.listMapperHcl(pkiSecretBackendConfigScepExternalValidationToHclTerraform, true)(this._externalValidation.internalValue),
+        value: cdktn.listMapperHcl(pkiSecretBackendConfigScepExternalValidationToHclTerraform, true)(this._externalValidation.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "PkiSecretBackendConfigScepExternalValidationList",

@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RabbitmqSecretBackendRoleConfig extends cdktf.TerraformMetaArguments {
+export interface RabbitmqSecretBackendRoleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The path of the Rabbitmq Secret Backend the role belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#backend RabbitmqSecretBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#backend RabbitmqSecretBackendRole#backend}
   */
   readonly backend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#id RabbitmqSecretBackendRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#id RabbitmqSecretBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,101 +28,101 @@ export interface RabbitmqSecretBackendRoleConfig extends cdktf.TerraformMetaArgu
   /**
   * Unique name for the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#name RabbitmqSecretBackendRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#name RabbitmqSecretBackendRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#namespace RabbitmqSecretBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#namespace RabbitmqSecretBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies a comma-separated RabbitMQ management tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#tags RabbitmqSecretBackendRole#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#tags RabbitmqSecretBackendRole#tags}
   */
   readonly tags?: string;
   /**
   * vhost block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#vhost RabbitmqSecretBackendRole#vhost}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#vhost RabbitmqSecretBackendRole#vhost}
   */
-  readonly vhost?: RabbitmqSecretBackendRoleVhost[] | cdktf.IResolvable;
+  readonly vhost?: RabbitmqSecretBackendRoleVhost[] | cdktn.IResolvable;
   /**
   * vhost_topic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#vhost_topic RabbitmqSecretBackendRole#vhost_topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#vhost_topic RabbitmqSecretBackendRole#vhost_topic}
   */
-  readonly vhostTopic?: RabbitmqSecretBackendRoleVhostTopic[] | cdktf.IResolvable;
+  readonly vhostTopic?: RabbitmqSecretBackendRoleVhostTopic[] | cdktn.IResolvable;
 }
 export interface RabbitmqSecretBackendRoleVhost {
   /**
   * The configure permissions for this vhost.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#configure RabbitmqSecretBackendRole#configure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#configure RabbitmqSecretBackendRole#configure}
   */
   readonly configure: string;
   /**
   * The vhost to set permissions for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#host RabbitmqSecretBackendRole#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#host RabbitmqSecretBackendRole#host}
   */
   readonly host: string;
   /**
   * The read permissions for this vhost.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#read RabbitmqSecretBackendRole#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#read RabbitmqSecretBackendRole#read}
   */
   readonly read: string;
   /**
   * The write permissions for this vhost.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#write RabbitmqSecretBackendRole#write}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#write RabbitmqSecretBackendRole#write}
   */
   readonly write: string;
 }
 
-export function rabbitmqSecretBackendRoleVhostToTerraform(struct?: RabbitmqSecretBackendRoleVhost | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rabbitmqSecretBackendRoleVhostToTerraform(struct?: RabbitmqSecretBackendRoleVhost | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    configure: cdktf.stringToTerraform(struct!.configure),
-    host: cdktf.stringToTerraform(struct!.host),
-    read: cdktf.stringToTerraform(struct!.read),
-    write: cdktf.stringToTerraform(struct!.write),
+    configure: cdktn.stringToTerraform(struct!.configure),
+    host: cdktn.stringToTerraform(struct!.host),
+    read: cdktn.stringToTerraform(struct!.read),
+    write: cdktn.stringToTerraform(struct!.write),
   }
 }
 
 
-export function rabbitmqSecretBackendRoleVhostToHclTerraform(struct?: RabbitmqSecretBackendRoleVhost | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rabbitmqSecretBackendRoleVhostToHclTerraform(struct?: RabbitmqSecretBackendRoleVhost | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     configure: {
-      value: cdktf.stringToHclTerraform(struct!.configure),
+      value: cdktn.stringToHclTerraform(struct!.configure),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     write: {
-      value: cdktf.stringToHclTerraform(struct!.write),
+      value: cdktn.stringToHclTerraform(struct!.write),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -133,9 +133,9 @@ export function rabbitmqSecretBackendRoleVhostToHclTerraform(struct?: RabbitmqSe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RabbitmqSecretBackendRoleVhostOutputReference extends cdktf.ComplexObject {
+export class RabbitmqSecretBackendRoleVhostOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -143,11 +143,11 @@ export class RabbitmqSecretBackendRoleVhostOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RabbitmqSecretBackendRoleVhost | cdktf.IResolvable | undefined {
+  public get internalValue(): RabbitmqSecretBackendRoleVhost | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -172,7 +172,7 @@ export class RabbitmqSecretBackendRoleVhostOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RabbitmqSecretBackendRoleVhost | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RabbitmqSecretBackendRoleVhost | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -181,7 +181,7 @@ export class RabbitmqSecretBackendRoleVhostOutputReference extends cdktf.Complex
       this._read = undefined;
       this._write = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -248,15 +248,15 @@ export class RabbitmqSecretBackendRoleVhostOutputReference extends cdktf.Complex
   }
 }
 
-export class RabbitmqSecretBackendRoleVhostList extends cdktf.ComplexList {
-  public internalValue? : RabbitmqSecretBackendRoleVhost[] | cdktf.IResolvable
+export class RabbitmqSecretBackendRoleVhostList extends cdktn.ComplexList {
+  public internalValue? : RabbitmqSecretBackendRoleVhost[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -271,56 +271,56 @@ export interface RabbitmqSecretBackendRoleVhostTopicVhost {
   /**
   * The read permissions for this vhost.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#read RabbitmqSecretBackendRole#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#read RabbitmqSecretBackendRole#read}
   */
   readonly read: string;
   /**
   * The vhost to set permissions for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#topic RabbitmqSecretBackendRole#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#topic RabbitmqSecretBackendRole#topic}
   */
   readonly topic: string;
   /**
   * The write permissions for this vhost.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#write RabbitmqSecretBackendRole#write}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#write RabbitmqSecretBackendRole#write}
   */
   readonly write: string;
 }
 
-export function rabbitmqSecretBackendRoleVhostTopicVhostToTerraform(struct?: RabbitmqSecretBackendRoleVhostTopicVhost | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rabbitmqSecretBackendRoleVhostTopicVhostToTerraform(struct?: RabbitmqSecretBackendRoleVhostTopicVhost | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    read: cdktf.stringToTerraform(struct!.read),
-    topic: cdktf.stringToTerraform(struct!.topic),
-    write: cdktf.stringToTerraform(struct!.write),
+    read: cdktn.stringToTerraform(struct!.read),
+    topic: cdktn.stringToTerraform(struct!.topic),
+    write: cdktn.stringToTerraform(struct!.write),
   }
 }
 
 
-export function rabbitmqSecretBackendRoleVhostTopicVhostToHclTerraform(struct?: RabbitmqSecretBackendRoleVhostTopicVhost | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rabbitmqSecretBackendRoleVhostTopicVhostToHclTerraform(struct?: RabbitmqSecretBackendRoleVhostTopicVhost | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     read: {
-      value: cdktf.stringToHclTerraform(struct!.read),
+      value: cdktn.stringToHclTerraform(struct!.read),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     topic: {
-      value: cdktf.stringToHclTerraform(struct!.topic),
+      value: cdktn.stringToHclTerraform(struct!.topic),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     write: {
-      value: cdktf.stringToHclTerraform(struct!.write),
+      value: cdktn.stringToHclTerraform(struct!.write),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -331,9 +331,9 @@ export function rabbitmqSecretBackendRoleVhostTopicVhostToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RabbitmqSecretBackendRoleVhostTopicVhostOutputReference extends cdktf.ComplexObject {
+export class RabbitmqSecretBackendRoleVhostTopicVhostOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -341,11 +341,11 @@ export class RabbitmqSecretBackendRoleVhostTopicVhostOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RabbitmqSecretBackendRoleVhostTopicVhost | cdktf.IResolvable | undefined {
+  public get internalValue(): RabbitmqSecretBackendRoleVhostTopicVhost | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -366,7 +366,7 @@ export class RabbitmqSecretBackendRoleVhostTopicVhostOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RabbitmqSecretBackendRoleVhostTopicVhost | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RabbitmqSecretBackendRoleVhostTopicVhost | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -374,7 +374,7 @@ export class RabbitmqSecretBackendRoleVhostTopicVhostOutputReference extends cdk
       this._topic = undefined;
       this._write = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -427,15 +427,15 @@ export class RabbitmqSecretBackendRoleVhostTopicVhostOutputReference extends cdk
   }
 }
 
-export class RabbitmqSecretBackendRoleVhostTopicVhostList extends cdktf.ComplexList {
-  public internalValue? : RabbitmqSecretBackendRoleVhostTopicVhost[] | cdktf.IResolvable
+export class RabbitmqSecretBackendRoleVhostTopicVhostList extends cdktn.ComplexList {
+  public internalValue? : RabbitmqSecretBackendRoleVhostTopicVhost[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -450,43 +450,43 @@ export interface RabbitmqSecretBackendRoleVhostTopic {
   /**
   * The vhost to set permissions for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#host RabbitmqSecretBackendRole#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#host RabbitmqSecretBackendRole#host}
   */
   readonly host: string;
   /**
   * vhost block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#vhost RabbitmqSecretBackendRole#vhost}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#vhost RabbitmqSecretBackendRole#vhost}
   */
-  readonly vhost?: RabbitmqSecretBackendRoleVhostTopicVhost[] | cdktf.IResolvable;
+  readonly vhost?: RabbitmqSecretBackendRoleVhostTopicVhost[] | cdktn.IResolvable;
 }
 
-export function rabbitmqSecretBackendRoleVhostTopicToTerraform(struct?: RabbitmqSecretBackendRoleVhostTopic | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rabbitmqSecretBackendRoleVhostTopicToTerraform(struct?: RabbitmqSecretBackendRoleVhostTopic | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    vhost: cdktf.listMapper(rabbitmqSecretBackendRoleVhostTopicVhostToTerraform, true)(struct!.vhost),
+    host: cdktn.stringToTerraform(struct!.host),
+    vhost: cdktn.listMapper(rabbitmqSecretBackendRoleVhostTopicVhostToTerraform, true)(struct!.vhost),
   }
 }
 
 
-export function rabbitmqSecretBackendRoleVhostTopicToHclTerraform(struct?: RabbitmqSecretBackendRoleVhostTopic | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function rabbitmqSecretBackendRoleVhostTopicToHclTerraform(struct?: RabbitmqSecretBackendRoleVhostTopic | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vhost: {
-      value: cdktf.listMapperHcl(rabbitmqSecretBackendRoleVhostTopicVhostToHclTerraform, true)(struct!.vhost),
+      value: cdktn.listMapperHcl(rabbitmqSecretBackendRoleVhostTopicVhostToHclTerraform, true)(struct!.vhost),
       isBlock: true,
       type: "list",
       storageClassType: "RabbitmqSecretBackendRoleVhostTopicVhostList",
@@ -497,9 +497,9 @@ export function rabbitmqSecretBackendRoleVhostTopicToHclTerraform(struct?: Rabbi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class RabbitmqSecretBackendRoleVhostTopicOutputReference extends cdktf.ComplexObject {
+export class RabbitmqSecretBackendRoleVhostTopicOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -507,11 +507,11 @@ export class RabbitmqSecretBackendRoleVhostTopicOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): RabbitmqSecretBackendRoleVhostTopic | cdktf.IResolvable | undefined {
+  public get internalValue(): RabbitmqSecretBackendRoleVhostTopic | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -528,14 +528,14 @@ export class RabbitmqSecretBackendRoleVhostTopicOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: RabbitmqSecretBackendRoleVhostTopic | cdktf.IResolvable | undefined) {
+  public set internalValue(value: RabbitmqSecretBackendRoleVhostTopic | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._host = undefined;
       this._vhost.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -565,7 +565,7 @@ export class RabbitmqSecretBackendRoleVhostTopicOutputReference extends cdktf.Co
   public get vhost() {
     return this._vhost;
   }
-  public putVhost(value: RabbitmqSecretBackendRoleVhostTopicVhost[] | cdktf.IResolvable) {
+  public putVhost(value: RabbitmqSecretBackendRoleVhostTopicVhost[] | cdktn.IResolvable) {
     this._vhost.internalValue = value;
   }
   public resetVhost() {
@@ -577,15 +577,15 @@ export class RabbitmqSecretBackendRoleVhostTopicOutputReference extends cdktf.Co
   }
 }
 
-export class RabbitmqSecretBackendRoleVhostTopicList extends cdktf.ComplexList {
-  public internalValue? : RabbitmqSecretBackendRoleVhostTopic[] | cdktf.IResolvable
+export class RabbitmqSecretBackendRoleVhostTopicList extends cdktn.ComplexList {
+  public internalValue? : RabbitmqSecretBackendRoleVhostTopic[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -598,9 +598,9 @@ export class RabbitmqSecretBackendRoleVhostTopicList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role}
 */
-export class RabbitmqSecretBackendRole extends cdktf.TerraformResource {
+export class RabbitmqSecretBackendRole extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -611,14 +611,14 @@ export class RabbitmqSecretBackendRole extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RabbitmqSecretBackendRole resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RabbitmqSecretBackendRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RabbitmqSecretBackendRole to import
-  * @param importFromId The id of the existing RabbitmqSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RabbitmqSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RabbitmqSecretBackendRole to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_rabbitmq_secret_backend_role", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_rabbitmq_secret_backend_role", importId: importFromId, provider });
       }
 
   // ===========
@@ -626,7 +626,7 @@ export class RabbitmqSecretBackendRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/rabbitmq_secret_backend_role vault_rabbitmq_secret_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -637,7 +637,7 @@ export class RabbitmqSecretBackendRole extends cdktf.TerraformResource {
       terraformResourceType: 'vault_rabbitmq_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -740,7 +740,7 @@ export class RabbitmqSecretBackendRole extends cdktf.TerraformResource {
   public get vhost() {
     return this._vhost;
   }
-  public putVhost(value: RabbitmqSecretBackendRoleVhost[] | cdktf.IResolvable) {
+  public putVhost(value: RabbitmqSecretBackendRoleVhost[] | cdktn.IResolvable) {
     this._vhost.internalValue = value;
   }
   public resetVhost() {
@@ -756,7 +756,7 @@ export class RabbitmqSecretBackendRole extends cdktf.TerraformResource {
   public get vhostTopic() {
     return this._vhostTopic;
   }
-  public putVhostTopic(value: RabbitmqSecretBackendRoleVhostTopic[] | cdktf.IResolvable) {
+  public putVhostTopic(value: RabbitmqSecretBackendRoleVhostTopic[] | cdktn.IResolvable) {
     this._vhostTopic.internalValue = value;
   }
   public resetVhostTopic() {
@@ -773,56 +773,56 @@ export class RabbitmqSecretBackendRole extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      tags: cdktf.stringToTerraform(this._tags),
-      vhost: cdktf.listMapper(rabbitmqSecretBackendRoleVhostToTerraform, true)(this._vhost.internalValue),
-      vhost_topic: cdktf.listMapper(rabbitmqSecretBackendRoleVhostTopicToTerraform, true)(this._vhostTopic.internalValue),
+      backend: cdktn.stringToTerraform(this._backend),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      tags: cdktn.stringToTerraform(this._tags),
+      vhost: cdktn.listMapper(rabbitmqSecretBackendRoleVhostToTerraform, true)(this._vhost.internalValue),
+      vhost_topic: cdktn.listMapper(rabbitmqSecretBackendRoleVhostTopicToTerraform, true)(this._vhostTopic.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tags: {
-        value: cdktf.stringToHclTerraform(this._tags),
+        value: cdktn.stringToHclTerraform(this._tags),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vhost: {
-        value: cdktf.listMapperHcl(rabbitmqSecretBackendRoleVhostToHclTerraform, true)(this._vhost.internalValue),
+        value: cdktn.listMapperHcl(rabbitmqSecretBackendRoleVhostToHclTerraform, true)(this._vhost.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RabbitmqSecretBackendRoleVhostList",
       },
       vhost_topic: {
-        value: cdktf.listMapperHcl(rabbitmqSecretBackendRoleVhostTopicToHclTerraform, true)(this._vhostTopic.internalValue),
+        value: cdktn.listMapperHcl(rabbitmqSecretBackendRoleVhostTopicToHclTerraform, true)(this._vhostTopic.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "RabbitmqSecretBackendRoleVhostTopicList",

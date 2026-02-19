@@ -1,15 +1,15 @@
-# `awsSecretBackend` Submodule <a name="`awsSecretBackend` Submodule" id="@cdktf/provider-vault.awsSecretBackend"></a>
+# `awsSecretBackend` Submodule <a name="`awsSecretBackend` Submodule" id="@cdktn/provider-vault.awsSecretBackend"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### AwsSecretBackend <a name="AwsSecretBackend" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend"></a>
+### AwsSecretBackend <a name="AwsSecretBackend" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend vault_aws_secret_backend}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_vault import aws_secret_backend
+from cdktn_provider_vault import aws_secret_backend
 
 awsSecretBackend.AwsSecretBackend(
   scope: Construct,
@@ -54,6 +54,8 @@ awsSecretBackend.AwsSecretBackend(
   rotation_window: typing.Union[int, float] = None,
   seal_wrap: bool | IResolvable = None,
   secret_key: str = None,
+  secret_key_wo: str = None,
+  secret_key_wo_version: typing.Union[int, float] = None,
   sts_endpoint: str = None,
   sts_fallback_endpoints: typing.List[str] = None,
   sts_fallback_regions: typing.List[str] = None,
@@ -64,57 +66,59 @@ awsSecretBackend.AwsSecretBackend(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.accessKey">access_key</a></code> | <code>str</code> | The AWS Access Key ID to use when generating new credentials. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.allowedManagedKeys">allowed_managed_keys</a></code> | <code>typing.List[str]</code> | List of managed key registry entry names that the mount in question is allowed to access. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the request data object. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the response data object. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for secrets in seconds. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.delegatedAuthAccessors">delegated_auth_accessors</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.description">description</a></code> | <code>str</code> | Human-friendly description of the mount for the backend. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>bool \| cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.disableRemount">disable_remount</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.externalEntropyAccess">external_entropy_access</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.forceNoCache">force_no_cache</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, disables caching. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.iamEndpoint">iam_endpoint</a></code> | <code>str</code> | Specifies a custom HTTP IAM endpoint to use. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenAudience">identity_token_audience</a></code> | <code>str</code> | The audience claim value. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenKey">identity_token_key</a></code> | <code>str</code> | The key to use for signing identity tokens. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of generated identity tokens in seconds. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.listingVisibility">listing_visibility</a></code> | <code>str</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.local">local</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies if the secret backend is local only. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum possible lease duration for secrets in seconds. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Number of max retries the client should use for recoverable errors. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.options">options</a></code> | <code>typing.Mapping[str]</code> | Specifies mount type specific options that are passed to the backend. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.path">path</a></code> | <code>str</code> | Path to mount the backend at. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.pluginVersion">plugin_version</a></code> | <code>str</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.region">region</a></code> | <code>str</code> | The AWS region to make API calls against. Defaults to us-east-1. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Role ARN to assume for plugin identity token federation. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.sealWrap">seal_wrap</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.secretKey">secret_key</a></code> | <code>str</code> | The AWS Secret Access Key to use when generating new credentials. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsEndpoint">sts_endpoint</a></code> | <code>str</code> | Specifies a custom HTTP STS endpoint to use. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsFallbackEndpoints">sts_fallback_endpoints</a></code> | <code>typing.List[str]</code> | Specifies a list of custom STS fallback endpoints to use (in order). |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsFallbackRegions">sts_fallback_regions</a></code> | <code>typing.List[str]</code> | Specifies a list of custom STS fallback regions to use (in order). |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsRegion">sts_region</a></code> | <code>str</code> | Specifies a custom STS region to use. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.usernameTemplate">username_template</a></code> | <code>str</code> | Template describing how dynamic usernames are generated. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.accessKey">access_key</a></code> | <code>str</code> | The AWS Access Key ID to use when generating new credentials. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.allowedManagedKeys">allowed_managed_keys</a></code> | <code>typing.List[str]</code> | List of managed key registry entry names that the mount in question is allowed to access. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the request data object. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the response data object. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for secrets in seconds. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.delegatedAuthAccessors">delegated_auth_accessors</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.description">description</a></code> | <code>str</code> | Human-friendly description of the mount for the backend. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>bool \| cdktn.IResolvable</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.disableRemount">disable_remount</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, opts out of mount migration on path updates. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.externalEntropyAccess">external_entropy_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.forceNoCache">force_no_cache</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, disables caching. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.iamEndpoint">iam_endpoint</a></code> | <code>str</code> | Specifies a custom HTTP IAM endpoint to use. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenAudience">identity_token_audience</a></code> | <code>str</code> | The audience claim value. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenKey">identity_token_key</a></code> | <code>str</code> | The key to use for signing identity tokens. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of generated identity tokens in seconds. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.listingVisibility">listing_visibility</a></code> | <code>str</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.local">local</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies if the secret backend is local only. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum possible lease duration for secrets in seconds. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Number of max retries the client should use for recoverable errors. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.options">options</a></code> | <code>typing.Mapping[str]</code> | Specifies mount type specific options that are passed to the backend. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.path">path</a></code> | <code>str</code> | Path to mount the backend at. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.pluginVersion">plugin_version</a></code> | <code>str</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.region">region</a></code> | <code>str</code> | The AWS region to make API calls against. Defaults to us-east-1. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.roleArn">role_arn</a></code> | <code>str</code> | Role ARN to assume for plugin identity token federation. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.sealWrap">seal_wrap</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.secretKey">secret_key</a></code> | <code>str</code> | The AWS Secret Access Key to use when generating new credentials. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.secretKeyWo">secret_key_wo</a></code> | <code>str</code> | The AWS Secret Access Key to use when generating new credentials. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.secretKeyWoVersion">secret_key_wo_version</a></code> | <code>typing.Union[int, float]</code> | A version counter for the write-only secret_key_wo field. Incrementing this value will trigger an update to the secret_key. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsEndpoint">sts_endpoint</a></code> | <code>str</code> | Specifies a custom HTTP STS endpoint to use. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsFallbackEndpoints">sts_fallback_endpoints</a></code> | <code>typing.List[str]</code> | Specifies a list of custom STS fallback endpoints to use (in order). |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsFallbackRegions">sts_fallback_regions</a></code> | <code>typing.List[str]</code> | Specifies a list of custom STS fallback regions to use (in order). |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsRegion">sts_region</a></code> | <code>str</code> | Specifies a custom STS region to use. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.usernameTemplate">username_template</a></code> | <code>str</code> | Template describing how dynamic usernames are generated. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -122,7 +126,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -132,350 +136,350 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
-
----
-
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.count"></a>
-
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.dependsOn"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.count"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
-
----
-
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.forEach"></a>
-
-- *Type:* cdktf.ITerraformIterator
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.lifecycle"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.dependsOn"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
-
----
-
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.provider"></a>
-
-- *Type:* cdktf.TerraformProvider
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.provisioners"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.forEach"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `access_key`<sup>Optional</sup> <a name="access_key" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.accessKey"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `access_key`<sup>Optional</sup> <a name="access_key" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.accessKey"></a>
 
 - *Type:* str
 
 The AWS Access Key ID to use when generating new credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
 
 ---
 
-##### `allowed_managed_keys`<sup>Optional</sup> <a name="allowed_managed_keys" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.allowedManagedKeys"></a>
+##### `allowed_managed_keys`<sup>Optional</sup> <a name="allowed_managed_keys" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.allowedManagedKeys"></a>
 
 - *Type:* typing.List[str]
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#allowed_managed_keys AwsSecretBackend#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#allowed_managed_keys AwsSecretBackend#allowed_managed_keys}
 
 ---
 
-##### `allowed_response_headers`<sup>Optional</sup> <a name="allowed_response_headers" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.allowedResponseHeaders"></a>
+##### `allowed_response_headers`<sup>Optional</sup> <a name="allowed_response_headers" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.allowedResponseHeaders"></a>
 
 - *Type:* typing.List[str]
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#allowed_response_headers AwsSecretBackend#allowed_response_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#allowed_response_headers AwsSecretBackend#allowed_response_headers}
 
 ---
 
-##### `audit_non_hmac_request_keys`<sup>Optional</sup> <a name="audit_non_hmac_request_keys" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.auditNonHmacRequestKeys"></a>
+##### `audit_non_hmac_request_keys`<sup>Optional</sup> <a name="audit_non_hmac_request_keys" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.auditNonHmacRequestKeys"></a>
 
 - *Type:* typing.List[str]
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#audit_non_hmac_request_keys AwsSecretBackend#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#audit_non_hmac_request_keys AwsSecretBackend#audit_non_hmac_request_keys}
 
 ---
 
-##### `audit_non_hmac_response_keys`<sup>Optional</sup> <a name="audit_non_hmac_response_keys" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.auditNonHmacResponseKeys"></a>
+##### `audit_non_hmac_response_keys`<sup>Optional</sup> <a name="audit_non_hmac_response_keys" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.auditNonHmacResponseKeys"></a>
 
 - *Type:* typing.List[str]
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#audit_non_hmac_response_keys AwsSecretBackend#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#audit_non_hmac_response_keys AwsSecretBackend#audit_non_hmac_response_keys}
 
 ---
 
-##### `default_lease_ttl_seconds`<sup>Optional</sup> <a name="default_lease_ttl_seconds" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.defaultLeaseTtlSeconds"></a>
+##### `default_lease_ttl_seconds`<sup>Optional</sup> <a name="default_lease_ttl_seconds" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.defaultLeaseTtlSeconds"></a>
 
 - *Type:* typing.Union[int, float]
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
 
 ---
 
-##### `delegated_auth_accessors`<sup>Optional</sup> <a name="delegated_auth_accessors" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.delegatedAuthAccessors"></a>
+##### `delegated_auth_accessors`<sup>Optional</sup> <a name="delegated_auth_accessors" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.delegatedAuthAccessors"></a>
 
 - *Type:* typing.List[str]
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#delegated_auth_accessors AwsSecretBackend#delegated_auth_accessors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#delegated_auth_accessors AwsSecretBackend#delegated_auth_accessors}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.description"></a>
 
 - *Type:* str
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
 
 ---
 
-##### `disable_automated_rotation`<sup>Optional</sup> <a name="disable_automated_rotation" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.disableAutomatedRotation"></a>
+##### `disable_automated_rotation`<sup>Optional</sup> <a name="disable_automated_rotation" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.disableAutomatedRotation"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Stops rotation of the root credential until set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#disable_automated_rotation AwsSecretBackend#disable_automated_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#disable_automated_rotation AwsSecretBackend#disable_automated_rotation}
 
 ---
 
-##### `disable_remount`<sup>Optional</sup> <a name="disable_remount" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.disableRemount"></a>
+##### `disable_remount`<sup>Optional</sup> <a name="disable_remount" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.disableRemount"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
 
 ---
 
-##### `external_entropy_access`<sup>Optional</sup> <a name="external_entropy_access" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.externalEntropyAccess"></a>
+##### `external_entropy_access`<sup>Optional</sup> <a name="external_entropy_access" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.externalEntropyAccess"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#external_entropy_access AwsSecretBackend#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#external_entropy_access AwsSecretBackend#external_entropy_access}
 
 ---
 
-##### `force_no_cache`<sup>Optional</sup> <a name="force_no_cache" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.forceNoCache"></a>
+##### `force_no_cache`<sup>Optional</sup> <a name="force_no_cache" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.forceNoCache"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to true, disables caching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#force_no_cache AwsSecretBackend#force_no_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#force_no_cache AwsSecretBackend#force_no_cache}
 
 ---
 
-##### `iam_endpoint`<sup>Optional</sup> <a name="iam_endpoint" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.iamEndpoint"></a>
+##### `iam_endpoint`<sup>Optional</sup> <a name="iam_endpoint" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.iamEndpoint"></a>
 
 - *Type:* str
 
 Specifies a custom HTTP IAM endpoint to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.id"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `identity_token_audience`<sup>Optional</sup> <a name="identity_token_audience" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenAudience"></a>
+##### `identity_token_audience`<sup>Optional</sup> <a name="identity_token_audience" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenAudience"></a>
 
 - *Type:* str
 
 The audience claim value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#identity_token_audience AwsSecretBackend#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#identity_token_audience AwsSecretBackend#identity_token_audience}
 
 ---
 
-##### `identity_token_key`<sup>Optional</sup> <a name="identity_token_key" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenKey"></a>
+##### `identity_token_key`<sup>Optional</sup> <a name="identity_token_key" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenKey"></a>
 
 - *Type:* str
 
 The key to use for signing identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#identity_token_key AwsSecretBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#identity_token_key AwsSecretBackend#identity_token_key}
 
 ---
 
-##### `identity_token_ttl`<sup>Optional</sup> <a name="identity_token_ttl" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenTtl"></a>
+##### `identity_token_ttl`<sup>Optional</sup> <a name="identity_token_ttl" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.identityTokenTtl"></a>
 
 - *Type:* typing.Union[int, float]
 
 The TTL of generated identity tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#identity_token_ttl AwsSecretBackend#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#identity_token_ttl AwsSecretBackend#identity_token_ttl}
 
 ---
 
-##### `listing_visibility`<sup>Optional</sup> <a name="listing_visibility" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.listingVisibility"></a>
+##### `listing_visibility`<sup>Optional</sup> <a name="listing_visibility" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.listingVisibility"></a>
 
 - *Type:* str
 
 Specifies whether to show this mount in the UI-specific listing endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#listing_visibility AwsSecretBackend#listing_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#listing_visibility AwsSecretBackend#listing_visibility}
 
 ---
 
-##### `local`<sup>Optional</sup> <a name="local" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.local"></a>
+##### `local`<sup>Optional</sup> <a name="local" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.local"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Specifies if the secret backend is local only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
 
 ---
 
-##### `max_lease_ttl_seconds`<sup>Optional</sup> <a name="max_lease_ttl_seconds" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.maxLeaseTtlSeconds"></a>
+##### `max_lease_ttl_seconds`<sup>Optional</sup> <a name="max_lease_ttl_seconds" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.maxLeaseTtlSeconds"></a>
 
 - *Type:* typing.Union[int, float]
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
 
 ---
 
-##### `max_retries`<sup>Optional</sup> <a name="max_retries" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.maxRetries"></a>
+##### `max_retries`<sup>Optional</sup> <a name="max_retries" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.maxRetries"></a>
 
 - *Type:* typing.Union[int, float]
 
 Number of max retries the client should use for recoverable errors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#max_retries AwsSecretBackend#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#max_retries AwsSecretBackend#max_retries}
 
 ---
 
-##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.namespace"></a>
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.namespace"></a>
 
 - *Type:* str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
 
 ---
 
-##### `options`<sup>Optional</sup> <a name="options" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.options"></a>
+##### `options`<sup>Optional</sup> <a name="options" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.options"></a>
 
 - *Type:* typing.Mapping[str]
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#options AwsSecretBackend#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#options AwsSecretBackend#options}
 
 ---
 
-##### `passthrough_request_headers`<sup>Optional</sup> <a name="passthrough_request_headers" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.passthroughRequestHeaders"></a>
+##### `passthrough_request_headers`<sup>Optional</sup> <a name="passthrough_request_headers" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.passthroughRequestHeaders"></a>
 
 - *Type:* typing.List[str]
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#passthrough_request_headers AwsSecretBackend#passthrough_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#passthrough_request_headers AwsSecretBackend#passthrough_request_headers}
 
 ---
 
-##### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.path"></a>
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.path"></a>
 
 - *Type:* str
 
 Path to mount the backend at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
 
 ---
 
-##### `plugin_version`<sup>Optional</sup> <a name="plugin_version" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.pluginVersion"></a>
+##### `plugin_version`<sup>Optional</sup> <a name="plugin_version" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.pluginVersion"></a>
 
 - *Type:* str
 
 Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#plugin_version AwsSecretBackend#plugin_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#plugin_version AwsSecretBackend#plugin_version}
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.region"></a>
 
 - *Type:* str
 
 The AWS region to make API calls against. Defaults to us-east-1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
 
 ---
 
-##### `role_arn`<sup>Optional</sup> <a name="role_arn" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.roleArn"></a>
+##### `role_arn`<sup>Optional</sup> <a name="role_arn" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.roleArn"></a>
 
 - *Type:* str
 
 Role ARN to assume for plugin identity token federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#role_arn AwsSecretBackend#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#role_arn AwsSecretBackend#role_arn}
 
 ---
 
-##### `rotation_period`<sup>Optional</sup> <a name="rotation_period" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.rotationPeriod"></a>
+##### `rotation_period`<sup>Optional</sup> <a name="rotation_period" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.rotationPeriod"></a>
 
 - *Type:* typing.Union[int, float]
 
 The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#rotation_period AwsSecretBackend#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#rotation_period AwsSecretBackend#rotation_period}
 
 ---
 
-##### `rotation_schedule`<sup>Optional</sup> <a name="rotation_schedule" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.rotationSchedule"></a>
+##### `rotation_schedule`<sup>Optional</sup> <a name="rotation_schedule" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.rotationSchedule"></a>
 
 - *Type:* str
 
 The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#rotation_schedule AwsSecretBackend#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#rotation_schedule AwsSecretBackend#rotation_schedule}
 
 ---
 
-##### `rotation_window`<sup>Optional</sup> <a name="rotation_window" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.rotationWindow"></a>
+##### `rotation_window`<sup>Optional</sup> <a name="rotation_window" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.rotationWindow"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -483,77 +487,99 @@ The maximum amount of time in seconds Vault is allowed to complete a rotation on
 
 Can only be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#rotation_window AwsSecretBackend#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#rotation_window AwsSecretBackend#rotation_window}
 
 ---
 
-##### `seal_wrap`<sup>Optional</sup> <a name="seal_wrap" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.sealWrap"></a>
+##### `seal_wrap`<sup>Optional</sup> <a name="seal_wrap" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.sealWrap"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#seal_wrap AwsSecretBackend#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#seal_wrap AwsSecretBackend#seal_wrap}
 
 ---
 
-##### `secret_key`<sup>Optional</sup> <a name="secret_key" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.secretKey"></a>
+##### `secret_key`<sup>Optional</sup> <a name="secret_key" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.secretKey"></a>
 
 - *Type:* str
 
 The AWS Secret Access Key to use when generating new credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
 
 ---
 
-##### `sts_endpoint`<sup>Optional</sup> <a name="sts_endpoint" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsEndpoint"></a>
+##### `secret_key_wo`<sup>Optional</sup> <a name="secret_key_wo" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.secretKeyWo"></a>
+
+- *Type:* str
+
+The AWS Secret Access Key to use when generating new credentials.
+
+This is a write-only field and will not be read back from Vault.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#secret_key_wo AwsSecretBackend#secret_key_wo}
+
+---
+
+##### `secret_key_wo_version`<sup>Optional</sup> <a name="secret_key_wo_version" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.secretKeyWoVersion"></a>
+
+- *Type:* typing.Union[int, float]
+
+A version counter for the write-only secret_key_wo field. Incrementing this value will trigger an update to the secret_key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#secret_key_wo_version AwsSecretBackend#secret_key_wo_version}
+
+---
+
+##### `sts_endpoint`<sup>Optional</sup> <a name="sts_endpoint" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsEndpoint"></a>
 
 - *Type:* str
 
 Specifies a custom HTTP STS endpoint to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
 
 ---
 
-##### `sts_fallback_endpoints`<sup>Optional</sup> <a name="sts_fallback_endpoints" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsFallbackEndpoints"></a>
+##### `sts_fallback_endpoints`<sup>Optional</sup> <a name="sts_fallback_endpoints" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsFallbackEndpoints"></a>
 
 - *Type:* typing.List[str]
 
 Specifies a list of custom STS fallback endpoints to use (in order).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#sts_fallback_endpoints AwsSecretBackend#sts_fallback_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#sts_fallback_endpoints AwsSecretBackend#sts_fallback_endpoints}
 
 ---
 
-##### `sts_fallback_regions`<sup>Optional</sup> <a name="sts_fallback_regions" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsFallbackRegions"></a>
+##### `sts_fallback_regions`<sup>Optional</sup> <a name="sts_fallback_regions" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsFallbackRegions"></a>
 
 - *Type:* typing.List[str]
 
 Specifies a list of custom STS fallback regions to use (in order).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#sts_fallback_regions AwsSecretBackend#sts_fallback_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#sts_fallback_regions AwsSecretBackend#sts_fallback_regions}
 
 ---
 
-##### `sts_region`<sup>Optional</sup> <a name="sts_region" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsRegion"></a>
+##### `sts_region`<sup>Optional</sup> <a name="sts_region" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.stsRegion"></a>
 
 - *Type:* str
 
 Specifies a custom STS region to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#sts_region AwsSecretBackend#sts_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#sts_region AwsSecretBackend#sts_region}
 
 ---
 
-##### `username_template`<sup>Optional</sup> <a name="username_template" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.usernameTemplate"></a>
+##### `username_template`<sup>Optional</sup> <a name="username_template" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer.parameter.usernameTemplate"></a>
 
 - *Type:* str
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
 
 ---
 
@@ -561,71 +587,73 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetAccessKey">reset_access_key</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetAllowedManagedKeys">reset_allowed_managed_keys</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetAllowedResponseHeaders">reset_allowed_response_headers</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetAuditNonHmacRequestKeys">reset_audit_non_hmac_request_keys</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetAuditNonHmacResponseKeys">reset_audit_non_hmac_response_keys</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDefaultLeaseTtlSeconds">reset_default_lease_ttl_seconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDelegatedAuthAccessors">reset_delegated_auth_accessors</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDisableAutomatedRotation">reset_disable_automated_rotation</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDisableRemount">reset_disable_remount</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetExternalEntropyAccess">reset_external_entropy_access</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetForceNoCache">reset_force_no_cache</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetIamEndpoint">reset_iam_endpoint</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetIdentityTokenAudience">reset_identity_token_audience</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetIdentityTokenKey">reset_identity_token_key</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetIdentityTokenTtl">reset_identity_token_ttl</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetListingVisibility">reset_listing_visibility</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetLocal">reset_local</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetMaxLeaseTtlSeconds">reset_max_lease_ttl_seconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetMaxRetries">reset_max_retries</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetNamespace">reset_namespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetOptions">reset_options</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetPassthroughRequestHeaders">reset_passthrough_request_headers</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetPath">reset_path</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetPluginVersion">reset_plugin_version</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRoleArn">reset_role_arn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationPeriod">reset_rotation_period</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationSchedule">reset_rotation_schedule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationWindow">reset_rotation_window</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetSealWrap">reset_seal_wrap</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetSecretKey">reset_secret_key</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsEndpoint">reset_sts_endpoint</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsFallbackEndpoints">reset_sts_fallback_endpoints</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsFallbackRegions">reset_sts_fallback_regions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsRegion">reset_sts_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetUsernameTemplate">reset_username_template</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetAccessKey">reset_access_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetAllowedManagedKeys">reset_allowed_managed_keys</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetAllowedResponseHeaders">reset_allowed_response_headers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetAuditNonHmacRequestKeys">reset_audit_non_hmac_request_keys</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetAuditNonHmacResponseKeys">reset_audit_non_hmac_response_keys</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetDefaultLeaseTtlSeconds">reset_default_lease_ttl_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetDelegatedAuthAccessors">reset_delegated_auth_accessors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetDisableAutomatedRotation">reset_disable_automated_rotation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetDisableRemount">reset_disable_remount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetExternalEntropyAccess">reset_external_entropy_access</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetForceNoCache">reset_force_no_cache</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetIamEndpoint">reset_iam_endpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetIdentityTokenAudience">reset_identity_token_audience</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetIdentityTokenKey">reset_identity_token_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetIdentityTokenTtl">reset_identity_token_ttl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetListingVisibility">reset_listing_visibility</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetLocal">reset_local</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetMaxLeaseTtlSeconds">reset_max_lease_ttl_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetMaxRetries">reset_max_retries</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetNamespace">reset_namespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetOptions">reset_options</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetPassthroughRequestHeaders">reset_passthrough_request_headers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetPath">reset_path</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetPluginVersion">reset_plugin_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetRoleArn">reset_role_arn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationPeriod">reset_rotation_period</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationSchedule">reset_rotation_schedule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationWindow">reset_rotation_window</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetSealWrap">reset_seal_wrap</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetSecretKey">reset_secret_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetSecretKeyWo">reset_secret_key_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetSecretKeyWoVersion">reset_secret_key_wo_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsEndpoint">reset_sts_endpoint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsFallbackEndpoints">reset_sts_fallback_endpoints</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsFallbackRegions">reset_sts_fallback_regions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsRegion">reset_sts_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetUsernameTemplate">reset_username_template</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.toString"></a>
 
 ```python
 def to_string() -> str
@@ -633,7 +661,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.addOverride"></a>
 
 ```python
 def add_override(
@@ -642,19 +670,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -664,7 +692,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -672,7 +700,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -680,19 +708,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -700,7 +728,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -710,7 +738,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -718,7 +746,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -726,13 +754,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -740,13 +768,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -754,13 +782,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -768,13 +796,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -782,13 +810,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -796,13 +824,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -810,13 +838,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -824,13 +852,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -838,19 +866,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.importFrom"></a>
 
 ```python
 def import_from(
@@ -859,19 +887,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -879,13 +907,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -897,7 +925,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -905,7 +933,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.moveTo"></a>
 
 ```python
 def move_to(
@@ -916,7 +944,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -924,7 +952,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -932,7 +960,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -942,7 +970,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -950,229 +978,241 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_access_key` <a name="reset_access_key" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetAccessKey"></a>
+##### `reset_access_key` <a name="reset_access_key" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetAccessKey"></a>
 
 ```python
 def reset_access_key() -> None
 ```
 
-##### `reset_allowed_managed_keys` <a name="reset_allowed_managed_keys" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetAllowedManagedKeys"></a>
+##### `reset_allowed_managed_keys` <a name="reset_allowed_managed_keys" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetAllowedManagedKeys"></a>
 
 ```python
 def reset_allowed_managed_keys() -> None
 ```
 
-##### `reset_allowed_response_headers` <a name="reset_allowed_response_headers" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetAllowedResponseHeaders"></a>
+##### `reset_allowed_response_headers` <a name="reset_allowed_response_headers" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetAllowedResponseHeaders"></a>
 
 ```python
 def reset_allowed_response_headers() -> None
 ```
 
-##### `reset_audit_non_hmac_request_keys` <a name="reset_audit_non_hmac_request_keys" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetAuditNonHmacRequestKeys"></a>
+##### `reset_audit_non_hmac_request_keys` <a name="reset_audit_non_hmac_request_keys" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetAuditNonHmacRequestKeys"></a>
 
 ```python
 def reset_audit_non_hmac_request_keys() -> None
 ```
 
-##### `reset_audit_non_hmac_response_keys` <a name="reset_audit_non_hmac_response_keys" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetAuditNonHmacResponseKeys"></a>
+##### `reset_audit_non_hmac_response_keys` <a name="reset_audit_non_hmac_response_keys" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetAuditNonHmacResponseKeys"></a>
 
 ```python
 def reset_audit_non_hmac_response_keys() -> None
 ```
 
-##### `reset_default_lease_ttl_seconds` <a name="reset_default_lease_ttl_seconds" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDefaultLeaseTtlSeconds"></a>
+##### `reset_default_lease_ttl_seconds` <a name="reset_default_lease_ttl_seconds" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetDefaultLeaseTtlSeconds"></a>
 
 ```python
 def reset_default_lease_ttl_seconds() -> None
 ```
 
-##### `reset_delegated_auth_accessors` <a name="reset_delegated_auth_accessors" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDelegatedAuthAccessors"></a>
+##### `reset_delegated_auth_accessors` <a name="reset_delegated_auth_accessors" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetDelegatedAuthAccessors"></a>
 
 ```python
 def reset_delegated_auth_accessors() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_disable_automated_rotation` <a name="reset_disable_automated_rotation" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDisableAutomatedRotation"></a>
+##### `reset_disable_automated_rotation` <a name="reset_disable_automated_rotation" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetDisableAutomatedRotation"></a>
 
 ```python
 def reset_disable_automated_rotation() -> None
 ```
 
-##### `reset_disable_remount` <a name="reset_disable_remount" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetDisableRemount"></a>
+##### `reset_disable_remount` <a name="reset_disable_remount" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetDisableRemount"></a>
 
 ```python
 def reset_disable_remount() -> None
 ```
 
-##### `reset_external_entropy_access` <a name="reset_external_entropy_access" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetExternalEntropyAccess"></a>
+##### `reset_external_entropy_access` <a name="reset_external_entropy_access" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetExternalEntropyAccess"></a>
 
 ```python
 def reset_external_entropy_access() -> None
 ```
 
-##### `reset_force_no_cache` <a name="reset_force_no_cache" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetForceNoCache"></a>
+##### `reset_force_no_cache` <a name="reset_force_no_cache" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetForceNoCache"></a>
 
 ```python
 def reset_force_no_cache() -> None
 ```
 
-##### `reset_iam_endpoint` <a name="reset_iam_endpoint" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetIamEndpoint"></a>
+##### `reset_iam_endpoint` <a name="reset_iam_endpoint" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetIamEndpoint"></a>
 
 ```python
 def reset_iam_endpoint() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_identity_token_audience` <a name="reset_identity_token_audience" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetIdentityTokenAudience"></a>
+##### `reset_identity_token_audience` <a name="reset_identity_token_audience" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetIdentityTokenAudience"></a>
 
 ```python
 def reset_identity_token_audience() -> None
 ```
 
-##### `reset_identity_token_key` <a name="reset_identity_token_key" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetIdentityTokenKey"></a>
+##### `reset_identity_token_key` <a name="reset_identity_token_key" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetIdentityTokenKey"></a>
 
 ```python
 def reset_identity_token_key() -> None
 ```
 
-##### `reset_identity_token_ttl` <a name="reset_identity_token_ttl" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetIdentityTokenTtl"></a>
+##### `reset_identity_token_ttl` <a name="reset_identity_token_ttl" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetIdentityTokenTtl"></a>
 
 ```python
 def reset_identity_token_ttl() -> None
 ```
 
-##### `reset_listing_visibility` <a name="reset_listing_visibility" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetListingVisibility"></a>
+##### `reset_listing_visibility` <a name="reset_listing_visibility" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetListingVisibility"></a>
 
 ```python
 def reset_listing_visibility() -> None
 ```
 
-##### `reset_local` <a name="reset_local" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetLocal"></a>
+##### `reset_local` <a name="reset_local" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetLocal"></a>
 
 ```python
 def reset_local() -> None
 ```
 
-##### `reset_max_lease_ttl_seconds` <a name="reset_max_lease_ttl_seconds" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetMaxLeaseTtlSeconds"></a>
+##### `reset_max_lease_ttl_seconds` <a name="reset_max_lease_ttl_seconds" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetMaxLeaseTtlSeconds"></a>
 
 ```python
 def reset_max_lease_ttl_seconds() -> None
 ```
 
-##### `reset_max_retries` <a name="reset_max_retries" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetMaxRetries"></a>
+##### `reset_max_retries` <a name="reset_max_retries" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetMaxRetries"></a>
 
 ```python
 def reset_max_retries() -> None
 ```
 
-##### `reset_namespace` <a name="reset_namespace" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetNamespace"></a>
+##### `reset_namespace` <a name="reset_namespace" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetNamespace"></a>
 
 ```python
 def reset_namespace() -> None
 ```
 
-##### `reset_options` <a name="reset_options" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetOptions"></a>
+##### `reset_options` <a name="reset_options" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetOptions"></a>
 
 ```python
 def reset_options() -> None
 ```
 
-##### `reset_passthrough_request_headers` <a name="reset_passthrough_request_headers" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetPassthroughRequestHeaders"></a>
+##### `reset_passthrough_request_headers` <a name="reset_passthrough_request_headers" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetPassthroughRequestHeaders"></a>
 
 ```python
 def reset_passthrough_request_headers() -> None
 ```
 
-##### `reset_path` <a name="reset_path" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetPath"></a>
+##### `reset_path` <a name="reset_path" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetPath"></a>
 
 ```python
 def reset_path() -> None
 ```
 
-##### `reset_plugin_version` <a name="reset_plugin_version" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetPluginVersion"></a>
+##### `reset_plugin_version` <a name="reset_plugin_version" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetPluginVersion"></a>
 
 ```python
 def reset_plugin_version() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_role_arn` <a name="reset_role_arn" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRoleArn"></a>
+##### `reset_role_arn` <a name="reset_role_arn" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetRoleArn"></a>
 
 ```python
 def reset_role_arn() -> None
 ```
 
-##### `reset_rotation_period` <a name="reset_rotation_period" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationPeriod"></a>
+##### `reset_rotation_period` <a name="reset_rotation_period" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationPeriod"></a>
 
 ```python
 def reset_rotation_period() -> None
 ```
 
-##### `reset_rotation_schedule` <a name="reset_rotation_schedule" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationSchedule"></a>
+##### `reset_rotation_schedule` <a name="reset_rotation_schedule" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationSchedule"></a>
 
 ```python
 def reset_rotation_schedule() -> None
 ```
 
-##### `reset_rotation_window` <a name="reset_rotation_window" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationWindow"></a>
+##### `reset_rotation_window` <a name="reset_rotation_window" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetRotationWindow"></a>
 
 ```python
 def reset_rotation_window() -> None
 ```
 
-##### `reset_seal_wrap` <a name="reset_seal_wrap" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetSealWrap"></a>
+##### `reset_seal_wrap` <a name="reset_seal_wrap" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetSealWrap"></a>
 
 ```python
 def reset_seal_wrap() -> None
 ```
 
-##### `reset_secret_key` <a name="reset_secret_key" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetSecretKey"></a>
+##### `reset_secret_key` <a name="reset_secret_key" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetSecretKey"></a>
 
 ```python
 def reset_secret_key() -> None
 ```
 
-##### `reset_sts_endpoint` <a name="reset_sts_endpoint" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsEndpoint"></a>
+##### `reset_secret_key_wo` <a name="reset_secret_key_wo" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetSecretKeyWo"></a>
+
+```python
+def reset_secret_key_wo() -> None
+```
+
+##### `reset_secret_key_wo_version` <a name="reset_secret_key_wo_version" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetSecretKeyWoVersion"></a>
+
+```python
+def reset_secret_key_wo_version() -> None
+```
+
+##### `reset_sts_endpoint` <a name="reset_sts_endpoint" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsEndpoint"></a>
 
 ```python
 def reset_sts_endpoint() -> None
 ```
 
-##### `reset_sts_fallback_endpoints` <a name="reset_sts_fallback_endpoints" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsFallbackEndpoints"></a>
+##### `reset_sts_fallback_endpoints` <a name="reset_sts_fallback_endpoints" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsFallbackEndpoints"></a>
 
 ```python
 def reset_sts_fallback_endpoints() -> None
 ```
 
-##### `reset_sts_fallback_regions` <a name="reset_sts_fallback_regions" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsFallbackRegions"></a>
+##### `reset_sts_fallback_regions` <a name="reset_sts_fallback_regions" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsFallbackRegions"></a>
 
 ```python
 def reset_sts_fallback_regions() -> None
 ```
 
-##### `reset_sts_region` <a name="reset_sts_region" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsRegion"></a>
+##### `reset_sts_region` <a name="reset_sts_region" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetStsRegion"></a>
 
 ```python
 def reset_sts_region() -> None
 ```
 
-##### `reset_username_template` <a name="reset_username_template" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.resetUsernameTemplate"></a>
+##### `reset_username_template` <a name="reset_username_template" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.resetUsernameTemplate"></a>
 
 ```python
 def reset_username_template() -> None
@@ -1182,17 +1222,17 @@ def reset_username_template() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a AwsSecretBackend resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a AwsSecretBackend resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_vault import aws_secret_backend
+from cdktn_provider_vault import aws_secret_backend
 
 awsSecretBackend.AwsSecretBackend.is_construct(
   x: typing.Any
@@ -1215,7 +1255,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -1223,42 +1263,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_vault import aws_secret_backend
+from cdktn_provider_vault import aws_secret_backend
 
 awsSecretBackend.AwsSecretBackend.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_vault import aws_secret_backend
+from cdktn_provider_vault import aws_secret_backend
 
 awsSecretBackend.AwsSecretBackend.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_vault import aws_secret_backend
+from cdktn_provider_vault import aws_secret_backend
 
 awsSecretBackend.AwsSecretBackend.generate_config_for_import(
   scope: Construct,
@@ -1268,9 +1308,9 @@ awsSecretBackend.AwsSecretBackend.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a AwsSecretBackend resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a AwsSecretBackend resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1278,7 +1318,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -1286,19 +1326,19 @@ The construct id used in the generated config for the AwsSecretBackend to import
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
 The id of the existing AwsSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the AwsSecretBackend to import is found.
 
@@ -1308,101 +1348,105 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessor">accessor</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessKeyInput">access_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedManagedKeysInput">allowed_managed_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedResponseHeadersInput">allowed_response_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacRequestKeysInput">audit_non_hmac_request_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacResponseKeysInput">audit_non_hmac_response_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.defaultLeaseTtlSecondsInput">default_lease_ttl_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.delegatedAuthAccessorsInput">delegated_auth_accessors_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableAutomatedRotationInput">disable_automated_rotation_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableRemountInput">disable_remount_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.externalEntropyAccessInput">external_entropy_access_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.forceNoCacheInput">force_no_cache_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.iamEndpointInput">iam_endpoint_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenAudienceInput">identity_token_audience_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenKeyInput">identity_token_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenTtlInput">identity_token_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.listingVisibilityInput">listing_visibility_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.localInput">local_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxLeaseTtlSecondsInput">max_lease_ttl_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxRetriesInput">max_retries_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.optionsInput">options_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.passthroughRequestHeadersInput">passthrough_request_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.pluginVersionInput">plugin_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationPeriodInput">rotation_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationScheduleInput">rotation_schedule_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationWindowInput">rotation_window_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.sealWrapInput">seal_wrap_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyInput">secret_key_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsEndpointInput">sts_endpoint_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackEndpointsInput">sts_fallback_endpoints_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackRegionsInput">sts_fallback_regions_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsRegionInput">sts_region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.usernameTemplateInput">username_template_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessKey">access_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedManagedKeys">allowed_managed_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.delegatedAuthAccessors">delegated_auth_accessors</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableRemount">disable_remount</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.externalEntropyAccess">external_entropy_access</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.forceNoCache">force_no_cache</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.iamEndpoint">iam_endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenAudience">identity_token_audience</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenKey">identity_token_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.local">local</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.options">options</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.path">path</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.pluginVersion">plugin_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.sealWrap">seal_wrap</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKey">secret_key</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsEndpoint">sts_endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackEndpoints">sts_fallback_endpoints</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackRegions">sts_fallback_regions</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsRegion">sts_region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.usernameTemplate">username_template</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessor">accessor</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessKeyInput">access_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedManagedKeysInput">allowed_managed_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedResponseHeadersInput">allowed_response_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacRequestKeysInput">audit_non_hmac_request_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacResponseKeysInput">audit_non_hmac_response_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.defaultLeaseTtlSecondsInput">default_lease_ttl_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.delegatedAuthAccessorsInput">delegated_auth_accessors_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableAutomatedRotationInput">disable_automated_rotation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableRemountInput">disable_remount_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.externalEntropyAccessInput">external_entropy_access_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.forceNoCacheInput">force_no_cache_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.iamEndpointInput">iam_endpoint_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenAudienceInput">identity_token_audience_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenKeyInput">identity_token_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenTtlInput">identity_token_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.listingVisibilityInput">listing_visibility_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.localInput">local_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxLeaseTtlSecondsInput">max_lease_ttl_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxRetriesInput">max_retries_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.optionsInput">options_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.passthroughRequestHeadersInput">passthrough_request_headers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.pluginVersionInput">plugin_version_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.roleArnInput">role_arn_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationPeriodInput">rotation_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationScheduleInput">rotation_schedule_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationWindowInput">rotation_window_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.sealWrapInput">seal_wrap_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyInput">secret_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyWoInput">secret_key_wo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyWoVersionInput">secret_key_wo_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsEndpointInput">sts_endpoint_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackEndpointsInput">sts_fallback_endpoints_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackRegionsInput">sts_fallback_regions_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsRegionInput">sts_region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.usernameTemplateInput">username_template_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessKey">access_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedManagedKeys">allowed_managed_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.delegatedAuthAccessors">delegated_auth_accessors</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableRemount">disable_remount</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.externalEntropyAccess">external_entropy_access</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.forceNoCache">force_no_cache</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.iamEndpoint">iam_endpoint</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenAudience">identity_token_audience</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenKey">identity_token_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.local">local</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.options">options</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.path">path</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.pluginVersion">plugin_version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.roleArn">role_arn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.sealWrap">seal_wrap</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKey">secret_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyWo">secret_key_wo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyWoVersion">secret_key_wo_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsEndpoint">sts_endpoint</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackEndpoints">sts_fallback_endpoints</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackRegions">sts_fallback_regions</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsRegion">sts_region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.usernameTemplate">username_template</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.node"></a>
 
 ```python
 node: Node
@@ -1414,17 +1458,17 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1434,7 +1478,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1444,7 +1488,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1454,7 +1498,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1464,37 +1508,37 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1504,47 +1548,47 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `accessor`<sup>Required</sup> <a name="accessor" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessor"></a>
+##### `accessor`<sup>Required</sup> <a name="accessor" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessor"></a>
 
 ```python
 accessor: str
@@ -1554,7 +1598,7 @@ accessor: str
 
 ---
 
-##### `access_key_input`<sup>Optional</sup> <a name="access_key_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessKeyInput"></a>
+##### `access_key_input`<sup>Optional</sup> <a name="access_key_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessKeyInput"></a>
 
 ```python
 access_key_input: str
@@ -1564,7 +1608,7 @@ access_key_input: str
 
 ---
 
-##### `allowed_managed_keys_input`<sup>Optional</sup> <a name="allowed_managed_keys_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedManagedKeysInput"></a>
+##### `allowed_managed_keys_input`<sup>Optional</sup> <a name="allowed_managed_keys_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedManagedKeysInput"></a>
 
 ```python
 allowed_managed_keys_input: typing.List[str]
@@ -1574,7 +1618,7 @@ allowed_managed_keys_input: typing.List[str]
 
 ---
 
-##### `allowed_response_headers_input`<sup>Optional</sup> <a name="allowed_response_headers_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedResponseHeadersInput"></a>
+##### `allowed_response_headers_input`<sup>Optional</sup> <a name="allowed_response_headers_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedResponseHeadersInput"></a>
 
 ```python
 allowed_response_headers_input: typing.List[str]
@@ -1584,7 +1628,7 @@ allowed_response_headers_input: typing.List[str]
 
 ---
 
-##### `audit_non_hmac_request_keys_input`<sup>Optional</sup> <a name="audit_non_hmac_request_keys_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacRequestKeysInput"></a>
+##### `audit_non_hmac_request_keys_input`<sup>Optional</sup> <a name="audit_non_hmac_request_keys_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacRequestKeysInput"></a>
 
 ```python
 audit_non_hmac_request_keys_input: typing.List[str]
@@ -1594,7 +1638,7 @@ audit_non_hmac_request_keys_input: typing.List[str]
 
 ---
 
-##### `audit_non_hmac_response_keys_input`<sup>Optional</sup> <a name="audit_non_hmac_response_keys_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacResponseKeysInput"></a>
+##### `audit_non_hmac_response_keys_input`<sup>Optional</sup> <a name="audit_non_hmac_response_keys_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacResponseKeysInput"></a>
 
 ```python
 audit_non_hmac_response_keys_input: typing.List[str]
@@ -1604,7 +1648,7 @@ audit_non_hmac_response_keys_input: typing.List[str]
 
 ---
 
-##### `default_lease_ttl_seconds_input`<sup>Optional</sup> <a name="default_lease_ttl_seconds_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.defaultLeaseTtlSecondsInput"></a>
+##### `default_lease_ttl_seconds_input`<sup>Optional</sup> <a name="default_lease_ttl_seconds_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.defaultLeaseTtlSecondsInput"></a>
 
 ```python
 default_lease_ttl_seconds_input: typing.Union[int, float]
@@ -1614,7 +1658,7 @@ default_lease_ttl_seconds_input: typing.Union[int, float]
 
 ---
 
-##### `delegated_auth_accessors_input`<sup>Optional</sup> <a name="delegated_auth_accessors_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.delegatedAuthAccessorsInput"></a>
+##### `delegated_auth_accessors_input`<sup>Optional</sup> <a name="delegated_auth_accessors_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.delegatedAuthAccessorsInput"></a>
 
 ```python
 delegated_auth_accessors_input: typing.List[str]
@@ -1624,7 +1668,7 @@ delegated_auth_accessors_input: typing.List[str]
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1634,47 +1678,47 @@ description_input: str
 
 ---
 
-##### `disable_automated_rotation_input`<sup>Optional</sup> <a name="disable_automated_rotation_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableAutomatedRotationInput"></a>
+##### `disable_automated_rotation_input`<sup>Optional</sup> <a name="disable_automated_rotation_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableAutomatedRotationInput"></a>
 
 ```python
 disable_automated_rotation_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `disable_remount_input`<sup>Optional</sup> <a name="disable_remount_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableRemountInput"></a>
+##### `disable_remount_input`<sup>Optional</sup> <a name="disable_remount_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableRemountInput"></a>
 
 ```python
 disable_remount_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `external_entropy_access_input`<sup>Optional</sup> <a name="external_entropy_access_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.externalEntropyAccessInput"></a>
+##### `external_entropy_access_input`<sup>Optional</sup> <a name="external_entropy_access_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.externalEntropyAccessInput"></a>
 
 ```python
 external_entropy_access_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `force_no_cache_input`<sup>Optional</sup> <a name="force_no_cache_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.forceNoCacheInput"></a>
+##### `force_no_cache_input`<sup>Optional</sup> <a name="force_no_cache_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.forceNoCacheInput"></a>
 
 ```python
 force_no_cache_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `iam_endpoint_input`<sup>Optional</sup> <a name="iam_endpoint_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.iamEndpointInput"></a>
+##### `iam_endpoint_input`<sup>Optional</sup> <a name="iam_endpoint_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.iamEndpointInput"></a>
 
 ```python
 iam_endpoint_input: str
@@ -1684,7 +1728,7 @@ iam_endpoint_input: str
 
 ---
 
-##### `identity_token_audience_input`<sup>Optional</sup> <a name="identity_token_audience_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenAudienceInput"></a>
+##### `identity_token_audience_input`<sup>Optional</sup> <a name="identity_token_audience_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenAudienceInput"></a>
 
 ```python
 identity_token_audience_input: str
@@ -1694,7 +1738,7 @@ identity_token_audience_input: str
 
 ---
 
-##### `identity_token_key_input`<sup>Optional</sup> <a name="identity_token_key_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenKeyInput"></a>
+##### `identity_token_key_input`<sup>Optional</sup> <a name="identity_token_key_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenKeyInput"></a>
 
 ```python
 identity_token_key_input: str
@@ -1704,7 +1748,7 @@ identity_token_key_input: str
 
 ---
 
-##### `identity_token_ttl_input`<sup>Optional</sup> <a name="identity_token_ttl_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenTtlInput"></a>
+##### `identity_token_ttl_input`<sup>Optional</sup> <a name="identity_token_ttl_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenTtlInput"></a>
 
 ```python
 identity_token_ttl_input: typing.Union[int, float]
@@ -1714,7 +1758,7 @@ identity_token_ttl_input: typing.Union[int, float]
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1724,7 +1768,7 @@ id_input: str
 
 ---
 
-##### `listing_visibility_input`<sup>Optional</sup> <a name="listing_visibility_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.listingVisibilityInput"></a>
+##### `listing_visibility_input`<sup>Optional</sup> <a name="listing_visibility_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.listingVisibilityInput"></a>
 
 ```python
 listing_visibility_input: str
@@ -1734,17 +1778,17 @@ listing_visibility_input: str
 
 ---
 
-##### `local_input`<sup>Optional</sup> <a name="local_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.localInput"></a>
+##### `local_input`<sup>Optional</sup> <a name="local_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.localInput"></a>
 
 ```python
 local_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `max_lease_ttl_seconds_input`<sup>Optional</sup> <a name="max_lease_ttl_seconds_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxLeaseTtlSecondsInput"></a>
+##### `max_lease_ttl_seconds_input`<sup>Optional</sup> <a name="max_lease_ttl_seconds_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxLeaseTtlSecondsInput"></a>
 
 ```python
 max_lease_ttl_seconds_input: typing.Union[int, float]
@@ -1754,7 +1798,7 @@ max_lease_ttl_seconds_input: typing.Union[int, float]
 
 ---
 
-##### `max_retries_input`<sup>Optional</sup> <a name="max_retries_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxRetriesInput"></a>
+##### `max_retries_input`<sup>Optional</sup> <a name="max_retries_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxRetriesInput"></a>
 
 ```python
 max_retries_input: typing.Union[int, float]
@@ -1764,7 +1808,7 @@ max_retries_input: typing.Union[int, float]
 
 ---
 
-##### `namespace_input`<sup>Optional</sup> <a name="namespace_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.namespaceInput"></a>
+##### `namespace_input`<sup>Optional</sup> <a name="namespace_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.namespaceInput"></a>
 
 ```python
 namespace_input: str
@@ -1774,7 +1818,7 @@ namespace_input: str
 
 ---
 
-##### `options_input`<sup>Optional</sup> <a name="options_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.optionsInput"></a>
+##### `options_input`<sup>Optional</sup> <a name="options_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.optionsInput"></a>
 
 ```python
 options_input: typing.Mapping[str]
@@ -1784,7 +1828,7 @@ options_input: typing.Mapping[str]
 
 ---
 
-##### `passthrough_request_headers_input`<sup>Optional</sup> <a name="passthrough_request_headers_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.passthroughRequestHeadersInput"></a>
+##### `passthrough_request_headers_input`<sup>Optional</sup> <a name="passthrough_request_headers_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.passthroughRequestHeadersInput"></a>
 
 ```python
 passthrough_request_headers_input: typing.List[str]
@@ -1794,7 +1838,7 @@ passthrough_request_headers_input: typing.List[str]
 
 ---
 
-##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.pathInput"></a>
+##### `path_input`<sup>Optional</sup> <a name="path_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.pathInput"></a>
 
 ```python
 path_input: str
@@ -1804,7 +1848,7 @@ path_input: str
 
 ---
 
-##### `plugin_version_input`<sup>Optional</sup> <a name="plugin_version_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.pluginVersionInput"></a>
+##### `plugin_version_input`<sup>Optional</sup> <a name="plugin_version_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.pluginVersionInput"></a>
 
 ```python
 plugin_version_input: str
@@ -1814,7 +1858,7 @@ plugin_version_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -1824,7 +1868,7 @@ region_input: str
 
 ---
 
-##### `role_arn_input`<sup>Optional</sup> <a name="role_arn_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.roleArnInput"></a>
+##### `role_arn_input`<sup>Optional</sup> <a name="role_arn_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.roleArnInput"></a>
 
 ```python
 role_arn_input: str
@@ -1834,7 +1878,7 @@ role_arn_input: str
 
 ---
 
-##### `rotation_period_input`<sup>Optional</sup> <a name="rotation_period_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationPeriodInput"></a>
+##### `rotation_period_input`<sup>Optional</sup> <a name="rotation_period_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationPeriodInput"></a>
 
 ```python
 rotation_period_input: typing.Union[int, float]
@@ -1844,7 +1888,7 @@ rotation_period_input: typing.Union[int, float]
 
 ---
 
-##### `rotation_schedule_input`<sup>Optional</sup> <a name="rotation_schedule_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationScheduleInput"></a>
+##### `rotation_schedule_input`<sup>Optional</sup> <a name="rotation_schedule_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationScheduleInput"></a>
 
 ```python
 rotation_schedule_input: str
@@ -1854,7 +1898,7 @@ rotation_schedule_input: str
 
 ---
 
-##### `rotation_window_input`<sup>Optional</sup> <a name="rotation_window_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationWindowInput"></a>
+##### `rotation_window_input`<sup>Optional</sup> <a name="rotation_window_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationWindowInput"></a>
 
 ```python
 rotation_window_input: typing.Union[int, float]
@@ -1864,17 +1908,17 @@ rotation_window_input: typing.Union[int, float]
 
 ---
 
-##### `seal_wrap_input`<sup>Optional</sup> <a name="seal_wrap_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.sealWrapInput"></a>
+##### `seal_wrap_input`<sup>Optional</sup> <a name="seal_wrap_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.sealWrapInput"></a>
 
 ```python
 seal_wrap_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `secret_key_input`<sup>Optional</sup> <a name="secret_key_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyInput"></a>
+##### `secret_key_input`<sup>Optional</sup> <a name="secret_key_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyInput"></a>
 
 ```python
 secret_key_input: str
@@ -1884,7 +1928,27 @@ secret_key_input: str
 
 ---
 
-##### `sts_endpoint_input`<sup>Optional</sup> <a name="sts_endpoint_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsEndpointInput"></a>
+##### `secret_key_wo_input`<sup>Optional</sup> <a name="secret_key_wo_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyWoInput"></a>
+
+```python
+secret_key_wo_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `secret_key_wo_version_input`<sup>Optional</sup> <a name="secret_key_wo_version_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyWoVersionInput"></a>
+
+```python
+secret_key_wo_version_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `sts_endpoint_input`<sup>Optional</sup> <a name="sts_endpoint_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsEndpointInput"></a>
 
 ```python
 sts_endpoint_input: str
@@ -1894,7 +1958,7 @@ sts_endpoint_input: str
 
 ---
 
-##### `sts_fallback_endpoints_input`<sup>Optional</sup> <a name="sts_fallback_endpoints_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackEndpointsInput"></a>
+##### `sts_fallback_endpoints_input`<sup>Optional</sup> <a name="sts_fallback_endpoints_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackEndpointsInput"></a>
 
 ```python
 sts_fallback_endpoints_input: typing.List[str]
@@ -1904,7 +1968,7 @@ sts_fallback_endpoints_input: typing.List[str]
 
 ---
 
-##### `sts_fallback_regions_input`<sup>Optional</sup> <a name="sts_fallback_regions_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackRegionsInput"></a>
+##### `sts_fallback_regions_input`<sup>Optional</sup> <a name="sts_fallback_regions_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackRegionsInput"></a>
 
 ```python
 sts_fallback_regions_input: typing.List[str]
@@ -1914,7 +1978,7 @@ sts_fallback_regions_input: typing.List[str]
 
 ---
 
-##### `sts_region_input`<sup>Optional</sup> <a name="sts_region_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsRegionInput"></a>
+##### `sts_region_input`<sup>Optional</sup> <a name="sts_region_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsRegionInput"></a>
 
 ```python
 sts_region_input: str
@@ -1924,7 +1988,7 @@ sts_region_input: str
 
 ---
 
-##### `username_template_input`<sup>Optional</sup> <a name="username_template_input" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.usernameTemplateInput"></a>
+##### `username_template_input`<sup>Optional</sup> <a name="username_template_input" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.usernameTemplateInput"></a>
 
 ```python
 username_template_input: str
@@ -1934,7 +1998,7 @@ username_template_input: str
 
 ---
 
-##### `access_key`<sup>Required</sup> <a name="access_key" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessKey"></a>
+##### `access_key`<sup>Required</sup> <a name="access_key" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.accessKey"></a>
 
 ```python
 access_key: str
@@ -1944,7 +2008,7 @@ access_key: str
 
 ---
 
-##### `allowed_managed_keys`<sup>Required</sup> <a name="allowed_managed_keys" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedManagedKeys"></a>
+##### `allowed_managed_keys`<sup>Required</sup> <a name="allowed_managed_keys" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedManagedKeys"></a>
 
 ```python
 allowed_managed_keys: typing.List[str]
@@ -1954,7 +2018,7 @@ allowed_managed_keys: typing.List[str]
 
 ---
 
-##### `allowed_response_headers`<sup>Required</sup> <a name="allowed_response_headers" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedResponseHeaders"></a>
+##### `allowed_response_headers`<sup>Required</sup> <a name="allowed_response_headers" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.allowedResponseHeaders"></a>
 
 ```python
 allowed_response_headers: typing.List[str]
@@ -1964,7 +2028,7 @@ allowed_response_headers: typing.List[str]
 
 ---
 
-##### `audit_non_hmac_request_keys`<sup>Required</sup> <a name="audit_non_hmac_request_keys" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacRequestKeys"></a>
+##### `audit_non_hmac_request_keys`<sup>Required</sup> <a name="audit_non_hmac_request_keys" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacRequestKeys"></a>
 
 ```python
 audit_non_hmac_request_keys: typing.List[str]
@@ -1974,7 +2038,7 @@ audit_non_hmac_request_keys: typing.List[str]
 
 ---
 
-##### `audit_non_hmac_response_keys`<sup>Required</sup> <a name="audit_non_hmac_response_keys" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacResponseKeys"></a>
+##### `audit_non_hmac_response_keys`<sup>Required</sup> <a name="audit_non_hmac_response_keys" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.auditNonHmacResponseKeys"></a>
 
 ```python
 audit_non_hmac_response_keys: typing.List[str]
@@ -1984,7 +2048,7 @@ audit_non_hmac_response_keys: typing.List[str]
 
 ---
 
-##### `default_lease_ttl_seconds`<sup>Required</sup> <a name="default_lease_ttl_seconds" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.defaultLeaseTtlSeconds"></a>
+##### `default_lease_ttl_seconds`<sup>Required</sup> <a name="default_lease_ttl_seconds" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.defaultLeaseTtlSeconds"></a>
 
 ```python
 default_lease_ttl_seconds: typing.Union[int, float]
@@ -1994,7 +2058,7 @@ default_lease_ttl_seconds: typing.Union[int, float]
 
 ---
 
-##### `delegated_auth_accessors`<sup>Required</sup> <a name="delegated_auth_accessors" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.delegatedAuthAccessors"></a>
+##### `delegated_auth_accessors`<sup>Required</sup> <a name="delegated_auth_accessors" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.delegatedAuthAccessors"></a>
 
 ```python
 delegated_auth_accessors: typing.List[str]
@@ -2004,7 +2068,7 @@ delegated_auth_accessors: typing.List[str]
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.description"></a>
 
 ```python
 description: str
@@ -2014,47 +2078,47 @@ description: str
 
 ---
 
-##### `disable_automated_rotation`<sup>Required</sup> <a name="disable_automated_rotation" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableAutomatedRotation"></a>
+##### `disable_automated_rotation`<sup>Required</sup> <a name="disable_automated_rotation" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableAutomatedRotation"></a>
 
 ```python
 disable_automated_rotation: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `disable_remount`<sup>Required</sup> <a name="disable_remount" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableRemount"></a>
+##### `disable_remount`<sup>Required</sup> <a name="disable_remount" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.disableRemount"></a>
 
 ```python
 disable_remount: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `external_entropy_access`<sup>Required</sup> <a name="external_entropy_access" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.externalEntropyAccess"></a>
+##### `external_entropy_access`<sup>Required</sup> <a name="external_entropy_access" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.externalEntropyAccess"></a>
 
 ```python
 external_entropy_access: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `force_no_cache`<sup>Required</sup> <a name="force_no_cache" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.forceNoCache"></a>
+##### `force_no_cache`<sup>Required</sup> <a name="force_no_cache" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.forceNoCache"></a>
 
 ```python
 force_no_cache: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `iam_endpoint`<sup>Required</sup> <a name="iam_endpoint" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.iamEndpoint"></a>
+##### `iam_endpoint`<sup>Required</sup> <a name="iam_endpoint" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.iamEndpoint"></a>
 
 ```python
 iam_endpoint: str
@@ -2064,7 +2128,7 @@ iam_endpoint: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.id"></a>
 
 ```python
 id: str
@@ -2074,7 +2138,7 @@ id: str
 
 ---
 
-##### `identity_token_audience`<sup>Required</sup> <a name="identity_token_audience" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenAudience"></a>
+##### `identity_token_audience`<sup>Required</sup> <a name="identity_token_audience" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenAudience"></a>
 
 ```python
 identity_token_audience: str
@@ -2084,7 +2148,7 @@ identity_token_audience: str
 
 ---
 
-##### `identity_token_key`<sup>Required</sup> <a name="identity_token_key" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenKey"></a>
+##### `identity_token_key`<sup>Required</sup> <a name="identity_token_key" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenKey"></a>
 
 ```python
 identity_token_key: str
@@ -2094,7 +2158,7 @@ identity_token_key: str
 
 ---
 
-##### `identity_token_ttl`<sup>Required</sup> <a name="identity_token_ttl" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenTtl"></a>
+##### `identity_token_ttl`<sup>Required</sup> <a name="identity_token_ttl" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.identityTokenTtl"></a>
 
 ```python
 identity_token_ttl: typing.Union[int, float]
@@ -2104,7 +2168,7 @@ identity_token_ttl: typing.Union[int, float]
 
 ---
 
-##### `listing_visibility`<sup>Required</sup> <a name="listing_visibility" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.listingVisibility"></a>
+##### `listing_visibility`<sup>Required</sup> <a name="listing_visibility" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.listingVisibility"></a>
 
 ```python
 listing_visibility: str
@@ -2114,17 +2178,17 @@ listing_visibility: str
 
 ---
 
-##### `local`<sup>Required</sup> <a name="local" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.local"></a>
+##### `local`<sup>Required</sup> <a name="local" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.local"></a>
 
 ```python
 local: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `max_lease_ttl_seconds`<sup>Required</sup> <a name="max_lease_ttl_seconds" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxLeaseTtlSeconds"></a>
+##### `max_lease_ttl_seconds`<sup>Required</sup> <a name="max_lease_ttl_seconds" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxLeaseTtlSeconds"></a>
 
 ```python
 max_lease_ttl_seconds: typing.Union[int, float]
@@ -2134,7 +2198,7 @@ max_lease_ttl_seconds: typing.Union[int, float]
 
 ---
 
-##### `max_retries`<sup>Required</sup> <a name="max_retries" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxRetries"></a>
+##### `max_retries`<sup>Required</sup> <a name="max_retries" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.maxRetries"></a>
 
 ```python
 max_retries: typing.Union[int, float]
@@ -2144,7 +2208,7 @@ max_retries: typing.Union[int, float]
 
 ---
 
-##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.namespace"></a>
+##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.namespace"></a>
 
 ```python
 namespace: str
@@ -2154,7 +2218,7 @@ namespace: str
 
 ---
 
-##### `options`<sup>Required</sup> <a name="options" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.options"></a>
+##### `options`<sup>Required</sup> <a name="options" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.options"></a>
 
 ```python
 options: typing.Mapping[str]
@@ -2164,7 +2228,7 @@ options: typing.Mapping[str]
 
 ---
 
-##### `passthrough_request_headers`<sup>Required</sup> <a name="passthrough_request_headers" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.passthroughRequestHeaders"></a>
+##### `passthrough_request_headers`<sup>Required</sup> <a name="passthrough_request_headers" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.passthroughRequestHeaders"></a>
 
 ```python
 passthrough_request_headers: typing.List[str]
@@ -2174,7 +2238,7 @@ passthrough_request_headers: typing.List[str]
 
 ---
 
-##### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.path"></a>
+##### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.path"></a>
 
 ```python
 path: str
@@ -2184,7 +2248,7 @@ path: str
 
 ---
 
-##### `plugin_version`<sup>Required</sup> <a name="plugin_version" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.pluginVersion"></a>
+##### `plugin_version`<sup>Required</sup> <a name="plugin_version" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.pluginVersion"></a>
 
 ```python
 plugin_version: str
@@ -2194,7 +2258,7 @@ plugin_version: str
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.region"></a>
 
 ```python
 region: str
@@ -2204,7 +2268,7 @@ region: str
 
 ---
 
-##### `role_arn`<sup>Required</sup> <a name="role_arn" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.roleArn"></a>
+##### `role_arn`<sup>Required</sup> <a name="role_arn" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.roleArn"></a>
 
 ```python
 role_arn: str
@@ -2214,7 +2278,7 @@ role_arn: str
 
 ---
 
-##### `rotation_period`<sup>Required</sup> <a name="rotation_period" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationPeriod"></a>
+##### `rotation_period`<sup>Required</sup> <a name="rotation_period" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationPeriod"></a>
 
 ```python
 rotation_period: typing.Union[int, float]
@@ -2224,7 +2288,7 @@ rotation_period: typing.Union[int, float]
 
 ---
 
-##### `rotation_schedule`<sup>Required</sup> <a name="rotation_schedule" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationSchedule"></a>
+##### `rotation_schedule`<sup>Required</sup> <a name="rotation_schedule" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationSchedule"></a>
 
 ```python
 rotation_schedule: str
@@ -2234,7 +2298,7 @@ rotation_schedule: str
 
 ---
 
-##### `rotation_window`<sup>Required</sup> <a name="rotation_window" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationWindow"></a>
+##### `rotation_window`<sup>Required</sup> <a name="rotation_window" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.rotationWindow"></a>
 
 ```python
 rotation_window: typing.Union[int, float]
@@ -2244,17 +2308,17 @@ rotation_window: typing.Union[int, float]
 
 ---
 
-##### `seal_wrap`<sup>Required</sup> <a name="seal_wrap" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.sealWrap"></a>
+##### `seal_wrap`<sup>Required</sup> <a name="seal_wrap" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.sealWrap"></a>
 
 ```python
 seal_wrap: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
-##### `secret_key`<sup>Required</sup> <a name="secret_key" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKey"></a>
+##### `secret_key`<sup>Required</sup> <a name="secret_key" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKey"></a>
 
 ```python
 secret_key: str
@@ -2264,7 +2328,27 @@ secret_key: str
 
 ---
 
-##### `sts_endpoint`<sup>Required</sup> <a name="sts_endpoint" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsEndpoint"></a>
+##### `secret_key_wo`<sup>Required</sup> <a name="secret_key_wo" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyWo"></a>
+
+```python
+secret_key_wo: str
+```
+
+- *Type:* str
+
+---
+
+##### `secret_key_wo_version`<sup>Required</sup> <a name="secret_key_wo_version" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.secretKeyWoVersion"></a>
+
+```python
+secret_key_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `sts_endpoint`<sup>Required</sup> <a name="sts_endpoint" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsEndpoint"></a>
 
 ```python
 sts_endpoint: str
@@ -2274,7 +2358,7 @@ sts_endpoint: str
 
 ---
 
-##### `sts_fallback_endpoints`<sup>Required</sup> <a name="sts_fallback_endpoints" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackEndpoints"></a>
+##### `sts_fallback_endpoints`<sup>Required</sup> <a name="sts_fallback_endpoints" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackEndpoints"></a>
 
 ```python
 sts_fallback_endpoints: typing.List[str]
@@ -2284,7 +2368,7 @@ sts_fallback_endpoints: typing.List[str]
 
 ---
 
-##### `sts_fallback_regions`<sup>Required</sup> <a name="sts_fallback_regions" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackRegions"></a>
+##### `sts_fallback_regions`<sup>Required</sup> <a name="sts_fallback_regions" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsFallbackRegions"></a>
 
 ```python
 sts_fallback_regions: typing.List[str]
@@ -2294,7 +2378,7 @@ sts_fallback_regions: typing.List[str]
 
 ---
 
-##### `sts_region`<sup>Required</sup> <a name="sts_region" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsRegion"></a>
+##### `sts_region`<sup>Required</sup> <a name="sts_region" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.stsRegion"></a>
 
 ```python
 sts_region: str
@@ -2304,7 +2388,7 @@ sts_region: str
 
 ---
 
-##### `username_template`<sup>Required</sup> <a name="username_template" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.usernameTemplate"></a>
+##### `username_template`<sup>Required</sup> <a name="username_template" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.usernameTemplate"></a>
 
 ```python
 username_template: str
@@ -2318,11 +2402,11 @@ username_template: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackend.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -2334,12 +2418,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### AwsSecretBackendConfig <a name="AwsSecretBackendConfig" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig"></a>
+### AwsSecretBackendConfig <a name="AwsSecretBackendConfig" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_vault import aws_secret_backend
+from cdktn_provider_vault import aws_secret_backend
 
 awsSecretBackend.AwsSecretBackendConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -2382,6 +2466,8 @@ awsSecretBackend.AwsSecretBackendConfig(
   rotation_window: typing.Union[int, float] = None,
   seal_wrap: bool | IResolvable = None,
   secret_key: str = None,
+  secret_key_wo: str = None,
+  secret_key_wo_version: typing.Union[int, float] = None,
   sts_endpoint: str = None,
   sts_fallback_endpoints: typing.List[str] = None,
   sts_fallback_regions: typing.List[str] = None,
@@ -2394,125 +2480,127 @@ awsSecretBackend.AwsSecretBackendConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.accessKey">access_key</a></code> | <code>str</code> | The AWS Access Key ID to use when generating new credentials. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.allowedManagedKeys">allowed_managed_keys</a></code> | <code>typing.List[str]</code> | List of managed key registry entry names that the mount in question is allowed to access. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the request data object. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the response data object. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for secrets in seconds. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.delegatedAuthAccessors">delegated_auth_accessors</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.description">description</a></code> | <code>str</code> | Human-friendly description of the mount for the backend. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>bool \| cdktf.IResolvable</code> | Stops rotation of the root credential until set to false. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.disableRemount">disable_remount</a></code> | <code>bool \| cdktf.IResolvable</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.externalEntropyAccess">external_entropy_access</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.forceNoCache">force_no_cache</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, disables caching. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.iamEndpoint">iam_endpoint</a></code> | <code>str</code> | Specifies a custom HTTP IAM endpoint to use. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenAudience">identity_token_audience</a></code> | <code>str</code> | The audience claim value. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenKey">identity_token_key</a></code> | <code>str</code> | The key to use for signing identity tokens. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of generated identity tokens in seconds. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.local">local</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies if the secret backend is local only. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum possible lease duration for secrets in seconds. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Number of max retries the client should use for recoverable errors. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.options">options</a></code> | <code>typing.Mapping[str]</code> | Specifies mount type specific options that are passed to the backend. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.path">path</a></code> | <code>str</code> | Path to mount the backend at. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.pluginVersion">plugin_version</a></code> | <code>str</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.region">region</a></code> | <code>str</code> | The AWS region to make API calls against. Defaults to us-east-1. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Role ARN to assume for plugin identity token federation. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.sealWrap">seal_wrap</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.secretKey">secret_key</a></code> | <code>str</code> | The AWS Secret Access Key to use when generating new credentials. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsEndpoint">sts_endpoint</a></code> | <code>str</code> | Specifies a custom HTTP STS endpoint to use. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsFallbackEndpoints">sts_fallback_endpoints</a></code> | <code>typing.List[str]</code> | Specifies a list of custom STS fallback endpoints to use (in order). |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsFallbackRegions">sts_fallback_regions</a></code> | <code>typing.List[str]</code> | Specifies a list of custom STS fallback regions to use (in order). |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsRegion">sts_region</a></code> | <code>str</code> | Specifies a custom STS region to use. |
-| <code><a href="#@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.usernameTemplate">username_template</a></code> | <code>str</code> | Template describing how dynamic usernames are generated. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.accessKey">access_key</a></code> | <code>str</code> | The AWS Access Key ID to use when generating new credentials. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.allowedManagedKeys">allowed_managed_keys</a></code> | <code>typing.List[str]</code> | List of managed key registry entry names that the mount in question is allowed to access. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the request data object. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Specifies the list of keys that will not be HMAC'd by audit devices in the response data object. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.defaultLeaseTtlSeconds">default_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Default lease duration for secrets in seconds. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.delegatedAuthAccessors">delegated_auth_accessors</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.description">description</a></code> | <code>str</code> | Human-friendly description of the mount for the backend. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.disableAutomatedRotation">disable_automated_rotation</a></code> | <code>bool \| cdktn.IResolvable</code> | Stops rotation of the root credential until set to false. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.disableRemount">disable_remount</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, opts out of mount migration on path updates. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.externalEntropyAccess">external_entropy_access</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.forceNoCache">force_no_cache</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, disables caching. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.iamEndpoint">iam_endpoint</a></code> | <code>str</code> | Specifies a custom HTTP IAM endpoint to use. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenAudience">identity_token_audience</a></code> | <code>str</code> | The audience claim value. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenKey">identity_token_key</a></code> | <code>str</code> | The key to use for signing identity tokens. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of generated identity tokens in seconds. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.local">local</a></code> | <code>bool \| cdktn.IResolvable</code> | Specifies if the secret backend is local only. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.maxLeaseTtlSeconds">max_lease_ttl_seconds</a></code> | <code>typing.Union[int, float]</code> | Maximum possible lease duration for secrets in seconds. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Number of max retries the client should use for recoverable errors. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.options">options</a></code> | <code>typing.Mapping[str]</code> | Specifies mount type specific options that are passed to the backend. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | List of headers to allow and pass from the request to the plugin. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.path">path</a></code> | <code>str</code> | Path to mount the backend at. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.pluginVersion">plugin_version</a></code> | <code>str</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.region">region</a></code> | <code>str</code> | The AWS region to make API calls against. Defaults to us-east-1. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.roleArn">role_arn</a></code> | <code>str</code> | Role ARN to assume for plugin identity token federation. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationSchedule">rotation_schedule</a></code> | <code>str</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationWindow">rotation_window</a></code> | <code>typing.Union[int, float]</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.sealWrap">seal_wrap</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.secretKey">secret_key</a></code> | <code>str</code> | The AWS Secret Access Key to use when generating new credentials. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.secretKeyWo">secret_key_wo</a></code> | <code>str</code> | The AWS Secret Access Key to use when generating new credentials. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.secretKeyWoVersion">secret_key_wo_version</a></code> | <code>typing.Union[int, float]</code> | A version counter for the write-only secret_key_wo field. Incrementing this value will trigger an update to the secret_key. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsEndpoint">sts_endpoint</a></code> | <code>str</code> | Specifies a custom HTTP STS endpoint to use. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsFallbackEndpoints">sts_fallback_endpoints</a></code> | <code>typing.List[str]</code> | Specifies a list of custom STS fallback endpoints to use (in order). |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsFallbackRegions">sts_fallback_regions</a></code> | <code>typing.List[str]</code> | Specifies a list of custom STS fallback regions to use (in order). |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsRegion">sts_region</a></code> | <code>str</code> | Specifies a custom STS region to use. |
+| <code><a href="#@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.usernameTemplate">username_template</a></code> | <code>str</code> | Template describing how dynamic usernames are generated. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
-##### `access_key`<sup>Optional</sup> <a name="access_key" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.accessKey"></a>
+##### `access_key`<sup>Optional</sup> <a name="access_key" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.accessKey"></a>
 
 ```python
 access_key: str
@@ -2522,11 +2610,11 @@ access_key: str
 
 The AWS Access Key ID to use when generating new credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#access_key AwsSecretBackend#access_key}
 
 ---
 
-##### `allowed_managed_keys`<sup>Optional</sup> <a name="allowed_managed_keys" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.allowedManagedKeys"></a>
+##### `allowed_managed_keys`<sup>Optional</sup> <a name="allowed_managed_keys" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.allowedManagedKeys"></a>
 
 ```python
 allowed_managed_keys: typing.List[str]
@@ -2536,11 +2624,11 @@ allowed_managed_keys: typing.List[str]
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#allowed_managed_keys AwsSecretBackend#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#allowed_managed_keys AwsSecretBackend#allowed_managed_keys}
 
 ---
 
-##### `allowed_response_headers`<sup>Optional</sup> <a name="allowed_response_headers" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.allowedResponseHeaders"></a>
+##### `allowed_response_headers`<sup>Optional</sup> <a name="allowed_response_headers" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.allowedResponseHeaders"></a>
 
 ```python
 allowed_response_headers: typing.List[str]
@@ -2550,11 +2638,11 @@ allowed_response_headers: typing.List[str]
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#allowed_response_headers AwsSecretBackend#allowed_response_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#allowed_response_headers AwsSecretBackend#allowed_response_headers}
 
 ---
 
-##### `audit_non_hmac_request_keys`<sup>Optional</sup> <a name="audit_non_hmac_request_keys" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.auditNonHmacRequestKeys"></a>
+##### `audit_non_hmac_request_keys`<sup>Optional</sup> <a name="audit_non_hmac_request_keys" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.auditNonHmacRequestKeys"></a>
 
 ```python
 audit_non_hmac_request_keys: typing.List[str]
@@ -2564,11 +2652,11 @@ audit_non_hmac_request_keys: typing.List[str]
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#audit_non_hmac_request_keys AwsSecretBackend#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#audit_non_hmac_request_keys AwsSecretBackend#audit_non_hmac_request_keys}
 
 ---
 
-##### `audit_non_hmac_response_keys`<sup>Optional</sup> <a name="audit_non_hmac_response_keys" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.auditNonHmacResponseKeys"></a>
+##### `audit_non_hmac_response_keys`<sup>Optional</sup> <a name="audit_non_hmac_response_keys" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.auditNonHmacResponseKeys"></a>
 
 ```python
 audit_non_hmac_response_keys: typing.List[str]
@@ -2578,11 +2666,11 @@ audit_non_hmac_response_keys: typing.List[str]
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#audit_non_hmac_response_keys AwsSecretBackend#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#audit_non_hmac_response_keys AwsSecretBackend#audit_non_hmac_response_keys}
 
 ---
 
-##### `default_lease_ttl_seconds`<sup>Optional</sup> <a name="default_lease_ttl_seconds" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.defaultLeaseTtlSeconds"></a>
+##### `default_lease_ttl_seconds`<sup>Optional</sup> <a name="default_lease_ttl_seconds" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.defaultLeaseTtlSeconds"></a>
 
 ```python
 default_lease_ttl_seconds: typing.Union[int, float]
@@ -2592,11 +2680,11 @@ default_lease_ttl_seconds: typing.Union[int, float]
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#default_lease_ttl_seconds AwsSecretBackend#default_lease_ttl_seconds}
 
 ---
 
-##### `delegated_auth_accessors`<sup>Optional</sup> <a name="delegated_auth_accessors" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.delegatedAuthAccessors"></a>
+##### `delegated_auth_accessors`<sup>Optional</sup> <a name="delegated_auth_accessors" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.delegatedAuthAccessors"></a>
 
 ```python
 delegated_auth_accessors: typing.List[str]
@@ -2606,11 +2694,11 @@ delegated_auth_accessors: typing.List[str]
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#delegated_auth_accessors AwsSecretBackend#delegated_auth_accessors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#delegated_auth_accessors AwsSecretBackend#delegated_auth_accessors}
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.description"></a>
 
 ```python
 description: str
@@ -2620,67 +2708,67 @@ description: str
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#description AwsSecretBackend#description}
 
 ---
 
-##### `disable_automated_rotation`<sup>Optional</sup> <a name="disable_automated_rotation" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.disableAutomatedRotation"></a>
+##### `disable_automated_rotation`<sup>Optional</sup> <a name="disable_automated_rotation" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.disableAutomatedRotation"></a>
 
 ```python
 disable_automated_rotation: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Stops rotation of the root credential until set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#disable_automated_rotation AwsSecretBackend#disable_automated_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#disable_automated_rotation AwsSecretBackend#disable_automated_rotation}
 
 ---
 
-##### `disable_remount`<sup>Optional</sup> <a name="disable_remount" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.disableRemount"></a>
+##### `disable_remount`<sup>Optional</sup> <a name="disable_remount" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.disableRemount"></a>
 
 ```python
 disable_remount: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#disable_remount AwsSecretBackend#disable_remount}
 
 ---
 
-##### `external_entropy_access`<sup>Optional</sup> <a name="external_entropy_access" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.externalEntropyAccess"></a>
+##### `external_entropy_access`<sup>Optional</sup> <a name="external_entropy_access" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.externalEntropyAccess"></a>
 
 ```python
 external_entropy_access: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#external_entropy_access AwsSecretBackend#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#external_entropy_access AwsSecretBackend#external_entropy_access}
 
 ---
 
-##### `force_no_cache`<sup>Optional</sup> <a name="force_no_cache" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.forceNoCache"></a>
+##### `force_no_cache`<sup>Optional</sup> <a name="force_no_cache" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.forceNoCache"></a>
 
 ```python
 force_no_cache: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 If set to true, disables caching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#force_no_cache AwsSecretBackend#force_no_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#force_no_cache AwsSecretBackend#force_no_cache}
 
 ---
 
-##### `iam_endpoint`<sup>Optional</sup> <a name="iam_endpoint" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.iamEndpoint"></a>
+##### `iam_endpoint`<sup>Optional</sup> <a name="iam_endpoint" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.iamEndpoint"></a>
 
 ```python
 iam_endpoint: str
@@ -2690,11 +2778,11 @@ iam_endpoint: str
 
 Specifies a custom HTTP IAM endpoint to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#iam_endpoint AwsSecretBackend#iam_endpoint}
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.id"></a>
 
 ```python
 id: str
@@ -2702,14 +2790,14 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#id AwsSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
-##### `identity_token_audience`<sup>Optional</sup> <a name="identity_token_audience" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenAudience"></a>
+##### `identity_token_audience`<sup>Optional</sup> <a name="identity_token_audience" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenAudience"></a>
 
 ```python
 identity_token_audience: str
@@ -2719,11 +2807,11 @@ identity_token_audience: str
 
 The audience claim value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#identity_token_audience AwsSecretBackend#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#identity_token_audience AwsSecretBackend#identity_token_audience}
 
 ---
 
-##### `identity_token_key`<sup>Optional</sup> <a name="identity_token_key" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenKey"></a>
+##### `identity_token_key`<sup>Optional</sup> <a name="identity_token_key" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenKey"></a>
 
 ```python
 identity_token_key: str
@@ -2733,11 +2821,11 @@ identity_token_key: str
 
 The key to use for signing identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#identity_token_key AwsSecretBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#identity_token_key AwsSecretBackend#identity_token_key}
 
 ---
 
-##### `identity_token_ttl`<sup>Optional</sup> <a name="identity_token_ttl" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenTtl"></a>
+##### `identity_token_ttl`<sup>Optional</sup> <a name="identity_token_ttl" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.identityTokenTtl"></a>
 
 ```python
 identity_token_ttl: typing.Union[int, float]
@@ -2747,11 +2835,11 @@ identity_token_ttl: typing.Union[int, float]
 
 The TTL of generated identity tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#identity_token_ttl AwsSecretBackend#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#identity_token_ttl AwsSecretBackend#identity_token_ttl}
 
 ---
 
-##### `listing_visibility`<sup>Optional</sup> <a name="listing_visibility" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.listingVisibility"></a>
+##### `listing_visibility`<sup>Optional</sup> <a name="listing_visibility" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.listingVisibility"></a>
 
 ```python
 listing_visibility: str
@@ -2761,25 +2849,25 @@ listing_visibility: str
 
 Specifies whether to show this mount in the UI-specific listing endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#listing_visibility AwsSecretBackend#listing_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#listing_visibility AwsSecretBackend#listing_visibility}
 
 ---
 
-##### `local`<sup>Optional</sup> <a name="local" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.local"></a>
+##### `local`<sup>Optional</sup> <a name="local" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.local"></a>
 
 ```python
 local: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Specifies if the secret backend is local only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#local AwsSecretBackend#local}
 
 ---
 
-##### `max_lease_ttl_seconds`<sup>Optional</sup> <a name="max_lease_ttl_seconds" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.maxLeaseTtlSeconds"></a>
+##### `max_lease_ttl_seconds`<sup>Optional</sup> <a name="max_lease_ttl_seconds" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.maxLeaseTtlSeconds"></a>
 
 ```python
 max_lease_ttl_seconds: typing.Union[int, float]
@@ -2789,11 +2877,11 @@ max_lease_ttl_seconds: typing.Union[int, float]
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#max_lease_ttl_seconds AwsSecretBackend#max_lease_ttl_seconds}
 
 ---
 
-##### `max_retries`<sup>Optional</sup> <a name="max_retries" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.maxRetries"></a>
+##### `max_retries`<sup>Optional</sup> <a name="max_retries" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.maxRetries"></a>
 
 ```python
 max_retries: typing.Union[int, float]
@@ -2803,11 +2891,11 @@ max_retries: typing.Union[int, float]
 
 Number of max retries the client should use for recoverable errors.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#max_retries AwsSecretBackend#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#max_retries AwsSecretBackend#max_retries}
 
 ---
 
-##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.namespace"></a>
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.namespace"></a>
 
 ```python
 namespace: str
@@ -2817,11 +2905,11 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#namespace AwsSecretBackend#namespace}
 
 ---
 
-##### `options`<sup>Optional</sup> <a name="options" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.options"></a>
+##### `options`<sup>Optional</sup> <a name="options" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.options"></a>
 
 ```python
 options: typing.Mapping[str]
@@ -2831,11 +2919,11 @@ options: typing.Mapping[str]
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#options AwsSecretBackend#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#options AwsSecretBackend#options}
 
 ---
 
-##### `passthrough_request_headers`<sup>Optional</sup> <a name="passthrough_request_headers" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.passthroughRequestHeaders"></a>
+##### `passthrough_request_headers`<sup>Optional</sup> <a name="passthrough_request_headers" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.passthroughRequestHeaders"></a>
 
 ```python
 passthrough_request_headers: typing.List[str]
@@ -2845,11 +2933,11 @@ passthrough_request_headers: typing.List[str]
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#passthrough_request_headers AwsSecretBackend#passthrough_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#passthrough_request_headers AwsSecretBackend#passthrough_request_headers}
 
 ---
 
-##### `path`<sup>Optional</sup> <a name="path" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.path"></a>
+##### `path`<sup>Optional</sup> <a name="path" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.path"></a>
 
 ```python
 path: str
@@ -2859,11 +2947,11 @@ path: str
 
 Path to mount the backend at.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#path AwsSecretBackend#path}
 
 ---
 
-##### `plugin_version`<sup>Optional</sup> <a name="plugin_version" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.pluginVersion"></a>
+##### `plugin_version`<sup>Optional</sup> <a name="plugin_version" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.pluginVersion"></a>
 
 ```python
 plugin_version: str
@@ -2873,11 +2961,11 @@ plugin_version: str
 
 Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#plugin_version AwsSecretBackend#plugin_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#plugin_version AwsSecretBackend#plugin_version}
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.region"></a>
 
 ```python
 region: str
@@ -2887,11 +2975,11 @@ region: str
 
 The AWS region to make API calls against. Defaults to us-east-1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#region AwsSecretBackend#region}
 
 ---
 
-##### `role_arn`<sup>Optional</sup> <a name="role_arn" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.roleArn"></a>
+##### `role_arn`<sup>Optional</sup> <a name="role_arn" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.roleArn"></a>
 
 ```python
 role_arn: str
@@ -2901,11 +2989,11 @@ role_arn: str
 
 Role ARN to assume for plugin identity token federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#role_arn AwsSecretBackend#role_arn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#role_arn AwsSecretBackend#role_arn}
 
 ---
 
-##### `rotation_period`<sup>Optional</sup> <a name="rotation_period" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationPeriod"></a>
+##### `rotation_period`<sup>Optional</sup> <a name="rotation_period" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationPeriod"></a>
 
 ```python
 rotation_period: typing.Union[int, float]
@@ -2915,11 +3003,11 @@ rotation_period: typing.Union[int, float]
 
 The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#rotation_period AwsSecretBackend#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#rotation_period AwsSecretBackend#rotation_period}
 
 ---
 
-##### `rotation_schedule`<sup>Optional</sup> <a name="rotation_schedule" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationSchedule"></a>
+##### `rotation_schedule`<sup>Optional</sup> <a name="rotation_schedule" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationSchedule"></a>
 
 ```python
 rotation_schedule: str
@@ -2929,11 +3017,11 @@ rotation_schedule: str
 
 The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#rotation_schedule AwsSecretBackend#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#rotation_schedule AwsSecretBackend#rotation_schedule}
 
 ---
 
-##### `rotation_window`<sup>Optional</sup> <a name="rotation_window" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationWindow"></a>
+##### `rotation_window`<sup>Optional</sup> <a name="rotation_window" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.rotationWindow"></a>
 
 ```python
 rotation_window: typing.Union[int, float]
@@ -2945,25 +3033,25 @@ The maximum amount of time in seconds Vault is allowed to complete a rotation on
 
 Can only be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#rotation_window AwsSecretBackend#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#rotation_window AwsSecretBackend#rotation_window}
 
 ---
 
-##### `seal_wrap`<sup>Optional</sup> <a name="seal_wrap" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.sealWrap"></a>
+##### `seal_wrap`<sup>Optional</sup> <a name="seal_wrap" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.sealWrap"></a>
 
 ```python
 seal_wrap: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#seal_wrap AwsSecretBackend#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#seal_wrap AwsSecretBackend#seal_wrap}
 
 ---
 
-##### `secret_key`<sup>Optional</sup> <a name="secret_key" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.secretKey"></a>
+##### `secret_key`<sup>Optional</sup> <a name="secret_key" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.secretKey"></a>
 
 ```python
 secret_key: str
@@ -2973,11 +3061,41 @@ secret_key: str
 
 The AWS Secret Access Key to use when generating new credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#secret_key AwsSecretBackend#secret_key}
 
 ---
 
-##### `sts_endpoint`<sup>Optional</sup> <a name="sts_endpoint" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsEndpoint"></a>
+##### `secret_key_wo`<sup>Optional</sup> <a name="secret_key_wo" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.secretKeyWo"></a>
+
+```python
+secret_key_wo: str
+```
+
+- *Type:* str
+
+The AWS Secret Access Key to use when generating new credentials.
+
+This is a write-only field and will not be read back from Vault.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#secret_key_wo AwsSecretBackend#secret_key_wo}
+
+---
+
+##### `secret_key_wo_version`<sup>Optional</sup> <a name="secret_key_wo_version" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.secretKeyWoVersion"></a>
+
+```python
+secret_key_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+A version counter for the write-only secret_key_wo field. Incrementing this value will trigger an update to the secret_key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#secret_key_wo_version AwsSecretBackend#secret_key_wo_version}
+
+---
+
+##### `sts_endpoint`<sup>Optional</sup> <a name="sts_endpoint" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsEndpoint"></a>
 
 ```python
 sts_endpoint: str
@@ -2987,11 +3105,11 @@ sts_endpoint: str
 
 Specifies a custom HTTP STS endpoint to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#sts_endpoint AwsSecretBackend#sts_endpoint}
 
 ---
 
-##### `sts_fallback_endpoints`<sup>Optional</sup> <a name="sts_fallback_endpoints" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsFallbackEndpoints"></a>
+##### `sts_fallback_endpoints`<sup>Optional</sup> <a name="sts_fallback_endpoints" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsFallbackEndpoints"></a>
 
 ```python
 sts_fallback_endpoints: typing.List[str]
@@ -3001,11 +3119,11 @@ sts_fallback_endpoints: typing.List[str]
 
 Specifies a list of custom STS fallback endpoints to use (in order).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#sts_fallback_endpoints AwsSecretBackend#sts_fallback_endpoints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#sts_fallback_endpoints AwsSecretBackend#sts_fallback_endpoints}
 
 ---
 
-##### `sts_fallback_regions`<sup>Optional</sup> <a name="sts_fallback_regions" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsFallbackRegions"></a>
+##### `sts_fallback_regions`<sup>Optional</sup> <a name="sts_fallback_regions" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsFallbackRegions"></a>
 
 ```python
 sts_fallback_regions: typing.List[str]
@@ -3015,11 +3133,11 @@ sts_fallback_regions: typing.List[str]
 
 Specifies a list of custom STS fallback regions to use (in order).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#sts_fallback_regions AwsSecretBackend#sts_fallback_regions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#sts_fallback_regions AwsSecretBackend#sts_fallback_regions}
 
 ---
 
-##### `sts_region`<sup>Optional</sup> <a name="sts_region" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsRegion"></a>
+##### `sts_region`<sup>Optional</sup> <a name="sts_region" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.stsRegion"></a>
 
 ```python
 sts_region: str
@@ -3029,11 +3147,11 @@ sts_region: str
 
 Specifies a custom STS region to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#sts_region AwsSecretBackend#sts_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#sts_region AwsSecretBackend#sts_region}
 
 ---
 
-##### `username_template`<sup>Optional</sup> <a name="username_template" id="@cdktf/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.usernameTemplate"></a>
+##### `username_template`<sup>Optional</sup> <a name="username_template" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.property.usernameTemplate"></a>
 
 ```python
 username_template: str
@@ -3043,7 +3161,7 @@ username_template: str
 
 Template describing how dynamic usernames are generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_secret_backend#username_template AwsSecretBackend#username_template}
 
 ---
 

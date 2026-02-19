@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_backend_v2
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KvSecretBackendV2Config extends cdktf.TerraformMetaArguments {
+export interface KvSecretBackendV2Config extends cdktn.TerraformMetaArguments {
   /**
   * If true, all keys will require the cas parameter to be set on all write requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_backend_v2#cas_required KvSecretBackendV2#cas_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#cas_required KvSecretBackendV2#cas_required}
   */
-  readonly casRequired?: boolean | cdktf.IResolvable;
+  readonly casRequired?: boolean | cdktn.IResolvable;
   /**
   * If set, specifies the length of time before a version is deleted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_backend_v2#delete_version_after KvSecretBackendV2#delete_version_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#delete_version_after KvSecretBackendV2#delete_version_after}
   */
   readonly deleteVersionAfter?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_backend_v2#id KvSecretBackendV2#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#id KvSecretBackendV2#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,27 +34,27 @@ export interface KvSecretBackendV2Config extends cdktf.TerraformMetaArguments {
   /**
   * The number of versions to keep per key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_backend_v2#max_versions KvSecretBackendV2#max_versions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#max_versions KvSecretBackendV2#max_versions}
   */
   readonly maxVersions?: number;
   /**
   * Path where KV-V2 engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_backend_v2#mount KvSecretBackendV2#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#mount KvSecretBackendV2#mount}
   */
   readonly mount: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_backend_v2#namespace KvSecretBackendV2#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#namespace KvSecretBackendV2#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2}
 */
-export class KvSecretBackendV2 extends cdktf.TerraformResource {
+export class KvSecretBackendV2 extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class KvSecretBackendV2 extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KvSecretBackendV2 resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KvSecretBackendV2 resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KvSecretBackendV2 to import
-  * @param importFromId The id of the existing KvSecretBackendV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_backend_v2#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KvSecretBackendV2 that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KvSecretBackendV2 to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_kv_secret_backend_v2", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_kv_secret_backend_v2", importId: importFromId, provider });
       }
 
   // ===========
@@ -80,7 +80,7 @@ export class KvSecretBackendV2 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,7 @@ export class KvSecretBackendV2 extends cdktf.TerraformResource {
       terraformResourceType: 'vault_kv_secret_backend_v2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -115,11 +115,11 @@ export class KvSecretBackendV2 extends cdktf.TerraformResource {
   // ==========
 
   // cas_required - computed: true, optional: true, required: false
-  private _casRequired?: boolean | cdktf.IResolvable; 
+  private _casRequired?: boolean | cdktn.IResolvable; 
   public get casRequired() {
     return this.getBooleanAttribute('cas_required');
   }
-  public set casRequired(value: boolean | cdktf.IResolvable) {
+  public set casRequired(value: boolean | cdktn.IResolvable) {
     this._casRequired = value;
   }
   public resetCasRequired() {
@@ -213,49 +213,49 @@ export class KvSecretBackendV2 extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      cas_required: cdktf.booleanToTerraform(this._casRequired),
-      delete_version_after: cdktf.numberToTerraform(this._deleteVersionAfter),
-      id: cdktf.stringToTerraform(this._id),
-      max_versions: cdktf.numberToTerraform(this._maxVersions),
-      mount: cdktf.stringToTerraform(this._mount),
-      namespace: cdktf.stringToTerraform(this._namespace),
+      cas_required: cdktn.booleanToTerraform(this._casRequired),
+      delete_version_after: cdktn.numberToTerraform(this._deleteVersionAfter),
+      id: cdktn.stringToTerraform(this._id),
+      max_versions: cdktn.numberToTerraform(this._maxVersions),
+      mount: cdktn.stringToTerraform(this._mount),
+      namespace: cdktn.stringToTerraform(this._namespace),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       cas_required: {
-        value: cdktf.booleanToHclTerraform(this._casRequired),
+        value: cdktn.booleanToHclTerraform(this._casRequired),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       delete_version_after: {
-        value: cdktf.numberToHclTerraform(this._deleteVersionAfter),
+        value: cdktn.numberToHclTerraform(this._deleteVersionAfter),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_versions: {
-        value: cdktf.numberToHclTerraform(this._maxVersions),
+        value: cdktn.numberToHclTerraform(this._maxVersions),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       mount: {
-        value: cdktf.stringToHclTerraform(this._mount),
+        value: cdktn.stringToHclTerraform(this._mount),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

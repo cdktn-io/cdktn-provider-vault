@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_assignment
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_assignment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface IdentityOidcAssignmentConfig extends cdktf.TerraformMetaArguments {
+export interface IdentityOidcAssignmentConfig extends cdktn.TerraformMetaArguments {
   /**
   * A list of Vault entity IDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_assignment#entity_ids IdentityOidcAssignment#entity_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_assignment#entity_ids IdentityOidcAssignment#entity_ids}
   */
   readonly entityIds?: string[];
   /**
   * A list of Vault group IDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_assignment#group_ids IdentityOidcAssignment#group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_assignment#group_ids IdentityOidcAssignment#group_ids}
   */
   readonly groupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_assignment#id IdentityOidcAssignment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,21 +34,21 @@ export interface IdentityOidcAssignmentConfig extends cdktf.TerraformMetaArgumen
   /**
   * The name of the assignment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_assignment#name IdentityOidcAssignment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_assignment#name IdentityOidcAssignment#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_assignment#namespace IdentityOidcAssignment#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_assignment#namespace IdentityOidcAssignment#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment}
 */
-export class IdentityOidcAssignment extends cdktf.TerraformResource {
+export class IdentityOidcAssignment extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class IdentityOidcAssignment extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a IdentityOidcAssignment resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a IdentityOidcAssignment resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityOidcAssignment to import
-  * @param importFromId The id of the existing IdentityOidcAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_assignment#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityOidcAssignment that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_assignment#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityOidcAssignment to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_oidc_assignment", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_identity_oidc_assignment", importId: importFromId, provider });
       }
 
   // ===========
@@ -74,7 +74,7 @@ export class IdentityOidcAssignment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_oidc_assignment vault_identity_oidc_assignment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class IdentityOidcAssignment extends cdktf.TerraformResource {
       terraformResourceType: 'vault_identity_oidc_assignment',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -110,7 +110,7 @@ export class IdentityOidcAssignment extends cdktf.TerraformResource {
   // entity_ids - computed: false, optional: true, required: false
   private _entityIds?: string[]; 
   public get entityIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('entity_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('entity_ids'));
   }
   public set entityIds(value: string[]) {
     this._entityIds = value;
@@ -126,7 +126,7 @@ export class IdentityOidcAssignment extends cdktf.TerraformResource {
   // group_ids - computed: false, optional: true, required: false
   private _groupIds?: string[]; 
   public get groupIds() {
-    return cdktf.Fn.tolist(this.getListAttribute('group_ids'));
+    return cdktn.Fn.tolist(this.getListAttribute('group_ids'));
   }
   public set groupIds(value: string[]) {
     this._groupIds = value;
@@ -190,42 +190,42 @@ export class IdentityOidcAssignment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      entity_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._entityIds),
-      group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupIds),
-      id: cdktf.stringToTerraform(this._id),
-      name: cdktf.stringToTerraform(this._name),
-      namespace: cdktf.stringToTerraform(this._namespace),
+      entity_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._entityIds),
+      group_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(this._groupIds),
+      id: cdktn.stringToTerraform(this._id),
+      name: cdktn.stringToTerraform(this._name),
+      namespace: cdktn.stringToTerraform(this._namespace),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       entity_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._entityIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._entityIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       group_ids: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._groupIds),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._groupIds),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

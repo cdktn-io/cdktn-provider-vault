@@ -1,13 +1,13 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
@@ -15,264 +15,264 @@ export interface VaultProviderConfig {
   /**
   * If true, adds the value of the `address` argument to the Terraform process environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#add_address_to_env VaultProvider#add_address_to_env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#add_address_to_env VaultProvider#add_address_to_env}
   */
   readonly addAddressToEnv?: string;
   /**
   * URL of the root of the target Vault server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#address VaultProvider#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#address VaultProvider#address}
   */
   readonly address?: string;
   /**
   * Path to directory containing CA certificate files to validate the server's certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#ca_cert_dir VaultProvider#ca_cert_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#ca_cert_dir VaultProvider#ca_cert_dir}
   */
   readonly caCertDir?: string;
   /**
   * Path to a CA certificate file to validate the server's certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#ca_cert_file VaultProvider#ca_cert_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#ca_cert_file VaultProvider#ca_cert_file}
   */
   readonly caCertFile?: string;
   /**
   * Maximum TTL for secret leases requested by this provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#max_lease_ttl_seconds VaultProvider#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#max_lease_ttl_seconds VaultProvider#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Maximum number of retries when a 5xx error code is encountered.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#max_retries VaultProvider#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#max_retries VaultProvider#max_retries}
   */
   readonly maxRetries?: number;
   /**
   * Maximum number of retries for Client Controlled Consistency related operations
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#max_retries_ccc VaultProvider#max_retries_ccc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#max_retries_ccc VaultProvider#max_retries_ccc}
   */
   readonly maxRetriesCcc?: number;
   /**
   * The namespace to use. Available only for Vault Enterprise.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#namespace VaultProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#namespace VaultProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * In the case where the Vault token is for a specific namespace and the provider namespace is not configured, use the token namespace as the root namespace for all resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#set_namespace_from_token VaultProvider#set_namespace_from_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#set_namespace_from_token VaultProvider#set_namespace_from_token}
   */
-  readonly setNamespaceFromToken?: boolean | cdktf.IResolvable;
+  readonly setNamespaceFromToken?: boolean | cdktn.IResolvable;
   /**
   * Set this to true to prevent the creation of ephemeral child token used by this provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#skip_child_token VaultProvider#skip_child_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#skip_child_token VaultProvider#skip_child_token}
   */
-  readonly skipChildToken?: boolean | cdktf.IResolvable;
+  readonly skipChildToken?: boolean | cdktn.IResolvable;
   /**
   * Skip the dynamic fetching of the Vault server version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#skip_get_vault_version VaultProvider#skip_get_vault_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#skip_get_vault_version VaultProvider#skip_get_vault_version}
   */
-  readonly skipGetVaultVersion?: boolean | cdktf.IResolvable;
+  readonly skipGetVaultVersion?: boolean | cdktn.IResolvable;
   /**
   * Set this to true only if the target Vault server is an insecure development instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#skip_tls_verify VaultProvider#skip_tls_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#skip_tls_verify VaultProvider#skip_tls_verify}
   */
-  readonly skipTlsVerify?: boolean | cdktf.IResolvable;
+  readonly skipTlsVerify?: boolean | cdktn.IResolvable;
   /**
   * Name to use as the SNI host when connecting via TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#tls_server_name VaultProvider#tls_server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#tls_server_name VaultProvider#tls_server_name}
   */
   readonly tlsServerName?: string;
   /**
   * Token to use to authenticate to Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#token VaultProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#token VaultProvider#token}
   */
   readonly token?: string;
   /**
   * Token name to use for creating the Vault child token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#token_name VaultProvider#token_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#token_name VaultProvider#token_name}
   */
   readonly tokenName?: string;
   /**
   * Override the Vault server version, which is normally determined dynamically from the target Vault server
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#vault_version_override VaultProvider#vault_version_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#vault_version_override VaultProvider#vault_version_override}
   */
   readonly vaultVersionOverride?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#alias VaultProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#alias VaultProvider#alias}
   */
   readonly alias?: string;
   /**
   * auth_login block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#auth_login VaultProvider#auth_login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#auth_login VaultProvider#auth_login}
   */
-  readonly authLogin?: VaultProviderAuthLogin[] | cdktf.IResolvable;
+  readonly authLogin?: VaultProviderAuthLogin[] | cdktn.IResolvable;
   /**
   * auth_login_aws block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#auth_login_aws VaultProvider#auth_login_aws}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#auth_login_aws VaultProvider#auth_login_aws}
   */
-  readonly authLoginAws?: VaultProviderAuthLoginAws[] | cdktf.IResolvable;
+  readonly authLoginAws?: VaultProviderAuthLoginAws[] | cdktn.IResolvable;
   /**
   * auth_login_azure block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#auth_login_azure VaultProvider#auth_login_azure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#auth_login_azure VaultProvider#auth_login_azure}
   */
-  readonly authLoginAzure?: VaultProviderAuthLoginAzure[] | cdktf.IResolvable;
+  readonly authLoginAzure?: VaultProviderAuthLoginAzure[] | cdktn.IResolvable;
   /**
   * auth_login_cert block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#auth_login_cert VaultProvider#auth_login_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#auth_login_cert VaultProvider#auth_login_cert}
   */
-  readonly authLoginCert?: VaultProviderAuthLoginCert[] | cdktf.IResolvable;
+  readonly authLoginCert?: VaultProviderAuthLoginCert[] | cdktn.IResolvable;
   /**
   * auth_login_gcp block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#auth_login_gcp VaultProvider#auth_login_gcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#auth_login_gcp VaultProvider#auth_login_gcp}
   */
-  readonly authLoginGcp?: VaultProviderAuthLoginGcp[] | cdktf.IResolvable;
+  readonly authLoginGcp?: VaultProviderAuthLoginGcp[] | cdktn.IResolvable;
   /**
   * auth_login_jwt block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#auth_login_jwt VaultProvider#auth_login_jwt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#auth_login_jwt VaultProvider#auth_login_jwt}
   */
-  readonly authLoginJwt?: VaultProviderAuthLoginJwt[] | cdktf.IResolvable;
+  readonly authLoginJwt?: VaultProviderAuthLoginJwt[] | cdktn.IResolvable;
   /**
   * auth_login_kerberos block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#auth_login_kerberos VaultProvider#auth_login_kerberos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#auth_login_kerberos VaultProvider#auth_login_kerberos}
   */
-  readonly authLoginKerberos?: VaultProviderAuthLoginKerberos[] | cdktf.IResolvable;
+  readonly authLoginKerberos?: VaultProviderAuthLoginKerberos[] | cdktn.IResolvable;
   /**
   * auth_login_oci block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#auth_login_oci VaultProvider#auth_login_oci}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#auth_login_oci VaultProvider#auth_login_oci}
   */
-  readonly authLoginOci?: VaultProviderAuthLoginOci[] | cdktf.IResolvable;
+  readonly authLoginOci?: VaultProviderAuthLoginOci[] | cdktn.IResolvable;
   /**
   * auth_login_oidc block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#auth_login_oidc VaultProvider#auth_login_oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#auth_login_oidc VaultProvider#auth_login_oidc}
   */
-  readonly authLoginOidc?: VaultProviderAuthLoginOidc[] | cdktf.IResolvable;
+  readonly authLoginOidc?: VaultProviderAuthLoginOidc[] | cdktn.IResolvable;
   /**
   * auth_login_radius block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#auth_login_radius VaultProvider#auth_login_radius}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#auth_login_radius VaultProvider#auth_login_radius}
   */
-  readonly authLoginRadius?: VaultProviderAuthLoginRadius[] | cdktf.IResolvable;
+  readonly authLoginRadius?: VaultProviderAuthLoginRadius[] | cdktn.IResolvable;
   /**
   * auth_login_token_file block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#auth_login_token_file VaultProvider#auth_login_token_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#auth_login_token_file VaultProvider#auth_login_token_file}
   */
-  readonly authLoginTokenFile?: VaultProviderAuthLoginTokenFile[] | cdktf.IResolvable;
+  readonly authLoginTokenFile?: VaultProviderAuthLoginTokenFile[] | cdktn.IResolvable;
   /**
   * auth_login_userpass block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#auth_login_userpass VaultProvider#auth_login_userpass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#auth_login_userpass VaultProvider#auth_login_userpass}
   */
-  readonly authLoginUserpass?: VaultProviderAuthLoginUserpass[] | cdktf.IResolvable;
+  readonly authLoginUserpass?: VaultProviderAuthLoginUserpass[] | cdktn.IResolvable;
   /**
   * client_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#client_auth VaultProvider#client_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#client_auth VaultProvider#client_auth}
   */
-  readonly clientAuth?: VaultProviderClientAuth[] | cdktf.IResolvable;
+  readonly clientAuth?: VaultProviderClientAuth[] | cdktn.IResolvable;
   /**
   * headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#headers VaultProvider#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#headers VaultProvider#headers}
   */
-  readonly headers?: VaultProviderHeaders[] | cdktf.IResolvable;
+  readonly headers?: VaultProviderHeaders[] | cdktn.IResolvable;
 }
 export interface VaultProviderAuthLogin {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#method VaultProvider#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#method VaultProvider#method}
   */
   readonly method?: string;
   /**
   * The authentication engine's namespace. Conflicts with use_root_namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#namespace VaultProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#namespace VaultProvider#namespace}
   */
   readonly namespace?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#parameters VaultProvider#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#parameters VaultProvider#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#path VaultProvider#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#path VaultProvider#path}
   */
   readonly path: string;
   /**
   * Authenticate to the root Vault namespace. Conflicts with namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#use_root_namespace VaultProvider#use_root_namespace}
   */
-  readonly useRootNamespace?: boolean | cdktf.IResolvable;
+  readonly useRootNamespace?: boolean | cdktn.IResolvable;
 }
 
-export function vaultProviderAuthLoginToTerraform(struct?: VaultProviderAuthLogin | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginToTerraform(struct?: VaultProviderAuthLogin | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    method: cdktf.stringToTerraform(struct!.method),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    parameters: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.parameters),
-    path: cdktf.stringToTerraform(struct!.path),
-    use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
+    method: cdktn.stringToTerraform(struct!.method),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    parameters: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.parameters),
+    path: cdktn.stringToTerraform(struct!.path),
+    use_root_namespace: cdktn.booleanToTerraform(struct!.useRootNamespace),
   }
 }
 
 
-export function vaultProviderAuthLoginToHclTerraform(struct?: VaultProviderAuthLogin | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginToHclTerraform(struct?: VaultProviderAuthLogin | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     parameters: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.parameters),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.parameters),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_root_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.useRootNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -287,225 +287,225 @@ export interface VaultProviderAuthLoginAws {
   /**
   * The AWS access key ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#aws_access_key_id VaultProvider#aws_access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#aws_access_key_id VaultProvider#aws_access_key_id}
   */
   readonly awsAccessKeyId?: string;
   /**
   * The IAM endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#aws_iam_endpoint VaultProvider#aws_iam_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#aws_iam_endpoint VaultProvider#aws_iam_endpoint}
   */
   readonly awsIamEndpoint?: string;
   /**
   * The name of the AWS profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#aws_profile VaultProvider#aws_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#aws_profile VaultProvider#aws_profile}
   */
   readonly awsProfile?: string;
   /**
   * The AWS region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#aws_region VaultProvider#aws_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#aws_region VaultProvider#aws_region}
   */
   readonly awsRegion?: string;
   /**
   * The ARN of the AWS Role to assume.Used during STS AssumeRole
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#aws_role_arn VaultProvider#aws_role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#aws_role_arn VaultProvider#aws_role_arn}
   */
   readonly awsRoleArn?: string;
   /**
   * Specifies the name to attach to the AWS role session. Used during STS AssumeRole
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#aws_role_session_name VaultProvider#aws_role_session_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#aws_role_session_name VaultProvider#aws_role_session_name}
   */
   readonly awsRoleSessionName?: string;
   /**
   * The AWS secret access key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#aws_secret_access_key VaultProvider#aws_secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#aws_secret_access_key VaultProvider#aws_secret_access_key}
   */
   readonly awsSecretAccessKey?: string;
   /**
   * The AWS session token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#aws_session_token VaultProvider#aws_session_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#aws_session_token VaultProvider#aws_session_token}
   */
   readonly awsSessionToken?: string;
   /**
   * Path to the AWS shared credentials file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#aws_shared_credentials_file VaultProvider#aws_shared_credentials_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#aws_shared_credentials_file VaultProvider#aws_shared_credentials_file}
   */
   readonly awsSharedCredentialsFile?: string;
   /**
   * The STS endpoint URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#aws_sts_endpoint VaultProvider#aws_sts_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#aws_sts_endpoint VaultProvider#aws_sts_endpoint}
   */
   readonly awsStsEndpoint?: string;
   /**
   * Path to the file containing an OAuth 2.0 access token or OpenID Connect ID token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#aws_web_identity_token_file VaultProvider#aws_web_identity_token_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#aws_web_identity_token_file VaultProvider#aws_web_identity_token_file}
   */
   readonly awsWebIdentityTokenFile?: string;
   /**
   * The Vault header value to include in the STS signing request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#header_value VaultProvider#header_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#header_value VaultProvider#header_value}
   */
   readonly headerValue?: string;
   /**
   * The path where the authentication engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#mount VaultProvider#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#mount VaultProvider#mount}
   */
   readonly mount?: string;
   /**
   * The authentication engine's namespace. Conflicts with use_root_namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#namespace VaultProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#namespace VaultProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * The Vault role to use when logging into Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#role VaultProvider#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#role VaultProvider#role}
   */
   readonly role: string;
   /**
   * Authenticate to the root Vault namespace. Conflicts with namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#use_root_namespace VaultProvider#use_root_namespace}
   */
-  readonly useRootNamespace?: boolean | cdktf.IResolvable;
+  readonly useRootNamespace?: boolean | cdktn.IResolvable;
 }
 
-export function vaultProviderAuthLoginAwsToTerraform(struct?: VaultProviderAuthLoginAws | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginAwsToTerraform(struct?: VaultProviderAuthLoginAws | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aws_access_key_id: cdktf.stringToTerraform(struct!.awsAccessKeyId),
-    aws_iam_endpoint: cdktf.stringToTerraform(struct!.awsIamEndpoint),
-    aws_profile: cdktf.stringToTerraform(struct!.awsProfile),
-    aws_region: cdktf.stringToTerraform(struct!.awsRegion),
-    aws_role_arn: cdktf.stringToTerraform(struct!.awsRoleArn),
-    aws_role_session_name: cdktf.stringToTerraform(struct!.awsRoleSessionName),
-    aws_secret_access_key: cdktf.stringToTerraform(struct!.awsSecretAccessKey),
-    aws_session_token: cdktf.stringToTerraform(struct!.awsSessionToken),
-    aws_shared_credentials_file: cdktf.stringToTerraform(struct!.awsSharedCredentialsFile),
-    aws_sts_endpoint: cdktf.stringToTerraform(struct!.awsStsEndpoint),
-    aws_web_identity_token_file: cdktf.stringToTerraform(struct!.awsWebIdentityTokenFile),
-    header_value: cdktf.stringToTerraform(struct!.headerValue),
-    mount: cdktf.stringToTerraform(struct!.mount),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    role: cdktf.stringToTerraform(struct!.role),
-    use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
+    aws_access_key_id: cdktn.stringToTerraform(struct!.awsAccessKeyId),
+    aws_iam_endpoint: cdktn.stringToTerraform(struct!.awsIamEndpoint),
+    aws_profile: cdktn.stringToTerraform(struct!.awsProfile),
+    aws_region: cdktn.stringToTerraform(struct!.awsRegion),
+    aws_role_arn: cdktn.stringToTerraform(struct!.awsRoleArn),
+    aws_role_session_name: cdktn.stringToTerraform(struct!.awsRoleSessionName),
+    aws_secret_access_key: cdktn.stringToTerraform(struct!.awsSecretAccessKey),
+    aws_session_token: cdktn.stringToTerraform(struct!.awsSessionToken),
+    aws_shared_credentials_file: cdktn.stringToTerraform(struct!.awsSharedCredentialsFile),
+    aws_sts_endpoint: cdktn.stringToTerraform(struct!.awsStsEndpoint),
+    aws_web_identity_token_file: cdktn.stringToTerraform(struct!.awsWebIdentityTokenFile),
+    header_value: cdktn.stringToTerraform(struct!.headerValue),
+    mount: cdktn.stringToTerraform(struct!.mount),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    role: cdktn.stringToTerraform(struct!.role),
+    use_root_namespace: cdktn.booleanToTerraform(struct!.useRootNamespace),
   }
 }
 
 
-export function vaultProviderAuthLoginAwsToHclTerraform(struct?: VaultProviderAuthLoginAws | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginAwsToHclTerraform(struct?: VaultProviderAuthLoginAws | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aws_access_key_id: {
-      value: cdktf.stringToHclTerraform(struct!.awsAccessKeyId),
+      value: cdktn.stringToHclTerraform(struct!.awsAccessKeyId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_iam_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.awsIamEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.awsIamEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_profile: {
-      value: cdktf.stringToHclTerraform(struct!.awsProfile),
+      value: cdktn.stringToHclTerraform(struct!.awsProfile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_region: {
-      value: cdktf.stringToHclTerraform(struct!.awsRegion),
+      value: cdktn.stringToHclTerraform(struct!.awsRegion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_role_arn: {
-      value: cdktf.stringToHclTerraform(struct!.awsRoleArn),
+      value: cdktn.stringToHclTerraform(struct!.awsRoleArn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_role_session_name: {
-      value: cdktf.stringToHclTerraform(struct!.awsRoleSessionName),
+      value: cdktn.stringToHclTerraform(struct!.awsRoleSessionName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_secret_access_key: {
-      value: cdktf.stringToHclTerraform(struct!.awsSecretAccessKey),
+      value: cdktn.stringToHclTerraform(struct!.awsSecretAccessKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_session_token: {
-      value: cdktf.stringToHclTerraform(struct!.awsSessionToken),
+      value: cdktn.stringToHclTerraform(struct!.awsSessionToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_shared_credentials_file: {
-      value: cdktf.stringToHclTerraform(struct!.awsSharedCredentialsFile),
+      value: cdktn.stringToHclTerraform(struct!.awsSharedCredentialsFile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_sts_endpoint: {
-      value: cdktf.stringToHclTerraform(struct!.awsStsEndpoint),
+      value: cdktn.stringToHclTerraform(struct!.awsStsEndpoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     aws_web_identity_token_file: {
-      value: cdktf.stringToHclTerraform(struct!.awsWebIdentityTokenFile),
+      value: cdktn.stringToHclTerraform(struct!.awsWebIdentityTokenFile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_value: {
-      value: cdktf.stringToHclTerraform(struct!.headerValue),
+      value: cdktn.stringToHclTerraform(struct!.headerValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount: {
-      value: cdktf.stringToHclTerraform(struct!.mount),
+      value: cdktn.stringToHclTerraform(struct!.mount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_root_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.useRootNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -520,173 +520,173 @@ export interface VaultProviderAuthLoginAzure {
   /**
   * The identity's client ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#client_id VaultProvider#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#client_id VaultProvider#client_id}
   */
   readonly clientId?: string;
   /**
   * A signed JSON Web Token. If not specified on will be created automatically
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#jwt VaultProvider#jwt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#jwt VaultProvider#jwt}
   */
   readonly jwt?: string;
   /**
   * The path where the authentication engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#mount VaultProvider#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#mount VaultProvider#mount}
   */
   readonly mount?: string;
   /**
   * The authentication engine's namespace. Conflicts with use_root_namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#namespace VaultProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#namespace VaultProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * The resource group for the machine that generated the MSI token. This information can be obtained through instance metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#resource_group_name VaultProvider#resource_group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#resource_group_name VaultProvider#resource_group_name}
   */
   readonly resourceGroupName: string;
   /**
   * Name of the login role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#role VaultProvider#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#role VaultProvider#role}
   */
   readonly role: string;
   /**
   * The scopes to include in the token request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#scope VaultProvider#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#scope VaultProvider#scope}
   */
   readonly scope?: string;
   /**
   * The subscription ID for the machine that generated the MSI token. This information can be obtained through instance metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#subscription_id VaultProvider#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#subscription_id VaultProvider#subscription_id}
   */
   readonly subscriptionId: string;
   /**
   * Provides the tenant ID to use in a multi-tenant authentication scenario.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#tenant_id VaultProvider#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#tenant_id VaultProvider#tenant_id}
   */
   readonly tenantId?: string;
   /**
   * Authenticate to the root Vault namespace. Conflicts with namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#use_root_namespace VaultProvider#use_root_namespace}
   */
-  readonly useRootNamespace?: boolean | cdktf.IResolvable;
+  readonly useRootNamespace?: boolean | cdktn.IResolvable;
   /**
   * The virtual machine name for the machine that generated the MSI token. This information can be obtained through instance metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#vm_name VaultProvider#vm_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#vm_name VaultProvider#vm_name}
   */
   readonly vmName?: string;
   /**
   * The virtual machine scale set name for the machine that generated the MSI token. This information can be obtained through instance metadata.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#vmss_name VaultProvider#vmss_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#vmss_name VaultProvider#vmss_name}
   */
   readonly vmssName?: string;
 }
 
-export function vaultProviderAuthLoginAzureToTerraform(struct?: VaultProviderAuthLoginAzure | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginAzureToTerraform(struct?: VaultProviderAuthLoginAzure | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    jwt: cdktf.stringToTerraform(struct!.jwt),
-    mount: cdktf.stringToTerraform(struct!.mount),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    resource_group_name: cdktf.stringToTerraform(struct!.resourceGroupName),
-    role: cdktf.stringToTerraform(struct!.role),
-    scope: cdktf.stringToTerraform(struct!.scope),
-    subscription_id: cdktf.stringToTerraform(struct!.subscriptionId),
-    tenant_id: cdktf.stringToTerraform(struct!.tenantId),
-    use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
-    vm_name: cdktf.stringToTerraform(struct!.vmName),
-    vmss_name: cdktf.stringToTerraform(struct!.vmssName),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    jwt: cdktn.stringToTerraform(struct!.jwt),
+    mount: cdktn.stringToTerraform(struct!.mount),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    resource_group_name: cdktn.stringToTerraform(struct!.resourceGroupName),
+    role: cdktn.stringToTerraform(struct!.role),
+    scope: cdktn.stringToTerraform(struct!.scope),
+    subscription_id: cdktn.stringToTerraform(struct!.subscriptionId),
+    tenant_id: cdktn.stringToTerraform(struct!.tenantId),
+    use_root_namespace: cdktn.booleanToTerraform(struct!.useRootNamespace),
+    vm_name: cdktn.stringToTerraform(struct!.vmName),
+    vmss_name: cdktn.stringToTerraform(struct!.vmssName),
   }
 }
 
 
-export function vaultProviderAuthLoginAzureToHclTerraform(struct?: VaultProviderAuthLoginAzure | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginAzureToHclTerraform(struct?: VaultProviderAuthLoginAzure | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jwt: {
-      value: cdktf.stringToHclTerraform(struct!.jwt),
+      value: cdktn.stringToHclTerraform(struct!.jwt),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount: {
-      value: cdktf.stringToHclTerraform(struct!.mount),
+      value: cdktn.stringToHclTerraform(struct!.mount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resource_group_name: {
-      value: cdktf.stringToHclTerraform(struct!.resourceGroupName),
+      value: cdktn.stringToHclTerraform(struct!.resourceGroupName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     subscription_id: {
-      value: cdktf.stringToHclTerraform(struct!.subscriptionId),
+      value: cdktn.stringToHclTerraform(struct!.subscriptionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tenant_id: {
-      value: cdktf.stringToHclTerraform(struct!.tenantId),
+      value: cdktn.stringToHclTerraform(struct!.tenantId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_root_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.useRootNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     vm_name: {
-      value: cdktf.stringToHclTerraform(struct!.vmName),
+      value: cdktn.stringToHclTerraform(struct!.vmName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vmss_name: {
-      value: cdktf.stringToHclTerraform(struct!.vmssName),
+      value: cdktn.stringToHclTerraform(struct!.vmssName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -701,95 +701,95 @@ export interface VaultProviderAuthLoginCert {
   /**
   * Path to a file containing the client certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#cert_file VaultProvider#cert_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#cert_file VaultProvider#cert_file}
   */
   readonly certFile: string;
   /**
   * Path to a file containing the private key that the certificate was issued for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#key_file VaultProvider#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#key_file VaultProvider#key_file}
   */
   readonly keyFile: string;
   /**
   * The path where the authentication engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#mount VaultProvider#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#mount VaultProvider#mount}
   */
   readonly mount?: string;
   /**
   * Name of the certificate's role
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#name VaultProvider#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#name VaultProvider#name}
   */
   readonly name?: string;
   /**
   * The authentication engine's namespace. Conflicts with use_root_namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#namespace VaultProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#namespace VaultProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * Authenticate to the root Vault namespace. Conflicts with namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#use_root_namespace VaultProvider#use_root_namespace}
   */
-  readonly useRootNamespace?: boolean | cdktf.IResolvable;
+  readonly useRootNamespace?: boolean | cdktn.IResolvable;
 }
 
-export function vaultProviderAuthLoginCertToTerraform(struct?: VaultProviderAuthLoginCert | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginCertToTerraform(struct?: VaultProviderAuthLoginCert | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cert_file: cdktf.stringToTerraform(struct!.certFile),
-    key_file: cdktf.stringToTerraform(struct!.keyFile),
-    mount: cdktf.stringToTerraform(struct!.mount),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
+    cert_file: cdktn.stringToTerraform(struct!.certFile),
+    key_file: cdktn.stringToTerraform(struct!.keyFile),
+    mount: cdktn.stringToTerraform(struct!.mount),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    use_root_namespace: cdktn.booleanToTerraform(struct!.useRootNamespace),
   }
 }
 
 
-export function vaultProviderAuthLoginCertToHclTerraform(struct?: VaultProviderAuthLoginCert | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginCertToHclTerraform(struct?: VaultProviderAuthLoginCert | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cert_file: {
-      value: cdktf.stringToHclTerraform(struct!.certFile),
+      value: cdktn.stringToHclTerraform(struct!.certFile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_file: {
-      value: cdktf.stringToHclTerraform(struct!.keyFile),
+      value: cdktn.stringToHclTerraform(struct!.keyFile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount: {
-      value: cdktf.stringToHclTerraform(struct!.mount),
+      value: cdktn.stringToHclTerraform(struct!.mount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_root_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.useRootNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -804,108 +804,108 @@ export interface VaultProviderAuthLoginGcp {
   /**
   * Path to the Google Cloud credentials file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#credentials VaultProvider#credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#credentials VaultProvider#credentials}
   */
   readonly credentials?: string;
   /**
   * A signed JSON Web Token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#jwt VaultProvider#jwt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#jwt VaultProvider#jwt}
   */
   readonly jwt?: string;
   /**
   * The path where the authentication engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#mount VaultProvider#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#mount VaultProvider#mount}
   */
   readonly mount?: string;
   /**
   * The authentication engine's namespace. Conflicts with use_root_namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#namespace VaultProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#namespace VaultProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the login role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#role VaultProvider#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#role VaultProvider#role}
   */
   readonly role: string;
   /**
   * IAM service account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#service_account VaultProvider#service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#service_account VaultProvider#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * Authenticate to the root Vault namespace. Conflicts with namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#use_root_namespace VaultProvider#use_root_namespace}
   */
-  readonly useRootNamespace?: boolean | cdktf.IResolvable;
+  readonly useRootNamespace?: boolean | cdktn.IResolvable;
 }
 
-export function vaultProviderAuthLoginGcpToTerraform(struct?: VaultProviderAuthLoginGcp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginGcpToTerraform(struct?: VaultProviderAuthLoginGcp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    credentials: cdktf.stringToTerraform(struct!.credentials),
-    jwt: cdktf.stringToTerraform(struct!.jwt),
-    mount: cdktf.stringToTerraform(struct!.mount),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    role: cdktf.stringToTerraform(struct!.role),
-    service_account: cdktf.stringToTerraform(struct!.serviceAccount),
-    use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
+    credentials: cdktn.stringToTerraform(struct!.credentials),
+    jwt: cdktn.stringToTerraform(struct!.jwt),
+    mount: cdktn.stringToTerraform(struct!.mount),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    role: cdktn.stringToTerraform(struct!.role),
+    service_account: cdktn.stringToTerraform(struct!.serviceAccount),
+    use_root_namespace: cdktn.booleanToTerraform(struct!.useRootNamespace),
   }
 }
 
 
-export function vaultProviderAuthLoginGcpToHclTerraform(struct?: VaultProviderAuthLoginGcp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginGcpToHclTerraform(struct?: VaultProviderAuthLoginGcp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     credentials: {
-      value: cdktf.stringToHclTerraform(struct!.credentials),
+      value: cdktn.stringToHclTerraform(struct!.credentials),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jwt: {
-      value: cdktf.stringToHclTerraform(struct!.jwt),
+      value: cdktn.stringToHclTerraform(struct!.jwt),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount: {
-      value: cdktf.stringToHclTerraform(struct!.mount),
+      value: cdktn.stringToHclTerraform(struct!.mount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service_account: {
-      value: cdktf.stringToHclTerraform(struct!.serviceAccount),
+      value: cdktn.stringToHclTerraform(struct!.serviceAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_root_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.useRootNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -920,82 +920,82 @@ export interface VaultProviderAuthLoginJwt {
   /**
   * A signed JSON Web Token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#jwt VaultProvider#jwt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#jwt VaultProvider#jwt}
   */
   readonly jwt?: string;
   /**
   * The path where the authentication engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#mount VaultProvider#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#mount VaultProvider#mount}
   */
   readonly mount?: string;
   /**
   * The authentication engine's namespace. Conflicts with use_root_namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#namespace VaultProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#namespace VaultProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the login role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#role VaultProvider#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#role VaultProvider#role}
   */
   readonly role: string;
   /**
   * Authenticate to the root Vault namespace. Conflicts with namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#use_root_namespace VaultProvider#use_root_namespace}
   */
-  readonly useRootNamespace?: boolean | cdktf.IResolvable;
+  readonly useRootNamespace?: boolean | cdktn.IResolvable;
 }
 
-export function vaultProviderAuthLoginJwtToTerraform(struct?: VaultProviderAuthLoginJwt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginJwtToTerraform(struct?: VaultProviderAuthLoginJwt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    jwt: cdktf.stringToTerraform(struct!.jwt),
-    mount: cdktf.stringToTerraform(struct!.mount),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    role: cdktf.stringToTerraform(struct!.role),
-    use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
+    jwt: cdktn.stringToTerraform(struct!.jwt),
+    mount: cdktn.stringToTerraform(struct!.mount),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    role: cdktn.stringToTerraform(struct!.role),
+    use_root_namespace: cdktn.booleanToTerraform(struct!.useRootNamespace),
   }
 }
 
 
-export function vaultProviderAuthLoginJwtToHclTerraform(struct?: VaultProviderAuthLoginJwt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginJwtToHclTerraform(struct?: VaultProviderAuthLoginJwt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     jwt: {
-      value: cdktf.stringToHclTerraform(struct!.jwt),
+      value: cdktn.stringToHclTerraform(struct!.jwt),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount: {
-      value: cdktf.stringToHclTerraform(struct!.mount),
+      value: cdktn.stringToHclTerraform(struct!.mount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_root_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.useRootNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1010,160 +1010,160 @@ export interface VaultProviderAuthLoginKerberos {
   /**
   * Disable the Kerberos FAST negotiation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#disable_fast_negotiation VaultProvider#disable_fast_negotiation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#disable_fast_negotiation VaultProvider#disable_fast_negotiation}
   */
-  readonly disableFastNegotiation?: boolean | cdktf.IResolvable;
+  readonly disableFastNegotiation?: boolean | cdktn.IResolvable;
   /**
   * The Kerberos keytab file containing the entry of the login entity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#keytab_path VaultProvider#keytab_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#keytab_path VaultProvider#keytab_path}
   */
   readonly keytabPath?: string;
   /**
   * A valid Kerberos configuration file e.g. /etc/krb5.conf.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#krb5conf_path VaultProvider#krb5conf_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#krb5conf_path VaultProvider#krb5conf_path}
   */
   readonly krb5ConfPath?: string;
   /**
   * The path where the authentication engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#mount VaultProvider#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#mount VaultProvider#mount}
   */
   readonly mount?: string;
   /**
   * The authentication engine's namespace. Conflicts with use_root_namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#namespace VaultProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#namespace VaultProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * The Kerberos server's authoritative authentication domain
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#realm VaultProvider#realm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#realm VaultProvider#realm}
   */
   readonly realm?: string;
   /**
   * Strip the host from the username found in the keytab.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#remove_instance_name VaultProvider#remove_instance_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#remove_instance_name VaultProvider#remove_instance_name}
   */
-  readonly removeInstanceName?: boolean | cdktf.IResolvable;
+  readonly removeInstanceName?: boolean | cdktn.IResolvable;
   /**
   * The service principle name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#service VaultProvider#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#service VaultProvider#service}
   */
   readonly service?: string;
   /**
   * Simple and Protected GSSAPI Negotiation Mechanism (SPNEGO) token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#token VaultProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#token VaultProvider#token}
   */
   readonly token?: string;
   /**
   * Authenticate to the root Vault namespace. Conflicts with namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#use_root_namespace VaultProvider#use_root_namespace}
   */
-  readonly useRootNamespace?: boolean | cdktf.IResolvable;
+  readonly useRootNamespace?: boolean | cdktn.IResolvable;
   /**
   * The username to login into Kerberos with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#username VaultProvider#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#username VaultProvider#username}
   */
   readonly username?: string;
 }
 
-export function vaultProviderAuthLoginKerberosToTerraform(struct?: VaultProviderAuthLoginKerberos | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginKerberosToTerraform(struct?: VaultProviderAuthLoginKerberos | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disable_fast_negotiation: cdktf.booleanToTerraform(struct!.disableFastNegotiation),
-    keytab_path: cdktf.stringToTerraform(struct!.keytabPath),
-    krb5conf_path: cdktf.stringToTerraform(struct!.krb5ConfPath),
-    mount: cdktf.stringToTerraform(struct!.mount),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    realm: cdktf.stringToTerraform(struct!.realm),
-    remove_instance_name: cdktf.booleanToTerraform(struct!.removeInstanceName),
-    service: cdktf.stringToTerraform(struct!.service),
-    token: cdktf.stringToTerraform(struct!.token),
-    use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
-    username: cdktf.stringToTerraform(struct!.username),
+    disable_fast_negotiation: cdktn.booleanToTerraform(struct!.disableFastNegotiation),
+    keytab_path: cdktn.stringToTerraform(struct!.keytabPath),
+    krb5conf_path: cdktn.stringToTerraform(struct!.krb5ConfPath),
+    mount: cdktn.stringToTerraform(struct!.mount),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    realm: cdktn.stringToTerraform(struct!.realm),
+    remove_instance_name: cdktn.booleanToTerraform(struct!.removeInstanceName),
+    service: cdktn.stringToTerraform(struct!.service),
+    token: cdktn.stringToTerraform(struct!.token),
+    use_root_namespace: cdktn.booleanToTerraform(struct!.useRootNamespace),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function vaultProviderAuthLoginKerberosToHclTerraform(struct?: VaultProviderAuthLoginKerberos | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginKerberosToHclTerraform(struct?: VaultProviderAuthLoginKerberos | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disable_fast_negotiation: {
-      value: cdktf.booleanToHclTerraform(struct!.disableFastNegotiation),
+      value: cdktn.booleanToHclTerraform(struct!.disableFastNegotiation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     keytab_path: {
-      value: cdktf.stringToHclTerraform(struct!.keytabPath),
+      value: cdktn.stringToHclTerraform(struct!.keytabPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     krb5conf_path: {
-      value: cdktf.stringToHclTerraform(struct!.krb5ConfPath),
+      value: cdktn.stringToHclTerraform(struct!.krb5ConfPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount: {
-      value: cdktf.stringToHclTerraform(struct!.mount),
+      value: cdktn.stringToHclTerraform(struct!.mount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     realm: {
-      value: cdktf.stringToHclTerraform(struct!.realm),
+      value: cdktn.stringToHclTerraform(struct!.realm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     remove_instance_name: {
-      value: cdktf.booleanToHclTerraform(struct!.removeInstanceName),
+      value: cdktn.booleanToHclTerraform(struct!.removeInstanceName),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     token: {
-      value: cdktf.stringToHclTerraform(struct!.token),
+      value: cdktn.stringToHclTerraform(struct!.token),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_root_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.useRootNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1178,82 +1178,82 @@ export interface VaultProviderAuthLoginOci {
   /**
   * Authentication type to use when getting OCI credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#auth_type VaultProvider#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#auth_type VaultProvider#auth_type}
   */
   readonly authType: string;
   /**
   * The path where the authentication engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#mount VaultProvider#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#mount VaultProvider#mount}
   */
   readonly mount?: string;
   /**
   * The authentication engine's namespace. Conflicts with use_root_namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#namespace VaultProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#namespace VaultProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the login role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#role VaultProvider#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#role VaultProvider#role}
   */
   readonly role: string;
   /**
   * Authenticate to the root Vault namespace. Conflicts with namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#use_root_namespace VaultProvider#use_root_namespace}
   */
-  readonly useRootNamespace?: boolean | cdktf.IResolvable;
+  readonly useRootNamespace?: boolean | cdktn.IResolvable;
 }
 
-export function vaultProviderAuthLoginOciToTerraform(struct?: VaultProviderAuthLoginOci | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginOciToTerraform(struct?: VaultProviderAuthLoginOci | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_type: cdktf.stringToTerraform(struct!.authType),
-    mount: cdktf.stringToTerraform(struct!.mount),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    role: cdktf.stringToTerraform(struct!.role),
-    use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
+    auth_type: cdktn.stringToTerraform(struct!.authType),
+    mount: cdktn.stringToTerraform(struct!.mount),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    role: cdktn.stringToTerraform(struct!.role),
+    use_root_namespace: cdktn.booleanToTerraform(struct!.useRootNamespace),
   }
 }
 
 
-export function vaultProviderAuthLoginOciToHclTerraform(struct?: VaultProviderAuthLoginOci | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginOciToHclTerraform(struct?: VaultProviderAuthLoginOci | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_type: {
-      value: cdktf.stringToHclTerraform(struct!.authType),
+      value: cdktn.stringToHclTerraform(struct!.authType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount: {
-      value: cdktf.stringToHclTerraform(struct!.mount),
+      value: cdktn.stringToHclTerraform(struct!.mount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_root_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.useRootNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1268,95 +1268,95 @@ export interface VaultProviderAuthLoginOidc {
   /**
   * The callback address. Must be a valid URI without the path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#callback_address VaultProvider#callback_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#callback_address VaultProvider#callback_address}
   */
   readonly callbackAddress?: string;
   /**
   * The callback listener's address. Must be a valid URI without the path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#callback_listener_address VaultProvider#callback_listener_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#callback_listener_address VaultProvider#callback_listener_address}
   */
   readonly callbackListenerAddress?: string;
   /**
   * The path where the authentication engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#mount VaultProvider#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#mount VaultProvider#mount}
   */
   readonly mount?: string;
   /**
   * The authentication engine's namespace. Conflicts with use_root_namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#namespace VaultProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#namespace VaultProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the login role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#role VaultProvider#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#role VaultProvider#role}
   */
   readonly role: string;
   /**
   * Authenticate to the root Vault namespace. Conflicts with namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#use_root_namespace VaultProvider#use_root_namespace}
   */
-  readonly useRootNamespace?: boolean | cdktf.IResolvable;
+  readonly useRootNamespace?: boolean | cdktn.IResolvable;
 }
 
-export function vaultProviderAuthLoginOidcToTerraform(struct?: VaultProviderAuthLoginOidc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginOidcToTerraform(struct?: VaultProviderAuthLoginOidc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    callback_address: cdktf.stringToTerraform(struct!.callbackAddress),
-    callback_listener_address: cdktf.stringToTerraform(struct!.callbackListenerAddress),
-    mount: cdktf.stringToTerraform(struct!.mount),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    role: cdktf.stringToTerraform(struct!.role),
-    use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
+    callback_address: cdktn.stringToTerraform(struct!.callbackAddress),
+    callback_listener_address: cdktn.stringToTerraform(struct!.callbackListenerAddress),
+    mount: cdktn.stringToTerraform(struct!.mount),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    role: cdktn.stringToTerraform(struct!.role),
+    use_root_namespace: cdktn.booleanToTerraform(struct!.useRootNamespace),
   }
 }
 
 
-export function vaultProviderAuthLoginOidcToHclTerraform(struct?: VaultProviderAuthLoginOidc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginOidcToHclTerraform(struct?: VaultProviderAuthLoginOidc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     callback_address: {
-      value: cdktf.stringToHclTerraform(struct!.callbackAddress),
+      value: cdktn.stringToHclTerraform(struct!.callbackAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     callback_listener_address: {
-      value: cdktf.stringToHclTerraform(struct!.callbackListenerAddress),
+      value: cdktn.stringToHclTerraform(struct!.callbackListenerAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mount: {
-      value: cdktf.stringToHclTerraform(struct!.mount),
+      value: cdktn.stringToHclTerraform(struct!.mount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     role: {
-      value: cdktf.stringToHclTerraform(struct!.role),
+      value: cdktn.stringToHclTerraform(struct!.role),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_root_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.useRootNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1371,82 +1371,82 @@ export interface VaultProviderAuthLoginRadius {
   /**
   * The path where the authentication engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#mount VaultProvider#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#mount VaultProvider#mount}
   */
   readonly mount?: string;
   /**
   * The authentication engine's namespace. Conflicts with use_root_namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#namespace VaultProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#namespace VaultProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * The Radius password for username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#password VaultProvider#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#password VaultProvider#password}
   */
   readonly password?: string;
   /**
   * Authenticate to the root Vault namespace. Conflicts with namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#use_root_namespace VaultProvider#use_root_namespace}
   */
-  readonly useRootNamespace?: boolean | cdktf.IResolvable;
+  readonly useRootNamespace?: boolean | cdktn.IResolvable;
   /**
   * The Radius username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#username VaultProvider#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#username VaultProvider#username}
   */
   readonly username?: string;
 }
 
-export function vaultProviderAuthLoginRadiusToTerraform(struct?: VaultProviderAuthLoginRadius | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginRadiusToTerraform(struct?: VaultProviderAuthLoginRadius | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mount: cdktf.stringToTerraform(struct!.mount),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    password: cdktf.stringToTerraform(struct!.password),
-    use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
-    username: cdktf.stringToTerraform(struct!.username),
+    mount: cdktn.stringToTerraform(struct!.mount),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    password: cdktn.stringToTerraform(struct!.password),
+    use_root_namespace: cdktn.booleanToTerraform(struct!.useRootNamespace),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function vaultProviderAuthLoginRadiusToHclTerraform(struct?: VaultProviderAuthLoginRadius | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginRadiusToHclTerraform(struct?: VaultProviderAuthLoginRadius | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mount: {
-      value: cdktf.stringToHclTerraform(struct!.mount),
+      value: cdktn.stringToHclTerraform(struct!.mount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_root_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.useRootNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1461,56 +1461,56 @@ export interface VaultProviderAuthLoginTokenFile {
   /**
   * The name of a file containing a single line that is a valid Vault token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#filename VaultProvider#filename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#filename VaultProvider#filename}
   */
   readonly filename?: string;
   /**
   * The authentication engine's namespace. Conflicts with use_root_namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#namespace VaultProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#namespace VaultProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * Authenticate to the root Vault namespace. Conflicts with namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#use_root_namespace VaultProvider#use_root_namespace}
   */
-  readonly useRootNamespace?: boolean | cdktf.IResolvable;
+  readonly useRootNamespace?: boolean | cdktn.IResolvable;
 }
 
-export function vaultProviderAuthLoginTokenFileToTerraform(struct?: VaultProviderAuthLoginTokenFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginTokenFileToTerraform(struct?: VaultProviderAuthLoginTokenFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    filename: cdktf.stringToTerraform(struct!.filename),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
+    filename: cdktn.stringToTerraform(struct!.filename),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    use_root_namespace: cdktn.booleanToTerraform(struct!.useRootNamespace),
   }
 }
 
 
-export function vaultProviderAuthLoginTokenFileToHclTerraform(struct?: VaultProviderAuthLoginTokenFile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginTokenFileToHclTerraform(struct?: VaultProviderAuthLoginTokenFile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     filename: {
-      value: cdktf.stringToHclTerraform(struct!.filename),
+      value: cdktn.stringToHclTerraform(struct!.filename),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_root_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.useRootNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1525,95 +1525,95 @@ export interface VaultProviderAuthLoginUserpass {
   /**
   * The path where the authentication engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#mount VaultProvider#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#mount VaultProvider#mount}
   */
   readonly mount?: string;
   /**
   * The authentication engine's namespace. Conflicts with use_root_namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#namespace VaultProvider#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#namespace VaultProvider#namespace}
   */
   readonly namespace?: string;
   /**
   * Login with password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#password VaultProvider#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#password VaultProvider#password}
   */
   readonly password?: string;
   /**
   * Login with password from a file
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#password_file VaultProvider#password_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#password_file VaultProvider#password_file}
   */
   readonly passwordFile?: string;
   /**
   * Authenticate to the root Vault namespace. Conflicts with namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#use_root_namespace VaultProvider#use_root_namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#use_root_namespace VaultProvider#use_root_namespace}
   */
-  readonly useRootNamespace?: boolean | cdktf.IResolvable;
+  readonly useRootNamespace?: boolean | cdktn.IResolvable;
   /**
   * Login with username
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#username VaultProvider#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#username VaultProvider#username}
   */
   readonly username?: string;
 }
 
-export function vaultProviderAuthLoginUserpassToTerraform(struct?: VaultProviderAuthLoginUserpass | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginUserpassToTerraform(struct?: VaultProviderAuthLoginUserpass | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mount: cdktf.stringToTerraform(struct!.mount),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    password: cdktf.stringToTerraform(struct!.password),
-    password_file: cdktf.stringToTerraform(struct!.passwordFile),
-    use_root_namespace: cdktf.booleanToTerraform(struct!.useRootNamespace),
-    username: cdktf.stringToTerraform(struct!.username),
+    mount: cdktn.stringToTerraform(struct!.mount),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    password: cdktn.stringToTerraform(struct!.password),
+    password_file: cdktn.stringToTerraform(struct!.passwordFile),
+    use_root_namespace: cdktn.booleanToTerraform(struct!.useRootNamespace),
+    username: cdktn.stringToTerraform(struct!.username),
   }
 }
 
 
-export function vaultProviderAuthLoginUserpassToHclTerraform(struct?: VaultProviderAuthLoginUserpass | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderAuthLoginUserpassToHclTerraform(struct?: VaultProviderAuthLoginUserpass | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mount: {
-      value: cdktf.stringToHclTerraform(struct!.mount),
+      value: cdktn.stringToHclTerraform(struct!.mount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password_file: {
-      value: cdktf.stringToHclTerraform(struct!.passwordFile),
+      value: cdktn.stringToHclTerraform(struct!.passwordFile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     use_root_namespace: {
-      value: cdktf.booleanToHclTerraform(struct!.useRootNamespace),
+      value: cdktn.booleanToHclTerraform(struct!.useRootNamespace),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     username: {
-      value: cdktf.stringToHclTerraform(struct!.username),
+      value: cdktn.stringToHclTerraform(struct!.username),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1628,43 +1628,43 @@ export interface VaultProviderClientAuth {
   /**
   * Path to a file containing the client certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#cert_file VaultProvider#cert_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#cert_file VaultProvider#cert_file}
   */
   readonly certFile: string;
   /**
   * Path to a file containing the private key that the certificate was issued for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#key_file VaultProvider#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#key_file VaultProvider#key_file}
   */
   readonly keyFile: string;
 }
 
-export function vaultProviderClientAuthToTerraform(struct?: VaultProviderClientAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderClientAuthToTerraform(struct?: VaultProviderClientAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cert_file: cdktf.stringToTerraform(struct!.certFile),
-    key_file: cdktf.stringToTerraform(struct!.keyFile),
+    cert_file: cdktn.stringToTerraform(struct!.certFile),
+    key_file: cdktn.stringToTerraform(struct!.keyFile),
   }
 }
 
 
-export function vaultProviderClientAuthToHclTerraform(struct?: VaultProviderClientAuth | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderClientAuthToHclTerraform(struct?: VaultProviderClientAuth | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cert_file: {
-      value: cdktf.stringToHclTerraform(struct!.certFile),
+      value: cdktn.stringToHclTerraform(struct!.certFile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_file: {
-      value: cdktf.stringToHclTerraform(struct!.keyFile),
+      value: cdktn.stringToHclTerraform(struct!.keyFile),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1679,43 +1679,43 @@ export interface VaultProviderHeaders {
   /**
   * The header name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#name VaultProvider#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#name VaultProvider#name}
   */
   readonly name: string;
   /**
   * The header value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#value VaultProvider#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#value VaultProvider#value}
   */
   readonly value: string;
 }
 
-export function vaultProviderHeadersToTerraform(struct?: VaultProviderHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderHeadersToTerraform(struct?: VaultProviderHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    value: cdktf.stringToTerraform(struct!.value),
+    name: cdktn.stringToTerraform(struct!.name),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function vaultProviderHeadersToHclTerraform(struct?: VaultProviderHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function vaultProviderHeadersToHclTerraform(struct?: VaultProviderHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1728,9 +1728,9 @@ export function vaultProviderHeadersToHclTerraform(struct?: VaultProviderHeaders
 
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs vault}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs vault}
 */
-export class VaultProvider extends cdktf.TerraformProvider {
+export class VaultProvider extends cdktn.TerraformProvider {
 
   // =================
   // STATIC PROPERTIES
@@ -1741,14 +1741,14 @@ export class VaultProvider extends cdktf.TerraformProvider {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a VaultProvider resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a VaultProvider resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VaultProvider to import
-  * @param importFromId The id of the existing VaultProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VaultProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VaultProvider to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault", importId: importFromId, provider });
       }
 
   // ===========
@@ -1756,7 +1756,7 @@ export class VaultProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs vault} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs vault} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1767,7 +1767,7 @@ export class VaultProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'vault',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       terraformProviderSource: 'hashicorp/vault'
@@ -1938,11 +1938,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // set_namespace_from_token - computed: false, optional: true, required: false
-  private _setNamespaceFromToken?: boolean | cdktf.IResolvable; 
+  private _setNamespaceFromToken?: boolean | cdktn.IResolvable; 
   public get setNamespaceFromToken() {
     return this._setNamespaceFromToken;
   }
-  public set setNamespaceFromToken(value: boolean | cdktf.IResolvable | undefined) {
+  public set setNamespaceFromToken(value: boolean | cdktn.IResolvable | undefined) {
     this._setNamespaceFromToken = value;
   }
   public resetSetNamespaceFromToken() {
@@ -1954,11 +1954,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // skip_child_token - computed: false, optional: true, required: false
-  private _skipChildToken?: boolean | cdktf.IResolvable; 
+  private _skipChildToken?: boolean | cdktn.IResolvable; 
   public get skipChildToken() {
     return this._skipChildToken;
   }
-  public set skipChildToken(value: boolean | cdktf.IResolvable | undefined) {
+  public set skipChildToken(value: boolean | cdktn.IResolvable | undefined) {
     this._skipChildToken = value;
   }
   public resetSkipChildToken() {
@@ -1970,11 +1970,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // skip_get_vault_version - computed: false, optional: true, required: false
-  private _skipGetVaultVersion?: boolean | cdktf.IResolvable; 
+  private _skipGetVaultVersion?: boolean | cdktn.IResolvable; 
   public get skipGetVaultVersion() {
     return this._skipGetVaultVersion;
   }
-  public set skipGetVaultVersion(value: boolean | cdktf.IResolvable | undefined) {
+  public set skipGetVaultVersion(value: boolean | cdktn.IResolvable | undefined) {
     this._skipGetVaultVersion = value;
   }
   public resetSkipGetVaultVersion() {
@@ -1986,11 +1986,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // skip_tls_verify - computed: false, optional: true, required: false
-  private _skipTlsVerify?: boolean | cdktf.IResolvable; 
+  private _skipTlsVerify?: boolean | cdktn.IResolvable; 
   public get skipTlsVerify() {
     return this._skipTlsVerify;
   }
-  public set skipTlsVerify(value: boolean | cdktf.IResolvable | undefined) {
+  public set skipTlsVerify(value: boolean | cdktn.IResolvable | undefined) {
     this._skipTlsVerify = value;
   }
   public resetSkipTlsVerify() {
@@ -2082,11 +2082,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // auth_login - computed: false, optional: true, required: false
-  private _authLogin?: VaultProviderAuthLogin[] | cdktf.IResolvable; 
+  private _authLogin?: VaultProviderAuthLogin[] | cdktn.IResolvable; 
   public get authLogin() {
     return this._authLogin;
   }
-  public set authLogin(value: VaultProviderAuthLogin[] | cdktf.IResolvable | undefined) {
+  public set authLogin(value: VaultProviderAuthLogin[] | cdktn.IResolvable | undefined) {
     this._authLogin = value;
   }
   public resetAuthLogin() {
@@ -2098,11 +2098,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // auth_login_aws - computed: false, optional: true, required: false
-  private _authLoginAws?: VaultProviderAuthLoginAws[] | cdktf.IResolvable; 
+  private _authLoginAws?: VaultProviderAuthLoginAws[] | cdktn.IResolvable; 
   public get authLoginAws() {
     return this._authLoginAws;
   }
-  public set authLoginAws(value: VaultProviderAuthLoginAws[] | cdktf.IResolvable | undefined) {
+  public set authLoginAws(value: VaultProviderAuthLoginAws[] | cdktn.IResolvable | undefined) {
     this._authLoginAws = value;
   }
   public resetAuthLoginAws() {
@@ -2114,11 +2114,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // auth_login_azure - computed: false, optional: true, required: false
-  private _authLoginAzure?: VaultProviderAuthLoginAzure[] | cdktf.IResolvable; 
+  private _authLoginAzure?: VaultProviderAuthLoginAzure[] | cdktn.IResolvable; 
   public get authLoginAzure() {
     return this._authLoginAzure;
   }
-  public set authLoginAzure(value: VaultProviderAuthLoginAzure[] | cdktf.IResolvable | undefined) {
+  public set authLoginAzure(value: VaultProviderAuthLoginAzure[] | cdktn.IResolvable | undefined) {
     this._authLoginAzure = value;
   }
   public resetAuthLoginAzure() {
@@ -2130,11 +2130,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // auth_login_cert - computed: false, optional: true, required: false
-  private _authLoginCert?: VaultProviderAuthLoginCert[] | cdktf.IResolvable; 
+  private _authLoginCert?: VaultProviderAuthLoginCert[] | cdktn.IResolvable; 
   public get authLoginCert() {
     return this._authLoginCert;
   }
-  public set authLoginCert(value: VaultProviderAuthLoginCert[] | cdktf.IResolvable | undefined) {
+  public set authLoginCert(value: VaultProviderAuthLoginCert[] | cdktn.IResolvable | undefined) {
     this._authLoginCert = value;
   }
   public resetAuthLoginCert() {
@@ -2146,11 +2146,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // auth_login_gcp - computed: false, optional: true, required: false
-  private _authLoginGcp?: VaultProviderAuthLoginGcp[] | cdktf.IResolvable; 
+  private _authLoginGcp?: VaultProviderAuthLoginGcp[] | cdktn.IResolvable; 
   public get authLoginGcp() {
     return this._authLoginGcp;
   }
-  public set authLoginGcp(value: VaultProviderAuthLoginGcp[] | cdktf.IResolvable | undefined) {
+  public set authLoginGcp(value: VaultProviderAuthLoginGcp[] | cdktn.IResolvable | undefined) {
     this._authLoginGcp = value;
   }
   public resetAuthLoginGcp() {
@@ -2162,11 +2162,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // auth_login_jwt - computed: false, optional: true, required: false
-  private _authLoginJwt?: VaultProviderAuthLoginJwt[] | cdktf.IResolvable; 
+  private _authLoginJwt?: VaultProviderAuthLoginJwt[] | cdktn.IResolvable; 
   public get authLoginJwt() {
     return this._authLoginJwt;
   }
-  public set authLoginJwt(value: VaultProviderAuthLoginJwt[] | cdktf.IResolvable | undefined) {
+  public set authLoginJwt(value: VaultProviderAuthLoginJwt[] | cdktn.IResolvable | undefined) {
     this._authLoginJwt = value;
   }
   public resetAuthLoginJwt() {
@@ -2178,11 +2178,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // auth_login_kerberos - computed: false, optional: true, required: false
-  private _authLoginKerberos?: VaultProviderAuthLoginKerberos[] | cdktf.IResolvable; 
+  private _authLoginKerberos?: VaultProviderAuthLoginKerberos[] | cdktn.IResolvable; 
   public get authLoginKerberos() {
     return this._authLoginKerberos;
   }
-  public set authLoginKerberos(value: VaultProviderAuthLoginKerberos[] | cdktf.IResolvable | undefined) {
+  public set authLoginKerberos(value: VaultProviderAuthLoginKerberos[] | cdktn.IResolvable | undefined) {
     this._authLoginKerberos = value;
   }
   public resetAuthLoginKerberos() {
@@ -2194,11 +2194,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // auth_login_oci - computed: false, optional: true, required: false
-  private _authLoginOci?: VaultProviderAuthLoginOci[] | cdktf.IResolvable; 
+  private _authLoginOci?: VaultProviderAuthLoginOci[] | cdktn.IResolvable; 
   public get authLoginOci() {
     return this._authLoginOci;
   }
-  public set authLoginOci(value: VaultProviderAuthLoginOci[] | cdktf.IResolvable | undefined) {
+  public set authLoginOci(value: VaultProviderAuthLoginOci[] | cdktn.IResolvable | undefined) {
     this._authLoginOci = value;
   }
   public resetAuthLoginOci() {
@@ -2210,11 +2210,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // auth_login_oidc - computed: false, optional: true, required: false
-  private _authLoginOidc?: VaultProviderAuthLoginOidc[] | cdktf.IResolvable; 
+  private _authLoginOidc?: VaultProviderAuthLoginOidc[] | cdktn.IResolvable; 
   public get authLoginOidc() {
     return this._authLoginOidc;
   }
-  public set authLoginOidc(value: VaultProviderAuthLoginOidc[] | cdktf.IResolvable | undefined) {
+  public set authLoginOidc(value: VaultProviderAuthLoginOidc[] | cdktn.IResolvable | undefined) {
     this._authLoginOidc = value;
   }
   public resetAuthLoginOidc() {
@@ -2226,11 +2226,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // auth_login_radius - computed: false, optional: true, required: false
-  private _authLoginRadius?: VaultProviderAuthLoginRadius[] | cdktf.IResolvable; 
+  private _authLoginRadius?: VaultProviderAuthLoginRadius[] | cdktn.IResolvable; 
   public get authLoginRadius() {
     return this._authLoginRadius;
   }
-  public set authLoginRadius(value: VaultProviderAuthLoginRadius[] | cdktf.IResolvable | undefined) {
+  public set authLoginRadius(value: VaultProviderAuthLoginRadius[] | cdktn.IResolvable | undefined) {
     this._authLoginRadius = value;
   }
   public resetAuthLoginRadius() {
@@ -2242,11 +2242,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // auth_login_token_file - computed: false, optional: true, required: false
-  private _authLoginTokenFile?: VaultProviderAuthLoginTokenFile[] | cdktf.IResolvable; 
+  private _authLoginTokenFile?: VaultProviderAuthLoginTokenFile[] | cdktn.IResolvable; 
   public get authLoginTokenFile() {
     return this._authLoginTokenFile;
   }
-  public set authLoginTokenFile(value: VaultProviderAuthLoginTokenFile[] | cdktf.IResolvable | undefined) {
+  public set authLoginTokenFile(value: VaultProviderAuthLoginTokenFile[] | cdktn.IResolvable | undefined) {
     this._authLoginTokenFile = value;
   }
   public resetAuthLoginTokenFile() {
@@ -2258,11 +2258,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // auth_login_userpass - computed: false, optional: true, required: false
-  private _authLoginUserpass?: VaultProviderAuthLoginUserpass[] | cdktf.IResolvable; 
+  private _authLoginUserpass?: VaultProviderAuthLoginUserpass[] | cdktn.IResolvable; 
   public get authLoginUserpass() {
     return this._authLoginUserpass;
   }
-  public set authLoginUserpass(value: VaultProviderAuthLoginUserpass[] | cdktf.IResolvable | undefined) {
+  public set authLoginUserpass(value: VaultProviderAuthLoginUserpass[] | cdktn.IResolvable | undefined) {
     this._authLoginUserpass = value;
   }
   public resetAuthLoginUserpass() {
@@ -2274,11 +2274,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // client_auth - computed: false, optional: true, required: false
-  private _clientAuth?: VaultProviderClientAuth[] | cdktf.IResolvable; 
+  private _clientAuth?: VaultProviderClientAuth[] | cdktn.IResolvable; 
   public get clientAuth() {
     return this._clientAuth;
   }
-  public set clientAuth(value: VaultProviderClientAuth[] | cdktf.IResolvable | undefined) {
+  public set clientAuth(value: VaultProviderClientAuth[] | cdktn.IResolvable | undefined) {
     this._clientAuth = value;
   }
   public resetClientAuth() {
@@ -2290,11 +2290,11 @@ export class VaultProvider extends cdktf.TerraformProvider {
   }
 
   // headers - computed: false, optional: true, required: false
-  private _headers?: VaultProviderHeaders[] | cdktf.IResolvable; 
+  private _headers?: VaultProviderHeaders[] | cdktn.IResolvable; 
   public get headers() {
     return this._headers;
   }
-  public set headers(value: VaultProviderHeaders[] | cdktf.IResolvable | undefined) {
+  public set headers(value: VaultProviderHeaders[] | cdktn.IResolvable | undefined) {
     this._headers = value;
   }
   public resetHeaders() {
@@ -2311,224 +2311,224 @@ export class VaultProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      add_address_to_env: cdktf.stringToTerraform(this._addAddressToEnv),
-      address: cdktf.stringToTerraform(this._address),
-      ca_cert_dir: cdktf.stringToTerraform(this._caCertDir),
-      ca_cert_file: cdktf.stringToTerraform(this._caCertFile),
-      max_lease_ttl_seconds: cdktf.numberToTerraform(this._maxLeaseTtlSeconds),
-      max_retries: cdktf.numberToTerraform(this._maxRetries),
-      max_retries_ccc: cdktf.numberToTerraform(this._maxRetriesCcc),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      set_namespace_from_token: cdktf.booleanToTerraform(this._setNamespaceFromToken),
-      skip_child_token: cdktf.booleanToTerraform(this._skipChildToken),
-      skip_get_vault_version: cdktf.booleanToTerraform(this._skipGetVaultVersion),
-      skip_tls_verify: cdktf.booleanToTerraform(this._skipTlsVerify),
-      tls_server_name: cdktf.stringToTerraform(this._tlsServerName),
-      token: cdktf.stringToTerraform(this._token),
-      token_name: cdktf.stringToTerraform(this._tokenName),
-      vault_version_override: cdktf.stringToTerraform(this._vaultVersionOverride),
-      alias: cdktf.stringToTerraform(this._alias),
-      auth_login: cdktf.listMapper(vaultProviderAuthLoginToTerraform, true)(this._authLogin),
-      auth_login_aws: cdktf.listMapper(vaultProviderAuthLoginAwsToTerraform, true)(this._authLoginAws),
-      auth_login_azure: cdktf.listMapper(vaultProviderAuthLoginAzureToTerraform, true)(this._authLoginAzure),
-      auth_login_cert: cdktf.listMapper(vaultProviderAuthLoginCertToTerraform, true)(this._authLoginCert),
-      auth_login_gcp: cdktf.listMapper(vaultProviderAuthLoginGcpToTerraform, true)(this._authLoginGcp),
-      auth_login_jwt: cdktf.listMapper(vaultProviderAuthLoginJwtToTerraform, true)(this._authLoginJwt),
-      auth_login_kerberos: cdktf.listMapper(vaultProviderAuthLoginKerberosToTerraform, true)(this._authLoginKerberos),
-      auth_login_oci: cdktf.listMapper(vaultProviderAuthLoginOciToTerraform, true)(this._authLoginOci),
-      auth_login_oidc: cdktf.listMapper(vaultProviderAuthLoginOidcToTerraform, true)(this._authLoginOidc),
-      auth_login_radius: cdktf.listMapper(vaultProviderAuthLoginRadiusToTerraform, true)(this._authLoginRadius),
-      auth_login_token_file: cdktf.listMapper(vaultProviderAuthLoginTokenFileToTerraform, true)(this._authLoginTokenFile),
-      auth_login_userpass: cdktf.listMapper(vaultProviderAuthLoginUserpassToTerraform, true)(this._authLoginUserpass),
-      client_auth: cdktf.listMapper(vaultProviderClientAuthToTerraform, true)(this._clientAuth),
-      headers: cdktf.listMapper(vaultProviderHeadersToTerraform, true)(this._headers),
+      add_address_to_env: cdktn.stringToTerraform(this._addAddressToEnv),
+      address: cdktn.stringToTerraform(this._address),
+      ca_cert_dir: cdktn.stringToTerraform(this._caCertDir),
+      ca_cert_file: cdktn.stringToTerraform(this._caCertFile),
+      max_lease_ttl_seconds: cdktn.numberToTerraform(this._maxLeaseTtlSeconds),
+      max_retries: cdktn.numberToTerraform(this._maxRetries),
+      max_retries_ccc: cdktn.numberToTerraform(this._maxRetriesCcc),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      set_namespace_from_token: cdktn.booleanToTerraform(this._setNamespaceFromToken),
+      skip_child_token: cdktn.booleanToTerraform(this._skipChildToken),
+      skip_get_vault_version: cdktn.booleanToTerraform(this._skipGetVaultVersion),
+      skip_tls_verify: cdktn.booleanToTerraform(this._skipTlsVerify),
+      tls_server_name: cdktn.stringToTerraform(this._tlsServerName),
+      token: cdktn.stringToTerraform(this._token),
+      token_name: cdktn.stringToTerraform(this._tokenName),
+      vault_version_override: cdktn.stringToTerraform(this._vaultVersionOverride),
+      alias: cdktn.stringToTerraform(this._alias),
+      auth_login: cdktn.listMapper(vaultProviderAuthLoginToTerraform, true)(this._authLogin),
+      auth_login_aws: cdktn.listMapper(vaultProviderAuthLoginAwsToTerraform, true)(this._authLoginAws),
+      auth_login_azure: cdktn.listMapper(vaultProviderAuthLoginAzureToTerraform, true)(this._authLoginAzure),
+      auth_login_cert: cdktn.listMapper(vaultProviderAuthLoginCertToTerraform, true)(this._authLoginCert),
+      auth_login_gcp: cdktn.listMapper(vaultProviderAuthLoginGcpToTerraform, true)(this._authLoginGcp),
+      auth_login_jwt: cdktn.listMapper(vaultProviderAuthLoginJwtToTerraform, true)(this._authLoginJwt),
+      auth_login_kerberos: cdktn.listMapper(vaultProviderAuthLoginKerberosToTerraform, true)(this._authLoginKerberos),
+      auth_login_oci: cdktn.listMapper(vaultProviderAuthLoginOciToTerraform, true)(this._authLoginOci),
+      auth_login_oidc: cdktn.listMapper(vaultProviderAuthLoginOidcToTerraform, true)(this._authLoginOidc),
+      auth_login_radius: cdktn.listMapper(vaultProviderAuthLoginRadiusToTerraform, true)(this._authLoginRadius),
+      auth_login_token_file: cdktn.listMapper(vaultProviderAuthLoginTokenFileToTerraform, true)(this._authLoginTokenFile),
+      auth_login_userpass: cdktn.listMapper(vaultProviderAuthLoginUserpassToTerraform, true)(this._authLoginUserpass),
+      client_auth: cdktn.listMapper(vaultProviderClientAuthToTerraform, true)(this._clientAuth),
+      headers: cdktn.listMapper(vaultProviderHeadersToTerraform, true)(this._headers),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       add_address_to_env: {
-        value: cdktf.stringToHclTerraform(this._addAddressToEnv),
+        value: cdktn.stringToHclTerraform(this._addAddressToEnv),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       address: {
-        value: cdktf.stringToHclTerraform(this._address),
+        value: cdktn.stringToHclTerraform(this._address),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ca_cert_dir: {
-        value: cdktf.stringToHclTerraform(this._caCertDir),
+        value: cdktn.stringToHclTerraform(this._caCertDir),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ca_cert_file: {
-        value: cdktf.stringToHclTerraform(this._caCertFile),
+        value: cdktn.stringToHclTerraform(this._caCertFile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_lease_ttl_seconds: {
-        value: cdktf.numberToHclTerraform(this._maxLeaseTtlSeconds),
+        value: cdktn.numberToHclTerraform(this._maxLeaseTtlSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_retries: {
-        value: cdktf.numberToHclTerraform(this._maxRetries),
+        value: cdktn.numberToHclTerraform(this._maxRetries),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       max_retries_ccc: {
-        value: cdktf.numberToHclTerraform(this._maxRetriesCcc),
+        value: cdktn.numberToHclTerraform(this._maxRetriesCcc),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       set_namespace_from_token: {
-        value: cdktf.booleanToHclTerraform(this._setNamespaceFromToken),
+        value: cdktn.booleanToHclTerraform(this._setNamespaceFromToken),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       skip_child_token: {
-        value: cdktf.booleanToHclTerraform(this._skipChildToken),
+        value: cdktn.booleanToHclTerraform(this._skipChildToken),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       skip_get_vault_version: {
-        value: cdktf.booleanToHclTerraform(this._skipGetVaultVersion),
+        value: cdktn.booleanToHclTerraform(this._skipGetVaultVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       skip_tls_verify: {
-        value: cdktf.booleanToHclTerraform(this._skipTlsVerify),
+        value: cdktn.booleanToHclTerraform(this._skipTlsVerify),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tls_server_name: {
-        value: cdktf.stringToHclTerraform(this._tlsServerName),
+        value: cdktn.stringToHclTerraform(this._tlsServerName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token: {
-        value: cdktf.stringToHclTerraform(this._token),
+        value: cdktn.stringToHclTerraform(this._token),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_name: {
-        value: cdktf.stringToHclTerraform(this._tokenName),
+        value: cdktn.stringToHclTerraform(this._tokenName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       vault_version_override: {
-        value: cdktf.stringToHclTerraform(this._vaultVersionOverride),
+        value: cdktn.stringToHclTerraform(this._vaultVersionOverride),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alias: {
-        value: cdktf.stringToHclTerraform(this._alias),
+        value: cdktn.stringToHclTerraform(this._alias),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auth_login: {
-        value: cdktf.listMapperHcl(vaultProviderAuthLoginToHclTerraform, true)(this._authLogin),
+        value: cdktn.listMapperHcl(vaultProviderAuthLoginToHclTerraform, true)(this._authLogin),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderAuthLoginList",
       },
       auth_login_aws: {
-        value: cdktf.listMapperHcl(vaultProviderAuthLoginAwsToHclTerraform, true)(this._authLoginAws),
+        value: cdktn.listMapperHcl(vaultProviderAuthLoginAwsToHclTerraform, true)(this._authLoginAws),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderAuthLoginAwsList",
       },
       auth_login_azure: {
-        value: cdktf.listMapperHcl(vaultProviderAuthLoginAzureToHclTerraform, true)(this._authLoginAzure),
+        value: cdktn.listMapperHcl(vaultProviderAuthLoginAzureToHclTerraform, true)(this._authLoginAzure),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderAuthLoginAzureList",
       },
       auth_login_cert: {
-        value: cdktf.listMapperHcl(vaultProviderAuthLoginCertToHclTerraform, true)(this._authLoginCert),
+        value: cdktn.listMapperHcl(vaultProviderAuthLoginCertToHclTerraform, true)(this._authLoginCert),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderAuthLoginCertList",
       },
       auth_login_gcp: {
-        value: cdktf.listMapperHcl(vaultProviderAuthLoginGcpToHclTerraform, true)(this._authLoginGcp),
+        value: cdktn.listMapperHcl(vaultProviderAuthLoginGcpToHclTerraform, true)(this._authLoginGcp),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderAuthLoginGcpList",
       },
       auth_login_jwt: {
-        value: cdktf.listMapperHcl(vaultProviderAuthLoginJwtToHclTerraform, true)(this._authLoginJwt),
+        value: cdktn.listMapperHcl(vaultProviderAuthLoginJwtToHclTerraform, true)(this._authLoginJwt),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderAuthLoginJwtList",
       },
       auth_login_kerberos: {
-        value: cdktf.listMapperHcl(vaultProviderAuthLoginKerberosToHclTerraform, true)(this._authLoginKerberos),
+        value: cdktn.listMapperHcl(vaultProviderAuthLoginKerberosToHclTerraform, true)(this._authLoginKerberos),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderAuthLoginKerberosList",
       },
       auth_login_oci: {
-        value: cdktf.listMapperHcl(vaultProviderAuthLoginOciToHclTerraform, true)(this._authLoginOci),
+        value: cdktn.listMapperHcl(vaultProviderAuthLoginOciToHclTerraform, true)(this._authLoginOci),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderAuthLoginOciList",
       },
       auth_login_oidc: {
-        value: cdktf.listMapperHcl(vaultProviderAuthLoginOidcToHclTerraform, true)(this._authLoginOidc),
+        value: cdktn.listMapperHcl(vaultProviderAuthLoginOidcToHclTerraform, true)(this._authLoginOidc),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderAuthLoginOidcList",
       },
       auth_login_radius: {
-        value: cdktf.listMapperHcl(vaultProviderAuthLoginRadiusToHclTerraform, true)(this._authLoginRadius),
+        value: cdktn.listMapperHcl(vaultProviderAuthLoginRadiusToHclTerraform, true)(this._authLoginRadius),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderAuthLoginRadiusList",
       },
       auth_login_token_file: {
-        value: cdktf.listMapperHcl(vaultProviderAuthLoginTokenFileToHclTerraform, true)(this._authLoginTokenFile),
+        value: cdktn.listMapperHcl(vaultProviderAuthLoginTokenFileToHclTerraform, true)(this._authLoginTokenFile),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderAuthLoginTokenFileList",
       },
       auth_login_userpass: {
-        value: cdktf.listMapperHcl(vaultProviderAuthLoginUserpassToHclTerraform, true)(this._authLoginUserpass),
+        value: cdktn.listMapperHcl(vaultProviderAuthLoginUserpassToHclTerraform, true)(this._authLoginUserpass),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderAuthLoginUserpassList",
       },
       client_auth: {
-        value: cdktf.listMapperHcl(vaultProviderClientAuthToHclTerraform, true)(this._clientAuth),
+        value: cdktn.listMapperHcl(vaultProviderClientAuthToHclTerraform, true)(this._clientAuth),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderClientAuthList",
       },
       headers: {
-        value: cdktf.listMapperHcl(vaultProviderHeadersToHclTerraform, true)(this._headers),
+        value: cdktn.listMapperHcl(vaultProviderHeadersToHclTerraform, true)(this._headers),
         isBlock: true,
         type: "list",
         storageClassType: "VaultProviderHeadersList",

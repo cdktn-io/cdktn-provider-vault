@@ -1,49 +1,49 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login
+// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AwsAuthBackendLoginConfig extends cdktf.TerraformMetaArguments {
+export interface AwsAuthBackendLoginConfig extends cdktn.TerraformMetaArguments {
   /**
   * AWS Auth Backend to read the token from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#backend AwsAuthBackendLogin#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#backend AwsAuthBackendLogin#backend}
   */
   readonly backend?: string;
   /**
   * The HTTP method used in the signed request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#iam_http_request_method AwsAuthBackendLogin#iam_http_request_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#iam_http_request_method AwsAuthBackendLogin#iam_http_request_method}
   */
   readonly iamHttpRequestMethod?: string;
   /**
   * The Base64-encoded body of the signed request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#iam_request_body AwsAuthBackendLogin#iam_request_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#iam_request_body AwsAuthBackendLogin#iam_request_body}
   */
   readonly iamRequestBody?: string;
   /**
   * The Base64-encoded, JSON serialized representation of the sts:GetCallerIdentity HTTP request headers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#iam_request_headers AwsAuthBackendLogin#iam_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#iam_request_headers AwsAuthBackendLogin#iam_request_headers}
   */
   readonly iamRequestHeaders?: string;
   /**
   * The Base64-encoded HTTP URL used in the signed request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#iam_request_url AwsAuthBackendLogin#iam_request_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#iam_request_url AwsAuthBackendLogin#iam_request_url}
   */
   readonly iamRequestUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#id AwsAuthBackendLogin#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#id AwsAuthBackendLogin#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,45 +52,45 @@ export interface AwsAuthBackendLoginConfig extends cdktf.TerraformMetaArguments 
   /**
   * Base64-encoded EC2 instance identity document to authenticate with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#identity AwsAuthBackendLogin#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#identity AwsAuthBackendLogin#identity}
   */
   readonly identity?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#namespace AwsAuthBackendLogin#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#namespace AwsAuthBackendLogin#namespace}
   */
   readonly namespace?: string;
   /**
   * The nonce to be used for subsequent login requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#nonce AwsAuthBackendLogin#nonce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#nonce AwsAuthBackendLogin#nonce}
   */
   readonly nonce?: string;
   /**
   * PKCS7 signature of the identity document to authenticate with, with all newline characters removed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#pkcs7 AwsAuthBackendLogin#pkcs7}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#pkcs7 AwsAuthBackendLogin#pkcs7}
   */
   readonly pkcs7?: string;
   /**
   * AWS Auth Role to read the token from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#role AwsAuthBackendLogin#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#role AwsAuthBackendLogin#role}
   */
   readonly role?: string;
   /**
   * Base64-encoded SHA256 RSA signature of the instance identtiy document to authenticate with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#signature AwsAuthBackendLogin#signature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#signature AwsAuthBackendLogin#signature}
   */
   readonly signature?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login}
 */
-export class AwsAuthBackendLogin extends cdktf.TerraformResource {
+export class AwsAuthBackendLogin extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -101,14 +101,14 @@ export class AwsAuthBackendLogin extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AwsAuthBackendLogin resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AwsAuthBackendLogin resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AwsAuthBackendLogin to import
-  * @param importFromId The id of the existing AwsAuthBackendLogin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AwsAuthBackendLogin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AwsAuthBackendLogin to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "vault_aws_auth_backend_login", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_aws_auth_backend_login", importId: importFromId, provider });
       }
 
   // ===========
@@ -116,7 +116,7 @@ export class AwsAuthBackendLogin extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.6.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/aws_auth_backend_login vault_aws_auth_backend_login} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -127,7 +127,7 @@ export class AwsAuthBackendLogin extends cdktf.TerraformResource {
       terraformResourceType: 'vault_aws_auth_backend_login',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.6.0',
+        providerVersion: '5.7.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -294,7 +294,7 @@ export class AwsAuthBackendLogin extends cdktf.TerraformResource {
   }
 
   // metadata - computed: true, optional: false, required: false
-  private _metadata = new cdktf.StringMap(this, "metadata");
+  private _metadata = new cdktn.StringMap(this, "metadata");
   public get metadata() {
     return this._metadata;
   }
@@ -395,91 +395,91 @@ export class AwsAuthBackendLogin extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      backend: cdktf.stringToTerraform(this._backend),
-      iam_http_request_method: cdktf.stringToTerraform(this._iamHttpRequestMethod),
-      iam_request_body: cdktf.stringToTerraform(this._iamRequestBody),
-      iam_request_headers: cdktf.stringToTerraform(this._iamRequestHeaders),
-      iam_request_url: cdktf.stringToTerraform(this._iamRequestUrl),
-      id: cdktf.stringToTerraform(this._id),
-      identity: cdktf.stringToTerraform(this._identity),
-      namespace: cdktf.stringToTerraform(this._namespace),
-      nonce: cdktf.stringToTerraform(this._nonce),
-      pkcs7: cdktf.stringToTerraform(this._pkcs7),
-      role: cdktf.stringToTerraform(this._role),
-      signature: cdktf.stringToTerraform(this._signature),
+      backend: cdktn.stringToTerraform(this._backend),
+      iam_http_request_method: cdktn.stringToTerraform(this._iamHttpRequestMethod),
+      iam_request_body: cdktn.stringToTerraform(this._iamRequestBody),
+      iam_request_headers: cdktn.stringToTerraform(this._iamRequestHeaders),
+      iam_request_url: cdktn.stringToTerraform(this._iamRequestUrl),
+      id: cdktn.stringToTerraform(this._id),
+      identity: cdktn.stringToTerraform(this._identity),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      nonce: cdktn.stringToTerraform(this._nonce),
+      pkcs7: cdktn.stringToTerraform(this._pkcs7),
+      role: cdktn.stringToTerraform(this._role),
+      signature: cdktn.stringToTerraform(this._signature),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       backend: {
-        value: cdktf.stringToHclTerraform(this._backend),
+        value: cdktn.stringToHclTerraform(this._backend),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_http_request_method: {
-        value: cdktf.stringToHclTerraform(this._iamHttpRequestMethod),
+        value: cdktn.stringToHclTerraform(this._iamHttpRequestMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_request_body: {
-        value: cdktf.stringToHclTerraform(this._iamRequestBody),
+        value: cdktn.stringToHclTerraform(this._iamRequestBody),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_request_headers: {
-        value: cdktf.stringToHclTerraform(this._iamRequestHeaders),
+        value: cdktn.stringToHclTerraform(this._iamRequestHeaders),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       iam_request_url: {
-        value: cdktf.stringToHclTerraform(this._iamRequestUrl),
+        value: cdktn.stringToHclTerraform(this._iamRequestUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identity: {
-        value: cdktf.stringToHclTerraform(this._identity),
+        value: cdktn.stringToHclTerraform(this._identity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       namespace: {
-        value: cdktf.stringToHclTerraform(this._namespace),
+        value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nonce: {
-        value: cdktf.stringToHclTerraform(this._nonce),
+        value: cdktn.stringToHclTerraform(this._nonce),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pkcs7: {
-        value: cdktf.stringToHclTerraform(this._pkcs7),
+        value: cdktn.stringToHclTerraform(this._pkcs7),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       role: {
-        value: cdktf.stringToHclTerraform(this._role),
+        value: cdktn.stringToHclTerraform(this._role),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       signature: {
-        value: cdktf.stringToHclTerraform(this._signature),
+        value: cdktn.stringToHclTerraform(this._signature),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
