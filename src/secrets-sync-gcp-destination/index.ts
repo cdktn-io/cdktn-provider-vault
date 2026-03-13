@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination
+// https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,98 +15,134 @@ export interface SecretsSyncGcpDestinationConfig extends cdktn.TerraformMetaArgu
   /**
   * Allowed IPv4 addresses for outbound network connectivity in CIDR notation. If not set, all IPv4 addresses are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#allowed_ipv4_addresses SecretsSyncGcpDestination#allowed_ipv4_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#allowed_ipv4_addresses SecretsSyncGcpDestination#allowed_ipv4_addresses}
   */
   readonly allowedIpv4Addresses?: string[];
   /**
   * Allowed IPv6 addresses for outbound network connectivity in CIDR notation. If not set, all IPv6 addresses are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#allowed_ipv6_addresses SecretsSyncGcpDestination#allowed_ipv6_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#allowed_ipv6_addresses SecretsSyncGcpDestination#allowed_ipv6_addresses}
   */
   readonly allowedIpv6Addresses?: string[];
   /**
   * Allowed ports for outbound network connectivity. If not set, all ports are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#allowed_ports SecretsSyncGcpDestination#allowed_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#allowed_ports SecretsSyncGcpDestination#allowed_ports}
   */
   readonly allowedPorts?: number[];
   /**
   * JSON-encoded credentials to use to connect to GCP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#credentials SecretsSyncGcpDestination#credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#credentials SecretsSyncGcpDestination#credentials}
   */
   readonly credentials?: string;
   /**
   * Custom tags to set on the secret managed at the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#custom_tags SecretsSyncGcpDestination#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#custom_tags SecretsSyncGcpDestination#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
   * Disable strict networking requirements.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#disable_strict_networking SecretsSyncGcpDestination#disable_strict_networking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#disable_strict_networking SecretsSyncGcpDestination#disable_strict_networking}
   */
   readonly disableStrictNetworking?: boolean | cdktn.IResolvable;
   /**
   * Global KMS key for encryption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#global_kms_key SecretsSyncGcpDestination#global_kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#global_kms_key SecretsSyncGcpDestination#global_kms_key}
   */
   readonly globalKmsKey?: string;
   /**
   * Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#granularity SecretsSyncGcpDestination#granularity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#granularity SecretsSyncGcpDestination#granularity}
   */
   readonly granularity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#id SecretsSyncGcpDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#id SecretsSyncGcpDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * The audience claim value for identity tokens. This is a write-only field and will not be read back from Vault.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#identity_token_audience_wo SecretsSyncGcpDestination#identity_token_audience_wo}
+  */
+  readonly identityTokenAudienceWo?: string;
+  /**
+  * A version counter for the write-only identity_token_audience_wo field. Incrementing this value will trigger an update.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#identity_token_audience_wo_version SecretsSyncGcpDestination#identity_token_audience_wo_version}
+  */
+  readonly identityTokenAudienceWoVersion?: number;
+  /**
+  * The key to use for signing identity tokens. This is a write-only field and will not be read back from Vault.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#identity_token_key_wo SecretsSyncGcpDestination#identity_token_key_wo}
+  */
+  readonly identityTokenKeyWo?: string;
+  /**
+  * A version counter for the write-only identity_token_key_wo field. Incrementing this value will trigger an update.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#identity_token_key_wo_version SecretsSyncGcpDestination#identity_token_key_wo_version}
+  */
+  readonly identityTokenKeyWoVersion?: number;
+  /**
+  * The TTL of generated tokens.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#identity_token_ttl SecretsSyncGcpDestination#identity_token_ttl}
+  */
+  readonly identityTokenTtl?: number;
+  /**
   * Locational KMS keys for encryption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#locational_kms_keys SecretsSyncGcpDestination#locational_kms_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#locational_kms_keys SecretsSyncGcpDestination#locational_kms_keys}
   */
   readonly locationalKmsKeys?: { [key: string]: string };
   /**
   * Unique name of the GCP destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#name SecretsSyncGcpDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#name SecretsSyncGcpDestination#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#namespace SecretsSyncGcpDestination#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#namespace SecretsSyncGcpDestination#namespace}
   */
   readonly namespace?: string;
   /**
   * The target project to manage secrets in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#project_id SecretsSyncGcpDestination#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#project_id SecretsSyncGcpDestination#project_id}
   */
   readonly projectId?: string;
   /**
   * Replication locations for secrets.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#replication_locations SecretsSyncGcpDestination#replication_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#replication_locations SecretsSyncGcpDestination#replication_locations}
   */
   readonly replicationLocations?: string[];
   /**
   * Template describing how to generate external secret names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#secret_name_template SecretsSyncGcpDestination#secret_name_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#secret_name_template SecretsSyncGcpDestination#secret_name_template}
   */
   readonly secretNameTemplate?: string;
+  /**
+  * Service Account to impersonate for workload identity federation.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#service_account_email SecretsSyncGcpDestination#service_account_email}
+  */
+  readonly serviceAccountEmail?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}
 */
 export class SecretsSyncGcpDestination extends cdktn.TerraformResource {
 
@@ -122,7 +158,7 @@ export class SecretsSyncGcpDestination extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecretsSyncGcpDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsSyncGcpDestination to import
-  * @param importFromId The id of the existing SecretsSyncGcpDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretsSyncGcpDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsSyncGcpDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -134,7 +170,7 @@ export class SecretsSyncGcpDestination extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -145,7 +181,7 @@ export class SecretsSyncGcpDestination extends cdktn.TerraformResource {
       terraformResourceType: 'vault_secrets_sync_gcp_destination',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.7.0',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -165,12 +201,18 @@ export class SecretsSyncGcpDestination extends cdktn.TerraformResource {
     this._globalKmsKey = config.globalKmsKey;
     this._granularity = config.granularity;
     this._id = config.id;
+    this._identityTokenAudienceWo = config.identityTokenAudienceWo;
+    this._identityTokenAudienceWoVersion = config.identityTokenAudienceWoVersion;
+    this._identityTokenKeyWo = config.identityTokenKeyWo;
+    this._identityTokenKeyWoVersion = config.identityTokenKeyWoVersion;
+    this._identityTokenTtl = config.identityTokenTtl;
     this._locationalKmsKeys = config.locationalKmsKeys;
     this._name = config.name;
     this._namespace = config.namespace;
     this._projectId = config.projectId;
     this._replicationLocations = config.replicationLocations;
     this._secretNameTemplate = config.secretNameTemplate;
+    this._serviceAccountEmail = config.serviceAccountEmail;
   }
 
   // ==========
@@ -321,6 +363,86 @@ export class SecretsSyncGcpDestination extends cdktn.TerraformResource {
     return this._id;
   }
 
+  // identity_token_audience_wo - computed: false, optional: true, required: false
+  private _identityTokenAudienceWo?: string; 
+  public get identityTokenAudienceWo() {
+    return this.getStringAttribute('identity_token_audience_wo');
+  }
+  public set identityTokenAudienceWo(value: string) {
+    this._identityTokenAudienceWo = value;
+  }
+  public resetIdentityTokenAudienceWo() {
+    this._identityTokenAudienceWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenAudienceWoInput() {
+    return this._identityTokenAudienceWo;
+  }
+
+  // identity_token_audience_wo_version - computed: false, optional: true, required: false
+  private _identityTokenAudienceWoVersion?: number; 
+  public get identityTokenAudienceWoVersion() {
+    return this.getNumberAttribute('identity_token_audience_wo_version');
+  }
+  public set identityTokenAudienceWoVersion(value: number) {
+    this._identityTokenAudienceWoVersion = value;
+  }
+  public resetIdentityTokenAudienceWoVersion() {
+    this._identityTokenAudienceWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenAudienceWoVersionInput() {
+    return this._identityTokenAudienceWoVersion;
+  }
+
+  // identity_token_key_wo - computed: false, optional: true, required: false
+  private _identityTokenKeyWo?: string; 
+  public get identityTokenKeyWo() {
+    return this.getStringAttribute('identity_token_key_wo');
+  }
+  public set identityTokenKeyWo(value: string) {
+    this._identityTokenKeyWo = value;
+  }
+  public resetIdentityTokenKeyWo() {
+    this._identityTokenKeyWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenKeyWoInput() {
+    return this._identityTokenKeyWo;
+  }
+
+  // identity_token_key_wo_version - computed: false, optional: true, required: false
+  private _identityTokenKeyWoVersion?: number; 
+  public get identityTokenKeyWoVersion() {
+    return this.getNumberAttribute('identity_token_key_wo_version');
+  }
+  public set identityTokenKeyWoVersion(value: number) {
+    this._identityTokenKeyWoVersion = value;
+  }
+  public resetIdentityTokenKeyWoVersion() {
+    this._identityTokenKeyWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenKeyWoVersionInput() {
+    return this._identityTokenKeyWoVersion;
+  }
+
+  // identity_token_ttl - computed: true, optional: true, required: false
+  private _identityTokenTtl?: number; 
+  public get identityTokenTtl() {
+    return this.getNumberAttribute('identity_token_ttl');
+  }
+  public set identityTokenTtl(value: number) {
+    this._identityTokenTtl = value;
+  }
+  public resetIdentityTokenTtl() {
+    this._identityTokenTtl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identityTokenTtlInput() {
+    return this._identityTokenTtl;
+  }
+
   // locational_kms_keys - computed: false, optional: true, required: false
   private _locationalKmsKeys?: { [key: string]: string }; 
   public get locationalKmsKeys() {
@@ -414,6 +536,22 @@ export class SecretsSyncGcpDestination extends cdktn.TerraformResource {
     return this._secretNameTemplate;
   }
 
+  // service_account_email - computed: false, optional: true, required: false
+  private _serviceAccountEmail?: string; 
+  public get serviceAccountEmail() {
+    return this.getStringAttribute('service_account_email');
+  }
+  public set serviceAccountEmail(value: string) {
+    this._serviceAccountEmail = value;
+  }
+  public resetServiceAccountEmail() {
+    this._serviceAccountEmail = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceAccountEmailInput() {
+    return this._serviceAccountEmail;
+  }
+
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
@@ -434,12 +572,18 @@ export class SecretsSyncGcpDestination extends cdktn.TerraformResource {
       global_kms_key: cdktn.stringToTerraform(this._globalKmsKey),
       granularity: cdktn.stringToTerraform(this._granularity),
       id: cdktn.stringToTerraform(this._id),
+      identity_token_audience_wo: cdktn.stringToTerraform(this._identityTokenAudienceWo),
+      identity_token_audience_wo_version: cdktn.numberToTerraform(this._identityTokenAudienceWoVersion),
+      identity_token_key_wo: cdktn.stringToTerraform(this._identityTokenKeyWo),
+      identity_token_key_wo_version: cdktn.numberToTerraform(this._identityTokenKeyWoVersion),
+      identity_token_ttl: cdktn.numberToTerraform(this._identityTokenTtl),
       locational_kms_keys: cdktn.hashMapper(cdktn.stringToTerraform)(this._locationalKmsKeys),
       name: cdktn.stringToTerraform(this._name),
       namespace: cdktn.stringToTerraform(this._namespace),
       project_id: cdktn.stringToTerraform(this._projectId),
       replication_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(this._replicationLocations),
       secret_name_template: cdktn.stringToTerraform(this._secretNameTemplate),
+      service_account_email: cdktn.stringToTerraform(this._serviceAccountEmail),
     };
   }
 
@@ -499,6 +643,36 @@ export class SecretsSyncGcpDestination extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      identity_token_audience_wo: {
+        value: cdktn.stringToHclTerraform(this._identityTokenAudienceWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_token_audience_wo_version: {
+        value: cdktn.numberToHclTerraform(this._identityTokenAudienceWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      identity_token_key_wo: {
+        value: cdktn.stringToHclTerraform(this._identityTokenKeyWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      identity_token_key_wo_version: {
+        value: cdktn.numberToHclTerraform(this._identityTokenKeyWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      identity_token_ttl: {
+        value: cdktn.numberToHclTerraform(this._identityTokenTtl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       locational_kms_keys: {
         value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._locationalKmsKeys),
         isBlock: false,
@@ -531,6 +705,12 @@ export class SecretsSyncGcpDestination extends cdktn.TerraformResource {
       },
       secret_name_template: {
         value: cdktn.stringToHclTerraform(this._secretNameTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      service_account_email: {
+        value: cdktn.stringToHclTerraform(this._serviceAccountEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

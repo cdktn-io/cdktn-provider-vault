@@ -32,6 +32,8 @@ Object.defineProperty(exports, 'azureSecretBackend', { get: function () { return
 Object.defineProperty(exports, 'azureSecretBackendRole', { get: function () { return require('./azure-secret-backend-role'); } });
 Object.defineProperty(exports, 'azureSecretBackendStaticRole', { get: function () { return require('./azure-secret-backend-static-role'); } });
 Object.defineProperty(exports, 'certAuthBackendRole', { get: function () { return require('./cert-auth-backend-role'); } });
+Object.defineProperty(exports, 'cfAuthBackendConfig', { get: function () { return require('./cf-auth-backend-config'); } });
+Object.defineProperty(exports, 'cfAuthBackendRole', { get: function () { return require('./cf-auth-backend-role'); } });
 Object.defineProperty(exports, 'configUiCustomMessage', { get: function () { return require('./config-ui-custom-message'); } });
 Object.defineProperty(exports, 'consulSecretBackend', { get: function () { return require('./consul-secret-backend'); } });
 Object.defineProperty(exports, 'consulSecretBackendRole', { get: function () { return require('./consul-secret-backend-role'); } });
@@ -75,6 +77,9 @@ Object.defineProperty(exports, 'identityOidcScope', { get: function () { return 
 Object.defineProperty(exports, 'jwtAuthBackend', { get: function () { return require('./jwt-auth-backend'); } });
 Object.defineProperty(exports, 'jwtAuthBackendRole', { get: function () { return require('./jwt-auth-backend-role'); } });
 Object.defineProperty(exports, 'kmipSecretBackend', { get: function () { return require('./kmip-secret-backend'); } });
+Object.defineProperty(exports, 'kmipSecretCaGenerated', { get: function () { return require('./kmip-secret-ca-generated'); } });
+Object.defineProperty(exports, 'kmipSecretCaImported', { get: function () { return require('./kmip-secret-ca-imported'); } });
+Object.defineProperty(exports, 'kmipSecretListener', { get: function () { return require('./kmip-secret-listener'); } });
 Object.defineProperty(exports, 'kmipSecretRole', { get: function () { return require('./kmip-secret-role'); } });
 Object.defineProperty(exports, 'kmipSecretScope', { get: function () { return require('./kmip-secret-scope'); } });
 Object.defineProperty(exports, 'kubernetesAuthBackendConfig', { get: function () { return require('./kubernetes-auth-backend-config'); } });
@@ -108,6 +113,7 @@ Object.defineProperty(exports, 'oktaAuthBackend', { get: function () { return re
 Object.defineProperty(exports, 'oktaAuthBackendGroup', { get: function () { return require('./okta-auth-backend-group'); } });
 Object.defineProperty(exports, 'oktaAuthBackendUser', { get: function () { return require('./okta-auth-backend-user'); } });
 Object.defineProperty(exports, 'passwordPolicy', { get: function () { return require('./password-policy'); } });
+Object.defineProperty(exports, 'pkiSecretBackendAcmeAccount', { get: function () { return require('./pki-secret-backend-acme-account'); } });
 Object.defineProperty(exports, 'pkiSecretBackendAcmeEab', { get: function () { return require('./pki-secret-backend-acme-eab'); } });
 Object.defineProperty(exports, 'pkiSecretBackendCert', { get: function () { return require('./pki-secret-backend-cert'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigAcme', { get: function () { return require('./pki-secret-backend-config-acme'); } });
@@ -120,6 +126,10 @@ Object.defineProperty(exports, 'pkiSecretBackendConfigIssuers', { get: function 
 Object.defineProperty(exports, 'pkiSecretBackendConfigScep', { get: function () { return require('./pki-secret-backend-config-scep'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigUrls', { get: function () { return require('./pki-secret-backend-config-urls'); } });
 Object.defineProperty(exports, 'pkiSecretBackendCrlConfig', { get: function () { return require('./pki-secret-backend-crl-config'); } });
+Object.defineProperty(exports, 'pkiSecretBackendExternalCaOrder', { get: function () { return require('./pki-secret-backend-external-ca-order'); } });
+Object.defineProperty(exports, 'pkiSecretBackendExternalCaOrderCertificate', { get: function () { return require('./pki-secret-backend-external-ca-order-certificate'); } });
+Object.defineProperty(exports, 'pkiSecretBackendExternalCaOrderChallengeFulfilled', { get: function () { return require('./pki-secret-backend-external-ca-order-challenge-fulfilled'); } });
+Object.defineProperty(exports, 'pkiSecretBackendExternalCaRole', { get: function () { return require('./pki-secret-backend-external-ca-role'); } });
 Object.defineProperty(exports, 'pkiSecretBackendIntermediateCertRequest', { get: function () { return require('./pki-secret-backend-intermediate-cert-request'); } });
 Object.defineProperty(exports, 'pkiSecretBackendIntermediateSetSigned', { get: function () { return require('./pki-secret-backend-intermediate-set-signed'); } });
 Object.defineProperty(exports, 'pkiSecretBackendIssuer', { get: function () { return require('./pki-secret-backend-issuer'); } });
@@ -151,6 +161,8 @@ Object.defineProperty(exports, 'secretsSyncGithubApps', { get: function () { ret
 Object.defineProperty(exports, 'secretsSyncVercelDestination', { get: function () { return require('./secrets-sync-vercel-destination'); } });
 Object.defineProperty(exports, 'spiffeAuthBackendConfig', { get: function () { return require('./spiffe-auth-backend-config'); } });
 Object.defineProperty(exports, 'spiffeAuthBackendRole', { get: function () { return require('./spiffe-auth-backend-role'); } });
+Object.defineProperty(exports, 'spiffeSecretBackendConfig', { get: function () { return require('./spiffe-secret-backend-config'); } });
+Object.defineProperty(exports, 'spiffeSecretBackendRole', { get: function () { return require('./spiffe-secret-backend-role'); } });
 Object.defineProperty(exports, 'sshSecretBackendCa', { get: function () { return require('./ssh-secret-backend-ca'); } });
 Object.defineProperty(exports, 'sshSecretBackendRole', { get: function () { return require('./ssh-secret-backend-role'); } });
 Object.defineProperty(exports, 'terraformCloudSecretBackend', { get: function () { return require('./terraform-cloud-secret-backend'); } });
@@ -195,6 +207,7 @@ Object.defineProperty(exports, 'dataVaultPkiSecretBackendCertMetadata', { get: f
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendConfigCmpv2', { get: function () { return require('./data-vault-pki-secret-backend-config-cmpv2'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendConfigEst', { get: function () { return require('./data-vault-pki-secret-backend-config-est'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendConfigScep', { get: function () { return require('./data-vault-pki-secret-backend-config-scep'); } });
+Object.defineProperty(exports, 'dataVaultPkiSecretBackendExternalCaOrderChallenge', { get: function () { return require('./data-vault-pki-secret-backend-external-ca-order-challenge'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendIssuer', { get: function () { return require('./data-vault-pki-secret-backend-issuer'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendIssuers', { get: function () { return require('./data-vault-pki-secret-backend-issuers'); } });
 Object.defineProperty(exports, 'dataVaultPkiSecretBackendKey', { get: function () { return require('./data-vault-pki-secret-backend-key'); } });

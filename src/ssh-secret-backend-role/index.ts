@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,126 +13,146 @@ import * as cdktn from 'cdktn';
 
 export interface SshSecretBackendRoleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#algorithm_signer SshSecretBackendRole#algorithm_signer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#algorithm_signer SshSecretBackendRole#algorithm_signer}
   */
   readonly algorithmSigner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allow_bare_domains SshSecretBackendRole#allow_bare_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#allow_bare_domains SshSecretBackendRole#allow_bare_domains}
   */
   readonly allowBareDomains?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allow_empty_principals SshSecretBackendRole#allow_empty_principals}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#allow_empty_principals SshSecretBackendRole#allow_empty_principals}
   */
   readonly allowEmptyPrincipals?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allow_host_certificates SshSecretBackendRole#allow_host_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#allow_host_certificates SshSecretBackendRole#allow_host_certificates}
   */
   readonly allowHostCertificates?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allow_subdomains SshSecretBackendRole#allow_subdomains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#allow_subdomains SshSecretBackendRole#allow_subdomains}
   */
   readonly allowSubdomains?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allow_user_certificates SshSecretBackendRole#allow_user_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#allow_user_certificates SshSecretBackendRole#allow_user_certificates}
   */
   readonly allowUserCertificates?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allow_user_key_ids SshSecretBackendRole#allow_user_key_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#allow_user_key_ids SshSecretBackendRole#allow_user_key_ids}
   */
   readonly allowUserKeyIds?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_critical_options SshSecretBackendRole#allowed_critical_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#allowed_critical_options SshSecretBackendRole#allowed_critical_options}
   */
   readonly allowedCriticalOptions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_domains SshSecretBackendRole#allowed_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#allowed_domains SshSecretBackendRole#allowed_domains}
   */
   readonly allowedDomains?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_domains_template SshSecretBackendRole#allowed_domains_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#allowed_domains_template SshSecretBackendRole#allowed_domains_template}
   */
   readonly allowedDomainsTemplate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_extensions SshSecretBackendRole#allowed_extensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#allowed_extensions SshSecretBackendRole#allowed_extensions}
   */
   readonly allowedExtensions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_users SshSecretBackendRole#allowed_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#allowed_users SshSecretBackendRole#allowed_users}
   */
   readonly allowedUsers?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_users_template SshSecretBackendRole#allowed_users_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#allowed_users_template SshSecretBackendRole#allowed_users_template}
   */
   readonly allowedUsersTemplate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#backend SshSecretBackendRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#backend SshSecretBackendRole#backend}
   */
   readonly backend: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#cidr_list SshSecretBackendRole#cidr_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#cidr_list SshSecretBackendRole#cidr_list}
   */
   readonly cidrList?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#default_critical_options SshSecretBackendRole#default_critical_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#default_critical_options SshSecretBackendRole#default_critical_options}
   */
   readonly defaultCriticalOptions?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#default_extensions SshSecretBackendRole#default_extensions}
+  * Default extensions to include in SSH certificates. Only applicable for CA key type.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#default_extensions SshSecretBackendRole#default_extensions}
   */
   readonly defaultExtensions?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#default_user SshSecretBackendRole#default_user}
+  * Specifies if the default_extensions field supports templating. Only applicable for CA key type.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#default_extensions_template SshSecretBackendRole#default_extensions_template}
+  */
+  readonly defaultExtensionsTemplate?: boolean | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#default_user SshSecretBackendRole#default_user}
   */
   readonly defaultUser?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#default_user_template SshSecretBackendRole#default_user_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#default_user_template SshSecretBackendRole#default_user_template}
   */
   readonly defaultUserTemplate?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#id SshSecretBackendRole#id}
+  * List of CIDR blocks for which credentials cannot be created. Applicable for OTP and dynamic key types.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#exclude_cidr_list SshSecretBackendRole#exclude_cidr_list}
+  */
+  readonly excludeCidrList?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#id SshSecretBackendRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#key_id_format SshSecretBackendRole#key_id_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#key_id_format SshSecretBackendRole#key_id_format}
   */
   readonly keyIdFormat?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#key_type SshSecretBackendRole#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#key_type SshSecretBackendRole#key_type}
   */
   readonly keyType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#max_ttl SshSecretBackendRole#max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#max_ttl SshSecretBackendRole#max_ttl}
   */
   readonly maxTtl?: string;
   /**
   * Unique name for the role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#name SshSecretBackendRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#name SshSecretBackendRole#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#namespace SshSecretBackendRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#namespace SshSecretBackendRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the duration by which to backdate the ValidAfter property. Uses duration format strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#not_before_duration SshSecretBackendRole#not_before_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#not_before_duration SshSecretBackendRole#not_before_duration}
   */
   readonly notBeforeDuration?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#ttl SshSecretBackendRole#ttl}
+  * Specifies the port number for SSH connections (default 22). Applicable for OTP and dynamic key types.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#port SshSecretBackendRole#port}
+  */
+  readonly port?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#ttl SshSecretBackendRole#ttl}
   */
   readonly ttl?: string;
   /**
   * allowed_user_key_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#allowed_user_key_config SshSecretBackendRole#allowed_user_key_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#allowed_user_key_config SshSecretBackendRole#allowed_user_key_config}
   */
   readonly allowedUserKeyConfig?: SshSecretBackendRoleAllowedUserKeyConfig[] | cdktn.IResolvable;
 }
@@ -140,14 +160,14 @@ export interface SshSecretBackendRoleAllowedUserKeyConfig {
   /**
   * List of allowed key lengths, vault-1.10 and above
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#lengths SshSecretBackendRole#lengths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#lengths SshSecretBackendRole#lengths}
   */
   readonly lengths: number[];
   /**
   * Key type, choices:
   * rsa, ecdsa, ec, dsa, ed25519, ssh-rsa, ssh-dss, ssh-ed25519, ecdsa-sha2-nistp256, ecdsa-sha2-nistp384, ecdsa-sha2-nistp521
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#type SshSecretBackendRole#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#type SshSecretBackendRole#type}
   */
   readonly type: string;
 }
@@ -286,7 +306,7 @@ export class SshSecretBackendRoleAllowedUserKeyConfigList extends cdktn.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role}
 */
 export class SshSecretBackendRole extends cdktn.TerraformResource {
 
@@ -302,7 +322,7 @@ export class SshSecretBackendRole extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SshSecretBackendRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SshSecretBackendRole to import
-  * @param importFromId The id of the existing SshSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SshSecretBackendRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SshSecretBackendRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -314,7 +334,7 @@ export class SshSecretBackendRole extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ssh_secret_backend_role vault_ssh_secret_backend_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -325,7 +345,7 @@ export class SshSecretBackendRole extends cdktn.TerraformResource {
       terraformResourceType: 'vault_ssh_secret_backend_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.7.0',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -353,8 +373,10 @@ export class SshSecretBackendRole extends cdktn.TerraformResource {
     this._cidrList = config.cidrList;
     this._defaultCriticalOptions = config.defaultCriticalOptions;
     this._defaultExtensions = config.defaultExtensions;
+    this._defaultExtensionsTemplate = config.defaultExtensionsTemplate;
     this._defaultUser = config.defaultUser;
     this._defaultUserTemplate = config.defaultUserTemplate;
+    this._excludeCidrList = config.excludeCidrList;
     this._id = config.id;
     this._keyIdFormat = config.keyIdFormat;
     this._keyType = config.keyType;
@@ -362,6 +384,7 @@ export class SshSecretBackendRole extends cdktn.TerraformResource {
     this._name = config.name;
     this._namespace = config.namespace;
     this._notBeforeDuration = config.notBeforeDuration;
+    this._port = config.port;
     this._ttl = config.ttl;
     this._allowedUserKeyConfig.internalValue = config.allowedUserKeyConfig;
   }
@@ -639,6 +662,22 @@ export class SshSecretBackendRole extends cdktn.TerraformResource {
     return this._defaultExtensions;
   }
 
+  // default_extensions_template - computed: false, optional: true, required: false
+  private _defaultExtensionsTemplate?: boolean | cdktn.IResolvable; 
+  public get defaultExtensionsTemplate() {
+    return this.getBooleanAttribute('default_extensions_template');
+  }
+  public set defaultExtensionsTemplate(value: boolean | cdktn.IResolvable) {
+    this._defaultExtensionsTemplate = value;
+  }
+  public resetDefaultExtensionsTemplate() {
+    this._defaultExtensionsTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultExtensionsTemplateInput() {
+    return this._defaultExtensionsTemplate;
+  }
+
   // default_user - computed: false, optional: true, required: false
   private _defaultUser?: string; 
   public get defaultUser() {
@@ -669,6 +708,22 @@ export class SshSecretBackendRole extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get defaultUserTemplateInput() {
     return this._defaultUserTemplate;
+  }
+
+  // exclude_cidr_list - computed: false, optional: true, required: false
+  private _excludeCidrList?: string[]; 
+  public get excludeCidrList() {
+    return cdktn.Fn.tolist(this.getListAttribute('exclude_cidr_list'));
+  }
+  public set excludeCidrList(value: string[]) {
+    this._excludeCidrList = value;
+  }
+  public resetExcludeCidrList() {
+    this._excludeCidrList = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeCidrListInput() {
+    return this._excludeCidrList;
   }
 
   // id - computed: true, optional: true, required: false
@@ -777,6 +832,22 @@ export class SshSecretBackendRole extends cdktn.TerraformResource {
     return this._notBeforeDuration;
   }
 
+  // port - computed: true, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
   // ttl - computed: true, optional: true, required: false
   private _ttl?: string; 
   public get ttl() {
@@ -832,8 +903,10 @@ export class SshSecretBackendRole extends cdktn.TerraformResource {
       cidr_list: cdktn.stringToTerraform(this._cidrList),
       default_critical_options: cdktn.hashMapper(cdktn.stringToTerraform)(this._defaultCriticalOptions),
       default_extensions: cdktn.hashMapper(cdktn.stringToTerraform)(this._defaultExtensions),
+      default_extensions_template: cdktn.booleanToTerraform(this._defaultExtensionsTemplate),
       default_user: cdktn.stringToTerraform(this._defaultUser),
       default_user_template: cdktn.booleanToTerraform(this._defaultUserTemplate),
+      exclude_cidr_list: cdktn.listMapper(cdktn.stringToTerraform, false)(this._excludeCidrList),
       id: cdktn.stringToTerraform(this._id),
       key_id_format: cdktn.stringToTerraform(this._keyIdFormat),
       key_type: cdktn.stringToTerraform(this._keyType),
@@ -841,6 +914,7 @@ export class SshSecretBackendRole extends cdktn.TerraformResource {
       name: cdktn.stringToTerraform(this._name),
       namespace: cdktn.stringToTerraform(this._namespace),
       not_before_duration: cdktn.stringToTerraform(this._notBeforeDuration),
+      port: cdktn.numberToTerraform(this._port),
       ttl: cdktn.stringToTerraform(this._ttl),
       allowed_user_key_config: cdktn.listMapper(sshSecretBackendRoleAllowedUserKeyConfigToTerraform, true)(this._allowedUserKeyConfig.internalValue),
     };
@@ -950,6 +1024,12 @@ export class SshSecretBackendRole extends cdktn.TerraformResource {
         type: "map",
         storageClassType: "stringMap",
       },
+      default_extensions_template: {
+        value: cdktn.booleanToHclTerraform(this._defaultExtensionsTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       default_user: {
         value: cdktn.stringToHclTerraform(this._defaultUser),
         isBlock: false,
@@ -961,6 +1041,12 @@ export class SshSecretBackendRole extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      exclude_cidr_list: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._excludeCidrList),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
       },
       id: {
         value: cdktn.stringToHclTerraform(this._id),
@@ -1003,6 +1089,12 @@ export class SshSecretBackendRole extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      port: {
+        value: cdktn.numberToHclTerraform(this._port),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       ttl: {
         value: cdktn.stringToHclTerraform(this._ttl),

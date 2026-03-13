@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert
+// https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,65 +15,65 @@ export interface PkiSecretBackendRootCertConfig extends cdktn.TerraformMetaArgum
   /**
   * List of alternative names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#alt_names PkiSecretBackendRootCert#alt_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#alt_names PkiSecretBackendRootCert#alt_names}
   */
   readonly altNames?: string[];
   /**
   * The PKI secret backend the resource belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#backend PkiSecretBackendRootCert#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#backend PkiSecretBackendRootCert#backend}
   */
   readonly backend: string;
   /**
   * CN of root to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#common_name PkiSecretBackendRootCert#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#common_name PkiSecretBackendRootCert#common_name}
   */
   readonly commonName: string;
   /**
   * The country.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#country PkiSecretBackendRootCert#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#country PkiSecretBackendRootCert#country}
   */
   readonly country?: string;
   /**
   * Flag to exclude CN from SANs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#exclude_cn_from_sans PkiSecretBackendRootCert#exclude_cn_from_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#exclude_cn_from_sans PkiSecretBackendRootCert#exclude_cn_from_sans}
   */
   readonly excludeCnFromSans?: boolean | cdktn.IResolvable;
   /**
   * List of domains for which certificates are not allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#excluded_dns_domains PkiSecretBackendRootCert#excluded_dns_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#excluded_dns_domains PkiSecretBackendRootCert#excluded_dns_domains}
   */
   readonly excludedDnsDomains?: string[];
   /**
   * List of email addresses for which certificates are not allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#excluded_email_addresses PkiSecretBackendRootCert#excluded_email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#excluded_email_addresses PkiSecretBackendRootCert#excluded_email_addresses}
   */
   readonly excludedEmailAddresses?: string[];
   /**
   * List of IP ranges for which certificates are not allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#excluded_ip_ranges PkiSecretBackendRootCert#excluded_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#excluded_ip_ranges PkiSecretBackendRootCert#excluded_ip_ranges}
   */
   readonly excludedIpRanges?: string[];
   /**
   * List of URI domains for which certificates are not allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#excluded_uri_domains PkiSecretBackendRootCert#excluded_uri_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#excluded_uri_domains PkiSecretBackendRootCert#excluded_uri_domains}
   */
   readonly excludedUriDomains?: string[];
   /**
   * The format of data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#format PkiSecretBackendRootCert#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#format PkiSecretBackendRootCert#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#id PkiSecretBackendRootCert#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#id PkiSecretBackendRootCert#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -82,175 +82,187 @@ export interface PkiSecretBackendRootCertConfig extends cdktn.TerraformMetaArgum
   /**
   * List of alternative IPs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#ip_sans PkiSecretBackendRootCert#ip_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#ip_sans PkiSecretBackendRootCert#ip_sans}
   */
   readonly ipSans?: string[];
   /**
   * Provides a name to the specified issuer. The name must be unique across all issuers and not be the reserved value 'default'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#issuer_name PkiSecretBackendRootCert#issuer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#issuer_name PkiSecretBackendRootCert#issuer_name}
   */
   readonly issuerName?: string;
   /**
   * The number of bits to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#key_bits PkiSecretBackendRootCert#key_bits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#key_bits PkiSecretBackendRootCert#key_bits}
   */
   readonly keyBits?: number;
   /**
   * When a new key is created with this request, optionally specifies the name for this.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#key_name PkiSecretBackendRootCert#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#key_name PkiSecretBackendRootCert#key_name}
   */
   readonly keyName?: string;
   /**
   * Specifies the key to use for generating this request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#key_ref PkiSecretBackendRootCert#key_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#key_ref PkiSecretBackendRootCert#key_ref}
   */
   readonly keyRef?: string;
   /**
   * The desired key type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#key_type PkiSecretBackendRootCert#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#key_type PkiSecretBackendRootCert#key_type}
   */
   readonly keyType?: string;
   /**
+  * Specify the allowed key usage constraint on issued certificates.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#key_usage PkiSecretBackendRootCert#key_usage}
+  */
+  readonly keyUsage?: string[];
+  /**
   * The locality.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#locality PkiSecretBackendRootCert#locality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#locality PkiSecretBackendRootCert#locality}
   */
   readonly locality?: string;
   /**
   * The ID of the previously configured managed key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#managed_key_id PkiSecretBackendRootCert#managed_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#managed_key_id PkiSecretBackendRootCert#managed_key_id}
   */
   readonly managedKeyId?: string;
   /**
   * The name of the previously configured managed key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#managed_key_name PkiSecretBackendRootCert#managed_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#managed_key_name PkiSecretBackendRootCert#managed_key_name}
   */
   readonly managedKeyName?: string;
   /**
   * The maximum path length to encode in the generated certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#max_path_length PkiSecretBackendRootCert#max_path_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#max_path_length PkiSecretBackendRootCert#max_path_length}
   */
   readonly maxPathLength?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#namespace PkiSecretBackendRootCert#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#namespace PkiSecretBackendRootCert#namespace}
   */
   readonly namespace?: string;
   /**
   * Set the Not After field of the certificate with specified date value. The value format should be given in UTC format YYYY-MM-ddTHH:MM:SSZ. Supports the Y10K end date for IEEE 802.1AR-2018 standard devices, 9999-12-31T23:59:59Z.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#not_after PkiSecretBackendRootCert#not_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#not_after PkiSecretBackendRootCert#not_after}
   */
   readonly notAfter?: string;
   /**
   * Specifies the duration by which to backdate the NotBefore property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#not_before_duration PkiSecretBackendRootCert#not_before_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#not_before_duration PkiSecretBackendRootCert#not_before_duration}
   */
   readonly notBeforeDuration?: string;
   /**
   * The organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#organization PkiSecretBackendRootCert#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#organization PkiSecretBackendRootCert#organization}
   */
   readonly organization?: string;
   /**
   * List of other SANs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#other_sans PkiSecretBackendRootCert#other_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#other_sans PkiSecretBackendRootCert#other_sans}
   */
   readonly otherSans?: string[];
   /**
   * The organization unit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#ou PkiSecretBackendRootCert#ou}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#ou PkiSecretBackendRootCert#ou}
   */
   readonly ou?: string;
   /**
   * List of domains for which certificates are allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#permitted_dns_domains PkiSecretBackendRootCert#permitted_dns_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#permitted_dns_domains PkiSecretBackendRootCert#permitted_dns_domains}
   */
   readonly permittedDnsDomains?: string[];
   /**
   * List of email addresses for which certificates are allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#permitted_email_addresses PkiSecretBackendRootCert#permitted_email_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#permitted_email_addresses PkiSecretBackendRootCert#permitted_email_addresses}
   */
   readonly permittedEmailAddresses?: string[];
   /**
   * List of IP ranges for which certificates are allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#permitted_ip_ranges PkiSecretBackendRootCert#permitted_ip_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#permitted_ip_ranges PkiSecretBackendRootCert#permitted_ip_ranges}
   */
   readonly permittedIpRanges?: string[];
   /**
   * List of URI domains for which certificates are allowed to be issued.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#permitted_uri_domains PkiSecretBackendRootCert#permitted_uri_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#permitted_uri_domains PkiSecretBackendRootCert#permitted_uri_domains}
   */
   readonly permittedUriDomains?: string[];
   /**
   * The postal code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#postal_code PkiSecretBackendRootCert#postal_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#postal_code PkiSecretBackendRootCert#postal_code}
   */
   readonly postalCode?: string;
   /**
   * The private key format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#private_key_format PkiSecretBackendRootCert#private_key_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#private_key_format PkiSecretBackendRootCert#private_key_format}
   */
   readonly privateKeyFormat?: string;
   /**
   * The province.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#province PkiSecretBackendRootCert#province}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#province PkiSecretBackendRootCert#province}
   */
   readonly province?: string;
   /**
   * The number of bits to use in the signature algorithm.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#signature_bits PkiSecretBackendRootCert#signature_bits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#signature_bits PkiSecretBackendRootCert#signature_bits}
   */
   readonly signatureBits?: number;
   /**
   * The street address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#street_address PkiSecretBackendRootCert#street_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#street_address PkiSecretBackendRootCert#street_address}
   */
   readonly streetAddress?: string;
   /**
   * Time to live.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#ttl PkiSecretBackendRootCert#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#ttl PkiSecretBackendRootCert#ttl}
   */
   readonly ttl?: string;
   /**
   * Type of root to create. Must be either "existing", "exported", "internal" or "kms"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#type PkiSecretBackendRootCert#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#type PkiSecretBackendRootCert#type}
   */
   readonly type: string;
   /**
   * List of alternative URIs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#uri_sans PkiSecretBackendRootCert#uri_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#uri_sans PkiSecretBackendRootCert#uri_sans}
   */
   readonly uriSans?: string[];
+  /**
+  * Whether to use PSS signatures when using a RSA key-type issuer.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#use_pss PkiSecretBackendRootCert#use_pss}
+  */
+  readonly usePss?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert}
 */
 export class PkiSecretBackendRootCert extends cdktn.TerraformResource {
 
@@ -266,7 +278,7 @@ export class PkiSecretBackendRootCert extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PkiSecretBackendRootCert resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PkiSecretBackendRootCert to import
-  * @param importFromId The id of the existing PkiSecretBackendRootCert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PkiSecretBackendRootCert that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PkiSecretBackendRootCert to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -278,7 +290,7 @@ export class PkiSecretBackendRootCert extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_root_cert vault_pki_secret_backend_root_cert} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -289,7 +301,7 @@ export class PkiSecretBackendRootCert extends cdktn.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_root_cert',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.7.0',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -317,6 +329,7 @@ export class PkiSecretBackendRootCert extends cdktn.TerraformResource {
     this._keyName = config.keyName;
     this._keyRef = config.keyRef;
     this._keyType = config.keyType;
+    this._keyUsage = config.keyUsage;
     this._locality = config.locality;
     this._managedKeyId = config.managedKeyId;
     this._managedKeyName = config.managedKeyName;
@@ -339,6 +352,7 @@ export class PkiSecretBackendRootCert extends cdktn.TerraformResource {
     this._ttl = config.ttl;
     this._type = config.type;
     this._uriSans = config.uriSans;
+    this._usePss = config.usePss;
   }
 
   // ==========
@@ -629,6 +643,22 @@ export class PkiSecretBackendRootCert extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get keyTypeInput() {
     return this._keyType;
+  }
+
+  // key_usage - computed: false, optional: true, required: false
+  private _keyUsage?: string[]; 
+  public get keyUsage() {
+    return this.getListAttribute('key_usage');
+  }
+  public set keyUsage(value: string[]) {
+    this._keyUsage = value;
+  }
+  public resetKeyUsage() {
+    this._keyUsage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyUsageInput() {
+    return this._keyUsage;
   }
 
   // locality - computed: false, optional: true, required: false
@@ -985,6 +1015,22 @@ export class PkiSecretBackendRootCert extends cdktn.TerraformResource {
     return this._uriSans;
   }
 
+  // use_pss - computed: false, optional: true, required: false
+  private _usePss?: boolean | cdktn.IResolvable; 
+  public get usePss() {
+    return this.getBooleanAttribute('use_pss');
+  }
+  public set usePss(value: boolean | cdktn.IResolvable) {
+    this._usePss = value;
+  }
+  public resetUsePss() {
+    this._usePss = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usePssInput() {
+    return this._usePss;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1008,6 +1054,7 @@ export class PkiSecretBackendRootCert extends cdktn.TerraformResource {
       key_name: cdktn.stringToTerraform(this._keyName),
       key_ref: cdktn.stringToTerraform(this._keyRef),
       key_type: cdktn.stringToTerraform(this._keyType),
+      key_usage: cdktn.listMapper(cdktn.stringToTerraform, false)(this._keyUsage),
       locality: cdktn.stringToTerraform(this._locality),
       managed_key_id: cdktn.stringToTerraform(this._managedKeyId),
       managed_key_name: cdktn.stringToTerraform(this._managedKeyName),
@@ -1030,6 +1077,7 @@ export class PkiSecretBackendRootCert extends cdktn.TerraformResource {
       ttl: cdktn.stringToTerraform(this._ttl),
       type: cdktn.stringToTerraform(this._type),
       uri_sans: cdktn.listMapper(cdktn.stringToTerraform, false)(this._uriSans),
+      use_pss: cdktn.booleanToTerraform(this._usePss),
     };
   }
 
@@ -1136,6 +1184,12 @@ export class PkiSecretBackendRootCert extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      key_usage: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._keyUsage),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
       },
       locality: {
         value: cdktn.stringToHclTerraform(this._locality),
@@ -1268,6 +1322,12 @@ export class PkiSecretBackendRootCert extends cdktn.TerraformResource {
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
+      },
+      use_pss: {
+        value: cdktn.booleanToHclTerraform(this._usePss),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
     };
 

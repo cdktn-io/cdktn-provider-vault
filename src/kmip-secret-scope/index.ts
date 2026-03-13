@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_scope
+// https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_scope
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface KmipSecretScopeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Force deletion even if there are managed objects in the scope
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_scope#force KmipSecretScope#force}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_scope#force KmipSecretScope#force}
   */
   readonly force?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_scope#id KmipSecretScope#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_scope#id KmipSecretScope#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface KmipSecretScopeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_scope#namespace KmipSecretScope#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_scope#namespace KmipSecretScope#namespace}
   */
   readonly namespace?: string;
   /**
   * Path where KMIP backend is mounted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_scope#path KmipSecretScope#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_scope#path KmipSecretScope#path}
   */
   readonly path: string;
   /**
   * Name of the scope
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_scope#scope KmipSecretScope#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_scope#scope KmipSecretScope#scope}
   */
   readonly scope: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_scope vault_kmip_secret_scope}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_scope vault_kmip_secret_scope}
 */
 export class KmipSecretScope extends cdktn.TerraformResource {
 
@@ -62,7 +62,7 @@ export class KmipSecretScope extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KmipSecretScope resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmipSecretScope to import
-  * @param importFromId The id of the existing KmipSecretScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_scope#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KmipSecretScope that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_scope#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmipSecretScope to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -74,7 +74,7 @@ export class KmipSecretScope extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kmip_secret_scope vault_kmip_secret_scope} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_scope vault_kmip_secret_scope} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class KmipSecretScope extends cdktn.TerraformResource {
       terraformResourceType: 'vault_kmip_secret_scope',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.7.0',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

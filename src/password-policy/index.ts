@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/password_policy
+// https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/password_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface PasswordPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies an override to the default source of entropy (randomness) used to generate the passwords. Must be one of: '', 'platform', or 'seal'. Requires Vault 1.21+.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/password_policy#entropy_source PasswordPolicy#entropy_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/password_policy#entropy_source PasswordPolicy#entropy_source}
   */
   readonly entropySource?: string;
   /**
   * Name of the password policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/password_policy#name PasswordPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/password_policy#name PasswordPolicy#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/password_policy#namespace PasswordPolicy#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/password_policy#namespace PasswordPolicy#namespace}
   */
   readonly namespace?: string;
   /**
   * The password policy document
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/password_policy#policy PasswordPolicy#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/password_policy#policy PasswordPolicy#policy}
   */
   readonly policy: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/password_policy vault_password_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/password_policy vault_password_policy}
 */
 export class PasswordPolicy extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class PasswordPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PasswordPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PasswordPolicy to import
-  * @param importFromId The id of the existing PasswordPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/password_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PasswordPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/password_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PasswordPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class PasswordPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/password_policy vault_password_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/password_policy vault_password_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class PasswordPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'vault_password_policy',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.7.0',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
