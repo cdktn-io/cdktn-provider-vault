@@ -4,7 +4,7 @@
 
 ### ConfigUiCustomMessage <a name="ConfigUiCustomMessage" id="@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message vault_config_ui_custom_message}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessage.Initializer"></a>
 
@@ -544,7 +544,7 @@ The construct id used in the generated config for the ConfigUiCustomMessage to i
 
 The id of the existing ConfigUiCustomMessage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1078,7 +1078,7 @@ MessageBase64 *string
 
 The base64-encoded content of the custom message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#message_base64 ConfigUiCustomMessage#message_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message#message_base64 ConfigUiCustomMessage#message_base64}
 
 ---
 
@@ -1092,7 +1092,7 @@ StartTime *string
 
 The starting time of the active period of the custom message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#start_time ConfigUiCustomMessage#start_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message#start_time ConfigUiCustomMessage#start_time}
 
 ---
 
@@ -1106,7 +1106,7 @@ Title *string
 
 The title of the custom message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
 
 ---
 
@@ -1120,7 +1120,7 @@ Authenticated interface{}
 
 A flag indicating whether the custom message is displayed pre-login (false) or post-login (true).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#authenticated ConfigUiCustomMessage#authenticated}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message#authenticated ConfigUiCustomMessage#authenticated}
 
 ---
 
@@ -1134,7 +1134,7 @@ EndTime *string
 
 The ending time of the active period of the custom message. Can be omitted for non-expiring message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#end_time ConfigUiCustomMessage#end_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message#end_time ConfigUiCustomMessage#end_time}
 
 ---
 
@@ -1148,7 +1148,7 @@ Link ConfigUiCustomMessageLink
 
 link block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#link ConfigUiCustomMessage#link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message#link ConfigUiCustomMessage#link}
 
 ---
 
@@ -1162,7 +1162,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#namespace ConfigUiCustomMessage#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message#namespace ConfigUiCustomMessage#namespace}
 
 ---
 
@@ -1176,7 +1176,7 @@ Options *map[string]*string
 
 A map containing additional options for the custom message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#options ConfigUiCustomMessage#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message#options ConfigUiCustomMessage#options}
 
 ---
 
@@ -1190,7 +1190,7 @@ Type *string
 
 The display type of custom message. Allowed values are banner and modal.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#type ConfigUiCustomMessage#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message#type ConfigUiCustomMessage#type}
 
 ---
 
@@ -1226,7 +1226,7 @@ Href *string
 
 The URL of the hyperlink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#href ConfigUiCustomMessage#href}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message#href ConfigUiCustomMessage#href}
 
 ---
 
@@ -1240,7 +1240,7 @@ Title *string
 
 The title of the hyperlink.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/config_ui_custom_message#title ConfigUiCustomMessage#title}
 
 ---
 

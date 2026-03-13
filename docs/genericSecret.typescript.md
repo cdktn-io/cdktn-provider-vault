@@ -4,7 +4,7 @@
 
 ### GenericSecret <a name="GenericSecret" id="@cdktn/provider-vault.genericSecret.GenericSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret vault_generic_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/generic_secret vault_generic_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.genericSecret.GenericSecret.Initializer"></a>
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the GenericSecret to import.
 
 The id of the existing GenericSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/generic_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -880,7 +880,7 @@ const genericSecretConfig: genericSecret.GenericSecretConfig = { ... }
 | <code><a href="#@cdktn/provider-vault.genericSecret.GenericSecretConfig.property.path">path</a></code> | <code>string</code> | Full path where the generic secret will be written. |
 | <code><a href="#@cdktn/provider-vault.genericSecret.GenericSecretConfig.property.deleteAllVersions">deleteAllVersions</a></code> | <code>boolean \| cdktn.IResolvable</code> | Only applicable for kv-v2 stores. If set, permanently deletes all versions for the specified key. |
 | <code><a href="#@cdktn/provider-vault.genericSecret.GenericSecretConfig.property.disableRead">disableRead</a></code> | <code>boolean \| cdktn.IResolvable</code> | Don't attempt to read the token from Vault if true; drift won't be detected. |
-| <code><a href="#@cdktn/provider-vault.genericSecret.GenericSecretConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#id GenericSecret#id}. |
+| <code><a href="#@cdktn/provider-vault.genericSecret.GenericSecretConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/generic_secret#id GenericSecret#id}. |
 | <code><a href="#@cdktn/provider-vault.genericSecret.GenericSecretConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -965,7 +965,7 @@ public readonly dataJson: string;
 
 JSON-encoded secret data to write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#data_json GenericSecret#data_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/generic_secret#data_json GenericSecret#data_json}
 
 ---
 
@@ -979,7 +979,7 @@ public readonly path: string;
 
 Full path where the generic secret will be written.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#path GenericSecret#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/generic_secret#path GenericSecret#path}
 
 ---
 
@@ -993,7 +993,7 @@ public readonly deleteAllVersions: boolean | IResolvable;
 
 Only applicable for kv-v2 stores. If set, permanently deletes all versions for the specified key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#delete_all_versions GenericSecret#delete_all_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/generic_secret#delete_all_versions GenericSecret#delete_all_versions}
 
 ---
 
@@ -1007,7 +1007,7 @@ public readonly disableRead: boolean | IResolvable;
 
 Don't attempt to read the token from Vault if true; drift won't be detected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#disable_read GenericSecret#disable_read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/generic_secret#disable_read GenericSecret#disable_read}
 
 ---
 
@@ -1019,7 +1019,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#id GenericSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/generic_secret#id GenericSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1036,7 +1036,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/generic_secret#namespace GenericSecret#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/generic_secret#namespace GenericSecret#namespace}
 
 ---
 

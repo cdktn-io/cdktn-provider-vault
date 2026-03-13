@@ -4,7 +4,7 @@
 
 ### IdentityMfaPingid <a name="IdentityMfaPingid" id="@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingid"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_pingid vault_identity_mfa_pingid}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingid.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the IdentityMfaPingid to impor
 
 The id of the existing IdentityMfaPingid that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_pingid#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_pingid#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -947,7 +947,7 @@ const identityMfaPingidConfig: identityMfaPingid.IdentityMfaPingidConfig = { ...
 | <code><a href="#@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingidConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingidConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingidConfig.property.settingsFileBase64">settingsFileBase64</a></code> | <code>string</code> | A base64-encoded third-party settings contents as retrieved from PingID's configuration page. |
-| <code><a href="#@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingidConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_pingid#id IdentityMfaPingid#id}. |
+| <code><a href="#@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingidConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_pingid#id IdentityMfaPingid#id}. |
 | <code><a href="#@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingidConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.identityMfaPingid.IdentityMfaPingidConfig.property.usernameFormat">usernameFormat</a></code> | <code>string</code> | A template string for mapping Identity names to MFA methods. |
 
@@ -1033,7 +1033,7 @@ public readonly settingsFileBase64: string;
 
 A base64-encoded third-party settings contents as retrieved from PingID's configuration page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_pingid#settings_file_base64 IdentityMfaPingid#settings_file_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_pingid#settings_file_base64 IdentityMfaPingid#settings_file_base64}
 
 ---
 
@@ -1045,7 +1045,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_pingid#id IdentityMfaPingid#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_pingid#id IdentityMfaPingid#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1062,7 +1062,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_pingid#namespace IdentityMfaPingid#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_pingid#namespace IdentityMfaPingid#namespace}
 
 ---
 
@@ -1076,7 +1076,7 @@ public readonly usernameFormat: string;
 
 A template string for mapping Identity names to MFA methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_mfa_pingid#username_format IdentityMfaPingid#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_mfa_pingid#username_format IdentityMfaPingid#username_format}
 
 ---
 

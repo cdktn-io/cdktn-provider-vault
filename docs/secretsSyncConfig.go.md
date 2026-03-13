@@ -4,7 +4,7 @@
 
 ### SecretsSyncConfig <a name="SecretsSyncConfig" id="@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_config vault_secrets_sync_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_config vault_secrets_sync_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfig.Initializer"></a>
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the SecretsSyncConfig to impor
 
 The id of the existing SecretsSyncConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -834,7 +834,7 @@ import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncconfig"
 | <code><a href="#@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | Disables the syncing process between Vault and external destinations. |
-| <code><a href="#@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.property.queueCapacity">QueueCapacity</a></code> | <code>*f64</code> | Maximum number of pending sync operations allowed on the queue. |
 
@@ -920,7 +920,7 @@ Disabled interface{}
 
 Disables the syncing process between Vault and external destinations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_config#disabled SecretsSyncConfig#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_config#disabled SecretsSyncConfig#disabled}
 
 ---
 
@@ -932,7 +932,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_config#id SecretsSyncConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -949,7 +949,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_config#namespace SecretsSyncConfig#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_config#namespace SecretsSyncConfig#namespace}
 
 ---
 
@@ -963,7 +963,7 @@ QueueCapacity *f64
 
 Maximum number of pending sync operations allowed on the queue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_config#queue_capacity SecretsSyncConfig#queue_capacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_config#queue_capacity SecretsSyncConfig#queue_capacity}
 
 ---
 

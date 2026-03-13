@@ -4,7 +4,7 @@
 
 ### ApproleAuthBackendLogin <a name="ApproleAuthBackendLogin" id="@cdktn/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLogin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login vault_approle_auth_backend_login}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/approle_auth_backend_login vault_approle_auth_backend_login}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLogin.Initializer"></a>
 
@@ -531,7 +531,7 @@ The construct id used in the generated config for the ApproleAuthBackendLogin to
 
 The id of the existing ApproleAuthBackendLogin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/approle_auth_backend_login#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -995,7 +995,7 @@ import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/approleauthbackend
 | <code><a href="#@cdktn/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLoginConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLoginConfig.property.roleId">RoleId</a></code> | <code>*string</code> | The RoleID to log in with. |
 | <code><a href="#@cdktn/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLoginConfig.property.backend">Backend</a></code> | <code>*string</code> | Unique name of the auth backend to configure. |
-| <code><a href="#@cdktn/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLoginConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#id ApproleAuthBackendLogin#id}. |
+| <code><a href="#@cdktn/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLoginConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/approle_auth_backend_login#id ApproleAuthBackendLogin#id}. |
 | <code><a href="#@cdktn/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLoginConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLoginConfig.property.secretId">SecretId</a></code> | <code>*string</code> | The SecretID to log in with. Required unless `bind_secret_id` is set to false on the role. |
 | <code><a href="#@cdktn/provider-vault.approleAuthBackendLogin.ApproleAuthBackendLoginConfig.property.secretIdWo">SecretIdWo</a></code> | <code>*string</code> | The SecretID to log in with. |
@@ -1083,7 +1083,7 @@ RoleId *string
 
 The RoleID to log in with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#role_id ApproleAuthBackendLogin#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/approle_auth_backend_login#role_id ApproleAuthBackendLogin#role_id}
 
 ---
 
@@ -1097,7 +1097,7 @@ Backend *string
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#backend ApproleAuthBackendLogin#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/approle_auth_backend_login#backend ApproleAuthBackendLogin#backend}
 
 ---
 
@@ -1109,7 +1109,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#id ApproleAuthBackendLogin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/approle_auth_backend_login#id ApproleAuthBackendLogin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1126,7 +1126,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#namespace ApproleAuthBackendLogin#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/approle_auth_backend_login#namespace ApproleAuthBackendLogin#namespace}
 
 ---
 
@@ -1140,7 +1140,7 @@ SecretId *string
 
 The SecretID to log in with. Required unless `bind_secret_id` is set to false on the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#secret_id ApproleAuthBackendLogin#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/approle_auth_backend_login#secret_id ApproleAuthBackendLogin#secret_id}
 
 ---
 
@@ -1156,7 +1156,7 @@ The SecretID to log in with.
 
 Write-only attribute that can accept ephemeral values. Required unless `bind_secret_id` is set to false on the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#secret_id_wo ApproleAuthBackendLogin#secret_id_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/approle_auth_backend_login#secret_id_wo ApproleAuthBackendLogin#secret_id_wo}
 
 ---
 
@@ -1170,7 +1170,7 @@ SecretIdWoVersion *f64
 
 Version counter for the write-only secret_id field. Increment this to trigger re-authentication with a new SecretID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/approle_auth_backend_login#secret_id_wo_version ApproleAuthBackendLogin#secret_id_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/approle_auth_backend_login#secret_id_wo_version ApproleAuthBackendLogin#secret_id_wo_version}
 
 ---
 
