@@ -4,7 +4,7 @@
 
 ### ScepAuthBackendRole <a name="ScepAuthBackendRole" id="@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role vault_scep_auth_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRole.Initializer"></a>
 
@@ -594,7 +594,7 @@ The construct id used in the generated config for the ScepAuthBackendRole to imp
 
 The id of the existing ScepAuthBackendRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1184,13 +1184,13 @@ const scepAuthBackendRoleConfig: scepAuthBackendRole.ScepAuthBackendRoleConfig =
 | <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.authType">authType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#auth_type ScepAuthBackendRole#auth_type}. |
-| <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#name ScepAuthBackendRole#name}. |
+| <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.authType">authType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#auth_type ScepAuthBackendRole#auth_type}. |
+| <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#name ScepAuthBackendRole#name}. |
 | <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.aliasMetadata">aliasMetadata</a></code> | <code>{[ key: string ]: string}</code> | The metadata to be tied to generated entity alias. |
-| <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.backend">backend</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#backend ScepAuthBackendRole#backend}. |
-| <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.challenge">challenge</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#challenge ScepAuthBackendRole#challenge}. |
-| <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#display_name ScepAuthBackendRole#display_name}. |
-| <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#id ScepAuthBackendRole#id}. |
+| <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.backend">backend</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#backend ScepAuthBackendRole#backend}. |
+| <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.challenge">challenge</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#challenge ScepAuthBackendRole#challenge}. |
+| <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.displayName">displayName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#display_name ScepAuthBackendRole#display_name}. |
+| <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#id ScepAuthBackendRole#id}. |
 | <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.tokenBoundCidrs">tokenBoundCidrs</a></code> | <code>string[]</code> | Specifies the blocks of IP addresses which are allowed to use the generated token. |
 | <code><a href="#@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.property.tokenExplicitMaxTtl">tokenExplicitMaxTtl</a></code> | <code>number</code> | Generated Token's Explicit Maximum TTL in seconds. |
@@ -1282,7 +1282,7 @@ public readonly authType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#auth_type ScepAuthBackendRole#auth_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#auth_type ScepAuthBackendRole#auth_type}.
 
 ---
 
@@ -1294,7 +1294,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#name ScepAuthBackendRole#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#name ScepAuthBackendRole#name}.
 
 ---
 
@@ -1310,7 +1310,7 @@ The metadata to be tied to generated entity alias.
 
 This should be a list or map containing the metadata in key value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#alias_metadata ScepAuthBackendRole#alias_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#alias_metadata ScepAuthBackendRole#alias_metadata}
 
 ---
 
@@ -1322,7 +1322,7 @@ public readonly backend: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#backend ScepAuthBackendRole#backend}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#backend ScepAuthBackendRole#backend}.
 
 ---
 
@@ -1334,7 +1334,7 @@ public readonly challenge: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#challenge ScepAuthBackendRole#challenge}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#challenge ScepAuthBackendRole#challenge}.
 
 ---
 
@@ -1346,7 +1346,7 @@ public readonly displayName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#display_name ScepAuthBackendRole#display_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#display_name ScepAuthBackendRole#display_name}.
 
 ---
 
@@ -1358,7 +1358,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#id ScepAuthBackendRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#id ScepAuthBackendRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1375,7 +1375,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#namespace ScepAuthBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#namespace ScepAuthBackendRole#namespace}
 
 ---
 
@@ -1389,7 +1389,7 @@ public readonly tokenBoundCidrs: string[];
 
 Specifies the blocks of IP addresses which are allowed to use the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#token_bound_cidrs ScepAuthBackendRole#token_bound_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#token_bound_cidrs ScepAuthBackendRole#token_bound_cidrs}
 
 ---
 
@@ -1403,7 +1403,7 @@ public readonly tokenExplicitMaxTtl: number;
 
 Generated Token's Explicit Maximum TTL in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#token_explicit_max_ttl ScepAuthBackendRole#token_explicit_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#token_explicit_max_ttl ScepAuthBackendRole#token_explicit_max_ttl}
 
 ---
 
@@ -1417,7 +1417,7 @@ public readonly tokenMaxTtl: number;
 
 The maximum lifetime of the generated token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#token_max_ttl ScepAuthBackendRole#token_max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#token_max_ttl ScepAuthBackendRole#token_max_ttl}
 
 ---
 
@@ -1431,7 +1431,7 @@ public readonly tokenNoDefaultPolicy: boolean | IResolvable;
 
 If true, the 'default' policy will not automatically be added to generated tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#token_no_default_policy ScepAuthBackendRole#token_no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#token_no_default_policy ScepAuthBackendRole#token_no_default_policy}
 
 ---
 
@@ -1445,7 +1445,7 @@ public readonly tokenNumUses: number;
 
 The maximum number of times a token may be used, a value of zero means unlimited.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#token_num_uses ScepAuthBackendRole#token_num_uses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#token_num_uses ScepAuthBackendRole#token_num_uses}
 
 ---
 
@@ -1459,7 +1459,7 @@ public readonly tokenPeriod: number;
 
 Generated Token's Period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#token_period ScepAuthBackendRole#token_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#token_period ScepAuthBackendRole#token_period}
 
 ---
 
@@ -1473,7 +1473,7 @@ public readonly tokenPolicies: string[];
 
 Generated Token's Policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#token_policies ScepAuthBackendRole#token_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#token_policies ScepAuthBackendRole#token_policies}
 
 ---
 
@@ -1487,7 +1487,7 @@ public readonly tokenTtl: number;
 
 The initial ttl of the token to generate in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#token_ttl ScepAuthBackendRole#token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#token_ttl ScepAuthBackendRole#token_ttl}
 
 ---
 
@@ -1501,7 +1501,7 @@ public readonly tokenType: string;
 
 The type of token to generate, service or batch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/scep_auth_backend_role#token_type ScepAuthBackendRole#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/scep_auth_backend_role#token_type ScepAuthBackendRole#token_type}
 
 ---
 

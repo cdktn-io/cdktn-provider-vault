@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend
+// https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,39 +16,57 @@ export interface OktaAuthBackendConfig extends cdktn.TerraformMetaArguments {
   * The metadata to be tied to generated entity alias.
   *   This should be a list or map containing the metadata in key value pairs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#alias_metadata OktaAuthBackend#alias_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#alias_metadata OktaAuthBackend#alias_metadata}
   */
   readonly aliasMetadata?: { [key: string]: string };
   /**
+  * The Okta API token. This is required to query Okta for user group membership. If this is not supplied only locally configured groups will be enabled.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#api_token OktaAuthBackend#api_token}
+  */
+  readonly apiToken?: string;
+  /**
+  * Write-only Okta API token. This is required to query Okta for user group membership. If this is not supplied only locally configured groups will be enabled.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#api_token_wo OktaAuthBackend#api_token_wo}
+  */
+  readonly apiTokenWo?: string;
+  /**
+  * Version counter for write-only api_token.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#api_token_wo_version OktaAuthBackend#api_token_wo_version}
+  */
+  readonly apiTokenWoVersion?: number;
+  /**
   * The Okta url. Examples: oktapreview.com, okta.com (default)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#base_url OktaAuthBackend#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#base_url OktaAuthBackend#base_url}
   */
   readonly baseUrl?: string;
   /**
   * When true, requests by Okta for a MFA check will be bypassed. This also disallows certain status checks on the account, such as whether the password is expired.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#bypass_okta_mfa OktaAuthBackend#bypass_okta_mfa}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#bypass_okta_mfa OktaAuthBackend#bypass_okta_mfa}
   */
   readonly bypassOktaMfa?: boolean | cdktn.IResolvable;
   /**
   * The description of the auth backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#description OktaAuthBackend#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#description OktaAuthBackend#description}
   */
   readonly description?: string;
   /**
   * If set, opts out of mount migration on path updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#disable_remount OktaAuthBackend#disable_remount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#disable_remount OktaAuthBackend#disable_remount}
   */
   readonly disableRemount?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#group OktaAuthBackend#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#group OktaAuthBackend#group}
   */
   readonly group?: OktaAuthBackendGroup[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#id OktaAuthBackend#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#id OktaAuthBackend#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -57,97 +75,103 @@ export interface OktaAuthBackendConfig extends cdktn.TerraformMetaArguments {
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#namespace OktaAuthBackend#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#namespace OktaAuthBackend#namespace}
   */
   readonly namespace?: string;
   /**
   * The Okta organization. This will be the first part of the url https://XXX.okta.com.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#organization OktaAuthBackend#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#org_name OktaAuthBackend#org_name}
   */
-  readonly organization: string;
+  readonly orgName?: string;
+  /**
+  * The Okta organization. This will be the first part of the url https://XXX.okta.com. Use org_name instead.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#organization OktaAuthBackend#organization}
+  */
+  readonly organization?: string;
   /**
   * path to mount the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#path OktaAuthBackend#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#path OktaAuthBackend#path}
   */
   readonly path?: string;
   /**
-  * The Okta API token. This is required to query Okta for user group membership. If this is not supplied only locally configured groups will be enabled.
+  * The Okta API token. This is required to query Okta for user group membership. If this is not supplied only locally configured groups will be enabled. Use api_token instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token OktaAuthBackend#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#token OktaAuthBackend#token}
   */
   readonly token?: string;
   /**
   * Specifies the blocks of IP addresses which are allowed to use the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_bound_cidrs OktaAuthBackend#token_bound_cidrs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#token_bound_cidrs OktaAuthBackend#token_bound_cidrs}
   */
   readonly tokenBoundCidrs?: string[];
   /**
   * Generated Token's Explicit Maximum TTL in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_explicit_max_ttl OktaAuthBackend#token_explicit_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#token_explicit_max_ttl OktaAuthBackend#token_explicit_max_ttl}
   */
   readonly tokenExplicitMaxTtl?: number;
   /**
   * The maximum lifetime of the generated token
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_max_ttl OktaAuthBackend#token_max_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#token_max_ttl OktaAuthBackend#token_max_ttl}
   */
   readonly tokenMaxTtl?: number;
   /**
   * If true, the 'default' policy will not automatically be added to generated tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_no_default_policy OktaAuthBackend#token_no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#token_no_default_policy OktaAuthBackend#token_no_default_policy}
   */
   readonly tokenNoDefaultPolicy?: boolean | cdktn.IResolvable;
   /**
   * The maximum number of times a token may be used, a value of zero means unlimited
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_num_uses OktaAuthBackend#token_num_uses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#token_num_uses OktaAuthBackend#token_num_uses}
   */
   readonly tokenNumUses?: number;
   /**
   * Generated Token's Period
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_period OktaAuthBackend#token_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#token_period OktaAuthBackend#token_period}
   */
   readonly tokenPeriod?: number;
   /**
   * Generated Token's Policies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_policies OktaAuthBackend#token_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#token_policies OktaAuthBackend#token_policies}
   */
   readonly tokenPolicies?: string[];
   /**
   * The initial ttl of the token to generate in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_ttl OktaAuthBackend#token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#token_ttl OktaAuthBackend#token_ttl}
   */
   readonly tokenTtl?: number;
   /**
   * The type of token to generate, service or batch
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_type OktaAuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#token_type OktaAuthBackend#token_type}
   */
   readonly tokenType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#tune OktaAuthBackend#tune}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#tune OktaAuthBackend#tune}
   */
   readonly tune?: OktaAuthBackendTune[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#user OktaAuthBackend#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#user OktaAuthBackend#user}
   */
   readonly user?: OktaAuthBackendUser[] | cdktn.IResolvable;
 }
 export interface OktaAuthBackendGroup {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#group_name OktaAuthBackend#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#group_name OktaAuthBackend#group_name}
   */
   readonly groupName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}
   */
   readonly policies?: string[];
 }
@@ -292,35 +316,35 @@ export class OktaAuthBackendGroupList extends cdktn.ComplexList {
 }
 export interface OktaAuthBackendTune {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#allowed_response_headers OktaAuthBackend#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#allowed_response_headers OktaAuthBackend#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#audit_non_hmac_request_keys OktaAuthBackend#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#audit_non_hmac_request_keys OktaAuthBackend#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#audit_non_hmac_response_keys OktaAuthBackend#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#audit_non_hmac_response_keys OktaAuthBackend#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#default_lease_ttl OktaAuthBackend#default_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#default_lease_ttl OktaAuthBackend#default_lease_ttl}
   */
   readonly defaultLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#listing_visibility OktaAuthBackend#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#listing_visibility OktaAuthBackend#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#max_lease_ttl OktaAuthBackend#max_lease_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#max_lease_ttl OktaAuthBackend#max_lease_ttl}
   */
   readonly maxLeaseTtl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#passthrough_request_headers OktaAuthBackend#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#passthrough_request_headers OktaAuthBackend#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#token_type OktaAuthBackend#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#token_type OktaAuthBackend#token_type}
   */
   readonly tokenType?: string;
 }
@@ -639,15 +663,15 @@ export class OktaAuthBackendTuneList extends cdktn.ComplexList {
 }
 export interface OktaAuthBackendUser {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#groups OktaAuthBackend#groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#groups OktaAuthBackend#groups}
   */
   readonly groups?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#policies OktaAuthBackend#policies}
   */
   readonly policies?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#username OktaAuthBackend#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#username OktaAuthBackend#username}
   */
   readonly username?: string;
 }
@@ -821,7 +845,7 @@ export class OktaAuthBackendUserList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend vault_okta_auth_backend}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend vault_okta_auth_backend}
 */
 export class OktaAuthBackend extends cdktn.TerraformResource {
 
@@ -837,7 +861,7 @@ export class OktaAuthBackend extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OktaAuthBackend resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OktaAuthBackend to import
-  * @param importFromId The id of the existing OktaAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OktaAuthBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OktaAuthBackend to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -849,18 +873,18 @@ export class OktaAuthBackend extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/okta_auth_backend vault_okta_auth_backend} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options OktaAuthBackendConfig
+  * @param options OktaAuthBackendConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: OktaAuthBackendConfig) {
+  public constructor(scope: Construct, id: string, config: OktaAuthBackendConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'vault_okta_auth_backend',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.7.0',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -872,6 +896,9 @@ export class OktaAuthBackend extends cdktn.TerraformResource {
       forEach: config.forEach
     });
     this._aliasMetadata = config.aliasMetadata;
+    this._apiToken = config.apiToken;
+    this._apiTokenWo = config.apiTokenWo;
+    this._apiTokenWoVersion = config.apiTokenWoVersion;
     this._baseUrl = config.baseUrl;
     this._bypassOktaMfa = config.bypassOktaMfa;
     this._description = config.description;
@@ -879,6 +906,7 @@ export class OktaAuthBackend extends cdktn.TerraformResource {
     this._group.internalValue = config.group;
     this._id = config.id;
     this._namespace = config.namespace;
+    this._orgName = config.orgName;
     this._organization = config.organization;
     this._path = config.path;
     this._token = config.token;
@@ -918,6 +946,54 @@ export class OktaAuthBackend extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get aliasMetadataInput() {
     return this._aliasMetadata;
+  }
+
+  // api_token - computed: false, optional: true, required: false
+  private _apiToken?: string; 
+  public get apiToken() {
+    return this.getStringAttribute('api_token');
+  }
+  public set apiToken(value: string) {
+    this._apiToken = value;
+  }
+  public resetApiToken() {
+    this._apiToken = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiTokenInput() {
+    return this._apiToken;
+  }
+
+  // api_token_wo - computed: false, optional: true, required: false
+  private _apiTokenWo?: string; 
+  public get apiTokenWo() {
+    return this.getStringAttribute('api_token_wo');
+  }
+  public set apiTokenWo(value: string) {
+    this._apiTokenWo = value;
+  }
+  public resetApiTokenWo() {
+    this._apiTokenWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiTokenWoInput() {
+    return this._apiTokenWo;
+  }
+
+  // api_token_wo_version - computed: false, optional: true, required: false
+  private _apiTokenWoVersion?: number; 
+  public get apiTokenWoVersion() {
+    return this.getNumberAttribute('api_token_wo_version');
+  }
+  public set apiTokenWoVersion(value: number) {
+    this._apiTokenWoVersion = value;
+  }
+  public resetApiTokenWoVersion() {
+    this._apiTokenWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiTokenWoVersionInput() {
+    return this._apiTokenWoVersion;
   }
 
   // base_url - computed: false, optional: true, required: false
@@ -1032,13 +1108,32 @@ export class OktaAuthBackend extends cdktn.TerraformResource {
     return this._namespace;
   }
 
-  // organization - computed: false, optional: false, required: true
+  // org_name - computed: true, optional: true, required: false
+  private _orgName?: string; 
+  public get orgName() {
+    return this.getStringAttribute('org_name');
+  }
+  public set orgName(value: string) {
+    this._orgName = value;
+  }
+  public resetOrgName() {
+    this._orgName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orgNameInput() {
+    return this._orgName;
+  }
+
+  // organization - computed: true, optional: true, required: false
   private _organization?: string; 
   public get organization() {
     return this.getStringAttribute('organization');
   }
   public set organization(value: string) {
     this._organization = value;
+  }
+  public resetOrganization() {
+    this._organization = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get organizationInput() {
@@ -1260,6 +1355,9 @@ export class OktaAuthBackend extends cdktn.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       alias_metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._aliasMetadata),
+      api_token: cdktn.stringToTerraform(this._apiToken),
+      api_token_wo: cdktn.stringToTerraform(this._apiTokenWo),
+      api_token_wo_version: cdktn.numberToTerraform(this._apiTokenWoVersion),
       base_url: cdktn.stringToTerraform(this._baseUrl),
       bypass_okta_mfa: cdktn.booleanToTerraform(this._bypassOktaMfa),
       description: cdktn.stringToTerraform(this._description),
@@ -1267,6 +1365,7 @@ export class OktaAuthBackend extends cdktn.TerraformResource {
       group: cdktn.listMapper(oktaAuthBackendGroupToTerraform, false)(this._group.internalValue),
       id: cdktn.stringToTerraform(this._id),
       namespace: cdktn.stringToTerraform(this._namespace),
+      org_name: cdktn.stringToTerraform(this._orgName),
       organization: cdktn.stringToTerraform(this._organization),
       path: cdktn.stringToTerraform(this._path),
       token: cdktn.stringToTerraform(this._token),
@@ -1291,6 +1390,24 @@ export class OktaAuthBackend extends cdktn.TerraformResource {
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",
+      },
+      api_token: {
+        value: cdktn.stringToHclTerraform(this._apiToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_token_wo: {
+        value: cdktn.stringToHclTerraform(this._apiTokenWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      api_token_wo_version: {
+        value: cdktn.numberToHclTerraform(this._apiTokenWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       base_url: {
         value: cdktn.stringToHclTerraform(this._baseUrl),
@@ -1330,6 +1447,12 @@ export class OktaAuthBackend extends cdktn.TerraformResource {
       },
       namespace: {
         value: cdktn.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      org_name: {
+        value: cdktn.stringToHclTerraform(this._orgName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

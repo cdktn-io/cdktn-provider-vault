@@ -4,7 +4,7 @@
 
 ### ManagedKeys <a name="ManagedKeys" id="@cdktn/provider-vault.managedKeys.ManagedKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys vault_managed_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys vault_managed_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer"></a>
 
@@ -23,6 +23,7 @@ managedKeys.ManagedKeys(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   aws: IResolvable | typing.List[ManagedKeysAws] = None,
   azure: IResolvable | typing.List[ManagedKeysAzure] = None,
+  gcp: IResolvable | typing.List[ManagedKeysGcp] = None,
   id: str = None,
   namespace: str = None,
   pkcs: IResolvable | typing.List[ManagedKeysPkcs] = None
@@ -42,7 +43,8 @@ managedKeys.ManagedKeys(
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.aws">aws</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]</code> | aws block. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.azure">azure</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]</code> | azure block. |
-| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#id ManagedKeys#id}. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.gcp">gcp</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a>]</code> | gcp block. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#id ManagedKeys#id}. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.pkcs">pkcs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]</code> | pkcs block. |
 
@@ -114,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#aws ManagedKeys#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#aws ManagedKeys#aws}
 
 ---
 
@@ -124,7 +126,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#azure ManagedKeys#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#azure ManagedKeys#azure}
+
+---
+
+##### `gcp`<sup>Optional</sup> <a name="gcp" id="@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.gcp"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a>]
+
+gcp block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#gcp ManagedKeys#gcp}
 
 ---
 
@@ -132,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#id ManagedKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#id ManagedKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
 
 ---
 
@@ -155,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 pkcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
 
 ---
 
@@ -189,9 +201,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.putAws">put_aws</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.putAzure">put_azure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.putGcp">put_gcp</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.putPkcs">put_pkcs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.resetAws">reset_aws</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.resetAzure">reset_azure</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.resetGcp">reset_gcp</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.resetNamespace">reset_namespace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.resetPkcs">reset_pkcs</a></code> | *No description.* |
@@ -574,6 +588,20 @@ def put_azure(
 
 ---
 
+##### `put_gcp` <a name="put_gcp" id="@cdktn/provider-vault.managedKeys.ManagedKeys.putGcp"></a>
+
+```python
+def put_gcp(
+  value: IResolvable | typing.List[ManagedKeysGcp]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-vault.managedKeys.ManagedKeys.putGcp.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a>]
+
+---
+
 ##### `put_pkcs` <a name="put_pkcs" id="@cdktn/provider-vault.managedKeys.ManagedKeys.putPkcs"></a>
 
 ```python
@@ -598,6 +626,12 @@ def reset_aws() -> None
 
 ```python
 def reset_azure() -> None
+```
+
+##### `reset_gcp` <a name="reset_gcp" id="@cdktn/provider-vault.managedKeys.ManagedKeys.resetGcp"></a>
+
+```python
+def reset_gcp() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-vault.managedKeys.ManagedKeys.resetId"></a>
@@ -732,7 +766,7 @@ The construct id used in the generated config for the ManagedKeys to import.
 
 The id of the existing ManagedKeys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -764,9 +798,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.property.aws">aws</a></code> | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsList">ManagedKeysAwsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.property.azure">azure</a></code> | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureList">ManagedKeysAzureList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.property.gcp">gcp</a></code> | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpList">ManagedKeysGcpList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.property.pkcs">pkcs</a></code> | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsList">ManagedKeysPkcsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.property.awsInput">aws_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.property.azureInput">azure_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.property.gcpInput">gcp_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.property.pkcsInput">pkcs_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]</code> | *No description.* |
@@ -937,6 +973,16 @@ azure: ManagedKeysAzureList
 
 ---
 
+##### `gcp`<sup>Required</sup> <a name="gcp" id="@cdktn/provider-vault.managedKeys.ManagedKeys.property.gcp"></a>
+
+```python
+gcp: ManagedKeysGcpList
+```
+
+- *Type:* <a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpList">ManagedKeysGcpList</a>
+
+---
+
 ##### `pkcs`<sup>Required</sup> <a name="pkcs" id="@cdktn/provider-vault.managedKeys.ManagedKeys.property.pkcs"></a>
 
 ```python
@@ -964,6 +1010,16 @@ azure_input: IResolvable | typing.List[ManagedKeysAzure]
 ```
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]
+
+---
+
+##### `gcp_input`<sup>Optional</sup> <a name="gcp_input" id="@cdktn/provider-vault.managedKeys.ManagedKeys.property.gcpInput"></a>
+
+```python
+gcp_input: IResolvable | typing.List[ManagedKeysGcp]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a>]
 
 ---
 
@@ -1091,7 +1147,7 @@ access_key: str
 
 The AWS access key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#access_key ManagedKeys#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#access_key ManagedKeys#access_key}
 
 ---
 
@@ -1105,7 +1161,7 @@ key_bits: str
 
 The size in bits for an RSA key. This field is required when 'key_type' is 'RSA'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
 
 ---
 
@@ -1119,7 +1175,7 @@ key_type: str
 
 The type of key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
 
 ---
 
@@ -1133,7 +1189,7 @@ kms_key: str
 
 An identifier for the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#kms_key ManagedKeys#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#kms_key ManagedKeys#kms_key}
 
 ---
 
@@ -1147,7 +1203,7 @@ name: str
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -1161,7 +1217,7 @@ secret_key: str
 
 The AWS secret key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#secret_key ManagedKeys#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#secret_key ManagedKeys#secret_key}
 
 ---
 
@@ -1175,7 +1231,7 @@ allow_generate_key: bool | IResolvable
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -1189,7 +1245,7 @@ allow_replace_key: bool | IResolvable
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -1203,7 +1259,7 @@ allow_store_key: bool | IResolvable
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -1217,7 +1273,7 @@ any_mount: bool | IResolvable
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
 
 ---
 
@@ -1231,7 +1287,7 @@ curve: str
 
 The curve to use for an ECDSA key. Used when key_type is 'ECDSA'. Required if 'allow_generate_key' is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#curve ManagedKeys#curve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#curve ManagedKeys#curve}
 
 ---
 
@@ -1245,7 +1301,7 @@ endpoint: str
 
 Used to specify a custom AWS endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#endpoint ManagedKeys#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#endpoint ManagedKeys#endpoint}
 
 ---
 
@@ -1259,7 +1315,7 @@ region: str
 
 The AWS region where the keys are stored (or will be stored).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#region ManagedKeys#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#region ManagedKeys#region}
 
 ---
 
@@ -1319,7 +1375,7 @@ client_id: str
 
 The client id for credentials to query the Azure APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#client_id ManagedKeys#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#client_id ManagedKeys#client_id}
 
 ---
 
@@ -1333,7 +1389,7 @@ client_secret: str
 
 The client secret for credentials to query the Azure APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#client_secret ManagedKeys#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#client_secret ManagedKeys#client_secret}
 
 ---
 
@@ -1347,7 +1403,7 @@ key_name: str
 
 The Key Vault key to use for encryption and decryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_name ManagedKeys#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#key_name ManagedKeys#key_name}
 
 ---
 
@@ -1361,7 +1417,7 @@ key_type: str
 
 The type of key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
 
 ---
 
@@ -1375,7 +1431,7 @@ name: str
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -1389,7 +1445,7 @@ tenant_id: str
 
 The tenant id for the Azure Active Directory organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#tenant_id ManagedKeys#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#tenant_id ManagedKeys#tenant_id}
 
 ---
 
@@ -1403,7 +1459,7 @@ vault_name: str
 
 The Key Vault vault to use the encryption keys for encryption and decryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#vault_name ManagedKeys#vault_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#vault_name ManagedKeys#vault_name}
 
 ---
 
@@ -1417,7 +1473,7 @@ allow_generate_key: bool | IResolvable
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -1431,7 +1487,7 @@ allow_replace_key: bool | IResolvable
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -1445,7 +1501,7 @@ allow_store_key: bool | IResolvable
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -1459,7 +1515,7 @@ any_mount: bool | IResolvable
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
 
 ---
 
@@ -1473,7 +1529,7 @@ environment: str
 
 The Azure Cloud environment API endpoints to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#environment ManagedKeys#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#environment ManagedKeys#environment}
 
 ---
 
@@ -1489,7 +1545,7 @@ The size in bits for an RSA key.
 
 This field is required when 'key_type' is 'RSA' or when 'allow_generate_key' is true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
 
 ---
 
@@ -1503,7 +1559,7 @@ resource: str
 
 The Azure Key Vault resource's DNS Suffix to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#resource ManagedKeys#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#resource ManagedKeys#resource}
 
 ---
 
@@ -1524,6 +1580,7 @@ managedKeys.ManagedKeysConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   aws: IResolvable | typing.List[ManagedKeysAws] = None,
   azure: IResolvable | typing.List[ManagedKeysAzure] = None,
+  gcp: IResolvable | typing.List[ManagedKeysGcp] = None,
   id: str = None,
   namespace: str = None,
   pkcs: IResolvable | typing.List[ManagedKeysPkcs] = None
@@ -1543,7 +1600,8 @@ managedKeys.ManagedKeysConfig(
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.aws">aws</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>]</code> | aws block. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.azure">azure</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>]</code> | azure block. |
-| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#id ManagedKeys#id}. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.gcp">gcp</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a>]</code> | gcp block. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#id ManagedKeys#id}. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.pkcs">pkcs</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>]</code> | pkcs block. |
 
@@ -1629,7 +1687,7 @@ aws: IResolvable | typing.List[ManagedKeysAws]
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#aws ManagedKeys#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#aws ManagedKeys#aws}
 
 ---
 
@@ -1643,7 +1701,21 @@ azure: IResolvable | typing.List[ManagedKeysAzure]
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#azure ManagedKeys#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#azure ManagedKeys#azure}
+
+---
+
+##### `gcp`<sup>Optional</sup> <a name="gcp" id="@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.gcp"></a>
+
+```python
+gcp: IResolvable | typing.List[ManagedKeysGcp]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a>]
+
+gcp block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#gcp ManagedKeys#gcp}
 
 ---
 
@@ -1655,7 +1727,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#id ManagedKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#id ManagedKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1672,7 +1744,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
 
 ---
 
@@ -1686,7 +1758,221 @@ pkcs: IResolvable | typing.List[ManagedKeysPkcs]
 
 pkcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
+
+---
+
+### ManagedKeysGcp <a name="ManagedKeysGcp" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.Initializer"></a>
+
+```python
+from cdktn_provider_vault import managed_keys
+
+managedKeys.ManagedKeysGcp(
+  algorithm: str,
+  credentials: str,
+  crypto_key: str,
+  key_ring: str,
+  name: str,
+  project: str,
+  region: str,
+  allow_generate_key: bool | IResolvable = None,
+  allow_replace_key: bool | IResolvable = None,
+  allow_store_key: bool | IResolvable = None,
+  any_mount: bool | IResolvable = None,
+  crypto_key_version: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.algorithm">algorithm</a></code> | <code>str</code> | The signature algorithm to be used with the key. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.credentials">credentials</a></code> | <code>str</code> | The GCP service account credentials JSON to use for authenticating to GCP. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.cryptoKey">crypto_key</a></code> | <code>str</code> | The name of the GCP Cloud KMS key. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.keyRing">key_ring</a></code> | <code>str</code> | The name of the key ring in GCP Cloud KMS. This needs to be created prior to key creation. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.name">name</a></code> | <code>str</code> | A unique lowercase name that serves as identifying the key. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.project">project</a></code> | <code>str</code> | The GCP project ID. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.region">region</a></code> | <code>str</code> | The GCP region where the key ring was created. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.allowGenerateKey">allow_generate_key</a></code> | <code>bool \| cdktn.IResolvable</code> | If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.allowReplaceKey">allow_replace_key</a></code> | <code>bool \| cdktn.IResolvable</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.allowStoreKey">allow_store_key</a></code> | <code>bool \| cdktn.IResolvable</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.anyMount">any_mount</a></code> | <code>bool \| cdktn.IResolvable</code> | Allow usage from any mount point within the namespace if 'true'. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.cryptoKeyVersion">crypto_key_version</a></code> | <code>str</code> | The version of the key to use. (Default: 1). |
+
+---
+
+##### `algorithm`<sup>Required</sup> <a name="algorithm" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.algorithm"></a>
+
+```python
+algorithm: str
+```
+
+- *Type:* str
+
+The signature algorithm to be used with the key.
+
+Supported values: ec_sign_p256_sha256, ec_sign_p384_sha384, rsa_sign_pss_2048_sha256, rsa_sign_pss_3072_sha256, rsa_sign_pss_4096_sha256, rsa_sign_pss_4096_sha512, rsa_sign_pkcs1_2048_sha256, rsa_sign_pkcs1_3072_sha256, rsa_sign_pkcs1_4096_sha256, rsa_sign_pkcs1_4096_sha512
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#algorithm ManagedKeys#algorithm}
+
+---
+
+##### `credentials`<sup>Required</sup> <a name="credentials" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.credentials"></a>
+
+```python
+credentials: str
+```
+
+- *Type:* str
+
+The GCP service account credentials JSON to use for authenticating to GCP.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#credentials ManagedKeys#credentials}
+
+---
+
+##### `crypto_key`<sup>Required</sup> <a name="crypto_key" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.cryptoKey"></a>
+
+```python
+crypto_key: str
+```
+
+- *Type:* str
+
+The name of the GCP Cloud KMS key.
+
+If no existing key exists and allow_generate_key is true, Vault will generate a key with this name
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#crypto_key ManagedKeys#crypto_key}
+
+---
+
+##### `key_ring`<sup>Required</sup> <a name="key_ring" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.keyRing"></a>
+
+```python
+key_ring: str
+```
+
+- *Type:* str
+
+The name of the key ring in GCP Cloud KMS. This needs to be created prior to key creation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#key_ring ManagedKeys#key_ring}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+A unique lowercase name that serves as identifying the key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#name ManagedKeys#name}
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.project"></a>
+
+```python
+project: str
+```
+
+- *Type:* str
+
+The GCP project ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#project ManagedKeys#project}
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+The GCP region where the key ring was created.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#region ManagedKeys#region}
+
+---
+
+##### `allow_generate_key`<sup>Optional</sup> <a name="allow_generate_key" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.allowGenerateKey"></a>
+
+```python
+allow_generate_key: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+
+---
+
+##### `allow_replace_key`<sup>Optional</sup> <a name="allow_replace_key" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.allowReplaceKey"></a>
+
+```python
+allow_replace_key: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+
+---
+
+##### `allow_store_key`<sup>Optional</sup> <a name="allow_store_key" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.allowStoreKey"></a>
+
+```python
+allow_store_key: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+
+---
+
+##### `any_mount`<sup>Optional</sup> <a name="any_mount" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.anyMount"></a>
+
+```python
+any_mount: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Allow usage from any mount point within the namespace if 'true'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+
+---
+
+##### `crypto_key_version`<sup>Optional</sup> <a name="crypto_key_version" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.cryptoKeyVersion"></a>
+
+```python
+crypto_key_version: str
+```
+
+- *Type:* str
+
+The version of the key to use. (Default: 1).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#crypto_key_version ManagedKeys#crypto_key_version}
 
 ---
 
@@ -1748,7 +2034,7 @@ library: str
 
 The name of the kms_library stanza to use from Vault's config to lookup the local library path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#library ManagedKeys#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#library ManagedKeys#library}
 
 ---
 
@@ -1762,7 +2048,7 @@ mechanism: str
 
 The encryption/decryption mechanism to use, specified as a hexadecimal (prefixed by 0x) string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#mechanism ManagedKeys#mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#mechanism ManagedKeys#mechanism}
 
 ---
 
@@ -1776,7 +2062,7 @@ name: str
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -1790,7 +2076,7 @@ pin: str
 
 The PIN for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#pin ManagedKeys#pin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#pin ManagedKeys#pin}
 
 ---
 
@@ -1804,7 +2090,7 @@ allow_generate_key: bool | IResolvable
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -1818,7 +2104,7 @@ allow_replace_key: bool | IResolvable
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -1832,7 +2118,7 @@ allow_store_key: bool | IResolvable
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -1846,7 +2132,7 @@ any_mount: bool | IResolvable
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
 
 ---
 
@@ -1860,7 +2146,7 @@ curve: str
 
 Supplies the curve value when using the 'CKM_ECDSA' mechanism. Required if 'allow_generate_key' is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#curve ManagedKeys#curve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#curve ManagedKeys#curve}
 
 ---
 
@@ -1874,7 +2160,7 @@ force_rw_session: str
 
 Force all operations to open up a read-write session to the HSM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#force_rw_session ManagedKeys#force_rw_session}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#force_rw_session ManagedKeys#force_rw_session}
 
 ---
 
@@ -1890,7 +2176,7 @@ Supplies the size in bits of the key when using 'CKM_RSA_PKCS_PSS', 'CKM_RSA_PKC
 
 Required if 'allow_generate_key' is true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
 
 ---
 
@@ -1904,7 +2190,7 @@ key_id: str
 
 The id of a PKCS#11 key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_id ManagedKeys#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#key_id ManagedKeys#key_id}
 
 ---
 
@@ -1918,7 +2204,7 @@ key_label: str
 
 The label of the key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#key_label ManagedKeys#key_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#key_label ManagedKeys#key_label}
 
 ---
 
@@ -1932,7 +2218,7 @@ slot: str
 
 The slot number to use, specified as a string in a decimal format (e.g. '2305843009213693953').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#slot ManagedKeys#slot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#slot ManagedKeys#slot}
 
 ---
 
@@ -1946,7 +2232,7 @@ token_label: str
 
 The slot token label to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/managed_keys#token_label ManagedKeys#token_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/managed_keys#token_label ManagedKeys#token_label}
 
 ---
 
@@ -3590,6 +3876,780 @@ internal_value: IResolvable | ManagedKeysAzure
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>
+
+---
+
+
+### ManagedKeysGcpList <a name="ManagedKeysGcpList" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.Initializer"></a>
+
+```python
+from cdktn_provider_vault import managed_keys
+
+managedKeys.ManagedKeysGcpList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.get">get</a></code> | *No description.* |
+
+---
+
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.allWithMapKey"></a>
+
+```python
+def all_with_map_key(
+  map_key_attribute_name: str
+) -> DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* str
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> ManagedKeysGcpOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a>]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | typing.List[ManagedKeysGcp]
+```
+
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a>]
+
+---
+
+
+### ManagedKeysGcpOutputReference <a name="ManagedKeysGcpOutputReference" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_vault import managed_keys
+
+managedKeys.ManagedKeysGcpOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetAllowGenerateKey">reset_allow_generate_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetAllowReplaceKey">reset_allow_replace_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetAllowStoreKey">reset_allow_store_key</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetAnyMount">reset_any_mount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetCryptoKeyVersion">reset_crypto_key_version</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_allow_generate_key` <a name="reset_allow_generate_key" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetAllowGenerateKey"></a>
+
+```python
+def reset_allow_generate_key() -> None
+```
+
+##### `reset_allow_replace_key` <a name="reset_allow_replace_key" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetAllowReplaceKey"></a>
+
+```python
+def reset_allow_replace_key() -> None
+```
+
+##### `reset_allow_store_key` <a name="reset_allow_store_key" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetAllowStoreKey"></a>
+
+```python
+def reset_allow_store_key() -> None
+```
+
+##### `reset_any_mount` <a name="reset_any_mount" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetAnyMount"></a>
+
+```python
+def reset_any_mount() -> None
+```
+
+##### `reset_crypto_key_version` <a name="reset_crypto_key_version" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetCryptoKeyVersion"></a>
+
+```python
+def reset_crypto_key_version() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.uuid">uuid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.algorithmInput">algorithm_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowGenerateKeyInput">allow_generate_key_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowReplaceKeyInput">allow_replace_key_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowStoreKeyInput">allow_store_key_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.anyMountInput">any_mount_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.credentialsInput">credentials_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.cryptoKeyInput">crypto_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.cryptoKeyVersionInput">crypto_key_version_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.keyRingInput">key_ring_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.algorithm">algorithm</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowGenerateKey">allow_generate_key</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowReplaceKey">allow_replace_key</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowStoreKey">allow_store_key</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.anyMount">any_mount</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.credentials">credentials</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.cryptoKey">crypto_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.cryptoKeyVersion">crypto_key_version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.keyRing">key_ring</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `uuid`<sup>Required</sup> <a name="uuid" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.uuid"></a>
+
+```python
+uuid: str
+```
+
+- *Type:* str
+
+---
+
+##### `algorithm_input`<sup>Optional</sup> <a name="algorithm_input" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.algorithmInput"></a>
+
+```python
+algorithm_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `allow_generate_key_input`<sup>Optional</sup> <a name="allow_generate_key_input" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowGenerateKeyInput"></a>
+
+```python
+allow_generate_key_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `allow_replace_key_input`<sup>Optional</sup> <a name="allow_replace_key_input" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowReplaceKeyInput"></a>
+
+```python
+allow_replace_key_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `allow_store_key_input`<sup>Optional</sup> <a name="allow_store_key_input" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowStoreKeyInput"></a>
+
+```python
+allow_store_key_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `any_mount_input`<sup>Optional</sup> <a name="any_mount_input" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.anyMountInput"></a>
+
+```python
+any_mount_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `credentials_input`<sup>Optional</sup> <a name="credentials_input" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.credentialsInput"></a>
+
+```python
+credentials_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `crypto_key_input`<sup>Optional</sup> <a name="crypto_key_input" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.cryptoKeyInput"></a>
+
+```python
+crypto_key_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `crypto_key_version_input`<sup>Optional</sup> <a name="crypto_key_version_input" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.cryptoKeyVersionInput"></a>
+
+```python
+crypto_key_version_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_ring_input`<sup>Optional</sup> <a name="key_ring_input" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.keyRingInput"></a>
+
+```python
+key_ring_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.projectInput"></a>
+
+```python
+project_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `algorithm`<sup>Required</sup> <a name="algorithm" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.algorithm"></a>
+
+```python
+algorithm: str
+```
+
+- *Type:* str
+
+---
+
+##### `allow_generate_key`<sup>Required</sup> <a name="allow_generate_key" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowGenerateKey"></a>
+
+```python
+allow_generate_key: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `allow_replace_key`<sup>Required</sup> <a name="allow_replace_key" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowReplaceKey"></a>
+
+```python
+allow_replace_key: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `allow_store_key`<sup>Required</sup> <a name="allow_store_key" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowStoreKey"></a>
+
+```python
+allow_store_key: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `any_mount`<sup>Required</sup> <a name="any_mount" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.anyMount"></a>
+
+```python
+any_mount: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `credentials`<sup>Required</sup> <a name="credentials" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.credentials"></a>
+
+```python
+credentials: str
+```
+
+- *Type:* str
+
+---
+
+##### `crypto_key`<sup>Required</sup> <a name="crypto_key" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.cryptoKey"></a>
+
+```python
+crypto_key: str
+```
+
+- *Type:* str
+
+---
+
+##### `crypto_key_version`<sup>Required</sup> <a name="crypto_key_version" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.cryptoKeyVersion"></a>
+
+```python
+crypto_key_version: str
+```
+
+- *Type:* str
+
+---
+
+##### `key_ring`<sup>Required</sup> <a name="key_ring" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.keyRing"></a>
+
+```python
+key_ring: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.project"></a>
+
+```python
+project: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | ManagedKeysGcp
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a>
 
 ---
 

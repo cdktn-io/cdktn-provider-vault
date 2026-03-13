@@ -4,7 +4,7 @@
 
 ### SecretsSyncVercelDestination <a name="SecretsSyncVercelDestination" id="@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination vault_secrets_sync_vercel_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.Initializer"></a>
 
@@ -552,7 +552,7 @@ The construct id used in the generated config for the SecretsSyncVercelDestinati
 
 The id of the existing SecretsSyncVercelDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1074,7 +1074,7 @@ const secretsSyncVercelDestinationConfig: secretsSyncVercelDestination.SecretsSy
 | <code><a href="#@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.allowedPorts">allowedPorts</a></code> | <code>number[]</code> | Set of allowed ports for outbound connections from Vault to the destination. If not set, all ports are allowed. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.disableStrictNetworking">disableStrictNetworking</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, disables strict networking enforcement for this destination. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.granularity">granularity</a></code> | <code>string</code> | Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'. |
-| <code><a href="#@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#id SecretsSyncVercelDestination#id}. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#id SecretsSyncVercelDestination#id}. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.secretNameTemplate">secretNameTemplate</a></code> | <code>string</code> | Template describing how to generate external secret names. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.property.teamId">teamId</a></code> | <code>string</code> | Team ID the project belongs to. |
@@ -1161,7 +1161,7 @@ public readonly accessToken: string;
 
 Vercel API access token with the permissions to manage environment variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#access_token SecretsSyncVercelDestination#access_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#access_token SecretsSyncVercelDestination#access_token}
 
 ---
 
@@ -1175,7 +1175,7 @@ public readonly deploymentEnvironments: string[];
 
 Deployment environments where the environment variables are available. Accepts 'development', 'preview' & 'production'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#deployment_environments SecretsSyncVercelDestination#deployment_environments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#deployment_environments SecretsSyncVercelDestination#deployment_environments}
 
 ---
 
@@ -1189,7 +1189,7 @@ public readonly name: string;
 
 Unique name of the Vercel destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#name SecretsSyncVercelDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#name SecretsSyncVercelDestination#name}
 
 ---
 
@@ -1203,7 +1203,7 @@ public readonly projectId: string;
 
 Project ID where to manage environment variables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#project_id SecretsSyncVercelDestination#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#project_id SecretsSyncVercelDestination#project_id}
 
 ---
 
@@ -1217,7 +1217,7 @@ public readonly allowedIpv4Addresses: string[];
 
 Set of allowed IPv4 addresses in CIDR notation (e.g., 192.168.1.1/32) for outbound connections from Vault to the destination. If not set, all IPv4 addresses are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#allowed_ipv4_addresses SecretsSyncVercelDestination#allowed_ipv4_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#allowed_ipv4_addresses SecretsSyncVercelDestination#allowed_ipv4_addresses}
 
 ---
 
@@ -1231,7 +1231,7 @@ public readonly allowedIpv6Addresses: string[];
 
 Set of allowed IPv6 addresses in CIDR notation (e.g., 2001:db8::1/128) for outbound connections from Vault to the destination. If not set, all IPv6 addresses are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#allowed_ipv6_addresses SecretsSyncVercelDestination#allowed_ipv6_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#allowed_ipv6_addresses SecretsSyncVercelDestination#allowed_ipv6_addresses}
 
 ---
 
@@ -1245,7 +1245,7 @@ public readonly allowedPorts: number[];
 
 Set of allowed ports for outbound connections from Vault to the destination. If not set, all ports are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#allowed_ports SecretsSyncVercelDestination#allowed_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#allowed_ports SecretsSyncVercelDestination#allowed_ports}
 
 ---
 
@@ -1261,7 +1261,7 @@ If set to true, disables strict networking enforcement for this destination.
 
 When disabled, Vault will not enforce allowed IP addresses and ports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#disable_strict_networking SecretsSyncVercelDestination#disable_strict_networking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#disable_strict_networking SecretsSyncVercelDestination#disable_strict_networking}
 
 ---
 
@@ -1275,7 +1275,7 @@ public readonly granularity: string;
 
 Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#granularity SecretsSyncVercelDestination#granularity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#granularity SecretsSyncVercelDestination#granularity}
 
 ---
 
@@ -1287,7 +1287,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#id SecretsSyncVercelDestination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#id SecretsSyncVercelDestination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1304,7 +1304,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#namespace SecretsSyncVercelDestination#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#namespace SecretsSyncVercelDestination#namespace}
 
 ---
 
@@ -1318,7 +1318,7 @@ public readonly secretNameTemplate: string;
 
 Template describing how to generate external secret names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#secret_name_template SecretsSyncVercelDestination#secret_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#secret_name_template SecretsSyncVercelDestination#secret_name_template}
 
 ---
 
@@ -1332,7 +1332,7 @@ public readonly teamId: string;
 
 Team ID the project belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_vercel_destination#team_id SecretsSyncVercelDestination#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_vercel_destination#team_id SecretsSyncVercelDestination#team_id}
 
 ---
 

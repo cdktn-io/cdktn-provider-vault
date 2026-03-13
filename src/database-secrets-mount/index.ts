@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount
+// https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,59 +15,59 @@ export interface DatabaseSecretsMountConfig extends cdktn.TerraformMetaArguments
   /**
   * List of managed key registry entry names that the mount in question is allowed to access
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_managed_keys DatabaseSecretsMount#allowed_managed_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_managed_keys DatabaseSecretsMount#allowed_managed_keys}
   */
   readonly allowedManagedKeys?: string[];
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_response_headers DatabaseSecretsMount#allowed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_response_headers DatabaseSecretsMount#allowed_response_headers}
   */
   readonly allowedResponseHeaders?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#audit_non_hmac_request_keys DatabaseSecretsMount#audit_non_hmac_request_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#audit_non_hmac_request_keys DatabaseSecretsMount#audit_non_hmac_request_keys}
   */
   readonly auditNonHmacRequestKeys?: string[];
   /**
   * Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#audit_non_hmac_response_keys DatabaseSecretsMount#audit_non_hmac_response_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#audit_non_hmac_response_keys DatabaseSecretsMount#audit_non_hmac_response_keys}
   */
   readonly auditNonHmacResponseKeys?: string[];
   /**
   * Default lease duration for tokens and secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#default_lease_ttl_seconds DatabaseSecretsMount#default_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#default_lease_ttl_seconds DatabaseSecretsMount#default_lease_ttl_seconds}
   */
   readonly defaultLeaseTtlSeconds?: number;
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#delegated_auth_accessors DatabaseSecretsMount#delegated_auth_accessors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#delegated_auth_accessors DatabaseSecretsMount#delegated_auth_accessors}
   */
   readonly delegatedAuthAccessors?: string[];
   /**
   * Human-friendly description of the mount
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#description DatabaseSecretsMount#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#description DatabaseSecretsMount#description}
   */
   readonly description?: string;
   /**
   * Enable the secrets engine to access Vault's external entropy source
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#external_entropy_access DatabaseSecretsMount#external_entropy_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#external_entropy_access DatabaseSecretsMount#external_entropy_access}
   */
   readonly externalEntropyAccess?: boolean | cdktn.IResolvable;
   /**
   * If set to true, disables caching.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#force_no_cache DatabaseSecretsMount#force_no_cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#force_no_cache DatabaseSecretsMount#force_no_cache}
   */
   readonly forceNoCache?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#id DatabaseSecretsMount#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#id DatabaseSecretsMount#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -76,169 +76,169 @@ export interface DatabaseSecretsMountConfig extends cdktn.TerraformMetaArguments
   /**
   * The key to use for signing plugin workload identity tokens
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#identity_token_key DatabaseSecretsMount#identity_token_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#identity_token_key DatabaseSecretsMount#identity_token_key}
   */
   readonly identityTokenKey?: string;
   /**
   * Specifies whether to show this mount in the UI-specific listing endpoint
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#listing_visibility DatabaseSecretsMount#listing_visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#listing_visibility DatabaseSecretsMount#listing_visibility}
   */
   readonly listingVisibility?: string;
   /**
   * Local mount flag that can be explicitly set to true to enforce local mount in HA environment
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#local DatabaseSecretsMount#local}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#local DatabaseSecretsMount#local}
   */
   readonly local?: boolean | cdktn.IResolvable;
   /**
   * Maximum possible lease duration for tokens and secrets in seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_lease_ttl_seconds DatabaseSecretsMount#max_lease_ttl_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_lease_ttl_seconds DatabaseSecretsMount#max_lease_ttl_seconds}
   */
   readonly maxLeaseTtlSeconds?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#namespace DatabaseSecretsMount#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#namespace DatabaseSecretsMount#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies mount type specific options that are passed to the backend
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#options DatabaseSecretsMount#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#options DatabaseSecretsMount#options}
   */
   readonly options?: { [key: string]: string };
   /**
   * List of headers to allow and pass from the request to the plugin
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#passthrough_request_headers DatabaseSecretsMount#passthrough_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#passthrough_request_headers DatabaseSecretsMount#passthrough_request_headers}
   */
   readonly passthroughRequestHeaders?: string[];
   /**
   * Where the secret backend will be mounted
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#path DatabaseSecretsMount#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#path DatabaseSecretsMount#path}
   */
   readonly path: string;
   /**
   * Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
   */
   readonly pluginVersion?: string;
   /**
   * Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#seal_wrap DatabaseSecretsMount#seal_wrap}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#seal_wrap DatabaseSecretsMount#seal_wrap}
   */
   readonly sealWrap?: boolean | cdktn.IResolvable;
   /**
   * cassandra block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#cassandra DatabaseSecretsMount#cassandra}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#cassandra DatabaseSecretsMount#cassandra}
   */
   readonly cassandra?: DatabaseSecretsMountCassandra[] | cdktn.IResolvable;
   /**
   * couchbase block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#couchbase DatabaseSecretsMount#couchbase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#couchbase DatabaseSecretsMount#couchbase}
   */
   readonly couchbase?: DatabaseSecretsMountCouchbase[] | cdktn.IResolvable;
   /**
   * elasticsearch block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#elasticsearch DatabaseSecretsMount#elasticsearch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#elasticsearch DatabaseSecretsMount#elasticsearch}
   */
   readonly elasticsearch?: DatabaseSecretsMountElasticsearch[] | cdktn.IResolvable;
   /**
   * hana block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#hana DatabaseSecretsMount#hana}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#hana DatabaseSecretsMount#hana}
   */
   readonly hana?: DatabaseSecretsMountHana[] | cdktn.IResolvable;
   /**
   * influxdb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#influxdb DatabaseSecretsMount#influxdb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#influxdb DatabaseSecretsMount#influxdb}
   */
   readonly influxdb?: DatabaseSecretsMountInfluxdb[] | cdktn.IResolvable;
   /**
   * mongodb block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mongodb DatabaseSecretsMount#mongodb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#mongodb DatabaseSecretsMount#mongodb}
   */
   readonly mongodb?: DatabaseSecretsMountMongodb[] | cdktn.IResolvable;
   /**
   * mongodbatlas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mongodbatlas DatabaseSecretsMount#mongodbatlas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#mongodbatlas DatabaseSecretsMount#mongodbatlas}
   */
   readonly mongodbatlas?: DatabaseSecretsMountMongodbatlas[] | cdktn.IResolvable;
   /**
   * mssql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mssql DatabaseSecretsMount#mssql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#mssql DatabaseSecretsMount#mssql}
   */
   readonly mssql?: DatabaseSecretsMountMssql[] | cdktn.IResolvable;
   /**
   * mysql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mysql DatabaseSecretsMount#mysql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#mysql DatabaseSecretsMount#mysql}
   */
   readonly mysql?: DatabaseSecretsMountMysql[] | cdktn.IResolvable;
   /**
   * mysql_aurora block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mysql_aurora DatabaseSecretsMount#mysql_aurora}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#mysql_aurora DatabaseSecretsMount#mysql_aurora}
   */
   readonly mysqlAurora?: DatabaseSecretsMountMysqlAurora[] | cdktn.IResolvable;
   /**
   * mysql_legacy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mysql_legacy DatabaseSecretsMount#mysql_legacy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#mysql_legacy DatabaseSecretsMount#mysql_legacy}
   */
   readonly mysqlLegacy?: DatabaseSecretsMountMysqlLegacy[] | cdktn.IResolvable;
   /**
   * mysql_rds block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#mysql_rds DatabaseSecretsMount#mysql_rds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#mysql_rds DatabaseSecretsMount#mysql_rds}
   */
   readonly mysqlRds?: DatabaseSecretsMountMysqlRds[] | cdktn.IResolvable;
   /**
   * oracle block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#oracle DatabaseSecretsMount#oracle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#oracle DatabaseSecretsMount#oracle}
   */
   readonly oracle?: DatabaseSecretsMountOracle[] | cdktn.IResolvable;
   /**
   * postgresql block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#postgresql DatabaseSecretsMount#postgresql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#postgresql DatabaseSecretsMount#postgresql}
   */
   readonly postgresql?: DatabaseSecretsMountPostgresql[] | cdktn.IResolvable;
   /**
   * redis block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#redis DatabaseSecretsMount#redis}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#redis DatabaseSecretsMount#redis}
   */
   readonly redis?: DatabaseSecretsMountRedis[] | cdktn.IResolvable;
   /**
   * redis_elasticache block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#redis_elasticache DatabaseSecretsMount#redis_elasticache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#redis_elasticache DatabaseSecretsMount#redis_elasticache}
   */
   readonly redisElasticache?: DatabaseSecretsMountRedisElasticache[] | cdktn.IResolvable;
   /**
   * redshift block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#redshift DatabaseSecretsMount#redshift}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#redshift DatabaseSecretsMount#redshift}
   */
   readonly redshift?: DatabaseSecretsMountRedshift[] | cdktn.IResolvable;
   /**
   * snowflake block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#snowflake DatabaseSecretsMount#snowflake}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#snowflake DatabaseSecretsMount#snowflake}
   */
   readonly snowflake?: DatabaseSecretsMountSnowflake[] | cdktn.IResolvable;
 }
@@ -246,157 +246,175 @@ export interface DatabaseSecretsMountCassandra {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * The number of seconds to use as a connection timeout.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
   */
   readonly connectTimeout?: number;
   /**
   * Cassandra consistency level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#consistency DatabaseSecretsMount#consistency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#consistency DatabaseSecretsMount#consistency}
   */
   readonly consistency?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Cassandra hosts to connect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
   */
   readonly hosts?: string[];
   /**
   * Whether to skip verification of the server certificate when using TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
   */
   readonly insecureTls?: boolean | cdktn.IResolvable;
   /**
   * Cassandra local datacenter name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#local_datacenter DatabaseSecretsMount#local_datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#local_datacenter DatabaseSecretsMount#local_datacenter}
   */
   readonly localDatacenter?: string;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The password to use when authenticating with Cassandra.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Concatenated PEM blocks containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
   */
   readonly pemBundle?: string;
   /**
   * Specifies JSON containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
   */
   readonly pemJson?: string;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * The transport port to use to connect to Cassandra.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
   */
   readonly port?: number;
   /**
   * The CQL protocol version to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#protocol_version DatabaseSecretsMount#protocol_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#protocol_version DatabaseSecretsMount#protocol_version}
   */
   readonly protocolVersion?: number;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * Skip permissions checks when a connection to Cassandra is first created. These checks ensure that Vault is able to create roles, but can be resource intensive in clusters with many roles.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#skip_verification DatabaseSecretsMount#skip_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_verification DatabaseSecretsMount#skip_verification}
   */
   readonly skipVerification?: boolean | cdktn.IResolvable;
   /**
   * Enable TCP keepalive for Cassandra connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#socket_keep_alive DatabaseSecretsMount#socket_keep_alive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#socket_keep_alive DatabaseSecretsMount#socket_keep_alive}
   */
   readonly socketKeepAlive?: string;
   /**
   * Whether to use TLS when connecting to Cassandra.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
   */
   readonly tls?: boolean | cdktn.IResolvable;
   /**
   * SNI host for TLS connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_server_name DatabaseSecretsMount#tls_server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_server_name DatabaseSecretsMount#tls_server_name}
   */
   readonly tlsServerName?: string;
   /**
   * The username to use when authenticating with Cassandra.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Template for dynamic Cassandra usernames.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -417,15 +435,18 @@ export function databaseSecretsMountCassandraToTerraform(struct?: DatabaseSecret
     local_datacenter: cdktn.stringToTerraform(struct!.localDatacenter),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     pem_bundle: cdktn.stringToTerraform(struct!.pemBundle),
     pem_json: cdktn.stringToTerraform(struct!.pemJson),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     port: cdktn.numberToTerraform(struct!.port),
     protocol_version: cdktn.numberToTerraform(struct!.protocolVersion),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     skip_verification: cdktn.booleanToTerraform(struct!.skipVerification),
     socket_keep_alive: cdktn.stringToTerraform(struct!.socketKeepAlive),
     tls: cdktn.booleanToTerraform(struct!.tls),
@@ -503,6 +524,12 @@ export function databaseSecretsMountCassandraToHclTerraform(struct?: DatabaseSec
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     pem_bundle: {
       value: cdktn.stringToHclTerraform(struct!.pemBundle),
       isBlock: false,
@@ -517,6 +544,12 @@ export function databaseSecretsMountCassandraToHclTerraform(struct?: DatabaseSec
     },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -556,6 +589,12 @@ export function databaseSecretsMountCassandraToHclTerraform(struct?: DatabaseSec
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     skip_verification: {
       value: cdktn.booleanToHclTerraform(struct!.skipVerification),
@@ -665,6 +704,10 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktn.ComplexO
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._pemBundle !== undefined) {
       hasAnyValues = true;
       internalValueResult.pemBundle = this._pemBundle;
@@ -676,6 +719,10 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktn.ComplexO
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._port !== undefined) {
       hasAnyValues = true;
@@ -700,6 +747,10 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktn.ComplexO
     if (this._rotationWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._skipVerification !== undefined) {
       hasAnyValues = true;
@@ -746,15 +797,18 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktn.ComplexO
       this._localDatacenter = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._pemBundle = undefined;
       this._pemJson = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._port = undefined;
       this._protocolVersion = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._skipVerification = undefined;
       this._socketKeepAlive = undefined;
       this._tls = undefined;
@@ -780,15 +834,18 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktn.ComplexO
       this._localDatacenter = value.localDatacenter;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._pemBundle = value.pemBundle;
       this._pemJson = value.pemJson;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._port = value.port;
       this._protocolVersion = value.protocolVersion;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._skipVerification = value.skipVerification;
       this._socketKeepAlive = value.socketKeepAlive;
       this._tls = value.tls;
@@ -956,6 +1013,22 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktn.ComplexO
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // pem_bundle - computed: false, optional: true, required: false
   private _pemBundle?: string; 
   public get pemBundle() {
@@ -1002,6 +1075,22 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktn.ComplexO
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // port - computed: false, optional: true, required: false
@@ -1098,6 +1187,22 @@ export class DatabaseSecretsMountCassandraOutputReference extends cdktn.ComplexO
   // Temporarily expose input value. Use with caution.
   public get rotationWindowInput() {
     return this._rotationWindow;
+  }
+
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
   }
 
   // skip_verification - computed: false, optional: true, required: false
@@ -1236,109 +1341,127 @@ export interface DatabaseSecretsMountCouchbase {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Required if `tls` is `true`. Specifies the certificate authority of the Couchbase server, as a PEM certificate that has been base64 encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#base64_pem DatabaseSecretsMount#base64_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#base64_pem DatabaseSecretsMount#base64_pem}
   */
   readonly base64Pem?: string;
   /**
   * Required for Couchbase versions prior to 6.5.0. This is only used to verify vault's connection to the server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#bucket_name DatabaseSecretsMount#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#bucket_name DatabaseSecretsMount#bucket_name}
   */
   readonly bucketName?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * A set of Couchbase URIs to connect to. Must use `couchbases://` scheme if `tls` is `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#hosts DatabaseSecretsMount#hosts}
   */
   readonly hosts: string[];
   /**
   *  Specifies whether to skip verification of the server certificate when using TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
   */
   readonly insecureTls?: boolean | cdktn.IResolvable;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * Specifies the password corresponding to the given username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * Specifies whether to use TLS when connecting to Couchbase.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
   */
   readonly tls?: boolean | cdktn.IResolvable;
   /**
   * Specifies the username for Vault to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username: string;
   /**
   * Template describing how dynamic usernames are generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -1358,11 +1481,14 @@ export function databaseSecretsMountCouchbaseToTerraform(struct?: DatabaseSecret
     insecure_tls: cdktn.booleanToTerraform(struct!.insecureTls),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     tls: cdktn.booleanToTerraform(struct!.tls),
     username: cdktn.stringToTerraform(struct!.username),
     username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
@@ -1431,8 +1557,20 @@ export function databaseSecretsMountCouchbaseToHclTerraform(struct?: DatabaseSec
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1460,6 +1598,12 @@ export function databaseSecretsMountCouchbaseToHclTerraform(struct?: DatabaseSec
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     tls: {
       value: cdktn.booleanToHclTerraform(struct!.tls),
@@ -1547,9 +1691,17 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktn.ComplexO
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._rootRotationStatements !== undefined) {
       hasAnyValues = true;
@@ -1566,6 +1718,10 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktn.ComplexO
     if (this._rotationWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._tls !== undefined) {
       hasAnyValues = true;
@@ -1599,11 +1755,14 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktn.ComplexO
       this._insecureTls = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._tls = undefined;
       this._username = undefined;
       this._usernameTemplate = undefined;
@@ -1625,11 +1784,14 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktn.ComplexO
       this._insecureTls = value.insecureTls;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._tls = value.tls;
       this._username = value.username;
       this._usernameTemplate = value.usernameTemplate;
@@ -1772,6 +1934,22 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktn.ComplexO
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // plugin_name - computed: true, optional: true, required: false
   private _pluginName?: string; 
   public get pluginName() {
@@ -1786,6 +1964,22 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktn.ComplexO
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // root_rotation_statements - computed: false, optional: true, required: false
@@ -1850,6 +2044,22 @@ export class DatabaseSecretsMountCouchbaseOutputReference extends cdktn.ComplexO
   // Temporarily expose input value. Use with caution.
   public get rotationWindowInput() {
     return this._rotationWindow;
+  }
+
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
   }
 
   // tls - computed: false, optional: true, required: false
@@ -1937,121 +2147,139 @@ export interface DatabaseSecretsMountElasticsearch {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * The path to a PEM-encoded CA cert file to use to verify the Elasticsearch server's identity
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
   */
   readonly caCert?: string;
   /**
   * The path to a directory of PEM-encoded CA cert files to use to verify the Elasticsearch server's identity
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#ca_path DatabaseSecretsMount#ca_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#ca_path DatabaseSecretsMount#ca_path}
   */
   readonly caPath?: string;
   /**
   * The path to the certificate for the Elasticsearch client to present for communication
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#client_cert DatabaseSecretsMount#client_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#client_cert DatabaseSecretsMount#client_cert}
   */
   readonly clientCert?: string;
   /**
   * The path to the key for the Elasticsearch client to use for communication
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#client_key DatabaseSecretsMount#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#client_key DatabaseSecretsMount#client_key}
   */
   readonly clientKey?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Whether to disable certificate verification
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#insecure DatabaseSecretsMount#insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
   */
-  readonly insecure?: boolean | cdktn.IResolvable;
+  readonly insecureTls?: boolean | cdktn.IResolvable;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The password to be used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * This, if set, is used to set the SNI host when connecting via TLS
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_server_name DatabaseSecretsMount#tls_server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_server_name DatabaseSecretsMount#tls_server_name}
   */
   readonly tlsServerName?: string;
   /**
   * The URL for Elasticsearch's API
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
   */
   readonly url: string;
   /**
   * The username to be used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username: string;
   /**
   * Template describing how dynamic usernames are generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -2069,14 +2297,17 @@ export function databaseSecretsMountElasticsearchToTerraform(struct?: DatabaseSe
     client_key: cdktn.stringToTerraform(struct!.clientKey),
     data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
     disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
-    insecure: cdktn.booleanToTerraform(struct!.insecure),
+    insecure_tls: cdktn.booleanToTerraform(struct!.insecureTls),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     tls_server_name: cdktn.stringToTerraform(struct!.tlsServerName),
     url: cdktn.stringToTerraform(struct!.url),
     username: cdktn.stringToTerraform(struct!.username),
@@ -2134,8 +2365,8 @@ export function databaseSecretsMountElasticsearchToHclTerraform(struct?: Databas
       type: "simple",
       storageClassType: "boolean",
     },
-    insecure: {
-      value: cdktn.booleanToHclTerraform(struct!.insecure),
+    insecure_tls: {
+      value: cdktn.booleanToHclTerraform(struct!.insecureTls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2152,8 +2383,20 @@ export function databaseSecretsMountElasticsearchToHclTerraform(struct?: Databas
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2181,6 +2424,12 @@ export function databaseSecretsMountElasticsearchToHclTerraform(struct?: Databas
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     tls_server_name: {
       value: cdktn.stringToHclTerraform(struct!.tlsServerName),
@@ -2266,9 +2515,9 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktn.Comp
       hasAnyValues = true;
       internalValueResult.disableAutomatedRotation = this._disableAutomatedRotation;
     }
-    if (this._insecure !== undefined) {
+    if (this._insecureTls !== undefined) {
       hasAnyValues = true;
-      internalValueResult.insecure = this._insecure;
+      internalValueResult.insecureTls = this._insecureTls;
     }
     if (this._name !== undefined) {
       hasAnyValues = true;
@@ -2278,9 +2527,17 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktn.Comp
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._rootRotationStatements !== undefined) {
       hasAnyValues = true;
@@ -2297,6 +2554,10 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktn.Comp
     if (this._rotationWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._tlsServerName !== undefined) {
       hasAnyValues = true;
@@ -2332,14 +2593,17 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktn.Comp
       this._clientKey = undefined;
       this._data = undefined;
       this._disableAutomatedRotation = undefined;
-      this._insecure = undefined;
+      this._insecureTls = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._tlsServerName = undefined;
       this._url = undefined;
       this._username = undefined;
@@ -2360,14 +2624,17 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktn.Comp
       this._clientKey = value.clientKey;
       this._data = value.data;
       this._disableAutomatedRotation = value.disableAutomatedRotation;
-      this._insecure = value.insecure;
+      this._insecureTls = value.insecureTls;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._tlsServerName = value.tlsServerName;
       this._url = value.url;
       this._username = value.username;
@@ -2488,20 +2755,20 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktn.Comp
     return this._disableAutomatedRotation;
   }
 
-  // insecure - computed: false, optional: true, required: false
-  private _insecure?: boolean | cdktn.IResolvable; 
-  public get insecure() {
-    return this.getBooleanAttribute('insecure');
+  // insecure_tls - computed: false, optional: true, required: false
+  private _insecureTls?: boolean | cdktn.IResolvable; 
+  public get insecureTls() {
+    return this.getBooleanAttribute('insecure_tls');
   }
-  public set insecure(value: boolean | cdktn.IResolvable) {
-    this._insecure = value;
+  public set insecureTls(value: boolean | cdktn.IResolvable) {
+    this._insecureTls = value;
   }
-  public resetInsecure() {
-    this._insecure = undefined;
+  public resetInsecureTls() {
+    this._insecureTls = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get insecureInput() {
-    return this._insecure;
+  public get insecureTlsInput() {
+    return this._insecureTls;
   }
 
   // name - computed: false, optional: false, required: true
@@ -2530,6 +2797,22 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktn.Comp
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // plugin_name - computed: true, optional: true, required: false
   private _pluginName?: string; 
   public get pluginName() {
@@ -2544,6 +2827,22 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktn.Comp
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // root_rotation_statements - computed: false, optional: true, required: false
@@ -2608,6 +2907,22 @@ export class DatabaseSecretsMountElasticsearchOutputReference extends cdktn.Comp
   // Temporarily expose input value. Use with caution.
   public get rotationWindowInput() {
     return this._rotationWindow;
+  }
+
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
   }
 
   // tls_server_name - computed: false, optional: true, required: false
@@ -2708,121 +3023,139 @@ export interface DatabaseSecretsMountHana {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Disable special character escaping in username and password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
   */
   readonly disableEscaping?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -2843,13 +3176,16 @@ export function databaseSecretsMountHanaToTerraform(struct?: DatabaseSecretsMoun
     max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     password_wo: cdktn.stringToTerraform(struct!.passwordWo),
     password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     username: cdktn.stringToTerraform(struct!.username),
     username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
@@ -2923,6 +3259,12 @@ export function databaseSecretsMountHanaToHclTerraform(struct?: DatabaseSecretsM
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     password_wo: {
       value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
@@ -2937,6 +3279,12 @@ export function databaseSecretsMountHanaToHclTerraform(struct?: DatabaseSecretsM
     },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2964,6 +3312,12 @@ export function databaseSecretsMountHanaToHclTerraform(struct?: DatabaseSecretsM
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     username: {
       value: cdktn.stringToHclTerraform(struct!.username),
@@ -3049,6 +3403,10 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktn.ComplexObject
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._passwordWo !== undefined) {
       hasAnyValues = true;
       internalValueResult.passwordWo = this._passwordWo;
@@ -3060,6 +3418,10 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktn.ComplexObject
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._rootRotationStatements !== undefined) {
       hasAnyValues = true;
@@ -3076,6 +3438,10 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktn.ComplexObject
     if (this._rotationWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._username !== undefined) {
       hasAnyValues = true;
@@ -3106,13 +3472,16 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktn.ComplexObject
       this._maxOpenConnections = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._passwordWo = undefined;
       this._passwordWoVersion = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._username = undefined;
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
@@ -3134,13 +3503,16 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktn.ComplexObject
       this._maxOpenConnections = value.maxOpenConnections;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._passwordWo = value.passwordWo;
       this._passwordWoVersion = value.passwordWoVersion;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._username = value.username;
       this._usernameTemplate = value.usernameTemplate;
       this._verifyConnection = value.verifyConnection;
@@ -3304,6 +3676,22 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktn.ComplexObject
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
   public get passwordWo() {
@@ -3350,6 +3738,22 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktn.ComplexObject
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // root_rotation_statements - computed: false, optional: true, required: false
@@ -3414,6 +3818,22 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktn.ComplexObject
   // Temporarily expose input value. Use with caution.
   public get rotationWindowInput() {
     return this._rotationWindow;
+  }
+
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
   }
 
   // username - computed: false, optional: true, required: false
@@ -3488,121 +3908,139 @@ export interface DatabaseSecretsMountInfluxdb {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * The number of seconds to use as a connection timeout.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#connect_timeout DatabaseSecretsMount#connect_timeout}
   */
   readonly connectTimeout?: number;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Influxdb host to connect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
   */
   readonly host: string;
   /**
   * Whether to skip verification of the server certificate when using TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
   */
   readonly insecureTls?: boolean | cdktn.IResolvable;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * Specifies the password corresponding to the given username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Concatenated PEM blocks containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#pem_bundle DatabaseSecretsMount#pem_bundle}
   */
   readonly pemBundle?: string;
   /**
   * Specifies JSON containing a certificate and private key; a certificate, private key, and issuing CA certificate; or just a CA certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#pem_json DatabaseSecretsMount#pem_json}
   */
   readonly pemJson?: string;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * The transport port to use to connect to Influxdb.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
   */
   readonly port?: number;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * Whether to use TLS when connecting to Influxdb.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
   */
   readonly tls?: boolean | cdktn.IResolvable;
   /**
   * Specifies the username to use for superuser access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username: string;
   /**
   * Template describing how dynamic usernames are generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -3621,14 +4059,17 @@ export function databaseSecretsMountInfluxdbToTerraform(struct?: DatabaseSecrets
     insecure_tls: cdktn.booleanToTerraform(struct!.insecureTls),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     pem_bundle: cdktn.stringToTerraform(struct!.pemBundle),
     pem_json: cdktn.stringToTerraform(struct!.pemJson),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     port: cdktn.numberToTerraform(struct!.port),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     tls: cdktn.booleanToTerraform(struct!.tls),
     username: cdktn.stringToTerraform(struct!.username),
     username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
@@ -3691,6 +4132,12 @@ export function databaseSecretsMountInfluxdbToHclTerraform(struct?: DatabaseSecr
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     pem_bundle: {
       value: cdktn.stringToHclTerraform(struct!.pemBundle),
       isBlock: false,
@@ -3705,6 +4152,12 @@ export function databaseSecretsMountInfluxdbToHclTerraform(struct?: DatabaseSecr
     },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3738,6 +4191,12 @@ export function databaseSecretsMountInfluxdbToHclTerraform(struct?: DatabaseSecr
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     tls: {
       value: cdktn.booleanToHclTerraform(struct!.tls),
@@ -3821,6 +4280,10 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktn.ComplexOb
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._pemBundle !== undefined) {
       hasAnyValues = true;
       internalValueResult.pemBundle = this._pemBundle;
@@ -3832,6 +4295,10 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktn.ComplexOb
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._port !== undefined) {
       hasAnyValues = true;
@@ -3852,6 +4319,10 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktn.ComplexOb
     if (this._rotationWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._tls !== undefined) {
       hasAnyValues = true;
@@ -3884,14 +4355,17 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktn.ComplexOb
       this._insecureTls = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._pemBundle = undefined;
       this._pemJson = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._port = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._tls = undefined;
       this._username = undefined;
       this._usernameTemplate = undefined;
@@ -3912,14 +4386,17 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktn.ComplexOb
       this._insecureTls = value.insecureTls;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._pemBundle = value.pemBundle;
       this._pemJson = value.pemJson;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._port = value.port;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._tls = value.tls;
       this._username = value.username;
       this._usernameTemplate = value.usernameTemplate;
@@ -4046,6 +4523,22 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktn.ComplexOb
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // pem_bundle - computed: false, optional: true, required: false
   private _pemBundle?: string; 
   public get pemBundle() {
@@ -4092,6 +4585,22 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktn.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // port - computed: false, optional: true, required: false
@@ -4172,6 +4681,22 @@ export class DatabaseSecretsMountInfluxdbOutputReference extends cdktn.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get rotationWindowInput() {
     return this._rotationWindow;
+  }
+
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
   }
 
   // tls - computed: false, optional: true, required: false
@@ -4259,133 +4784,151 @@ export interface DatabaseSecretsMountMongodb {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * The x509 CA file for validating the certificate presented by the MongoDB server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * The x509 certificate and private key bundle for connecting to the database. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
   */
   readonly tlsCertificateKey?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
   /**
   * Specifies the MongoDB write concern for Vault management operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#write_concern DatabaseSecretsMount#write_concern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#write_concern DatabaseSecretsMount#write_concern}
   */
   readonly writeConcern?: string;
 }
@@ -4405,13 +4948,16 @@ export function databaseSecretsMountMongodbToTerraform(struct?: DatabaseSecretsM
     max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     password_wo: cdktn.stringToTerraform(struct!.passwordWo),
     password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     tls_ca: cdktn.stringToTerraform(struct!.tlsCa),
     tls_certificate_key: cdktn.stringToTerraform(struct!.tlsCertificateKey),
     username: cdktn.stringToTerraform(struct!.username),
@@ -4482,6 +5028,12 @@ export function databaseSecretsMountMongodbToHclTerraform(struct?: DatabaseSecre
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     password_wo: {
       value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
@@ -4496,6 +5048,12 @@ export function databaseSecretsMountMongodbToHclTerraform(struct?: DatabaseSecre
     },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4523,6 +5081,12 @@ export function databaseSecretsMountMongodbToHclTerraform(struct?: DatabaseSecre
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     tls_ca: {
       value: cdktn.stringToHclTerraform(struct!.tlsCa),
@@ -4622,6 +5186,10 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktn.ComplexObj
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._passwordWo !== undefined) {
       hasAnyValues = true;
       internalValueResult.passwordWo = this._passwordWo;
@@ -4633,6 +5201,10 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktn.ComplexObj
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._rootRotationStatements !== undefined) {
       hasAnyValues = true;
@@ -4649,6 +5221,10 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktn.ComplexObj
     if (this._rotationWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._tlsCa !== undefined) {
       hasAnyValues = true;
@@ -4690,13 +5266,16 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktn.ComplexObj
       this._maxOpenConnections = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._passwordWo = undefined;
       this._passwordWoVersion = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._tlsCa = undefined;
       this._tlsCertificateKey = undefined;
       this._username = undefined;
@@ -4720,13 +5299,16 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktn.ComplexObj
       this._maxOpenConnections = value.maxOpenConnections;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._passwordWo = value.passwordWo;
       this._passwordWoVersion = value.passwordWoVersion;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._tlsCa = value.tlsCa;
       this._tlsCertificateKey = value.tlsCertificateKey;
       this._username = value.username;
@@ -4877,6 +5459,22 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktn.ComplexObj
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
   public get passwordWo() {
@@ -4923,6 +5521,22 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktn.ComplexObj
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // root_rotation_statements - computed: false, optional: true, required: false
@@ -4987,6 +5601,22 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktn.ComplexObj
   // Temporarily expose input value. Use with caution.
   public get rotationWindowInput() {
     return this._rotationWindow;
+  }
+
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
   }
 
   // tls_ca - computed: false, optional: true, required: false
@@ -5109,85 +5739,103 @@ export interface DatabaseSecretsMountMongodbatlas {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * The Private Programmatic API Key used to connect with MongoDB Atlas API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
   */
   readonly privateKey: string;
   /**
   * The Project ID the Database User should be created within.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#project_id DatabaseSecretsMount#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#project_id DatabaseSecretsMount#project_id}
   */
   readonly projectId: string;
   /**
   * The Public Programmatic API Key used to authenticate with the MongoDB Atlas API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#public_key DatabaseSecretsMount#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#public_key DatabaseSecretsMount#public_key}
   */
   readonly publicKey: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * Template describing how dynamic usernames are generated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -5202,7 +5850,9 @@ export function databaseSecretsMountMongodbatlasToTerraform(struct?: DatabaseSec
     data: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.data),
     disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
     name: cdktn.stringToTerraform(struct!.name),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     private_key: cdktn.stringToTerraform(struct!.privateKey),
     project_id: cdktn.stringToTerraform(struct!.projectId),
     public_key: cdktn.stringToTerraform(struct!.publicKey),
@@ -5210,6 +5860,7 @@ export function databaseSecretsMountMongodbatlasToTerraform(struct?: DatabaseSec
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
   }
@@ -5246,8 +5897,20 @@ export function databaseSecretsMountMongodbatlasToHclTerraform(struct?: Database
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5293,6 +5956,12 @@ export function databaseSecretsMountMongodbatlasToHclTerraform(struct?: Database
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     username_template: {
       value: cdktn.stringToHclTerraform(struct!.usernameTemplate),
@@ -5348,9 +6017,17 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktn.Compl
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._privateKey !== undefined) {
       hasAnyValues = true;
@@ -5380,6 +6057,10 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktn.Compl
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
     }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
+    }
     if (this._usernameTemplate !== undefined) {
       hasAnyValues = true;
       internalValueResult.usernameTemplate = this._usernameTemplate;
@@ -5399,7 +6080,9 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktn.Compl
       this._data = undefined;
       this._disableAutomatedRotation = undefined;
       this._name = undefined;
+      this._passwordPolicy = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._privateKey = undefined;
       this._projectId = undefined;
       this._publicKey = undefined;
@@ -5407,6 +6090,7 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktn.Compl
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
     }
@@ -5421,7 +6105,9 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktn.Compl
       this._data = value.data;
       this._disableAutomatedRotation = value.disableAutomatedRotation;
       this._name = value.name;
+      this._passwordPolicy = value.passwordPolicy;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._privateKey = value.privateKey;
       this._projectId = value.projectId;
       this._publicKey = value.publicKey;
@@ -5429,6 +6115,7 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktn.Compl
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._usernameTemplate = value.usernameTemplate;
       this._verifyConnection = value.verifyConnection;
     }
@@ -5495,6 +6182,22 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktn.Compl
     return this._name;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // plugin_name - computed: true, optional: true, required: false
   private _pluginName?: string; 
   public get pluginName() {
@@ -5509,6 +6212,22 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktn.Compl
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // private_key - computed: false, optional: false, required: true
@@ -5614,6 +6333,22 @@ export class DatabaseSecretsMountMongodbatlasOutputReference extends cdktn.Compl
     return this._rotationWindow;
   }
 
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
+  }
+
   // username_template - computed: false, optional: true, required: false
   private _usernameTemplate?: string; 
   public get usernameTemplate() {
@@ -5670,127 +6405,145 @@ export interface DatabaseSecretsMountMssql {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * Set to true when the target is a Contained Database, e.g. AzureSQL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#contained_db DatabaseSecretsMount#contained_db}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#contained_db DatabaseSecretsMount#contained_db}
   */
   readonly containedDb?: boolean | cdktn.IResolvable;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Disable special character escaping in username and password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
   */
   readonly disableEscaping?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -5812,13 +6565,16 @@ export function databaseSecretsMountMssqlToTerraform(struct?: DatabaseSecretsMou
     max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     password_wo: cdktn.stringToTerraform(struct!.passwordWo),
     password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     username: cdktn.stringToTerraform(struct!.username),
     username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
@@ -5898,6 +6654,12 @@ export function databaseSecretsMountMssqlToHclTerraform(struct?: DatabaseSecrets
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     password_wo: {
       value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
@@ -5912,6 +6674,12 @@ export function databaseSecretsMountMssqlToHclTerraform(struct?: DatabaseSecrets
     },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5939,6 +6707,12 @@ export function databaseSecretsMountMssqlToHclTerraform(struct?: DatabaseSecrets
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     username: {
       value: cdktn.stringToHclTerraform(struct!.username),
@@ -6028,6 +6802,10 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktn.ComplexObjec
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._passwordWo !== undefined) {
       hasAnyValues = true;
       internalValueResult.passwordWo = this._passwordWo;
@@ -6039,6 +6817,10 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktn.ComplexObjec
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._rootRotationStatements !== undefined) {
       hasAnyValues = true;
@@ -6055,6 +6837,10 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktn.ComplexObjec
     if (this._rotationWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._username !== undefined) {
       hasAnyValues = true;
@@ -6086,13 +6872,16 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktn.ComplexObjec
       this._maxOpenConnections = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._passwordWo = undefined;
       this._passwordWoVersion = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._username = undefined;
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
@@ -6115,13 +6904,16 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktn.ComplexObjec
       this._maxOpenConnections = value.maxOpenConnections;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._passwordWo = value.passwordWo;
       this._passwordWoVersion = value.passwordWoVersion;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._username = value.username;
       this._usernameTemplate = value.usernameTemplate;
       this._verifyConnection = value.verifyConnection;
@@ -6301,6 +7093,22 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktn.ComplexObjec
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
   public get passwordWo() {
@@ -6347,6 +7155,22 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktn.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // root_rotation_statements - computed: false, optional: true, required: false
@@ -6411,6 +7235,22 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktn.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get rotationWindowInput() {
     return this._rotationWindow;
+  }
+
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
   }
 
   // username - computed: false, optional: true, required: false
@@ -6485,139 +7325,157 @@ export interface DatabaseSecretsMountMysql {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
   */
   readonly tlsCertificateKey?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -6638,14 +7496,17 @@ export function databaseSecretsMountMysqlToTerraform(struct?: DatabaseSecretsMou
     max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     password_wo: cdktn.stringToTerraform(struct!.passwordWo),
     password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
     service_account_json: cdktn.stringToTerraform(struct!.serviceAccountJson),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     tls_ca: cdktn.stringToTerraform(struct!.tlsCa),
     tls_certificate_key: cdktn.stringToTerraform(struct!.tlsCertificateKey),
     username: cdktn.stringToTerraform(struct!.username),
@@ -6721,6 +7582,12 @@ export function databaseSecretsMountMysqlToHclTerraform(struct?: DatabaseSecrets
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     password_wo: {
       value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
@@ -6735,6 +7602,12 @@ export function databaseSecretsMountMysqlToHclTerraform(struct?: DatabaseSecrets
     },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -6768,6 +7641,12 @@ export function databaseSecretsMountMysqlToHclTerraform(struct?: DatabaseSecrets
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     tls_ca: {
       value: cdktn.stringToHclTerraform(struct!.tlsCa),
@@ -6865,6 +7744,10 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktn.ComplexObjec
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._passwordWo !== undefined) {
       hasAnyValues = true;
       internalValueResult.passwordWo = this._passwordWo;
@@ -6876,6 +7759,10 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktn.ComplexObjec
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._rootRotationStatements !== undefined) {
       hasAnyValues = true;
@@ -6896,6 +7783,10 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktn.ComplexObjec
     if (this._serviceAccountJson !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceAccountJson = this._serviceAccountJson;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._tlsCa !== undefined) {
       hasAnyValues = true;
@@ -6934,14 +7825,17 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktn.ComplexObjec
       this._maxOpenConnections = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._passwordWo = undefined;
       this._passwordWoVersion = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
       this._serviceAccountJson = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._tlsCa = undefined;
       this._tlsCertificateKey = undefined;
       this._username = undefined;
@@ -6965,14 +7859,17 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktn.ComplexObjec
       this._maxOpenConnections = value.maxOpenConnections;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._passwordWo = value.passwordWo;
       this._passwordWoVersion = value.passwordWoVersion;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
       this._serviceAccountJson = value.serviceAccountJson;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._tlsCa = value.tlsCa;
       this._tlsCertificateKey = value.tlsCertificateKey;
       this._username = value.username;
@@ -7138,6 +8035,22 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktn.ComplexObjec
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
   public get passwordWo() {
@@ -7184,6 +8097,22 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktn.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // root_rotation_statements - computed: false, optional: true, required: false
@@ -7264,6 +8193,22 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktn.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get serviceAccountJsonInput() {
     return this._serviceAccountJson;
+  }
+
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
   }
 
   // tls_ca - computed: false, optional: true, required: false
@@ -7370,139 +8315,157 @@ export interface DatabaseSecretsMountMysqlAurora {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
   */
   readonly tlsCertificateKey?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -7523,14 +8486,17 @@ export function databaseSecretsMountMysqlAuroraToTerraform(struct?: DatabaseSecr
     max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     password_wo: cdktn.stringToTerraform(struct!.passwordWo),
     password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
     service_account_json: cdktn.stringToTerraform(struct!.serviceAccountJson),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     tls_ca: cdktn.stringToTerraform(struct!.tlsCa),
     tls_certificate_key: cdktn.stringToTerraform(struct!.tlsCertificateKey),
     username: cdktn.stringToTerraform(struct!.username),
@@ -7606,6 +8572,12 @@ export function databaseSecretsMountMysqlAuroraToHclTerraform(struct?: DatabaseS
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     password_wo: {
       value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
@@ -7620,6 +8592,12 @@ export function databaseSecretsMountMysqlAuroraToHclTerraform(struct?: DatabaseS
     },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7653,6 +8631,12 @@ export function databaseSecretsMountMysqlAuroraToHclTerraform(struct?: DatabaseS
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     tls_ca: {
       value: cdktn.stringToHclTerraform(struct!.tlsCa),
@@ -7750,6 +8734,10 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktn.Comple
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._passwordWo !== undefined) {
       hasAnyValues = true;
       internalValueResult.passwordWo = this._passwordWo;
@@ -7761,6 +8749,10 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktn.Comple
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._rootRotationStatements !== undefined) {
       hasAnyValues = true;
@@ -7781,6 +8773,10 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktn.Comple
     if (this._serviceAccountJson !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceAccountJson = this._serviceAccountJson;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._tlsCa !== undefined) {
       hasAnyValues = true;
@@ -7819,14 +8815,17 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktn.Comple
       this._maxOpenConnections = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._passwordWo = undefined;
       this._passwordWoVersion = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
       this._serviceAccountJson = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._tlsCa = undefined;
       this._tlsCertificateKey = undefined;
       this._username = undefined;
@@ -7850,14 +8849,17 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktn.Comple
       this._maxOpenConnections = value.maxOpenConnections;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._passwordWo = value.passwordWo;
       this._passwordWoVersion = value.passwordWoVersion;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
       this._serviceAccountJson = value.serviceAccountJson;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._tlsCa = value.tlsCa;
       this._tlsCertificateKey = value.tlsCertificateKey;
       this._username = value.username;
@@ -8023,6 +9025,22 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktn.Comple
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
   public get passwordWo() {
@@ -8069,6 +9087,22 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktn.Comple
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // root_rotation_statements - computed: false, optional: true, required: false
@@ -8149,6 +9183,22 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktn.Comple
   // Temporarily expose input value. Use with caution.
   public get serviceAccountJsonInput() {
     return this._serviceAccountJson;
+  }
+
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
   }
 
   // tls_ca - computed: false, optional: true, required: false
@@ -8255,139 +9305,157 @@ export interface DatabaseSecretsMountMysqlLegacy {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
   */
   readonly tlsCertificateKey?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -8408,14 +9476,17 @@ export function databaseSecretsMountMysqlLegacyToTerraform(struct?: DatabaseSecr
     max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     password_wo: cdktn.stringToTerraform(struct!.passwordWo),
     password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
     service_account_json: cdktn.stringToTerraform(struct!.serviceAccountJson),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     tls_ca: cdktn.stringToTerraform(struct!.tlsCa),
     tls_certificate_key: cdktn.stringToTerraform(struct!.tlsCertificateKey),
     username: cdktn.stringToTerraform(struct!.username),
@@ -8491,6 +9562,12 @@ export function databaseSecretsMountMysqlLegacyToHclTerraform(struct?: DatabaseS
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     password_wo: {
       value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
@@ -8505,6 +9582,12 @@ export function databaseSecretsMountMysqlLegacyToHclTerraform(struct?: DatabaseS
     },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8538,6 +9621,12 @@ export function databaseSecretsMountMysqlLegacyToHclTerraform(struct?: DatabaseS
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     tls_ca: {
       value: cdktn.stringToHclTerraform(struct!.tlsCa),
@@ -8635,6 +9724,10 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktn.Comple
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._passwordWo !== undefined) {
       hasAnyValues = true;
       internalValueResult.passwordWo = this._passwordWo;
@@ -8646,6 +9739,10 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktn.Comple
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._rootRotationStatements !== undefined) {
       hasAnyValues = true;
@@ -8666,6 +9763,10 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktn.Comple
     if (this._serviceAccountJson !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceAccountJson = this._serviceAccountJson;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._tlsCa !== undefined) {
       hasAnyValues = true;
@@ -8704,14 +9805,17 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktn.Comple
       this._maxOpenConnections = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._passwordWo = undefined;
       this._passwordWoVersion = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
       this._serviceAccountJson = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._tlsCa = undefined;
       this._tlsCertificateKey = undefined;
       this._username = undefined;
@@ -8735,14 +9839,17 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktn.Comple
       this._maxOpenConnections = value.maxOpenConnections;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._passwordWo = value.passwordWo;
       this._passwordWoVersion = value.passwordWoVersion;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
       this._serviceAccountJson = value.serviceAccountJson;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._tlsCa = value.tlsCa;
       this._tlsCertificateKey = value.tlsCertificateKey;
       this._username = value.username;
@@ -8908,6 +10015,22 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktn.Comple
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
   public get passwordWo() {
@@ -8954,6 +10077,22 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktn.Comple
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // root_rotation_statements - computed: false, optional: true, required: false
@@ -9034,6 +10173,22 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktn.Comple
   // Temporarily expose input value. Use with caution.
   public get serviceAccountJsonInput() {
     return this._serviceAccountJson;
+  }
+
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
   }
 
   // tls_ca - computed: false, optional: true, required: false
@@ -9140,139 +10295,157 @@ export interface DatabaseSecretsMountMysqlRds {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * x509 CA file for validating the certificate presented by the MySQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * x509 certificate for connecting to the database. This must be a PEM encoded version of the private key and the certificate combined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_certificate_key DatabaseSecretsMount#tls_certificate_key}
   */
   readonly tlsCertificateKey?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -9293,14 +10466,17 @@ export function databaseSecretsMountMysqlRdsToTerraform(struct?: DatabaseSecrets
     max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     password_wo: cdktn.stringToTerraform(struct!.passwordWo),
     password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
     service_account_json: cdktn.stringToTerraform(struct!.serviceAccountJson),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     tls_ca: cdktn.stringToTerraform(struct!.tlsCa),
     tls_certificate_key: cdktn.stringToTerraform(struct!.tlsCertificateKey),
     username: cdktn.stringToTerraform(struct!.username),
@@ -9376,6 +10552,12 @@ export function databaseSecretsMountMysqlRdsToHclTerraform(struct?: DatabaseSecr
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     password_wo: {
       value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
@@ -9390,6 +10572,12 @@ export function databaseSecretsMountMysqlRdsToHclTerraform(struct?: DatabaseSecr
     },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9423,6 +10611,12 @@ export function databaseSecretsMountMysqlRdsToHclTerraform(struct?: DatabaseSecr
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     tls_ca: {
       value: cdktn.stringToHclTerraform(struct!.tlsCa),
@@ -9520,6 +10714,10 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktn.ComplexOb
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._passwordWo !== undefined) {
       hasAnyValues = true;
       internalValueResult.passwordWo = this._passwordWo;
@@ -9531,6 +10729,10 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktn.ComplexOb
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._rootRotationStatements !== undefined) {
       hasAnyValues = true;
@@ -9551,6 +10753,10 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktn.ComplexOb
     if (this._serviceAccountJson !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceAccountJson = this._serviceAccountJson;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._tlsCa !== undefined) {
       hasAnyValues = true;
@@ -9589,14 +10795,17 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktn.ComplexOb
       this._maxOpenConnections = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._passwordWo = undefined;
       this._passwordWoVersion = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
       this._serviceAccountJson = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._tlsCa = undefined;
       this._tlsCertificateKey = undefined;
       this._username = undefined;
@@ -9620,14 +10829,17 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktn.ComplexOb
       this._maxOpenConnections = value.maxOpenConnections;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._passwordWo = value.passwordWo;
       this._passwordWoVersion = value.passwordWoVersion;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
       this._serviceAccountJson = value.serviceAccountJson;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._tlsCa = value.tlsCa;
       this._tlsCertificateKey = value.tlsCertificateKey;
       this._username = value.username;
@@ -9793,6 +11005,22 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktn.ComplexOb
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
   public get passwordWo() {
@@ -9839,6 +11067,22 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktn.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // root_rotation_statements - computed: false, optional: true, required: false
@@ -9919,6 +11163,22 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktn.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get serviceAccountJsonInput() {
     return this._serviceAccountJson;
+  }
+
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
   }
 
   // tls_ca - computed: false, optional: true, required: false
@@ -10025,133 +11285,151 @@ export interface DatabaseSecretsMountOracle {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Set to true to disconnect any open sessions prior to running the revocation statements.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disconnect_sessions DatabaseSecretsMount#disconnect_sessions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disconnect_sessions DatabaseSecretsMount#disconnect_sessions}
   */
   readonly disconnectSessions?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * If set, allows onboarding static roles with a rootless connection configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#self_managed DatabaseSecretsMount#self_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#self_managed DatabaseSecretsMount#self_managed}
   */
   readonly selfManaged?: boolean | cdktn.IResolvable;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * Set to true in order to split statements after semi-colons.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#split_statements DatabaseSecretsMount#split_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#split_statements DatabaseSecretsMount#split_statements}
   */
   readonly splitStatements?: boolean | cdktn.IResolvable;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -10172,14 +11450,17 @@ export function databaseSecretsMountOracleToTerraform(struct?: DatabaseSecretsMo
     max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     password_wo: cdktn.stringToTerraform(struct!.passwordWo),
     password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
     self_managed: cdktn.booleanToTerraform(struct!.selfManaged),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     split_statements: cdktn.booleanToTerraform(struct!.splitStatements),
     username: cdktn.stringToTerraform(struct!.username),
     username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
@@ -10254,6 +11535,12 @@ export function databaseSecretsMountOracleToHclTerraform(struct?: DatabaseSecret
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     password_wo: {
       value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
@@ -10268,6 +11555,12 @@ export function databaseSecretsMountOracleToHclTerraform(struct?: DatabaseSecret
     },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -10298,6 +11591,12 @@ export function databaseSecretsMountOracleToHclTerraform(struct?: DatabaseSecret
     },
     self_managed: {
       value: cdktn.booleanToHclTerraform(struct!.selfManaged),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -10392,6 +11691,10 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktn.ComplexObje
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._passwordWo !== undefined) {
       hasAnyValues = true;
       internalValueResult.passwordWo = this._passwordWo;
@@ -10403,6 +11706,10 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktn.ComplexObje
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._rootRotationStatements !== undefined) {
       hasAnyValues = true;
@@ -10423,6 +11730,10 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktn.ComplexObje
     if (this._selfManaged !== undefined) {
       hasAnyValues = true;
       internalValueResult.selfManaged = this._selfManaged;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._splitStatements !== undefined) {
       hasAnyValues = true;
@@ -10457,14 +11768,17 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktn.ComplexObje
       this._maxOpenConnections = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._passwordWo = undefined;
       this._passwordWoVersion = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
       this._selfManaged = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._splitStatements = undefined;
       this._username = undefined;
       this._usernameTemplate = undefined;
@@ -10487,14 +11801,17 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktn.ComplexObje
       this._maxOpenConnections = value.maxOpenConnections;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._passwordWo = value.passwordWo;
       this._passwordWoVersion = value.passwordWoVersion;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
       this._selfManaged = value.selfManaged;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._splitStatements = value.splitStatements;
       this._username = value.username;
       this._usernameTemplate = value.usernameTemplate;
@@ -10659,6 +11976,22 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktn.ComplexObje
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
   public get passwordWo() {
@@ -10705,6 +12038,22 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktn.ComplexObje
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // root_rotation_statements - computed: false, optional: true, required: false
@@ -10785,6 +12134,22 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktn.ComplexObje
   // Temporarily expose input value. Use with caution.
   public get selfManagedInput() {
     return this._selfManaged;
+  }
+
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
   }
 
   // split_statements - computed: false, optional: true, required: false
@@ -10875,163 +12240,181 @@ export interface DatabaseSecretsMountPostgresql {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Specify alternative authorization type. (Only 'gcp_iam' is valid currently)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#auth_type DatabaseSecretsMount#auth_type}
   */
   readonly authType?: string;
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Disable special character escaping in username and password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
   */
   readonly disableEscaping?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
   * When set to `scram-sha-256`, passwords will be hashed by Vault before being sent to PostgreSQL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_authentication DatabaseSecretsMount#password_authentication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_authentication DatabaseSecretsMount#password_authentication}
   */
   readonly passwordAuthentication?: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * The secret key used for the x509 client certificate. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#private_key DatabaseSecretsMount#private_key}
   */
   readonly privateKey?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * If set, allows onboarding static roles with a rootless connection configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#self_managed DatabaseSecretsMount#self_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#self_managed DatabaseSecretsMount#self_managed}
   */
   readonly selfManaged?: boolean | cdktn.IResolvable;
   /**
   * A JSON encoded credential for use with IAM authorization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#service_account_json DatabaseSecretsMount#service_account_json}
   */
   readonly serviceAccountJson?: string;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * The x509 CA file for validating the certificate presented by the PostgreSQL server. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_ca DatabaseSecretsMount#tls_ca}
   */
   readonly tlsCa?: string;
   /**
   * The x509 client certificate for connecting to the database. Must be PEM encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls_certificate DatabaseSecretsMount#tls_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls_certificate DatabaseSecretsMount#tls_certificate}
   */
   readonly tlsCertificate?: string;
   /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -11054,9 +12437,11 @@ export function databaseSecretsMountPostgresqlToTerraform(struct?: DatabaseSecre
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
     password_authentication: cdktn.stringToTerraform(struct!.passwordAuthentication),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     password_wo: cdktn.stringToTerraform(struct!.passwordWo),
     password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     private_key: cdktn.stringToTerraform(struct!.privateKey),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
@@ -11064,6 +12449,7 @@ export function databaseSecretsMountPostgresqlToTerraform(struct?: DatabaseSecre
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
     self_managed: cdktn.booleanToTerraform(struct!.selfManaged),
     service_account_json: cdktn.stringToTerraform(struct!.serviceAccountJson),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     tls_ca: cdktn.stringToTerraform(struct!.tlsCa),
     tls_certificate: cdktn.stringToTerraform(struct!.tlsCertificate),
     username: cdktn.stringToTerraform(struct!.username),
@@ -11151,6 +12537,12 @@ export function databaseSecretsMountPostgresqlToHclTerraform(struct?: DatabaseSe
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     password_wo: {
       value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
@@ -11165,6 +12557,12 @@ export function databaseSecretsMountPostgresqlToHclTerraform(struct?: DatabaseSe
     },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -11210,6 +12608,12 @@ export function databaseSecretsMountPostgresqlToHclTerraform(struct?: DatabaseSe
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     tls_ca: {
       value: cdktn.stringToHclTerraform(struct!.tlsCa),
@@ -11315,6 +12719,10 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktn.Complex
       hasAnyValues = true;
       internalValueResult.passwordAuthentication = this._passwordAuthentication;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._passwordWo !== undefined) {
       hasAnyValues = true;
       internalValueResult.passwordWo = this._passwordWo;
@@ -11326,6 +12734,10 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktn.Complex
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._privateKey !== undefined) {
       hasAnyValues = true;
@@ -11354,6 +12766,10 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktn.Complex
     if (this._serviceAccountJson !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceAccountJson = this._serviceAccountJson;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._tlsCa !== undefined) {
       hasAnyValues = true;
@@ -11394,9 +12810,11 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktn.Complex
       this._name = undefined;
       this._password = undefined;
       this._passwordAuthentication = undefined;
+      this._passwordPolicy = undefined;
       this._passwordWo = undefined;
       this._passwordWoVersion = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._privateKey = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
@@ -11404,6 +12822,7 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktn.Complex
       this._rotationWindow = undefined;
       this._selfManaged = undefined;
       this._serviceAccountJson = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._tlsCa = undefined;
       this._tlsCertificate = undefined;
       this._username = undefined;
@@ -11429,9 +12848,11 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktn.Complex
       this._name = value.name;
       this._password = value.password;
       this._passwordAuthentication = value.passwordAuthentication;
+      this._passwordPolicy = value.passwordPolicy;
       this._passwordWo = value.passwordWo;
       this._passwordWoVersion = value.passwordWoVersion;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._privateKey = value.privateKey;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
@@ -11439,6 +12860,7 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktn.Complex
       this._rotationWindow = value.rotationWindow;
       this._selfManaged = value.selfManaged;
       this._serviceAccountJson = value.serviceAccountJson;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._tlsCa = value.tlsCa;
       this._tlsCertificate = value.tlsCertificate;
       this._username = value.username;
@@ -11636,6 +13058,22 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktn.Complex
     return this._passwordAuthentication;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
   public get passwordWo() {
@@ -11682,6 +13120,22 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktn.Complex
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // private_key - computed: false, optional: true, required: false
@@ -11796,6 +13250,22 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktn.Complex
     return this._serviceAccountJson;
   }
 
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
+  }
+
   // tls_ca - computed: false, optional: true, required: false
   private _tlsCa?: string; 
   public get tlsCa() {
@@ -11900,103 +13370,121 @@ export interface DatabaseSecretsMountRedis {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * The contents of a PEM-encoded CA cert file to use to verify the Redis server's identity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#ca_cert DatabaseSecretsMount#ca_cert}
   */
   readonly caCert?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Specifies the host to connect to
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#host DatabaseSecretsMount#host}
   */
   readonly host: string;
   /**
   * Specifies whether to skip verification of the server certificate when using TLS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#insecure_tls DatabaseSecretsMount#insecure_tls}
   */
   readonly insecureTls?: boolean | cdktn.IResolvable;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * Specifies the password corresponding to the given username.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * The transport port to use to connect to Redis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#port DatabaseSecretsMount#port}
   */
   readonly port?: number;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * Specifies whether to use TLS when connecting to Redis.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#tls DatabaseSecretsMount#tls}
   */
   readonly tls?: boolean | cdktn.IResolvable;
   /**
   * Specifies the username for Vault to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -12015,12 +13503,15 @@ export function databaseSecretsMountRedisToTerraform(struct?: DatabaseSecretsMou
     insecure_tls: cdktn.booleanToTerraform(struct!.insecureTls),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     port: cdktn.numberToTerraform(struct!.port),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     tls: cdktn.booleanToTerraform(struct!.tls),
     username: cdktn.stringToTerraform(struct!.username),
     verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
@@ -12082,8 +13573,20 @@ export function databaseSecretsMountRedisToHclTerraform(struct?: DatabaseSecrets
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12117,6 +13620,12 @@ export function databaseSecretsMountRedisToHclTerraform(struct?: DatabaseSecrets
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     tls: {
       value: cdktn.booleanToHclTerraform(struct!.tls),
@@ -12194,9 +13703,17 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktn.ComplexObjec
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._port !== undefined) {
       hasAnyValues = true;
@@ -12217,6 +13734,10 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktn.ComplexObjec
     if (this._rotationWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._tls !== undefined) {
       hasAnyValues = true;
@@ -12245,12 +13766,15 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktn.ComplexObjec
       this._insecureTls = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._port = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._tls = undefined;
       this._username = undefined;
       this._verifyConnection = undefined;
@@ -12270,12 +13794,15 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktn.ComplexObjec
       this._insecureTls = value.insecureTls;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._port = value.port;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._tls = value.tls;
       this._username = value.username;
       this._verifyConnection = value.verifyConnection;
@@ -12401,6 +13928,22 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktn.ComplexObjec
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // plugin_name - computed: true, optional: true, required: false
   private _pluginName?: string; 
   public get pluginName() {
@@ -12415,6 +13958,22 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktn.ComplexObjec
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // port - computed: false, optional: true, required: false
@@ -12497,6 +14056,22 @@ export class DatabaseSecretsMountRedisOutputReference extends cdktn.ComplexObjec
     return this._rotationWindow;
   }
 
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
+  }
+
   // tls - computed: false, optional: true, required: false
   private _tls?: boolean | cdktn.IResolvable; 
   public get tls() {
@@ -12566,85 +14141,103 @@ export interface DatabaseSecretsMountRedisElasticache {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The AWS secret key id to use to talk to ElastiCache. If omitted the credentials chain provider is used instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * The AWS region where the ElastiCache cluster is hosted. If omitted the plugin tries to infer the region from the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#region DatabaseSecretsMount#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#region DatabaseSecretsMount#region}
   */
   readonly region?: string;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * The configuration endpoint for the ElastiCache cluster to connect to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#url DatabaseSecretsMount#url}
   */
   readonly url: string;
   /**
   * The AWS access key id to use to talk to ElastiCache. If omitted the credentials chain provider is used instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -12660,12 +14253,15 @@ export function databaseSecretsMountRedisElasticacheToTerraform(struct?: Databas
     disable_automated_rotation: cdktn.booleanToTerraform(struct!.disableAutomatedRotation),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     region: cdktn.stringToTerraform(struct!.region),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     url: cdktn.stringToTerraform(struct!.url),
     username: cdktn.stringToTerraform(struct!.username),
     verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
@@ -12709,8 +14305,20 @@ export function databaseSecretsMountRedisElasticacheToHclTerraform(struct?: Data
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -12744,6 +14352,12 @@ export function databaseSecretsMountRedisElasticacheToHclTerraform(struct?: Data
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     url: {
       value: cdktn.stringToHclTerraform(struct!.url),
@@ -12809,9 +14423,17 @@ export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktn.C
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._region !== undefined) {
       hasAnyValues = true;
@@ -12832,6 +14454,10 @@ export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktn.C
     if (this._rotationWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._url !== undefined) {
       hasAnyValues = true;
@@ -12857,12 +14483,15 @@ export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktn.C
       this._disableAutomatedRotation = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._region = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._url = undefined;
       this._username = undefined;
       this._verifyConnection = undefined;
@@ -12879,12 +14508,15 @@ export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktn.C
       this._disableAutomatedRotation = value.disableAutomatedRotation;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._region = value.region;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._url = value.url;
       this._username = value.username;
       this._verifyConnection = value.verifyConnection;
@@ -12968,6 +14600,22 @@ export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktn.C
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // plugin_name - computed: true, optional: true, required: false
   private _pluginName?: string; 
   public get pluginName() {
@@ -12982,6 +14630,22 @@ export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktn.C
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // region - computed: false, optional: true, required: false
@@ -13064,6 +14728,22 @@ export class DatabaseSecretsMountRedisElasticacheOutputReference extends cdktn.C
     return this._rotationWindow;
   }
 
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
+  }
+
   // url - computed: false, optional: false, required: true
   private _url?: string; 
   public get url() {
@@ -13133,121 +14813,139 @@ export interface DatabaseSecretsMountRedshift {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Disable special character escaping in username and password
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_escaping DatabaseSecretsMount#disable_escaping}
   */
   readonly disableEscaping?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -13268,13 +14966,16 @@ export function databaseSecretsMountRedshiftToTerraform(struct?: DatabaseSecrets
     max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     password_wo: cdktn.stringToTerraform(struct!.passwordWo),
     password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     username: cdktn.stringToTerraform(struct!.username),
     username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
@@ -13348,6 +15049,12 @@ export function databaseSecretsMountRedshiftToHclTerraform(struct?: DatabaseSecr
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     password_wo: {
       value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
@@ -13362,6 +15069,12 @@ export function databaseSecretsMountRedshiftToHclTerraform(struct?: DatabaseSecr
     },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -13389,6 +15102,12 @@ export function databaseSecretsMountRedshiftToHclTerraform(struct?: DatabaseSecr
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     username: {
       value: cdktn.stringToHclTerraform(struct!.username),
@@ -13474,6 +15193,10 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktn.ComplexOb
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._passwordWo !== undefined) {
       hasAnyValues = true;
       internalValueResult.passwordWo = this._passwordWo;
@@ -13485,6 +15208,10 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktn.ComplexOb
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._rootRotationStatements !== undefined) {
       hasAnyValues = true;
@@ -13501,6 +15228,10 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktn.ComplexOb
     if (this._rotationWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._username !== undefined) {
       hasAnyValues = true;
@@ -13531,13 +15262,16 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktn.ComplexOb
       this._maxOpenConnections = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._passwordWo = undefined;
       this._passwordWoVersion = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._username = undefined;
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
@@ -13559,13 +15293,16 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktn.ComplexOb
       this._maxOpenConnections = value.maxOpenConnections;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._passwordWo = value.passwordWo;
       this._passwordWoVersion = value.passwordWoVersion;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._username = value.username;
       this._usernameTemplate = value.usernameTemplate;
       this._verifyConnection = value.verifyConnection;
@@ -13729,6 +15466,22 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktn.ComplexOb
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
   public get passwordWo() {
@@ -13775,6 +15528,22 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktn.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // root_rotation_statements - computed: false, optional: true, required: false
@@ -13839,6 +15608,22 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktn.ComplexOb
   // Temporarily expose input value. Use with caution.
   public get rotationWindowInput() {
     return this._rotationWindow;
+  }
+
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
   }
 
   // username - computed: false, optional: true, required: false
@@ -13913,127 +15698,145 @@ export interface DatabaseSecretsMountSnowflake {
   /**
   * A list of roles that are allowed to use this connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#allowed_roles DatabaseSecretsMount#allowed_roles}
   */
   readonly allowedRoles?: string[];
   /**
   * Connection string to use to connect to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#connection_url DatabaseSecretsMount#connection_url}
   */
   readonly connectionUrl?: string;
   /**
   * A map of sensitive data to pass to the endpoint. Useful for templated connection strings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#data DatabaseSecretsMount#data}
   */
   readonly data?: { [key: string]: string };
   /**
   * Stops rotation of the root credential until set to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#disable_automated_rotation DatabaseSecretsMount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Maximum number of seconds a connection may be reused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_connection_lifetime DatabaseSecretsMount#max_connection_lifetime}
   */
   readonly maxConnectionLifetime?: number;
   /**
   * Maximum number of idle connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_idle_connections DatabaseSecretsMount#max_idle_connections}
   */
   readonly maxIdleConnections?: number;
   /**
   * Maximum number of open connections to the database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#max_open_connections DatabaseSecretsMount#max_open_connections}
   */
   readonly maxOpenConnections?: number;
   /**
   * Name of the database connection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#name DatabaseSecretsMount#name}
   */
   readonly name: string;
   /**
   * The root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password DatabaseSecretsMount#password}
   */
   readonly password?: string;
   /**
+  * Optional name of the password policy to use for generated passwords.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_policy DatabaseSecretsMount#password_policy}
+  */
+  readonly passwordPolicy?: string;
+  /**
   * Write-only field for the root credential password used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo DatabaseSecretsMount#password_wo}
   */
   readonly passwordWo?: string;
   /**
   * Version counter for root credential password write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#password_wo_version DatabaseSecretsMount#password_wo_version}
   */
   readonly passwordWoVersion?: number;
   /**
   * Specifies the name of the plugin to use for this connection. Must be prefixed with the name of one of the supported database engine types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_name DatabaseSecretsMount#plugin_name}
   */
   readonly pluginName?: string;
   /**
+  * Optional plugin version to use for this connection.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#plugin_version DatabaseSecretsMount#plugin_version}
+  */
+  readonly pluginVersion?: string;
+  /**
   * The private key configured for the admin user in Snowflake.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#private_key_wo DatabaseSecretsMount#private_key_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#private_key_wo DatabaseSecretsMount#private_key_wo}
   */
   readonly privateKeyWo?: string;
   /**
   * Version counter for the private key key-pair credentials write-only field
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#private_key_wo_version DatabaseSecretsMount#private_key_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#private_key_wo_version DatabaseSecretsMount#private_key_wo_version}
   */
   readonly privateKeyWoVersion?: number;
   /**
   * A list of database statements to be executed to rotate the root user's credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#root_rotation_statements DatabaseSecretsMount#root_rotation_statements}
   */
   readonly rootRotationStatements?: string[];
   /**
   * The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_period DatabaseSecretsMount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_schedule DatabaseSecretsMount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. Can only be used with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#rotation_window DatabaseSecretsMount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
+  * Skip rotation of static role credentials on import.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#skip_static_role_import_rotation DatabaseSecretsMount#skip_static_role_import_rotation}
+  */
+  readonly skipStaticRoleImportRotation?: boolean | cdktn.IResolvable;
+  /**
   * The root credential username used in the connection URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username DatabaseSecretsMount#username}
   */
   readonly username?: string;
   /**
   * Username generation template.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#username_template DatabaseSecretsMount#username_template}
   */
   readonly usernameTemplate?: string;
   /**
   * Specifies if the connection is verified during initial configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#verify_connection DatabaseSecretsMount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
@@ -14053,15 +15856,18 @@ export function databaseSecretsMountSnowflakeToTerraform(struct?: DatabaseSecret
     max_open_connections: cdktn.numberToTerraform(struct!.maxOpenConnections),
     name: cdktn.stringToTerraform(struct!.name),
     password: cdktn.stringToTerraform(struct!.password),
+    password_policy: cdktn.stringToTerraform(struct!.passwordPolicy),
     password_wo: cdktn.stringToTerraform(struct!.passwordWo),
     password_wo_version: cdktn.numberToTerraform(struct!.passwordWoVersion),
     plugin_name: cdktn.stringToTerraform(struct!.pluginName),
+    plugin_version: cdktn.stringToTerraform(struct!.pluginVersion),
     private_key_wo: cdktn.stringToTerraform(struct!.privateKeyWo),
     private_key_wo_version: cdktn.numberToTerraform(struct!.privateKeyWoVersion),
     root_rotation_statements: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.rootRotationStatements),
     rotation_period: cdktn.numberToTerraform(struct!.rotationPeriod),
     rotation_schedule: cdktn.stringToTerraform(struct!.rotationSchedule),
     rotation_window: cdktn.numberToTerraform(struct!.rotationWindow),
+    skip_static_role_import_rotation: cdktn.booleanToTerraform(struct!.skipStaticRoleImportRotation),
     username: cdktn.stringToTerraform(struct!.username),
     username_template: cdktn.stringToTerraform(struct!.usernameTemplate),
     verify_connection: cdktn.booleanToTerraform(struct!.verifyConnection),
@@ -14129,6 +15935,12 @@ export function databaseSecretsMountSnowflakeToHclTerraform(struct?: DatabaseSec
       type: "simple",
       storageClassType: "string",
     },
+    password_policy: {
+      value: cdktn.stringToHclTerraform(struct!.passwordPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     password_wo: {
       value: cdktn.stringToHclTerraform(struct!.passwordWo),
       isBlock: false,
@@ -14143,6 +15955,12 @@ export function databaseSecretsMountSnowflakeToHclTerraform(struct?: DatabaseSec
     },
     plugin_name: {
       value: cdktn.stringToHclTerraform(struct!.pluginName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    plugin_version: {
+      value: cdktn.stringToHclTerraform(struct!.pluginVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -14182,6 +16000,12 @@ export function databaseSecretsMountSnowflakeToHclTerraform(struct?: DatabaseSec
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    skip_static_role_import_rotation: {
+      value: cdktn.booleanToHclTerraform(struct!.skipStaticRoleImportRotation),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
     username: {
       value: cdktn.stringToHclTerraform(struct!.username),
@@ -14263,6 +16087,10 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktn.ComplexO
       hasAnyValues = true;
       internalValueResult.password = this._password;
     }
+    if (this._passwordPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.passwordPolicy = this._passwordPolicy;
+    }
     if (this._passwordWo !== undefined) {
       hasAnyValues = true;
       internalValueResult.passwordWo = this._passwordWo;
@@ -14274,6 +16102,10 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktn.ComplexO
     if (this._pluginName !== undefined) {
       hasAnyValues = true;
       internalValueResult.pluginName = this._pluginName;
+    }
+    if (this._pluginVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pluginVersion = this._pluginVersion;
     }
     if (this._privateKeyWo !== undefined) {
       hasAnyValues = true;
@@ -14298,6 +16130,10 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktn.ComplexO
     if (this._rotationWindow !== undefined) {
       hasAnyValues = true;
       internalValueResult.rotationWindow = this._rotationWindow;
+    }
+    if (this._skipStaticRoleImportRotation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.skipStaticRoleImportRotation = this._skipStaticRoleImportRotation;
     }
     if (this._username !== undefined) {
       hasAnyValues = true;
@@ -14327,15 +16163,18 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktn.ComplexO
       this._maxOpenConnections = undefined;
       this._name = undefined;
       this._password = undefined;
+      this._passwordPolicy = undefined;
       this._passwordWo = undefined;
       this._passwordWoVersion = undefined;
       this._pluginName = undefined;
+      this._pluginVersion = undefined;
       this._privateKeyWo = undefined;
       this._privateKeyWoVersion = undefined;
       this._rootRotationStatements = undefined;
       this._rotationPeriod = undefined;
       this._rotationSchedule = undefined;
       this._rotationWindow = undefined;
+      this._skipStaticRoleImportRotation = undefined;
       this._username = undefined;
       this._usernameTemplate = undefined;
       this._verifyConnection = undefined;
@@ -14356,15 +16195,18 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktn.ComplexO
       this._maxOpenConnections = value.maxOpenConnections;
       this._name = value.name;
       this._password = value.password;
+      this._passwordPolicy = value.passwordPolicy;
       this._passwordWo = value.passwordWo;
       this._passwordWoVersion = value.passwordWoVersion;
       this._pluginName = value.pluginName;
+      this._pluginVersion = value.pluginVersion;
       this._privateKeyWo = value.privateKeyWo;
       this._privateKeyWoVersion = value.privateKeyWoVersion;
       this._rootRotationStatements = value.rootRotationStatements;
       this._rotationPeriod = value.rotationPeriod;
       this._rotationSchedule = value.rotationSchedule;
       this._rotationWindow = value.rotationWindow;
+      this._skipStaticRoleImportRotation = value.skipStaticRoleImportRotation;
       this._username = value.username;
       this._usernameTemplate = value.usernameTemplate;
       this._verifyConnection = value.verifyConnection;
@@ -14512,6 +16354,22 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktn.ComplexO
     return this._password;
   }
 
+  // password_policy - computed: false, optional: true, required: false
+  private _passwordPolicy?: string; 
+  public get passwordPolicy() {
+    return this.getStringAttribute('password_policy');
+  }
+  public set passwordPolicy(value: string) {
+    this._passwordPolicy = value;
+  }
+  public resetPasswordPolicy() {
+    this._passwordPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordPolicyInput() {
+    return this._passwordPolicy;
+  }
+
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
   public get passwordWo() {
@@ -14558,6 +16416,22 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktn.ComplexO
   // Temporarily expose input value. Use with caution.
   public get pluginNameInput() {
     return this._pluginName;
+  }
+
+  // plugin_version - computed: false, optional: true, required: false
+  private _pluginVersion?: string; 
+  public get pluginVersion() {
+    return this.getStringAttribute('plugin_version');
+  }
+  public set pluginVersion(value: string) {
+    this._pluginVersion = value;
+  }
+  public resetPluginVersion() {
+    this._pluginVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pluginVersionInput() {
+    return this._pluginVersion;
   }
 
   // private_key_wo - computed: false, optional: true, required: false
@@ -14656,6 +16530,22 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktn.ComplexO
     return this._rotationWindow;
   }
 
+  // skip_static_role_import_rotation - computed: true, optional: true, required: false
+  private _skipStaticRoleImportRotation?: boolean | cdktn.IResolvable; 
+  public get skipStaticRoleImportRotation() {
+    return this.getBooleanAttribute('skip_static_role_import_rotation');
+  }
+  public set skipStaticRoleImportRotation(value: boolean | cdktn.IResolvable) {
+    this._skipStaticRoleImportRotation = value;
+  }
+  public resetSkipStaticRoleImportRotation() {
+    this._skipStaticRoleImportRotation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipStaticRoleImportRotationInput() {
+    return this._skipStaticRoleImportRotation;
+  }
+
   // username - computed: false, optional: true, required: false
   private _username?: string; 
   public get username() {
@@ -14726,7 +16616,7 @@ export class DatabaseSecretsMountSnowflakeList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount vault_database_secrets_mount}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount vault_database_secrets_mount}
 */
 export class DatabaseSecretsMount extends cdktn.TerraformResource {
 
@@ -14742,7 +16632,7 @@ export class DatabaseSecretsMount extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DatabaseSecretsMount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DatabaseSecretsMount to import
-  * @param importFromId The id of the existing DatabaseSecretsMount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DatabaseSecretsMount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DatabaseSecretsMount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -14754,7 +16644,7 @@ export class DatabaseSecretsMount extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/database_secrets_mount vault_database_secrets_mount} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -14765,7 +16655,7 @@ export class DatabaseSecretsMount extends cdktn.TerraformResource {
       terraformResourceType: 'vault_database_secrets_mount',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.7.0',
+        providerVersion: '5.8.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

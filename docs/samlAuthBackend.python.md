@@ -4,7 +4,7 @@
 
 ### SamlAuthBackend <a name="SamlAuthBackend" id="@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend vault_saml_auth_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend vault_saml_auth_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer"></a>
 
@@ -54,14 +54,14 @@ samlAuthBackend.SamlAuthBackend(
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.entityId">entity_id</a></code> | <code>str</code> | The entity ID of the SAML authentication service provider. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.defaultRole">default_role</a></code> | <code>str</code> | The role to use if no role is provided during login. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.disableRemount">disable_remount</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}. |
+| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.idpCert">idp_cert</a></code> | <code>str</code> | The PEM encoded certificate of the identity provider. Mutually exclusive with 'idp_metadata_url'. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.idpEntityId">idp_entity_id</a></code> | <code>str</code> | The entity ID of the identity provider. Mutually exclusive with 'idp_metadata_url'. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.idpMetadataUrl">idp_metadata_url</a></code> | <code>str</code> | The metadata URL of the identity provider. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.idpSsoUrl">idp_sso_url</a></code> | <code>str</code> | The SSO URL of the identity provider. Mutually exclusive with 'idp_metadata_url'. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.path">path</a></code> | <code>str</code> | Unique name of the auth backend to configure. |
-| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.tune">tune</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune">SamlAuthBackendTune</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#tune SamlAuthBackend#tune}. |
+| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.tune">tune</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune">SamlAuthBackendTune</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#tune SamlAuthBackend#tune}. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.validateAssertionSignature">validate_assertion_signature</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to validate the assertion signature. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.validateResponseSignature">validate_response_signature</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to validate the response signature. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer.parameter.verboseLogging">verbose_logging</a></code> | <code>bool \| cdktn.IResolvable</code> | Log additional, potentially sensitive information during the SAML exchange according to the current logging level. Not recommended for production. |
@@ -134,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 The well-formatted URLs of your Assertion Consumer Service (ACS) that should receive a response from the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#acs_urls SamlAuthBackend#acs_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#acs_urls SamlAuthBackend#acs_urls}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The entity ID of the SAML authentication service provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#entity_id SamlAuthBackend#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#entity_id SamlAuthBackend#entity_id}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The role to use if no role is provided during login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#default_role SamlAuthBackend#default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#default_role SamlAuthBackend#default_role}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#disable_remount SamlAuthBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#disable_remount SamlAuthBackend#disable_remount}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -185,7 +185,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The PEM encoded certificate of the identity provider. Mutually exclusive with 'idp_metadata_url'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#idp_cert SamlAuthBackend#idp_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#idp_cert SamlAuthBackend#idp_cert}
 
 ---
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The entity ID of the identity provider. Mutually exclusive with 'idp_metadata_url'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#idp_entity_id SamlAuthBackend#idp_entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#idp_entity_id SamlAuthBackend#idp_entity_id}
 
 ---
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The metadata URL of the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#idp_metadata_url SamlAuthBackend#idp_metadata_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#idp_metadata_url SamlAuthBackend#idp_metadata_url}
 
 ---
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The SSO URL of the identity provider. Mutually exclusive with 'idp_metadata_url'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#idp_sso_url SamlAuthBackend#idp_sso_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#idp_sso_url SamlAuthBackend#idp_sso_url}
 
 ---
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#namespace SamlAuthBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#namespace SamlAuthBackend#namespace}
 
 ---
 
@@ -235,7 +235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#path SamlAuthBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#path SamlAuthBackend#path}
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune">SamlAuthBackendTune</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#tune SamlAuthBackend#tune}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#tune SamlAuthBackend#tune}.
 
 ---
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether to validate the assertion signature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#validate_assertion_signature SamlAuthBackend#validate_assertion_signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#validate_assertion_signature SamlAuthBackend#validate_assertion_signature}
 
 ---
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether to validate the response signature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#validate_response_signature SamlAuthBackend#validate_response_signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#validate_response_signature SamlAuthBackend#validate_response_signature}
 
 ---
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Log additional, potentially sensitive information during the SAML exchange according to the current logging level. Not recommended for production.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#verbose_logging SamlAuthBackend#verbose_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#verbose_logging SamlAuthBackend#verbose_logging}
 
 ---
 
@@ -876,7 +876,7 @@ The construct id used in the generated config for the SamlAuthBackend to import.
 
 The id of the existing SamlAuthBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1449,14 +1449,14 @@ samlAuthBackend.SamlAuthBackendConfig(
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.entityId">entity_id</a></code> | <code>str</code> | The entity ID of the SAML authentication service provider. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.defaultRole">default_role</a></code> | <code>str</code> | The role to use if no role is provided during login. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.disableRemount">disable_remount</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}. |
+| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.idpCert">idp_cert</a></code> | <code>str</code> | The PEM encoded certificate of the identity provider. Mutually exclusive with 'idp_metadata_url'. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.idpEntityId">idp_entity_id</a></code> | <code>str</code> | The entity ID of the identity provider. Mutually exclusive with 'idp_metadata_url'. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.idpMetadataUrl">idp_metadata_url</a></code> | <code>str</code> | The metadata URL of the identity provider. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.idpSsoUrl">idp_sso_url</a></code> | <code>str</code> | The SSO URL of the identity provider. Mutually exclusive with 'idp_metadata_url'. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.path">path</a></code> | <code>str</code> | Unique name of the auth backend to configure. |
-| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.tune">tune</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune">SamlAuthBackendTune</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#tune SamlAuthBackend#tune}. |
+| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.tune">tune</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune">SamlAuthBackendTune</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#tune SamlAuthBackend#tune}. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.validateAssertionSignature">validate_assertion_signature</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to validate the assertion signature. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.validateResponseSignature">validate_response_signature</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to validate the response signature. |
 | <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.property.verboseLogging">verbose_logging</a></code> | <code>bool \| cdktn.IResolvable</code> | Log additional, potentially sensitive information during the SAML exchange according to the current logging level. Not recommended for production. |
@@ -1543,7 +1543,7 @@ acs_urls: typing.List[str]
 
 The well-formatted URLs of your Assertion Consumer Service (ACS) that should receive a response from the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#acs_urls SamlAuthBackend#acs_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#acs_urls SamlAuthBackend#acs_urls}
 
 ---
 
@@ -1557,7 +1557,7 @@ entity_id: str
 
 The entity ID of the SAML authentication service provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#entity_id SamlAuthBackend#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#entity_id SamlAuthBackend#entity_id}
 
 ---
 
@@ -1571,7 +1571,7 @@ default_role: str
 
 The role to use if no role is provided during login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#default_role SamlAuthBackend#default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#default_role SamlAuthBackend#default_role}
 
 ---
 
@@ -1585,7 +1585,7 @@ disable_remount: bool | IResolvable
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#disable_remount SamlAuthBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#disable_remount SamlAuthBackend#disable_remount}
 
 ---
 
@@ -1597,7 +1597,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#id SamlAuthBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1614,7 +1614,7 @@ idp_cert: str
 
 The PEM encoded certificate of the identity provider. Mutually exclusive with 'idp_metadata_url'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#idp_cert SamlAuthBackend#idp_cert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#idp_cert SamlAuthBackend#idp_cert}
 
 ---
 
@@ -1628,7 +1628,7 @@ idp_entity_id: str
 
 The entity ID of the identity provider. Mutually exclusive with 'idp_metadata_url'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#idp_entity_id SamlAuthBackend#idp_entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#idp_entity_id SamlAuthBackend#idp_entity_id}
 
 ---
 
@@ -1642,7 +1642,7 @@ idp_metadata_url: str
 
 The metadata URL of the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#idp_metadata_url SamlAuthBackend#idp_metadata_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#idp_metadata_url SamlAuthBackend#idp_metadata_url}
 
 ---
 
@@ -1656,7 +1656,7 @@ idp_sso_url: str
 
 The SSO URL of the identity provider. Mutually exclusive with 'idp_metadata_url'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#idp_sso_url SamlAuthBackend#idp_sso_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#idp_sso_url SamlAuthBackend#idp_sso_url}
 
 ---
 
@@ -1670,7 +1670,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#namespace SamlAuthBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#namespace SamlAuthBackend#namespace}
 
 ---
 
@@ -1684,7 +1684,7 @@ path: str
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#path SamlAuthBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#path SamlAuthBackend#path}
 
 ---
 
@@ -1696,7 +1696,7 @@ tune: IResolvable | typing.List[SamlAuthBackendTune]
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune">SamlAuthBackendTune</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#tune SamlAuthBackend#tune}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#tune SamlAuthBackend#tune}.
 
 ---
 
@@ -1710,7 +1710,7 @@ validate_assertion_signature: bool | IResolvable
 
 Whether to validate the assertion signature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#validate_assertion_signature SamlAuthBackend#validate_assertion_signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#validate_assertion_signature SamlAuthBackend#validate_assertion_signature}
 
 ---
 
@@ -1724,7 +1724,7 @@ validate_response_signature: bool | IResolvable
 
 Whether to validate the response signature.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#validate_response_signature SamlAuthBackend#validate_response_signature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#validate_response_signature SamlAuthBackend#validate_response_signature}
 
 ---
 
@@ -1738,7 +1738,7 @@ verbose_logging: bool | IResolvable
 
 Log additional, potentially sensitive information during the SAML exchange according to the current logging level. Not recommended for production.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#verbose_logging SamlAuthBackend#verbose_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#verbose_logging SamlAuthBackend#verbose_logging}
 
 ---
 
@@ -1765,14 +1765,14 @@ samlAuthBackend.SamlAuthBackendTune(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#allowed_response_headers SamlAuthBackend#allowed_response_headers}. |
-| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#audit_non_hmac_request_keys SamlAuthBackend#audit_non_hmac_request_keys}. |
-| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#audit_non_hmac_response_keys SamlAuthBackend#audit_non_hmac_response_keys}. |
-| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.defaultLeaseTtl">default_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#default_lease_ttl SamlAuthBackend#default_lease_ttl}. |
-| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#listing_visibility SamlAuthBackend#listing_visibility}. |
-| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.maxLeaseTtl">max_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#max_lease_ttl SamlAuthBackend#max_lease_ttl}. |
-| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#passthrough_request_headers SamlAuthBackend#passthrough_request_headers}. |
-| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.tokenType">token_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#token_type SamlAuthBackend#token_type}. |
+| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#allowed_response_headers SamlAuthBackend#allowed_response_headers}. |
+| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#audit_non_hmac_request_keys SamlAuthBackend#audit_non_hmac_request_keys}. |
+| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#audit_non_hmac_response_keys SamlAuthBackend#audit_non_hmac_response_keys}. |
+| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.defaultLeaseTtl">default_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#default_lease_ttl SamlAuthBackend#default_lease_ttl}. |
+| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#listing_visibility SamlAuthBackend#listing_visibility}. |
+| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.maxLeaseTtl">max_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#max_lease_ttl SamlAuthBackend#max_lease_ttl}. |
+| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#passthrough_request_headers SamlAuthBackend#passthrough_request_headers}. |
+| <code><a href="#@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.property.tokenType">token_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#token_type SamlAuthBackend#token_type}. |
 
 ---
 
@@ -1784,7 +1784,7 @@ allowed_response_headers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#allowed_response_headers SamlAuthBackend#allowed_response_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#allowed_response_headers SamlAuthBackend#allowed_response_headers}.
 
 ---
 
@@ -1796,7 +1796,7 @@ audit_non_hmac_request_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#audit_non_hmac_request_keys SamlAuthBackend#audit_non_hmac_request_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#audit_non_hmac_request_keys SamlAuthBackend#audit_non_hmac_request_keys}.
 
 ---
 
@@ -1808,7 +1808,7 @@ audit_non_hmac_response_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#audit_non_hmac_response_keys SamlAuthBackend#audit_non_hmac_response_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#audit_non_hmac_response_keys SamlAuthBackend#audit_non_hmac_response_keys}.
 
 ---
 
@@ -1820,7 +1820,7 @@ default_lease_ttl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#default_lease_ttl SamlAuthBackend#default_lease_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#default_lease_ttl SamlAuthBackend#default_lease_ttl}.
 
 ---
 
@@ -1832,7 +1832,7 @@ listing_visibility: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#listing_visibility SamlAuthBackend#listing_visibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#listing_visibility SamlAuthBackend#listing_visibility}.
 
 ---
 
@@ -1844,7 +1844,7 @@ max_lease_ttl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#max_lease_ttl SamlAuthBackend#max_lease_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#max_lease_ttl SamlAuthBackend#max_lease_ttl}.
 
 ---
 
@@ -1856,7 +1856,7 @@ passthrough_request_headers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#passthrough_request_headers SamlAuthBackend#passthrough_request_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#passthrough_request_headers SamlAuthBackend#passthrough_request_headers}.
 
 ---
 
@@ -1868,7 +1868,7 @@ token_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/saml_auth_backend#token_type SamlAuthBackend#token_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/saml_auth_backend#token_type SamlAuthBackend#token_type}.
 
 ---
 

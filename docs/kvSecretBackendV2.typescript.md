@@ -4,7 +4,7 @@
 
 ### KvSecretBackendV2 <a name="KvSecretBackendV2" id="@cdktn/provider-vault.kvSecretBackendV2.KvSecretBackendV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret_backend_v2 vault_kv_secret_backend_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.kvSecretBackendV2.KvSecretBackendV2.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the KvSecretBackendV2 to impor
 
 The id of the existing KvSecretBackendV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret_backend_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -875,7 +875,7 @@ const kvSecretBackendV2Config: kvSecretBackendV2.KvSecretBackendV2Config = { ...
 | <code><a href="#@cdktn/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.mount">mount</a></code> | <code>string</code> | Path where KV-V2 engine is mounted. |
 | <code><a href="#@cdktn/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.casRequired">casRequired</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, all keys will require the cas parameter to be set on all write requests. |
 | <code><a href="#@cdktn/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.deleteVersionAfter">deleteVersionAfter</a></code> | <code>number</code> | If set, specifies the length of time before a version is deleted. |
-| <code><a href="#@cdktn/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#id KvSecretBackendV2#id}. |
+| <code><a href="#@cdktn/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret_backend_v2#id KvSecretBackendV2#id}. |
 | <code><a href="#@cdktn/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.maxVersions">maxVersions</a></code> | <code>number</code> | The number of versions to keep per key. |
 | <code><a href="#@cdktn/provider-vault.kvSecretBackendV2.KvSecretBackendV2Config.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
@@ -961,7 +961,7 @@ public readonly mount: string;
 
 Path where KV-V2 engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#mount KvSecretBackendV2#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret_backend_v2#mount KvSecretBackendV2#mount}
 
 ---
 
@@ -975,7 +975,7 @@ public readonly casRequired: boolean | IResolvable;
 
 If true, all keys will require the cas parameter to be set on all write requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#cas_required KvSecretBackendV2#cas_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret_backend_v2#cas_required KvSecretBackendV2#cas_required}
 
 ---
 
@@ -989,7 +989,7 @@ public readonly deleteVersionAfter: number;
 
 If set, specifies the length of time before a version is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#delete_version_after KvSecretBackendV2#delete_version_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret_backend_v2#delete_version_after KvSecretBackendV2#delete_version_after}
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#id KvSecretBackendV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret_backend_v2#id KvSecretBackendV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1018,7 +1018,7 @@ public readonly maxVersions: number;
 
 The number of versions to keep per key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#max_versions KvSecretBackendV2#max_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret_backend_v2#max_versions KvSecretBackendV2#max_versions}
 
 ---
 
@@ -1032,7 +1032,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/kv_secret_backend_v2#namespace KvSecretBackendV2#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kv_secret_backend_v2#namespace KvSecretBackendV2#namespace}
 
 ---
 

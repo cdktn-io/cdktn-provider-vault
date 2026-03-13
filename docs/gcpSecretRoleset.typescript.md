@@ -4,7 +4,7 @@
 
 ### GcpSecretRoleset <a name="GcpSecretRoleset" id="@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRoleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset vault_gcp_secret_roleset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_roleset vault_gcp_secret_roleset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRoleset.Initializer"></a>
 
@@ -530,7 +530,7 @@ The construct id used in the generated config for the GcpSecretRoleset to import
 
 The id of the existing GcpSecretRoleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_roleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -941,7 +941,7 @@ public readonly resource: string;
 
 Resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#resource GcpSecretRoleset#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_roleset#resource GcpSecretRoleset#resource}
 
 ---
 
@@ -955,7 +955,7 @@ public readonly roles: string[];
 
 List of roles to apply to the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#roles GcpSecretRoleset#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_roleset#roles GcpSecretRoleset#roles}
 
 ---
 
@@ -984,7 +984,7 @@ const gcpSecretRolesetConfig: gcpSecretRoleset.GcpSecretRolesetConfig = { ... }
 | <code><a href="#@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.binding">binding</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetBinding">GcpSecretRolesetBinding</a>[]</code> | binding block. |
 | <code><a href="#@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.project">project</a></code> | <code>string</code> | Name of the GCP project that this roleset's service account will belong to. |
 | <code><a href="#@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.roleset">roleset</a></code> | <code>string</code> | Name of the RoleSet to create. |
-| <code><a href="#@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#id GcpSecretRoleset#id}. |
+| <code><a href="#@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_roleset#id GcpSecretRoleset#id}. |
 | <code><a href="#@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.secretType">secretType</a></code> | <code>string</code> | Type of secret generated for this role set. Defaults to `access_token`. Accepted values: `access_token`, `service_account_key`. |
 | <code><a href="#@cdktn/provider-vault.gcpSecretRoleset.GcpSecretRolesetConfig.property.tokenScopes">tokenScopes</a></code> | <code>string[]</code> | List of OAuth scopes to assign to `access_token` secrets generated under this role set (`access_token` role sets only). |
@@ -1071,7 +1071,7 @@ public readonly backend: string;
 
 Path where the GCP secrets engine is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#backend GcpSecretRoleset#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_roleset#backend GcpSecretRoleset#backend}
 
 ---
 
@@ -1085,7 +1085,7 @@ public readonly binding: IResolvable | GcpSecretRolesetBinding[];
 
 binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#binding GcpSecretRoleset#binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_roleset#binding GcpSecretRoleset#binding}
 
 ---
 
@@ -1099,7 +1099,7 @@ public readonly project: string;
 
 Name of the GCP project that this roleset's service account will belong to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#project GcpSecretRoleset#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_roleset#project GcpSecretRoleset#project}
 
 ---
 
@@ -1113,7 +1113,7 @@ public readonly roleset: string;
 
 Name of the RoleSet to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#roleset GcpSecretRoleset#roleset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_roleset#roleset GcpSecretRoleset#roleset}
 
 ---
 
@@ -1125,7 +1125,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#id GcpSecretRoleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_roleset#id GcpSecretRoleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1142,7 +1142,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#namespace GcpSecretRoleset#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_roleset#namespace GcpSecretRoleset#namespace}
 
 ---
 
@@ -1156,7 +1156,7 @@ public readonly secretType: string;
 
 Type of secret generated for this role set. Defaults to `access_token`. Accepted values: `access_token`, `service_account_key`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#secret_type GcpSecretRoleset#secret_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_roleset#secret_type GcpSecretRoleset#secret_type}
 
 ---
 
@@ -1170,7 +1170,7 @@ public readonly tokenScopes: string[];
 
 List of OAuth scopes to assign to `access_token` secrets generated under this role set (`access_token` role sets only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/gcp_secret_roleset#token_scopes GcpSecretRoleset#token_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/gcp_secret_roleset#token_scopes GcpSecretRoleset#token_scopes}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### AdSecretRole <a name="AdSecretRole" id="@cdktn/provider-vault.adSecretRole.AdSecretRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_role vault_ad_secret_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ad_secret_role vault_ad_secret_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.adSecretRole.AdSecretRole.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the AdSecretRole to import.
 
 The id of the existing AdSecretRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ad_secret_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -897,7 +897,7 @@ import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/adsecretrole"
 | <code><a href="#@cdktn/provider-vault.adSecretRole.AdSecretRoleConfig.property.backend">Backend</a></code> | <code>*string</code> | The mount path for the AD backend. |
 | <code><a href="#@cdktn/provider-vault.adSecretRole.AdSecretRoleConfig.property.role">Role</a></code> | <code>*string</code> | Name of the role. |
 | <code><a href="#@cdktn/provider-vault.adSecretRole.AdSecretRoleConfig.property.serviceAccountName">ServiceAccountName</a></code> | <code>*string</code> | The username/logon name for the service account with which this role will be associated. |
-| <code><a href="#@cdktn/provider-vault.adSecretRole.AdSecretRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_role#id AdSecretRole#id}. |
+| <code><a href="#@cdktn/provider-vault.adSecretRole.AdSecretRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ad_secret_role#id AdSecretRole#id}. |
 | <code><a href="#@cdktn/provider-vault.adSecretRole.AdSecretRoleConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.adSecretRole.AdSecretRoleConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | In seconds, the default password time-to-live. |
 
@@ -983,7 +983,7 @@ Backend *string
 
 The mount path for the AD backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_role#backend AdSecretRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ad_secret_role#backend AdSecretRole#backend}
 
 ---
 
@@ -997,7 +997,7 @@ Role *string
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_role#role AdSecretRole#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ad_secret_role#role AdSecretRole#role}
 
 ---
 
@@ -1011,7 +1011,7 @@ ServiceAccountName *string
 
 The username/logon name for the service account with which this role will be associated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_role#service_account_name AdSecretRole#service_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ad_secret_role#service_account_name AdSecretRole#service_account_name}
 
 ---
 
@@ -1023,7 +1023,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_role#id AdSecretRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ad_secret_role#id AdSecretRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1040,7 +1040,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_role#namespace AdSecretRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ad_secret_role#namespace AdSecretRole#namespace}
 
 ---
 
@@ -1054,7 +1054,7 @@ Ttl *f64
 
 In seconds, the default password time-to-live.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/ad_secret_role#ttl AdSecretRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/ad_secret_role#ttl AdSecretRole#ttl}
 
 ---
 

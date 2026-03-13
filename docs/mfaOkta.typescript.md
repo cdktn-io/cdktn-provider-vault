@@ -4,7 +4,7 @@
 
 ### MfaOkta <a name="MfaOkta" id="@cdktn/provider-vault.mfaOkta.MfaOkta"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta vault_mfa_okta}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta vault_mfa_okta}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.mfaOkta.MfaOkta.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the MfaOkta to import.
 
 The id of the existing MfaOkta that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1030,7 +1030,7 @@ public readonly apiToken: string;
 
 Okta API key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#api_token MfaOkta#api_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta#api_token MfaOkta#api_token}
 
 ---
 
@@ -1046,7 +1046,7 @@ The mount to tie this method to for use in automatic mappings.
 
 The mapping will use the Name field of Aliases associated with this mount as the username in the mapping.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#mount_accessor MfaOkta#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta#mount_accessor MfaOkta#mount_accessor}
 
 ---
 
@@ -1060,7 +1060,7 @@ public readonly name: string;
 
 Name of the MFA method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#name MfaOkta#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta#name MfaOkta#name}
 
 ---
 
@@ -1074,7 +1074,7 @@ public readonly orgName: string;
 
 Name of the organization to be used in the Okta API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#org_name MfaOkta#org_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta#org_name MfaOkta#org_name}
 
 ---
 
@@ -1088,7 +1088,7 @@ public readonly baseUrl: string;
 
 If set, will be used as the base domain for API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#base_url MfaOkta#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta#base_url MfaOkta#base_url}
 
 ---
 
@@ -1102,7 +1102,7 @@ public readonly id: string;
 
 ID computed by Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#id MfaOkta#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta#id MfaOkta#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1119,7 +1119,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#namespace MfaOkta#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta#namespace MfaOkta#namespace}
 
 ---
 
@@ -1133,7 +1133,7 @@ public readonly primaryEmail: boolean | IResolvable;
 
 If set to true, the username will only match the primary email for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#primary_email MfaOkta#primary_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta#primary_email MfaOkta#primary_email}
 
 ---
 
@@ -1147,7 +1147,7 @@ public readonly usernameFormat: string;
 
 A format string for mapping Identity names to MFA method names. Values to substitute should be placed in `{{}}`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/mfa_okta#username_format MfaOkta#username_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/mfa_okta#username_format MfaOkta#username_format}
 
 ---
 

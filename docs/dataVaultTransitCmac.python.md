@@ -4,7 +4,7 @@
 
 ### DataVaultTransitCmac <a name="DataVaultTransitCmac" id="@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac vault_transit_cmac}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac vault_transit_cmac}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.Initializer"></a>
 
@@ -51,7 +51,7 @@ dataVaultTransitCmac.DataVaultTransitCmac(
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.Initializer.parameter.batchInput">batch_input</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | Specifies a list of items for processing. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.Initializer.parameter.batchResults">batch_results</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | The results returned from Vault if using batch_input. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.Initializer.parameter.cmac">cmac</a></code> | <code>str</code> | The CMAC returned from Vault if using input. |
-| <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#id DataVaultTransitCmac#id}. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#id DataVaultTransitCmac#id}. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.Initializer.parameter.input">input</a></code> | <code>str</code> | Specifies the base64 encoded input data. One of input or batch_input must be supplied. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.Initializer.parameter.keyVersion">key_version</a></code> | <code>typing.Union[int, float]</code> | The version of the key to use. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmac.Initializer.parameter.macLength">mac_length</a></code> | <code>typing.Union[int, float]</code> | Specifies the MAC length to use (POST body parameter). The mac_length cannot be larger than the cipher's block size. |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the CMAC key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#name DataVaultTransitCmac#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#name DataVaultTransitCmac#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Transit secret backend the key belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#path DataVaultTransitCmac#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#path DataVaultTransitCmac#path}
 
 ---
 
@@ -148,7 +148,7 @@ Specifies a list of items for processing.
 
 When this parameter is set, any supplied 'input' or 'context' parameters will be ignored. Responses are returned in the 'batch_results' array component of the 'data' element of the response. Any batch output will preserve the order of the batch input. If the input data value of an item is invalid, the corresponding item in the 'batch_results' will have the key 'error' with a value describing the error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#batch_input DataVaultTransitCmac#batch_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#batch_input DataVaultTransitCmac#batch_input}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The results returned from Vault if using batch_input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#batch_results DataVaultTransitCmac#batch_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#batch_results DataVaultTransitCmac#batch_results}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The CMAC returned from Vault if using input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#cmac DataVaultTransitCmac#cmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#cmac DataVaultTransitCmac#cmac}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#id DataVaultTransitCmac#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#id DataVaultTransitCmac#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -189,7 +189,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies the base64 encoded input data. One of input or batch_input must be supplied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#input DataVaultTransitCmac#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#input DataVaultTransitCmac#input}
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The version of the key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#key_version DataVaultTransitCmac#key_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#key_version DataVaultTransitCmac#key_version}
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the MAC length to use (POST body parameter). The mac_length cannot be larger than the cipher's block size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#mac_length DataVaultTransitCmac#mac_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#mac_length DataVaultTransitCmac#mac_length}
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#namespace DataVaultTransitCmac#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#namespace DataVaultTransitCmac#namespace}
 
 ---
 
@@ -231,7 +231,7 @@ Specifies the MAC length to use (URL parameter).
 
 If provided, this value overrides mac_length. The url_mac_length cannot be larger than the cipher's block size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#url_mac_length DataVaultTransitCmac#url_mac_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#url_mac_length DataVaultTransitCmac#url_mac_length}
 
 ---
 
@@ -677,7 +677,7 @@ The construct id used in the generated config for the DataVaultTransitCmac to im
 
 The id of the existing DataVaultTransitCmac that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1137,7 +1137,7 @@ dataVaultTransitCmac.DataVaultTransitCmacConfig(
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmacConfig.property.batchInput">batch_input</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | Specifies a list of items for processing. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmacConfig.property.batchResults">batch_results</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | The results returned from Vault if using batch_input. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmacConfig.property.cmac">cmac</a></code> | <code>str</code> | The CMAC returned from Vault if using input. |
-| <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmacConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#id DataVaultTransitCmac#id}. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmacConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#id DataVaultTransitCmac#id}. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmacConfig.property.input">input</a></code> | <code>str</code> | Specifies the base64 encoded input data. One of input or batch_input must be supplied. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmacConfig.property.keyVersion">key_version</a></code> | <code>typing.Union[int, float]</code> | The version of the key to use. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitCmac.DataVaultTransitCmacConfig.property.macLength">mac_length</a></code> | <code>typing.Union[int, float]</code> | Specifies the MAC length to use (POST body parameter). The mac_length cannot be larger than the cipher's block size. |
@@ -1226,7 +1226,7 @@ name: str
 
 Name of the CMAC key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#name DataVaultTransitCmac#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#name DataVaultTransitCmac#name}
 
 ---
 
@@ -1240,7 +1240,7 @@ path: str
 
 The Transit secret backend the key belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#path DataVaultTransitCmac#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#path DataVaultTransitCmac#path}
 
 ---
 
@@ -1256,7 +1256,7 @@ Specifies a list of items for processing.
 
 When this parameter is set, any supplied 'input' or 'context' parameters will be ignored. Responses are returned in the 'batch_results' array component of the 'data' element of the response. Any batch output will preserve the order of the batch input. If the input data value of an item is invalid, the corresponding item in the 'batch_results' will have the key 'error' with a value describing the error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#batch_input DataVaultTransitCmac#batch_input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#batch_input DataVaultTransitCmac#batch_input}
 
 ---
 
@@ -1270,7 +1270,7 @@ batch_results: IResolvable | typing.List[typing.Mapping[str]]
 
 The results returned from Vault if using batch_input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#batch_results DataVaultTransitCmac#batch_results}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#batch_results DataVaultTransitCmac#batch_results}
 
 ---
 
@@ -1284,7 +1284,7 @@ cmac: str
 
 The CMAC returned from Vault if using input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#cmac DataVaultTransitCmac#cmac}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#cmac DataVaultTransitCmac#cmac}
 
 ---
 
@@ -1296,7 +1296,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#id DataVaultTransitCmac#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#id DataVaultTransitCmac#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1313,7 +1313,7 @@ input: str
 
 Specifies the base64 encoded input data. One of input or batch_input must be supplied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#input DataVaultTransitCmac#input}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#input DataVaultTransitCmac#input}
 
 ---
 
@@ -1327,7 +1327,7 @@ key_version: typing.Union[int, float]
 
 The version of the key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#key_version DataVaultTransitCmac#key_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#key_version DataVaultTransitCmac#key_version}
 
 ---
 
@@ -1341,7 +1341,7 @@ mac_length: typing.Union[int, float]
 
 Specifies the MAC length to use (POST body parameter). The mac_length cannot be larger than the cipher's block size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#mac_length DataVaultTransitCmac#mac_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#mac_length DataVaultTransitCmac#mac_length}
 
 ---
 
@@ -1355,7 +1355,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#namespace DataVaultTransitCmac#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#namespace DataVaultTransitCmac#namespace}
 
 ---
 
@@ -1371,7 +1371,7 @@ Specifies the MAC length to use (URL parameter).
 
 If provided, this value overrides mac_length. The url_mac_length cannot be larger than the cipher's block size.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/data-sources/transit_cmac#url_mac_length DataVaultTransitCmac#url_mac_length}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/data-sources/transit_cmac#url_mac_length DataVaultTransitCmac#url_mac_length}
 
 ---
 

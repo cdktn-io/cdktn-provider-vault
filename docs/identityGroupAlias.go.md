@@ -4,7 +4,7 @@
 
 ### IdentityGroupAlias <a name="IdentityGroupAlias" id="@cdktn/provider-vault.identityGroupAlias.IdentityGroupAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_alias vault_identity_group_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias vault_identity_group_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the IdentityGroupAlias to impo
 
 The id of the existing IdentityGroupAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -845,7 +845,7 @@ import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitygroupalias
 | <code><a href="#@cdktn/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.canonicalId">CanonicalId</a></code> | <code>*string</code> | ID of the group to which this is an alias. |
 | <code><a href="#@cdktn/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.mountAccessor">MountAccessor</a></code> | <code>*string</code> | Mount accessor to which this alias belongs to. |
 | <code><a href="#@cdktn/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.name">Name</a></code> | <code>*string</code> | Name of the group alias. |
-| <code><a href="#@cdktn/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}. |
+| <code><a href="#@cdktn/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}. |
 | <code><a href="#@cdktn/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -930,7 +930,7 @@ CanonicalId *string
 
 ID of the group to which this is an alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_alias#canonical_id IdentityGroupAlias#canonical_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias#canonical_id IdentityGroupAlias#canonical_id}
 
 ---
 
@@ -944,7 +944,7 @@ MountAccessor *string
 
 Mount accessor to which this alias belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_alias#mount_accessor IdentityGroupAlias#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias#mount_accessor IdentityGroupAlias#mount_accessor}
 
 ---
 
@@ -958,7 +958,7 @@ Name *string
 
 Name of the group alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_alias#name IdentityGroupAlias#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias#name IdentityGroupAlias#name}
 
 ---
 
@@ -970,7 +970,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias#id IdentityGroupAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -987,7 +987,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/identity_group_alias#namespace IdentityGroupAlias#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/identity_group_alias#namespace IdentityGroupAlias#namespace}
 
 ---
 

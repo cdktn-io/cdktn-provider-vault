@@ -1,0 +1,1199 @@
+# `pkiSecretBackendExternalCaOrderChallengeFulfilled` Submodule <a name="`pkiSecretBackendExternalCaOrderChallengeFulfilled` Submodule" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### PkiSecretBackendExternalCaOrderChallengeFulfilled <a name="PkiSecretBackendExternalCaOrderChallengeFulfilled" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled"></a>
+
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled vault_pki_secret_backend_external_ca_order_challenge_fulfilled}.
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer"></a>
+
+```python
+from cdktn_provider_vault import pki_secret_backend_external_ca_order_challenge_fulfilled
+
+pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled(
+  scope: Construct,
+  id: str,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
+  depends_on: typing.List[ITerraformDependable] = None,
+  for_each: ITerraformIterator = None,
+  lifecycle: TerraformResourceLifecycle = None,
+  provider: TerraformProvider = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  challenge_type: str,
+  identifier: str,
+  mount: str,
+  order_id: str,
+  role_name: str,
+  namespace: str = None
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.challengeType">challenge_type</a></code> | <code>str</code> | The type of ACME challenge that was fulfilled. Valid values are `http-01`, `dns-01`, `tls-alpn-01`. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | The identifier (domain name) for which the challenge was fulfilled. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.mount">mount</a></code> | <code>str</code> | The path where the PKI External CA secret backend is mounted. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.orderId">order_id</a></code> | <code>str</code> | The unique identifier for the ACME order. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.roleName">role_name</a></code> | <code>str</code> | Name of the role associated with the order. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.id"></a>
+
+- *Type:* str
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.connection"></a>
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.count"></a>
+
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.dependsOn"></a>
+
+- *Type:* typing.List[cdktn.ITerraformDependable]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.forEach"></a>
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `challenge_type`<sup>Required</sup> <a name="challenge_type" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.challengeType"></a>
+
+- *Type:* str
+
+The type of ACME challenge that was fulfilled. Valid values are `http-01`, `dns-01`, `tls-alpn-01`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled#challenge_type PkiSecretBackendExternalCaOrderChallengeFulfilled#challenge_type}
+
+---
+
+##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.identifier"></a>
+
+- *Type:* str
+
+The identifier (domain name) for which the challenge was fulfilled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled#identifier PkiSecretBackendExternalCaOrderChallengeFulfilled#identifier}
+
+---
+
+##### `mount`<sup>Required</sup> <a name="mount" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.mount"></a>
+
+- *Type:* str
+
+The path where the PKI External CA secret backend is mounted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled#mount PkiSecretBackendExternalCaOrderChallengeFulfilled#mount}
+
+---
+
+##### `order_id`<sup>Required</sup> <a name="order_id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.orderId"></a>
+
+- *Type:* str
+
+The unique identifier for the ACME order.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled#order_id PkiSecretBackendExternalCaOrderChallengeFulfilled#order_id}
+
+---
+
+##### `role_name`<sup>Required</sup> <a name="role_name" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.roleName"></a>
+
+- *Type:* str
+
+Name of the role associated with the order.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled#role_name PkiSecretBackendExternalCaOrderChallengeFulfilled#role_name}
+
+---
+
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.Initializer.parameter.namespace"></a>
+
+- *Type:* str
+
+Target namespace. (requires Enterprise).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled#namespace PkiSecretBackendExternalCaOrderChallengeFulfilled#namespace}
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.with">with</a></code> | Applies one or more mixins to this construct. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.resetNamespace">reset_namespace</a></code> | *No description.* |
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Returns a string representation of this construct.
+
+##### `with` <a name="with" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.with"></a>
+
+```python
+def with(
+  mixins: *IMixin
+) -> IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.with.parameter.mixins"></a>
+
+- *Type:* *constructs.IMixin
+
+The mixins to apply.
+
+---
+
+##### `add_override` <a name="add_override" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.addOverride"></a>
+
+```python
+def add_override(
+  path: str,
+  value: typing.Any
+) -> None
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.addOverride.parameter.path"></a>
+
+- *Type:* str
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.addOverride.parameter.value"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.overrideLogicalId"></a>
+
+```python
+def override_logical_id(
+  new_logical_id: str
+) -> None
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* str
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.resetOverrideLogicalId"></a>
+
+```python
+def reset_override_logical_id() -> None
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.toHclTerraform"></a>
+
+```python
+def to_hcl_terraform() -> typing.Any
+```
+
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.toMetadata"></a>
+
+```python
+def to_metadata() -> typing.Any
+```
+
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.toTerraform"></a>
+
+```python
+def to_terraform() -> typing.Any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.addMoveTarget"></a>
+
+```python
+def add_move_target(
+  move_target: str
+) -> None
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* str
+
+The string move target that will correspond to this resource.
+
+---
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.hasResourceMove"></a>
+
+```python
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
+```
+
+##### `import_from` <a name="import_from" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.importFrom"></a>
+
+```python
+def import_from(
+  id: str,
+  provider: TerraformProvider = None
+) -> None
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.importFrom.parameter.id"></a>
+
+- *Type:* str
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.importFrom.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.moveFromId"></a>
+
+```python
+def move_from_id(
+  id: str
+) -> None
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.moveFromId.parameter.id"></a>
+
+- *Type:* str
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `move_to` <a name="move_to" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.moveTo"></a>
+
+```python
+def move_to(
+  move_target: str,
+  index: str | typing.Union[int, float] = None
+) -> None
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.moveTo.parameter.moveTarget"></a>
+
+- *Type:* str
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.moveTo.parameter.index"></a>
+
+- *Type:* str | typing.Union[int, float]
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.moveToId"></a>
+
+```python
+def move_to_id(
+  id: str
+) -> None
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.moveToId.parameter.id"></a>
+
+- *Type:* str
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `reset_namespace` <a name="reset_namespace" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.resetNamespace"></a>
+
+```python
+def reset_namespace() -> None
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a PkiSecretBackendExternalCaOrderChallengeFulfilled resource upon running "cdktn plan <stack-name>". |
+
+---
+
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.isConstruct"></a>
+
+```python
+from cdktn_provider_vault import pki_secret_backend_external_ca_order_challenge_fulfilled
+
+pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.is_construct(
+  x: typing.Any
+)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.isConstruct.parameter.x"></a>
+
+- *Type:* typing.Any
+
+Any object.
+
+---
+
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.isTerraformElement"></a>
+
+```python
+from cdktn_provider_vault import pki_secret_backend_external_ca_order_challenge_fulfilled
+
+pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.is_terraform_element(
+  x: typing.Any
+)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.isTerraformElement.parameter.x"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.isTerraformResource"></a>
+
+```python
+from cdktn_provider_vault import pki_secret_backend_external_ca_order_challenge_fulfilled
+
+pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.is_terraform_resource(
+  x: typing.Any
+)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.isTerraformResource.parameter.x"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.generateConfigForImport"></a>
+
+```python
+from cdktn_provider_vault import pki_secret_backend_external_ca_order_challenge_fulfilled
+
+pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.generate_config_for_import(
+  scope: Construct,
+  import_to_id: str,
+  import_from_id: str,
+  provider: TerraformProvider = None
+)
+```
+
+Generates CDKTN code for importing a PkiSecretBackendExternalCaOrderChallengeFulfilled resource upon running "cdktn plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* str
+
+The construct id used in the generated config for the PkiSecretBackendExternalCaOrderChallengeFulfilled to import.
+
+---
+
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* str
+
+The id of the existing PkiSecretBackendExternalCaOrderChallengeFulfilled that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+? Optional instance of the provider where the PkiSecretBackendExternalCaOrderChallengeFulfilled to import is found.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.challengeTypeInput">challenge_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.identifierInput">identifier_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.mountInput">mount_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.orderIdInput">order_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.roleNameInput">role_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.challengeType">challenge_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.identifier">identifier</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.mount">mount</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.orderId">order_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.roleName">role_name</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.node"></a>
+
+```python
+node: Node
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.cdktfStack"></a>
+
+```python
+cdktf_stack: TerraformStack
+```
+
+- *Type:* cdktn.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.friendlyUniqueId"></a>
+
+```python
+friendly_unique_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.terraformMetaArguments"></a>
+
+```python
+terraform_meta_arguments: typing.Mapping[typing.Any]
+```
+
+- *Type:* typing.Mapping[typing.Any]
+
+---
+
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.terraformResourceType"></a>
+
+```python
+terraform_resource_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.terraformGeneratorMetadata"></a>
+
+```python
+terraform_generator_metadata: TerraformProviderGeneratorMetadata
+```
+
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.connection"></a>
+
+```python
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
+```
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.count"></a>
+
+```python
+count: typing.Union[int, float] | TerraformCount
+```
+
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.dependsOn"></a>
+
+```python
+depends_on: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.forEach"></a>
+
+```python
+for_each: ITerraformIterator
+```
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.lifecycle"></a>
+
+```python
+lifecycle: TerraformResourceLifecycle
+```
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.provider"></a>
+
+```python
+provider: TerraformProvider
+```
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.provisioners"></a>
+
+```python
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
+```
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `challenge_type_input`<sup>Optional</sup> <a name="challenge_type_input" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.challengeTypeInput"></a>
+
+```python
+challenge_type_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `identifier_input`<sup>Optional</sup> <a name="identifier_input" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.identifierInput"></a>
+
+```python
+identifier_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `mount_input`<sup>Optional</sup> <a name="mount_input" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.mountInput"></a>
+
+```python
+mount_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `namespace_input`<sup>Optional</sup> <a name="namespace_input" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.namespaceInput"></a>
+
+```python
+namespace_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `order_id_input`<sup>Optional</sup> <a name="order_id_input" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.orderIdInput"></a>
+
+```python
+order_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `role_name_input`<sup>Optional</sup> <a name="role_name_input" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.roleNameInput"></a>
+
+```python
+role_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `challenge_type`<sup>Required</sup> <a name="challenge_type" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.challengeType"></a>
+
+```python
+challenge_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.identifier"></a>
+
+```python
+identifier: str
+```
+
+- *Type:* str
+
+---
+
+##### `mount`<sup>Required</sup> <a name="mount" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.mount"></a>
+
+```python
+mount: str
+```
+
+- *Type:* str
+
+---
+
+##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.namespace"></a>
+
+```python
+namespace: str
+```
+
+- *Type:* str
+
+---
+
+##### `order_id`<sup>Required</sup> <a name="order_id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.orderId"></a>
+
+```python
+order_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `role_name`<sup>Required</sup> <a name="role_name" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.roleName"></a>
+
+```python
+role_name: str
+```
+
+- *Type:* str
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilled.property.tfResourceType"></a>
+
+```python
+tfResourceType: str
+```
+
+- *Type:* str
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### PkiSecretBackendExternalCaOrderChallengeFulfilledConfig <a name="PkiSecretBackendExternalCaOrderChallengeFulfilledConfig" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.Initializer"></a>
+
+```python
+from cdktn_provider_vault import pki_secret_backend_external_ca_order_challenge_fulfilled
+
+pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig(
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
+  depends_on: typing.List[ITerraformDependable] = None,
+  for_each: ITerraformIterator = None,
+  lifecycle: TerraformResourceLifecycle = None,
+  provider: TerraformProvider = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  challenge_type: str,
+  identifier: str,
+  mount: str,
+  order_id: str,
+  role_name: str,
+  namespace: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.challengeType">challenge_type</a></code> | <code>str</code> | The type of ACME challenge that was fulfilled. Valid values are `http-01`, `dns-01`, `tls-alpn-01`. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.identifier">identifier</a></code> | <code>str</code> | The identifier (domain name) for which the challenge was fulfilled. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.mount">mount</a></code> | <code>str</code> | The path where the PKI External CA secret backend is mounted. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.orderId">order_id</a></code> | <code>str</code> | The unique identifier for the ACME order. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.roleName">role_name</a></code> | <code>str</code> | Name of the role associated with the order. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.connection"></a>
+
+```python
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
+```
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.count"></a>
+
+```python
+count: typing.Union[int, float] | TerraformCount
+```
+
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.dependsOn"></a>
+
+```python
+depends_on: typing.List[ITerraformDependable]
+```
+
+- *Type:* typing.List[cdktn.ITerraformDependable]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.forEach"></a>
+
+```python
+for_each: ITerraformIterator
+```
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.lifecycle"></a>
+
+```python
+lifecycle: TerraformResourceLifecycle
+```
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.provider"></a>
+
+```python
+provider: TerraformProvider
+```
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.provisioners"></a>
+
+```python
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
+```
+
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `challenge_type`<sup>Required</sup> <a name="challenge_type" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.challengeType"></a>
+
+```python
+challenge_type: str
+```
+
+- *Type:* str
+
+The type of ACME challenge that was fulfilled. Valid values are `http-01`, `dns-01`, `tls-alpn-01`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled#challenge_type PkiSecretBackendExternalCaOrderChallengeFulfilled#challenge_type}
+
+---
+
+##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.identifier"></a>
+
+```python
+identifier: str
+```
+
+- *Type:* str
+
+The identifier (domain name) for which the challenge was fulfilled.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled#identifier PkiSecretBackendExternalCaOrderChallengeFulfilled#identifier}
+
+---
+
+##### `mount`<sup>Required</sup> <a name="mount" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.mount"></a>
+
+```python
+mount: str
+```
+
+- *Type:* str
+
+The path where the PKI External CA secret backend is mounted.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled#mount PkiSecretBackendExternalCaOrderChallengeFulfilled#mount}
+
+---
+
+##### `order_id`<sup>Required</sup> <a name="order_id" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.orderId"></a>
+
+```python
+order_id: str
+```
+
+- *Type:* str
+
+The unique identifier for the ACME order.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled#order_id PkiSecretBackendExternalCaOrderChallengeFulfilled#order_id}
+
+---
+
+##### `role_name`<sup>Required</sup> <a name="role_name" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.roleName"></a>
+
+```python
+role_name: str
+```
+
+- *Type:* str
+
+Name of the role associated with the order.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled#role_name PkiSecretBackendExternalCaOrderChallengeFulfilled#role_name}
+
+---
+
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktn/provider-vault.pkiSecretBackendExternalCaOrderChallengeFulfilled.PkiSecretBackendExternalCaOrderChallengeFulfilledConfig.property.namespace"></a>
+
+```python
+namespace: str
+```
+
+- *Type:* str
+
+Target namespace. (requires Enterprise).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_external_ca_order_challenge_fulfilled#namespace PkiSecretBackendExternalCaOrderChallengeFulfilled#namespace}
+
+---
+
+
+

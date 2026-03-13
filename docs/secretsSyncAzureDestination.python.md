@@ -4,7 +4,7 @@
 
 ### SecretsSyncAzureDestination <a name="SecretsSyncAzureDestination" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination vault_secrets_sync_azure_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer"></a>
 
@@ -32,6 +32,11 @@ secretsSyncAzureDestination.SecretsSyncAzureDestination(
   disable_strict_networking: bool | IResolvable = None,
   granularity: str = None,
   id: str = None,
+  identity_token_audience_wo: str = None,
+  identity_token_audience_wo_version: typing.Union[int, float] = None,
+  identity_token_key_wo: str = None,
+  identity_token_key_wo_version: typing.Union[int, float] = None,
+  identity_token_ttl: typing.Union[int, float] = None,
   key_vault_uri: str = None,
   namespace: str = None,
   secret_name_template: str = None,
@@ -60,7 +65,12 @@ secretsSyncAzureDestination.SecretsSyncAzureDestination(
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.customTags">custom_tags</a></code> | <code>typing.Mapping[str]</code> | Custom tags to set on the secret managed at the destination. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.disableStrictNetworking">disable_strict_networking</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, disables strict networking enforcement for this destination. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.granularity">granularity</a></code> | <code>str</code> | Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'. |
-| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.identityTokenAudienceWo">identity_token_audience_wo</a></code> | <code>str</code> | The audience claim value for identity tokens. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.identityTokenAudienceWoVersion">identity_token_audience_wo_version</a></code> | <code>typing.Union[int, float]</code> | A version counter for the write-only identity_token_audience_wo field. Incrementing this value will trigger an update. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.identityTokenKeyWo">identity_token_key_wo</a></code> | <code>str</code> | The key to use for signing identity tokens. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.identityTokenKeyWoVersion">identity_token_key_wo_version</a></code> | <code>typing.Union[int, float]</code> | A version counter for the write-only identity_token_key_wo field. Incrementing this value will trigger an update. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of generated tokens. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.keyVaultUri">key_vault_uri</a></code> | <code>str</code> | URI of an existing Azure Key Vault instance. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.secretNameTemplate">secret_name_template</a></code> | <code>str</code> | Template describing how to generate external secret names. |
@@ -134,7 +144,7 @@ Must be unique amongst siblings in the same scope
 
 Unique name of the Azure destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#name SecretsSyncAzureDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#name SecretsSyncAzureDestination#name}
 
 ---
 
@@ -144,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set of allowed IPv4 addresses in CIDR notation (e.g., 192.168.1.1/32) for outbound connections from Vault to the destination. If not set, all IPv4 addresses are allowed. Requires Vault 1.19+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#allowed_ipv4_addresses SecretsSyncAzureDestination#allowed_ipv4_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#allowed_ipv4_addresses SecretsSyncAzureDestination#allowed_ipv4_addresses}
 
 ---
 
@@ -154,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set of allowed IPv6 addresses in CIDR notation (e.g., 2001:db8::1/128) for outbound connections from Vault to the destination. If not set, all IPv6 addresses are allowed. Requires Vault 1.19+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#allowed_ipv6_addresses SecretsSyncAzureDestination#allowed_ipv6_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#allowed_ipv6_addresses SecretsSyncAzureDestination#allowed_ipv6_addresses}
 
 ---
 
@@ -166,7 +176,7 @@ Set of allowed ports for outbound connections from Vault to the destination.
 
 If not set, all ports are allowed. Requires Vault 1.19+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#allowed_ports SecretsSyncAzureDestination#allowed_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#allowed_ports SecretsSyncAzureDestination#allowed_ports}
 
 ---
 
@@ -176,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Client ID of an Azure app registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#client_id SecretsSyncAzureDestination#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#client_id SecretsSyncAzureDestination#client_id}
 
 ---
 
@@ -186,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Client Secret of an Azure app registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#client_secret SecretsSyncAzureDestination#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#client_secret SecretsSyncAzureDestination#client_secret}
 
 ---
 
@@ -196,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies a cloud for the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#cloud SecretsSyncAzureDestination#cloud}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#cloud SecretsSyncAzureDestination#cloud}
 
 ---
 
@@ -206,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Custom tags to set on the secret managed at the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#custom_tags SecretsSyncAzureDestination#custom_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#custom_tags SecretsSyncAzureDestination#custom_tags}
 
 ---
 
@@ -218,7 +228,7 @@ If set to true, disables strict networking enforcement for this destination.
 
 When disabled, Vault will not enforce allowed IP addresses and ports. Requires Vault 1.19+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#disable_strict_networking SecretsSyncAzureDestination#disable_strict_networking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#disable_strict_networking SecretsSyncAzureDestination#disable_strict_networking}
 
 ---
 
@@ -228,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#granularity SecretsSyncAzureDestination#granularity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#granularity SecretsSyncAzureDestination#granularity}
 
 ---
 
@@ -236,10 +246,64 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `identity_token_audience_wo`<sup>Optional</sup> <a name="identity_token_audience_wo" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.identityTokenAudienceWo"></a>
+
+- *Type:* str
+
+The audience claim value for identity tokens.
+
+This is a write-only field and will not be read back from Vault.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#identity_token_audience_wo SecretsSyncAzureDestination#identity_token_audience_wo}
+
+---
+
+##### `identity_token_audience_wo_version`<sup>Optional</sup> <a name="identity_token_audience_wo_version" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.identityTokenAudienceWoVersion"></a>
+
+- *Type:* typing.Union[int, float]
+
+A version counter for the write-only identity_token_audience_wo field. Incrementing this value will trigger an update.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#identity_token_audience_wo_version SecretsSyncAzureDestination#identity_token_audience_wo_version}
+
+---
+
+##### `identity_token_key_wo`<sup>Optional</sup> <a name="identity_token_key_wo" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.identityTokenKeyWo"></a>
+
+- *Type:* str
+
+The key to use for signing identity tokens.
+
+This is a write-only field and will not be read back from Vault.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#identity_token_key_wo SecretsSyncAzureDestination#identity_token_key_wo}
+
+---
+
+##### `identity_token_key_wo_version`<sup>Optional</sup> <a name="identity_token_key_wo_version" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.identityTokenKeyWoVersion"></a>
+
+- *Type:* typing.Union[int, float]
+
+A version counter for the write-only identity_token_key_wo field. Incrementing this value will trigger an update.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#identity_token_key_wo_version SecretsSyncAzureDestination#identity_token_key_wo_version}
+
+---
+
+##### `identity_token_ttl`<sup>Optional</sup> <a name="identity_token_ttl" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer.parameter.identityTokenTtl"></a>
+
+- *Type:* typing.Union[int, float]
+
+The TTL of generated tokens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#identity_token_ttl SecretsSyncAzureDestination#identity_token_ttl}
 
 ---
 
@@ -249,7 +313,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 URI of an existing Azure Key Vault instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#key_vault_uri SecretsSyncAzureDestination#key_vault_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#key_vault_uri SecretsSyncAzureDestination#key_vault_uri}
 
 ---
 
@@ -259,7 +323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#namespace SecretsSyncAzureDestination#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#namespace SecretsSyncAzureDestination#namespace}
 
 ---
 
@@ -269,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Template describing how to generate external secret names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#secret_name_template SecretsSyncAzureDestination#secret_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#secret_name_template SecretsSyncAzureDestination#secret_name_template}
 
 ---
 
@@ -279,7 +343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ID of the target Azure tenant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#tenant_id SecretsSyncAzureDestination#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#tenant_id SecretsSyncAzureDestination#tenant_id}
 
 ---
 
@@ -321,6 +385,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetDisableStrictNetworking">reset_disable_strict_networking</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetGranularity">reset_granularity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetIdentityTokenAudienceWo">reset_identity_token_audience_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetIdentityTokenAudienceWoVersion">reset_identity_token_audience_wo_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetIdentityTokenKeyWo">reset_identity_token_key_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetIdentityTokenKeyWoVersion">reset_identity_token_key_wo_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetIdentityTokenTtl">reset_identity_token_ttl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetKeyVaultUri">reset_key_vault_uri</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetNamespace">reset_namespace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetSecretNameTemplate">reset_secret_name_template</a></code> | *No description.* |
@@ -736,6 +805,36 @@ def reset_granularity() -> None
 def reset_id() -> None
 ```
 
+##### `reset_identity_token_audience_wo` <a name="reset_identity_token_audience_wo" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetIdentityTokenAudienceWo"></a>
+
+```python
+def reset_identity_token_audience_wo() -> None
+```
+
+##### `reset_identity_token_audience_wo_version` <a name="reset_identity_token_audience_wo_version" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetIdentityTokenAudienceWoVersion"></a>
+
+```python
+def reset_identity_token_audience_wo_version() -> None
+```
+
+##### `reset_identity_token_key_wo` <a name="reset_identity_token_key_wo" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetIdentityTokenKeyWo"></a>
+
+```python
+def reset_identity_token_key_wo() -> None
+```
+
+##### `reset_identity_token_key_wo_version` <a name="reset_identity_token_key_wo_version" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetIdentityTokenKeyWoVersion"></a>
+
+```python
+def reset_identity_token_key_wo_version() -> None
+```
+
+##### `reset_identity_token_ttl` <a name="reset_identity_token_ttl" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetIdentityTokenTtl"></a>
+
+```python
+def reset_identity_token_ttl() -> None
+```
+
 ##### `reset_key_vault_uri` <a name="reset_key_vault_uri" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.resetKeyVaultUri"></a>
 
 ```python
@@ -874,7 +973,7 @@ The construct id used in the generated config for the SecretsSyncAzureDestinatio
 
 The id of the existing SecretsSyncAzureDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -914,6 +1013,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.customTagsInput">custom_tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.disableStrictNetworkingInput">disable_strict_networking_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.granularityInput">granularity_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenAudienceWoInput">identity_token_audience_wo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenAudienceWoVersionInput">identity_token_audience_wo_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenKeyWoInput">identity_token_key_wo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenKeyWoVersionInput">identity_token_key_wo_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenTtlInput">identity_token_ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.keyVaultUriInput">key_vault_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
@@ -930,6 +1034,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.disableStrictNetworking">disable_strict_networking</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.granularity">granularity</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenAudienceWo">identity_token_audience_wo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenAudienceWoVersion">identity_token_audience_wo_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenKeyWo">identity_token_key_wo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenKeyWoVersion">identity_token_key_wo_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.keyVaultUri">key_vault_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
@@ -1180,6 +1289,56 @@ granularity_input: str
 
 ---
 
+##### `identity_token_audience_wo_input`<sup>Optional</sup> <a name="identity_token_audience_wo_input" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenAudienceWoInput"></a>
+
+```python
+identity_token_audience_wo_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `identity_token_audience_wo_version_input`<sup>Optional</sup> <a name="identity_token_audience_wo_version_input" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenAudienceWoVersionInput"></a>
+
+```python
+identity_token_audience_wo_version_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `identity_token_key_wo_input`<sup>Optional</sup> <a name="identity_token_key_wo_input" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenKeyWoInput"></a>
+
+```python
+identity_token_key_wo_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `identity_token_key_wo_version_input`<sup>Optional</sup> <a name="identity_token_key_wo_version_input" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenKeyWoVersionInput"></a>
+
+```python
+identity_token_key_wo_version_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `identity_token_ttl_input`<sup>Optional</sup> <a name="identity_token_ttl_input" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenTtlInput"></a>
+
+```python
+identity_token_ttl_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.idInput"></a>
 
 ```python
@@ -1340,6 +1499,56 @@ id: str
 
 ---
 
+##### `identity_token_audience_wo`<sup>Required</sup> <a name="identity_token_audience_wo" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenAudienceWo"></a>
+
+```python
+identity_token_audience_wo: str
+```
+
+- *Type:* str
+
+---
+
+##### `identity_token_audience_wo_version`<sup>Required</sup> <a name="identity_token_audience_wo_version" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenAudienceWoVersion"></a>
+
+```python
+identity_token_audience_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `identity_token_key_wo`<sup>Required</sup> <a name="identity_token_key_wo" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenKeyWo"></a>
+
+```python
+identity_token_key_wo: str
+```
+
+- *Type:* str
+
+---
+
+##### `identity_token_key_wo_version`<sup>Required</sup> <a name="identity_token_key_wo_version" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenKeyWoVersion"></a>
+
+```python
+identity_token_key_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `identity_token_ttl`<sup>Required</sup> <a name="identity_token_ttl" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.identityTokenTtl"></a>
+
+```python
+identity_token_ttl: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `key_vault_uri`<sup>Required</sup> <a name="key_vault_uri" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.property.keyVaultUri"></a>
 
 ```python
@@ -1436,6 +1645,11 @@ secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig(
   disable_strict_networking: bool | IResolvable = None,
   granularity: str = None,
   id: str = None,
+  identity_token_audience_wo: str = None,
+  identity_token_audience_wo_version: typing.Union[int, float] = None,
+  identity_token_key_wo: str = None,
+  identity_token_key_wo_version: typing.Union[int, float] = None,
+  identity_token_ttl: typing.Union[int, float] = None,
   key_vault_uri: str = None,
   namespace: str = None,
   secret_name_template: str = None,
@@ -1464,7 +1678,12 @@ secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig(
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.customTags">custom_tags</a></code> | <code>typing.Mapping[str]</code> | Custom tags to set on the secret managed at the destination. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.disableStrictNetworking">disable_strict_networking</a></code> | <code>bool \| cdktn.IResolvable</code> | If set to true, disables strict networking enforcement for this destination. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.granularity">granularity</a></code> | <code>str</code> | Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'. |
-| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.identityTokenAudienceWo">identity_token_audience_wo</a></code> | <code>str</code> | The audience claim value for identity tokens. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.identityTokenAudienceWoVersion">identity_token_audience_wo_version</a></code> | <code>typing.Union[int, float]</code> | A version counter for the write-only identity_token_audience_wo field. Incrementing this value will trigger an update. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.identityTokenKeyWo">identity_token_key_wo</a></code> | <code>str</code> | The key to use for signing identity tokens. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.identityTokenKeyWoVersion">identity_token_key_wo_version</a></code> | <code>typing.Union[int, float]</code> | A version counter for the write-only identity_token_key_wo field. Incrementing this value will trigger an update. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.identityTokenTtl">identity_token_ttl</a></code> | <code>typing.Union[int, float]</code> | The TTL of generated tokens. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.keyVaultUri">key_vault_uri</a></code> | <code>str</code> | URI of an existing Azure Key Vault instance. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.secretNameTemplate">secret_name_template</a></code> | <code>str</code> | Template describing how to generate external secret names. |
@@ -1552,7 +1771,7 @@ name: str
 
 Unique name of the Azure destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#name SecretsSyncAzureDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#name SecretsSyncAzureDestination#name}
 
 ---
 
@@ -1566,7 +1785,7 @@ allowed_ipv4_addresses: typing.List[str]
 
 Set of allowed IPv4 addresses in CIDR notation (e.g., 192.168.1.1/32) for outbound connections from Vault to the destination. If not set, all IPv4 addresses are allowed. Requires Vault 1.19+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#allowed_ipv4_addresses SecretsSyncAzureDestination#allowed_ipv4_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#allowed_ipv4_addresses SecretsSyncAzureDestination#allowed_ipv4_addresses}
 
 ---
 
@@ -1580,7 +1799,7 @@ allowed_ipv6_addresses: typing.List[str]
 
 Set of allowed IPv6 addresses in CIDR notation (e.g., 2001:db8::1/128) for outbound connections from Vault to the destination. If not set, all IPv6 addresses are allowed. Requires Vault 1.19+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#allowed_ipv6_addresses SecretsSyncAzureDestination#allowed_ipv6_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#allowed_ipv6_addresses SecretsSyncAzureDestination#allowed_ipv6_addresses}
 
 ---
 
@@ -1596,7 +1815,7 @@ Set of allowed ports for outbound connections from Vault to the destination.
 
 If not set, all ports are allowed. Requires Vault 1.19+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#allowed_ports SecretsSyncAzureDestination#allowed_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#allowed_ports SecretsSyncAzureDestination#allowed_ports}
 
 ---
 
@@ -1610,7 +1829,7 @@ client_id: str
 
 Client ID of an Azure app registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#client_id SecretsSyncAzureDestination#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#client_id SecretsSyncAzureDestination#client_id}
 
 ---
 
@@ -1624,7 +1843,7 @@ client_secret: str
 
 Client Secret of an Azure app registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#client_secret SecretsSyncAzureDestination#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#client_secret SecretsSyncAzureDestination#client_secret}
 
 ---
 
@@ -1638,7 +1857,7 @@ cloud: str
 
 Specifies a cloud for the client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#cloud SecretsSyncAzureDestination#cloud}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#cloud SecretsSyncAzureDestination#cloud}
 
 ---
 
@@ -1652,7 +1871,7 @@ custom_tags: typing.Mapping[str]
 
 Custom tags to set on the secret managed at the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#custom_tags SecretsSyncAzureDestination#custom_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#custom_tags SecretsSyncAzureDestination#custom_tags}
 
 ---
 
@@ -1668,7 +1887,7 @@ If set to true, disables strict networking enforcement for this destination.
 
 When disabled, Vault will not enforce allowed IP addresses and ports. Requires Vault 1.19+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#disable_strict_networking SecretsSyncAzureDestination#disable_strict_networking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#disable_strict_networking SecretsSyncAzureDestination#disable_strict_networking}
 
 ---
 
@@ -1682,7 +1901,7 @@ granularity: str
 
 Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#granularity SecretsSyncAzureDestination#granularity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#granularity SecretsSyncAzureDestination#granularity}
 
 ---
 
@@ -1694,10 +1913,84 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#id SecretsSyncAzureDestination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `identity_token_audience_wo`<sup>Optional</sup> <a name="identity_token_audience_wo" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.identityTokenAudienceWo"></a>
+
+```python
+identity_token_audience_wo: str
+```
+
+- *Type:* str
+
+The audience claim value for identity tokens.
+
+This is a write-only field and will not be read back from Vault.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#identity_token_audience_wo SecretsSyncAzureDestination#identity_token_audience_wo}
+
+---
+
+##### `identity_token_audience_wo_version`<sup>Optional</sup> <a name="identity_token_audience_wo_version" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.identityTokenAudienceWoVersion"></a>
+
+```python
+identity_token_audience_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+A version counter for the write-only identity_token_audience_wo field. Incrementing this value will trigger an update.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#identity_token_audience_wo_version SecretsSyncAzureDestination#identity_token_audience_wo_version}
+
+---
+
+##### `identity_token_key_wo`<sup>Optional</sup> <a name="identity_token_key_wo" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.identityTokenKeyWo"></a>
+
+```python
+identity_token_key_wo: str
+```
+
+- *Type:* str
+
+The key to use for signing identity tokens.
+
+This is a write-only field and will not be read back from Vault.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#identity_token_key_wo SecretsSyncAzureDestination#identity_token_key_wo}
+
+---
+
+##### `identity_token_key_wo_version`<sup>Optional</sup> <a name="identity_token_key_wo_version" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.identityTokenKeyWoVersion"></a>
+
+```python
+identity_token_key_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+A version counter for the write-only identity_token_key_wo field. Incrementing this value will trigger an update.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#identity_token_key_wo_version SecretsSyncAzureDestination#identity_token_key_wo_version}
+
+---
+
+##### `identity_token_ttl`<sup>Optional</sup> <a name="identity_token_ttl" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.property.identityTokenTtl"></a>
+
+```python
+identity_token_ttl: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The TTL of generated tokens.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#identity_token_ttl SecretsSyncAzureDestination#identity_token_ttl}
 
 ---
 
@@ -1711,7 +2004,7 @@ key_vault_uri: str
 
 URI of an existing Azure Key Vault instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#key_vault_uri SecretsSyncAzureDestination#key_vault_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#key_vault_uri SecretsSyncAzureDestination#key_vault_uri}
 
 ---
 
@@ -1725,7 +2018,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#namespace SecretsSyncAzureDestination#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#namespace SecretsSyncAzureDestination#namespace}
 
 ---
 
@@ -1739,7 +2032,7 @@ secret_name_template: str
 
 Template describing how to generate external secret names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#secret_name_template SecretsSyncAzureDestination#secret_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#secret_name_template SecretsSyncAzureDestination#secret_name_template}
 
 ---
 
@@ -1753,7 +2046,7 @@ tenant_id: str
 
 ID of the target Azure tenant.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.7.0/docs/resources/secrets_sync_azure_destination#tenant_id SecretsSyncAzureDestination#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/secrets_sync_azure_destination#tenant_id SecretsSyncAzureDestination#tenant_id}
 
 ---
 
