@@ -4,7 +4,7 @@
 
 ### PkiSecretBackendConfigAcme <a name="PkiSecretBackendConfigAcme" id="@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme vault_pki_secret_backend_config_acme}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.Initializer"></a>
 
@@ -77,6 +77,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.resetAllowedIssuers">resetAllowedIssuers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.resetAllowedRoles">resetAllowedRoles</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.resetAllowRoleExtKeyUsage">resetAllowRoleExtKeyUsage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.resetChallengeExcludedIpRanges">resetChallengeExcludedIpRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.resetChallengePermittedIpRanges">resetChallengePermittedIpRanges</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.resetDefaultDirectoryPolicy">resetDefaultDirectoryPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.resetDnsResolver">resetDnsResolver</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.resetEabPolicy">resetEabPolicy</a></code> | *No description.* |
@@ -413,6 +415,18 @@ public resetAllowedRoles(): void
 public resetAllowRoleExtKeyUsage(): void
 ```
 
+##### `resetChallengeExcludedIpRanges` <a name="resetChallengeExcludedIpRanges" id="@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.resetChallengeExcludedIpRanges"></a>
+
+```typescript
+public resetChallengeExcludedIpRanges(): void
+```
+
+##### `resetChallengePermittedIpRanges` <a name="resetChallengePermittedIpRanges" id="@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.resetChallengePermittedIpRanges"></a>
+
+```typescript
+public resetChallengePermittedIpRanges(): void
+```
+
 ##### `resetDefaultDirectoryPolicy` <a name="resetDefaultDirectoryPolicy" id="@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.resetDefaultDirectoryPolicy"></a>
 
 ```typescript
@@ -552,7 +566,7 @@ The construct id used in the generated config for the PkiSecretBackendConfigAcme
 
 The id of the existing PkiSecretBackendConfigAcme that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -586,6 +600,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.allowedRolesInput">allowedRolesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.allowRoleExtKeyUsageInput">allowRoleExtKeyUsageInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.challengeExcludedIpRangesInput">challengeExcludedIpRangesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.challengePermittedIpRangesInput">challengePermittedIpRangesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.defaultDirectoryPolicyInput">defaultDirectoryPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.dnsResolverInput">dnsResolverInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.eabPolicyInput">eabPolicyInput</a></code> | <code>string</code> | *No description.* |
@@ -597,6 +613,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.allowedRoles">allowedRoles</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.allowRoleExtKeyUsage">allowRoleExtKeyUsage</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.backend">backend</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.challengeExcludedIpRanges">challengeExcludedIpRanges</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.challengePermittedIpRanges">challengePermittedIpRanges</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.defaultDirectoryPolicy">defaultDirectoryPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.dnsResolver">dnsResolver</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.eabPolicy">eabPolicy</a></code> | <code>string</code> | *No description.* |
@@ -789,6 +807,26 @@ public readonly backendInput: string;
 
 ---
 
+##### `challengeExcludedIpRangesInput`<sup>Optional</sup> <a name="challengeExcludedIpRangesInput" id="@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.challengeExcludedIpRangesInput"></a>
+
+```typescript
+public readonly challengeExcludedIpRangesInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `challengePermittedIpRangesInput`<sup>Optional</sup> <a name="challengePermittedIpRangesInput" id="@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.challengePermittedIpRangesInput"></a>
+
+```typescript
+public readonly challengePermittedIpRangesInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `defaultDirectoryPolicyInput`<sup>Optional</sup> <a name="defaultDirectoryPolicyInput" id="@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.defaultDirectoryPolicyInput"></a>
 
 ```typescript
@@ -896,6 +934,26 @@ public readonly backend: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `challengeExcludedIpRanges`<sup>Required</sup> <a name="challengeExcludedIpRanges" id="@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.challengeExcludedIpRanges"></a>
+
+```typescript
+public readonly challengeExcludedIpRanges: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `challengePermittedIpRanges`<sup>Required</sup> <a name="challengePermittedIpRanges" id="@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcme.property.challengePermittedIpRanges"></a>
+
+```typescript
+public readonly challengePermittedIpRanges: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -1015,10 +1073,12 @@ const pkiSecretBackendConfigAcmeConfig: pkiSecretBackendConfigAcme.PkiSecretBack
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.allowedIssuers">allowedIssuers</a></code> | <code>string[]</code> | Specifies which issuers are allowed for use with ACME. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.allowedRoles">allowedRoles</a></code> | <code>string[]</code> | Specifies which roles are allowed for use with ACME. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.allowRoleExtKeyUsage">allowRoleExtKeyUsage</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether the ExtKeyUsage field from a role is used. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.challengeExcludedIpRanges">challengeExcludedIpRanges</a></code> | <code>string[]</code> | Specifies the excluded IP ranges for ACME challenge workers to connect. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.challengePermittedIpRanges">challengePermittedIpRanges</a></code> | <code>string[]</code> | Specifies the permitted IP ranges for ACME challenge workers to connect. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.defaultDirectoryPolicy">defaultDirectoryPolicy</a></code> | <code>string</code> | Specifies the policy to be used for non-role-qualified ACME requests. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.dnsResolver">dnsResolver</a></code> | <code>string</code> | DNS resolver to use for domain resolution on this mount. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.eabPolicy">eabPolicy</a></code> | <code>string</code> | Specifies the policy to use for external account binding behaviour. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme#id PkiSecretBackendConfigAcme#id}. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#id PkiSecretBackendConfigAcme#id}. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.maxTtl">maxTtl</a></code> | <code>number</code> | Specifies the maximum TTL in seconds for certificates issued by ACME. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
@@ -1104,7 +1164,7 @@ public readonly backend: string;
 
 Full path where PKI backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme#backend PkiSecretBackendConfigAcme#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#backend PkiSecretBackendConfigAcme#backend}
 
 ---
 
@@ -1118,7 +1178,7 @@ public readonly enabled: boolean | IResolvable;
 
 Specifies whether ACME is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme#enabled PkiSecretBackendConfigAcme#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#enabled PkiSecretBackendConfigAcme#enabled}
 
 ---
 
@@ -1132,7 +1192,7 @@ public readonly allowedIssuers: string[];
 
 Specifies which issuers are allowed for use with ACME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme#allowed_issuers PkiSecretBackendConfigAcme#allowed_issuers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#allowed_issuers PkiSecretBackendConfigAcme#allowed_issuers}
 
 ---
 
@@ -1146,7 +1206,7 @@ public readonly allowedRoles: string[];
 
 Specifies which roles are allowed for use with ACME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme#allowed_roles PkiSecretBackendConfigAcme#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#allowed_roles PkiSecretBackendConfigAcme#allowed_roles}
 
 ---
 
@@ -1160,7 +1220,35 @@ public readonly allowRoleExtKeyUsage: boolean | IResolvable;
 
 Specifies whether the ExtKeyUsage field from a role is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme#allow_role_ext_key_usage PkiSecretBackendConfigAcme#allow_role_ext_key_usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#allow_role_ext_key_usage PkiSecretBackendConfigAcme#allow_role_ext_key_usage}
+
+---
+
+##### `challengeExcludedIpRanges`<sup>Optional</sup> <a name="challengeExcludedIpRanges" id="@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.challengeExcludedIpRanges"></a>
+
+```typescript
+public readonly challengeExcludedIpRanges: string[];
+```
+
+- *Type:* string[]
+
+Specifies the excluded IP ranges for ACME challenge workers to connect.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#challenge_excluded_ip_ranges PkiSecretBackendConfigAcme#challenge_excluded_ip_ranges}
+
+---
+
+##### `challengePermittedIpRanges`<sup>Optional</sup> <a name="challengePermittedIpRanges" id="@cdktn/provider-vault.pkiSecretBackendConfigAcme.PkiSecretBackendConfigAcmeConfig.property.challengePermittedIpRanges"></a>
+
+```typescript
+public readonly challengePermittedIpRanges: string[];
+```
+
+- *Type:* string[]
+
+Specifies the permitted IP ranges for ACME challenge workers to connect.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#challenge_permitted_ip_ranges PkiSecretBackendConfigAcme#challenge_permitted_ip_ranges}
 
 ---
 
@@ -1174,7 +1262,7 @@ public readonly defaultDirectoryPolicy: string;
 
 Specifies the policy to be used for non-role-qualified ACME requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme#default_directory_policy PkiSecretBackendConfigAcme#default_directory_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#default_directory_policy PkiSecretBackendConfigAcme#default_directory_policy}
 
 ---
 
@@ -1190,7 +1278,7 @@ DNS resolver to use for domain resolution on this mount.
 
 Must be in the format <host>:<port>, with both parts mandatory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme#dns_resolver PkiSecretBackendConfigAcme#dns_resolver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#dns_resolver PkiSecretBackendConfigAcme#dns_resolver}
 
 ---
 
@@ -1204,7 +1292,7 @@ public readonly eabPolicy: string;
 
 Specifies the policy to use for external account binding behaviour.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme#eab_policy PkiSecretBackendConfigAcme#eab_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#eab_policy PkiSecretBackendConfigAcme#eab_policy}
 
 ---
 
@@ -1216,7 +1304,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme#id PkiSecretBackendConfigAcme#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#id PkiSecretBackendConfigAcme#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1233,7 +1321,7 @@ public readonly maxTtl: number;
 
 Specifies the maximum TTL in seconds for certificates issued by ACME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme#max_ttl PkiSecretBackendConfigAcme#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#max_ttl PkiSecretBackendConfigAcme#max_ttl}
 
 ---
 
@@ -1247,7 +1335,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/pki_secret_backend_config_acme#namespace PkiSecretBackendConfigAcme#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/pki_secret_backend_config_acme#namespace PkiSecretBackendConfigAcme#namespace}
 
 ---
 
