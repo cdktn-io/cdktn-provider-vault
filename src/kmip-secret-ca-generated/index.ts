@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated
+// https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface KmipSecretCaGeneratedConfig extends cdktn.TerraformMetaArgument
   /**
   * CA key bits. Valid values depend on key_type: For rsa: 2048, 3072, 4096. For ec: 224, 256, 384, 521.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#key_bits KmipSecretCaGenerated#key_bits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#key_bits KmipSecretCaGenerated#key_bits}
   */
   readonly keyBits: number;
   /**
   * CA key type (rsa or ec).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#key_type KmipSecretCaGenerated#key_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#key_type KmipSecretCaGenerated#key_type}
   */
   readonly keyType: string;
   /**
   * Name to identify the CA.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#name KmipSecretCaGenerated#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#name KmipSecretCaGenerated#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#namespace KmipSecretCaGenerated#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#namespace KmipSecretCaGenerated#namespace}
   */
   readonly namespace?: string;
   /**
   * Path where KMIP backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#path KmipSecretCaGenerated#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#path KmipSecretCaGenerated#path}
   */
   readonly path: string;
   /**
   * CA TTL in seconds. Defaults to 365 days.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#ttl KmipSecretCaGenerated#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#ttl KmipSecretCaGenerated#ttl}
   */
   readonly ttl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated vault_kmip_secret_ca_generated}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated vault_kmip_secret_ca_generated}
 */
 export class KmipSecretCaGenerated extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class KmipSecretCaGenerated extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KmipSecretCaGenerated resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmipSecretCaGenerated to import
-  * @param importFromId The id of the existing KmipSecretCaGenerated that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KmipSecretCaGenerated that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmipSecretCaGenerated to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class KmipSecretCaGenerated extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated vault_kmip_secret_ca_generated} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated vault_kmip_secret_ca_generated} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class KmipSecretCaGenerated extends cdktn.TerraformResource {
       terraformResourceType: 'vault_kmip_secret_ca_generated',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.8.0',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

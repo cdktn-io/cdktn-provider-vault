@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role
+// https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,67 +15,73 @@ export interface AzureSecretBackendStaticRoleConfig extends cdktn.TerraformMetaA
   /**
   * Application object ID for an existing service principal that is managed by the static role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role#application_object_id AzureSecretBackendStaticRole#application_object_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role#application_object_id AzureSecretBackendStaticRole#application_object_id}
   */
   readonly applicationObjectId: string;
   /**
   * The path where the Azure secrets backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role#backend AzureSecretBackendStaticRole#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role#backend AzureSecretBackendStaticRole#backend}
   */
   readonly backend: string;
   /**
   * The plaintext secret value of the credential you want to import.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role#client_secret AzureSecretBackendStaticRole#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role#client_secret AzureSecretBackendStaticRole#client_secret}
   */
   readonly clientSecret?: string;
   /**
+  * If true, the initial creation of credentials will be deferred until first static-creds read.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role#defer_initial_creds AzureSecretBackendStaticRole#defer_initial_creds}
+  */
+  readonly deferInitialCreds?: boolean | cdktn.IResolvable;
+  /**
   * A future expiration time for the imported credential, in RFC3339 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role#expiration AzureSecretBackendStaticRole#expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role#expiration AzureSecretBackendStaticRole#expiration}
   */
   readonly expiration?: string;
   /**
   * A map of string key/value pairs that will be stored as metadata on the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role#metadata AzureSecretBackendStaticRole#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role#metadata AzureSecretBackendStaticRole#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role#namespace AzureSecretBackendStaticRole#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role#namespace AzureSecretBackendStaticRole#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of the static role to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role#role AzureSecretBackendStaticRole#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role#role AzureSecretBackendStaticRole#role}
   */
   readonly role: string;
   /**
   * The secret ID of the Azure password credential you want to import.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role#secret_id AzureSecretBackendStaticRole#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role#secret_id AzureSecretBackendStaticRole#secret_id}
   */
   readonly secretId?: string;
   /**
   * If true, skip rotation of the client secret on import.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role#skip_import_rotation AzureSecretBackendStaticRole#skip_import_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role#skip_import_rotation AzureSecretBackendStaticRole#skip_import_rotation}
   */
   readonly skipImportRotation?: boolean | cdktn.IResolvable;
   /**
-  * Timespan of 1 year (31536000) or more during which the role credentials are valid.
+  * Timespan of 1 month or more during which the role credentials are valid.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role#ttl AzureSecretBackendStaticRole#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role#ttl AzureSecretBackendStaticRole#ttl}
   */
   readonly ttl?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}
 */
 export class AzureSecretBackendStaticRole extends cdktn.TerraformResource {
 
@@ -91,7 +97,7 @@ export class AzureSecretBackendStaticRole extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AzureSecretBackendStaticRole resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AzureSecretBackendStaticRole to import
-  * @param importFromId The id of the existing AzureSecretBackendStaticRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AzureSecretBackendStaticRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AzureSecretBackendStaticRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +109,7 @@ export class AzureSecretBackendStaticRole extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +120,7 @@ export class AzureSecretBackendStaticRole extends cdktn.TerraformResource {
       terraformResourceType: 'vault_azure_secret_backend_static_role',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.8.0',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -128,6 +134,7 @@ export class AzureSecretBackendStaticRole extends cdktn.TerraformResource {
     this._applicationObjectId = config.applicationObjectId;
     this._backend = config.backend;
     this._clientSecret = config.clientSecret;
+    this._deferInitialCreds = config.deferInitialCreds;
     this._expiration = config.expiration;
     this._metadata = config.metadata;
     this._namespace = config.namespace;
@@ -183,6 +190,22 @@ export class AzureSecretBackendStaticRole extends cdktn.TerraformResource {
     return this._clientSecret;
   }
 
+  // defer_initial_creds - computed: false, optional: true, required: false
+  private _deferInitialCreds?: boolean | cdktn.IResolvable; 
+  public get deferInitialCreds() {
+    return this.getBooleanAttribute('defer_initial_creds');
+  }
+  public set deferInitialCreds(value: boolean | cdktn.IResolvable) {
+    this._deferInitialCreds = value;
+  }
+  public resetDeferInitialCreds() {
+    this._deferInitialCreds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deferInitialCredsInput() {
+    return this._deferInitialCreds;
+  }
+
   // expiration - computed: false, optional: true, required: false
   private _expiration?: string; 
   public get expiration() {
@@ -204,7 +227,7 @@ export class AzureSecretBackendStaticRole extends cdktn.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // metadata - computed: false, optional: true, required: false
+  // metadata - computed: true, optional: true, required: false
   private _metadata?: { [key: string]: string }; 
   public get metadata() {
     return this.getStringMapAttribute('metadata');
@@ -306,6 +329,7 @@ export class AzureSecretBackendStaticRole extends cdktn.TerraformResource {
       application_object_id: cdktn.stringToTerraform(this._applicationObjectId),
       backend: cdktn.stringToTerraform(this._backend),
       client_secret: cdktn.stringToTerraform(this._clientSecret),
+      defer_initial_creds: cdktn.booleanToTerraform(this._deferInitialCreds),
       expiration: cdktn.stringToTerraform(this._expiration),
       metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._metadata),
       namespace: cdktn.stringToTerraform(this._namespace),
@@ -335,6 +359,12 @@ export class AzureSecretBackendStaticRole extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      defer_initial_creds: {
+        value: cdktn.booleanToHclTerraform(this._deferInitialCreds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       expiration: {
         value: cdktn.stringToHclTerraform(this._expiration),

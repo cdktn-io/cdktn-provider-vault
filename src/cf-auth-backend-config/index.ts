@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config
+// https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,67 +15,73 @@ export interface CfAuthBackendConfigConfig extends cdktn.TerraformMetaArguments 
   /**
   * CF's full API address, used for verifying that a given `CF_INSTANCE_CERT` shows an application ID, space ID, and organization ID that presently exist.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config#cf_api_addr CfAuthBackendConfig#cf_api_addr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config#cf_api_addr CfAuthBackendConfig#cf_api_addr}
   */
   readonly cfApiAddr: string;
   /**
   * The certificate(s) presented by the CF API. Configures Vault to trust these certificates when making API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config#cf_api_trusted_certificates CfAuthBackendConfig#cf_api_trusted_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config#cf_api_trusted_certificates CfAuthBackendConfig#cf_api_trusted_certificates}
   */
   readonly cfApiTrustedCertificates?: string[];
   /**
-  * The password for authenticating to the CF API. This is a write-only field and will not be read back from Vault.
+  * The password for authenticating to the CF API. This attribute is write-only and is never stored in Terraform state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config#cf_password_wo CfAuthBackendConfig#cf_password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config#cf_password_wo CfAuthBackendConfig#cf_password_wo}
   */
   readonly cfPasswordWo: string;
   /**
+  * Version counter for 'cf_password_wo'. Increment this value to trigger an update when only the write-only password changes.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config#cf_password_wo_version CfAuthBackendConfig#cf_password_wo_version}
+  */
+  readonly cfPasswordWoVersion: number;
+  /**
   * The timeout for the CF API in seconds. Defaults to `0` (no timeout). Removing this field from config resets the value to `0` in Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config#cf_timeout CfAuthBackendConfig#cf_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config#cf_timeout CfAuthBackendConfig#cf_timeout}
   */
   readonly cfTimeout?: number;
   /**
   * The username for authenticating to the CF API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config#cf_username CfAuthBackendConfig#cf_username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config#cf_username CfAuthBackendConfig#cf_username}
   */
   readonly cfUsername: string;
   /**
   * The root CA certificate(s) to be used for verifying that the `CF_INSTANCE_CERT` presented for logging in was issued by the proper authority.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config#identity_ca_certificates CfAuthBackendConfig#identity_ca_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config#identity_ca_certificates CfAuthBackendConfig#identity_ca_certificates}
   */
   readonly identityCaCertificates: string[];
   /**
   * The maximum number of seconds in the future when a signature could have been created. Defaults to `60`. This field is `Computed`: if removed from config, Vault retains the previously set value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config#login_max_seconds_not_after CfAuthBackendConfig#login_max_seconds_not_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config#login_max_seconds_not_after CfAuthBackendConfig#login_max_seconds_not_after}
   */
   readonly loginMaxSecondsNotAfter?: number;
   /**
   * The maximum number of seconds in the past when a signature could have been created. Defaults to `300`. This field is `Computed`: if removed from config, Vault retains the previously set value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config#login_max_seconds_not_before CfAuthBackendConfig#login_max_seconds_not_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config#login_max_seconds_not_before CfAuthBackendConfig#login_max_seconds_not_before}
   */
   readonly loginMaxSecondsNotBefore?: number;
   /**
   * Mount path for the CF auth engine in Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config#mount CfAuthBackendConfig#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config#mount CfAuthBackendConfig#mount}
   */
   readonly mount: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config#namespace CfAuthBackendConfig#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config#namespace CfAuthBackendConfig#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config}
 */
 export class CfAuthBackendConfig extends cdktn.TerraformResource {
 
@@ -91,7 +97,7 @@ export class CfAuthBackendConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CfAuthBackendConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CfAuthBackendConfig to import
-  * @param importFromId The id of the existing CfAuthBackendConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CfAuthBackendConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CfAuthBackendConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -103,7 +109,7 @@ export class CfAuthBackendConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/cf_auth_backend_config vault_cf_auth_backend_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -114,7 +120,7 @@ export class CfAuthBackendConfig extends cdktn.TerraformResource {
       terraformResourceType: 'vault_cf_auth_backend_config',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.8.0',
+        providerVersion: '5.9.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -128,6 +134,7 @@ export class CfAuthBackendConfig extends cdktn.TerraformResource {
     this._cfApiAddr = config.cfApiAddr;
     this._cfApiTrustedCertificates = config.cfApiTrustedCertificates;
     this._cfPasswordWo = config.cfPasswordWo;
+    this._cfPasswordWoVersion = config.cfPasswordWoVersion;
     this._cfTimeout = config.cfTimeout;
     this._cfUsername = config.cfUsername;
     this._identityCaCertificates = config.identityCaCertificates;
@@ -181,6 +188,19 @@ export class CfAuthBackendConfig extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get cfPasswordWoInput() {
     return this._cfPasswordWo;
+  }
+
+  // cf_password_wo_version - computed: false, optional: false, required: true
+  private _cfPasswordWoVersion?: number; 
+  public get cfPasswordWoVersion() {
+    return this.getNumberAttribute('cf_password_wo_version');
+  }
+  public set cfPasswordWoVersion(value: number) {
+    this._cfPasswordWoVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cfPasswordWoVersionInput() {
+    return this._cfPasswordWoVersion;
   }
 
   // cf_timeout - computed: false, optional: true, required: false
@@ -295,6 +315,7 @@ export class CfAuthBackendConfig extends cdktn.TerraformResource {
       cf_api_addr: cdktn.stringToTerraform(this._cfApiAddr),
       cf_api_trusted_certificates: cdktn.listMapper(cdktn.stringToTerraform, false)(this._cfApiTrustedCertificates),
       cf_password_wo: cdktn.stringToTerraform(this._cfPasswordWo),
+      cf_password_wo_version: cdktn.numberToTerraform(this._cfPasswordWoVersion),
       cf_timeout: cdktn.numberToTerraform(this._cfTimeout),
       cf_username: cdktn.stringToTerraform(this._cfUsername),
       identity_ca_certificates: cdktn.listMapper(cdktn.stringToTerraform, false)(this._identityCaCertificates),
@@ -324,6 +345,12 @@ export class CfAuthBackendConfig extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      cf_password_wo_version: {
+        value: cdktn.numberToHclTerraform(this._cfPasswordWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       cf_timeout: {
         value: cdktn.numberToHclTerraform(this._cfTimeout),
