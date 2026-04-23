@@ -1,0 +1,228 @@
+/**
+ * Copyright IBM Corp. 2021, 2026
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktn from 'cdktn';
+
+// Configuration
+
+export interface AlicloudSecretBackendConfig extends cdktn.TerraformMetaArguments {
+  /**
+  * The AliCloud Access Key ID to use when generating new credentials.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend#access_key AlicloudSecretBackend#access_key}
+  */
+  readonly accessKey: string;
+  /**
+  * Path of the AliCloud secrets engine mount. Must match the `path` of a `vault_mount` resource with `type = "alicloud"`. Use `vault_mount.alicloud.path` here.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend#mount AlicloudSecretBackend#mount}
+  */
+  readonly mount: string;
+  /**
+  * Target namespace. (requires Enterprise)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend#namespace AlicloudSecretBackend#namespace}
+  */
+  readonly namespace?: string;
+  /**
+  * Write-only AliCloud Secret Access Key. This value will never be read back from Vault.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend#secret_key_wo AlicloudSecretBackend#secret_key_wo}
+  */
+  readonly secretKeyWo: string;
+  /**
+  * A version counter for the write-only `secret_key_wo` field. Incrementing this value will trigger an update to the secret key in Vault.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend#secret_key_wo_version AlicloudSecretBackend#secret_key_wo_version}
+  */
+  readonly secretKeyWoVersion: number;
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend vault_alicloud_secret_backend}
+*/
+export class AlicloudSecretBackend extends cdktn.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "vault_alicloud_secret_backend";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTN code for importing a AlicloudSecretBackend resource upon running "cdktn plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the AlicloudSecretBackend to import
+  * @param importFromId The id of the existing AlicloudSecretBackend that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the AlicloudSecretBackend to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_alicloud_secret_backend", importId: importFromId, provider });
+      }
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend vault_alicloud_secret_backend} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options AlicloudSecretBackendConfig
+  */
+  public constructor(scope: Construct, id: string, config: AlicloudSecretBackendConfig) {
+    super(scope, id, {
+      terraformResourceType: 'vault_alicloud_secret_backend',
+      terraformGeneratorMetadata: {
+        providerName: 'vault',
+        providerVersion: '5.9.0',
+        providerVersionConstraint: '~> 5.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._accessKey = config.accessKey;
+    this._mount = config.mount;
+    this._namespace = config.namespace;
+    this._secretKeyWo = config.secretKeyWo;
+    this._secretKeyWoVersion = config.secretKeyWoVersion;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // access_key - computed: false, optional: false, required: true
+  private _accessKey?: string; 
+  public get accessKey() {
+    return this.getStringAttribute('access_key');
+  }
+  public set accessKey(value: string) {
+    this._accessKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessKeyInput() {
+    return this._accessKey;
+  }
+
+  // mount - computed: false, optional: false, required: true
+  private _mount?: string; 
+  public get mount() {
+    return this.getStringAttribute('mount');
+  }
+  public set mount(value: string) {
+    this._mount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mountInput() {
+    return this._mount;
+  }
+
+  // namespace - computed: false, optional: true, required: false
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  public resetNamespace() {
+    this._namespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
+  }
+
+  // secret_key_wo - computed: false, optional: false, required: true
+  private _secretKeyWo?: string; 
+  public get secretKeyWo() {
+    return this.getStringAttribute('secret_key_wo');
+  }
+  public set secretKeyWo(value: string) {
+    this._secretKeyWo = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretKeyWoInput() {
+    return this._secretKeyWo;
+  }
+
+  // secret_key_wo_version - computed: false, optional: false, required: true
+  private _secretKeyWoVersion?: number; 
+  public get secretKeyWoVersion() {
+    return this.getNumberAttribute('secret_key_wo_version');
+  }
+  public set secretKeyWoVersion(value: number) {
+    this._secretKeyWoVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretKeyWoVersionInput() {
+    return this._secretKeyWoVersion;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      access_key: cdktn.stringToTerraform(this._accessKey),
+      mount: cdktn.stringToTerraform(this._mount),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      secret_key_wo: cdktn.stringToTerraform(this._secretKeyWo),
+      secret_key_wo_version: cdktn.numberToTerraform(this._secretKeyWoVersion),
+    };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_key: {
+        value: cdktn.stringToHclTerraform(this._accessKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mount: {
+        value: cdktn.stringToHclTerraform(this._mount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktn.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_key_wo: {
+        value: cdktn.stringToHclTerraform(this._secretKeyWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_key_wo_version: {
+        value: cdktn.numberToHclTerraform(this._secretKeyWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
+}

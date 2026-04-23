@@ -4,7 +4,7 @@
 
 ### KmipSecretCaGenerated <a name="KmipSecretCaGenerated" id="@cdktn/provider-vault.kmipSecretCaGenerated.KmipSecretCaGenerated"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated vault_kmip_secret_ca_generated}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated vault_kmip_secret_ca_generated}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.kmipSecretCaGenerated.KmipSecretCaGenerated.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 CA key bits. Valid values depend on key_type: For rsa: 2048, 3072, 4096. For ec: 224, 256, 384, 521.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#key_bits KmipSecretCaGenerated#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#key_bits KmipSecretCaGenerated#key_bits}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 CA key type (rsa or ec).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#key_type KmipSecretCaGenerated#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#key_type KmipSecretCaGenerated#key_type}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name to identify the CA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#name KmipSecretCaGenerated#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#name KmipSecretCaGenerated#name}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Path where KMIP backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#path KmipSecretCaGenerated#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#path KmipSecretCaGenerated#path}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#namespace KmipSecretCaGenerated#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#namespace KmipSecretCaGenerated#namespace}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 CA TTL in seconds. Defaults to 365 days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#ttl KmipSecretCaGenerated#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#ttl KmipSecretCaGenerated#ttl}
 
 ---
 
@@ -677,7 +677,7 @@ The construct id used in the generated config for the KmipSecretCaGenerated to i
 
 The id of the existing KmipSecretCaGenerated that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1139,7 +1139,7 @@ key_bits: typing.Union[int, float]
 
 CA key bits. Valid values depend on key_type: For rsa: 2048, 3072, 4096. For ec: 224, 256, 384, 521.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#key_bits KmipSecretCaGenerated#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#key_bits KmipSecretCaGenerated#key_bits}
 
 ---
 
@@ -1153,7 +1153,7 @@ key_type: str
 
 CA key type (rsa or ec).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#key_type KmipSecretCaGenerated#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#key_type KmipSecretCaGenerated#key_type}
 
 ---
 
@@ -1167,7 +1167,7 @@ name: str
 
 Name to identify the CA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#name KmipSecretCaGenerated#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#name KmipSecretCaGenerated#name}
 
 ---
 
@@ -1181,7 +1181,7 @@ path: str
 
 Path where KMIP backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#path KmipSecretCaGenerated#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#path KmipSecretCaGenerated#path}
 
 ---
 
@@ -1195,7 +1195,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#namespace KmipSecretCaGenerated#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#namespace KmipSecretCaGenerated#namespace}
 
 ---
 
@@ -1209,7 +1209,7 @@ ttl: typing.Union[int, float]
 
 CA TTL in seconds. Defaults to 365 days.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.8.0/docs/resources/kmip_secret_ca_generated#ttl KmipSecretCaGenerated#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_generated#ttl KmipSecretCaGenerated#ttl}
 
 ---
 
