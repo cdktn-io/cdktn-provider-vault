@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sshsecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sshsecretbackendrole"
 
 sshsecretbackendrole.NewSshSecretBackendRole(scope Construct, id *string, config SshSecretBackendRoleConfig) SshSecretBackendRole
 ```
@@ -609,7 +609,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sshsecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sshsecretbackendrole"
 
 sshsecretbackendrole.SshSecretBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -641,7 +641,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sshsecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sshsecretbackendrole"
 
 sshsecretbackendrole.SshSecretBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -655,7 +655,7 @@ sshsecretbackendrole.SshSecretBackendRole_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sshsecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sshsecretbackendrole"
 
 sshsecretbackendrole.SshSecretBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -669,7 +669,7 @@ sshsecretbackendrole.SshSecretBackendRole_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sshsecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sshsecretbackendrole"
 
 sshsecretbackendrole.SshSecretBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1580,7 +1580,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRoleAllowedUserKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sshsecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sshsecretbackendrole"
 
 &sshsecretbackendrole.SshSecretBackendRoleAllowedUserKeyConfig {
 	Lengths: *[]*f64,
@@ -1630,7 +1630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sshsecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sshsecretbackendrole"
 
 &sshsecretbackendrole.SshSecretBackendRoleConfig {
 	Connection: interface{},
@@ -2187,7 +2187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRoleAllowedUserKeyConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sshsecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sshsecretbackendrole"
 
 sshsecretbackendrole.NewSshSecretBackendRoleAllowedUserKeyConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SshSecretBackendRoleAllowedUserKeyConfigList
 ```
@@ -2347,7 +2347,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.sshSecretBackendRole.SshSecretBackendRoleAllowedUserKeyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sshsecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sshsecretbackendrole"
 
 sshsecretbackendrole.NewSshSecretBackendRoleAllowedUserKeyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SshSecretBackendRoleAllowedUserKeyConfigOutputReference
 ```

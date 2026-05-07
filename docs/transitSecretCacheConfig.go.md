@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transitsecretcacheconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transitsecretcacheconfig"
 
 transitsecretcacheconfig.NewTransitSecretCacheConfig(scope Construct, id *string, config TransitSecretCacheConfigConfig) TransitSecretCacheConfig
 ```
@@ -414,7 +414,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transitsecretcacheconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transitsecretcacheconfig"
 
 transitsecretcacheconfig.TransitSecretCacheConfig_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transitsecretcacheconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transitsecretcacheconfig"
 
 transitsecretcacheconfig.TransitSecretCacheConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ transitsecretcacheconfig.TransitSecretCacheConfig_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transitsecretcacheconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transitsecretcacheconfig"
 
 transitsecretcacheconfig.TransitSecretCacheConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ transitsecretcacheconfig.TransitSecretCacheConfig_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transitsecretcacheconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transitsecretcacheconfig"
 
 transitsecretcacheconfig.TransitSecretCacheConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.transitSecretCacheConfig.TransitSecretCacheConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transitsecretcacheconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transitsecretcacheconfig"
 
 &transitsecretcacheconfig.TransitSecretCacheConfigConfig {
 	Connection: interface{},

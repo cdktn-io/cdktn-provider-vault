@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.adSecretRole.AdSecretRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/adsecretrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/adsecretrole"
 
 adsecretrole.NewAdSecretRole(scope Construct, id *string, config AdSecretRoleConfig) AdSecretRole
 ```
@@ -421,7 +421,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.adSecretRole.AdSecretRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/adsecretrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/adsecretrole"
 
 adsecretrole.AdSecretRole_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.adSecretRole.AdSecretRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/adsecretrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/adsecretrole"
 
 adsecretrole.AdSecretRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ adsecretrole.AdSecretRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.adSecretRole.AdSecretRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/adsecretrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/adsecretrole"
 
 adsecretrole.AdSecretRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ adsecretrole.AdSecretRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.adSecretRole.AdSecretRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/adsecretrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/adsecretrole"
 
 adsecretrole.AdSecretRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.adSecretRole.AdSecretRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/adsecretrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/adsecretrole"
 
 &adsecretrole.AdSecretRoleConfig {
 	Connection: interface{},

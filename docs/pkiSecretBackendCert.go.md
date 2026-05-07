@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendcert"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendcert"
 
 pkisecretbackendcert.NewPkiSecretBackendCert(scope Construct, id *string, config PkiSecretBackendCertConfig) PkiSecretBackendCert
 ```
@@ -533,7 +533,7 @@ func ResetUserIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendcert"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendcert"
 
 pkisecretbackendcert.PkiSecretBackendCert_IsConstruct(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendcert"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendcert"
 
 pkisecretbackendcert.PkiSecretBackendCert_IsTerraformElement(x interface{}) *bool
 ```
@@ -579,7 +579,7 @@ pkisecretbackendcert.PkiSecretBackendCert_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendcert"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendcert"
 
 pkisecretbackendcert.PkiSecretBackendCert_IsTerraformResource(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ pkisecretbackendcert.PkiSecretBackendCert_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendcert"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendcert"
 
 pkisecretbackendcert.PkiSecretBackendCert_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1394,7 +1394,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkisecretbackendcert"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkisecretbackendcert"
 
 &pkisecretbackendcert.PkiSecretBackendCertConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessage.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/configuicustommessage"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuicustommessage"
 
 configuicustommessage.NewConfigUiCustomMessage(scope Construct, id *string, config ConfigUiCustomMessageConfig) ConfigUiCustomMessage
 ```
@@ -455,7 +455,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessage.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/configuicustommessage"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuicustommessage"
 
 configuicustommessage.ConfigUiCustomMessage_IsConstruct(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/configuicustommessage"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuicustommessage"
 
 configuicustommessage.ConfigUiCustomMessage_IsTerraformElement(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ configuicustommessage.ConfigUiCustomMessage_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessage.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/configuicustommessage"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuicustommessage"
 
 configuicustommessage.ConfigUiCustomMessage_IsTerraformResource(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ configuicustommessage.ConfigUiCustomMessage_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/configuicustommessage"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuicustommessage"
 
 configuicustommessage.ConfigUiCustomMessage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -953,7 +953,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/configuicustommessage"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuicustommessage"
 
 &configuicustommessage.ConfigUiCustomMessageConfig {
 	Connection: interface{},
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/configuicustommess
 	Title: *string,
 	Authenticated: interface{},
 	EndTime: *string,
-	Link: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.configUiCustomMessage.ConfigUiCustomMessageLink,
+	Link: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.configUiCustomMessage.ConfigUiCustomMessageLink,
 	Namespace: *string,
 	Options: *map[string]*string,
 	Type: *string,
@@ -1199,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessageLink.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/configuicustommessage"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuicustommessage"
 
 &configuicustommessage.ConfigUiCustomMessageLink {
 	Href: *string,
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.configUiCustomMessage.ConfigUiCustomMessageLinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/configuicustommessage"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuicustommessage"
 
 configuicustommessage.NewConfigUiCustomMessageLinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ConfigUiCustomMessageLinkOutputReference
 ```

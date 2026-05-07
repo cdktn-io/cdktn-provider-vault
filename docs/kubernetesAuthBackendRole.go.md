@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetesauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kubernetesauthbackendrole"
 
 kubernetesauthbackendrole.NewKubernetesAuthBackendRole(scope Construct, id *string, config KubernetesAuthBackendRoleConfig) KubernetesAuthBackendRole
 ```
@@ -519,7 +519,7 @@ func ResetTokenType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetesauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kubernetesauthbackendrole"
 
 kubernetesauthbackendrole.KubernetesAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetesauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kubernetesauthbackendrole"
 
 kubernetesauthbackendrole.KubernetesAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ kubernetesauthbackendrole.KubernetesAuthBackendRole_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetesauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kubernetesauthbackendrole"
 
 kubernetesauthbackendrole.KubernetesAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -579,7 +579,7 @@ kubernetesauthbackendrole.KubernetesAuthBackendRole_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetesauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kubernetesauthbackendrole"
 
 kubernetesauthbackendrole.KubernetesAuthBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1226,7 +1226,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.kubernetesAuthBackendRole.KubernetesAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetesauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kubernetesauthbackendrole"
 
 &kubernetesauthbackendrole.KubernetesAuthBackendRoleConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pluginRuntime.PluginRuntime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pluginruntime"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pluginruntime"
 
 pluginruntime.NewPluginRuntime(scope Construct, id *string, config PluginRuntimeConfig) PluginRuntime
 ```
@@ -442,7 +442,7 @@ func ResetRootless()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.pluginRuntime.PluginRuntime.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pluginruntime"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pluginruntime"
 
 pluginruntime.PluginRuntime_IsConstruct(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.pluginRuntime.PluginRuntime.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pluginruntime"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pluginruntime"
 
 pluginruntime.PluginRuntime_IsTerraformElement(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ pluginruntime.PluginRuntime_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.pluginRuntime.PluginRuntime.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pluginruntime"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pluginruntime"
 
 pluginruntime.PluginRuntime_IsTerraformResource(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ pluginruntime.PluginRuntime_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.pluginRuntime.PluginRuntime.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pluginruntime"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pluginruntime"
 
 pluginruntime.PluginRuntime_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -918,7 +918,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.pluginRuntime.PluginRuntimeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pluginruntime"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pluginruntime"
 
 &pluginruntime.PluginRuntimeConfig {
 	Connection: interface{},

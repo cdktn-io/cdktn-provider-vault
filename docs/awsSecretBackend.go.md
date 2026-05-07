@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/awssecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/awssecretbackend"
 
 awssecretbackend.NewAwsSecretBackend(scope Construct, id *string, config AwsSecretBackendConfig) AwsSecretBackend
 ```
@@ -680,7 +680,7 @@ func ResetUsernameTemplate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/awssecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/awssecretbackend"
 
 awssecretbackend.AwsSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -712,7 +712,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/awssecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/awssecretbackend"
 
 awssecretbackend.AwsSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -726,7 +726,7 @@ awssecretbackend.AwsSecretBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/awssecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/awssecretbackend"
 
 awssecretbackend.AwsSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -740,7 +740,7 @@ awssecretbackend.AwsSecretBackend_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/awssecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/awssecretbackend"
 
 awssecretbackend.AwsSecretBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1860,7 +1860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.awsSecretBackend.AwsSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/awssecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/awssecretbackend"
 
 &awssecretbackend.AwsSecretBackendConfig {
 	Connection: interface{},

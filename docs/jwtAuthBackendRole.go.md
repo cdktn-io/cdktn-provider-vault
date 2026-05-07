@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jwtauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackendrole"
 
 jwtauthbackendrole.NewJwtAuthBackendRole(scope Construct, id *string, config JwtAuthBackendRoleConfig) JwtAuthBackendRole
 ```
@@ -603,7 +603,7 @@ func ResetVerboseOidcLogging()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jwtauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackendrole"
 
 jwtauthbackendrole.JwtAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jwtauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackendrole"
 
 jwtauthbackendrole.JwtAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -649,7 +649,7 @@ jwtauthbackendrole.JwtAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jwtauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackendrole"
 
 jwtauthbackendrole.JwtAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -663,7 +663,7 @@ jwtauthbackendrole.JwtAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jwtauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackendrole"
 
 jwtauthbackendrole.JwtAuthBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1574,7 +1574,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.jwtAuthBackendRole.JwtAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/jwtauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackendrole"
 
 &jwtauthbackendrole.JwtAuthBackendRoleConfig {
 	Connection: interface{},

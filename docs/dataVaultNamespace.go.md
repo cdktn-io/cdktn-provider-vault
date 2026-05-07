@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultNamespace.DataVaultNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultnamespace"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultnamespace"
 
 datavaultnamespace.NewDataVaultNamespace(scope Construct, id *string, config DataVaultNamespaceConfig) DataVaultNamespace
 ```
@@ -319,7 +319,7 @@ func ResetPath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultNamespace.DataVaultNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultnamespace"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultnamespace"
 
 datavaultnamespace.DataVaultNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultNamespace.DataVaultNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultnamespace"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultnamespace"
 
 datavaultnamespace.DataVaultNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datavaultnamespace.DataVaultNamespace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultNamespace.DataVaultNamespace.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultnamespace"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultnamespace"
 
 datavaultnamespace.DataVaultNamespace_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datavaultnamespace.DataVaultNamespace_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultNamespace.DataVaultNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultnamespace"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultnamespace"
 
 datavaultnamespace.DataVaultNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -685,7 +685,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultNamespace.DataVaultNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultnamespace"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultnamespace"
 
 &datavaultnamespace.DataVaultNamespaceConfig {
 	Connection: interface{},

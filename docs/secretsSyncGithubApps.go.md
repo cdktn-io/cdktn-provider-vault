@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncgithubapps"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncgithubapps"
 
 secretssyncgithubapps.NewSecretsSyncGithubApps(scope Construct, id *string, config SecretsSyncGithubAppsConfig) SecretsSyncGithubApps
 ```
@@ -414,7 +414,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncgithubapps"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncgithubapps"
 
 secretssyncgithubapps.SecretsSyncGithubApps_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncgithubapps"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncgithubapps"
 
 secretssyncgithubapps.SecretsSyncGithubApps_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ secretssyncgithubapps.SecretsSyncGithubApps_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncgithubapps"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncgithubapps"
 
 secretssyncgithubapps.SecretsSyncGithubApps_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ secretssyncgithubapps.SecretsSyncGithubApps_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.secretsSyncGithubApps.SecretsSyncGithubApps.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncgithubapps"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncgithubapps"
 
 secretssyncgithubapps.SecretsSyncGithubApps_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.secretsSyncGithubApps.SecretsSyncGithubAppsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncgithubapps"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncgithubapps"
 
 &secretssyncgithubapps.SecretsSyncGithubAppsConfig {
 	Connection: interface{},

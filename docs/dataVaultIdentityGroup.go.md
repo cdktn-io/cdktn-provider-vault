@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentitygroup"
 
 datavaultidentitygroup.NewDataVaultIdentityGroup(scope Construct, id *string, config DataVaultIdentityGroupConfig) DataVaultIdentityGroup
 ```
@@ -347,7 +347,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentitygroup"
 
 datavaultidentitygroup.DataVaultIdentityGroup_IsConstruct(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentitygroup"
 
 datavaultidentitygroup.DataVaultIdentityGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ datavaultidentitygroup.DataVaultIdentityGroup_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentitygroup"
 
 datavaultidentitygroup.DataVaultIdentityGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ datavaultidentitygroup.DataVaultIdentityGroup_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentitygroup"
 
 datavaultidentitygroup.DataVaultIdentityGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -966,7 +966,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultIdentityGroup.DataVaultIdentityGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentitygroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentitygroup"
 
 &datavaultidentitygroup.DataVaultIdentityGroupConfig {
 	Connection: interface{},

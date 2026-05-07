@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.keymgmtGcpKms.KeymgmtGcpKms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtgcpkms"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtgcpkms"
 
 keymgmtgcpkms.NewKeymgmtGcpKms(scope Construct, id *string, config KeymgmtGcpKmsConfig) KeymgmtGcpKms
 ```
@@ -421,7 +421,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.keymgmtGcpKms.KeymgmtGcpKms.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtgcpkms"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtgcpkms"
 
 keymgmtgcpkms.KeymgmtGcpKms_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.keymgmtGcpKms.KeymgmtGcpKms.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtgcpkms"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtgcpkms"
 
 keymgmtgcpkms.KeymgmtGcpKms_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ keymgmtgcpkms.KeymgmtGcpKms_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.keymgmtGcpKms.KeymgmtGcpKms.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtgcpkms"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtgcpkms"
 
 keymgmtgcpkms.KeymgmtGcpKms_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ keymgmtgcpkms.KeymgmtGcpKms_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.keymgmtGcpKms.KeymgmtGcpKms.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtgcpkms"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtgcpkms"
 
 keymgmtgcpkms.KeymgmtGcpKms_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -842,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.keymgmtGcpKms.KeymgmtGcpKmsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtgcpkms"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtgcpkms"
 
 &keymgmtgcpkms.KeymgmtGcpKmsConfig {
 	Connection: interface{},

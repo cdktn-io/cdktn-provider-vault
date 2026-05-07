@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtransformation"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformtransformation"
 
 transformtransformation.NewTransformTransformation(scope Construct, id *string, config TransformTransformationConfig) TransformTransformation
 ```
@@ -463,7 +463,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtransformation"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformtransformation"
 
 transformtransformation.TransformTransformation_IsConstruct(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtransformation"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformtransformation"
 
 transformtransformation.TransformTransformation_IsTerraformElement(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ transformtransformation.TransformTransformation_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtransformation"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformtransformation"
 
 transformtransformation.TransformTransformation_IsTerraformResource(x interface{}) *bool
 ```
@@ -523,7 +523,7 @@ transformtransformation.TransformTransformation_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtransformation"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformtransformation"
 
 transformtransformation.TransformTransformation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -994,7 +994,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformtransformation"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformtransformation"
 
 &transformtransformation.TransformTransformationConfig {
 	Connection: interface{},

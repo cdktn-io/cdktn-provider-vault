@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.identityOidcScope.IdentityOidcScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcscope"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityoidcscope"
 
 identityoidcscope.NewIdentityOidcScope(scope Construct, id *string, config IdentityOidcScopeConfig) IdentityOidcScope
 ```
@@ -428,7 +428,7 @@ func ResetTemplate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.identityOidcScope.IdentityOidcScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcscope"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityoidcscope"
 
 identityoidcscope.IdentityOidcScope_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.identityOidcScope.IdentityOidcScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcscope"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityoidcscope"
 
 identityoidcscope.IdentityOidcScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ identityoidcscope.IdentityOidcScope_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.identityOidcScope.IdentityOidcScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcscope"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityoidcscope"
 
 identityoidcscope.IdentityOidcScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ identityoidcscope.IdentityOidcScope_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.identityOidcScope.IdentityOidcScope.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcscope"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityoidcscope"
 
 identityoidcscope.IdentityOidcScope_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.identityOidcScope.IdentityOidcScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcscope"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityoidcscope"
 
 &identityoidcscope.IdentityOidcScopeConfig {
 	Connection: interface{},

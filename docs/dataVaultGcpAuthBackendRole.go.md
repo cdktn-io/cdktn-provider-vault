@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultgcpauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultgcpauthbackendrole"
 
 datavaultgcpauthbackendrole.NewDataVaultGcpAuthBackendRole(scope Construct, id *string, config DataVaultGcpAuthBackendRoleConfig) DataVaultGcpAuthBackendRole
 ```
@@ -389,7 +389,7 @@ func ResetTokenType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultgcpauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultgcpauthbackendrole"
 
 datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultgcpauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultgcpauthbackendrole"
 
 datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -435,7 +435,7 @@ datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRole_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultgcpauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultgcpauthbackendrole"
 
 datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -449,7 +449,7 @@ datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRole_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultgcpauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultgcpauthbackendrole"
 
 datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1052,7 +1052,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultGcpAuthBackendRole.DataVaultGcpAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultgcpauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultgcpauthbackendrole"
 
 &datavaultgcpauthbackendrole.DataVaultGcpAuthBackendRoleConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaulttransitdecrypt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.NewDataVaultTransitDecrypt(scope Construct, id *string, config DataVaultTransitDecryptConfig) DataVaultTransitDecrypt
 ```
@@ -319,7 +319,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaulttransitdecrypt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.DataVaultTransitDecrypt_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaulttransitdecrypt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.DataVaultTransitDecrypt_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datavaulttransitdecrypt.DataVaultTransitDecrypt_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaulttransitdecrypt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.DataVaultTransitDecrypt_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datavaulttransitdecrypt.DataVaultTransitDecrypt_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaulttransitdecrypt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaulttransitdecrypt"
 
 datavaulttransitdecrypt.DataVaultTransitDecrypt_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaulttransitdecrypt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaulttransitdecrypt"
 
 &datavaulttransitdecrypt.DataVaultTransitDecryptConfig {
 	Connection: interface{},

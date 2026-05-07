@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.rotationPolicy.RotationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/rotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/rotationpolicy"
 
 rotationpolicy.NewRotationPolicy(scope Construct, id *string, config RotationPolicyConfig) RotationPolicy
 ```
@@ -407,7 +407,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.rotationPolicy.RotationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/rotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/rotationpolicy"
 
 rotationpolicy.RotationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.rotationPolicy.RotationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/rotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/rotationpolicy"
 
 rotationpolicy.RotationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ rotationpolicy.RotationPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.rotationPolicy.RotationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/rotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/rotationpolicy"
 
 rotationpolicy.RotationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ rotationpolicy.RotationPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.rotationPolicy.RotationPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/rotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/rotationpolicy"
 
 rotationpolicy.RotationPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.rotationPolicy.RotationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/rotationpolicy"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/rotationpolicy"
 
 &rotationpolicy.RotationPolicyConfig {
 	Connection: interface{},

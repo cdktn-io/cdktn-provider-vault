@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/samlauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/samlauthbackend"
 
 samlauthbackend.NewSamlAuthBackend(scope Construct, id *string, config SamlAuthBackendConfig) SamlAuthBackend
 ```
@@ -504,7 +504,7 @@ func ResetVerboseLogging()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/samlauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/samlauthbackend"
 
 samlauthbackend.SamlAuthBackend_IsConstruct(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/samlauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/samlauthbackend"
 
 samlauthbackend.SamlAuthBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ samlauthbackend.SamlAuthBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/samlauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/samlauthbackend"
 
 samlauthbackend.SamlAuthBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -564,7 +564,7 @@ samlauthbackend.SamlAuthBackend_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.samlAuthBackend.SamlAuthBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/samlauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/samlauthbackend"
 
 samlauthbackend.SamlAuthBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1123,7 +1123,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/samlauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/samlauthbackend"
 
 &samlauthbackend.SamlAuthBackendConfig {
 	Connection: interface{},
@@ -1464,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTune.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/samlauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/samlauthbackend"
 
 &samlauthbackend.SamlAuthBackendTune {
 	AllowedResponseHeaders: *[]*string,
@@ -1596,7 +1596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTuneList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/samlauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/samlauthbackend"
 
 samlauthbackend.NewSamlAuthBackendTuneList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) SamlAuthBackendTuneList
 ```
@@ -1756,7 +1756,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.samlAuthBackend.SamlAuthBackendTuneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/samlauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/samlauthbackend"
 
 samlauthbackend.NewSamlAuthBackendTuneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) SamlAuthBackendTuneOutputReference
 ```

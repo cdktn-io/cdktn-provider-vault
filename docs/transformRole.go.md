@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.transformRole.TransformRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformrole"
 
 transformrole.NewTransformRole(scope Construct, id *string, config TransformRoleConfig) TransformRole
 ```
@@ -421,7 +421,7 @@ func ResetTransformations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.transformRole.TransformRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformrole"
 
 transformrole.TransformRole_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.transformRole.TransformRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformrole"
 
 transformrole.TransformRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ transformrole.TransformRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.transformRole.TransformRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformrole"
 
 transformrole.TransformRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ transformrole.TransformRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.transformRole.TransformRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformrole"
 
 transformrole.TransformRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.transformRole.TransformRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/transformrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/transformrole"
 
 &transformrole.TransformRoleConfig {
 	Connection: interface{},

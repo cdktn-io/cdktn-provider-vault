@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.mfaDuo.MfaDuo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/mfaduo"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/mfaduo"
 
 mfaduo.NewMfaDuo(scope Construct, id *string, config MfaDuoConfig) MfaDuo
 ```
@@ -428,7 +428,7 @@ func ResetUsernameFormat()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.mfaDuo.MfaDuo.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/mfaduo"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/mfaduo"
 
 mfaduo.MfaDuo_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.mfaDuo.MfaDuo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/mfaduo"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/mfaduo"
 
 mfaduo.MfaDuo_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ mfaduo.MfaDuo_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.mfaDuo.MfaDuo.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/mfaduo"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/mfaduo"
 
 mfaduo.MfaDuo_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ mfaduo.MfaDuo_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.mfaDuo.MfaDuo.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/mfaduo"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/mfaduo"
 
 mfaduo.MfaDuo_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.mfaDuo.MfaDuoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/mfaduo"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/mfaduo"
 
 &mfaduo.MfaDuoConfig {
 	Connection: interface{},

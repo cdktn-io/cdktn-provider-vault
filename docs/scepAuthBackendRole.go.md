@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/scepauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/scepauthbackendrole"
 
 scepauthbackendrole.NewScepAuthBackendRole(scope Construct, id *string, config ScepAuthBackendRoleConfig) ScepAuthBackendRole
 ```
@@ -505,7 +505,7 @@ func ResetTokenType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/scepauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/scepauthbackendrole"
 
 scepauthbackendrole.ScepAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/scepauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/scepauthbackendrole"
 
 scepauthbackendrole.ScepAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ scepauthbackendrole.ScepAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/scepauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/scepauthbackendrole"
 
 scepauthbackendrole.ScepAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ scepauthbackendrole.ScepAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/scepauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/scepauthbackendrole"
 
 scepauthbackendrole.ScepAuthBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1168,7 +1168,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.scepAuthBackendRole.ScepAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/scepauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/scepauthbackendrole"
 
 &scepauthbackendrole.ScepAuthBackendRoleConfig {
 	Connection: interface{},

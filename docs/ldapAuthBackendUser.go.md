@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ldapAuthBackendUser.LdapAuthBackendUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ldapauthbackenduser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackenduser"
 
 ldapauthbackenduser.NewLdapAuthBackendUser(scope Construct, id *string, config LdapAuthBackendUserConfig) LdapAuthBackendUser
 ```
@@ -435,7 +435,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ldapAuthBackendUser.LdapAuthBackendUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ldapauthbackenduser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackenduser"
 
 ldapauthbackenduser.LdapAuthBackendUser_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ldapAuthBackendUser.LdapAuthBackendUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ldapauthbackenduser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackenduser"
 
 ldapauthbackenduser.LdapAuthBackendUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ ldapauthbackenduser.LdapAuthBackendUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.ldapAuthBackendUser.LdapAuthBackendUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ldapauthbackenduser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackenduser"
 
 ldapauthbackenduser.LdapAuthBackendUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ ldapauthbackenduser.LdapAuthBackendUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.ldapAuthBackendUser.LdapAuthBackendUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ldapauthbackenduser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackenduser"
 
 ldapauthbackenduser.LdapAuthBackendUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -856,7 +856,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ldapAuthBackendUser.LdapAuthBackendUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ldapauthbackenduser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackenduser"
 
 &ldapauthbackenduser.LdapAuthBackendUserConfig {
 	Connection: interface{},

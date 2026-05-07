@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ociAuthBackendRole.OciAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackendrole"
 
 ociauthbackendrole.NewOciAuthBackendRole(scope Construct, id *string, config OciAuthBackendRoleConfig) OciAuthBackendRole
 ```
@@ -498,7 +498,7 @@ func ResetTokenType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ociAuthBackendRole.OciAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackendrole"
 
 ociauthbackendrole.OciAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -530,7 +530,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ociAuthBackendRole.OciAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackendrole"
 
 ociauthbackendrole.OciAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -544,7 +544,7 @@ ociauthbackendrole.OciAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.ociAuthBackendRole.OciAuthBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackendrole"
 
 ociauthbackendrole.OciAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -558,7 +558,7 @@ ociauthbackendrole.OciAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.ociAuthBackendRole.OciAuthBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackendrole"
 
 ociauthbackendrole.OciAuthBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1117,7 +1117,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ociAuthBackendRole.OciAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackendrole"
 
 &ociauthbackendrole.OciAuthBackendRoleConfig {
 	Connection: interface{},

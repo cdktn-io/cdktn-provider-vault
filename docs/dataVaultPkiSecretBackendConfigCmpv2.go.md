@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultPkiSecretBackendConfigCmpv2.DataVaultPkiSecretBackendConfigCmpv2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecretbackendconfigcmpv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpkisecretbackendconfigcmpv2"
 
 datavaultpkisecretbackendconfigcmpv2.NewDataVaultPkiSecretBackendConfigCmpv2(scope Construct, id *string, config DataVaultPkiSecretBackendConfigCmpv2Config) DataVaultPkiSecretBackendConfigCmpv2
 ```
@@ -319,7 +319,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultPkiSecretBackendConfigCmpv2.DataVaultPkiSecretBackendConfigCmpv2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecretbackendconfigcmpv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpkisecretbackendconfigcmpv2"
 
 datavaultpkisecretbackendconfigcmpv2.DataVaultPkiSecretBackendConfigCmpv2_IsConstruct(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultPkiSecretBackendConfigCmpv2.DataVaultPkiSecretBackendConfigCmpv2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecretbackendconfigcmpv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpkisecretbackendconfigcmpv2"
 
 datavaultpkisecretbackendconfigcmpv2.DataVaultPkiSecretBackendConfigCmpv2_IsTerraformElement(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datavaultpkisecretbackendconfigcmpv2.DataVaultPkiSecretBackendConfigCmpv2_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultPkiSecretBackendConfigCmpv2.DataVaultPkiSecretBackendConfigCmpv2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecretbackendconfigcmpv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpkisecretbackendconfigcmpv2"
 
 datavaultpkisecretbackendconfigcmpv2.DataVaultPkiSecretBackendConfigCmpv2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ datavaultpkisecretbackendconfigcmpv2.DataVaultPkiSecretBackendConfigCmpv2_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultPkiSecretBackendConfigCmpv2.DataVaultPkiSecretBackendConfigCmpv2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecretbackendconfigcmpv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpkisecretbackendconfigcmpv2"
 
 datavaultpkisecretbackendconfigcmpv2.DataVaultPkiSecretBackendConfigCmpv2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultPkiSecretBackendConfigCmpv2.DataVaultPkiSecretBackendConfigCmpv2Authenticators.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecretbackendconfigcmpv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpkisecretbackendconfigcmpv2"
 
 &datavaultpkisecretbackendconfigcmpv2.DataVaultPkiSecretBackendConfigCmpv2Authenticators {
 
@@ -753,7 +753,7 @@ import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecret
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultPkiSecretBackendConfigCmpv2.DataVaultPkiSecretBackendConfigCmpv2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecretbackendconfigcmpv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpkisecretbackendconfigcmpv2"
 
 &datavaultpkisecretbackendconfigcmpv2.DataVaultPkiSecretBackendConfigCmpv2Config {
 	Connection: interface{},
@@ -922,7 +922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultPkiSecretBackendConfigCmpv2.DataVaultPkiSecretBackendConfigCmpv2AuthenticatorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecretbackendconfigcmpv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpkisecretbackendconfigcmpv2"
 
 datavaultpkisecretbackendconfigcmpv2.NewDataVaultPkiSecretBackendConfigCmpv2AuthenticatorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVaultPkiSecretBackendConfigCmpv2AuthenticatorsList
 ```
@@ -1071,7 +1071,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultPkiSecretBackendConfigCmpv2.DataVaultPkiSecretBackendConfigCmpv2AuthenticatorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpkisecretbackendconfigcmpv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpkisecretbackendconfigcmpv2"
 
 datavaultpkisecretbackendconfigcmpv2.NewDataVaultPkiSecretBackendConfigCmpv2AuthenticatorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVaultPkiSecretBackendConfigCmpv2AuthenticatorsOutputReference
 ```

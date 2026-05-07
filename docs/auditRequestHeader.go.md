@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.auditRequestHeader.AuditRequestHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/auditrequestheader"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/auditrequestheader"
 
 auditrequestheader.NewAuditRequestHeader(scope Construct, id *string, config AuditRequestHeaderConfig) AuditRequestHeader
 ```
@@ -421,7 +421,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.auditRequestHeader.AuditRequestHeader.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/auditrequestheader"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/auditrequestheader"
 
 auditrequestheader.AuditRequestHeader_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.auditRequestHeader.AuditRequestHeader.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/auditrequestheader"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/auditrequestheader"
 
 auditrequestheader.AuditRequestHeader_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ auditrequestheader.AuditRequestHeader_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.auditRequestHeader.AuditRequestHeader.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/auditrequestheader"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/auditrequestheader"
 
 auditrequestheader.AuditRequestHeader_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ auditrequestheader.AuditRequestHeader_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.auditRequestHeader.AuditRequestHeader.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/auditrequestheader"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/auditrequestheader"
 
 auditrequestheader.AuditRequestHeader_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -798,7 +798,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.auditRequestHeader.AuditRequestHeaderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/auditrequestheader"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/auditrequestheader"
 
 &auditrequestheader.AuditRequestHeaderConfig {
 	Connection: interface{},

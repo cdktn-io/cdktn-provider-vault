@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.spiffeSecretBackendRole.SpiffeSecretBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/spiffesecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/spiffesecretbackendrole"
 
 spiffesecretbackendrole.NewSpiffeSecretBackendRole(scope Construct, id *string, config SpiffeSecretBackendRoleConfig) SpiffeSecretBackendRole
 ```
@@ -421,7 +421,7 @@ func ResetUseJtiClaim()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.spiffeSecretBackendRole.SpiffeSecretBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/spiffesecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/spiffesecretbackendrole"
 
 spiffesecretbackendrole.SpiffeSecretBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.spiffeSecretBackendRole.SpiffeSecretBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/spiffesecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/spiffesecretbackendrole"
 
 spiffesecretbackendrole.SpiffeSecretBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ spiffesecretbackendrole.SpiffeSecretBackendRole_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.spiffeSecretBackendRole.SpiffeSecretBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/spiffesecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/spiffesecretbackendrole"
 
 spiffesecretbackendrole.SpiffeSecretBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ spiffesecretbackendrole.SpiffeSecretBackendRole_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.spiffeSecretBackendRole.SpiffeSecretBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/spiffesecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/spiffesecretbackendrole"
 
 spiffesecretbackendrole.SpiffeSecretBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -842,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.spiffeSecretBackendRole.SpiffeSecretBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/spiffesecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/spiffesecretbackendrole"
 
 &spiffesecretbackendrole.SpiffeSecretBackendRoleConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.identityGroupAlias.IdentityGroupAlias.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitygroupalias"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identitygroupalias"
 
 identitygroupalias.NewIdentityGroupAlias(scope Construct, id *string, config IdentityGroupAliasConfig) IdentityGroupAlias
 ```
@@ -414,7 +414,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.identityGroupAlias.IdentityGroupAlias.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitygroupalias"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identitygroupalias"
 
 identitygroupalias.IdentityGroupAlias_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.identityGroupAlias.IdentityGroupAlias.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitygroupalias"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identitygroupalias"
 
 identitygroupalias.IdentityGroupAlias_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ identitygroupalias.IdentityGroupAlias_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.identityGroupAlias.IdentityGroupAlias.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitygroupalias"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identitygroupalias"
 
 identitygroupalias.IdentityGroupAlias_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ identitygroupalias.IdentityGroupAlias_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.identityGroupAlias.IdentityGroupAlias.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitygroupalias"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identitygroupalias"
 
 identitygroupalias.IdentityGroupAlias_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.identityGroupAlias.IdentityGroupAliasConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identitygroupalias"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identitygroupalias"
 
 &identitygroupalias.IdentityGroupAliasConfig {
 	Connection: interface{},

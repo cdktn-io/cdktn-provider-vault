@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncazuredestination"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncazuredestination"
 
 secretssyncazuredestination.NewSecretsSyncAzureDestination(scope Construct, id *string, config SecretsSyncAzureDestinationConfig) SecretsSyncAzureDestination
 ```
@@ -533,7 +533,7 @@ func ResetTenantId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncazuredestination"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncazuredestination"
 
 secretssyncazuredestination.SecretsSyncAzureDestination_IsConstruct(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncazuredestination"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncazuredestination"
 
 secretssyncazuredestination.SecretsSyncAzureDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -579,7 +579,7 @@ secretssyncazuredestination.SecretsSyncAzureDestination_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncazuredestination"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncazuredestination"
 
 secretssyncazuredestination.SecretsSyncAzureDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -593,7 +593,7 @@ secretssyncazuredestination.SecretsSyncAzureDestination_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncazuredestination"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncazuredestination"
 
 secretssyncazuredestination.SecretsSyncAzureDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1273,7 +1273,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.secretsSyncAzureDestination.SecretsSyncAzureDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncazuredestination"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncazuredestination"
 
 &secretssyncazuredestination.SecretsSyncAzureDestinationConfig {
 	Connection: interface{},

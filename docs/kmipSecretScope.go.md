@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.kmipSecretScope.KmipSecretScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretscope"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kmipsecretscope"
 
 kmipsecretscope.NewKmipSecretScope(scope Construct, id *string, config KmipSecretScopeConfig) KmipSecretScope
 ```
@@ -421,7 +421,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.kmipSecretScope.KmipSecretScope.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretscope"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kmipsecretscope"
 
 kmipsecretscope.KmipSecretScope_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.kmipSecretScope.KmipSecretScope.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretscope"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kmipsecretscope"
 
 kmipsecretscope.KmipSecretScope_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ kmipsecretscope.KmipSecretScope_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.kmipSecretScope.KmipSecretScope.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretscope"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kmipsecretscope"
 
 kmipsecretscope.KmipSecretScope_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ kmipsecretscope.KmipSecretScope_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.kmipSecretScope.KmipSecretScope.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretscope"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kmipsecretscope"
 
 kmipsecretscope.KmipSecretScope_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.kmipSecretScope.KmipSecretScopeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretscope"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kmipsecretscope"
 
 &kmipsecretscope.KmipSecretScopeConfig {
 	Connection: interface{},

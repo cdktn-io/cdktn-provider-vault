@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultPluginRuntimes.DataVaultPluginRuntimes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpluginruntimes"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpluginruntimes"
 
 datavaultpluginruntimes.NewDataVaultPluginRuntimes(scope Construct, id *string, config DataVaultPluginRuntimesConfig) DataVaultPluginRuntimes
 ```
@@ -312,7 +312,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultPluginRuntimes.DataVaultPluginRuntimes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpluginruntimes"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpluginruntimes"
 
 datavaultpluginruntimes.DataVaultPluginRuntimes_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultPluginRuntimes.DataVaultPluginRuntimes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpluginruntimes"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpluginruntimes"
 
 datavaultpluginruntimes.DataVaultPluginRuntimes_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datavaultpluginruntimes.DataVaultPluginRuntimes_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultPluginRuntimes.DataVaultPluginRuntimes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpluginruntimes"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpluginruntimes"
 
 datavaultpluginruntimes.DataVaultPluginRuntimes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datavaultpluginruntimes.DataVaultPluginRuntimes_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultPluginRuntimes.DataVaultPluginRuntimes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpluginruntimes"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpluginruntimes"
 
 datavaultpluginruntimes.DataVaultPluginRuntimes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultPluginRuntimes.DataVaultPluginRuntimesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpluginruntimes"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpluginruntimes"
 
 &datavaultpluginruntimes.DataVaultPluginRuntimesConfig {
 	Connection: interface{},
@@ -779,7 +779,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultPluginRuntimes.DataVaultPluginRuntimesRuntimes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpluginruntimes"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpluginruntimes"
 
 &datavaultpluginruntimes.DataVaultPluginRuntimesRuntimes {
 
@@ -794,7 +794,7 @@ import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpluginrun
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultPluginRuntimes.DataVaultPluginRuntimesRuntimesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpluginruntimes"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpluginruntimes"
 
 datavaultpluginruntimes.NewDataVaultPluginRuntimesRuntimesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVaultPluginRuntimesRuntimesList
 ```
@@ -943,7 +943,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultPluginRuntimes.DataVaultPluginRuntimesRuntimesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultpluginruntimes"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultpluginruntimes"
 
 datavaultpluginruntimes.NewDataVaultPluginRuntimesRuntimesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVaultPluginRuntimesRuntimesOutputReference
 ```

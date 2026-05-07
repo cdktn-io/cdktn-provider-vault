@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendRole.DatabaseSecretBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendrole"
 
 databasesecretbackendrole.NewDatabaseSecretBackendRole(scope Construct, id *string, config DatabaseSecretBackendRoleConfig) DatabaseSecretBackendRole
 ```
@@ -463,7 +463,7 @@ func ResetRollbackStatements()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.databaseSecretBackendRole.DatabaseSecretBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendrole"
 
 databasesecretbackendrole.DatabaseSecretBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.databaseSecretBackendRole.DatabaseSecretBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendrole"
 
 databasesecretbackendrole.DatabaseSecretBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ databasesecretbackendrole.DatabaseSecretBackendRole_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.databaseSecretBackendRole.DatabaseSecretBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendrole"
 
 databasesecretbackendrole.DatabaseSecretBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -523,7 +523,7 @@ databasesecretbackendrole.DatabaseSecretBackendRole_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.databaseSecretBackendRole.DatabaseSecretBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendrole"
 
 databasesecretbackendrole.DatabaseSecretBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1038,7 +1038,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendRole.DatabaseSecretBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendrole"
 
 &databasesecretbackendrole.DatabaseSecretBackendRoleConfig {
 	Connection: interface{},

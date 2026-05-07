@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentityentity"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentityentity"
 
 datavaultidentityentity.NewDataVaultIdentityEntity(scope Construct, id *string, config DataVaultIdentityEntityConfig) DataVaultIdentityEntity
 ```
@@ -347,7 +347,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentityentity"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentityentity"
 
 datavaultidentityentity.DataVaultIdentityEntity_IsConstruct(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentityentity"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentityentity"
 
 datavaultidentityentity.DataVaultIdentityEntity_IsTerraformElement(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ datavaultidentityentity.DataVaultIdentityEntity_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentityentity"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentityentity"
 
 datavaultidentityentity.DataVaultIdentityEntity_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ datavaultidentityentity.DataVaultIdentityEntity_IsTerraformDataSource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntity.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentityentity"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentityentity"
 
 datavaultidentityentity.DataVaultIdentityEntity_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -900,7 +900,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliases.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentityentity"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentityentity"
 
 &datavaultidentityentity.DataVaultIdentityEntityAliases {
 
@@ -913,7 +913,7 @@ import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentitye
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentityentity"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentityentity"
 
 &datavaultidentityentity.DataVaultIdentityEntityConfig {
 	Connection: interface{},
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentityentity"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentityentity"
 
 datavaultidentityentity.NewDataVaultIdentityEntityAliasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataVaultIdentityEntityAliasesList
 ```
@@ -1279,7 +1279,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultIdentityEntity.DataVaultIdentityEntityAliasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultidentityentity"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultidentityentity"
 
 datavaultidentityentity.NewDataVaultIdentityEntityAliasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataVaultIdentityEntityAliasesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkiexternalcasecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkiexternalcasecretbackendrole"
 
 pkiexternalcasecretbackendrole.NewPkiExternalCaSecretBackendRole(scope Construct, id *string, config PkiExternalCaSecretBackendRoleConfig) PkiExternalCaSecretBackendRole
 ```
@@ -449,7 +449,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkiexternalcasecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkiexternalcasecretbackendrole"
 
 pkiexternalcasecretbackendrole.PkiExternalCaSecretBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkiexternalcasecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkiexternalcasecretbackendrole"
 
 pkiexternalcasecretbackendrole.PkiExternalCaSecretBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ pkiexternalcasecretbackendrole.PkiExternalCaSecretBackendRole_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkiexternalcasecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkiexternalcasecretbackendrole"
 
 pkiexternalcasecretbackendrole.PkiExternalCaSecretBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ pkiexternalcasecretbackendrole.PkiExternalCaSecretBackendRole_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkiexternalcasecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkiexternalcasecretbackendrole"
 
 pkiexternalcasecretbackendrole.PkiExternalCaSecretBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -980,7 +980,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkiexternalcasecretbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkiexternalcasecretbackendrole"
 
 &pkiexternalcasecretbackendrole.PkiExternalCaSecretBackendRoleConfig {
 	Connection: interface{},

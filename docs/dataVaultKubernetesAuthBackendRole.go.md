@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkubernetesauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkubernetesauthbackendrole"
 
 datavaultkubernetesauthbackendrole.NewDataVaultKubernetesAuthBackendRole(scope Construct, id *string, config DataVaultKubernetesAuthBackendRoleConfig) DataVaultKubernetesAuthBackendRole
 ```
@@ -396,7 +396,7 @@ func ResetTokenType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkubernetesauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkubernetesauthbackendrole"
 
 datavaultkubernetesauthbackendrole.DataVaultKubernetesAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -428,7 +428,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkubernetesauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkubernetesauthbackendrole"
 
 datavaultkubernetesauthbackendrole.DataVaultKubernetesAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -442,7 +442,7 @@ datavaultkubernetesauthbackendrole.DataVaultKubernetesAuthBackendRole_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkubernetesauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkubernetesauthbackendrole"
 
 datavaultkubernetesauthbackendrole.DataVaultKubernetesAuthBackendRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -456,7 +456,7 @@ datavaultkubernetesauthbackendrole.DataVaultKubernetesAuthBackendRole_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkubernetesauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkubernetesauthbackendrole"
 
 datavaultkubernetesauthbackendrole.DataVaultKubernetesAuthBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1037,7 +1037,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultKubernetesAuthBackendRole.DataVaultKubernetesAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkubernetesauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkubernetesauthbackendrole"
 
 &datavaultkubernetesauthbackendrole.DataVaultKubernetesAuthBackendRoleConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.sysConfigCors.SysConfigCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sysconfigcors"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sysconfigcors"
 
 sysconfigcors.NewSysConfigCors(scope Construct, id *string, config SysConfigCorsConfig) SysConfigCors
 ```
@@ -407,7 +407,7 @@ func ResetAllowedHeaders()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.sysConfigCors.SysConfigCors.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sysconfigcors"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sysconfigcors"
 
 sysconfigcors.SysConfigCors_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.sysConfigCors.SysConfigCors.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sysconfigcors"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sysconfigcors"
 
 sysconfigcors.SysConfigCors_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ sysconfigcors.SysConfigCors_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.sysConfigCors.SysConfigCors.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sysconfigcors"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sysconfigcors"
 
 sysconfigcors.SysConfigCors_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ sysconfigcors.SysConfigCors_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.sysConfigCors.SysConfigCors.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sysconfigcors"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sysconfigcors"
 
 sysconfigcors.SysConfigCors_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.sysConfigCors.SysConfigCorsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/sysconfigcors"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/sysconfigcors"
 
 &sysconfigcors.SysConfigCorsConfig {
 	Connection: interface{},
