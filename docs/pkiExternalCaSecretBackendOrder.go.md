@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiExternalCaSecretBackendOrder.PkiExternalCaSecretBackendOrder.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkiexternalcasecretbackendorder"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkiexternalcasecretbackendorder"
 
 pkiexternalcasecretbackendorder.NewPkiExternalCaSecretBackendOrder(scope Construct, id *string, config PkiExternalCaSecretBackendOrderConfig) PkiExternalCaSecretBackendOrder
 ```
@@ -421,7 +421,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.pkiExternalCaSecretBackendOrder.PkiExternalCaSecretBackendOrder.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkiexternalcasecretbackendorder"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkiexternalcasecretbackendorder"
 
 pkiexternalcasecretbackendorder.PkiExternalCaSecretBackendOrder_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.pkiExternalCaSecretBackendOrder.PkiExternalCaSecretBackendOrder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkiexternalcasecretbackendorder"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkiexternalcasecretbackendorder"
 
 pkiexternalcasecretbackendorder.PkiExternalCaSecretBackendOrder_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ pkiexternalcasecretbackendorder.PkiExternalCaSecretBackendOrder_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.pkiExternalCaSecretBackendOrder.PkiExternalCaSecretBackendOrder.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkiexternalcasecretbackendorder"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkiexternalcasecretbackendorder"
 
 pkiexternalcasecretbackendorder.PkiExternalCaSecretBackendOrder_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ pkiexternalcasecretbackendorder.PkiExternalCaSecretBackendOrder_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.pkiExternalCaSecretBackendOrder.PkiExternalCaSecretBackendOrder.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkiexternalcasecretbackendorder"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkiexternalcasecretbackendorder"
 
 pkiexternalcasecretbackendorder.PkiExternalCaSecretBackendOrder_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -919,7 +919,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.pkiExternalCaSecretBackendOrder.PkiExternalCaSecretBackendOrderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/pkiexternalcasecretbackendorder"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/pkiexternalcasecretbackendorder"
 
 &pkiexternalcasecretbackendorder.PkiExternalCaSecretBackendOrderConfig {
 	Connection: interface{},

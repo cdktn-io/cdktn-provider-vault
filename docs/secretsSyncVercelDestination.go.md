@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncverceldestination"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncverceldestination"
 
 secretssyncverceldestination.NewSecretsSyncVercelDestination(scope Construct, id *string, config SecretsSyncVercelDestinationConfig) SecretsSyncVercelDestination
 ```
@@ -463,7 +463,7 @@ func ResetTeamId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncverceldestination"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncverceldestination"
 
 secretssyncverceldestination.SecretsSyncVercelDestination_IsConstruct(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncverceldestination"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncverceldestination"
 
 secretssyncverceldestination.SecretsSyncVercelDestination_IsTerraformElement(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ secretssyncverceldestination.SecretsSyncVercelDestination_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncverceldestination"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncverceldestination"
 
 secretssyncverceldestination.SecretsSyncVercelDestination_IsTerraformResource(x interface{}) *bool
 ```
@@ -523,7 +523,7 @@ secretssyncverceldestination.SecretsSyncVercelDestination_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestination.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncverceldestination"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncverceldestination"
 
 secretssyncverceldestination.SecretsSyncVercelDestination_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1049,7 +1049,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.secretsSyncVercelDestination.SecretsSyncVercelDestinationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncverceldestination"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncverceldestination"
 
 &secretssyncverceldestination.SecretsSyncVercelDestinationConfig {
 	Connection: interface{},

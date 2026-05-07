@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/oktaauthbackendgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/oktaauthbackendgroup"
 
 oktaauthbackendgroup.NewOktaAuthBackendGroupA(scope Construct, id *string, config OktaAuthBackendGroupAConfig) OktaAuthBackendGroupA
 ```
@@ -421,7 +421,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/oktaauthbackendgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/oktaauthbackendgroup"
 
 oktaauthbackendgroup.OktaAuthBackendGroupA_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/oktaauthbackendgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/oktaauthbackendgroup"
 
 oktaauthbackendgroup.OktaAuthBackendGroupA_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ oktaauthbackendgroup.OktaAuthBackendGroupA_IsTerraformElement(x interface{}) *bo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/oktaauthbackendgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/oktaauthbackendgroup"
 
 oktaauthbackendgroup.OktaAuthBackendGroupA_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ oktaauthbackendgroup.OktaAuthBackendGroupA_IsTerraformResource(x interface{}) *b
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/oktaauthbackendgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/oktaauthbackendgroup"
 
 oktaauthbackendgroup.OktaAuthBackendGroupA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/oktaauthbackendgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/oktaauthbackendgroup"
 
 &oktaauthbackendgroup.OktaAuthBackendGroupAConfig {
 	Connection: interface{},

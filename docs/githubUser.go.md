@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.githubUser.GithubUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/githubuser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/githubuser"
 
 githubuser.NewGithubUser(scope Construct, id *string, config GithubUserConfig) GithubUser
 ```
@@ -428,7 +428,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.githubUser.GithubUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/githubuser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/githubuser"
 
 githubuser.GithubUser_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.githubUser.GithubUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/githubuser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/githubuser"
 
 githubuser.GithubUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ githubuser.GithubUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.githubUser.GithubUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/githubuser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/githubuser"
 
 githubuser.GithubUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ githubuser.GithubUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.githubUser.GithubUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/githubuser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/githubuser"
 
 githubuser.GithubUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.githubUser.GithubUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/githubuser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/githubuser"
 
 &githubuser.GithubUserConfig {
 	Connection: interface{},

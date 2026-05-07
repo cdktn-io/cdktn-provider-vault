@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetessecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kubernetessecretbackend"
 
 kubernetessecretbackend.NewKubernetesSecretBackend(scope Construct, id *string, config KubernetesSecretBackendConfig) KubernetesSecretBackend
 ```
@@ -575,7 +575,7 @@ func ResetServiceAccountJwtWoVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetessecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kubernetessecretbackend"
 
 kubernetessecretbackend.KubernetesSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -607,7 +607,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetessecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kubernetessecretbackend"
 
 kubernetessecretbackend.KubernetesSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -621,7 +621,7 @@ kubernetessecretbackend.KubernetesSecretBackend_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetessecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kubernetessecretbackend"
 
 kubernetessecretbackend.KubernetesSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ kubernetessecretbackend.KubernetesSecretBackend_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetessecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kubernetessecretbackend"
 
 kubernetessecretbackend.KubernetesSecretBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1447,7 +1447,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kubernetessecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kubernetessecretbackend"
 
 &kubernetessecretbackend.KubernetesSecretBackendConfig {
 	Connection: interface{},

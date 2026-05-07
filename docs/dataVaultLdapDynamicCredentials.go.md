@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultLdapDynamicCredentials.DataVaultLdapDynamicCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultldapdynamiccredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultldapdynamiccredentials"
 
 datavaultldapdynamiccredentials.NewDataVaultLdapDynamicCredentials(scope Construct, id *string, config DataVaultLdapDynamicCredentialsConfig) DataVaultLdapDynamicCredentials
 ```
@@ -312,7 +312,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultLdapDynamicCredentials.DataVaultLdapDynamicCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultldapdynamiccredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultldapdynamiccredentials"
 
 datavaultldapdynamiccredentials.DataVaultLdapDynamicCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultLdapDynamicCredentials.DataVaultLdapDynamicCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultldapdynamiccredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultldapdynamiccredentials"
 
 datavaultldapdynamiccredentials.DataVaultLdapDynamicCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datavaultldapdynamiccredentials.DataVaultLdapDynamicCredentials_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultLdapDynamicCredentials.DataVaultLdapDynamicCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultldapdynamiccredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultldapdynamiccredentials"
 
 datavaultldapdynamiccredentials.DataVaultLdapDynamicCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datavaultldapdynamiccredentials.DataVaultLdapDynamicCredentials_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultLdapDynamicCredentials.DataVaultLdapDynamicCredentials.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultldapdynamiccredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultldapdynamiccredentials"
 
 datavaultldapdynamiccredentials.DataVaultLdapDynamicCredentials_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultLdapDynamicCredentials.DataVaultLdapDynamicCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultldapdynamiccredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultldapdynamiccredentials"
 
 &datavaultldapdynamiccredentials.DataVaultLdapDynamicCredentialsConfig {
 	Connection: interface{},

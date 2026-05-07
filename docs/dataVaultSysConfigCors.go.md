@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultSysConfigCors.DataVaultSysConfigCors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsysconfigcors"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultsysconfigcors"
 
 datavaultsysconfigcors.NewDataVaultSysConfigCors(scope Construct, id *string, config DataVaultSysConfigCorsConfig) DataVaultSysConfigCors
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultSysConfigCors.DataVaultSysConfigCors.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsysconfigcors"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultsysconfigcors"
 
 datavaultsysconfigcors.DataVaultSysConfigCors_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultSysConfigCors.DataVaultSysConfigCors.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsysconfigcors"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultsysconfigcors"
 
 datavaultsysconfigcors.DataVaultSysConfigCors_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datavaultsysconfigcors.DataVaultSysConfigCors_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultSysConfigCors.DataVaultSysConfigCors.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsysconfigcors"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultsysconfigcors"
 
 datavaultsysconfigcors.DataVaultSysConfigCors_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datavaultsysconfigcors.DataVaultSysConfigCors_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultSysConfigCors.DataVaultSysConfigCors.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsysconfigcors"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultsysconfigcors"
 
 datavaultsysconfigcors.DataVaultSysConfigCors_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultSysConfigCors.DataVaultSysConfigCorsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsysconfigcors"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultsysconfigcors"
 
 &datavaultsysconfigcors.DataVaultSysConfigCorsConfig {
 	Connection: interface{},

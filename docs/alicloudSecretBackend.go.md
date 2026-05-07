@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.alicloudSecretBackend.AlicloudSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/alicloudsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/alicloudsecretbackend"
 
 alicloudsecretbackend.NewAlicloudSecretBackend(scope Construct, id *string, config AlicloudSecretBackendConfig) AlicloudSecretBackend
 ```
@@ -407,7 +407,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.alicloudSecretBackend.AlicloudSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/alicloudsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/alicloudsecretbackend"
 
 alicloudsecretbackend.AlicloudSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.alicloudSecretBackend.AlicloudSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/alicloudsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/alicloudsecretbackend"
 
 alicloudsecretbackend.AlicloudSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ alicloudsecretbackend.AlicloudSecretBackend_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.alicloudSecretBackend.AlicloudSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/alicloudsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/alicloudsecretbackend"
 
 alicloudsecretbackend.AlicloudSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ alicloudsecretbackend.AlicloudSecretBackend_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.alicloudSecretBackend.AlicloudSecretBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/alicloudsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/alicloudsecretbackend"
 
 alicloudsecretbackend.AlicloudSecretBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.alicloudSecretBackend.AlicloudSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/alicloudsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/alicloudsecretbackend"
 
 &alicloudsecretbackend.AlicloudSecretBackendConfig {
 	Connection: interface{},

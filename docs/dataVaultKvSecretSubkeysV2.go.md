@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultKvSecretSubkeysV2.DataVaultKvSecretSubkeysV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkvsecretsubkeysv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkvsecretsubkeysv2"
 
 datavaultkvsecretsubkeysv2.NewDataVaultKvSecretSubkeysV2(scope Construct, id *string, config DataVaultKvSecretSubkeysV2Config) DataVaultKvSecretSubkeysV2
 ```
@@ -326,7 +326,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultKvSecretSubkeysV2.DataVaultKvSecretSubkeysV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkvsecretsubkeysv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkvsecretsubkeysv2"
 
 datavaultkvsecretsubkeysv2.DataVaultKvSecretSubkeysV2_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultKvSecretSubkeysV2.DataVaultKvSecretSubkeysV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkvsecretsubkeysv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkvsecretsubkeysv2"
 
 datavaultkvsecretsubkeysv2.DataVaultKvSecretSubkeysV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datavaultkvsecretsubkeysv2.DataVaultKvSecretSubkeysV2_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultKvSecretSubkeysV2.DataVaultKvSecretSubkeysV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkvsecretsubkeysv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkvsecretsubkeysv2"
 
 datavaultkvsecretsubkeysv2.DataVaultKvSecretSubkeysV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datavaultkvsecretsubkeysv2.DataVaultKvSecretSubkeysV2_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultKvSecretSubkeysV2.DataVaultKvSecretSubkeysV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkvsecretsubkeysv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkvsecretsubkeysv2"
 
 datavaultkvsecretsubkeysv2.DataVaultKvSecretSubkeysV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -758,7 +758,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultKvSecretSubkeysV2.DataVaultKvSecretSubkeysV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkvsecretsubkeysv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkvsecretsubkeysv2"
 
 &datavaultkvsecretsubkeysv2.DataVaultKvSecretSubkeysV2Config {
 	Connection: interface{},

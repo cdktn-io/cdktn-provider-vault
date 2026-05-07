@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.policy.Policy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/policy"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/policy"
 
 policy.NewPolicy(scope Construct, id *string, config PolicyConfig) Policy
 ```
@@ -414,7 +414,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.policy.Policy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/policy"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/policy"
 
 policy.Policy_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.policy.Policy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/policy"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/policy"
 
 policy.Policy_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ policy.Policy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.policy.Policy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/policy"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/policy"
 
 policy.Policy_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ policy.Policy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.policy.Policy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/policy"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/policy"
 
 policy.Policy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.policy.PolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/policy"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/policy"
 
 &policy.PolicyConfig {
 	Connection: interface{},

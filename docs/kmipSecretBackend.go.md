@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.kmipSecretBackend.KmipSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kmipsecretbackend"
 
 kmipsecretbackend.NewKmipSecretBackend(scope Construct, id *string, config KmipSecretBackendConfig) KmipSecretBackend
 ```
@@ -603,7 +603,7 @@ func ResetTlsMinVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.kmipSecretBackend.KmipSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kmipsecretbackend"
 
 kmipsecretbackend.KmipSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.kmipSecretBackend.KmipSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kmipsecretbackend"
 
 kmipsecretbackend.KmipSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -649,7 +649,7 @@ kmipsecretbackend.KmipSecretBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.kmipSecretBackend.KmipSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kmipsecretbackend"
 
 kmipsecretbackend.KmipSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -663,7 +663,7 @@ kmipsecretbackend.KmipSecretBackend_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.kmipSecretBackend.KmipSecretBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kmipsecretbackend"
 
 kmipsecretbackend.KmipSecretBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1563,7 +1563,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.kmipSecretBackend.KmipSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/kmipsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/kmipsecretbackend"
 
 &kmipsecretbackend.KmipSecretBackendConfig {
 	Connection: interface{},

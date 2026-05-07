@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.quotaConfig.QuotaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/quotaconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/quotaconfig"
 
 quotaconfig.NewQuotaConfig(scope Construct, id *string, config QuotaConfigConfig) QuotaConfig
 ```
@@ -435,7 +435,7 @@ func ResetRateLimitExemptPaths()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.quotaConfig.QuotaConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/quotaconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/quotaconfig"
 
 quotaconfig.QuotaConfig_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.quotaConfig.QuotaConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/quotaconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/quotaconfig"
 
 quotaconfig.QuotaConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ quotaconfig.QuotaConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.quotaConfig.QuotaConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/quotaconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/quotaconfig"
 
 quotaconfig.QuotaConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ quotaconfig.QuotaConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.quotaConfig.QuotaConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/quotaconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/quotaconfig"
 
 quotaconfig.QuotaConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -834,7 +834,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.quotaConfig.QuotaConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/quotaconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/quotaconfig"
 
 &quotaconfig.QuotaConfigConfig {
 	Connection: interface{},

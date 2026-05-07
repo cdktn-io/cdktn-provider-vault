@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.cfAuthBackendConfig.CfAuthBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/cfauthbackendconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/cfauthbackendconfig"
 
 cfauthbackendconfig.NewCfAuthBackendConfig(scope Construct, id *string, config CfAuthBackendConfigConfig) CfAuthBackendConfig
 ```
@@ -435,7 +435,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.cfAuthBackendConfig.CfAuthBackendConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/cfauthbackendconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/cfauthbackendconfig"
 
 cfauthbackendconfig.CfAuthBackendConfig_IsConstruct(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.cfAuthBackendConfig.CfAuthBackendConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/cfauthbackendconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/cfauthbackendconfig"
 
 cfauthbackendconfig.CfAuthBackendConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ cfauthbackendconfig.CfAuthBackendConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.cfAuthBackendConfig.CfAuthBackendConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/cfauthbackendconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/cfauthbackendconfig"
 
 cfauthbackendconfig.CfAuthBackendConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ cfauthbackendconfig.CfAuthBackendConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.cfAuthBackendConfig.CfAuthBackendConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/cfauthbackendconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/cfauthbackendconfig"
 
 cfauthbackendconfig.CfAuthBackendConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -966,7 +966,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.cfAuthBackendConfig.CfAuthBackendConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/cfauthbackendconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/cfauthbackendconfig"
 
 &cfauthbackendconfig.CfAuthBackendConfigConfig {
 	Connection: interface{},

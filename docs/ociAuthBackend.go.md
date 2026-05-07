@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ociAuthBackend.OciAuthBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackend"
 
 ociauthbackend.NewOciAuthBackend(scope Construct, id *string, config OciAuthBackendConfig) OciAuthBackend
 ```
@@ -483,7 +483,7 @@ func ResetTune()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ociAuthBackend.OciAuthBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackend"
 
 ociauthbackend.OciAuthBackend_IsConstruct(x interface{}) *bool
 ```
@@ -515,7 +515,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ociAuthBackend.OciAuthBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackend"
 
 ociauthbackend.OciAuthBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ ociauthbackend.OciAuthBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.ociAuthBackend.OciAuthBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackend"
 
 ociauthbackend.OciAuthBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ ociauthbackend.OciAuthBackend_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.ociAuthBackend.OciAuthBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackend"
 
 ociauthbackend.OciAuthBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1025,7 +1025,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ociAuthBackend.OciAuthBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackend"
 
 &ociauthbackend.OciAuthBackendConfig {
 	Connection: interface{},
@@ -1302,7 +1302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ociAuthBackend.OciAuthBackendTune.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackend"
 
 &ociauthbackend.OciAuthBackendTune {
 	AllowedResponseHeaders: *[]*string,
@@ -1434,7 +1434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ociAuthBackend.OciAuthBackendTuneList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackend"
 
 ociauthbackend.NewOciAuthBackendTuneList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OciAuthBackendTuneList
 ```
@@ -1594,7 +1594,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ociAuthBackend.OciAuthBackendTuneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/ociauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ociauthbackend"
 
 ociauthbackend.NewOciAuthBackendTuneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OciAuthBackendTuneOutputReference
 ```

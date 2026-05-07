@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnection(scope Construct, id *string, config DatabaseSecretBackendConnectionConfig) DatabaseSecretBackendConnection
 ```
@@ -858,7 +858,7 @@ func ResetVerifyConnection()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.DatabaseSecretBackendConnection_IsConstruct(x interface{}) *bool
 ```
@@ -890,7 +890,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.DatabaseSecretBackendConnection_IsTerraformElement(x interface{}) *bool
 ```
@@ -904,7 +904,7 @@ databasesecretbackendconnection.DatabaseSecretBackendConnection_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.DatabaseSecretBackendConnection_IsTerraformResource(x interface{}) *bool
 ```
@@ -918,7 +918,7 @@ databasesecretbackendconnection.DatabaseSecretBackendConnection_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.DatabaseSecretBackendConnection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1895,7 +1895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCassandra.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionCassandra {
 	ConnectTimeout: *f64,
@@ -2175,7 +2175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionConfig {
 	Connection: interface{},
@@ -2188,36 +2188,36 @@ import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretback
 	Backend: *string,
 	Name: *string,
 	AllowedRoles: *[]*string,
-	Cassandra: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCassandra,
-	Couchbase: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCouchbase,
+	Cassandra: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCassandra,
+	Couchbase: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCouchbase,
 	Data: *map[string]*string,
 	DisableAutomatedRotation: interface{},
-	Elasticsearch: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionElasticsearch,
-	Hana: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHana,
+	Elasticsearch: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionElasticsearch,
+	Hana: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHana,
 	Id: *string,
-	Influxdb: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionInfluxdb,
-	Mongodb: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodb,
-	Mongodbatlas: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbatlas,
-	Mssql: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMssql,
-	Mysql: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysql,
-	MysqlAurora: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora,
-	MysqlLegacy: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy,
-	MysqlRds: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds,
+	Influxdb: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionInfluxdb,
+	Mongodb: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodb,
+	Mongodbatlas: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbatlas,
+	Mssql: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMssql,
+	Mysql: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysql,
+	MysqlAurora: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora,
+	MysqlLegacy: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy,
+	MysqlRds: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds,
 	Namespace: *string,
-	Oracle: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionOracle,
+	Oracle: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionOracle,
 	PasswordPolicy: *string,
 	PluginName: *string,
 	PluginVersion: *string,
-	Postgresql: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresql,
-	Redis: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedis,
-	RedisElasticache: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedisElasticache,
-	Redshift: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedshift,
+	Postgresql: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresql,
+	Redis: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedis,
+	RedisElasticache: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedisElasticache,
+	Redshift: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedshift,
 	RootRotationStatements: *[]*string,
 	RotationPeriod: *f64,
 	RotationSchedule: *string,
 	RotationWindow: *f64,
 	SkipStaticRoleImportRotation: interface{},
-	Snowflake: github.com/cdktn-io/cdktn-provider-vault-go/vault/v16.databaseSecretBackendConnection.DatabaseSecretBackendConnectionSnowflake,
+	Snowflake: github.com/cdktn-io/cdktn-provider-vault-go/vault/v17.databaseSecretBackendConnection.DatabaseSecretBackendConnectionSnowflake,
 	VerifyConnection: interface{},
 }
 ```
@@ -2830,7 +2830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCouchbase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionCouchbase {
 	Hosts: *[]*string,
@@ -2978,7 +2978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionElasticsearch.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionElasticsearch {
 	Password: *string,
@@ -3156,7 +3156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHana.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionHana {
 	ConnectionUrl: *string,
@@ -3334,7 +3334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionInfluxdb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionInfluxdb {
 	Host: *string,
@@ -3516,7 +3516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionMongodb {
 	ConnectionUrl: *string,
@@ -3726,7 +3726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbatlas.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionMongodbatlas {
 	PrivateKey: *string,
@@ -3808,7 +3808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMssql.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionMssql {
 	ConnectionUrl: *string,
@@ -4002,7 +4002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysql.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionMysql {
 	AuthType: *string,
@@ -4230,7 +4230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAurora.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionMysqlAurora {
 	AuthType: *string,
@@ -4458,7 +4458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionMysqlLegacy {
 	AuthType: *string,
@@ -4686,7 +4686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRds.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionMysqlRds {
 	AuthType: *string,
@@ -4914,7 +4914,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionOracle.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionOracle {
 	ConnectionUrl: *string,
@@ -5124,7 +5124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresql.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionPostgresql {
 	AuthType: *string,
@@ -5414,7 +5414,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionRedis {
 	Host: *string,
@@ -5544,7 +5544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedisElasticache.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionRedisElasticache {
 	Url: *string,
@@ -5632,7 +5632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedshift.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionRedshift {
 	ConnectionUrl: *string,
@@ -5810,7 +5810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionSnowflake.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 &databasesecretbackendconnection.DatabaseSecretBackendConnectionSnowflake {
 	ConnectionUrl: *string,
@@ -6006,7 +6006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCassandraOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionCassandraOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionCassandraOutputReference
 ```
@@ -6719,7 +6719,7 @@ func InternalValue() DatabaseSecretBackendConnectionCassandra
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionCouchbaseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionCouchbaseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionCouchbaseOutputReference
 ```
@@ -7179,7 +7179,7 @@ func InternalValue() DatabaseSecretBackendConnectionCouchbase
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionElasticsearchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionElasticsearchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionElasticsearchOutputReference
 ```
@@ -7697,7 +7697,7 @@ func InternalValue() DatabaseSecretBackendConnectionElasticsearch
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHanaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionHanaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionHanaOutputReference
 ```
@@ -8236,7 +8236,7 @@ func InternalValue() DatabaseSecretBackendConnectionHana
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionInfluxdbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionInfluxdbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionInfluxdbOutputReference
 ```
@@ -8754,7 +8754,7 @@ func InternalValue() DatabaseSecretBackendConnectionInfluxdb
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbatlasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionMongodbatlasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionMongodbatlasOutputReference
 ```
@@ -9098,7 +9098,7 @@ func InternalValue() DatabaseSecretBackendConnectionMongodbatlas
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionMongodbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionMongodbOutputReference
 ```
@@ -9695,7 +9695,7 @@ func InternalValue() DatabaseSecretBackendConnectionMongodb
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMssqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionMssqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionMssqlOutputReference
 ```
@@ -10263,7 +10263,7 @@ func InternalValue() DatabaseSecretBackendConnectionMssql
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionMysqlAuroraOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionMysqlAuroraOutputReference
 ```
@@ -10889,7 +10889,7 @@ func InternalValue() DatabaseSecretBackendConnectionMysqlAurora
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionMysqlLegacyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionMysqlLegacyOutputReference
 ```
@@ -11515,7 +11515,7 @@ func InternalValue() DatabaseSecretBackendConnectionMysqlLegacy
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionMysqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionMysqlOutputReference
 ```
@@ -12141,7 +12141,7 @@ func InternalValue() DatabaseSecretBackendConnectionMysql
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionMysqlRdsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionMysqlRdsOutputReference
 ```
@@ -12767,7 +12767,7 @@ func InternalValue() DatabaseSecretBackendConnectionMysqlRds
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionOracleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionOracleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionOracleOutputReference
 ```
@@ -13364,7 +13364,7 @@ func InternalValue() DatabaseSecretBackendConnectionOracle
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresqlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionPostgresqlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionPostgresqlOutputReference
 ```
@@ -14106,7 +14106,7 @@ func InternalValue() DatabaseSecretBackendConnectionPostgresql
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedisElasticacheOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionRedisElasticacheOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionRedisElasticacheOutputReference
 ```
@@ -14464,7 +14464,7 @@ func InternalValue() DatabaseSecretBackendConnectionRedisElasticache
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionRedisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionRedisOutputReference
 ```
@@ -14895,7 +14895,7 @@ func InternalValue() DatabaseSecretBackendConnectionRedis
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedshiftOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionRedshiftOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionRedshiftOutputReference
 ```
@@ -15434,7 +15434,7 @@ func InternalValue() DatabaseSecretBackendConnectionRedshift
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionSnowflakeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/databasesecretbackendconnection"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/databasesecretbackendconnection"
 
 databasesecretbackendconnection.NewDatabaseSecretBackendConnectionSnowflakeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatabaseSecretBackendConnectionSnowflakeOutputReference
 ```

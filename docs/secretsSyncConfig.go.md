@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncconfig"
 
 secretssyncconfig.NewSecretsSyncConfig(scope Construct, id *string, config SecretsSyncConfigConfig) SecretsSyncConfig
 ```
@@ -428,7 +428,7 @@ func ResetQueueCapacity()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncconfig"
 
 secretssyncconfig.SecretsSyncConfig_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncconfig"
 
 secretssyncconfig.SecretsSyncConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ secretssyncconfig.SecretsSyncConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncconfig"
 
 secretssyncconfig.SecretsSyncConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ secretssyncconfig.SecretsSyncConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncconfig"
 
 secretssyncconfig.SecretsSyncConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -805,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.secretsSyncConfig.SecretsSyncConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/secretssyncconfig"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/secretssyncconfig"
 
 &secretssyncconfig.SecretsSyncConfigConfig {
 	Connection: interface{},

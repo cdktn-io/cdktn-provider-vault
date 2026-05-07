@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkvsecretslist"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkvsecretslist"
 
 datavaultkvsecretslist.NewDataVaultKvSecretsList(scope Construct, id *string, config DataVaultKvSecretsListConfig) DataVaultKvSecretsList
 ```
@@ -312,7 +312,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkvsecretslist"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkvsecretslist"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkvsecretslist"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datavaultkvsecretslist.DataVaultKvSecretsList_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkvsecretslist"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkvsecretslist"
 
 datavaultkvsecretslist.DataVaultKvSecretsList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultKvSecretsList.DataVaultKvSecretsListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultkvsecretslist"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultkvsecretslist"
 
 &datavaultkvsecretslist.DataVaultKvSecretsListConfig {
 	Connection: interface{},

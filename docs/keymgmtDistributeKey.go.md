@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.keymgmtDistributeKey.KeymgmtDistributeKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtdistributekey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtdistributekey"
 
 keymgmtdistributekey.NewKeymgmtDistributeKey(scope Construct, id *string, config KeymgmtDistributeKeyConfig) KeymgmtDistributeKey
 ```
@@ -414,7 +414,7 @@ func ResetProtection()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.keymgmtDistributeKey.KeymgmtDistributeKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtdistributekey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtdistributekey"
 
 keymgmtdistributekey.KeymgmtDistributeKey_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.keymgmtDistributeKey.KeymgmtDistributeKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtdistributekey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtdistributekey"
 
 keymgmtdistributekey.KeymgmtDistributeKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ keymgmtdistributekey.KeymgmtDistributeKey_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.keymgmtDistributeKey.KeymgmtDistributeKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtdistributekey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtdistributekey"
 
 keymgmtdistributekey.KeymgmtDistributeKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ keymgmtdistributekey.KeymgmtDistributeKey_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.keymgmtDistributeKey.KeymgmtDistributeKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtdistributekey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtdistributekey"
 
 keymgmtdistributekey.KeymgmtDistributeKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.keymgmtDistributeKey.KeymgmtDistributeKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtdistributekey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtdistributekey"
 
 &keymgmtdistributekey.KeymgmtDistributeKeyConfig {
 	Connection: interface{},

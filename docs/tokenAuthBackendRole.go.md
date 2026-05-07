@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/tokenauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/tokenauthbackendrole"
 
 tokenauthbackendrole.NewTokenAuthBackendRole(scope Construct, id *string, config TokenAuthBackendRoleConfig) TokenAuthBackendRole
 ```
@@ -540,7 +540,7 @@ func ResetTokenType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/tokenauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/tokenauthbackendrole"
 
 tokenauthbackendrole.TokenAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -572,7 +572,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/tokenauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/tokenauthbackendrole"
 
 tokenauthbackendrole.TokenAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -586,7 +586,7 @@ tokenauthbackendrole.TokenAuthBackendRole_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/tokenauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/tokenauthbackendrole"
 
 tokenauthbackendrole.TokenAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -600,7 +600,7 @@ tokenauthbackendrole.TokenAuthBackendRole_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.tokenAuthBackendRole.TokenAuthBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/tokenauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/tokenauthbackendrole"
 
 tokenauthbackendrole.TokenAuthBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1291,7 +1291,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.tokenAuthBackendRole.TokenAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/tokenauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/tokenauthbackendrole"
 
 &tokenauthbackendrole.TokenAuthBackendRoleConfig {
 	Connection: interface{},

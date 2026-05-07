@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsshsecretbackendsign"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultsshsecretbackendsign"
 
 datavaultsshsecretbackendsign.NewDataVaultSshSecretBackendSign(scope Construct, id *string, config DataVaultSshSecretBackendSignConfig) DataVaultSshSecretBackendSign
 ```
@@ -354,7 +354,7 @@ func ResetValidPrincipals()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsshsecretbackendsign"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultsshsecretbackendsign"
 
 datavaultsshsecretbackendsign.DataVaultSshSecretBackendSign_IsConstruct(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsshsecretbackendsign"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultsshsecretbackendsign"
 
 datavaultsshsecretbackendsign.DataVaultSshSecretBackendSign_IsTerraformElement(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ datavaultsshsecretbackendsign.DataVaultSshSecretBackendSign_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsshsecretbackendsign"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultsshsecretbackendsign"
 
 datavaultsshsecretbackendsign.DataVaultSshSecretBackendSign_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -414,7 +414,7 @@ datavaultsshsecretbackendsign.DataVaultSshSecretBackendSign_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSign.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsshsecretbackendsign"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultsshsecretbackendsign"
 
 datavaultsshsecretbackendsign.DataVaultSshSecretBackendSign_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -885,7 +885,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultSshSecretBackendSign.DataVaultSshSecretBackendSignConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultsshsecretbackendsign"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultsshsecretbackendsign"
 
 &datavaultsshsecretbackendsign.DataVaultSshSecretBackendSignConfig {
 	Connection: interface{},

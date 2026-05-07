@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.keymgmtKeyRotate.KeymgmtKeyRotate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtkeyrotate"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtkeyrotate"
 
 keymgmtkeyrotate.NewKeymgmtKeyRotate(scope Construct, id *string, config KeymgmtKeyRotateConfig) KeymgmtKeyRotate
 ```
@@ -407,7 +407,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.keymgmtKeyRotate.KeymgmtKeyRotate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtkeyrotate"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtkeyrotate"
 
 keymgmtkeyrotate.KeymgmtKeyRotate_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.keymgmtKeyRotate.KeymgmtKeyRotate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtkeyrotate"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtkeyrotate"
 
 keymgmtkeyrotate.KeymgmtKeyRotate_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ keymgmtkeyrotate.KeymgmtKeyRotate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.keymgmtKeyRotate.KeymgmtKeyRotate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtkeyrotate"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtkeyrotate"
 
 keymgmtkeyrotate.KeymgmtKeyRotate_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ keymgmtkeyrotate.KeymgmtKeyRotate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.keymgmtKeyRotate.KeymgmtKeyRotate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtkeyrotate"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtkeyrotate"
 
 keymgmtkeyrotate.KeymgmtKeyRotate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.keymgmtKeyRotate.KeymgmtKeyRotateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtkeyrotate"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtkeyrotate"
 
 &keymgmtkeyrotate.KeymgmtKeyRotateConfig {
 	Connection: interface{},

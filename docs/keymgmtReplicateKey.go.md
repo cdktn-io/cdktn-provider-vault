@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.keymgmtReplicateKey.KeymgmtReplicateKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtreplicatekey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtreplicatekey"
 
 keymgmtreplicatekey.NewKeymgmtReplicateKey(scope Construct, id *string, config KeymgmtReplicateKeyConfig) KeymgmtReplicateKey
 ```
@@ -407,7 +407,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.keymgmtReplicateKey.KeymgmtReplicateKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtreplicatekey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtreplicatekey"
 
 keymgmtreplicatekey.KeymgmtReplicateKey_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.keymgmtReplicateKey.KeymgmtReplicateKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtreplicatekey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtreplicatekey"
 
 keymgmtreplicatekey.KeymgmtReplicateKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ keymgmtreplicatekey.KeymgmtReplicateKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.keymgmtReplicateKey.KeymgmtReplicateKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtreplicatekey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtreplicatekey"
 
 keymgmtreplicatekey.KeymgmtReplicateKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ keymgmtreplicatekey.KeymgmtReplicateKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.keymgmtReplicateKey.KeymgmtReplicateKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtreplicatekey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtreplicatekey"
 
 keymgmtreplicatekey.KeymgmtReplicateKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.keymgmtReplicateKey.KeymgmtReplicateKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/keymgmtreplicatekey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/keymgmtreplicatekey"
 
 &keymgmtreplicatekey.KeymgmtReplicateKeyConfig {
 	Connection: interface{},

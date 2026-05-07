@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.identityOidcAssignment.IdentityOidcAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcassignment"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityoidcassignment"
 
 identityoidcassignment.NewIdentityOidcAssignment(scope Construct, id *string, config IdentityOidcAssignmentConfig) IdentityOidcAssignment
 ```
@@ -428,7 +428,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.identityOidcAssignment.IdentityOidcAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcassignment"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityoidcassignment"
 
 identityoidcassignment.IdentityOidcAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.identityOidcAssignment.IdentityOidcAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcassignment"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityoidcassignment"
 
 identityoidcassignment.IdentityOidcAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ identityoidcassignment.IdentityOidcAssignment_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.identityOidcAssignment.IdentityOidcAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcassignment"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityoidcassignment"
 
 identityoidcassignment.IdentityOidcAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ identityoidcassignment.IdentityOidcAssignment_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.identityOidcAssignment.IdentityOidcAssignment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcassignment"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityoidcassignment"
 
 identityoidcassignment.IdentityOidcAssignment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.identityOidcAssignment.IdentityOidcAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/identityoidcassignment"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/identityoidcassignment"
 
 &identityoidcassignment.IdentityOidcAssignmentConfig {
 	Connection: interface{},

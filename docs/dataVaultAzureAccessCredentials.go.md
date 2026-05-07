@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultazureaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultazureaccesscredentials"
 
 datavaultazureaccesscredentials.NewDataVaultAzureAccessCredentials(scope Construct, id *string, config DataVaultAzureAccessCredentialsConfig) DataVaultAzureAccessCredentials
 ```
@@ -361,7 +361,7 @@ func ResetValidateCreds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultazureaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultazureaccesscredentials"
 
 datavaultazureaccesscredentials.DataVaultAzureAccessCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultazureaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultazureaccesscredentials"
 
 datavaultazureaccesscredentials.DataVaultAzureAccessCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ datavaultazureaccesscredentials.DataVaultAzureAccessCredentials_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultazureaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultazureaccesscredentials"
 
 datavaultazureaccesscredentials.DataVaultAzureAccessCredentials_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ datavaultazureaccesscredentials.DataVaultAzureAccessCredentials_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentials.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultazureaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultazureaccesscredentials"
 
 datavaultazureaccesscredentials.DataVaultAzureAccessCredentials_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -936,7 +936,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultAzureAccessCredentials.DataVaultAzureAccessCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v16/datavaultazureaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultazureaccesscredentials"
 
 &datavaultazureaccesscredentials.DataVaultAzureAccessCredentialsConfig {
 	Connection: interface{},
