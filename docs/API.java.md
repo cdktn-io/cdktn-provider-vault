@@ -4,9 +4,11 @@
 
 The following submodules are available:
 
+- [activationFlags](./activationFlags.java.md)
 - [adSecretBackend](./adSecretBackend.java.md)
 - [adSecretLibrary](./adSecretLibrary.java.md)
 - [adSecretRole](./adSecretRole.java.md)
+- [agentRegistration](./agentRegistration.java.md)
 - [alicloudAuthBackendRole](./alicloudAuthBackendRole.java.md)
 - [alicloudSecretBackend](./alicloudSecretBackend.java.md)
 - [alicloudSecretBackendRole](./alicloudSecretBackendRole.java.md)
@@ -36,9 +38,14 @@ The following submodules are available:
 - [certAuthBackendRole](./certAuthBackendRole.java.md)
 - [cfAuthBackendConfig](./cfAuthBackendConfig.java.md)
 - [cfAuthBackendRole](./cfAuthBackendRole.java.md)
+- [configControlGroup](./configControlGroup.java.md)
+- [configGroupPolicyApplication](./configGroupPolicyApplication.java.md)
 - [configUiCustomMessage](./configUiCustomMessage.java.md)
+- [configUiDefaultAuth](./configUiDefaultAuth.java.md)
+- [configUiHeader](./configUiHeader.java.md)
 - [consulSecretBackend](./consulSecretBackend.java.md)
 - [consulSecretBackendRole](./consulSecretBackendRole.java.md)
+- [dataVaultActivationFlags](./dataVaultActivationFlags.java.md)
 - [dataVaultAdAccessCredentials](./dataVaultAdAccessCredentials.java.md)
 - [dataVaultApproleAuthBackendRoleId](./dataVaultApproleAuthBackendRoleId.java.md)
 - [dataVaultAuthBackend](./dataVaultAuthBackend.java.md)
@@ -164,6 +171,7 @@ The following submodules are available:
 - [namespace](./namespace.java.md)
 - [nomadSecretBackend](./nomadSecretBackend.java.md)
 - [nomadSecretRole](./nomadSecretRole.java.md)
+- [oauthResourceServerConfigProfile](./oauthResourceServerConfigProfile.java.md)
 - [ociAuthBackend](./ociAuthBackend.java.md)
 - [ociAuthBackendRole](./ociAuthBackendRole.java.md)
 - [oktaAuthBackend](./oktaAuthBackend.java.md)
@@ -208,6 +216,8 @@ The following submodules are available:
 - [quotaRateLimit](./quotaRateLimit.java.md)
 - [rabbitmqSecretBackend](./rabbitmqSecretBackend.java.md)
 - [rabbitmqSecretBackendRole](./rabbitmqSecretBackendRole.java.md)
+- [radiusAuthBackend](./radiusAuthBackend.java.md)
+- [radiusAuthBackendUser](./radiusAuthBackendUser.java.md)
 - [raftAutopilot](./raftAutopilot.java.md)
 - [raftSnapshotAgentConfig](./raftSnapshotAgentConfig.java.md)
 - [rgpPolicy](./rgpPolicy.java.md)
@@ -241,6 +251,7 @@ The following submodules are available:
 - [transformTransformation](./transformTransformation.java.md)
 - [transitSecretBackendKey](./transitSecretBackendKey.java.md)
 - [transitSecretCacheConfig](./transitSecretCacheConfig.java.md)
+- [userpassAuthBackendUser](./userpassAuthBackendUser.java.md)
 
 
 

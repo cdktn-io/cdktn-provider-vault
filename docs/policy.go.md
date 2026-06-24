@@ -4,7 +4,7 @@
 
 ### Policy <a name="Policy" id="@cdktn/provider-vault.policy.Policy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/policy vault_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/policy vault_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.policy.Policy.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-vault.policy.Policy.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-vault.policy.Policy.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-vault.policy.Policy.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.policy.Policy.resetAllowOverwrite">ResetAllowOverwrite</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.policy.Policy.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.policy.Policy.resetNamespace">ResetNamespace</a></code> | *No description.* |
 
@@ -388,6 +389,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetAllowOverwrite` <a name="ResetAllowOverwrite" id="@cdktn/provider-vault.policy.Policy.resetAllowOverwrite"></a>
+
+```go
+func ResetAllowOverwrite()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktn/provider-vault.policy.Policy.resetId"></a>
 
 ```go
@@ -503,7 +510,7 @@ The construct id used in the generated config for the Policy to import.
 
 The id of the existing Policy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -533,10 +540,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.
 | <code><a href="#@cdktn/provider-vault.policy.Policy.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.policy.Policy.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.policy.Policy.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.policy.Policy.property.allowOverwriteInput">AllowOverwriteInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.policy.Policy.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.policy.Policy.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.policy.Policy.property.namespaceInput">NamespaceInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.policy.Policy.property.policyInput">PolicyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.policy.Policy.property.allowOverwrite">AllowOverwrite</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.policy.Policy.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.policy.Policy.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.policy.Policy.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
@@ -686,6 +695,16 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `AllowOverwriteInput`<sup>Optional</sup> <a name="AllowOverwriteInput" id="@cdktn/provider-vault.policy.Policy.property.allowOverwriteInput"></a>
+
+```go
+func AllowOverwriteInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-vault.policy.Policy.property.idInput"></a>
 
 ```go
@@ -723,6 +742,16 @@ func PolicyInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `AllowOverwrite`<sup>Required</sup> <a name="AllowOverwrite" id="@cdktn/provider-vault.policy.Policy.property.allowOverwrite"></a>
+
+```go
+func AllowOverwrite() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -803,6 +832,7 @@ import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/policy"
 	Provisioners: *[]interface{},
 	Name: *string,
 	Policy: *string,
+	AllowOverwrite: interface{},
 	Id: *string,
 	Namespace: *string,
 }
@@ -821,7 +851,8 @@ import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/policy"
 | <code><a href="#@cdktn/provider-vault.policy.PolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.policy.PolicyConfig.property.name">Name</a></code> | <code>*string</code> | Name of the policy. |
 | <code><a href="#@cdktn/provider-vault.policy.PolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | The policy document. |
-| <code><a href="#@cdktn/provider-vault.policy.PolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/policy#id Policy#id}. |
+| <code><a href="#@cdktn/provider-vault.policy.PolicyConfig.property.allowOverwrite">AllowOverwrite</a></code> | <code>interface{}</code> | Allow overwriting an existing policy. Defaults to `true` for backwards compatibility purposes. |
+| <code><a href="#@cdktn/provider-vault.policy.PolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/policy#id Policy#id}. |
 | <code><a href="#@cdktn/provider-vault.policy.PolicyConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -906,7 +937,7 @@ Name *string
 
 Name of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/policy#name Policy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/policy#name Policy#name}
 
 ---
 
@@ -920,7 +951,21 @@ Policy *string
 
 The policy document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/policy#policy Policy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/policy#policy Policy#policy}
+
+---
+
+##### `AllowOverwrite`<sup>Optional</sup> <a name="AllowOverwrite" id="@cdktn/provider-vault.policy.PolicyConfig.property.allowOverwrite"></a>
+
+```go
+AllowOverwrite interface{}
+```
+
+- *Type:* interface{}
+
+Allow overwriting an existing policy. Defaults to `true` for backwards compatibility purposes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/policy#allow_overwrite Policy#allow_overwrite}
 
 ---
 
@@ -932,7 +977,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/policy#id Policy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/policy#id Policy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -949,7 +994,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/policy#namespace Policy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/policy#namespace Policy#namespace}
 
 ---
 

@@ -4,9 +4,11 @@
 
 The following submodules are available:
 
+- [activationFlags](./activationFlags.typescript.md)
 - [adSecretBackend](./adSecretBackend.typescript.md)
 - [adSecretLibrary](./adSecretLibrary.typescript.md)
 - [adSecretRole](./adSecretRole.typescript.md)
+- [agentRegistration](./agentRegistration.typescript.md)
 - [alicloudAuthBackendRole](./alicloudAuthBackendRole.typescript.md)
 - [alicloudSecretBackend](./alicloudSecretBackend.typescript.md)
 - [alicloudSecretBackendRole](./alicloudSecretBackendRole.typescript.md)
@@ -36,9 +38,14 @@ The following submodules are available:
 - [certAuthBackendRole](./certAuthBackendRole.typescript.md)
 - [cfAuthBackendConfig](./cfAuthBackendConfig.typescript.md)
 - [cfAuthBackendRole](./cfAuthBackendRole.typescript.md)
+- [configControlGroup](./configControlGroup.typescript.md)
+- [configGroupPolicyApplication](./configGroupPolicyApplication.typescript.md)
 - [configUiCustomMessage](./configUiCustomMessage.typescript.md)
+- [configUiDefaultAuth](./configUiDefaultAuth.typescript.md)
+- [configUiHeader](./configUiHeader.typescript.md)
 - [consulSecretBackend](./consulSecretBackend.typescript.md)
 - [consulSecretBackendRole](./consulSecretBackendRole.typescript.md)
+- [dataVaultActivationFlags](./dataVaultActivationFlags.typescript.md)
 - [dataVaultAdAccessCredentials](./dataVaultAdAccessCredentials.typescript.md)
 - [dataVaultApproleAuthBackendRoleId](./dataVaultApproleAuthBackendRoleId.typescript.md)
 - [dataVaultAuthBackend](./dataVaultAuthBackend.typescript.md)
@@ -164,6 +171,7 @@ The following submodules are available:
 - [namespace](./namespace.typescript.md)
 - [nomadSecretBackend](./nomadSecretBackend.typescript.md)
 - [nomadSecretRole](./nomadSecretRole.typescript.md)
+- [oauthResourceServerConfigProfile](./oauthResourceServerConfigProfile.typescript.md)
 - [ociAuthBackend](./ociAuthBackend.typescript.md)
 - [ociAuthBackendRole](./ociAuthBackendRole.typescript.md)
 - [oktaAuthBackend](./oktaAuthBackend.typescript.md)
@@ -208,6 +216,8 @@ The following submodules are available:
 - [quotaRateLimit](./quotaRateLimit.typescript.md)
 - [rabbitmqSecretBackend](./rabbitmqSecretBackend.typescript.md)
 - [rabbitmqSecretBackendRole](./rabbitmqSecretBackendRole.typescript.md)
+- [radiusAuthBackend](./radiusAuthBackend.typescript.md)
+- [radiusAuthBackendUser](./radiusAuthBackendUser.typescript.md)
 - [raftAutopilot](./raftAutopilot.typescript.md)
 - [raftSnapshotAgentConfig](./raftSnapshotAgentConfig.typescript.md)
 - [rgpPolicy](./rgpPolicy.typescript.md)
@@ -241,6 +251,7 @@ The following submodules are available:
 - [transformTransformation](./transformTransformation.typescript.md)
 - [transitSecretBackendKey](./transitSecretBackendKey.typescript.md)
 - [transitSecretCacheConfig](./transitSecretCacheConfig.typescript.md)
+- [userpassAuthBackendUser](./userpassAuthBackendUser.typescript.md)
 
 
 

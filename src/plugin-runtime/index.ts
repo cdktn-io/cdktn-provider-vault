@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin_runtime
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,55 +15,55 @@ export interface PluginRuntimeConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies the parent cgroup to set for each container.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin_runtime#cgroup_parent PluginRuntime#cgroup_parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#cgroup_parent PluginRuntime#cgroup_parent}
   */
   readonly cgroupParent?: string;
   /**
   * Specifies CPU limit to set per container in billionths of a CPU.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin_runtime#cpu_nanos PluginRuntime#cpu_nanos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#cpu_nanos PluginRuntime#cpu_nanos}
   */
   readonly cpuNanos?: number;
   /**
   * Specifies memory limit to set per container in bytes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin_runtime#memory_bytes PluginRuntime#memory_bytes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#memory_bytes PluginRuntime#memory_bytes}
   */
   readonly memoryBytes?: number;
   /**
   * The name of the plugin runtime.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin_runtime#name PluginRuntime#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#name PluginRuntime#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin_runtime#namespace PluginRuntime#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#namespace PluginRuntime#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies OCI-compliant container runtime to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin_runtime#oci_runtime PluginRuntime#oci_runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#oci_runtime PluginRuntime#oci_runtime}
   */
   readonly ociRuntime?: string;
   /**
   * Whether the container runtime is running as a non-privileged user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin_runtime#rootless PluginRuntime#rootless}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#rootless PluginRuntime#rootless}
   */
   readonly rootless?: boolean | cdktn.IResolvable;
   /**
   * Specifies the plugin runtime type. Currently only `container` is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin_runtime#type PluginRuntime#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#type PluginRuntime#type}
   */
   readonly type: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin_runtime vault_plugin_runtime}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime vault_plugin_runtime}
 */
 export class PluginRuntime extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class PluginRuntime extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PluginRuntime resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PluginRuntime to import
-  * @param importFromId The id of the existing PluginRuntime that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin_runtime#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PluginRuntime that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PluginRuntime to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class PluginRuntime extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/plugin_runtime vault_plugin_runtime} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime vault_plugin_runtime} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +102,7 @@ export class PluginRuntime extends cdktn.TerraformResource {
       terraformResourceType: 'vault_plugin_runtime',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

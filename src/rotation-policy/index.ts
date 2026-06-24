@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/rotation_policy
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface RotationPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Maximum retries per cycle for this rotation policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/rotation_policy#max_retries_per_cycle RotationPolicy#max_retries_per_cycle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy#max_retries_per_cycle RotationPolicy#max_retries_per_cycle}
   */
   readonly maxRetriesPerCycle: number;
   /**
   * Maximum retry cycles for this rotation policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/rotation_policy#max_retry_cycles RotationPolicy#max_retry_cycles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy#max_retry_cycles RotationPolicy#max_retry_cycles}
   */
   readonly maxRetryCycles: number;
   /**
   * Name of the rotation policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/rotation_policy#name RotationPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy#name RotationPolicy#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/rotation_policy#namespace RotationPolicy#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy#namespace RotationPolicy#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/rotation_policy vault_rotation_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy vault_rotation_policy}
 */
 export class RotationPolicy extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class RotationPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RotationPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RotationPolicy to import
-  * @param importFromId The id of the existing RotationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/rotation_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RotationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RotationPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class RotationPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/rotation_policy vault_rotation_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy vault_rotation_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class RotationPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'vault_rotation_policy',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

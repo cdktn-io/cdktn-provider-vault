@@ -4,9 +4,11 @@
 
 The following submodules are available:
 
+- [activationFlags](./activationFlags.csharp.md)
 - [adSecretBackend](./adSecretBackend.csharp.md)
 - [adSecretLibrary](./adSecretLibrary.csharp.md)
 - [adSecretRole](./adSecretRole.csharp.md)
+- [agentRegistration](./agentRegistration.csharp.md)
 - [alicloudAuthBackendRole](./alicloudAuthBackendRole.csharp.md)
 - [alicloudSecretBackend](./alicloudSecretBackend.csharp.md)
 - [alicloudSecretBackendRole](./alicloudSecretBackendRole.csharp.md)
@@ -36,9 +38,14 @@ The following submodules are available:
 - [certAuthBackendRole](./certAuthBackendRole.csharp.md)
 - [cfAuthBackendConfig](./cfAuthBackendConfig.csharp.md)
 - [cfAuthBackendRole](./cfAuthBackendRole.csharp.md)
+- [configControlGroup](./configControlGroup.csharp.md)
+- [configGroupPolicyApplication](./configGroupPolicyApplication.csharp.md)
 - [configUiCustomMessage](./configUiCustomMessage.csharp.md)
+- [configUiDefaultAuth](./configUiDefaultAuth.csharp.md)
+- [configUiHeader](./configUiHeader.csharp.md)
 - [consulSecretBackend](./consulSecretBackend.csharp.md)
 - [consulSecretBackendRole](./consulSecretBackendRole.csharp.md)
+- [dataVaultActivationFlags](./dataVaultActivationFlags.csharp.md)
 - [dataVaultAdAccessCredentials](./dataVaultAdAccessCredentials.csharp.md)
 - [dataVaultApproleAuthBackendRoleId](./dataVaultApproleAuthBackendRoleId.csharp.md)
 - [dataVaultAuthBackend](./dataVaultAuthBackend.csharp.md)
@@ -164,6 +171,7 @@ The following submodules are available:
 - [namespace](./namespace.csharp.md)
 - [nomadSecretBackend](./nomadSecretBackend.csharp.md)
 - [nomadSecretRole](./nomadSecretRole.csharp.md)
+- [oauthResourceServerConfigProfile](./oauthResourceServerConfigProfile.csharp.md)
 - [ociAuthBackend](./ociAuthBackend.csharp.md)
 - [ociAuthBackendRole](./ociAuthBackendRole.csharp.md)
 - [oktaAuthBackend](./oktaAuthBackend.csharp.md)
@@ -208,6 +216,8 @@ The following submodules are available:
 - [quotaRateLimit](./quotaRateLimit.csharp.md)
 - [rabbitmqSecretBackend](./rabbitmqSecretBackend.csharp.md)
 - [rabbitmqSecretBackendRole](./rabbitmqSecretBackendRole.csharp.md)
+- [radiusAuthBackend](./radiusAuthBackend.csharp.md)
+- [radiusAuthBackendUser](./radiusAuthBackendUser.csharp.md)
 - [raftAutopilot](./raftAutopilot.csharp.md)
 - [raftSnapshotAgentConfig](./raftSnapshotAgentConfig.csharp.md)
 - [rgpPolicy](./rgpPolicy.csharp.md)
@@ -241,6 +251,7 @@ The following submodules are available:
 - [transformTransformation](./transformTransformation.csharp.md)
 - [transitSecretBackendKey](./transitSecretBackendKey.csharp.md)
 - [transitSecretCacheConfig](./transitSecretCacheConfig.csharp.md)
+- [userpassAuthBackendUser](./userpassAuthBackendUser.csharp.md)
 
 
 
