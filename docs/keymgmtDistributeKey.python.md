@@ -4,7 +4,7 @@
 
 ### KeymgmtDistributeKey <a name="KeymgmtDistributeKey" id="@cdktn/provider-vault.keymgmtDistributeKey.KeymgmtDistributeKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key vault_keymgmt_distribute_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key vault_keymgmt_distribute_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.keymgmtDistributeKey.KeymgmtDistributeKey.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Specifies the name of the key to distribute to the given KMS provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#key_name KeymgmtDistributeKey#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#key_name KeymgmtDistributeKey#key_name}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the name of the KMS provider to distribute the given key to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#kms_name KeymgmtDistributeKey#kms_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#kms_name KeymgmtDistributeKey#kms_name}
 
 ---
 
@@ -138,7 +138,7 @@ Path of the Key Management secrets engine mount.
 
 Must match the `path` of a `vault_mount` resource with `type = "keymgmt"`. Use `vault_mount.keymgmt.path` here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#mount KeymgmtDistributeKey#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#mount KeymgmtDistributeKey#mount}
 
 ---
 
@@ -150,7 +150,7 @@ Specifies the purpose of the key.
 
 The purpose defines a set of cryptographic capabilities that the key will have in the KMS provider. A key must have at least one of the supported purposes. The following values are supported : encrypt, decrypt, sign, verify, wrap, unwrap.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#purpose KeymgmtDistributeKey#purpose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#purpose KeymgmtDistributeKey#purpose}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#namespace KeymgmtDistributeKey#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#namespace KeymgmtDistributeKey#namespace}
 
 ---
 
@@ -172,7 +172,7 @@ Specifies the protection of the key.
 
 The protection defines where cryptographic operations are performed with the key in the KMS provider. The following values are supported: hsm, software. Defaults to `hsm`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#protection KeymgmtDistributeKey#protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#protection KeymgmtDistributeKey#protection}
 
 ---
 
@@ -683,7 +683,7 @@ The construct id used in the generated config for the KeymgmtDistributeKey to im
 
 The id of the existing KeymgmtDistributeKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1145,7 +1145,7 @@ key_name: str
 
 Specifies the name of the key to distribute to the given KMS provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#key_name KeymgmtDistributeKey#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#key_name KeymgmtDistributeKey#key_name}
 
 ---
 
@@ -1159,7 +1159,7 @@ kms_name: str
 
 Specifies the name of the KMS provider to distribute the given key to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#kms_name KeymgmtDistributeKey#kms_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#kms_name KeymgmtDistributeKey#kms_name}
 
 ---
 
@@ -1175,7 +1175,7 @@ Path of the Key Management secrets engine mount.
 
 Must match the `path` of a `vault_mount` resource with `type = "keymgmt"`. Use `vault_mount.keymgmt.path` here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#mount KeymgmtDistributeKey#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#mount KeymgmtDistributeKey#mount}
 
 ---
 
@@ -1191,7 +1191,7 @@ Specifies the purpose of the key.
 
 The purpose defines a set of cryptographic capabilities that the key will have in the KMS provider. A key must have at least one of the supported purposes. The following values are supported : encrypt, decrypt, sign, verify, wrap, unwrap.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#purpose KeymgmtDistributeKey#purpose}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#purpose KeymgmtDistributeKey#purpose}
 
 ---
 
@@ -1205,7 +1205,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#namespace KeymgmtDistributeKey#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#namespace KeymgmtDistributeKey#namespace}
 
 ---
 
@@ -1221,7 +1221,7 @@ Specifies the protection of the key.
 
 The protection defines where cryptographic operations are performed with the key in the KMS provider. The following values are supported: hsm, software. Defaults to `hsm`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#protection KeymgmtDistributeKey#protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#protection KeymgmtDistributeKey#protection}
 
 ---
 

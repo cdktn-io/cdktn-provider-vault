@@ -4,9 +4,11 @@
 
 The following submodules are available:
 
+- [activationFlags](./activationFlags.python.md)
 - [adSecretBackend](./adSecretBackend.python.md)
 - [adSecretLibrary](./adSecretLibrary.python.md)
 - [adSecretRole](./adSecretRole.python.md)
+- [agentRegistration](./agentRegistration.python.md)
 - [alicloudAuthBackendRole](./alicloudAuthBackendRole.python.md)
 - [alicloudSecretBackend](./alicloudSecretBackend.python.md)
 - [alicloudSecretBackendRole](./alicloudSecretBackendRole.python.md)
@@ -36,9 +38,14 @@ The following submodules are available:
 - [certAuthBackendRole](./certAuthBackendRole.python.md)
 - [cfAuthBackendConfig](./cfAuthBackendConfig.python.md)
 - [cfAuthBackendRole](./cfAuthBackendRole.python.md)
+- [configControlGroup](./configControlGroup.python.md)
+- [configGroupPolicyApplication](./configGroupPolicyApplication.python.md)
 - [configUiCustomMessage](./configUiCustomMessage.python.md)
+- [configUiDefaultAuth](./configUiDefaultAuth.python.md)
+- [configUiHeader](./configUiHeader.python.md)
 - [consulSecretBackend](./consulSecretBackend.python.md)
 - [consulSecretBackendRole](./consulSecretBackendRole.python.md)
+- [dataVaultActivationFlags](./dataVaultActivationFlags.python.md)
 - [dataVaultAdAccessCredentials](./dataVaultAdAccessCredentials.python.md)
 - [dataVaultApproleAuthBackendRoleId](./dataVaultApproleAuthBackendRoleId.python.md)
 - [dataVaultAuthBackend](./dataVaultAuthBackend.python.md)
@@ -164,6 +171,7 @@ The following submodules are available:
 - [namespace](./namespace.python.md)
 - [nomadSecretBackend](./nomadSecretBackend.python.md)
 - [nomadSecretRole](./nomadSecretRole.python.md)
+- [oauthResourceServerConfigProfile](./oauthResourceServerConfigProfile.python.md)
 - [ociAuthBackend](./ociAuthBackend.python.md)
 - [ociAuthBackendRole](./ociAuthBackendRole.python.md)
 - [oktaAuthBackend](./oktaAuthBackend.python.md)
@@ -208,6 +216,8 @@ The following submodules are available:
 - [quotaRateLimit](./quotaRateLimit.python.md)
 - [rabbitmqSecretBackend](./rabbitmqSecretBackend.python.md)
 - [rabbitmqSecretBackendRole](./rabbitmqSecretBackendRole.python.md)
+- [radiusAuthBackend](./radiusAuthBackend.python.md)
+- [radiusAuthBackendUser](./radiusAuthBackendUser.python.md)
 - [raftAutopilot](./raftAutopilot.python.md)
 - [raftSnapshotAgentConfig](./raftSnapshotAgentConfig.python.md)
 - [rgpPolicy](./rgpPolicy.python.md)
@@ -241,6 +251,7 @@ The following submodules are available:
 - [transformTransformation](./transformTransformation.python.md)
 - [transitSecretBackendKey](./transitSecretBackendKey.python.md)
 - [transitSecretCacheConfig](./transitSecretCacheConfig.python.md)
+- [userpassAuthBackendUser](./userpassAuthBackendUser.python.md)
 
 
 

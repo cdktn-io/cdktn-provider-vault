@@ -4,7 +4,7 @@
 
 ### OktaAuthBackendGroupA <a name="OktaAuthBackendGroupA" id="@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group vault_okta_auth_backend_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.Initializer"></a>
 
@@ -40,7 +40,7 @@ OktaAuthBackendGroupA.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.Initializer.parameter.groupName">groupName</a></code> | <code>java.lang.String</code> | Name of the Okta group. |
 | <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.Initializer.parameter.path">path</a></code> | <code>java.lang.String</code> | Path to the Okta auth backend. |
-| <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}. |
+| <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}. |
 | <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupA.Initializer.parameter.policies">policies</a></code> | <code>java.util.List<java.lang.String></code> | Policies to associate with this group. |
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the Okta group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group#group_name OktaAuthBackendGroupA#group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group#group_name OktaAuthBackendGroupA#group_name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Path to the Okta auth backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group#path OktaAuthBackendGroupA#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group#path OktaAuthBackendGroupA#path}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group#namespace OktaAuthBackendGroupA#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group#namespace OktaAuthBackendGroupA#namespace}
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Policies to associate with this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group#policies OktaAuthBackendGroupA#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group#policies OktaAuthBackendGroupA#policies}
 
 ---
 
@@ -623,7 +623,7 @@ The construct id used in the generated config for the OktaAuthBackendGroupA to i
 
 The id of the existing OktaAuthBackendGroupA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -964,7 +964,7 @@ OktaAuthBackendGroupAConfig.builder()
 | <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.groupName">groupName</a></code> | <code>java.lang.String</code> | Name of the Okta group. |
 | <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.path">path</a></code> | <code>java.lang.String</code> | Path to the Okta auth backend. |
-| <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}. |
+| <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}. |
 | <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.oktaAuthBackendGroup.OktaAuthBackendGroupAConfig.property.policies">policies</a></code> | <code>java.util.List<java.lang.String></code> | Policies to associate with this group. |
 
@@ -1050,7 +1050,7 @@ public java.lang.String getGroupName();
 
 Name of the Okta group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group#group_name OktaAuthBackendGroupA#group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group#group_name OktaAuthBackendGroupA#group_name}
 
 ---
 
@@ -1064,7 +1064,7 @@ public java.lang.String getPath();
 
 Path to the Okta auth backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group#path OktaAuthBackendGroupA#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group#path OktaAuthBackendGroupA#path}
 
 ---
 
@@ -1076,7 +1076,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group#id OktaAuthBackendGroupA#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1093,7 +1093,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group#namespace OktaAuthBackendGroupA#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group#namespace OktaAuthBackendGroupA#namespace}
 
 ---
 
@@ -1107,7 +1107,7 @@ public java.util.List<java.lang.String> getPolicies();
 
 Policies to associate with this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/okta_auth_backend_group#policies OktaAuthBackendGroupA#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/okta_auth_backend_group#policies OktaAuthBackendGroupA#policies}
 
 ---
 

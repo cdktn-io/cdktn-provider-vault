@@ -4,7 +4,7 @@
 
 ### AlicloudSecretBackend <a name="AlicloudSecretBackend" id="@cdktn/provider-vault.alicloudSecretBackend.AlicloudSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend vault_alicloud_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/alicloud_secret_backend vault_alicloud_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.alicloudSecretBackend.AlicloudSecretBackend.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the AlicloudSecretBackend to i
 
 The id of the existing AlicloudSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/alicloud_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -923,7 +923,7 @@ public string AccessKey { get; set; }
 
 The AliCloud Access Key ID to use when generating new credentials.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend#access_key AlicloudSecretBackend#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/alicloud_secret_backend#access_key AlicloudSecretBackend#access_key}
 
 ---
 
@@ -939,7 +939,7 @@ Path of the AliCloud secrets engine mount.
 
 Must match the `path` of a `vault_mount` resource with `type = "alicloud"`. Use `vault_mount.alicloud.path` here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend#mount AlicloudSecretBackend#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/alicloud_secret_backend#mount AlicloudSecretBackend#mount}
 
 ---
 
@@ -953,7 +953,7 @@ public string SecretKeyWo { get; set; }
 
 Write-only AliCloud Secret Access Key. This value will never be read back from Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend#secret_key_wo AlicloudSecretBackend#secret_key_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/alicloud_secret_backend#secret_key_wo AlicloudSecretBackend#secret_key_wo}
 
 ---
 
@@ -969,7 +969,7 @@ A version counter for the write-only `secret_key_wo` field.
 
 Incrementing this value will trigger an update to the secret key in Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend#secret_key_wo_version AlicloudSecretBackend#secret_key_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/alicloud_secret_backend#secret_key_wo_version AlicloudSecretBackend#secret_key_wo_version}
 
 ---
 
@@ -983,7 +983,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/alicloud_secret_backend#namespace AlicloudSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/alicloud_secret_backend#namespace AlicloudSecretBackend#namespace}
 
 ---
 

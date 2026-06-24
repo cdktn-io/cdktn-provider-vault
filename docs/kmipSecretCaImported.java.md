@@ -4,7 +4,7 @@
 
 ### KmipSecretCaImported <a name="KmipSecretCaImported" id="@cdktn/provider-vault.kmipSecretCaImported.KmipSecretCaImported"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported vault_kmip_secret_ca_imported}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported vault_kmip_secret_ca_imported}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.kmipSecretCaImported.KmipSecretCaImported.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 CA certificate in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#ca_pem KmipSecretCaImported#ca_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#ca_pem KmipSecretCaImported#ca_pem}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name to identify the CA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#name KmipSecretCaImported#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#name KmipSecretCaImported#name}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Path where KMIP backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#path KmipSecretCaImported#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#path KmipSecretCaImported#path}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#namespace KmipSecretCaImported#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#namespace KmipSecretCaImported#namespace}
 
 ---
 
@@ -160,7 +160,7 @@ The field in the certificate to use for the role (CN, O, OU, or UID).
 
 Must specify exactly one of role_name or role_field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#role_field KmipSecretCaImported#role_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#role_field KmipSecretCaImported#role_field}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The role name to associate with this CA. Must specify exactly one of role_name or role_field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#role_name KmipSecretCaImported#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#role_name KmipSecretCaImported#role_name}
 
 ---
 
@@ -182,7 +182,7 @@ The field in the certificate to use for the scope (CN, O, OU, or UID).
 
 Must specify exactly one of scope_name or scope_field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#scope_field KmipSecretCaImported#scope_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#scope_field KmipSecretCaImported#scope_field}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The scope name to associate with this CA. Must specify exactly one of scope_name or scope_field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#scope_name KmipSecretCaImported#scope_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#scope_name KmipSecretCaImported#scope_name}
 
 ---
 
@@ -676,7 +676,7 @@ The construct id used in the generated config for the KmipSecretCaImported to im
 
 The id of the existing KmipSecretCaImported that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1175,7 +1175,7 @@ public java.lang.String getCaPem();
 
 CA certificate in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#ca_pem KmipSecretCaImported#ca_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#ca_pem KmipSecretCaImported#ca_pem}
 
 ---
 
@@ -1189,7 +1189,7 @@ public java.lang.String getName();
 
 Name to identify the CA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#name KmipSecretCaImported#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#name KmipSecretCaImported#name}
 
 ---
 
@@ -1203,7 +1203,7 @@ public java.lang.String getPath();
 
 Path where KMIP backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#path KmipSecretCaImported#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#path KmipSecretCaImported#path}
 
 ---
 
@@ -1217,7 +1217,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#namespace KmipSecretCaImported#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#namespace KmipSecretCaImported#namespace}
 
 ---
 
@@ -1233,7 +1233,7 @@ The field in the certificate to use for the role (CN, O, OU, or UID).
 
 Must specify exactly one of role_name or role_field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#role_field KmipSecretCaImported#role_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#role_field KmipSecretCaImported#role_field}
 
 ---
 
@@ -1247,7 +1247,7 @@ public java.lang.String getRoleName();
 
 The role name to associate with this CA. Must specify exactly one of role_name or role_field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#role_name KmipSecretCaImported#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#role_name KmipSecretCaImported#role_name}
 
 ---
 
@@ -1263,7 +1263,7 @@ The field in the certificate to use for the scope (CN, O, OU, or UID).
 
 Must specify exactly one of scope_name or scope_field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#scope_field KmipSecretCaImported#scope_field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#scope_field KmipSecretCaImported#scope_field}
 
 ---
 
@@ -1277,7 +1277,7 @@ public java.lang.String getScopeName();
 
 The scope name to associate with this CA. Must specify exactly one of scope_name or scope_field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_ca_imported#scope_name KmipSecretCaImported#scope_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#scope_name KmipSecretCaImported#scope_name}
 
 ---
 

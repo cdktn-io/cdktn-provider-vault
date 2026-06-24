@@ -4,7 +4,7 @@
 
 ### ManagedKeys <a name="ManagedKeys" id="@cdktn/provider-vault.managedKeys.ManagedKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys vault_managed_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys vault_managed_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer"></a>
 
@@ -583,7 +583,7 @@ The construct id used in the generated config for the ManagedKeys to import.
 
 The id of the existing ManagedKeys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -930,7 +930,8 @@ new ManagedKeysAws {
     bool|IResolvable AnyMount = null,
     string Curve = null,
     string Endpoint = null,
-    string Region = null
+    string Region = null,
+    string[] Usages = null
 };
 ```
 
@@ -951,6 +952,7 @@ new ManagedKeysAws {
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAws.property.curve">Curve</a></code> | <code>string</code> | The curve to use for an ECDSA key. Used when key_type is 'ECDSA'. Required if 'allow_generate_key' is true. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAws.property.endpoint">Endpoint</a></code> | <code>string</code> | Used to specify a custom AWS endpoint. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAws.property.region">Region</a></code> | <code>string</code> | The AWS region where the keys are stored (or will be stored). |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAws.property.usages">Usages</a></code> | <code>string[]</code> | A list of the allowed usages of this key. |
 
 ---
 
@@ -964,7 +966,7 @@ public string AccessKey { get; set; }
 
 The AWS access key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#access_key ManagedKeys#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#access_key ManagedKeys#access_key}
 
 ---
 
@@ -978,7 +980,7 @@ public string KeyBits { get; set; }
 
 The size in bits for an RSA key. This field is required when 'key_type' is 'RSA'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
 
 ---
 
@@ -992,7 +994,7 @@ public string KeyType { get; set; }
 
 The type of key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
 
 ---
 
@@ -1006,7 +1008,7 @@ public string KmsKey { get; set; }
 
 An identifier for the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#kms_key ManagedKeys#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#kms_key ManagedKeys#kms_key}
 
 ---
 
@@ -1020,7 +1022,7 @@ public string Name { get; set; }
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -1034,7 +1036,7 @@ public string SecretKey { get; set; }
 
 The AWS secret key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#secret_key ManagedKeys#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#secret_key ManagedKeys#secret_key}
 
 ---
 
@@ -1048,7 +1050,7 @@ public bool|IResolvable AllowGenerateKey { get; set; }
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -1062,7 +1064,7 @@ public bool|IResolvable AllowReplaceKey { get; set; }
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -1076,7 +1078,7 @@ public bool|IResolvable AllowStoreKey { get; set; }
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -1090,7 +1092,7 @@ public bool|IResolvable AnyMount { get; set; }
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
 
 ---
 
@@ -1104,7 +1106,7 @@ public string Curve { get; set; }
 
 The curve to use for an ECDSA key. Used when key_type is 'ECDSA'. Required if 'allow_generate_key' is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#curve ManagedKeys#curve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#curve ManagedKeys#curve}
 
 ---
 
@@ -1118,7 +1120,7 @@ public string Endpoint { get; set; }
 
 Used to specify a custom AWS endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#endpoint ManagedKeys#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#endpoint ManagedKeys#endpoint}
 
 ---
 
@@ -1132,7 +1134,23 @@ public string Region { get; set; }
 
 The AWS region where the keys are stored (or will be stored).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#region ManagedKeys#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#region ManagedKeys#region}
+
+---
+
+##### `Usages`<sup>Optional</sup> <a name="Usages" id="@cdktn/provider-vault.managedKeys.ManagedKeysAws.property.usages"></a>
+
+```csharp
+public string[] Usages { get; set; }
+```
+
+- *Type:* string[]
+
+A list of the allowed usages of this key.
+
+Valid values are encrypt, decrypt, sign, verify, wrap, unwrap, mac, and generate_random. Default values are sign and verify.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#usages ManagedKeys#usages}
 
 ---
 
@@ -1157,7 +1175,8 @@ new ManagedKeysAzure {
     bool|IResolvable AnyMount = null,
     string Environment = null,
     string KeyBits = null,
-    string Resource = null
+    string Resource = null,
+    string[] Usages = null
 };
 ```
 
@@ -1179,6 +1198,7 @@ new ManagedKeysAzure {
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure.property.environment">Environment</a></code> | <code>string</code> | The Azure Cloud environment API endpoints to use. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure.property.keyBits">KeyBits</a></code> | <code>string</code> | The size in bits for an RSA key. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure.property.resource">Resource</a></code> | <code>string</code> | The Azure Key Vault resource's DNS Suffix to connect to. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure.property.usages">Usages</a></code> | <code>string[]</code> | A list of the allowed usages of this key. |
 
 ---
 
@@ -1192,7 +1212,7 @@ public string ClientId { get; set; }
 
 The client id for credentials to query the Azure APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#client_id ManagedKeys#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#client_id ManagedKeys#client_id}
 
 ---
 
@@ -1206,7 +1226,7 @@ public string ClientSecret { get; set; }
 
 The client secret for credentials to query the Azure APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#client_secret ManagedKeys#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#client_secret ManagedKeys#client_secret}
 
 ---
 
@@ -1220,7 +1240,7 @@ public string KeyName { get; set; }
 
 The Key Vault key to use for encryption and decryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#key_name ManagedKeys#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#key_name ManagedKeys#key_name}
 
 ---
 
@@ -1234,7 +1254,7 @@ public string KeyType { get; set; }
 
 The type of key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
 
 ---
 
@@ -1248,7 +1268,7 @@ public string Name { get; set; }
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -1262,7 +1282,7 @@ public string TenantId { get; set; }
 
 The tenant id for the Azure Active Directory organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#tenant_id ManagedKeys#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#tenant_id ManagedKeys#tenant_id}
 
 ---
 
@@ -1276,7 +1296,7 @@ public string VaultName { get; set; }
 
 The Key Vault vault to use the encryption keys for encryption and decryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#vault_name ManagedKeys#vault_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#vault_name ManagedKeys#vault_name}
 
 ---
 
@@ -1290,7 +1310,7 @@ public bool|IResolvable AllowGenerateKey { get; set; }
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -1304,7 +1324,7 @@ public bool|IResolvable AllowReplaceKey { get; set; }
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -1318,7 +1338,7 @@ public bool|IResolvable AllowStoreKey { get; set; }
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -1332,7 +1352,7 @@ public bool|IResolvable AnyMount { get; set; }
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
 
 ---
 
@@ -1346,7 +1366,7 @@ public string Environment { get; set; }
 
 The Azure Cloud environment API endpoints to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#environment ManagedKeys#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#environment ManagedKeys#environment}
 
 ---
 
@@ -1362,7 +1382,7 @@ The size in bits for an RSA key.
 
 This field is required when 'key_type' is 'RSA' or when 'allow_generate_key' is true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
 
 ---
 
@@ -1376,7 +1396,23 @@ public string Resource { get; set; }
 
 The Azure Key Vault resource's DNS Suffix to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#resource ManagedKeys#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#resource ManagedKeys#resource}
+
+---
+
+##### `Usages`<sup>Optional</sup> <a name="Usages" id="@cdktn/provider-vault.managedKeys.ManagedKeysAzure.property.usages"></a>
+
+```csharp
+public string[] Usages { get; set; }
+```
+
+- *Type:* string[]
+
+A list of the allowed usages of this key.
+
+Valid values are encrypt, decrypt, sign, verify, wrap, unwrap, mac, and generate_random. Default values are sign and verify.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#usages ManagedKeys#usages}
 
 ---
 
@@ -1418,7 +1454,7 @@ new ManagedKeysConfig {
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.aws">Aws</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>[]</code> | aws block. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.azure">Azure</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>[]</code> | azure block. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.gcp">Gcp</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a>[]</code> | gcp block. |
-| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#id ManagedKeys#id}. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#id ManagedKeys#id}. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.pkcs">Pkcs</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>[]</code> | pkcs block. |
 
@@ -1504,7 +1540,7 @@ public IResolvable|ManagedKeysAws[] Aws { get; set; }
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#aws ManagedKeys#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#aws ManagedKeys#aws}
 
 ---
 
@@ -1518,7 +1554,7 @@ public IResolvable|ManagedKeysAzure[] Azure { get; set; }
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#azure ManagedKeys#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#azure ManagedKeys#azure}
 
 ---
 
@@ -1532,7 +1568,7 @@ public IResolvable|ManagedKeysGcp[] Gcp { get; set; }
 
 gcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#gcp ManagedKeys#gcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#gcp ManagedKeys#gcp}
 
 ---
 
@@ -1544,7 +1580,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#id ManagedKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#id ManagedKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1561,7 +1597,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
 
 ---
 
@@ -1575,7 +1611,7 @@ public IResolvable|ManagedKeysPkcs[] Pkcs { get; set; }
 
 pkcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
 
 ---
 
@@ -1598,7 +1634,8 @@ new ManagedKeysGcp {
     bool|IResolvable AllowReplaceKey = null,
     bool|IResolvable AllowStoreKey = null,
     bool|IResolvable AnyMount = null,
-    string CryptoKeyVersion = null
+    string CryptoKeyVersion = null,
+    string[] Usages = null
 };
 ```
 
@@ -1618,6 +1655,7 @@ new ManagedKeysGcp {
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.allowStoreKey">AllowStoreKey</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.anyMount">AnyMount</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Allow usage from any mount point within the namespace if 'true'. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.cryptoKeyVersion">CryptoKeyVersion</a></code> | <code>string</code> | The version of the key to use. (Default: 1). |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.usages">Usages</a></code> | <code>string[]</code> | A list of the allowed usages of this key. |
 
 ---
 
@@ -1633,7 +1671,7 @@ The signature algorithm to be used with the key.
 
 Supported values: ec_sign_p256_sha256, ec_sign_p384_sha384, rsa_sign_pss_2048_sha256, rsa_sign_pss_3072_sha256, rsa_sign_pss_4096_sha256, rsa_sign_pss_4096_sha512, rsa_sign_pkcs1_2048_sha256, rsa_sign_pkcs1_3072_sha256, rsa_sign_pkcs1_4096_sha256, rsa_sign_pkcs1_4096_sha512
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#algorithm ManagedKeys#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#algorithm ManagedKeys#algorithm}
 
 ---
 
@@ -1647,7 +1685,7 @@ public string Credentials { get; set; }
 
 The GCP service account credentials JSON to use for authenticating to GCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#credentials ManagedKeys#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#credentials ManagedKeys#credentials}
 
 ---
 
@@ -1663,7 +1701,7 @@ The name of the GCP Cloud KMS key.
 
 If no existing key exists and allow_generate_key is true, Vault will generate a key with this name
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#crypto_key ManagedKeys#crypto_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#crypto_key ManagedKeys#crypto_key}
 
 ---
 
@@ -1677,7 +1715,7 @@ public string KeyRing { get; set; }
 
 The name of the key ring in GCP Cloud KMS. This needs to be created prior to key creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#key_ring ManagedKeys#key_ring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#key_ring ManagedKeys#key_ring}
 
 ---
 
@@ -1691,7 +1729,7 @@ public string Name { get; set; }
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -1705,7 +1743,7 @@ public string Project { get; set; }
 
 The GCP project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#project ManagedKeys#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#project ManagedKeys#project}
 
 ---
 
@@ -1719,7 +1757,7 @@ public string Region { get; set; }
 
 The GCP region where the key ring was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#region ManagedKeys#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#region ManagedKeys#region}
 
 ---
 
@@ -1733,7 +1771,7 @@ public bool|IResolvable AllowGenerateKey { get; set; }
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -1747,7 +1785,7 @@ public bool|IResolvable AllowReplaceKey { get; set; }
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -1761,7 +1799,7 @@ public bool|IResolvable AllowStoreKey { get; set; }
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -1775,7 +1813,7 @@ public bool|IResolvable AnyMount { get; set; }
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
 
 ---
 
@@ -1789,7 +1827,23 @@ public string CryptoKeyVersion { get; set; }
 
 The version of the key to use. (Default: 1).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#crypto_key_version ManagedKeys#crypto_key_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#crypto_key_version ManagedKeys#crypto_key_version}
+
+---
+
+##### `Usages`<sup>Optional</sup> <a name="Usages" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.property.usages"></a>
+
+```csharp
+public string[] Usages { get; set; }
+```
+
+- *Type:* string[]
+
+A list of the allowed usages of this key.
+
+Valid values are encrypt, decrypt, sign, verify, wrap, unwrap, mac, and generate_random. Default values are sign and verify.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#usages ManagedKeys#usages}
 
 ---
 
@@ -1814,8 +1868,10 @@ new ManagedKeysPkcs {
     string KeyBits = null,
     string KeyId = null,
     string KeyLabel = null,
+    double MaxParallel = null,
     string Slot = null,
-    string TokenLabel = null
+    string TokenLabel = null,
+    string[] Usages = null
 };
 ```
 
@@ -1836,8 +1892,10 @@ new ManagedKeysPkcs {
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.keyBits">KeyBits</a></code> | <code>string</code> | Supplies the size in bits of the key when using 'CKM_RSA_PKCS_PSS', 'CKM_RSA_PKCS_OAEP' or 'CKM_RSA_PKCS' as a value for 'mechanism'. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.keyId">KeyId</a></code> | <code>string</code> | The id of a PKCS#11 key to use. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.keyLabel">KeyLabel</a></code> | <code>string</code> | The label of the key to use. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.maxParallel">MaxParallel</a></code> | <code>double</code> | The number of concurrent requests that may be in flight to the HSM at any given time. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.slot">Slot</a></code> | <code>string</code> | The slot number to use, specified as a string in a decimal format (e.g. '2305843009213693953'). |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.tokenLabel">TokenLabel</a></code> | <code>string</code> | The slot token label to use. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.usages">Usages</a></code> | <code>string[]</code> | A list of the allowed usages of this key. |
 
 ---
 
@@ -1851,7 +1909,7 @@ public string Library { get; set; }
 
 The name of the kms_library stanza to use from Vault's config to lookup the local library path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#library ManagedKeys#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#library ManagedKeys#library}
 
 ---
 
@@ -1865,7 +1923,7 @@ public string Mechanism { get; set; }
 
 The encryption/decryption mechanism to use, specified as a hexadecimal (prefixed by 0x) string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#mechanism ManagedKeys#mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#mechanism ManagedKeys#mechanism}
 
 ---
 
@@ -1879,7 +1937,7 @@ public string Name { get; set; }
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -1893,7 +1951,7 @@ public string Pin { get; set; }
 
 The PIN for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#pin ManagedKeys#pin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#pin ManagedKeys#pin}
 
 ---
 
@@ -1907,7 +1965,7 @@ public bool|IResolvable AllowGenerateKey { get; set; }
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -1921,7 +1979,7 @@ public bool|IResolvable AllowReplaceKey { get; set; }
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -1935,7 +1993,7 @@ public bool|IResolvable AllowStoreKey { get; set; }
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -1949,7 +2007,7 @@ public bool|IResolvable AnyMount { get; set; }
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
 
 ---
 
@@ -1963,7 +2021,7 @@ public string Curve { get; set; }
 
 Supplies the curve value when using the 'CKM_ECDSA' mechanism. Required if 'allow_generate_key' is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#curve ManagedKeys#curve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#curve ManagedKeys#curve}
 
 ---
 
@@ -1977,7 +2035,7 @@ public string ForceRwSession { get; set; }
 
 Force all operations to open up a read-write session to the HSM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#force_rw_session ManagedKeys#force_rw_session}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#force_rw_session ManagedKeys#force_rw_session}
 
 ---
 
@@ -1993,7 +2051,7 @@ Supplies the size in bits of the key when using 'CKM_RSA_PKCS_PSS', 'CKM_RSA_PKC
 
 Required if 'allow_generate_key' is true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
 
 ---
 
@@ -2007,7 +2065,7 @@ public string KeyId { get; set; }
 
 The id of a PKCS#11 key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#key_id ManagedKeys#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#key_id ManagedKeys#key_id}
 
 ---
 
@@ -2021,7 +2079,23 @@ public string KeyLabel { get; set; }
 
 The label of the key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#key_label ManagedKeys#key_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#key_label ManagedKeys#key_label}
+
+---
+
+##### `MaxParallel`<sup>Optional</sup> <a name="MaxParallel" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.maxParallel"></a>
+
+```csharp
+public double MaxParallel { get; set; }
+```
+
+- *Type:* double
+
+The number of concurrent requests that may be in flight to the HSM at any given time.
+
+Default is 1
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#max_parallel ManagedKeys#max_parallel}
 
 ---
 
@@ -2035,7 +2109,7 @@ public string Slot { get; set; }
 
 The slot number to use, specified as a string in a decimal format (e.g. '2305843009213693953').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#slot ManagedKeys#slot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#slot ManagedKeys#slot}
 
 ---
 
@@ -2049,7 +2123,23 @@ public string TokenLabel { get; set; }
 
 The slot token label to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/managed_keys#token_label ManagedKeys#token_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#token_label ManagedKeys#token_label}
+
+---
+
+##### `Usages`<sup>Optional</sup> <a name="Usages" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.usages"></a>
+
+```csharp
+public string[] Usages { get; set; }
+```
+
+- *Type:* string[]
+
+A list of the allowed usages of this key.
+
+Valid values are encrypt, decrypt, sign, verify, wrap, unwrap, mac, and generate_random. Default values are sign and verify.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/managed_keys#usages ManagedKeys#usages}
 
 ---
 
@@ -2290,6 +2380,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.resetCurve">ResetCurve</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.resetEndpoint">ResetEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.resetUsages">ResetUsages</a></code> | *No description.* |
 
 ---
 
@@ -2485,6 +2576,12 @@ private void ResetEndpoint()
 private void ResetRegion()
 ```
 
+##### `ResetUsages` <a name="ResetUsages" id="@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.resetUsages"></a>
+
+```csharp
+private void ResetUsages()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2506,6 +2603,7 @@ private void ResetRegion()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.secretKeyInput">SecretKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.usagesInput">UsagesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.accessKey">AccessKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -2519,6 +2617,7 @@ private void ResetRegion()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.secretKey">SecretKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.usages">Usages</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a></code> | *No description.* |
 
 ---
@@ -2687,6 +2786,16 @@ public string SecretKeyInput { get; }
 
 ---
 
+##### `UsagesInput`<sup>Optional</sup> <a name="UsagesInput" id="@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.usagesInput"></a>
+
+```csharp
+public string[] UsagesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `AccessKey`<sup>Required</sup> <a name="AccessKey" id="@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.accessKey"></a>
 
 ```csharp
@@ -2814,6 +2923,16 @@ public string SecretKey { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Usages`<sup>Required</sup> <a name="Usages" id="@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.property.usages"></a>
+
+```csharp
+public string[] Usages { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -3063,6 +3182,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetEnvironment">ResetEnvironment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetKeyBits">ResetKeyBits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetResource">ResetResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetUsages">ResetUsages</a></code> | *No description.* |
 
 ---
 
@@ -3258,6 +3378,12 @@ private void ResetKeyBits()
 private void ResetResource()
 ```
 
+##### `ResetUsages` <a name="ResetUsages" id="@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetUsages"></a>
+
+```csharp
+private void ResetUsages()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -3279,6 +3405,7 @@ private void ResetResource()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.resourceInput">ResourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.tenantIdInput">TenantIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.usagesInput">UsagesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.vaultNameInput">VaultNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -3293,6 +3420,7 @@ private void ResetResource()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.resource">Resource</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.tenantId">TenantId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.usages">Usages</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.vaultName">VaultName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a></code> | *No description.* |
 
@@ -3462,6 +3590,16 @@ public string TenantIdInput { get; }
 
 ---
 
+##### `UsagesInput`<sup>Optional</sup> <a name="UsagesInput" id="@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.usagesInput"></a>
+
+```csharp
+public string[] UsagesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `VaultNameInput`<sup>Optional</sup> <a name="VaultNameInput" id="@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.vaultNameInput"></a>
 
 ```csharp
@@ -3599,6 +3737,16 @@ public string TenantId { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Usages`<sup>Required</sup> <a name="Usages" id="@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.usages"></a>
+
+```csharp
+public string[] Usages { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -3856,6 +4004,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetAllowStoreKey">ResetAllowStoreKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetAnyMount">ResetAnyMount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetCryptoKeyVersion">ResetCryptoKeyVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetUsages">ResetUsages</a></code> | *No description.* |
 
 ---
 
@@ -4039,6 +4188,12 @@ private void ResetAnyMount()
 private void ResetCryptoKeyVersion()
 ```
 
+##### `ResetUsages` <a name="ResetUsages" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.resetUsages"></a>
+
+```csharp
+private void ResetUsages()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -4059,6 +4214,7 @@ private void ResetCryptoKeyVersion()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.usagesInput">UsagesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.algorithm">Algorithm</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -4071,6 +4227,7 @@ private void ResetCryptoKeyVersion()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.project">Project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.region">Region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.usages">Usages</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a></code> | *No description.* |
 
 ---
@@ -4229,6 +4386,16 @@ public string RegionInput { get; }
 
 ---
 
+##### `UsagesInput`<sup>Optional</sup> <a name="UsagesInput" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.usagesInput"></a>
+
+```csharp
+public string[] UsagesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `Algorithm`<sup>Required</sup> <a name="Algorithm" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.algorithm"></a>
 
 ```csharp
@@ -4346,6 +4513,16 @@ public string Region { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Usages`<sup>Required</sup> <a name="Usages" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.property.usages"></a>
+
+```csharp
+public string[] Usages { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -4597,8 +4774,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetKeyBits">ResetKeyBits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetKeyId">ResetKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetKeyLabel">ResetKeyLabel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetMaxParallel">ResetMaxParallel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetSlot">ResetSlot</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetTokenLabel">ResetTokenLabel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetUsages">ResetUsages</a></code> | *No description.* |
 
 ---
 
@@ -4806,6 +4985,12 @@ private void ResetKeyId()
 private void ResetKeyLabel()
 ```
 
+##### `ResetMaxParallel` <a name="ResetMaxParallel" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetMaxParallel"></a>
+
+```csharp
+private void ResetMaxParallel()
+```
+
 ##### `ResetSlot` <a name="ResetSlot" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetSlot"></a>
 
 ```csharp
@@ -4816,6 +5001,12 @@ private void ResetSlot()
 
 ```csharp
 private void ResetTokenLabel()
+```
+
+##### `ResetUsages` <a name="ResetUsages" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetUsages"></a>
+
+```csharp
+private void ResetUsages()
 ```
 
 
@@ -4836,11 +5027,13 @@ private void ResetTokenLabel()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.keyIdInput">KeyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.keyLabelInput">KeyLabelInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.libraryInput">LibraryInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.maxParallelInput">MaxParallelInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.mechanismInput">MechanismInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.pinInput">PinInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.slotInput">SlotInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.tokenLabelInput">TokenLabelInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.usagesInput">UsagesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowGenerateKey">AllowGenerateKey</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowReplaceKey">AllowReplaceKey</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.allowStoreKey">AllowStoreKey</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
@@ -4851,11 +5044,13 @@ private void ResetTokenLabel()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.keyId">KeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.keyLabel">KeyLabel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.library">Library</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.maxParallel">MaxParallel</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.mechanism">Mechanism</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.pin">Pin</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.slot">Slot</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.tokenLabel">TokenLabel</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.usages">Usages</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.internalValue">InternalValue</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a></code> | *No description.* |
 
 ---
@@ -4994,6 +5189,16 @@ public string LibraryInput { get; }
 
 ---
 
+##### `MaxParallelInput`<sup>Optional</sup> <a name="MaxParallelInput" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.maxParallelInput"></a>
+
+```csharp
+public double MaxParallelInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `MechanismInput`<sup>Optional</sup> <a name="MechanismInput" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.mechanismInput"></a>
 
 ```csharp
@@ -5041,6 +5246,16 @@ public string TokenLabelInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `UsagesInput`<sup>Optional</sup> <a name="UsagesInput" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.usagesInput"></a>
+
+```csharp
+public string[] UsagesInput { get; }
+```
+
+- *Type:* string[]
 
 ---
 
@@ -5144,6 +5359,16 @@ public string Library { get; }
 
 ---
 
+##### `MaxParallel`<sup>Required</sup> <a name="MaxParallel" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.maxParallel"></a>
+
+```csharp
+public double MaxParallel { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `Mechanism`<sup>Required</sup> <a name="Mechanism" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.mechanism"></a>
 
 ```csharp
@@ -5191,6 +5416,16 @@ public string TokenLabel { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `Usages`<sup>Required</sup> <a name="Usages" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.usages"></a>
+
+```csharp
+public string[] Usages { get; }
+```
+
+- *Type:* string[]
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataVaultPluginRuntimes <a name="DataVaultPluginRuntimes" id="@cdktn/provider-vault.dataVaultPluginRuntimes.DataVaultPluginRuntimes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/plugin_runtimes vault_plugin_runtimes}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes vault_plugin_runtimes}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultPluginRuntimes.DataVaultPluginRuntimes.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataVaultPluginRuntimes to
 
 The id of the existing DataVaultPluginRuntimes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/plugin_runtimes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,7 +756,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/plugin_runtimes#namespace DataVaultPluginRuntimes#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes#namespace DataVaultPluginRuntimes#namespace}
 
 ---
 
@@ -770,7 +770,7 @@ public string Type { get; set; }
 
 Specifies the plugin runtime type to list. Currently only `container` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/plugin_runtimes#type DataVaultPluginRuntimes#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes#type DataVaultPluginRuntimes#type}
 
 ---
 

@@ -4,9 +4,11 @@
 
 The following submodules are available:
 
+- [activationFlags](./activationFlags.go.md)
 - [adSecretBackend](./adSecretBackend.go.md)
 - [adSecretLibrary](./adSecretLibrary.go.md)
 - [adSecretRole](./adSecretRole.go.md)
+- [agentRegistration](./agentRegistration.go.md)
 - [alicloudAuthBackendRole](./alicloudAuthBackendRole.go.md)
 - [alicloudSecretBackend](./alicloudSecretBackend.go.md)
 - [alicloudSecretBackendRole](./alicloudSecretBackendRole.go.md)
@@ -36,9 +38,14 @@ The following submodules are available:
 - [certAuthBackendRole](./certAuthBackendRole.go.md)
 - [cfAuthBackendConfig](./cfAuthBackendConfig.go.md)
 - [cfAuthBackendRole](./cfAuthBackendRole.go.md)
+- [configControlGroup](./configControlGroup.go.md)
+- [configGroupPolicyApplication](./configGroupPolicyApplication.go.md)
 - [configUiCustomMessage](./configUiCustomMessage.go.md)
+- [configUiDefaultAuth](./configUiDefaultAuth.go.md)
+- [configUiHeader](./configUiHeader.go.md)
 - [consulSecretBackend](./consulSecretBackend.go.md)
 - [consulSecretBackendRole](./consulSecretBackendRole.go.md)
+- [dataVaultActivationFlags](./dataVaultActivationFlags.go.md)
 - [dataVaultAdAccessCredentials](./dataVaultAdAccessCredentials.go.md)
 - [dataVaultApproleAuthBackendRoleId](./dataVaultApproleAuthBackendRoleId.go.md)
 - [dataVaultAuthBackend](./dataVaultAuthBackend.go.md)
@@ -164,6 +171,7 @@ The following submodules are available:
 - [namespace](./namespace.go.md)
 - [nomadSecretBackend](./nomadSecretBackend.go.md)
 - [nomadSecretRole](./nomadSecretRole.go.md)
+- [oauthResourceServerConfigProfile](./oauthResourceServerConfigProfile.go.md)
 - [ociAuthBackend](./ociAuthBackend.go.md)
 - [ociAuthBackendRole](./ociAuthBackendRole.go.md)
 - [oktaAuthBackend](./oktaAuthBackend.go.md)
@@ -208,6 +216,8 @@ The following submodules are available:
 - [quotaRateLimit](./quotaRateLimit.go.md)
 - [rabbitmqSecretBackend](./rabbitmqSecretBackend.go.md)
 - [rabbitmqSecretBackendRole](./rabbitmqSecretBackendRole.go.md)
+- [radiusAuthBackend](./radiusAuthBackend.go.md)
+- [radiusAuthBackendUser](./radiusAuthBackendUser.go.md)
 - [raftAutopilot](./raftAutopilot.go.md)
 - [raftSnapshotAgentConfig](./raftSnapshotAgentConfig.go.md)
 - [rgpPolicy](./rgpPolicy.go.md)
@@ -241,6 +251,7 @@ The following submodules are available:
 - [transformTransformation](./transformTransformation.go.md)
 - [transitSecretBackendKey](./transitSecretBackendKey.go.md)
 - [transitSecretCacheConfig](./transitSecretCacheConfig.go.md)
+- [userpassAuthBackendUser](./userpassAuthBackendUser.go.md)
 
 
 
