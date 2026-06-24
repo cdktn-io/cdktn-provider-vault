@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/plugin_runtimes
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataVaultPluginRuntimesConfig extends cdktn.TerraformMetaArgume
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/plugin_runtimes#namespace DataVaultPluginRuntimes#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes#namespace DataVaultPluginRuntimes#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the plugin runtime type to list. Currently only `container` is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/plugin_runtimes#type DataVaultPluginRuntimes#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes#type DataVaultPluginRuntimes#type}
   */
   readonly type?: string;
 }
@@ -31,7 +31,7 @@ export interface DataVaultPluginRuntimesRuntimes {
 export function dataVaultPluginRuntimesRuntimesToTerraform(struct?: DataVaultPluginRuntimesRuntimes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -41,7 +41,7 @@ export function dataVaultPluginRuntimesRuntimesToTerraform(struct?: DataVaultPlu
 export function dataVaultPluginRuntimesRuntimesToHclTerraform(struct?: DataVaultPluginRuntimesRuntimes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -132,7 +132,7 @@ export class DataVaultPluginRuntimesRuntimesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/plugin_runtimes vault_plugin_runtimes}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes vault_plugin_runtimes}
 */
 export class DataVaultPluginRuntimes extends cdktn.TerraformDataSource {
 
@@ -148,7 +148,7 @@ export class DataVaultPluginRuntimes extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataVaultPluginRuntimes resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultPluginRuntimes to import
-  * @param importFromId The id of the existing DataVaultPluginRuntimes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/plugin_runtimes#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultPluginRuntimes that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultPluginRuntimes to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -160,7 +160,7 @@ export class DataVaultPluginRuntimes extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/data-sources/plugin_runtimes vault_plugin_runtimes} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/plugin_runtimes vault_plugin_runtimes} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -171,7 +171,7 @@ export class DataVaultPluginRuntimes extends cdktn.TerraformDataSource {
       terraformResourceType: 'vault_plugin_runtimes',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

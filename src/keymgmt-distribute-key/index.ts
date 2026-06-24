@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface KeymgmtDistributeKeyConfig extends cdktn.TerraformMetaArguments
   /**
   * Specifies the name of the key to distribute to the given KMS provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#key_name KeymgmtDistributeKey#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#key_name KeymgmtDistributeKey#key_name}
   */
   readonly keyName: string;
   /**
   * Specifies the name of the KMS provider to distribute the given key to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#kms_name KeymgmtDistributeKey#kms_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#kms_name KeymgmtDistributeKey#kms_name}
   */
   readonly kmsName: string;
   /**
   * Path of the Key Management secrets engine mount. Must match the `path` of a `vault_mount` resource with `type = "keymgmt"`. Use `vault_mount.keymgmt.path` here.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#mount KeymgmtDistributeKey#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#mount KeymgmtDistributeKey#mount}
   */
   readonly mount: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#namespace KeymgmtDistributeKey#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#namespace KeymgmtDistributeKey#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the protection of the key. The protection defines where cryptographic operations are performed with the key in the KMS provider. The following values are supported: hsm, software. Defaults to `hsm`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#protection KeymgmtDistributeKey#protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#protection KeymgmtDistributeKey#protection}
   */
   readonly protection?: string;
   /**
   * Specifies the purpose of the key. The purpose defines a set of cryptographic capabilities that the key will have in the KMS provider. A key must have at least one of the supported purposes. The following values are supported : encrypt, decrypt, sign, verify, wrap, unwrap.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#purpose KeymgmtDistributeKey#purpose}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#purpose KeymgmtDistributeKey#purpose}
   */
   readonly purpose: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key vault_keymgmt_distribute_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key vault_keymgmt_distribute_key}
 */
 export class KeymgmtDistributeKey extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class KeymgmtDistributeKey extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KeymgmtDistributeKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeymgmtDistributeKey to import
-  * @param importFromId The id of the existing KeymgmtDistributeKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KeymgmtDistributeKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeymgmtDistributeKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class KeymgmtDistributeKey extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_distribute_key vault_keymgmt_distribute_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_distribute_key vault_keymgmt_distribute_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class KeymgmtDistributeKey extends cdktn.TerraformResource {
       terraformResourceType: 'vault_keymgmt_distribute_key',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

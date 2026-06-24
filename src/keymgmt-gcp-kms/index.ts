@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_gcp_kms
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_gcp_kms
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface KeymgmtGcpKmsConfig extends cdktn.TerraformMetaArguments {
   /**
   * The credentials to use for authentication with Google Cloud KMS. Supplying values for this parameter is optional, as credentials may also be specified through environment variables or Application Default Credentials. The order of precedence is environment variables, then the credentials provided to this parameter and Application Default Credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_gcp_kms#credentials_wo KeymgmtGcpKms#credentials_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_gcp_kms#credentials_wo KeymgmtGcpKms#credentials_wo}
   */
   readonly credentialsWo?: { [key: string]: string };
   /**
   * Version counter for the write-only `credentials_wo` field. Since write-only values are not stored in state, Terraform cannot detect when credentials change. Increment this value whenever you update `credentials_wo` to ensure the new credentials are sent to Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_gcp_kms#credentials_wo_version KeymgmtGcpKms#credentials_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_gcp_kms#credentials_wo_version KeymgmtGcpKms#credentials_wo_version}
   */
   readonly credentialsWoVersion?: number;
   /**
   * Refers to the resource ID of an existing GCP Cloud KMS key ring. Cannot be changed after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_gcp_kms#key_collection KeymgmtGcpKms#key_collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_gcp_kms#key_collection KeymgmtGcpKms#key_collection}
   */
   readonly keyCollection: string;
   /**
   * Path of the Key Management secrets engine mount. Must match the `path` of a `vault_mount` resource with `type = "keymgmt"`. Use `vault_mount.keymgmt.path` here.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_gcp_kms#mount KeymgmtGcpKms#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_gcp_kms#mount KeymgmtGcpKms#mount}
   */
   readonly mount: string;
   /**
   * Specifies the name of the GCP Cloud KMS provider. Cannot be changed after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_gcp_kms#name KeymgmtGcpKms#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_gcp_kms#name KeymgmtGcpKms#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_gcp_kms#namespace KeymgmtGcpKms#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_gcp_kms#namespace KeymgmtGcpKms#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_gcp_kms vault_keymgmt_gcp_kms}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_gcp_kms vault_keymgmt_gcp_kms}
 */
 export class KeymgmtGcpKms extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class KeymgmtGcpKms extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KeymgmtGcpKms resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeymgmtGcpKms to import
-  * @param importFromId The id of the existing KeymgmtGcpKms that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_gcp_kms#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KeymgmtGcpKms that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_gcp_kms#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeymgmtGcpKms to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class KeymgmtGcpKms extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_gcp_kms vault_keymgmt_gcp_kms} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_gcp_kms vault_keymgmt_gcp_kms} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class KeymgmtGcpKms extends cdktn.TerraformResource {
       terraformResourceType: 'vault_keymgmt_gcp_kms',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

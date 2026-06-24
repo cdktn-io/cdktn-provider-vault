@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,79 +15,79 @@ export interface KmipSecretListenerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Names of additional TLS CAs to use to verify client certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener#additional_client_cas KmipSecretListener#additional_client_cas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#additional_client_cas KmipSecretListener#additional_client_cas}
   */
   readonly additionalClientCas?: string[];
   /**
   * Host:port address to listen on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener#address KmipSecretListener#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#address KmipSecretListener#address}
   */
   readonly address: string;
   /**
   * Use the legacy unnamed CA for verifying client certificates as well.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener#also_use_legacy_ca KmipSecretListener#also_use_legacy_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#also_use_legacy_ca KmipSecretListener#also_use_legacy_ca}
   */
   readonly alsoUseLegacyCa?: boolean | cdktn.IResolvable;
   /**
   * Name of the CA to use to generate the server certificate and verify client certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener#ca KmipSecretListener#ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#ca KmipSecretListener#ca}
   */
   readonly ca: string;
   /**
   * Unique name for the listener.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener#name KmipSecretListener#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#name KmipSecretListener#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener#namespace KmipSecretListener#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#namespace KmipSecretListener#namespace}
   */
   readonly namespace?: string;
   /**
   * Path where KMIP backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener#path KmipSecretListener#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#path KmipSecretListener#path}
   */
   readonly path: string;
   /**
   * DNS SANs to include in listener certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener#server_hostnames KmipSecretListener#server_hostnames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#server_hostnames KmipSecretListener#server_hostnames}
   */
   readonly serverHostnames?: string[];
   /**
   * IP SANs to include in listener certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener#server_ips KmipSecretListener#server_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#server_ips KmipSecretListener#server_ips}
   */
   readonly serverIps?: string[];
   /**
   * TLS cipher suites to allow (does not apply to tls13+).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener#tls_cipher_suites KmipSecretListener#tls_cipher_suites}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#tls_cipher_suites KmipSecretListener#tls_cipher_suites}
   */
   readonly tlsCipherSuites?: string;
   /**
   * Maximum TLS version to accept (tls12 or tls13).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener#tls_max_version KmipSecretListener#tls_max_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#tls_max_version KmipSecretListener#tls_max_version}
   */
   readonly tlsMaxVersion?: string;
   /**
   * Minimum TLS version to accept (tls12 or tls13).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener#tls_min_version KmipSecretListener#tls_min_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#tls_min_version KmipSecretListener#tls_min_version}
   */
   readonly tlsMinVersion?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener vault_kmip_secret_listener}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener vault_kmip_secret_listener}
 */
 export class KmipSecretListener extends cdktn.TerraformResource {
 
@@ -103,7 +103,7 @@ export class KmipSecretListener extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KmipSecretListener resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmipSecretListener to import
-  * @param importFromId The id of the existing KmipSecretListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KmipSecretListener that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmipSecretListener to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -115,7 +115,7 @@ export class KmipSecretListener extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/kmip_secret_listener vault_kmip_secret_listener} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener vault_kmip_secret_listener} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -126,7 +126,7 @@ export class KmipSecretListener extends cdktn.TerraformResource {
       terraformResourceType: 'vault_kmip_secret_listener',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key_rotate
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface KeymgmtKeyRotateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Path of the Key Management secrets engine mount. Must match the `path` of a `vault_mount` resource with `type = "keymgmt"`. Use `vault_mount.keymgmt.path` here.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key_rotate#mount KeymgmtKeyRotate#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate#mount KeymgmtKeyRotate#mount}
   */
   readonly mount: string;
   /**
   * Specifies the name of the key to rotate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key_rotate#name KeymgmtKeyRotate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate#name KeymgmtKeyRotate#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key_rotate#namespace KeymgmtKeyRotate#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate#namespace KeymgmtKeyRotate#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key_rotate vault_keymgmt_key_rotate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate vault_keymgmt_key_rotate}
 */
 export class KeymgmtKeyRotate extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class KeymgmtKeyRotate extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KeymgmtKeyRotate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeymgmtKeyRotate to import
-  * @param importFromId The id of the existing KeymgmtKeyRotate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key_rotate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KeymgmtKeyRotate that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeymgmtKeyRotate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class KeymgmtKeyRotate extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/keymgmt_key_rotate vault_keymgmt_key_rotate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate vault_keymgmt_key_rotate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class KeymgmtKeyRotate extends cdktn.TerraformResource {
       terraformResourceType: 'vault_keymgmt_key_rotate',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

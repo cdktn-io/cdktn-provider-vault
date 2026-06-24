@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,202 +13,207 @@ import * as cdktn from 'cdktn';
 
 export interface RaftSnapshotAgentConfigConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Have Vault automatically load the latest snapshot after it is written. This will replace the previously loaded snapshot. Note that this does not mean the snapshot is automatically applied to the cluster, it is just loaded and available for recovery operations. Requires Vault Enterprise 1.21.0+. Not supported with storage_type = "local".
+  * Have Vault automatically load the latest snapshot after it is written. Note that this does not mean the snapshot is automatically applied to the cluster, it is just loaded and available for recovery operations. Requires Vault Enterprise 1.21.0+. Not supported with storage_type = "local".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#autoload_enabled RaftSnapshotAgentConfig#autoload_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#autoload_enabled RaftSnapshotAgentConfig#autoload_enabled}
   */
   readonly autoloadEnabled?: boolean | cdktn.IResolvable;
   /**
   * AWS access key ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#aws_access_key_id RaftSnapshotAgentConfig#aws_access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#aws_access_key_id RaftSnapshotAgentConfig#aws_access_key_id}
   */
   readonly awsAccessKeyId?: string;
   /**
   * S3 bucket to write snapshots to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#aws_s3_bucket RaftSnapshotAgentConfig#aws_s3_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#aws_s3_bucket RaftSnapshotAgentConfig#aws_s3_bucket}
   */
   readonly awsS3Bucket?: string;
   /**
   * Disable TLS for the S3 endpoint. This should only be used for testing purposes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#aws_s3_disable_tls RaftSnapshotAgentConfig#aws_s3_disable_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#aws_s3_disable_tls RaftSnapshotAgentConfig#aws_s3_disable_tls}
   */
   readonly awsS3DisableTls?: boolean | cdktn.IResolvable;
   /**
   * Use KMS to encrypt bucket contents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#aws_s3_enable_kms RaftSnapshotAgentConfig#aws_s3_enable_kms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#aws_s3_enable_kms RaftSnapshotAgentConfig#aws_s3_enable_kms}
   */
   readonly awsS3EnableKms?: boolean | cdktn.IResolvable;
   /**
   * AWS endpoint. This is typically only set when using a non-AWS S3 implementation like Minio.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#aws_s3_endpoint RaftSnapshotAgentConfig#aws_s3_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#aws_s3_endpoint RaftSnapshotAgentConfig#aws_s3_endpoint}
   */
   readonly awsS3Endpoint?: string;
   /**
   * Use the endpoint/bucket URL style instead of bucket.endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#aws_s3_force_path_style RaftSnapshotAgentConfig#aws_s3_force_path_style}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#aws_s3_force_path_style RaftSnapshotAgentConfig#aws_s3_force_path_style}
   */
   readonly awsS3ForcePathStyle?: boolean | cdktn.IResolvable;
   /**
   * Use named KMS key, when aws_s3_enable_kms=true
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#aws_s3_kms_key RaftSnapshotAgentConfig#aws_s3_kms_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#aws_s3_kms_key RaftSnapshotAgentConfig#aws_s3_kms_key}
   */
   readonly awsS3KmsKey?: string;
   /**
   * AWS region bucket is in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#aws_s3_region RaftSnapshotAgentConfig#aws_s3_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#aws_s3_region RaftSnapshotAgentConfig#aws_s3_region}
   */
   readonly awsS3Region?: string;
   /**
   * Use AES256 to encrypt bucket contents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#aws_s3_server_side_encryption RaftSnapshotAgentConfig#aws_s3_server_side_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#aws_s3_server_side_encryption RaftSnapshotAgentConfig#aws_s3_server_side_encryption}
   */
   readonly awsS3ServerSideEncryption?: boolean | cdktn.IResolvable;
   /**
   * AWS secret access key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#aws_secret_access_key RaftSnapshotAgentConfig#aws_secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#aws_secret_access_key RaftSnapshotAgentConfig#aws_secret_access_key}
   */
   readonly awsSecretAccessKey?: string;
   /**
+  * AWS secret access key. Write-only: never stored in state. If secrets_wo_version is not set, changes are automatically detected via a hash stored in private state.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#aws_secret_access_key_wo RaftSnapshotAgentConfig#aws_secret_access_key_wo}
+  */
+  readonly awsSecretAccessKeyWo?: string;
+  /**
   * AWS session token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#aws_session_token RaftSnapshotAgentConfig#aws_session_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#aws_session_token RaftSnapshotAgentConfig#aws_session_token}
   */
   readonly awsSessionToken?: string;
   /**
   * Azure account key. Required when azure_auth_mode is 'shared'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#azure_account_key RaftSnapshotAgentConfig#azure_account_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#azure_account_key RaftSnapshotAgentConfig#azure_account_key}
   */
   readonly azureAccountKey?: string;
   /**
   * Azure account name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#azure_account_name RaftSnapshotAgentConfig#azure_account_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#azure_account_name RaftSnapshotAgentConfig#azure_account_name}
   */
   readonly azureAccountName?: string;
   /**
   * Azure authentication mode. Required for azure-blob storage. Possible values are 'shared', 'managed', or 'environment'. Requires Vault Enterprise 1.18.0+.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#azure_auth_mode RaftSnapshotAgentConfig#azure_auth_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#azure_auth_mode RaftSnapshotAgentConfig#azure_auth_mode}
   */
   readonly azureAuthMode?: string;
   /**
   * Azure blob environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#azure_blob_environment RaftSnapshotAgentConfig#azure_blob_environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#azure_blob_environment RaftSnapshotAgentConfig#azure_blob_environment}
   */
   readonly azureBlobEnvironment?: string;
   /**
   * Azure client ID for authentication. Required when azure_auth_mode is 'managed'. Requires Vault Enterprise 1.18.0+.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#azure_client_id RaftSnapshotAgentConfig#azure_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#azure_client_id RaftSnapshotAgentConfig#azure_client_id}
   */
   readonly azureClientId?: string;
   /**
   * Azure container name to write snapshots to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#azure_container_name RaftSnapshotAgentConfig#azure_container_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#azure_container_name RaftSnapshotAgentConfig#azure_container_name}
   */
   readonly azureContainerName?: string;
   /**
   * Azure blob storage endpoint. This is typically only set when using a non-Azure implementation like Azurite.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#azure_endpoint RaftSnapshotAgentConfig#azure_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#azure_endpoint RaftSnapshotAgentConfig#azure_endpoint}
   */
   readonly azureEndpoint?: string;
   /**
   * The file or object name of snapshot files will start with this string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#file_prefix RaftSnapshotAgentConfig#file_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#file_prefix RaftSnapshotAgentConfig#file_prefix}
   */
   readonly filePrefix?: string;
   /**
   * Disable TLS for the GCS endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#google_disable_tls RaftSnapshotAgentConfig#google_disable_tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#google_disable_tls RaftSnapshotAgentConfig#google_disable_tls}
   */
   readonly googleDisableTls?: boolean | cdktn.IResolvable;
   /**
   * GCS endpoint. This is typically only set when using a non-Google GCS implementation like fake-gcs-server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#google_endpoint RaftSnapshotAgentConfig#google_endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#google_endpoint RaftSnapshotAgentConfig#google_endpoint}
   */
   readonly googleEndpoint?: string;
   /**
   * GCS bucket to write snapshots to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#google_gcs_bucket RaftSnapshotAgentConfig#google_gcs_bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#google_gcs_bucket RaftSnapshotAgentConfig#google_gcs_bucket}
   */
   readonly googleGcsBucket?: string;
   /**
   * Google service account key in JSON format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#google_service_account_key RaftSnapshotAgentConfig#google_service_account_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#google_service_account_key RaftSnapshotAgentConfig#google_service_account_key}
   */
   readonly googleServiceAccountKey?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#id RaftSnapshotAgentConfig#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * Number of seconds between snapshots.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#interval_seconds RaftSnapshotAgentConfig#interval_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#interval_seconds RaftSnapshotAgentConfig#interval_seconds}
   */
   readonly intervalSeconds: number;
   /**
   * The maximum space, in bytes, to use for snapshots.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#local_max_space RaftSnapshotAgentConfig#local_max_space}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#local_max_space RaftSnapshotAgentConfig#local_max_space}
   */
   readonly localMaxSpace?: number;
   /**
   * Name of the snapshot agent configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#name RaftSnapshotAgentConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#name RaftSnapshotAgentConfig#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#namespace RaftSnapshotAgentConfig#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#namespace RaftSnapshotAgentConfig#namespace}
   */
   readonly namespace?: string;
   /**
-  * The directory or bucket prefix to to use.
+  * The directory or bucket prefix to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#path_prefix RaftSnapshotAgentConfig#path_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#path_prefix RaftSnapshotAgentConfig#path_prefix}
   */
   readonly pathPrefix: string;
   /**
   * How many snapshots are to be kept.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#retain RaftSnapshotAgentConfig#retain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#retain RaftSnapshotAgentConfig#retain}
   */
   readonly retain?: number;
   /**
+  * Version number for write-only secret updates. If not set, the provider automatically detects changes to write-only secrets using a SHA-256 hash stored in private state. If set manually, you control when the secret is updated by incrementing this value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#secrets_wo_version RaftSnapshotAgentConfig#secrets_wo_version}
+  */
+  readonly secretsWoVersion?: number;
+  /**
   * What storage service to send snapshots to. One of "local", "azure-blob", "aws-s3", or "google-gcs".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#storage_type RaftSnapshotAgentConfig#storage_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#storage_type RaftSnapshotAgentConfig#storage_type}
   */
   readonly storageType: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config}
 */
 export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
 
@@ -224,7 +229,7 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a RaftSnapshotAgentConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RaftSnapshotAgentConfig to import
-  * @param importFromId The id of the existing RaftSnapshotAgentConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RaftSnapshotAgentConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RaftSnapshotAgentConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -236,7 +241,7 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.9.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/raft_snapshot_agent_config vault_raft_snapshot_agent_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -247,7 +252,7 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
       terraformResourceType: 'vault_raft_snapshot_agent_config',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.9.0',
+        providerVersion: '5.10.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -269,6 +274,7 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
     this._awsS3Region = config.awsS3Region;
     this._awsS3ServerSideEncryption = config.awsS3ServerSideEncryption;
     this._awsSecretAccessKey = config.awsSecretAccessKey;
+    this._awsSecretAccessKeyWo = config.awsSecretAccessKeyWo;
     this._awsSessionToken = config.awsSessionToken;
     this._azureAccountKey = config.azureAccountKey;
     this._azureAccountName = config.azureAccountName;
@@ -282,13 +288,13 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
     this._googleEndpoint = config.googleEndpoint;
     this._googleGcsBucket = config.googleGcsBucket;
     this._googleServiceAccountKey = config.googleServiceAccountKey;
-    this._id = config.id;
     this._intervalSeconds = config.intervalSeconds;
     this._localMaxSpace = config.localMaxSpace;
     this._name = config.name;
     this._namespace = config.namespace;
     this._pathPrefix = config.pathPrefix;
     this._retain = config.retain;
+    this._secretsWoVersion = config.secretsWoVersion;
     this._storageType = config.storageType;
   }
 
@@ -472,6 +478,22 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
     return this._awsSecretAccessKey;
   }
 
+  // aws_secret_access_key_wo - computed: false, optional: true, required: false
+  private _awsSecretAccessKeyWo?: string; 
+  public get awsSecretAccessKeyWo() {
+    return this.getStringAttribute('aws_secret_access_key_wo');
+  }
+  public set awsSecretAccessKeyWo(value: string) {
+    this._awsSecretAccessKeyWo = value;
+  }
+  public resetAwsSecretAccessKeyWo() {
+    this._awsSecretAccessKeyWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get awsSecretAccessKeyWoInput() {
+    return this._awsSecretAccessKeyWo;
+  }
+
   // aws_session_token - computed: false, optional: true, required: false
   private _awsSessionToken?: string; 
   public get awsSessionToken() {
@@ -600,7 +622,7 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
     return this._azureEndpoint;
   }
 
-  // file_prefix - computed: false, optional: true, required: false
+  // file_prefix - computed: true, optional: true, required: false
   private _filePrefix?: string; 
   public get filePrefix() {
     return this.getStringAttribute('file_prefix');
@@ -680,20 +702,9 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
     return this._googleServiceAccountKey;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // interval_seconds - computed: false, optional: false, required: true
@@ -767,7 +778,7 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
     return this._pathPrefix;
   }
 
-  // retain - computed: false, optional: true, required: false
+  // retain - computed: true, optional: true, required: false
   private _retain?: number; 
   public get retain() {
     return this.getNumberAttribute('retain');
@@ -781,6 +792,22 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get retainInput() {
     return this._retain;
+  }
+
+  // secrets_wo_version - computed: true, optional: true, required: false
+  private _secretsWoVersion?: number; 
+  public get secretsWoVersion() {
+    return this.getNumberAttribute('secrets_wo_version');
+  }
+  public set secretsWoVersion(value: number) {
+    this._secretsWoVersion = value;
+  }
+  public resetSecretsWoVersion() {
+    this._secretsWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretsWoVersionInput() {
+    return this._secretsWoVersion;
   }
 
   // storage_type - computed: false, optional: false, required: true
@@ -813,6 +840,7 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
       aws_s3_region: cdktn.stringToTerraform(this._awsS3Region),
       aws_s3_server_side_encryption: cdktn.booleanToTerraform(this._awsS3ServerSideEncryption),
       aws_secret_access_key: cdktn.stringToTerraform(this._awsSecretAccessKey),
+      aws_secret_access_key_wo: cdktn.stringToTerraform(this._awsSecretAccessKeyWo),
       aws_session_token: cdktn.stringToTerraform(this._awsSessionToken),
       azure_account_key: cdktn.stringToTerraform(this._azureAccountKey),
       azure_account_name: cdktn.stringToTerraform(this._azureAccountName),
@@ -826,13 +854,13 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
       google_endpoint: cdktn.stringToTerraform(this._googleEndpoint),
       google_gcs_bucket: cdktn.stringToTerraform(this._googleGcsBucket),
       google_service_account_key: cdktn.stringToTerraform(this._googleServiceAccountKey),
-      id: cdktn.stringToTerraform(this._id),
       interval_seconds: cdktn.numberToTerraform(this._intervalSeconds),
       local_max_space: cdktn.numberToTerraform(this._localMaxSpace),
       name: cdktn.stringToTerraform(this._name),
       namespace: cdktn.stringToTerraform(this._namespace),
       path_prefix: cdktn.stringToTerraform(this._pathPrefix),
       retain: cdktn.numberToTerraform(this._retain),
+      secrets_wo_version: cdktn.numberToTerraform(this._secretsWoVersion),
       storage_type: cdktn.stringToTerraform(this._storageType),
     };
   }
@@ -901,6 +929,12 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
       },
       aws_secret_access_key: {
         value: cdktn.stringToHclTerraform(this._awsSecretAccessKey),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      aws_secret_access_key_wo: {
+        value: cdktn.stringToHclTerraform(this._awsSecretAccessKeyWo),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -983,12 +1017,6 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      id: {
-        value: cdktn.stringToHclTerraform(this._id),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       interval_seconds: {
         value: cdktn.numberToHclTerraform(this._intervalSeconds),
         isBlock: false,
@@ -1021,6 +1049,12 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
       },
       retain: {
         value: cdktn.numberToHclTerraform(this._retain),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      secrets_wo_version: {
+        value: cdktn.numberToHclTerraform(this._secretsWoVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
