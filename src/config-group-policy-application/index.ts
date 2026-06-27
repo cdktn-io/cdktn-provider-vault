@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_group_policy_application
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_group_policy_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface ConfigGroupPolicyApplicationConfig extends cdktn.TerraformMetaA
   /**
   * Mode for group policy application. Must be either "within_namespace_hierarchy" or "any". "within_namespace_hierarchy" means policies only apply when the token authorizing a request was created in the same namespace as the group, or a descendant namespace. "any" means group policies apply to all members of a group, regardless of what namespace the request token came from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_group_policy_application#group_policy_application_mode ConfigGroupPolicyApplication#group_policy_application_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_group_policy_application#group_policy_application_mode ConfigGroupPolicyApplication#group_policy_application_mode}
   */
   readonly groupPolicyApplicationMode: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_group_policy_application#namespace ConfigGroupPolicyApplication#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_group_policy_application#namespace ConfigGroupPolicyApplication#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_group_policy_application vault_config_group_policy_application}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_group_policy_application vault_config_group_policy_application}
 */
 export class ConfigGroupPolicyApplication extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class ConfigGroupPolicyApplication extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ConfigGroupPolicyApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigGroupPolicyApplication to import
-  * @param importFromId The id of the existing ConfigGroupPolicyApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_group_policy_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConfigGroupPolicyApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_group_policy_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigGroupPolicyApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class ConfigGroupPolicyApplication extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_group_policy_application vault_config_group_policy_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_group_policy_application vault_config_group_policy_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class ConfigGroupPolicyApplication extends cdktn.TerraformResource {
       terraformResourceType: 'vault_config_group_policy_application',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.0',
+        providerVersion: '5.10.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

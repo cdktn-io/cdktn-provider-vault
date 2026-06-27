@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,53 +15,53 @@ export interface PkiSecretBackendSignConfig extends cdktn.TerraformMetaArguments
   /**
   * List of alternative names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#alt_names PkiSecretBackendSign#alt_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#alt_names PkiSecretBackendSign#alt_names}
   */
   readonly altNames?: string[];
   /**
   * If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#auto_renew PkiSecretBackendSign#auto_renew}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#auto_renew PkiSecretBackendSign#auto_renew}
   */
   readonly autoRenew?: boolean | cdktn.IResolvable;
   /**
   * The PKI secret backend the resource belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#backend PkiSecretBackendSign#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#backend PkiSecretBackendSign#backend}
   */
   readonly backend: string;
   /**
   * A base 64 encoded value or an empty string to associate with the certificate's serial number. The role's no_store_metadata must be set to false, otherwise an error is returned when specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#cert_metadata PkiSecretBackendSign#cert_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#cert_metadata PkiSecretBackendSign#cert_metadata}
   */
   readonly certMetadata?: string;
   /**
   * CN of intermediate to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#common_name PkiSecretBackendSign#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#common_name PkiSecretBackendSign#common_name}
   */
   readonly commonName: string;
   /**
   * The CSR.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#csr PkiSecretBackendSign#csr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#csr PkiSecretBackendSign#csr}
   */
   readonly csr: string;
   /**
   * Flag to exclude CN from SANs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#exclude_cn_from_sans PkiSecretBackendSign#exclude_cn_from_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#exclude_cn_from_sans PkiSecretBackendSign#exclude_cn_from_sans}
   */
   readonly excludeCnFromSans?: boolean | cdktn.IResolvable;
   /**
   * The format of data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#format PkiSecretBackendSign#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#format PkiSecretBackendSign#format}
   */
   readonly format?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#id PkiSecretBackendSign#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#id PkiSecretBackendSign#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -70,94 +70,67 @@ export interface PkiSecretBackendSignConfig extends cdktn.TerraformMetaArguments
   /**
   * List of alternative IPs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#ip_sans PkiSecretBackendSign#ip_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#ip_sans PkiSecretBackendSign#ip_sans}
   */
   readonly ipSans?: string[];
   /**
   * Specifies the default issuer of this request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#issuer_ref PkiSecretBackendSign#issuer_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#issuer_ref PkiSecretBackendSign#issuer_ref}
   */
   readonly issuerRef?: string;
   /**
-  * Password for encrypting the Java keystore
-  * 		when format is set to "jks_bundle". If not provided, 
-  * 		defaults to "changeit". It is recommended to use the default password
-  * 		and protect the file using other means or use a high-entropy password.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#jks_password PkiSecretBackendSign#jks_password}
-  */
-  readonly jksPassword?: string;
-  /**
   * Generate a new certificate when the expiration is within this number of seconds
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#min_seconds_remaining PkiSecretBackendSign#min_seconds_remaining}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#min_seconds_remaining PkiSecretBackendSign#min_seconds_remaining}
   */
   readonly minSecondsRemaining?: number;
   /**
   * Name of the role to create the certificate against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#name PkiSecretBackendSign#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#name PkiSecretBackendSign#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#namespace PkiSecretBackendSign#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#namespace PkiSecretBackendSign#namespace}
   */
   readonly namespace?: string;
   /**
   * Set the Not After field of the certificate with specified date value. The value format should be given in UTC format YYYY-MM-ddTHH:MM:SSZ. Supports the Y10K end date for IEEE 802.1AR-2018 standard devices, 9999-12-31T23:59:59Z.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#not_after PkiSecretBackendSign#not_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#not_after PkiSecretBackendSign#not_after}
   */
   readonly notAfter?: string;
   /**
   * List of other SANs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#other_sans PkiSecretBackendSign#other_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#other_sans PkiSecretBackendSign#other_sans}
   */
   readonly otherSans?: string[];
   /**
-  * Encoder profile to use for PKCS#12 archives when 
-  * format is set to "pkcs12_bundle". Valid values are "modern2026" and 
-  * "modern2023". Defaults to "modern2026", which uses the newer PKCS#12 
-  * integrity format (PBMAC1).
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#pkcs12_encoder PkiSecretBackendSign#pkcs12_encoder}
-  */
-  readonly pkcs12Encoder?: string;
-  /**
-  * Password for encrypting the PKCS#12 
-  * 		archive when format is set to "pkcs12_bundle". If not provided, 
-  * 		defaults to "changeit". It is recommended to use the default password
-  * 		and protect the file using other means or use a high-entropy password.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#pkcs12_password PkiSecretBackendSign#pkcs12_password}
-  */
-  readonly pkcs12Password?: string;
-  /**
   * If true, the returned ca_chain field will not include any self-signed CA certificates. Useful if end-users already have the root CA in their trust store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#remove_roots_from_chain PkiSecretBackendSign#remove_roots_from_chain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#remove_roots_from_chain PkiSecretBackendSign#remove_roots_from_chain}
   */
   readonly removeRootsFromChain?: boolean | cdktn.IResolvable;
   /**
   * Time to live.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#ttl PkiSecretBackendSign#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#ttl PkiSecretBackendSign#ttl}
   */
   readonly ttl?: string;
   /**
   * List of alternative URIs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#uri_sans PkiSecretBackendSign#uri_sans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#uri_sans PkiSecretBackendSign#uri_sans}
   */
   readonly uriSans?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign}
 */
 export class PkiSecretBackendSign extends cdktn.TerraformResource {
 
@@ -173,7 +146,7 @@ export class PkiSecretBackendSign extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PkiSecretBackendSign resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PkiSecretBackendSign to import
-  * @param importFromId The id of the existing PkiSecretBackendSign that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PkiSecretBackendSign that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PkiSecretBackendSign to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -185,7 +158,7 @@ export class PkiSecretBackendSign extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_sign vault_pki_secret_backend_sign} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -196,7 +169,7 @@ export class PkiSecretBackendSign extends cdktn.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_sign',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.0',
+        providerVersion: '5.10.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -218,14 +191,11 @@ export class PkiSecretBackendSign extends cdktn.TerraformResource {
     this._id = config.id;
     this._ipSans = config.ipSans;
     this._issuerRef = config.issuerRef;
-    this._jksPassword = config.jksPassword;
     this._minSecondsRemaining = config.minSecondsRemaining;
     this._name = config.name;
     this._namespace = config.namespace;
     this._notAfter = config.notAfter;
     this._otherSans = config.otherSans;
-    this._pkcs12Encoder = config.pkcs12Encoder;
-    this._pkcs12Password = config.pkcs12Password;
     this._removeRootsFromChain = config.removeRootsFromChain;
     this._ttl = config.ttl;
     this._uriSans = config.uriSans;
@@ -422,22 +392,6 @@ export class PkiSecretBackendSign extends cdktn.TerraformResource {
     return this.getStringAttribute('issuing_ca');
   }
 
-  // jks_password - computed: false, optional: true, required: false
-  private _jksPassword?: string; 
-  public get jksPassword() {
-    return this.getStringAttribute('jks_password');
-  }
-  public set jksPassword(value: string) {
-    this._jksPassword = value;
-  }
-  public resetJksPassword() {
-    this._jksPassword = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get jksPasswordInput() {
-    return this._jksPassword;
-  }
-
   // min_seconds_remaining - computed: false, optional: true, required: false
   private _minSecondsRemaining?: number; 
   public get minSecondsRemaining() {
@@ -515,38 +469,6 @@ export class PkiSecretBackendSign extends cdktn.TerraformResource {
     return this._otherSans;
   }
 
-  // pkcs12_encoder - computed: false, optional: true, required: false
-  private _pkcs12Encoder?: string; 
-  public get pkcs12Encoder() {
-    return this.getStringAttribute('pkcs12_encoder');
-  }
-  public set pkcs12Encoder(value: string) {
-    this._pkcs12Encoder = value;
-  }
-  public resetPkcs12Encoder() {
-    this._pkcs12Encoder = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pkcs12EncoderInput() {
-    return this._pkcs12Encoder;
-  }
-
-  // pkcs12_password - computed: false, optional: true, required: false
-  private _pkcs12Password?: string; 
-  public get pkcs12Password() {
-    return this.getStringAttribute('pkcs12_password');
-  }
-  public set pkcs12Password(value: string) {
-    this._pkcs12Password = value;
-  }
-  public resetPkcs12Password() {
-    this._pkcs12Password = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pkcs12PasswordInput() {
-    return this._pkcs12Password;
-  }
-
   // remove_roots_from_chain - computed: false, optional: true, required: false
   private _removeRootsFromChain?: boolean | cdktn.IResolvable; 
   public get removeRootsFromChain() {
@@ -622,14 +544,11 @@ export class PkiSecretBackendSign extends cdktn.TerraformResource {
       id: cdktn.stringToTerraform(this._id),
       ip_sans: cdktn.listMapper(cdktn.stringToTerraform, false)(this._ipSans),
       issuer_ref: cdktn.stringToTerraform(this._issuerRef),
-      jks_password: cdktn.stringToTerraform(this._jksPassword),
       min_seconds_remaining: cdktn.numberToTerraform(this._minSecondsRemaining),
       name: cdktn.stringToTerraform(this._name),
       namespace: cdktn.stringToTerraform(this._namespace),
       not_after: cdktn.stringToTerraform(this._notAfter),
       other_sans: cdktn.listMapper(cdktn.stringToTerraform, false)(this._otherSans),
-      pkcs12_encoder: cdktn.stringToTerraform(this._pkcs12Encoder),
-      pkcs12_password: cdktn.stringToTerraform(this._pkcs12Password),
       remove_roots_from_chain: cdktn.booleanToTerraform(this._removeRootsFromChain),
       ttl: cdktn.stringToTerraform(this._ttl),
       uri_sans: cdktn.listMapper(cdktn.stringToTerraform, false)(this._uriSans),
@@ -704,12 +623,6 @@ export class PkiSecretBackendSign extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
-      jks_password: {
-        value: cdktn.stringToHclTerraform(this._jksPassword),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       min_seconds_remaining: {
         value: cdktn.numberToHclTerraform(this._minSecondsRemaining),
         isBlock: false,
@@ -739,18 +652,6 @@ export class PkiSecretBackendSign extends cdktn.TerraformResource {
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
-      },
-      pkcs12_encoder: {
-        value: cdktn.stringToHclTerraform(this._pkcs12Encoder),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      pkcs12_password: {
-        value: cdktn.stringToHclTerraform(this._pkcs12Password),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
       },
       remove_roots_from_chain: {
         value: cdktn.booleanToHclTerraform(this._removeRootsFromChain),

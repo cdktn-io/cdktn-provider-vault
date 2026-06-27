@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,49 @@ export interface OsSecretBackendAccountConfig extends cdktn.TerraformMetaArgumen
   /**
   * Custom metadata for the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#custom_metadata OsSecretBackendAccount#custom_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#custom_metadata OsSecretBackendAccount#custom_metadata}
   */
   readonly customMetadata?: { [key: string]: string };
   /**
   * Disable automated password rotation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#disable_automated_rotation OsSecretBackendAccount#disable_automated_rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#disable_automated_rotation OsSecretBackendAccount#disable_automated_rotation}
   */
   readonly disableAutomatedRotation?: boolean | cdktn.IResolvable;
   /**
   * Name of the host this account belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#host OsSecretBackendAccount#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#host OsSecretBackendAccount#host}
   */
   readonly host: string;
   /**
   * Path where the OS secrets backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#mount OsSecretBackendAccount#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#mount OsSecretBackendAccount#mount}
   */
   readonly mount: string;
   /**
   * Name of the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#name OsSecretBackendAccount#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#name OsSecretBackendAccount#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#namespace OsSecretBackendAccount#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#namespace OsSecretBackendAccount#namespace}
   */
   readonly namespace?: string;
   /**
   * Reference to a parent account for rotation management.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#parent_account_ref OsSecretBackendAccount#parent_account_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#parent_account_ref OsSecretBackendAccount#parent_account_ref}
   */
   readonly parentAccountRef?: string;
   /**
   * Name of the password policy to use for password generation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#password_policy OsSecretBackendAccount#password_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#password_policy OsSecretBackendAccount#password_policy}
   */
   readonly passwordPolicy?: string;
   /**
@@ -65,43 +65,43 @@ export interface OsSecretBackendAccountConfig extends cdktn.TerraformMetaArgumen
   * 	and can only be set during resource creation. To update the password after creation, use the Vault CLI
   * 	or API to call the reset endpoint directly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#password_wo OsSecretBackendAccount#password_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#password_wo OsSecretBackendAccount#password_wo}
   */
   readonly passwordWo: string;
   /**
   * How often to rotate passwords, in seconds. Mutually exclusive with rotation_schedule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#rotation_period OsSecretBackendAccount#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#rotation_period OsSecretBackendAccount#rotation_period}
   */
   readonly rotationPeriod?: number;
   /**
   * Cron schedule for password rotation. Mutually exclusive with rotation_period.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#rotation_schedule OsSecretBackendAccount#rotation_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#rotation_schedule OsSecretBackendAccount#rotation_schedule}
   */
   readonly rotationSchedule?: string;
   /**
   * Window of time for password rotation, in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#rotation_window OsSecretBackendAccount#rotation_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#rotation_window OsSecretBackendAccount#rotation_window}
   */
   readonly rotationWindow?: number;
   /**
   * Username for the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#username OsSecretBackendAccount#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#username OsSecretBackendAccount#username}
   */
   readonly username: string;
   /**
   * Verify the connection to the host with the provided credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#verify_connection OsSecretBackendAccount#verify_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#verify_connection OsSecretBackendAccount#verify_connection}
   */
   readonly verifyConnection?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account vault_os_secret_backend_account}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account vault_os_secret_backend_account}
 */
 export class OsSecretBackendAccount extends cdktn.TerraformResource {
 
@@ -117,7 +117,7 @@ export class OsSecretBackendAccount extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OsSecretBackendAccount resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OsSecretBackendAccount to import
-  * @param importFromId The id of the existing OsSecretBackendAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OsSecretBackendAccount that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OsSecretBackendAccount to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -129,7 +129,7 @@ export class OsSecretBackendAccount extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_account vault_os_secret_backend_account} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_account vault_os_secret_backend_account} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -140,7 +140,7 @@ export class OsSecretBackendAccount extends cdktn.TerraformResource {
       terraformResourceType: 'vault_os_secret_backend_account',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.0',
+        providerVersion: '5.10.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

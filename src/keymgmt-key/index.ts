@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,49 +15,49 @@ export interface KeymgmtKeyConfig extends cdktn.TerraformMetaArguments {
   /**
   * Specifies if the key is allowed to be deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#deletion_allowed KeymgmtKey#deletion_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key#deletion_allowed KeymgmtKey#deletion_allowed}
   */
   readonly deletionAllowed?: boolean | cdktn.IResolvable;
   /**
   * Specifies the minimum enabled version of the key. All versions of the key less than the specified version will be disabled for cryptographic operations in the KMS provider that the key has been distributed to. Setting this value to 0 means that all versions will be enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#min_enabled_version KeymgmtKey#min_enabled_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key#min_enabled_version KeymgmtKey#min_enabled_version}
   */
   readonly minEnabledVersion?: number;
   /**
   * Path of the Key Management secrets engine mount. Must match the `path` of a `vault_mount` resource with `type = "keymgmt"`. Use `vault_mount.keymgmt.path` here.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#mount KeymgmtKey#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key#mount KeymgmtKey#mount}
   */
   readonly mount: string;
   /**
   * Specifies the name of the key to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#name KeymgmtKey#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key#name KeymgmtKey#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#namespace KeymgmtKey#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key#namespace KeymgmtKey#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the regions in which the key should be replicated. Supported only for AWS KMS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#replica_regions KeymgmtKey#replica_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key#replica_regions KeymgmtKey#replica_regions}
   */
   readonly replicaRegions?: string[];
   /**
   * Specifies the type of cryptographic key to create. aes256-gcm96, rsa-2048, rsa-3072, rsa-4096, ecdsa-p256, ecdsa-p384, ecdsa-p521 key types are supported. Defaults to `rsa-2048`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#type KeymgmtKey#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key#type KeymgmtKey#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key vault_keymgmt_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key vault_keymgmt_key}
 */
 export class KeymgmtKey extends cdktn.TerraformResource {
 
@@ -73,7 +73,7 @@ export class KeymgmtKey extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KeymgmtKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeymgmtKey to import
-  * @param importFromId The id of the existing KeymgmtKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KeymgmtKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeymgmtKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -85,7 +85,7 @@ export class KeymgmtKey extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key vault_keymgmt_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key vault_keymgmt_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -96,7 +96,7 @@ export class KeymgmtKey extends cdktn.TerraformResource {
       terraformResourceType: 'vault_keymgmt_key',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.0',
+        providerVersion: '5.10.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

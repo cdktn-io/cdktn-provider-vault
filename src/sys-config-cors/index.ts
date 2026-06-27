@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/sys_config_cors
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/sys_config_cors
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface SysConfigCorsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Set of additional custom headers allowed on cross-origin requests. Vault automatically includes standard headers (Content-Type, X-Requested-With, X-Vault-AWS-IAM-Server-ID, X-Vault-MFA, X-Vault-No-Request-Forwarding, X-Vault-Wrap-Format, X-Vault-Wrap-TTL, X-Vault-Policy-Override, Authorization, X-Vault-Token), so only specify custom headers here.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/sys_config_cors#allowed_headers SysConfigCors#allowed_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/sys_config_cors#allowed_headers SysConfigCors#allowed_headers}
   */
   readonly allowedHeaders?: string[];
   /**
   * Set of origins permitted to make cross-origin requests. Use `*` as the only value to allow all origins.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/sys_config_cors#allowed_origins SysConfigCors#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/sys_config_cors#allowed_origins SysConfigCors#allowed_origins}
   */
   readonly allowedOrigins: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/sys_config_cors vault_sys_config_cors}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/sys_config_cors vault_sys_config_cors}
 */
 export class SysConfigCors extends cdktn.TerraformResource {
 
@@ -43,7 +43,7 @@ export class SysConfigCors extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SysConfigCors resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SysConfigCors to import
-  * @param importFromId The id of the existing SysConfigCors that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/sys_config_cors#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SysConfigCors that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/sys_config_cors#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SysConfigCors to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -55,7 +55,7 @@ export class SysConfigCors extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/sys_config_cors vault_sys_config_cors} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/sys_config_cors vault_sys_config_cors} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class SysConfigCors extends cdktn.TerraformResource {
       terraformResourceType: 'vault_sys_config_cors',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.0',
+        providerVersion: '5.10.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

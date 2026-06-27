@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/activation_flags
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/activation_flags
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataVaultActivationFlagsConfig extends cdktn.TerraformMetaArgum
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/activation_flags vault_activation_flags}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/activation_flags vault_activation_flags}
 */
 export class DataVaultActivationFlags extends cdktn.TerraformDataSource {
 
@@ -31,7 +31,7 @@ export class DataVaultActivationFlags extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataVaultActivationFlags resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultActivationFlags to import
-  * @param importFromId The id of the existing DataVaultActivationFlags that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/activation_flags#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultActivationFlags that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/activation_flags#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultActivationFlags to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -43,7 +43,7 @@ export class DataVaultActivationFlags extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/activation_flags vault_activation_flags} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/activation_flags vault_activation_flags} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class DataVaultActivationFlags extends cdktn.TerraformDataSource {
       terraformResourceType: 'vault_activation_flags',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.0',
+        providerVersion: '5.10.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
