@@ -4,7 +4,7 @@
 
 ### PluginRuntime <a name="PluginRuntime" id="@cdktn/provider-vault.pluginRuntime.PluginRuntime"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime vault_plugin_runtime}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_runtime vault_plugin_runtime}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pluginRuntime.PluginRuntime.Initializer"></a>
 
@@ -531,7 +531,7 @@ The construct id used in the generated config for the PluginRuntime to import.
 
 The id of the existing PluginRuntime that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_runtime#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly name: string;
 
 The name of the plugin runtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#name PluginRuntime#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_runtime#name PluginRuntime#name}
 
 ---
 
@@ -1039,7 +1039,7 @@ public readonly type: string;
 
 Specifies the plugin runtime type. Currently only `container` is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#type PluginRuntime#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_runtime#type PluginRuntime#type}
 
 ---
 
@@ -1053,7 +1053,7 @@ public readonly cgroupParent: string;
 
 Specifies the parent cgroup to set for each container.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#cgroup_parent PluginRuntime#cgroup_parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_runtime#cgroup_parent PluginRuntime#cgroup_parent}
 
 ---
 
@@ -1067,7 +1067,7 @@ public readonly cpuNanos: number;
 
 Specifies CPU limit to set per container in billionths of a CPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#cpu_nanos PluginRuntime#cpu_nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_runtime#cpu_nanos PluginRuntime#cpu_nanos}
 
 ---
 
@@ -1081,7 +1081,7 @@ public readonly memoryBytes: number;
 
 Specifies memory limit to set per container in bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#memory_bytes PluginRuntime#memory_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_runtime#memory_bytes PluginRuntime#memory_bytes}
 
 ---
 
@@ -1095,7 +1095,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#namespace PluginRuntime#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_runtime#namespace PluginRuntime#namespace}
 
 ---
 
@@ -1109,7 +1109,7 @@ public readonly ociRuntime: string;
 
 Specifies OCI-compliant container runtime to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#oci_runtime PluginRuntime#oci_runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_runtime#oci_runtime PluginRuntime#oci_runtime}
 
 ---
 
@@ -1123,7 +1123,7 @@ public readonly rootless: boolean | IResolvable;
 
 Whether the container runtime is running as a non-privileged user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/plugin_runtime#rootless PluginRuntime#rootless}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/plugin_runtime#rootless PluginRuntime#rootless}
 
 ---
 

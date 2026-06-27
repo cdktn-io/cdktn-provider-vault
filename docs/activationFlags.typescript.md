@@ -4,7 +4,7 @@
 
 ### ActivationFlags <a name="ActivationFlags" id="@cdktn/provider-vault.activationFlags.ActivationFlags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/activation_flags vault_activation_flags}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/activation_flags vault_activation_flags}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.activationFlags.ActivationFlags.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ActivationFlags to import.
 
 The id of the existing ActivationFlags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/activation_flags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/activation_flags#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,7 +822,7 @@ public readonly feature: string;
 
 Exact feature key to activate with PUT /sys/activation-flags/:feature/activate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/activation_flags#feature ActivationFlags#feature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/activation_flags#feature ActivationFlags#feature}
 
 ---
 

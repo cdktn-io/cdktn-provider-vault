@@ -4,7 +4,7 @@
 
 ### KeymgmtKeyRotate <a name="KeymgmtKeyRotate" id="@cdktn/provider-vault.keymgmtKeyRotate.KeymgmtKeyRotate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate vault_keymgmt_key_rotate}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key_rotate vault_keymgmt_key_rotate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.keymgmtKeyRotate.KeymgmtKeyRotate.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the KeymgmtKeyRotate to import
 
 The id of the existing KeymgmtKeyRotate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key_rotate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,7 +888,7 @@ Path of the Key Management secrets engine mount.
 
 Must match the `path` of a `vault_mount` resource with `type = "keymgmt"`. Use `vault_mount.keymgmt.path` here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate#mount KeymgmtKeyRotate#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key_rotate#mount KeymgmtKeyRotate#mount}
 
 ---
 
@@ -902,7 +902,7 @@ Name *string
 
 Specifies the name of the key to rotate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate#name KeymgmtKeyRotate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key_rotate#name KeymgmtKeyRotate#name}
 
 ---
 
@@ -916,7 +916,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_key_rotate#namespace KeymgmtKeyRotate#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_key_rotate#namespace KeymgmtKeyRotate#namespace}
 
 ---
 

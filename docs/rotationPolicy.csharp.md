@@ -4,7 +4,7 @@
 
 ### RotationPolicy <a name="RotationPolicy" id="@cdktn/provider-vault.rotationPolicy.RotationPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy vault_rotation_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/rotation_policy vault_rotation_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.rotationPolicy.RotationPolicy.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the RotationPolicy to import.
 
 The id of the existing RotationPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/rotation_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -899,7 +899,7 @@ public double MaxRetriesPerCycle { get; set; }
 
 Maximum retries per cycle for this rotation policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy#max_retries_per_cycle RotationPolicy#max_retries_per_cycle}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/rotation_policy#max_retries_per_cycle RotationPolicy#max_retries_per_cycle}
 
 ---
 
@@ -913,7 +913,7 @@ public double MaxRetryCycles { get; set; }
 
 Maximum retry cycles for this rotation policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy#max_retry_cycles RotationPolicy#max_retry_cycles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/rotation_policy#max_retry_cycles RotationPolicy#max_retry_cycles}
 
 ---
 
@@ -927,7 +927,7 @@ public string Name { get; set; }
 
 Name of the rotation policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy#name RotationPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/rotation_policy#name RotationPolicy#name}
 
 ---
 
@@ -941,7 +941,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/rotation_policy#namespace RotationPolicy#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/rotation_policy#namespace RotationPolicy#namespace}
 
 ---
 

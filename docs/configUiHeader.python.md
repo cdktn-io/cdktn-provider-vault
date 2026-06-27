@@ -4,7 +4,7 @@
 
 ### ConfigUiHeader <a name="ConfigUiHeader" id="@cdktn/provider-vault.configUiHeader.ConfigUiHeader"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_header vault_config_ui_header}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_header vault_config_ui_header}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.configUiHeader.ConfigUiHeader.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the custom header. Cannot start with `X-Vault-`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_header#name ConfigUiHeader#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_header#name ConfigUiHeader#name}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Set of values for the header. At least one value is required. Duplicates are automatically ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_header#values ConfigUiHeader#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_header#values ConfigUiHeader#values}
 
 ---
 
@@ -615,7 +615,7 @@ The construct id used in the generated config for the ConfigUiHeader to import.
 
 The id of the existing ConfigUiHeader that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_header#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_header#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -970,7 +970,7 @@ name: str
 
 The name of the custom header. Cannot start with `X-Vault-`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_header#name ConfigUiHeader#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_header#name ConfigUiHeader#name}
 
 ---
 
@@ -984,7 +984,7 @@ values: typing.List[str]
 
 Set of values for the header. At least one value is required. Duplicates are automatically ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_header#values ConfigUiHeader#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_header#values ConfigUiHeader#values}
 
 ---
 

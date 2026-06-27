@@ -4,7 +4,7 @@
 
 ### DataVaultSysConfigCors <a name="DataVaultSysConfigCors" id="@cdktn/provider-vault.dataVaultSysConfigCors.DataVaultSysConfigCors"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/sys_config_cors vault_sys_config_cors}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/sys_config_cors vault_sys_config_cors}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultSysConfigCors.DataVaultSysConfigCors.Initializer"></a>
 
@@ -437,7 +437,7 @@ The construct id used in the generated config for the DataVaultSysConfigCors to 
 
 The id of the existing DataVaultSysConfigCors that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/sys_config_cors#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/sys_config_cors#import import section} in the documentation of this resource for the id to use
 
 ---
 

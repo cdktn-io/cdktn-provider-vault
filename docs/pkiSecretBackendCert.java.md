@@ -4,7 +4,7 @@
 
 ### PkiSecretBackendCert <a name="PkiSecretBackendCert" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer"></a>
 
@@ -30,14 +30,10 @@ PkiSecretBackendCert.Builder.create(Construct scope, java.lang.String id)
 //  .id(java.lang.String)
 //  .ipSans(java.util.List<java.lang.String>)
 //  .issuerRef(java.lang.String)
-//  .jksPassword(java.lang.String)
-//  .jksPrivateKeyAlias(java.lang.String)
 //  .minSecondsRemaining(java.lang.Number)
 //  .namespace(java.lang.String)
 //  .notAfter(java.lang.String)
 //  .otherSans(java.util.List<java.lang.String>)
-//  .pkcs12Encoder(java.lang.String)
-//  .pkcs12Password(java.lang.String)
 //  .privateKeyFormat(java.lang.String)
 //  .removeRootsFromChain(java.lang.Boolean|IResolvable)
 //  .revoke(java.lang.Boolean|IResolvable)
@@ -66,18 +62,14 @@ PkiSecretBackendCert.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.autoRenew">autoRenew</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.certMetadata">certMetadata</a></code> | <code>java.lang.String</code> | A base 64 encoded value or an empty string to associate with the certificate's serial number. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.excludeCnFromSans">excludeCnFromSans</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Flag to exclude CN from SANs. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.format">format</a></code> | <code>java.lang.String</code> | The format of data. Values "pkcs12_bundle" and "jks_bundle" require Vault version 2.1.0 or later. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.format">format</a></code> | <code>java.lang.String</code> | The format of data. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.ipSans">ipSans</a></code> | <code>java.util.List<java.lang.String></code> | List of alternative IPs. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.issuerRef">issuerRef</a></code> | <code>java.lang.String</code> | Specifies the default issuer of this request. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.jksPassword">jksPassword</a></code> | <code>java.lang.String</code> | Password for encrypting the Java keystore 		when format is set to "jks_bundle". |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.jksPrivateKeyAlias">jksPrivateKeyAlias</a></code> | <code>java.lang.String</code> | The entry alias in the Java keystore (JKS) when format is set to "jks_bundle"  				and bundle contains a single PrivateKeyEntry. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.minSecondsRemaining">minSecondsRemaining</a></code> | <code>java.lang.Number</code> | Generate a new certificate when the expiration is within this number of seconds. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.notAfter">notAfter</a></code> | <code>java.lang.String</code> | Set the Not After field of the certificate with specified date value. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.otherSans">otherSans</a></code> | <code>java.util.List<java.lang.String></code> | List of other SANs. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.pkcs12Encoder">pkcs12Encoder</a></code> | <code>java.lang.String</code> | Encoder profile to use for PKCS#12 archives when  format is set to "pkcs12_bundle". |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.pkcs12Password">pkcs12Password</a></code> | <code>java.lang.String</code> | Password for encrypting the PKCS#12  		archive when format is set to "pkcs12_bundle". |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.privateKeyFormat">privateKeyFormat</a></code> | <code>java.lang.String</code> | The private key format. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.removeRootsFromChain">removeRootsFromChain</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, the returned ca_chain field will not include any self-signed CA certificates. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.revoke">revoke</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Revoke the certificate upon resource destruction. |
@@ -154,7 +146,7 @@ Must be unique amongst siblings in the same scope
 
 The PKI secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
 
 ---
 
@@ -164,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 CN of the certificate to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
 
 ---
 
@@ -174,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the role to create the certificate against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
 
 ---
 
@@ -184,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of alternative names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
 
 ---
 
@@ -194,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
 
 ---
 
@@ -206,7 +198,7 @@ A base 64 encoded value or an empty string to associate with the certificate's s
 
 The role's no_store_metadata must be set to false, otherwise an error is returned when specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#cert_metadata PkiSecretBackendCert#cert_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#cert_metadata PkiSecretBackendCert#cert_metadata}
 
 ---
 
@@ -216,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Flag to exclude CN from SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
 
 ---
 
@@ -224,9 +216,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-The format of data. Values "pkcs12_bundle" and "jks_bundle" require Vault version 2.1.0 or later.
+The format of data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
 
 ---
 
@@ -234,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -247,7 +239,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 List of alternative IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
 
 ---
 
@@ -257,36 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the default issuer of this request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
-
----
-
-##### `jksPassword`<sup>Optional</sup> <a name="jksPassword" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.jksPassword"></a>
-
-- *Type:* java.lang.String
-
-Password for encrypting the Java keystore 		when format is set to "jks_bundle".
-
-If not provided,
-defaults to "changeit". It is recommended to use the default password
-and protect the file using other means or use a high-entropy password.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#jks_password PkiSecretBackendCert#jks_password}
-
----
-
-##### `jksPrivateKeyAlias`<sup>Optional</sup> <a name="jksPrivateKeyAlias" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.jksPrivateKeyAlias"></a>
-
-- *Type:* java.lang.String
-
-The entry alias in the Java keystore (JKS) when format is set to "jks_bundle"  				and bundle contains a single PrivateKeyEntry.
-
-This field is case-sensitive, but relying
-on case-only differences for unique aliases is not recommended. Defaults to "1".
-This parameter is ignored by endpoints that return TrustedCertificateEntry values
-(JKS trust stores), and entry aliases are assigned incrementing numeric strings starting at "1".
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#jks_private_key_alias PkiSecretBackendCert#jks_private_key_alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
 
 ---
 
@@ -296,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Generate a new certificate when the expiration is within this number of seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
 
 ---
 
@@ -306,7 +269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
 
 ---
 
@@ -318,7 +281,7 @@ Set the Not After field of the certificate with specified date value.
 
 The value format should be given in UTC format YYYY-MM-ddTHH:MM:SSZ. Supports the Y10K end date for IEEE 802.1AR-2018 standard devices, 9999-12-31T23:59:59Z.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#not_after PkiSecretBackendCert#not_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#not_after PkiSecretBackendCert#not_after}
 
 ---
 
@@ -328,35 +291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of other SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
-
----
-
-##### `pkcs12Encoder`<sup>Optional</sup> <a name="pkcs12Encoder" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.pkcs12Encoder"></a>
-
-- *Type:* java.lang.String
-
-Encoder profile to use for PKCS#12 archives when  format is set to "pkcs12_bundle".
-
-Valid values are "modern2026" and
-"modern2023". Defaults to "modern2026", which uses the newer PKCS#12
-integrity format (PBMAC1).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#pkcs12_encoder PkiSecretBackendCert#pkcs12_encoder}
-
----
-
-##### `pkcs12Password`<sup>Optional</sup> <a name="pkcs12Password" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer.parameter.pkcs12Password"></a>
-
-- *Type:* java.lang.String
-
-Password for encrypting the PKCS#12  		archive when format is set to "pkcs12_bundle".
-
-If not provided,
-defaults to "changeit". It is recommended to use the default password
-and protect the file using other means or use a high-entropy password.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#pkcs12_password PkiSecretBackendCert#pkcs12_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
 
 ---
 
@@ -366,7 +301,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The private key format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
 
 ---
 
@@ -378,7 +313,7 @@ If true, the returned ca_chain field will not include any self-signed CA certifi
 
 Useful if end-users already have the root CA in their trust store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#remove_roots_from_chain PkiSecretBackendCert#remove_roots_from_chain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#remove_roots_from_chain PkiSecretBackendCert#remove_roots_from_chain}
 
 ---
 
@@ -388,7 +323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Revoke the certificate upon resource destruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
 
 ---
 
@@ -398,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Revoke the certificate with private key method upon resource destruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#revoke_with_key PkiSecretBackendCert#revoke_with_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#revoke_with_key PkiSecretBackendCert#revoke_with_key}
 
 ---
 
@@ -408,7 +343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Time to live.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
 
 ---
 
@@ -418,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of alternative URIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
 
 ---
 
@@ -428,7 +363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of Subject User IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#user_ids PkiSecretBackendCert#user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#user_ids PkiSecretBackendCert#user_ids}
 
 ---
 
@@ -468,14 +403,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetIpSans">resetIpSans</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetIssuerRef">resetIssuerRef</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetJksPassword">resetJksPassword</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetJksPrivateKeyAlias">resetJksPrivateKeyAlias</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetMinSecondsRemaining">resetMinSecondsRemaining</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetNamespace">resetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetNotAfter">resetNotAfter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetOtherSans">resetOtherSans</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetPkcs12Encoder">resetPkcs12Encoder</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetPkcs12Password">resetPkcs12Password</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetPrivateKeyFormat">resetPrivateKeyFormat</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetRemoveRootsFromChain">resetRemoveRootsFromChain</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetRevoke">resetRevoke</a></code> | *No description.* |
@@ -845,18 +776,6 @@ public void resetIpSans()
 public void resetIssuerRef()
 ```
 
-##### `resetJksPassword` <a name="resetJksPassword" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetJksPassword"></a>
-
-```java
-public void resetJksPassword()
-```
-
-##### `resetJksPrivateKeyAlias` <a name="resetJksPrivateKeyAlias" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetJksPrivateKeyAlias"></a>
-
-```java
-public void resetJksPrivateKeyAlias()
-```
-
 ##### `resetMinSecondsRemaining` <a name="resetMinSecondsRemaining" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetMinSecondsRemaining"></a>
 
 ```java
@@ -879,18 +798,6 @@ public void resetNotAfter()
 
 ```java
 public void resetOtherSans()
-```
-
-##### `resetPkcs12Encoder` <a name="resetPkcs12Encoder" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetPkcs12Encoder"></a>
-
-```java
-public void resetPkcs12Encoder()
-```
-
-##### `resetPkcs12Password` <a name="resetPkcs12Password" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetPkcs12Password"></a>
-
-```java
-public void resetPkcs12Password()
 ```
 
 ##### `resetPrivateKeyFormat` <a name="resetPrivateKeyFormat" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.resetPrivateKeyFormat"></a>
@@ -1038,7 +945,7 @@ The construct id used in the generated config for the PkiSecretBackendCert to im
 
 The id of the existing PkiSecretBackendCert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1086,15 +993,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.ipSansInput">ipSansInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.issuerRefInput">issuerRefInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.jksPasswordInput">jksPasswordInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.jksPrivateKeyAliasInput">jksPrivateKeyAliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.minSecondsRemainingInput">minSecondsRemainingInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.notAfterInput">notAfterInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.otherSansInput">otherSansInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.pkcs12EncoderInput">pkcs12EncoderInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.pkcs12PasswordInput">pkcs12PasswordInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.privateKeyFormatInput">privateKeyFormatInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.removeRootsFromChainInput">removeRootsFromChainInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.revokeInput">revokeInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -1112,15 +1015,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.ipSans">ipSans</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.issuerRef">issuerRef</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.jksPassword">jksPassword</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.jksPrivateKeyAlias">jksPrivateKeyAlias</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.minSecondsRemaining">minSecondsRemaining</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.notAfter">notAfter</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.otherSans">otherSans</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.pkcs12Encoder">pkcs12Encoder</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.pkcs12Password">pkcs12Password</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.privateKeyFormat">privateKeyFormat</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.removeRootsFromChain">removeRootsFromChain</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.revoke">revoke</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -1453,26 +1352,6 @@ public java.lang.String getIssuerRefInput();
 
 ---
 
-##### `jksPasswordInput`<sup>Optional</sup> <a name="jksPasswordInput" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.jksPasswordInput"></a>
-
-```java
-public java.lang.String getJksPasswordInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `jksPrivateKeyAliasInput`<sup>Optional</sup> <a name="jksPrivateKeyAliasInput" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.jksPrivateKeyAliasInput"></a>
-
-```java
-public java.lang.String getJksPrivateKeyAliasInput();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `minSecondsRemainingInput`<sup>Optional</sup> <a name="minSecondsRemainingInput" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.minSecondsRemainingInput"></a>
 
 ```java
@@ -1520,26 +1399,6 @@ public java.util.List<java.lang.String> getOtherSansInput();
 ```
 
 - *Type:* java.util.List<java.lang.String>
-
----
-
-##### `pkcs12EncoderInput`<sup>Optional</sup> <a name="pkcs12EncoderInput" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.pkcs12EncoderInput"></a>
-
-```java
-public java.lang.String getPkcs12EncoderInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `pkcs12PasswordInput`<sup>Optional</sup> <a name="pkcs12PasswordInput" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.pkcs12PasswordInput"></a>
-
-```java
-public java.lang.String getPkcs12PasswordInput();
-```
-
-- *Type:* java.lang.String
 
 ---
 
@@ -1713,26 +1572,6 @@ public java.lang.String getIssuerRef();
 
 ---
 
-##### `jksPassword`<sup>Required</sup> <a name="jksPassword" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.jksPassword"></a>
-
-```java
-public java.lang.String getJksPassword();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `jksPrivateKeyAlias`<sup>Required</sup> <a name="jksPrivateKeyAlias" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.jksPrivateKeyAlias"></a>
-
-```java
-public java.lang.String getJksPrivateKeyAlias();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `minSecondsRemaining`<sup>Required</sup> <a name="minSecondsRemaining" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.minSecondsRemaining"></a>
 
 ```java
@@ -1780,26 +1619,6 @@ public java.util.List<java.lang.String> getOtherSans();
 ```
 
 - *Type:* java.util.List<java.lang.String>
-
----
-
-##### `pkcs12Encoder`<sup>Required</sup> <a name="pkcs12Encoder" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.pkcs12Encoder"></a>
-
-```java
-public java.lang.String getPkcs12Encoder();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `pkcs12Password`<sup>Required</sup> <a name="pkcs12Password" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.property.pkcs12Password"></a>
-
-```java
-public java.lang.String getPkcs12Password();
-```
-
-- *Type:* java.lang.String
 
 ---
 
@@ -1919,14 +1738,10 @@ PkiSecretBackendCertConfig.builder()
 //  .id(java.lang.String)
 //  .ipSans(java.util.List<java.lang.String>)
 //  .issuerRef(java.lang.String)
-//  .jksPassword(java.lang.String)
-//  .jksPrivateKeyAlias(java.lang.String)
 //  .minSecondsRemaining(java.lang.Number)
 //  .namespace(java.lang.String)
 //  .notAfter(java.lang.String)
 //  .otherSans(java.util.List<java.lang.String>)
-//  .pkcs12Encoder(java.lang.String)
-//  .pkcs12Password(java.lang.String)
 //  .privateKeyFormat(java.lang.String)
 //  .removeRootsFromChain(java.lang.Boolean|IResolvable)
 //  .revoke(java.lang.Boolean|IResolvable)
@@ -1955,18 +1770,14 @@ PkiSecretBackendCertConfig.builder()
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.autoRenew">autoRenew</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.certMetadata">certMetadata</a></code> | <code>java.lang.String</code> | A base 64 encoded value or an empty string to associate with the certificate's serial number. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.excludeCnFromSans">excludeCnFromSans</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Flag to exclude CN from SANs. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.format">format</a></code> | <code>java.lang.String</code> | The format of data. Values "pkcs12_bundle" and "jks_bundle" require Vault version 2.1.0 or later. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.format">format</a></code> | <code>java.lang.String</code> | The format of data. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.ipSans">ipSans</a></code> | <code>java.util.List<java.lang.String></code> | List of alternative IPs. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.issuerRef">issuerRef</a></code> | <code>java.lang.String</code> | Specifies the default issuer of this request. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.jksPassword">jksPassword</a></code> | <code>java.lang.String</code> | Password for encrypting the Java keystore 		when format is set to "jks_bundle". |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.jksPrivateKeyAlias">jksPrivateKeyAlias</a></code> | <code>java.lang.String</code> | The entry alias in the Java keystore (JKS) when format is set to "jks_bundle"  				and bundle contains a single PrivateKeyEntry. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.minSecondsRemaining">minSecondsRemaining</a></code> | <code>java.lang.Number</code> | Generate a new certificate when the expiration is within this number of seconds. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.notAfter">notAfter</a></code> | <code>java.lang.String</code> | Set the Not After field of the certificate with specified date value. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.otherSans">otherSans</a></code> | <code>java.util.List<java.lang.String></code> | List of other SANs. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.pkcs12Encoder">pkcs12Encoder</a></code> | <code>java.lang.String</code> | Encoder profile to use for PKCS#12 archives when  format is set to "pkcs12_bundle". |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.pkcs12Password">pkcs12Password</a></code> | <code>java.lang.String</code> | Password for encrypting the PKCS#12  		archive when format is set to "pkcs12_bundle". |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.privateKeyFormat">privateKeyFormat</a></code> | <code>java.lang.String</code> | The private key format. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.removeRootsFromChain">removeRootsFromChain</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, the returned ca_chain field will not include any self-signed CA certificates. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.revoke">revoke</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Revoke the certificate upon resource destruction. |
@@ -2057,7 +1868,7 @@ public java.lang.String getBackend();
 
 The PKI secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
 
 ---
 
@@ -2071,7 +1882,7 @@ public java.lang.String getCommonName();
 
 CN of the certificate to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
 
 ---
 
@@ -2085,7 +1896,7 @@ public java.lang.String getName();
 
 Name of the role to create the certificate against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
 
 ---
 
@@ -2099,7 +1910,7 @@ public java.util.List<java.lang.String> getAltNames();
 
 List of alternative names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
 
 ---
 
@@ -2113,7 +1924,7 @@ public java.lang.Boolean|IResolvable getAutoRenew();
 
 If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
 
 ---
 
@@ -2129,7 +1940,7 @@ A base 64 encoded value or an empty string to associate with the certificate's s
 
 The role's no_store_metadata must be set to false, otherwise an error is returned when specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#cert_metadata PkiSecretBackendCert#cert_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#cert_metadata PkiSecretBackendCert#cert_metadata}
 
 ---
 
@@ -2143,7 +1954,7 @@ public java.lang.Boolean|IResolvable getExcludeCnFromSans();
 
 Flag to exclude CN from SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
 
 ---
 
@@ -2155,9 +1966,9 @@ public java.lang.String getFormat();
 
 - *Type:* java.lang.String
 
-The format of data. Values "pkcs12_bundle" and "jks_bundle" require Vault version 2.1.0 or later.
+The format of data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
 
 ---
 
@@ -2169,7 +1980,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2186,7 +1997,7 @@ public java.util.List<java.lang.String> getIpSans();
 
 List of alternative IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
 
 ---
 
@@ -2200,44 +2011,7 @@ public java.lang.String getIssuerRef();
 
 Specifies the default issuer of this request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
-
----
-
-##### `jksPassword`<sup>Optional</sup> <a name="jksPassword" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.jksPassword"></a>
-
-```java
-public java.lang.String getJksPassword();
-```
-
-- *Type:* java.lang.String
-
-Password for encrypting the Java keystore 		when format is set to "jks_bundle".
-
-If not provided,
-defaults to "changeit". It is recommended to use the default password
-and protect the file using other means or use a high-entropy password.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#jks_password PkiSecretBackendCert#jks_password}
-
----
-
-##### `jksPrivateKeyAlias`<sup>Optional</sup> <a name="jksPrivateKeyAlias" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.jksPrivateKeyAlias"></a>
-
-```java
-public java.lang.String getJksPrivateKeyAlias();
-```
-
-- *Type:* java.lang.String
-
-The entry alias in the Java keystore (JKS) when format is set to "jks_bundle"  				and bundle contains a single PrivateKeyEntry.
-
-This field is case-sensitive, but relying
-on case-only differences for unique aliases is not recommended. Defaults to "1".
-This parameter is ignored by endpoints that return TrustedCertificateEntry values
-(JKS trust stores), and entry aliases are assigned incrementing numeric strings starting at "1".
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#jks_private_key_alias PkiSecretBackendCert#jks_private_key_alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
 
 ---
 
@@ -2251,7 +2025,7 @@ public java.lang.Number getMinSecondsRemaining();
 
 Generate a new certificate when the expiration is within this number of seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
 
 ---
 
@@ -2265,7 +2039,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
 
 ---
 
@@ -2281,7 +2055,7 @@ Set the Not After field of the certificate with specified date value.
 
 The value format should be given in UTC format YYYY-MM-ddTHH:MM:SSZ. Supports the Y10K end date for IEEE 802.1AR-2018 standard devices, 9999-12-31T23:59:59Z.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#not_after PkiSecretBackendCert#not_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#not_after PkiSecretBackendCert#not_after}
 
 ---
 
@@ -2295,43 +2069,7 @@ public java.util.List<java.lang.String> getOtherSans();
 
 List of other SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
-
----
-
-##### `pkcs12Encoder`<sup>Optional</sup> <a name="pkcs12Encoder" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.pkcs12Encoder"></a>
-
-```java
-public java.lang.String getPkcs12Encoder();
-```
-
-- *Type:* java.lang.String
-
-Encoder profile to use for PKCS#12 archives when  format is set to "pkcs12_bundle".
-
-Valid values are "modern2026" and
-"modern2023". Defaults to "modern2026", which uses the newer PKCS#12
-integrity format (PBMAC1).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#pkcs12_encoder PkiSecretBackendCert#pkcs12_encoder}
-
----
-
-##### `pkcs12Password`<sup>Optional</sup> <a name="pkcs12Password" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.pkcs12Password"></a>
-
-```java
-public java.lang.String getPkcs12Password();
-```
-
-- *Type:* java.lang.String
-
-Password for encrypting the PKCS#12  		archive when format is set to "pkcs12_bundle".
-
-If not provided,
-defaults to "changeit". It is recommended to use the default password
-and protect the file using other means or use a high-entropy password.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#pkcs12_password PkiSecretBackendCert#pkcs12_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
 
 ---
 
@@ -2345,7 +2083,7 @@ public java.lang.String getPrivateKeyFormat();
 
 The private key format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
 
 ---
 
@@ -2361,7 +2099,7 @@ If true, the returned ca_chain field will not include any self-signed CA certifi
 
 Useful if end-users already have the root CA in their trust store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#remove_roots_from_chain PkiSecretBackendCert#remove_roots_from_chain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#remove_roots_from_chain PkiSecretBackendCert#remove_roots_from_chain}
 
 ---
 
@@ -2375,7 +2113,7 @@ public java.lang.Boolean|IResolvable getRevoke();
 
 Revoke the certificate upon resource destruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
 
 ---
 
@@ -2389,7 +2127,7 @@ public java.lang.Boolean|IResolvable getRevokeWithKey();
 
 Revoke the certificate with private key method upon resource destruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#revoke_with_key PkiSecretBackendCert#revoke_with_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#revoke_with_key PkiSecretBackendCert#revoke_with_key}
 
 ---
 
@@ -2403,7 +2141,7 @@ public java.lang.String getTtl();
 
 Time to live.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
 
 ---
 
@@ -2417,7 +2155,7 @@ public java.util.List<java.lang.String> getUriSans();
 
 List of alternative URIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
 
 ---
 
@@ -2431,7 +2169,7 @@ public java.util.List<java.lang.String> getUserIds();
 
 List of Subject User IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_secret_backend_cert#user_ids PkiSecretBackendCert#user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_secret_backend_cert#user_ids PkiSecretBackendCert#user_ids}
 
 ---
 

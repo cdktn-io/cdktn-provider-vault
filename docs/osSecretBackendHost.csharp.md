@@ -4,7 +4,7 @@
 
 ### OsSecretBackendHost <a name="OsSecretBackendHost" id="@cdktn/provider-vault.osSecretBackendHost.OsSecretBackendHost"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host vault_os_secret_backend_host}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host vault_os_secret_backend_host}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.osSecretBackendHost.OsSecretBackendHost.Initializer"></a>
 
@@ -552,7 +552,7 @@ The construct id used in the generated config for the OsSecretBackendHost to imp
 
 The id of the existing OsSecretBackendHost that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1147,7 +1147,7 @@ public string Address { get; set; }
 
 Address of the host (hostname or IP).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host#address OsSecretBackendHost#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host#address OsSecretBackendHost#address}
 
 ---
 
@@ -1161,7 +1161,7 @@ public string Mount { get; set; }
 
 Path where the OS secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host#mount OsSecretBackendHost#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host#mount OsSecretBackendHost#mount}
 
 ---
 
@@ -1175,7 +1175,7 @@ public string Name { get; set; }
 
 Name of the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host#name OsSecretBackendHost#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host#name OsSecretBackendHost#name}
 
 ---
 
@@ -1189,7 +1189,7 @@ public System.Collections.Generic.IDictionary<string, string> CustomMetadata { g
 
 Custom metadata for the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host#custom_metadata OsSecretBackendHost#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host#custom_metadata OsSecretBackendHost#custom_metadata}
 
 ---
 
@@ -1203,7 +1203,7 @@ public bool|IResolvable DisableAutomatedRotation { get; set; }
 
 Disable automated password rotation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host#disable_automated_rotation OsSecretBackendHost#disable_automated_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host#disable_automated_rotation OsSecretBackendHost#disable_automated_rotation}
 
 ---
 
@@ -1217,7 +1217,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host#namespace OsSecretBackendHost#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host#namespace OsSecretBackendHost#namespace}
 
 ---
 
@@ -1231,7 +1231,7 @@ public string PasswordPolicy { get; set; }
 
 Name of the password policy to use for password generation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host#password_policy OsSecretBackendHost#password_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host#password_policy OsSecretBackendHost#password_policy}
 
 ---
 
@@ -1245,7 +1245,7 @@ public double Port { get; set; }
 
 Port to connect to on the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host#port OsSecretBackendHost#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host#port OsSecretBackendHost#port}
 
 ---
 
@@ -1259,7 +1259,7 @@ public double RotationPeriod { get; set; }
 
 How often to rotate passwords, in seconds. Mutually exclusive with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host#rotation_period OsSecretBackendHost#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host#rotation_period OsSecretBackendHost#rotation_period}
 
 ---
 
@@ -1273,7 +1273,7 @@ public string RotationSchedule { get; set; }
 
 Cron schedule for password rotation. Mutually exclusive with rotation_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host#rotation_schedule OsSecretBackendHost#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host#rotation_schedule OsSecretBackendHost#rotation_schedule}
 
 ---
 
@@ -1287,7 +1287,7 @@ public double RotationWindow { get; set; }
 
 Window of time for password rotation, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host#rotation_window OsSecretBackendHost#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host#rotation_window OsSecretBackendHost#rotation_window}
 
 ---
 
@@ -1301,7 +1301,7 @@ public string SshHostKey { get; set; }
 
 SSH host key for the host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend_host#ssh_host_key OsSecretBackendHost#ssh_host_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend_host#ssh_host_key OsSecretBackendHost#ssh_host_key}
 
 ---
 

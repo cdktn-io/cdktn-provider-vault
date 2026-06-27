@@ -4,7 +4,7 @@
 
 ### SysConfigCors <a name="SysConfigCors" id="@cdktn/provider-vault.sysConfigCors.SysConfigCors"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/sys_config_cors vault_sys_config_cors}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/sys_config_cors vault_sys_config_cors}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.sysConfigCors.SysConfigCors.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the SysConfigCors to import.
 
 The id of the existing SysConfigCors that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/sys_config_cors#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/sys_config_cors#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -873,7 +873,7 @@ public string[] AllowedOrigins { get; set; }
 
 Set of origins permitted to make cross-origin requests. Use `*` as the only value to allow all origins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/sys_config_cors#allowed_origins SysConfigCors#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/sys_config_cors#allowed_origins SysConfigCors#allowed_origins}
 
 ---
 
@@ -889,7 +889,7 @@ Set of additional custom headers allowed on cross-origin requests.
 
 Vault automatically includes standard headers (Content-Type, X-Requested-With, X-Vault-AWS-IAM-Server-ID, X-Vault-MFA, X-Vault-No-Request-Forwarding, X-Vault-Wrap-Format, X-Vault-Wrap-TTL, X-Vault-Policy-Override, Authorization, X-Vault-Token), so only specify custom headers here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/sys_config_cors#allowed_headers SysConfigCors#allowed_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/sys_config_cors#allowed_headers SysConfigCors#allowed_headers}
 
 ---
 
