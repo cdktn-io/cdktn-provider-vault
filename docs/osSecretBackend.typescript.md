@@ -4,7 +4,7 @@
 
 ### OsSecretBackend <a name="OsSecretBackend" id="@cdktn/provider-vault.osSecretBackend.OsSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend vault_os_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend vault_os_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.osSecretBackend.OsSecretBackend.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the OsSecretBackend to import.
 
 The id of the existing OsSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -901,7 +901,7 @@ public readonly mount: string;
 
 Path where the OS secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend#mount OsSecretBackend#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend#mount OsSecretBackend#mount}
 
 ---
 
@@ -915,7 +915,7 @@ public readonly maxVersions: number;
 
 Maximum number of versions to keep for secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend#max_versions OsSecretBackend#max_versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend#max_versions OsSecretBackend#max_versions}
 
 ---
 
@@ -929,7 +929,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend#namespace OsSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend#namespace OsSecretBackend#namespace}
 
 ---
 
@@ -943,7 +943,7 @@ public readonly sshHostKeyTrustOnFirstUse: boolean | IResolvable;
 
 Trust SSH host keys on first use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/os_secret_backend#ssh_host_key_trust_on_first_use OsSecretBackend#ssh_host_key_trust_on_first_use}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/os_secret_backend#ssh_host_key_trust_on_first_use OsSecretBackend#ssh_host_key_trust_on_first_use}
 
 ---
 

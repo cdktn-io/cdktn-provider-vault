@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_replicate_key
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_replicate_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface KeymgmtReplicateKeyConfig extends cdktn.TerraformMetaArguments 
   /**
   * Specifies the name of the key to replicate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_replicate_key#key_name KeymgmtReplicateKey#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_replicate_key#key_name KeymgmtReplicateKey#key_name}
   */
   readonly keyName: string;
   /**
   * Specifies the name of the AWS KMS provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_replicate_key#kms_name KeymgmtReplicateKey#kms_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_replicate_key#kms_name KeymgmtReplicateKey#kms_name}
   */
   readonly kmsName: string;
   /**
   * Path of the Key Management secrets engine mount. Must match the `path` of a `vault_mount` resource with `type = "keymgmt"`. Use `vault_mount.keymgmt.path` here.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_replicate_key#mount KeymgmtReplicateKey#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_replicate_key#mount KeymgmtReplicateKey#mount}
   */
   readonly mount: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_replicate_key#namespace KeymgmtReplicateKey#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_replicate_key#namespace KeymgmtReplicateKey#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_replicate_key vault_keymgmt_replicate_key}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_replicate_key vault_keymgmt_replicate_key}
 */
 export class KeymgmtReplicateKey extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class KeymgmtReplicateKey extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KeymgmtReplicateKey resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeymgmtReplicateKey to import
-  * @param importFromId The id of the existing KeymgmtReplicateKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_replicate_key#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KeymgmtReplicateKey that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_replicate_key#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeymgmtReplicateKey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class KeymgmtReplicateKey extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/keymgmt_replicate_key vault_keymgmt_replicate_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/keymgmt_replicate_key vault_keymgmt_replicate_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class KeymgmtReplicateKey extends cdktn.TerraformResource {
       terraformResourceType: 'vault_keymgmt_replicate_key',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.0',
+        providerVersion: '5.10.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

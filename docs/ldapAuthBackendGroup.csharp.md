@@ -4,7 +4,7 @@
 
 ### LdapAuthBackendGroup <a name="LdapAuthBackendGroup" id="@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend_group vault_ldap_auth_backend_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_auth_backend_group vault_ldap_auth_backend_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroup.Initializer"></a>
 
@@ -517,7 +517,7 @@ The construct id used in the generated config for the LdapAuthBackendGroup to im
 
 The id of the existing LdapAuthBackendGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_auth_backend_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -856,11 +856,11 @@ new LdapAuthBackendGroupConfig {
 | <code><a href="#@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroupConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroupConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroupConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroupConfig.property.groupname">Groupname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend_group#groupname LdapAuthBackendGroup#groupname}. |
-| <code><a href="#@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroupConfig.property.backend">Backend</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend_group#backend LdapAuthBackendGroup#backend}. |
-| <code><a href="#@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend_group#id LdapAuthBackendGroup#id}. |
+| <code><a href="#@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroupConfig.property.groupname">Groupname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_auth_backend_group#groupname LdapAuthBackendGroup#groupname}. |
+| <code><a href="#@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroupConfig.property.backend">Backend</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_auth_backend_group#backend LdapAuthBackendGroup#backend}. |
+| <code><a href="#@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_auth_backend_group#id LdapAuthBackendGroup#id}. |
 | <code><a href="#@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroupConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
-| <code><a href="#@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroupConfig.property.policies">Policies</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend_group#policies LdapAuthBackendGroup#policies}. |
+| <code><a href="#@cdktn/provider-vault.ldapAuthBackendGroup.LdapAuthBackendGroupConfig.property.policies">Policies</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_auth_backend_group#policies LdapAuthBackendGroup#policies}. |
 
 ---
 
@@ -942,7 +942,7 @@ public string Groupname { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend_group#groupname LdapAuthBackendGroup#groupname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_auth_backend_group#groupname LdapAuthBackendGroup#groupname}.
 
 ---
 
@@ -954,7 +954,7 @@ public string Backend { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend_group#backend LdapAuthBackendGroup#backend}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_auth_backend_group#backend LdapAuthBackendGroup#backend}.
 
 ---
 
@@ -966,7 +966,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend_group#id LdapAuthBackendGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_auth_backend_group#id LdapAuthBackendGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -983,7 +983,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend_group#namespace LdapAuthBackendGroup#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_auth_backend_group#namespace LdapAuthBackendGroup#namespace}
 
 ---
 
@@ -995,7 +995,7 @@ public string[] Policies { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/ldap_auth_backend_group#policies LdapAuthBackendGroup#policies}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_auth_backend_group#policies LdapAuthBackendGroup#policies}.
 
 ---
 

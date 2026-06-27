@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface PkiExternalCaSecretBackendOrderChallengeFulfilledConfig extends
   /**
   * The type of ACME challenge that was fulfilled. Valid values are `http-01`, `dns-01`, `tls-alpn-01`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#challenge_type PkiExternalCaSecretBackendOrderChallengeFulfilled#challenge_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#challenge_type PkiExternalCaSecretBackendOrderChallengeFulfilled#challenge_type}
   */
   readonly challengeType: string;
   /**
   * The identifier (domain name) for which the challenge was fulfilled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#identifier PkiExternalCaSecretBackendOrderChallengeFulfilled#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#identifier PkiExternalCaSecretBackendOrderChallengeFulfilled#identifier}
   */
   readonly identifier: string;
   /**
   * The path where the PKI External CA secret backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#mount PkiExternalCaSecretBackendOrderChallengeFulfilled#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#mount PkiExternalCaSecretBackendOrderChallengeFulfilled#mount}
   */
   readonly mount: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#namespace PkiExternalCaSecretBackendOrderChallengeFulfilled#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#namespace PkiExternalCaSecretBackendOrderChallengeFulfilled#namespace}
   */
   readonly namespace?: string;
   /**
   * The unique identifier for the ACME order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#order_id PkiExternalCaSecretBackendOrderChallengeFulfilled#order_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#order_id PkiExternalCaSecretBackendOrderChallengeFulfilled#order_id}
   */
   readonly orderId: string;
   /**
   * Name of the role associated with the order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#role_name PkiExternalCaSecretBackendOrderChallengeFulfilled#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#role_name PkiExternalCaSecretBackendOrderChallengeFulfilled#role_name}
   */
   readonly roleName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled vault_pki_external_ca_secret_backend_order_challenge_fulfilled}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled vault_pki_external_ca_secret_backend_order_challenge_fulfilled}
 */
 export class PkiExternalCaSecretBackendOrderChallengeFulfilled extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class PkiExternalCaSecretBackendOrderChallengeFulfilled extends cdktn.Ter
   * Generates CDKTN code for importing a PkiExternalCaSecretBackendOrderChallengeFulfilled resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PkiExternalCaSecretBackendOrderChallengeFulfilled to import
-  * @param importFromId The id of the existing PkiExternalCaSecretBackendOrderChallengeFulfilled that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PkiExternalCaSecretBackendOrderChallengeFulfilled that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PkiExternalCaSecretBackendOrderChallengeFulfilled to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class PkiExternalCaSecretBackendOrderChallengeFulfilled extends cdktn.Ter
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled vault_pki_external_ca_secret_backend_order_challenge_fulfilled} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/pki_external_ca_secret_backend_order_challenge_fulfilled vault_pki_external_ca_secret_backend_order_challenge_fulfilled} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class PkiExternalCaSecretBackendOrderChallengeFulfilled extends cdktn.Ter
       terraformResourceType: 'vault_pki_external_ca_secret_backend_order_challenge_fulfilled',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.0',
+        providerVersion: '5.10.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

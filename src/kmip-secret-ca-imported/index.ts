@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_ca_imported
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,55 +15,55 @@ export interface KmipSecretCaImportedConfig extends cdktn.TerraformMetaArguments
   /**
   * CA certificate in PEM format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#ca_pem KmipSecretCaImported#ca_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_ca_imported#ca_pem KmipSecretCaImported#ca_pem}
   */
   readonly caPem: string;
   /**
   * Name to identify the CA.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#name KmipSecretCaImported#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_ca_imported#name KmipSecretCaImported#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#namespace KmipSecretCaImported#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_ca_imported#namespace KmipSecretCaImported#namespace}
   */
   readonly namespace?: string;
   /**
   * Path where KMIP backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#path KmipSecretCaImported#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_ca_imported#path KmipSecretCaImported#path}
   */
   readonly path: string;
   /**
   * The field in the certificate to use for the role (CN, O, OU, or UID). Must specify exactly one of role_name or role_field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#role_field KmipSecretCaImported#role_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_ca_imported#role_field KmipSecretCaImported#role_field}
   */
   readonly roleField?: string;
   /**
   * The role name to associate with this CA. Must specify exactly one of role_name or role_field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#role_name KmipSecretCaImported#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_ca_imported#role_name KmipSecretCaImported#role_name}
   */
   readonly roleName?: string;
   /**
   * The field in the certificate to use for the scope (CN, O, OU, or UID). Must specify exactly one of scope_name or scope_field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#scope_field KmipSecretCaImported#scope_field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_ca_imported#scope_field KmipSecretCaImported#scope_field}
   */
   readonly scopeField?: string;
   /**
   * The scope name to associate with this CA. Must specify exactly one of scope_name or scope_field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#scope_name KmipSecretCaImported#scope_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_ca_imported#scope_name KmipSecretCaImported#scope_name}
   */
   readonly scopeName?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported vault_kmip_secret_ca_imported}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_ca_imported vault_kmip_secret_ca_imported}
 */
 export class KmipSecretCaImported extends cdktn.TerraformResource {
 
@@ -79,7 +79,7 @@ export class KmipSecretCaImported extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a KmipSecretCaImported resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KmipSecretCaImported to import
-  * @param importFromId The id of the existing KmipSecretCaImported that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KmipSecretCaImported that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_ca_imported#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KmipSecretCaImported to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -91,7 +91,7 @@ export class KmipSecretCaImported extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_ca_imported vault_kmip_secret_ca_imported} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_ca_imported vault_kmip_secret_ca_imported} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -102,7 +102,7 @@ export class KmipSecretCaImported extends cdktn.TerraformResource {
       terraformResourceType: 'vault_kmip_secret_ca_imported',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.0',
+        providerVersion: '5.10.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

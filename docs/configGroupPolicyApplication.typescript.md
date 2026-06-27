@@ -4,7 +4,7 @@
 
 ### ConfigGroupPolicyApplication <a name="ConfigGroupPolicyApplication" id="@cdktn/provider-vault.configGroupPolicyApplication.ConfigGroupPolicyApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_group_policy_application vault_config_group_policy_application}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_group_policy_application vault_config_group_policy_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.configGroupPolicyApplication.ConfigGroupPolicyApplication.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ConfigGroupPolicyApplicati
 
 The id of the existing ConfigGroupPolicyApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_group_policy_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_group_policy_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -854,7 +854,7 @@ Mode for group policy application.
 
 Must be either "within_namespace_hierarchy" or "any". "within_namespace_hierarchy" means policies only apply when the token authorizing a request was created in the same namespace as the group, or a descendant namespace. "any" means group policies apply to all members of a group, regardless of what namespace the request token came from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_group_policy_application#group_policy_application_mode ConfigGroupPolicyApplication#group_policy_application_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_group_policy_application#group_policy_application_mode ConfigGroupPolicyApplication#group_policy_application_mode}
 
 ---
 
@@ -868,7 +868,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_group_policy_application#namespace ConfigGroupPolicyApplication#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_group_policy_application#namespace ConfigGroupPolicyApplication#namespace}
 
 ---
 

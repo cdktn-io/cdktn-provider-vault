@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_default_auth
+// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_default_auth
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface ConfigUiDefaultAuthConfig extends cdktn.TerraformMetaArguments 
   /**
   * List of backup authentication methods. Uses `ListAttribute` with `ElementType: StringType` to preserve order of backup methods. Each must be a valid auth type. Vault presents these in the "Sign in with other methods" tab. **Note:** Removing this field from configuration will clear it in Vault by sending an empty array.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_default_auth#backup_auth_types ConfigUiDefaultAuth#backup_auth_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_default_auth#backup_auth_types ConfigUiDefaultAuth#backup_auth_types}
   */
   readonly backupAuthTypes?: string[];
   /**
   * The default authentication method. Uses `OneOf` validator to ensure only valid auth methods are accepted: github, jwt, ldap, oidc, okta, radius, saml, token, userpass.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_default_auth#default_auth_type ConfigUiDefaultAuth#default_auth_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_default_auth#default_auth_type ConfigUiDefaultAuth#default_auth_type}
   */
   readonly defaultAuthType: string;
   /**
   * If true, child namespaces will not inherit default_auth_type and backup_auth_types from this configuration. **Note:** Removing this field from configuration will reset it to `false` in Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_default_auth#disable_inheritance ConfigUiDefaultAuth#disable_inheritance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_default_auth#disable_inheritance ConfigUiDefaultAuth#disable_inheritance}
   */
   readonly disableInheritance?: boolean | cdktn.IResolvable;
   /**
   * Unique identifier for the configuration. Can contain letters, numbers, underscores, and dashes. Uses `RequiresReplace()` plan modifier - changing this forces resource recreation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_default_auth#name ConfigUiDefaultAuth#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_default_auth#name ConfigUiDefaultAuth#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_default_auth#namespace ConfigUiDefaultAuth#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_default_auth#namespace ConfigUiDefaultAuth#namespace}
   */
   readonly namespace?: string;
   /**
   * Target namespace for the configuration. Empty string or omitted applies to root namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_default_auth#namespace_path ConfigUiDefaultAuth#namespace_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_default_auth#namespace_path ConfigUiDefaultAuth#namespace_path}
   */
   readonly namespacePath?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_default_auth vault_config_ui_default_auth}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_default_auth vault_config_ui_default_auth}
 */
 export class ConfigUiDefaultAuth extends cdktn.TerraformResource {
 
@@ -67,7 +67,7 @@ export class ConfigUiDefaultAuth extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ConfigUiDefaultAuth resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConfigUiDefaultAuth to import
-  * @param importFromId The id of the existing ConfigUiDefaultAuth that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_default_auth#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConfigUiDefaultAuth that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_default_auth#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConfigUiDefaultAuth to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class ConfigUiDefaultAuth extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_ui_default_auth vault_config_ui_default_auth} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_ui_default_auth vault_config_ui_default_auth} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class ConfigUiDefaultAuth extends cdktn.TerraformResource {
       terraformResourceType: 'vault_config_ui_default_auth',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.0',
+        providerVersion: '5.10.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

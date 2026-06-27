@@ -4,7 +4,7 @@
 
 ### ConfigControlGroup <a name="ConfigControlGroup" id="@cdktn/provider-vault.configControlGroup.ConfigControlGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_control_group vault_config_control_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_control_group vault_config_control_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.configControlGroup.ConfigControlGroup.Initializer"></a>
 
@@ -110,7 +110,7 @@ The maximum ttl for a control group wrapping token.
 
 This can be provided in seconds or duration (for example, 2h).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_control_group#max_ttl ConfigControlGroup#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_control_group#max_ttl ConfigControlGroup#max_ttl}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_control_group#namespace ConfigControlGroup#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_control_group#namespace ConfigControlGroup#namespace}
 
 ---
 
@@ -624,7 +624,7 @@ The construct id used in the generated config for the ConfigControlGroup to impo
 
 The id of the existing ConfigControlGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_control_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_control_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -992,7 +992,7 @@ The maximum ttl for a control group wrapping token.
 
 This can be provided in seconds or duration (for example, 2h).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_control_group#max_ttl ConfigControlGroup#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_control_group#max_ttl ConfigControlGroup#max_ttl}
 
 ---
 
@@ -1006,7 +1006,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/config_control_group#namespace ConfigControlGroup#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/config_control_group#namespace ConfigControlGroup#namespace}
 
 ---
 

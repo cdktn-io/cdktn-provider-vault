@@ -4,7 +4,7 @@
 
 ### DataVaultActivationFlags <a name="DataVaultActivationFlags" id="@cdktn/provider-vault.dataVaultActivationFlags.DataVaultActivationFlags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/activation_flags vault_activation_flags}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/activation_flags vault_activation_flags}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultActivationFlags.DataVaultActivationFlags.Initializer"></a>
 
@@ -437,7 +437,7 @@ The construct id used in the generated config for the DataVaultActivationFlags t
 
 The id of the existing DataVaultActivationFlags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/data-sources/activation_flags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/activation_flags#import import section} in the documentation of this resource for the id to use
 
 ---
 

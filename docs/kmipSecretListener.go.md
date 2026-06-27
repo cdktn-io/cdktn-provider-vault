@@ -4,7 +4,7 @@
 
 ### KmipSecretListener <a name="KmipSecretListener" id="@cdktn/provider-vault.kmipSecretListener.KmipSecretListener"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener vault_kmip_secret_listener}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener vault_kmip_secret_listener}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.kmipSecretListener.KmipSecretListener.Initializer"></a>
 
@@ -545,7 +545,7 @@ The construct id used in the generated config for the KmipSecretListener to impo
 
 The id of the existing KmipSecretListener that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1140,7 +1140,7 @@ Address *string
 
 Host:port address to listen on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#address KmipSecretListener#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener#address KmipSecretListener#address}
 
 ---
 
@@ -1154,7 +1154,7 @@ Ca *string
 
 Name of the CA to use to generate the server certificate and verify client certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#ca KmipSecretListener#ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener#ca KmipSecretListener#ca}
 
 ---
 
@@ -1168,7 +1168,7 @@ Name *string
 
 Unique name for the listener.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#name KmipSecretListener#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener#name KmipSecretListener#name}
 
 ---
 
@@ -1182,7 +1182,7 @@ Path *string
 
 Path where KMIP backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#path KmipSecretListener#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener#path KmipSecretListener#path}
 
 ---
 
@@ -1196,7 +1196,7 @@ AdditionalClientCas *[]*string
 
 Names of additional TLS CAs to use to verify client certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#additional_client_cas KmipSecretListener#additional_client_cas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener#additional_client_cas KmipSecretListener#additional_client_cas}
 
 ---
 
@@ -1210,7 +1210,7 @@ AlsoUseLegacyCa interface{}
 
 Use the legacy unnamed CA for verifying client certificates as well.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#also_use_legacy_ca KmipSecretListener#also_use_legacy_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener#also_use_legacy_ca KmipSecretListener#also_use_legacy_ca}
 
 ---
 
@@ -1224,7 +1224,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#namespace KmipSecretListener#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener#namespace KmipSecretListener#namespace}
 
 ---
 
@@ -1238,7 +1238,7 @@ ServerHostnames *[]*string
 
 DNS SANs to include in listener certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#server_hostnames KmipSecretListener#server_hostnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener#server_hostnames KmipSecretListener#server_hostnames}
 
 ---
 
@@ -1252,7 +1252,7 @@ ServerIps *[]*string
 
 IP SANs to include in listener certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#server_ips KmipSecretListener#server_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener#server_ips KmipSecretListener#server_ips}
 
 ---
 
@@ -1266,7 +1266,7 @@ TlsCipherSuites *string
 
 TLS cipher suites to allow (does not apply to tls13+).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#tls_cipher_suites KmipSecretListener#tls_cipher_suites}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener#tls_cipher_suites KmipSecretListener#tls_cipher_suites}
 
 ---
 
@@ -1280,7 +1280,7 @@ TlsMaxVersion *string
 
 Maximum TLS version to accept (tls12 or tls13).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#tls_max_version KmipSecretListener#tls_max_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener#tls_max_version KmipSecretListener#tls_max_version}
 
 ---
 
@@ -1294,7 +1294,7 @@ TlsMinVersion *string
 
 Minimum TLS version to accept (tls12 or tls13).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.0/docs/resources/kmip_secret_listener#tls_min_version KmipSecretListener#tls_min_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/kmip_secret_listener#tls_min_version KmipSecretListener#tls_min_version}
 
 ---
 
