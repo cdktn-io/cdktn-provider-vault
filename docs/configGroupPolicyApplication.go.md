@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.configGroupPolicyApplication.ConfigGroupPolicyApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configgrouppolicyapplication"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configgrouppolicyapplication"
 
 configgrouppolicyapplication.NewConfigGroupPolicyApplication(scope Construct, id *string, config ConfigGroupPolicyApplicationConfig) ConfigGroupPolicyApplication
 ```
@@ -407,7 +407,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.configGroupPolicyApplication.ConfigGroupPolicyApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configgrouppolicyapplication"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configgrouppolicyapplication"
 
 configgrouppolicyapplication.ConfigGroupPolicyApplication_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.configGroupPolicyApplication.ConfigGroupPolicyApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configgrouppolicyapplication"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configgrouppolicyapplication"
 
 configgrouppolicyapplication.ConfigGroupPolicyApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ configgrouppolicyapplication.ConfigGroupPolicyApplication_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.configGroupPolicyApplication.ConfigGroupPolicyApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configgrouppolicyapplication"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configgrouppolicyapplication"
 
 configgrouppolicyapplication.ConfigGroupPolicyApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ configgrouppolicyapplication.ConfigGroupPolicyApplication_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.configGroupPolicyApplication.ConfigGroupPolicyApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configgrouppolicyapplication"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configgrouppolicyapplication"
 
 configgrouppolicyapplication.ConfigGroupPolicyApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.configGroupPolicyApplication.ConfigGroupPolicyApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configgrouppolicyapplication"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configgrouppolicyapplication"
 
 &configgrouppolicyapplication.ConfigGroupPolicyApplicationConfig {
 	Connection: interface{},
