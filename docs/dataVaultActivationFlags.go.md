@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultActivationFlags.DataVaultActivationFlags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/datavaultactivationflags"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultactivationflags"
 
 datavaultactivationflags.NewDataVaultActivationFlags(scope Construct, id *string, config DataVaultActivationFlagsConfig) DataVaultActivationFlags
 ```
@@ -298,7 +298,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultActivationFlags.DataVaultActivationFlags.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/datavaultactivationflags"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultactivationflags"
 
 datavaultactivationflags.DataVaultActivationFlags_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultActivationFlags.DataVaultActivationFlags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/datavaultactivationflags"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultactivationflags"
 
 datavaultactivationflags.DataVaultActivationFlags_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datavaultactivationflags.DataVaultActivationFlags_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultActivationFlags.DataVaultActivationFlags.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/datavaultactivationflags"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultactivationflags"
 
 datavaultactivationflags.DataVaultActivationFlags_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ datavaultactivationflags.DataVaultActivationFlags_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultActivationFlags.DataVaultActivationFlags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/datavaultactivationflags"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultactivationflags"
 
 datavaultactivationflags.DataVaultActivationFlags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultActivationFlags.DataVaultActivationFlagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/datavaultactivationflags"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/datavaultactivationflags"
 
 &datavaultactivationflags.DataVaultActivationFlagsConfig {
 	Connection: interface{},

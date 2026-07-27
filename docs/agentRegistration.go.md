@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.agentRegistration.AgentRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/agentregistration"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/agentregistration"
 
 agentregistration.NewAgentRegistration(scope Construct, id *string, config AgentRegistrationConfig) AgentRegistration
 ```
@@ -442,7 +442,7 @@ func ResetOwner()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.agentRegistration.AgentRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/agentregistration"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/agentregistration"
 
 agentregistration.AgentRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.agentRegistration.AgentRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/agentregistration"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/agentregistration"
 
 agentregistration.AgentRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ agentregistration.AgentRegistration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.agentRegistration.AgentRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/agentregistration"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/agentregistration"
 
 agentregistration.AgentRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ agentregistration.AgentRegistration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.agentRegistration.AgentRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/agentregistration"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/agentregistration"
 
 agentregistration.AgentRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -940,7 +940,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.agentRegistration.AgentRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/agentregistration"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/agentregistration"
 
 &agentregistration.AgentRegistrationConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 managedkeys.NewManagedKeys(scope Construct, id *string, config ManagedKeysConfig) ManagedKeys
 ```
@@ -494,7 +494,7 @@ func ResetPkcs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.managedKeys.ManagedKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 managedkeys.ManagedKeys_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.managedKeys.ManagedKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 managedkeys.ManagedKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ managedkeys.ManagedKeys_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.managedKeys.ManagedKeys.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 managedkeys.ManagedKeys_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +554,7 @@ managedkeys.ManagedKeys_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.managedKeys.ManagedKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 managedkeys.ManagedKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.managedKeys.ManagedKeysAws.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 &managedkeys.ManagedKeysAws {
 	AccessKey: *string,
@@ -1159,7 +1159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.managedKeys.ManagedKeysAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 &managedkeys.ManagedKeysAzure {
 	ClientId: *string,
@@ -1421,7 +1421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.managedKeys.ManagedKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 &managedkeys.ManagedKeysConfig {
 	Connection: interface{},
@@ -1620,7 +1620,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 &managedkeys.ManagedKeysGcp {
 	Algorithm: *string,
@@ -1852,7 +1852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 &managedkeys.ManagedKeysPkcs {
 	Library: *string,
@@ -2150,7 +2150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeysAwsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 managedkeys.NewManagedKeysAwsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedKeysAwsList
 ```
@@ -2310,7 +2310,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeysAwsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 managedkeys.NewManagedKeysAwsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedKeysAwsOutputReference
 ```
@@ -2952,7 +2952,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeysAzureList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 managedkeys.NewManagedKeysAzureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedKeysAzureList
 ```
@@ -3112,7 +3112,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 managedkeys.NewManagedKeysAzureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedKeysAzureOutputReference
 ```
@@ -3776,7 +3776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 managedkeys.NewManagedKeysGcpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedKeysGcpList
 ```
@@ -3936,7 +3936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeysGcpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 managedkeys.NewManagedKeysGcpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedKeysGcpOutputReference
 ```
@@ -4542,7 +4542,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 managedkeys.NewManagedKeysPkcsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedKeysPkcsList
 ```
@@ -4702,7 +4702,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/managedkeys"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/managedkeys"
 
 managedkeys.NewManagedKeysPkcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedKeysPkcsOutputReference
 ```

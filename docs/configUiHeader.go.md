@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.configUiHeader.ConfigUiHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configuiheader"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuiheader"
 
 configuiheader.NewConfigUiHeader(scope Construct, id *string, config ConfigUiHeaderConfig) ConfigUiHeader
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.configUiHeader.ConfigUiHeader.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configuiheader"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuiheader"
 
 configuiheader.ConfigUiHeader_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.configUiHeader.ConfigUiHeader.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configuiheader"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuiheader"
 
 configuiheader.ConfigUiHeader_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ configuiheader.ConfigUiHeader_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.configUiHeader.ConfigUiHeader.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configuiheader"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuiheader"
 
 configuiheader.ConfigUiHeader_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ configuiheader.ConfigUiHeader_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.configUiHeader.ConfigUiHeader.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configuiheader"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuiheader"
 
 configuiheader.ConfigUiHeader_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.configUiHeader.ConfigUiHeaderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configuiheader"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuiheader"
 
 &configuiheader.ConfigUiHeaderConfig {
 	Connection: interface{},
