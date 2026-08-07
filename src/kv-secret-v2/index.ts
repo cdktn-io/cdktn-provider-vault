@@ -387,6 +387,9 @@ export class KvSecretV2 extends cdktn.TerraformResource {
 
   // data_json_wo - computed: false, optional: true, required: false
   private _dataJsonWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get dataJsonWo() {
     return this.getStringAttribute('data_json_wo');
   }
@@ -558,7 +561,7 @@ export class KvSecretV2 extends cdktn.TerraformResource {
     return {
       cas: cdktn.numberToTerraform(this._cas),
       data_json: cdktn.stringToTerraform(this._dataJson),
-      data_json_wo: cdktn.stringToTerraform(this._dataJsonWo),
+      data_json_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._dataJsonWo)),
       data_json_wo_version: cdktn.numberToTerraform(this._dataJsonWoVersion),
       delete_all_versions: cdktn.booleanToTerraform(this._deleteAllVersions),
       disable_read: cdktn.booleanToTerraform(this._disableRead),
@@ -586,7 +589,7 @@ export class KvSecretV2 extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       data_json_wo: {
-        value: cdktn.stringToHclTerraform(this._dataJsonWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._dataJsonWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

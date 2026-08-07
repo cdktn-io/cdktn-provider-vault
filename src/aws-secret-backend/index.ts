@@ -887,6 +887,9 @@ export class AwsSecretBackend extends cdktn.TerraformResource {
 
   // secret_key_wo - computed: false, optional: true, required: false
   private _secretKeyWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get secretKeyWo() {
     return this.getStringAttribute('secret_key_wo');
   }
@@ -1036,7 +1039,7 @@ export class AwsSecretBackend extends cdktn.TerraformResource {
       rotation_window: cdktn.numberToTerraform(this._rotationWindow),
       seal_wrap: cdktn.booleanToTerraform(this._sealWrap),
       secret_key: cdktn.stringToTerraform(this._secretKey),
-      secret_key_wo: cdktn.stringToTerraform(this._secretKeyWo),
+      secret_key_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._secretKeyWo)),
       secret_key_wo_version: cdktn.numberToTerraform(this._secretKeyWoVersion),
       sts_endpoint: cdktn.stringToTerraform(this._stsEndpoint),
       sts_fallback_endpoints: cdktn.listMapper(cdktn.stringToTerraform, false)(this._stsFallbackEndpoints),
@@ -1247,7 +1250,7 @@ export class AwsSecretBackend extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       secret_key_wo: {
-        value: cdktn.stringToHclTerraform(this._secretKeyWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._secretKeyWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

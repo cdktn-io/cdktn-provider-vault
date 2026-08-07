@@ -642,6 +642,9 @@ export class KubernetesSecretBackend extends cdktn.TerraformResource {
 
   // service_account_jwt_wo - computed: false, optional: true, required: false
   private _serviceAccountJwtWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get serviceAccountJwtWo() {
     return this.getStringAttribute('service_account_jwt_wo');
   }
@@ -702,7 +705,7 @@ export class KubernetesSecretBackend extends cdktn.TerraformResource {
       plugin_version: cdktn.stringToTerraform(this._pluginVersion),
       seal_wrap: cdktn.booleanToTerraform(this._sealWrap),
       service_account_jwt: cdktn.stringToTerraform(this._serviceAccountJwt),
-      service_account_jwt_wo: cdktn.stringToTerraform(this._serviceAccountJwtWo),
+      service_account_jwt_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._serviceAccountJwtWo)),
       service_account_jwt_wo_version: cdktn.numberToTerraform(this._serviceAccountJwtWoVersion),
     };
   }
@@ -854,7 +857,7 @@ export class KubernetesSecretBackend extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       service_account_jwt_wo: {
-        value: cdktn.stringToHclTerraform(this._serviceAccountJwtWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._serviceAccountJwtWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

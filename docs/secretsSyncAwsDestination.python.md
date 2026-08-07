@@ -690,7 +690,7 @@ def move_from_id(
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.moveFromId.parameter.id"></a>
 
@@ -1489,7 +1489,9 @@ id: str
 
 ---
 
-##### `identity_token_audience_wo`<sup>Required</sup> <a name="identity_token_audience_wo" id="@cdktn/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.identityTokenAudienceWo"></a>
+##### ~~`identity_token_audience_wo`~~<sup>Required</sup> <a name="identity_token_audience_wo" id="@cdktn/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.identityTokenAudienceWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 identity_token_audience_wo: str
@@ -1509,7 +1511,9 @@ identity_token_audience_wo_version: typing.Union[int, float]
 
 ---
 
-##### `identity_token_key_wo`<sup>Required</sup> <a name="identity_token_key_wo" id="@cdktn/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.identityTokenKeyWo"></a>
+##### ~~`identity_token_key_wo`~~<sup>Required</sup> <a name="identity_token_key_wo" id="@cdktn/provider-vault.secretsSyncAwsDestination.SecretsSyncAwsDestination.property.identityTokenKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 identity_token_key_wo: str

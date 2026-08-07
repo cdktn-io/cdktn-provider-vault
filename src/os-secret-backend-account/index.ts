@@ -302,6 +302,9 @@ export class OsSecretBackendAccount extends cdktn.TerraformResource {
 
   // password_wo - computed: false, optional: false, required: true
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -404,7 +407,7 @@ export class OsSecretBackendAccount extends cdktn.TerraformResource {
       namespace: cdktn.stringToTerraform(this._namespace),
       parent_account_ref: cdktn.stringToTerraform(this._parentAccountRef),
       password_policy: cdktn.stringToTerraform(this._passwordPolicy),
-      password_wo: cdktn.stringToTerraform(this._passwordWo),
+      password_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._passwordWo)),
       rotation_period: cdktn.numberToTerraform(this._rotationPeriod),
       rotation_schedule: cdktn.stringToTerraform(this._rotationSchedule),
       rotation_window: cdktn.numberToTerraform(this._rotationWindow),
@@ -464,7 +467,7 @@ export class OsSecretBackendAccount extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       password_wo: {
-        value: cdktn.stringToHclTerraform(this._passwordWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._passwordWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

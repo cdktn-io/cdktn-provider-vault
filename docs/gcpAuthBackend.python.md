@@ -762,7 +762,7 @@ def move_from_id(
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.gcpAuthBackend.GcpAuthBackend.moveFromId.parameter.id"></a>
 
@@ -1718,7 +1718,9 @@ credentials: str
 
 ---
 
-##### `credentials_wo`<sup>Required</sup> <a name="credentials_wo" id="@cdktn/provider-vault.gcpAuthBackend.GcpAuthBackend.property.credentialsWo"></a>
+##### ~~`credentials_wo`~~<sup>Required</sup> <a name="credentials_wo" id="@cdktn/provider-vault.gcpAuthBackend.GcpAuthBackend.property.credentialsWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 credentials_wo: str

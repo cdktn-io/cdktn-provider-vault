@@ -889,7 +889,7 @@ def move_from_id(
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnection.moveFromId.parameter.id"></a>
 
@@ -10869,7 +10869,9 @@ password: str
 
 ---
 
-##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHanaOutputReference.property.passwordWo"></a>
+##### ~~`password_wo`~~<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionHanaOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 password_wo: str
@@ -12373,7 +12375,9 @@ password: str
 
 ---
 
-##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbOutputReference.property.passwordWo"></a>
+##### ~~`password_wo`~~<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMongodbOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 password_wo: str
@@ -12996,7 +13000,9 @@ password: str
 
 ---
 
-##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMssqlOutputReference.property.passwordWo"></a>
+##### ~~`password_wo`~~<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMssqlOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 password_wo: str
@@ -13617,7 +13623,9 @@ password: str
 
 ---
 
-##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.passwordWo"></a>
+##### ~~`password_wo`~~<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlAuroraOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 password_wo: str
@@ -14268,7 +14276,9 @@ password: str
 
 ---
 
-##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.passwordWo"></a>
+##### ~~`password_wo`~~<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlLegacyOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 password_wo: str
@@ -14919,7 +14929,9 @@ password: str
 
 ---
 
-##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlOutputReference.property.passwordWo"></a>
+##### ~~`password_wo`~~<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 password_wo: str
@@ -15570,7 +15582,9 @@ password: str
 
 ---
 
-##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.passwordWo"></a>
+##### ~~`password_wo`~~<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionMysqlRdsOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 password_wo: str
@@ -16202,7 +16216,9 @@ password: str
 
 ---
 
-##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionOracleOutputReference.property.passwordWo"></a>
+##### ~~`password_wo`~~<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionOracleOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 password_wo: str
@@ -16939,7 +16955,9 @@ password_authentication: str
 
 ---
 
-##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresqlOutputReference.property.passwordWo"></a>
+##### ~~`password_wo`~~<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionPostgresqlOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 password_wo: str
@@ -18392,7 +18410,9 @@ password: str
 
 ---
 
-##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedshiftOutputReference.property.passwordWo"></a>
+##### ~~`password_wo`~~<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionRedshiftOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 password_wo: str
@@ -18965,7 +18985,9 @@ password: str
 
 ---
 
-##### `password_wo`<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionSnowflakeOutputReference.property.passwordWo"></a>
+##### ~~`password_wo`~~<sup>Required</sup> <a name="password_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionSnowflakeOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 password_wo: str
@@ -18985,7 +19007,9 @@ password_wo_version: typing.Union[int, float]
 
 ---
 
-##### `private_key_wo`<sup>Required</sup> <a name="private_key_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionSnowflakeOutputReference.property.privateKeyWo"></a>
+##### ~~`private_key_wo`~~<sup>Required</sup> <a name="private_key_wo" id="@cdktn/provider-vault.databaseSecretBackendConnection.DatabaseSecretBackendConnectionSnowflakeOutputReference.property.privateKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 private_key_wo: str

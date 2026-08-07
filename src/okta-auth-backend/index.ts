@@ -966,6 +966,9 @@ export class OktaAuthBackend extends cdktn.TerraformResource {
 
   // api_token_wo - computed: false, optional: true, required: false
   private _apiTokenWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get apiTokenWo() {
     return this.getStringAttribute('api_token_wo');
   }
@@ -1356,7 +1359,7 @@ export class OktaAuthBackend extends cdktn.TerraformResource {
     return {
       alias_metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._aliasMetadata),
       api_token: cdktn.stringToTerraform(this._apiToken),
-      api_token_wo: cdktn.stringToTerraform(this._apiTokenWo),
+      api_token_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._apiTokenWo)),
       api_token_wo_version: cdktn.numberToTerraform(this._apiTokenWoVersion),
       base_url: cdktn.stringToTerraform(this._baseUrl),
       bypass_okta_mfa: cdktn.booleanToTerraform(this._bypassOktaMfa),
@@ -1398,7 +1401,7 @@ export class OktaAuthBackend extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       api_token_wo: {
-        value: cdktn.stringToHclTerraform(this._apiTokenWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._apiTokenWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

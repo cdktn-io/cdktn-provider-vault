@@ -3694,6 +3694,9 @@ export class DatabaseSecretsMountHanaOutputReference extends cdktn.ComplexObject
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -5477,6 +5480,9 @@ export class DatabaseSecretsMountMongodbOutputReference extends cdktn.ComplexObj
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -7111,6 +7117,9 @@ export class DatabaseSecretsMountMssqlOutputReference extends cdktn.ComplexObjec
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -8053,6 +8062,9 @@ export class DatabaseSecretsMountMysqlOutputReference extends cdktn.ComplexObjec
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -9043,6 +9055,9 @@ export class DatabaseSecretsMountMysqlAuroraOutputReference extends cdktn.Comple
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -10033,6 +10048,9 @@ export class DatabaseSecretsMountMysqlLegacyOutputReference extends cdktn.Comple
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -11023,6 +11041,9 @@ export class DatabaseSecretsMountMysqlRdsOutputReference extends cdktn.ComplexOb
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -11994,6 +12015,9 @@ export class DatabaseSecretsMountOracleOutputReference extends cdktn.ComplexObje
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -13076,6 +13100,9 @@ export class DatabaseSecretsMountPostgresqlOutputReference extends cdktn.Complex
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -15484,6 +15511,9 @@ export class DatabaseSecretsMountRedshiftOutputReference extends cdktn.ComplexOb
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -16372,6 +16402,9 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktn.ComplexO
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -16436,6 +16469,9 @@ export class DatabaseSecretsMountSnowflakeOutputReference extends cdktn.ComplexO
 
   // private_key_wo - computed: false, optional: true, required: false
   private _privateKeyWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get privateKeyWo() {
     return this.getStringAttribute('private_key_wo');
   }

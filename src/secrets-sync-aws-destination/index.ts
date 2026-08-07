@@ -358,6 +358,9 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
 
   // identity_token_audience_wo - computed: false, optional: true, required: false
   private _identityTokenAudienceWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get identityTokenAudienceWo() {
     return this.getStringAttribute('identity_token_audience_wo');
   }
@@ -390,6 +393,9 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
 
   // identity_token_key_wo - computed: false, optional: true, required: false
   private _identityTokenKeyWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get identityTokenKeyWo() {
     return this.getStringAttribute('identity_token_key_wo');
   }
@@ -549,9 +555,9 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
       external_id: cdktn.stringToTerraform(this._externalId),
       granularity: cdktn.stringToTerraform(this._granularity),
       id: cdktn.stringToTerraform(this._id),
-      identity_token_audience_wo: cdktn.stringToTerraform(this._identityTokenAudienceWo),
+      identity_token_audience_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._identityTokenAudienceWo)),
       identity_token_audience_wo_version: cdktn.numberToTerraform(this._identityTokenAudienceWoVersion),
-      identity_token_key_wo: cdktn.stringToTerraform(this._identityTokenKeyWo),
+      identity_token_key_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._identityTokenKeyWo)),
       identity_token_key_wo_version: cdktn.numberToTerraform(this._identityTokenKeyWoVersion),
       identity_token_ttl: cdktn.numberToTerraform(this._identityTokenTtl),
       name: cdktn.stringToTerraform(this._name),
@@ -620,7 +626,7 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       identity_token_audience_wo: {
-        value: cdktn.stringToHclTerraform(this._identityTokenAudienceWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._identityTokenAudienceWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -632,7 +638,7 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
         storageClassType: "number",
       },
       identity_token_key_wo: {
-        value: cdktn.stringToHclTerraform(this._identityTokenKeyWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._identityTokenKeyWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

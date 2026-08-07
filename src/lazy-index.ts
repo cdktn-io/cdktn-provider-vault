@@ -251,5 +251,24 @@ Object.defineProperty(exports, 'dataVaultTransitDecrypt', { get: function () { r
 Object.defineProperty(exports, 'dataVaultTransitEncrypt', { get: function () { return require('./data-vault-transit-encrypt'); } });
 Object.defineProperty(exports, 'dataVaultTransitSign', { get: function () { return require('./data-vault-transit-sign'); } });
 Object.defineProperty(exports, 'dataVaultTransitVerify', { get: function () { return require('./data-vault-transit-verify'); } });
+Object.defineProperty(exports, 'ephemeralVaultAlicloudAccessCredentials', { get: function () { return require('./ephemeral-vault-alicloud-access-credentials'); } });
+Object.defineProperty(exports, 'ephemeralVaultApproleAuthBackendRoleSecretId', { get: function () { return require('./ephemeral-vault-approle-auth-backend-role-secret-id'); } });
+Object.defineProperty(exports, 'ephemeralVaultAwsAccessCredentials', { get: function () { return require('./ephemeral-vault-aws-access-credentials'); } });
+Object.defineProperty(exports, 'ephemeralVaultAwsStaticAccessCredentials', { get: function () { return require('./ephemeral-vault-aws-static-access-credentials'); } });
+Object.defineProperty(exports, 'ephemeralVaultAzureAccessCredentials', { get: function () { return require('./ephemeral-vault-azure-access-credentials'); } });
+Object.defineProperty(exports, 'ephemeralVaultAzureStaticCredentials', { get: function () { return require('./ephemeral-vault-azure-static-credentials'); } });
+Object.defineProperty(exports, 'ephemeralVaultCfAuthLogin', { get: function () { return require('./ephemeral-vault-cf-auth-login'); } });
+Object.defineProperty(exports, 'ephemeralVaultDatabaseSecret', { get: function () { return require('./ephemeral-vault-database-secret'); } });
+Object.defineProperty(exports, 'ephemeralVaultGcpOauth2AccessToken', { get: function () { return require('./ephemeral-vault-gcp-oauth2-access-token'); } });
+Object.defineProperty(exports, 'ephemeralVaultGcpServiceAccountKey', { get: function () { return require('./ephemeral-vault-gcp-service-account-key'); } });
+Object.defineProperty(exports, 'ephemeralVaultGenericEndpoint', { get: function () { return require('./ephemeral-vault-generic-endpoint'); } });
+Object.defineProperty(exports, 'ephemeralVaultGenericSecret', { get: function () { return require('./ephemeral-vault-generic-secret'); } });
+Object.defineProperty(exports, 'ephemeralVaultKubernetesServiceAccountToken', { get: function () { return require('./ephemeral-vault-kubernetes-service-account-token'); } });
+Object.defineProperty(exports, 'ephemeralVaultKvSecretV2', { get: function () { return require('./ephemeral-vault-kv-secret-v2'); } });
+Object.defineProperty(exports, 'ephemeralVaultRadiusAuthLogin', { get: function () { return require('./ephemeral-vault-radius-auth-login'); } });
+Object.defineProperty(exports, 'ephemeralVaultSpiffeSecretBackendMintjwt', { get: function () { return require('./ephemeral-vault-spiffe-secret-backend-mintjwt'); } });
+Object.defineProperty(exports, 'ephemeralVaultTerraformToken', { get: function () { return require('./ephemeral-vault-terraform-token'); } });
+Object.defineProperty(exports, 'ephemeralVaultToken', { get: function () { return require('./ephemeral-vault-token'); } });
+Object.defineProperty(exports, 'ephemeralVaultUserpassAuthLogin', { get: function () { return require('./ephemeral-vault-userpass-auth-login'); } });
 Object.defineProperty(exports, 'provider', { get: function () { return require('./provider'); } });
 

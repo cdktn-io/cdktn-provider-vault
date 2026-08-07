@@ -252,6 +252,9 @@ export class LdapSecretBackendStaticRole extends cdktn.TerraformResource {
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -399,7 +402,7 @@ export class LdapSecretBackendStaticRole extends cdktn.TerraformResource {
       id: cdktn.stringToTerraform(this._id),
       mount: cdktn.stringToTerraform(this._mount),
       namespace: cdktn.stringToTerraform(this._namespace),
-      password_wo: cdktn.stringToTerraform(this._passwordWo),
+      password_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._passwordWo)),
       password_wo_version: cdktn.numberToTerraform(this._passwordWoVersion),
       role_name: cdktn.stringToTerraform(this._roleName),
       rotation_period: cdktn.numberToTerraform(this._rotationPeriod),
@@ -444,7 +447,7 @@ export class LdapSecretBackendStaticRole extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       password_wo: {
-        value: cdktn.stringToHclTerraform(this._passwordWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._passwordWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

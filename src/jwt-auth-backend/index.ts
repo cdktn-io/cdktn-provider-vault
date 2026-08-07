@@ -839,6 +839,9 @@ export class JwtAuthBackend extends cdktn.TerraformResource {
 
   // oidc_client_secret_wo - computed: false, optional: true, required: false
   private _oidcClientSecretWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get oidcClientSecretWo() {
     return this.getStringAttribute('oidc_client_secret_wo');
   }
@@ -1018,7 +1021,7 @@ export class JwtAuthBackend extends cdktn.TerraformResource {
       namespace_in_state: cdktn.booleanToTerraform(this._namespaceInState),
       oidc_client_id: cdktn.stringToTerraform(this._oidcClientId),
       oidc_client_secret: cdktn.stringToTerraform(this._oidcClientSecret),
-      oidc_client_secret_wo: cdktn.stringToTerraform(this._oidcClientSecretWo),
+      oidc_client_secret_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._oidcClientSecretWo)),
       oidc_client_secret_wo_version: cdktn.numberToTerraform(this._oidcClientSecretWoVersion),
       oidc_discovery_ca_pem: cdktn.stringToTerraform(this._oidcDiscoveryCaPem),
       oidc_discovery_url: cdktn.stringToTerraform(this._oidcDiscoveryUrl),
@@ -1124,7 +1127,7 @@ export class JwtAuthBackend extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       oidc_client_secret_wo: {
-        value: cdktn.stringToHclTerraform(this._oidcClientSecretWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._oidcClientSecretWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

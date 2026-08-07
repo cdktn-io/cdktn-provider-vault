@@ -615,6 +615,9 @@ export class RabbitmqSecretBackend extends cdktn.TerraformResource {
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -765,7 +768,7 @@ export class RabbitmqSecretBackend extends cdktn.TerraformResource {
       passthrough_request_headers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._passthroughRequestHeaders),
       password: cdktn.stringToTerraform(this._password),
       password_policy: cdktn.stringToTerraform(this._passwordPolicy),
-      password_wo: cdktn.stringToTerraform(this._passwordWo),
+      password_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._passwordWo)),
       password_wo_version: cdktn.numberToTerraform(this._passwordWoVersion),
       path: cdktn.stringToTerraform(this._path),
       plugin_version: cdktn.stringToTerraform(this._pluginVersion),
@@ -905,7 +908,7 @@ export class RabbitmqSecretBackend extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       password_wo: {
-        value: cdktn.stringToHclTerraform(this._passwordWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._passwordWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

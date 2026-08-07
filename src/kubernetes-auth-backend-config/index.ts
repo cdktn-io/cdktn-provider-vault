@@ -322,6 +322,9 @@ export class KubernetesAuthBackendConfig extends cdktn.TerraformResource {
 
   // token_reviewer_jwt_wo - computed: false, optional: true, required: false
   private _tokenReviewerJwtWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get tokenReviewerJwtWo() {
     return this.getStringAttribute('token_reviewer_jwt_wo');
   }
@@ -384,7 +387,7 @@ export class KubernetesAuthBackendConfig extends cdktn.TerraformResource {
       namespace: cdktn.stringToTerraform(this._namespace),
       pem_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._pemKeys),
       token_reviewer_jwt: cdktn.stringToTerraform(this._tokenReviewerJwt),
-      token_reviewer_jwt_wo: cdktn.stringToTerraform(this._tokenReviewerJwtWo),
+      token_reviewer_jwt_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._tokenReviewerJwtWo)),
       token_reviewer_jwt_wo_version: cdktn.numberToTerraform(this._tokenReviewerJwtWoVersion),
       use_annotations_as_alias_metadata: cdktn.booleanToTerraform(this._useAnnotationsAsAliasMetadata),
     };
@@ -453,7 +456,7 @@ export class KubernetesAuthBackendConfig extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       token_reviewer_jwt_wo: {
-        value: cdktn.stringToHclTerraform(this._tokenReviewerJwtWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._tokenReviewerJwtWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

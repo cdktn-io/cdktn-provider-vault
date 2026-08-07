@@ -813,7 +813,7 @@ public void moveFromId(java.lang.String id)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend.moveFromId.parameter.id"></a>
 
@@ -1813,7 +1813,9 @@ public java.lang.String getClientKey();
 
 ---
 
-##### `clientKeyWo`<sup>Required</sup> <a name="clientKeyWo" id="@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend.property.clientKeyWo"></a>
+##### ~~`clientKeyWo`~~<sup>Required</sup> <a name="clientKeyWo" id="@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend.property.clientKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```java
 public java.lang.String getClientKeyWo();
@@ -2023,7 +2025,9 @@ public java.lang.String getToken();
 
 ---
 
-##### `tokenWo`<sup>Required</sup> <a name="tokenWo" id="@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend.property.tokenWo"></a>
+##### ~~`tokenWo`~~<sup>Required</sup> <a name="tokenWo" id="@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend.property.tokenWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```java
 public java.lang.String getTokenWo();

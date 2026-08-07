@@ -766,7 +766,7 @@ def move_from_id(
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.moveFromId.parameter.id"></a>
 
@@ -1823,7 +1823,9 @@ service_account_jwt: str
 
 ---
 
-##### `service_account_jwt_wo`<sup>Required</sup> <a name="service_account_jwt_wo" id="@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.property.serviceAccountJwtWo"></a>
+##### ~~`service_account_jwt_wo`~~<sup>Required</sup> <a name="service_account_jwt_wo" id="@cdktn/provider-vault.kubernetesSecretBackend.KubernetesSecretBackend.property.serviceAccountJwtWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```python
 service_account_jwt_wo: str

@@ -356,7 +356,7 @@ private void MoveFromId(string Id)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.moveFromId.parameter.id"></a>
 
@@ -1157,7 +1157,9 @@ public string Id { get; }
 
 ---
 
-##### `IdentityTokenAudienceWo`<sup>Required</sup> <a name="IdentityTokenAudienceWo" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.identityTokenAudienceWo"></a>
+##### ~~`IdentityTokenAudienceWo`~~<sup>Required</sup> <a name="IdentityTokenAudienceWo" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.identityTokenAudienceWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```csharp
 public string IdentityTokenAudienceWo { get; }
@@ -1177,7 +1179,9 @@ public double IdentityTokenAudienceWoVersion { get; }
 
 ---
 
-##### `IdentityTokenKeyWo`<sup>Required</sup> <a name="IdentityTokenKeyWo" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.identityTokenKeyWo"></a>
+##### ~~`IdentityTokenKeyWo`~~<sup>Required</sup> <a name="IdentityTokenKeyWo" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.identityTokenKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```csharp
 public string IdentityTokenKeyWo { get; }

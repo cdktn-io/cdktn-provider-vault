@@ -340,6 +340,9 @@ export class RadiusAuthBackend extends cdktn.TerraformResource {
 
   // secret_wo - computed: false, optional: false, required: true
   private _secretWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get secretWo() {
     return this.getStringAttribute('secret_wo');
   }
@@ -538,7 +541,7 @@ export class RadiusAuthBackend extends cdktn.TerraformResource {
       nas_port: cdktn.numberToTerraform(this._nasPort),
       port: cdktn.numberToTerraform(this._port),
       read_timeout: cdktn.numberToTerraform(this._readTimeout),
-      secret_wo: cdktn.stringToTerraform(this._secretWo),
+      secret_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._secretWo)),
       secret_wo_version: cdktn.numberToTerraform(this._secretWoVersion),
       token_bound_cidrs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenBoundCidrs),
       token_explicit_max_ttl: cdktn.numberToTerraform(this._tokenExplicitMaxTtl),
@@ -604,7 +607,7 @@ export class RadiusAuthBackend extends cdktn.TerraformResource {
         storageClassType: "number",
       },
       secret_wo: {
-        value: cdktn.stringToHclTerraform(this._secretWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._secretWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
