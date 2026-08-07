@@ -367,7 +367,7 @@ func MoveFromId(id *string)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend.moveFromId.parameter.id"></a>
 
@@ -1366,7 +1366,9 @@ func ClientKey() *string
 
 ---
 
-##### `ClientKeyWo`<sup>Required</sup> <a name="ClientKeyWo" id="@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend.property.clientKeyWo"></a>
+##### ~~`ClientKeyWo`~~<sup>Required</sup> <a name="ClientKeyWo" id="@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend.property.clientKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```go
 func ClientKeyWo() *string
@@ -1576,7 +1578,9 @@ func Token() *string
 
 ---
 
-##### `TokenWo`<sup>Required</sup> <a name="TokenWo" id="@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend.property.tokenWo"></a>
+##### ~~`TokenWo`~~<sup>Required</sup> <a name="TokenWo" id="@cdktn/provider-vault.consulSecretBackend.ConsulSecretBackend.property.tokenWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```go
 func TokenWo() *string

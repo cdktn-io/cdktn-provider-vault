@@ -391,7 +391,7 @@ public moveFromId(id: string): void
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMount.moveFromId.parameter.id"></a>
 
@@ -13817,7 +13817,9 @@ public readonly passwordPolicy: string;
 
 ---
 
-##### `passwordWo`<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.passwordWo"></a>
+##### ~~`passwordWo`~~<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountHanaOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly passwordWo: string;
@@ -16890,7 +16892,9 @@ public readonly passwordPolicy: string;
 
 ---
 
-##### `passwordWo`<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.passwordWo"></a>
+##### ~~`passwordWo`~~<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMongodbOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly passwordWo: string;
@@ -18036,7 +18040,9 @@ public readonly passwordPolicy: string;
 
 ---
 
-##### `passwordWo`<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.passwordWo"></a>
+##### ~~`passwordWo`~~<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMssqlOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly passwordWo: string;
@@ -19180,7 +19186,9 @@ public readonly passwordPolicy: string;
 
 ---
 
-##### `passwordWo`<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.passwordWo"></a>
+##### ~~`passwordWo`~~<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlAuroraOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly passwordWo: string;
@@ -20354,7 +20362,9 @@ public readonly passwordPolicy: string;
 
 ---
 
-##### `passwordWo`<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.passwordWo"></a>
+##### ~~`passwordWo`~~<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlLegacyOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly passwordWo: string;
@@ -21528,7 +21538,9 @@ public readonly passwordPolicy: string;
 
 ---
 
-##### `passwordWo`<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.passwordWo"></a>
+##### ~~`passwordWo`~~<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly passwordWo: string;
@@ -22702,7 +22714,9 @@ public readonly passwordPolicy: string;
 
 ---
 
-##### `passwordWo`<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.passwordWo"></a>
+##### ~~`passwordWo`~~<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountMysqlRdsOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly passwordWo: string;
@@ -23857,7 +23871,9 @@ public readonly passwordPolicy: string;
 
 ---
 
-##### `passwordWo`<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.passwordWo"></a>
+##### ~~`passwordWo`~~<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountOracleOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly passwordWo: string;
@@ -25117,7 +25133,9 @@ public readonly passwordPolicy: string;
 
 ---
 
-##### `passwordWo`<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.passwordWo"></a>
+##### ~~`passwordWo`~~<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountPostgresqlOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly passwordWo: string;
@@ -28139,7 +28157,9 @@ public readonly passwordPolicy: string;
 
 ---
 
-##### `passwordWo`<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.passwordWo"></a>
+##### ~~`passwordWo`~~<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountRedshiftOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly passwordWo: string;
@@ -29235,7 +29255,9 @@ public readonly passwordPolicy: string;
 
 ---
 
-##### `passwordWo`<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.passwordWo"></a>
+##### ~~`passwordWo`~~<sup>Required</sup> <a name="passwordWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.passwordWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly passwordWo: string;
@@ -29275,7 +29297,9 @@ public readonly pluginVersion: string;
 
 ---
 
-##### `privateKeyWo`<sup>Required</sup> <a name="privateKeyWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.privateKeyWo"></a>
+##### ~~`privateKeyWo`~~<sup>Required</sup> <a name="privateKeyWo" id="@cdktn/provider-vault.databaseSecretsMount.DatabaseSecretsMountSnowflakeOutputReference.property.privateKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```typescript
 public readonly privateKeyWo: string;

@@ -369,7 +369,7 @@ private void MoveFromId(string Id)
 
 Move the resource corresponding to "id" to this resource.
 
-Note that the resource being moved from must be marked as moved using it's instance function.
+Note that the resource being moved from must be marked as moved using its instance function.
 
 ###### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.moveFromId.parameter.id"></a>
 
@@ -1392,7 +1392,9 @@ public string ClientKey { get; }
 
 ---
 
-##### `ClientKeyWo`<sup>Required</sup> <a name="ClientKeyWo" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyWo"></a>
+##### ~~`ClientKeyWo`~~<sup>Required</sup> <a name="ClientKeyWo" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.clientKeyWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```csharp
 public string ClientKeyWo { get; }
@@ -1602,7 +1604,9 @@ public string Token { get; }
 
 ---
 
-##### `TokenWo`<sup>Required</sup> <a name="TokenWo" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenWo"></a>
+##### ~~`TokenWo`~~<sup>Required</sup> <a name="TokenWo" id="@cdktn/provider-vault.nomadSecretBackend.NomadSecretBackend.property.tokenWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
 
 ```csharp
 public string TokenWo { get; }
