@@ -175,6 +175,9 @@ export class SpiffeAuthBackendConfig extends cdktn.TerraformResource {
 
   // defer_bundle_fetch - computed: false, optional: true, required: false
   private _deferBundleFetch?: boolean | cdktn.IResolvable; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get deferBundleFetch() {
     return this.getBooleanAttribute('defer_bundle_fetch');
   }
@@ -300,7 +303,7 @@ export class SpiffeAuthBackendConfig extends cdktn.TerraformResource {
     return {
       audience: cdktn.listMapper(cdktn.stringToTerraform, false)(this._audience),
       bundle: cdktn.stringToTerraform(this._bundle),
-      defer_bundle_fetch: cdktn.booleanToTerraform(this._deferBundleFetch),
+      defer_bundle_fetch: this.markWriteOnlyAttribute(cdktn.booleanToTerraform(this._deferBundleFetch)),
       endpoint_root_ca_truststore_pem: cdktn.stringToTerraform(this._endpointRootCaTruststorePem),
       endpoint_spiffe_id: cdktn.stringToTerraform(this._endpointSpiffeId),
       endpoint_url: cdktn.stringToTerraform(this._endpointUrl),
@@ -326,7 +329,7 @@ export class SpiffeAuthBackendConfig extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       defer_bundle_fetch: {
-        value: cdktn.booleanToHclTerraform(this._deferBundleFetch),
+        value: this.markWriteOnlyAttribute(cdktn.booleanToHclTerraform(this._deferBundleFetch)),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

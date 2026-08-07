@@ -179,6 +179,9 @@ export class CfAuthBackendConfig extends cdktn.TerraformResource {
 
   // cf_password_wo - computed: false, optional: false, required: true
   private _cfPasswordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get cfPasswordWo() {
     return this.getStringAttribute('cf_password_wo');
   }
@@ -314,7 +317,7 @@ export class CfAuthBackendConfig extends cdktn.TerraformResource {
     return {
       cf_api_addr: cdktn.stringToTerraform(this._cfApiAddr),
       cf_api_trusted_certificates: cdktn.listMapper(cdktn.stringToTerraform, false)(this._cfApiTrustedCertificates),
-      cf_password_wo: cdktn.stringToTerraform(this._cfPasswordWo),
+      cf_password_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._cfPasswordWo)),
       cf_password_wo_version: cdktn.numberToTerraform(this._cfPasswordWoVersion),
       cf_timeout: cdktn.numberToTerraform(this._cfTimeout),
       cf_username: cdktn.stringToTerraform(this._cfUsername),
@@ -341,7 +344,7 @@ export class CfAuthBackendConfig extends cdktn.TerraformResource {
         storageClassType: "stringList",
       },
       cf_password_wo: {
-        value: cdktn.stringToHclTerraform(this._cfPasswordWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._cfPasswordWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

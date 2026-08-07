@@ -154,6 +154,9 @@ export class PkiExternalCaSecretBackendAcmeAccount extends cdktn.TerraformResour
 
   // eab_key - computed: false, optional: true, required: false
   private _eabKey?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get eabKey() {
     return this.getStringAttribute('eab_key');
   }
@@ -170,6 +173,9 @@ export class PkiExternalCaSecretBackendAcmeAccount extends cdktn.TerraformResour
 
   // eab_kid - computed: false, optional: true, required: false
   private _eabKid?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get eabKid() {
     return this.getStringAttribute('eab_kid');
   }
@@ -278,8 +284,8 @@ export class PkiExternalCaSecretBackendAcmeAccount extends cdktn.TerraformResour
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       directory_url: cdktn.stringToTerraform(this._directoryUrl),
-      eab_key: cdktn.stringToTerraform(this._eabKey),
-      eab_kid: cdktn.stringToTerraform(this._eabKid),
+      eab_key: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._eabKey)),
+      eab_kid: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._eabKid)),
       email_contacts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._emailContacts),
       key_type: cdktn.stringToTerraform(this._keyType),
       mount: cdktn.stringToTerraform(this._mount),
@@ -298,13 +304,13 @@ export class PkiExternalCaSecretBackendAcmeAccount extends cdktn.TerraformResour
         storageClassType: "string",
       },
       eab_key: {
-        value: cdktn.stringToHclTerraform(this._eabKey),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._eabKey)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       eab_kid: {
-        value: cdktn.stringToHclTerraform(this._eabKid),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._eabKid)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

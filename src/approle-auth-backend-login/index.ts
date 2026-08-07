@@ -236,6 +236,9 @@ export class ApproleAuthBackendLogin extends cdktn.TerraformResource {
 
   // secret_id_wo - computed: false, optional: true, required: false
   private _secretIdWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get secretIdWo() {
     return this.getStringAttribute('secret_id_wo');
   }
@@ -277,7 +280,7 @@ export class ApproleAuthBackendLogin extends cdktn.TerraformResource {
       namespace: cdktn.stringToTerraform(this._namespace),
       role_id: cdktn.stringToTerraform(this._roleId),
       secret_id: cdktn.stringToTerraform(this._secretId),
-      secret_id_wo: cdktn.stringToTerraform(this._secretIdWo),
+      secret_id_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._secretIdWo)),
       secret_id_wo_version: cdktn.numberToTerraform(this._secretIdWoVersion),
     };
   }
@@ -315,7 +318,7 @@ export class ApproleAuthBackendLogin extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       secret_id_wo: {
-        value: cdktn.stringToHclTerraform(this._secretIdWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._secretIdWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

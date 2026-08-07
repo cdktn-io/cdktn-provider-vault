@@ -454,6 +454,9 @@ export class NomadSecretBackend extends cdktn.TerraformResource {
 
   // client_key_wo - computed: false, optional: true, required: false
   private _clientKeyWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientKeyWo() {
     return this.getStringAttribute('client_key_wo');
   }
@@ -790,6 +793,9 @@ export class NomadSecretBackend extends cdktn.TerraformResource {
 
   // token_wo - computed: false, optional: true, required: false
   private _tokenWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get tokenWo() {
     return this.getStringAttribute('token_wo');
   }
@@ -851,7 +857,7 @@ export class NomadSecretBackend extends cdktn.TerraformResource {
       ca_cert: cdktn.stringToTerraform(this._caCert),
       client_cert: cdktn.stringToTerraform(this._clientCert),
       client_key: cdktn.stringToTerraform(this._clientKey),
-      client_key_wo: cdktn.stringToTerraform(this._clientKeyWo),
+      client_key_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._clientKeyWo)),
       client_key_wo_version: cdktn.numberToTerraform(this._clientKeyWoVersion),
       default_lease_ttl_seconds: cdktn.numberToTerraform(this._defaultLeaseTtlSeconds),
       delegated_auth_accessors: cdktn.listMapper(cdktn.stringToTerraform, false)(this._delegatedAuthAccessors),
@@ -872,7 +878,7 @@ export class NomadSecretBackend extends cdktn.TerraformResource {
       plugin_version: cdktn.stringToTerraform(this._pluginVersion),
       seal_wrap: cdktn.booleanToTerraform(this._sealWrap),
       token: cdktn.stringToTerraform(this._token),
-      token_wo: cdktn.stringToTerraform(this._tokenWo),
+      token_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._tokenWo)),
       token_wo_version: cdktn.numberToTerraform(this._tokenWoVersion),
       ttl: cdktn.numberToTerraform(this._ttl),
     };
@@ -935,7 +941,7 @@ export class NomadSecretBackend extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       client_key_wo: {
-        value: cdktn.stringToHclTerraform(this._clientKeyWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._clientKeyWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1061,7 +1067,7 @@ export class NomadSecretBackend extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       token_wo: {
-        value: cdktn.stringToHclTerraform(this._tokenWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._tokenWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

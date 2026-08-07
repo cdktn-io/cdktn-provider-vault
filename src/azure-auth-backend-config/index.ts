@@ -255,6 +255,9 @@ export class AzureAuthBackendConfig extends cdktn.TerraformResource {
 
   // client_secret_wo - computed: false, optional: true, required: false
   private _clientSecretWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientSecretWo() {
     return this.getStringAttribute('client_secret_wo');
   }
@@ -512,7 +515,7 @@ export class AzureAuthBackendConfig extends cdktn.TerraformResource {
       backend: cdktn.stringToTerraform(this._backend),
       client_id: cdktn.stringToTerraform(this._clientId),
       client_secret: cdktn.stringToTerraform(this._clientSecret),
-      client_secret_wo: cdktn.stringToTerraform(this._clientSecretWo),
+      client_secret_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._clientSecretWo)),
       client_secret_wo_version: cdktn.numberToTerraform(this._clientSecretWoVersion),
       disable_automated_rotation: cdktn.booleanToTerraform(this._disableAutomatedRotation),
       environment: cdktn.stringToTerraform(this._environment),
@@ -552,7 +555,7 @@ export class AzureAuthBackendConfig extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       client_secret_wo: {
-        value: cdktn.stringToHclTerraform(this._clientSecretWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._clientSecretWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

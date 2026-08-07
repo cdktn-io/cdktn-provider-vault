@@ -838,6 +838,9 @@ export class GcpAuthBackend extends cdktn.TerraformResource {
 
   // credentials_wo - computed: false, optional: true, required: false
   private _credentialsWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get credentialsWo() {
     return this.getStringAttribute('credentials_wo');
   }
@@ -1229,7 +1232,7 @@ export class GcpAuthBackend extends cdktn.TerraformResource {
       client_email: cdktn.stringToTerraform(this._clientEmail),
       client_id: cdktn.stringToTerraform(this._clientId),
       credentials: cdktn.stringToTerraform(this._credentials),
-      credentials_wo: cdktn.stringToTerraform(this._credentialsWo),
+      credentials_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._credentialsWo)),
       credentials_wo_version: cdktn.numberToTerraform(this._credentialsWoVersion),
       description: cdktn.stringToTerraform(this._description),
       disable_automated_rotation: cdktn.booleanToTerraform(this._disableAutomatedRotation),
@@ -1277,7 +1280,7 @@ export class GcpAuthBackend extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       credentials_wo: {
-        value: cdktn.stringToHclTerraform(this._credentialsWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._credentialsWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -480,6 +480,9 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
 
   // aws_secret_access_key_wo - computed: false, optional: true, required: false
   private _awsSecretAccessKeyWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get awsSecretAccessKeyWo() {
     return this.getStringAttribute('aws_secret_access_key_wo');
   }
@@ -840,7 +843,7 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
       aws_s3_region: cdktn.stringToTerraform(this._awsS3Region),
       aws_s3_server_side_encryption: cdktn.booleanToTerraform(this._awsS3ServerSideEncryption),
       aws_secret_access_key: cdktn.stringToTerraform(this._awsSecretAccessKey),
-      aws_secret_access_key_wo: cdktn.stringToTerraform(this._awsSecretAccessKeyWo),
+      aws_secret_access_key_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._awsSecretAccessKeyWo)),
       aws_session_token: cdktn.stringToTerraform(this._awsSessionToken),
       azure_account_key: cdktn.stringToTerraform(this._azureAccountKey),
       azure_account_name: cdktn.stringToTerraform(this._azureAccountName),
@@ -934,7 +937,7 @@ export class RaftSnapshotAgentConfig extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       aws_secret_access_key_wo: {
-        value: cdktn.stringToHclTerraform(this._awsSecretAccessKeyWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._awsSecretAccessKeyWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

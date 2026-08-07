@@ -237,6 +237,9 @@ export class UserpassAuthBackendUser extends cdktn.TerraformResource {
 
   // password_hash_wo - computed: false, optional: true, required: false
   private _passwordHashWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordHashWo() {
     return this.getStringAttribute('password_hash_wo');
   }
@@ -269,6 +272,9 @@ export class UserpassAuthBackendUser extends cdktn.TerraformResource {
 
   // password_wo - computed: false, optional: true, required: false
   private _passwordWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get passwordWo() {
     return this.getStringAttribute('password_wo');
   }
@@ -465,9 +471,9 @@ export class UserpassAuthBackendUser extends cdktn.TerraformResource {
       alias_metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._aliasMetadata),
       mount: cdktn.stringToTerraform(this._mount),
       namespace: cdktn.stringToTerraform(this._namespace),
-      password_hash_wo: cdktn.stringToTerraform(this._passwordHashWo),
+      password_hash_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._passwordHashWo)),
       password_hash_wo_version: cdktn.numberToTerraform(this._passwordHashWoVersion),
-      password_wo: cdktn.stringToTerraform(this._passwordWo),
+      password_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._passwordWo)),
       password_wo_version: cdktn.numberToTerraform(this._passwordWoVersion),
       token_bound_cidrs: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenBoundCidrs),
       token_explicit_max_ttl: cdktn.numberToTerraform(this._tokenExplicitMaxTtl),
@@ -503,7 +509,7 @@ export class UserpassAuthBackendUser extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       password_hash_wo: {
-        value: cdktn.stringToHclTerraform(this._passwordHashWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._passwordHashWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -515,7 +521,7 @@ export class UserpassAuthBackendUser extends cdktn.TerraformResource {
         storageClassType: "number",
       },
       password_wo: {
-        value: cdktn.stringToHclTerraform(this._passwordWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._passwordWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

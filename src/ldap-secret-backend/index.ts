@@ -487,6 +487,9 @@ export class LdapSecretBackend extends cdktn.TerraformResource {
 
   // bindpass_wo - computed: false, optional: true, required: false
   private _bindpassWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get bindpassWo() {
     return this.getStringAttribute('bindpass_wo');
   }
@@ -1121,7 +1124,7 @@ export class LdapSecretBackend extends cdktn.TerraformResource {
       audit_non_hmac_response_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._auditNonHmacResponseKeys),
       binddn: cdktn.stringToTerraform(this._binddn),
       bindpass: cdktn.stringToTerraform(this._bindpass),
-      bindpass_wo: cdktn.stringToTerraform(this._bindpassWo),
+      bindpass_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._bindpassWo)),
       bindpass_wo_version: cdktn.numberToTerraform(this._bindpassWoVersion),
       certificate: cdktn.stringToTerraform(this._certificate),
       client_tls_cert: cdktn.stringToTerraform(this._clientTlsCert),
@@ -1202,7 +1205,7 @@ export class LdapSecretBackend extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       bindpass_wo: {
-        value: cdktn.stringToHclTerraform(this._bindpassWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._bindpassWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

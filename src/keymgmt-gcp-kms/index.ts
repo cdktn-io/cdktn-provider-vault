@@ -115,6 +115,9 @@ export class KeymgmtGcpKms extends cdktn.TerraformResource {
 
   // credentials_wo - computed: false, optional: true, required: false
   private _credentialsWo?: { [key: string]: string }; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get credentialsWo() {
     return this.getStringMapAttribute('credentials_wo');
   }
@@ -206,7 +209,7 @@ export class KeymgmtGcpKms extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      credentials_wo: cdktn.hashMapper(cdktn.stringToTerraform)(this._credentialsWo),
+      credentials_wo: this.markWriteOnlyAttribute(cdktn.hashMapper(cdktn.stringToTerraform)(this._credentialsWo)),
       credentials_wo_version: cdktn.numberToTerraform(this._credentialsWoVersion),
       key_collection: cdktn.stringToTerraform(this._keyCollection),
       mount: cdktn.stringToTerraform(this._mount),
@@ -218,7 +221,7 @@ export class KeymgmtGcpKms extends cdktn.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       credentials_wo: {
-        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._credentialsWo),
+        value: this.markWriteOnlyAttribute(cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._credentialsWo)),
         isBlock: false,
         type: "map",
         storageClassType: "stringMap",

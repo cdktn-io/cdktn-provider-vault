@@ -390,6 +390,9 @@ export class GcpSecretBackend extends cdktn.TerraformResource {
 
   // credentials_wo - computed: false, optional: true, required: false
   private _credentialsWo?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get credentialsWo() {
     return this.getStringAttribute('credentials_wo');
   }
@@ -847,7 +850,7 @@ export class GcpSecretBackend extends cdktn.TerraformResource {
       audit_non_hmac_request_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._auditNonHmacRequestKeys),
       audit_non_hmac_response_keys: cdktn.listMapper(cdktn.stringToTerraform, false)(this._auditNonHmacResponseKeys),
       credentials: cdktn.stringToTerraform(this._credentials),
-      credentials_wo: cdktn.stringToTerraform(this._credentialsWo),
+      credentials_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._credentialsWo)),
       credentials_wo_version: cdktn.numberToTerraform(this._credentialsWoVersion),
       default_lease_ttl_seconds: cdktn.numberToTerraform(this._defaultLeaseTtlSeconds),
       delegated_auth_accessors: cdktn.listMapper(cdktn.stringToTerraform, false)(this._delegatedAuthAccessors),
@@ -911,7 +914,7 @@ export class GcpSecretBackend extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       credentials_wo: {
-        value: cdktn.stringToHclTerraform(this._credentialsWo),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._credentialsWo)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

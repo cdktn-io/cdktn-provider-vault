@@ -176,6 +176,9 @@ export class AzureSecretBackendStaticRole extends cdktn.TerraformResource {
 
   // client_secret - computed: false, optional: true, required: false
   private _clientSecret?: string; 
+  /**
+  * @deprecated Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+  */
   public get clientSecret() {
     return this.getStringAttribute('client_secret');
   }
@@ -328,7 +331,7 @@ export class AzureSecretBackendStaticRole extends cdktn.TerraformResource {
     return {
       application_object_id: cdktn.stringToTerraform(this._applicationObjectId),
       backend: cdktn.stringToTerraform(this._backend),
-      client_secret: cdktn.stringToTerraform(this._clientSecret),
+      client_secret: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._clientSecret)),
       defer_initial_creds: cdktn.booleanToTerraform(this._deferInitialCreds),
       expiration: cdktn.stringToTerraform(this._expiration),
       metadata: cdktn.hashMapper(cdktn.stringToTerraform)(this._metadata),
@@ -355,7 +358,7 @@ export class AzureSecretBackendStaticRole extends cdktn.TerraformResource {
         storageClassType: "string",
       },
       client_secret: {
-        value: cdktn.stringToHclTerraform(this._clientSecret),
+        value: this.markWriteOnlyAttribute(cdktn.stringToHclTerraform(this._clientSecret)),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
