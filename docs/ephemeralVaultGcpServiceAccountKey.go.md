@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultGcpServiceAccountKey.EphemeralVaultGcpServiceAccountKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgcpserviceaccountkey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpserviceaccountkey"
 
 ephemeralvaultgcpserviceaccountkey.NewEphemeralVaultGcpServiceAccountKey(scope Construct, id *string, config EphemeralVaultGcpServiceAccountKeyConfig) EphemeralVaultGcpServiceAccountKey
 ```
@@ -337,7 +337,7 @@ func ResetStaticAccount()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultGcpServiceAccountKey.EphemeralVaultGcpServiceAccountKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgcpserviceaccountkey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpserviceaccountkey"
 
 ephemeralvaultgcpserviceaccountkey.EphemeralVaultGcpServiceAccountKey_IsConstruct(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultGcpServiceAccountKey.EphemeralVaultGcpServiceAccountKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgcpserviceaccountkey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpserviceaccountkey"
 
 ephemeralvaultgcpserviceaccountkey.EphemeralVaultGcpServiceAccountKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ ephemeralvaultgcpserviceaccountkey.EphemeralVaultGcpServiceAccountKey_IsTerrafor
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultGcpServiceAccountKey.EphemeralVaultGcpServiceAccountKey.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgcpserviceaccountkey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpserviceaccountkey"
 
 ephemeralvaultgcpserviceaccountkey.EphemeralVaultGcpServiceAccountKey_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultGcpServiceAccountKey.EphemeralVaultGcpServiceAccountKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgcpserviceaccountkey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpserviceaccountkey"
 
 &ephemeralvaultgcpserviceaccountkey.EphemeralVaultGcpServiceAccountKeyConfig {
 	Count: interface{},

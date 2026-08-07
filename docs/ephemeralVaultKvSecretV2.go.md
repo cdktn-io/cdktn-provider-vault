@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultKvSecretV2.EphemeralVaultKvSecretV2.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultkvsecretv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkvsecretv2"
 
 ephemeralvaultkvsecretv2.NewEphemeralVaultKvSecretV2(scope Construct, id *string, config EphemeralVaultKvSecretV2Config) EphemeralVaultKvSecretV2
 ```
@@ -316,7 +316,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultKvSecretV2.EphemeralVaultKvSecretV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultkvsecretv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkvsecretv2"
 
 ephemeralvaultkvsecretv2.EphemeralVaultKvSecretV2_IsConstruct(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultKvSecretV2.EphemeralVaultKvSecretV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultkvsecretv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkvsecretv2"
 
 ephemeralvaultkvsecretv2.EphemeralVaultKvSecretV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -362,7 +362,7 @@ ephemeralvaultkvsecretv2.EphemeralVaultKvSecretV2_IsTerraformElement(x interface
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultKvSecretV2.EphemeralVaultKvSecretV2.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultkvsecretv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkvsecretv2"
 
 ephemeralvaultkvsecretv2.EphemeralVaultKvSecretV2_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -715,7 +715,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultKvSecretV2.EphemeralVaultKvSecretV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultkvsecretv2"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkvsecretv2"
 
 &ephemeralvaultkvsecretv2.EphemeralVaultKvSecretV2Config {
 	Count: interface{},

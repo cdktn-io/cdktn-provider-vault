@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultTerraformToken.EphemeralVaultTerraformToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultterraformtoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultterraformtoken"
 
 ephemeralvaultterraformtoken.NewEphemeralVaultTerraformToken(scope Construct, id *string, config EphemeralVaultTerraformTokenConfig) EphemeralVaultTerraformToken
 ```
@@ -316,7 +316,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultTerraformToken.EphemeralVaultTerraformToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultterraformtoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultterraformtoken"
 
 ephemeralvaultterraformtoken.EphemeralVaultTerraformToken_IsConstruct(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultTerraformToken.EphemeralVaultTerraformToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultterraformtoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultterraformtoken"
 
 ephemeralvaultterraformtoken.EphemeralVaultTerraformToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -362,7 +362,7 @@ ephemeralvaultterraformtoken.EphemeralVaultTerraformToken_IsTerraformElement(x i
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultTerraformToken.EphemeralVaultTerraformToken.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultterraformtoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultterraformtoken"
 
 ephemeralvaultterraformtoken.EphemeralVaultTerraformToken_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultTerraformToken.EphemeralVaultTerraformTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultterraformtoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultterraformtoken"
 
 &ephemeralvaultterraformtoken.EphemeralVaultTerraformTokenConfig {
 	Count: interface{},

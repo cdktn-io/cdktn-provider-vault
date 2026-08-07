@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultKubernetesServiceAccountToken.EphemeralVaultKubernetesServiceAccountToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultkubernetesserviceaccounttoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkubernetesserviceaccounttoken"
 
 ephemeralvaultkubernetesserviceaccounttoken.NewEphemeralVaultKubernetesServiceAccountToken(scope Construct, id *string, config EphemeralVaultKubernetesServiceAccountTokenConfig) EphemeralVaultKubernetesServiceAccountToken
 ```
@@ -323,7 +323,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultKubernetesServiceAccountToken.EphemeralVaultKubernetesServiceAccountToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultkubernetesserviceaccounttoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkubernetesserviceaccounttoken"
 
 ephemeralvaultkubernetesserviceaccounttoken.EphemeralVaultKubernetesServiceAccountToken_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultKubernetesServiceAccountToken.EphemeralVaultKubernetesServiceAccountToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultkubernetesserviceaccounttoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkubernetesserviceaccounttoken"
 
 ephemeralvaultkubernetesserviceaccounttoken.EphemeralVaultKubernetesServiceAccountToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ ephemeralvaultkubernetesserviceaccounttoken.EphemeralVaultKubernetesServiceAccou
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultKubernetesServiceAccountToken.EphemeralVaultKubernetesServiceAccountToken.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultkubernetesserviceaccounttoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkubernetesserviceaccounttoken"
 
 ephemeralvaultkubernetesserviceaccounttoken.EphemeralVaultKubernetesServiceAccountToken_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -766,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultKubernetesServiceAccountToken.EphemeralVaultKubernetesServiceAccountTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultkubernetesserviceaccounttoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkubernetesserviceaccounttoken"
 
 &ephemeralvaultkubernetesserviceaccounttoken.EphemeralVaultKubernetesServiceAccountTokenConfig {
 	Count: interface{},

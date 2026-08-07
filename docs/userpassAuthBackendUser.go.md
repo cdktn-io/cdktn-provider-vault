@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.userpassAuthBackendUser.UserpassAuthBackendUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/userpassauthbackenduser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/userpassauthbackenduser"
 
 userpassauthbackenduser.NewUserpassAuthBackendUser(scope Construct, id *string, config UserpassAuthBackendUserConfig) UserpassAuthBackendUser
 ```
@@ -505,7 +505,7 @@ func ResetTokenType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.userpassAuthBackendUser.UserpassAuthBackendUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/userpassauthbackenduser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/userpassauthbackenduser"
 
 userpassauthbackenduser.UserpassAuthBackendUser_IsConstruct(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.userpassAuthBackendUser.UserpassAuthBackendUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/userpassauthbackenduser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/userpassauthbackenduser"
 
 userpassauthbackenduser.UserpassAuthBackendUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ userpassauthbackenduser.UserpassAuthBackendUser_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.userpassAuthBackendUser.UserpassAuthBackendUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/userpassauthbackenduser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/userpassauthbackenduser"
 
 userpassauthbackenduser.UserpassAuthBackendUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ userpassauthbackenduser.UserpassAuthBackendUser_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.userpassAuthBackendUser.UserpassAuthBackendUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/userpassauthbackenduser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/userpassauthbackenduser"
 
 userpassauthbackenduser.UserpassAuthBackendUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1172,7 +1172,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.userpassAuthBackendUser.UserpassAuthBackendUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/userpassauthbackenduser"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/userpassauthbackenduser"
 
 &userpassauthbackenduser.UserpassAuthBackendUserConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/jwtauthbackend"
 
 jwtauthbackend.NewJwtAuthBackend(scope Construct, id *string, config JwtAuthBackendConfig) JwtAuthBackend
 ```
@@ -588,7 +588,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/jwtauthbackend"
 
 jwtauthbackend.JwtAuthBackend_IsConstruct(x interface{}) *bool
 ```
@@ -620,7 +620,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/jwtauthbackend"
 
 jwtauthbackend.JwtAuthBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -634,7 +634,7 @@ jwtauthbackend.JwtAuthBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/jwtauthbackend"
 
 jwtauthbackend.JwtAuthBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -648,7 +648,7 @@ jwtauthbackend.JwtAuthBackend_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/jwtauthbackend"
 
 jwtauthbackend.JwtAuthBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1440,7 +1440,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/jwtauthbackend"
 
 &jwtauthbackend.JwtAuthBackendConfig {
 	Connection: interface{},
@@ -1953,7 +1953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/jwtauthbackend"
 
 &jwtauthbackend.JwtAuthBackendTune {
 	AllowedResponseHeaders: *[]*string,
@@ -2085,7 +2085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTuneList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/jwtauthbackend"
 
 jwtauthbackend.NewJwtAuthBackendTuneList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JwtAuthBackendTuneList
 ```
@@ -2245,7 +2245,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTuneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/jwtauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/jwtauthbackend"
 
 jwtauthbackend.NewJwtAuthBackendTuneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JwtAuthBackendTuneOutputReference
 ```

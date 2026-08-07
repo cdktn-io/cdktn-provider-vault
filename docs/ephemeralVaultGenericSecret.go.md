@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultGenericSecret.EphemeralVaultGenericSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgenericsecret"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgenericsecret"
 
 ephemeralvaultgenericsecret.NewEphemeralVaultGenericSecret(scope Construct, id *string, config EphemeralVaultGenericSecretConfig) EphemeralVaultGenericSecret
 ```
@@ -323,7 +323,7 @@ func ResetWithLeaseStartTime()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultGenericSecret.EphemeralVaultGenericSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgenericsecret"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgenericsecret"
 
 ephemeralvaultgenericsecret.EphemeralVaultGenericSecret_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultGenericSecret.EphemeralVaultGenericSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgenericsecret"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgenericsecret"
 
 ephemeralvaultgenericsecret.EphemeralVaultGenericSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ ephemeralvaultgenericsecret.EphemeralVaultGenericSecret_IsTerraformElement(x int
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultGenericSecret.EphemeralVaultGenericSecret.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgenericsecret"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgenericsecret"
 
 ephemeralvaultgenericsecret.EphemeralVaultGenericSecret_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultGenericSecret.EphemeralVaultGenericSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgenericsecret"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgenericsecret"
 
 &ephemeralvaultgenericsecret.EphemeralVaultGenericSecretConfig {
 	Count: interface{},

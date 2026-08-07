@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.activationFlags.ActivationFlags.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/activationflags"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/activationflags"
 
 activationflags.NewActivationFlags(scope Construct, id *string, config ActivationFlagsConfig) ActivationFlags
 ```
@@ -400,7 +400,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.activationFlags.ActivationFlags.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/activationflags"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/activationflags"
 
 activationflags.ActivationFlags_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.activationFlags.ActivationFlags.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/activationflags"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/activationflags"
 
 activationflags.ActivationFlags_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ activationflags.ActivationFlags_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.activationFlags.ActivationFlags.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/activationflags"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/activationflags"
 
 activationflags.ActivationFlags_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ activationflags.ActivationFlags_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.activationFlags.ActivationFlags.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/activationflags"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/activationflags"
 
 activationflags.ActivationFlags_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.activationFlags.ActivationFlagsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/activationflags"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/activationflags"
 
 &activationflags.ActivationFlagsConfig {
 	Connection: interface{},

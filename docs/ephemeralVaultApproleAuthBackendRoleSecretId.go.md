@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultApproleAuthBackendRoleSecretId.EphemeralVaultApproleAuthBackendRoleSecretId.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultapproleauthbackendrolesecretid"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultapproleauthbackendrolesecretid"
 
 ephemeralvaultapproleauthbackendrolesecretid.NewEphemeralVaultApproleAuthBackendRoleSecretId(scope Construct, id *string, config EphemeralVaultApproleAuthBackendRoleSecretIdConfig) EphemeralVaultApproleAuthBackendRoleSecretId
 ```
@@ -344,7 +344,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultApproleAuthBackendRoleSecretId.EphemeralVaultApproleAuthBackendRoleSecretId.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultapproleauthbackendrolesecretid"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultapproleauthbackendrolesecretid"
 
 ephemeralvaultapproleauthbackendrolesecretid.EphemeralVaultApproleAuthBackendRoleSecretId_IsConstruct(x interface{}) *bool
 ```
@@ -376,7 +376,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultApproleAuthBackendRoleSecretId.EphemeralVaultApproleAuthBackendRoleSecretId.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultapproleauthbackendrolesecretid"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultapproleauthbackendrolesecretid"
 
 ephemeralvaultapproleauthbackendrolesecretid.EphemeralVaultApproleAuthBackendRoleSecretId_IsTerraformElement(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ ephemeralvaultapproleauthbackendrolesecretid.EphemeralVaultApproleAuthBackendRol
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultApproleAuthBackendRoleSecretId.EphemeralVaultApproleAuthBackendRoleSecretId.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultapproleauthbackendrolesecretid"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultapproleauthbackendrolesecretid"
 
 ephemeralvaultapproleauthbackendrolesecretid.EphemeralVaultApproleAuthBackendRoleSecretId_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -765,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultApproleAuthBackendRoleSecretId.EphemeralVaultApproleAuthBackendRoleSecretIdConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultapproleauthbackendrolesecretid"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultapproleauthbackendrolesecretid"
 
 &ephemeralvaultapproleauthbackendrolesecretid.EphemeralVaultApproleAuthBackendRoleSecretIdConfig {
 	Count: interface{},

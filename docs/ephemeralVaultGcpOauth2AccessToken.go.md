@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultGcpOauth2AccessToken.EphemeralVaultGcpOauth2AccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgcpoauth2accesstoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpoauth2accesstoken"
 
 ephemeralvaultgcpoauth2accesstoken.NewEphemeralVaultGcpOauth2AccessToken(scope Construct, id *string, config EphemeralVaultGcpOauth2AccessTokenConfig) EphemeralVaultGcpOauth2AccessToken
 ```
@@ -337,7 +337,7 @@ func ResetStaticAccount()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultGcpOauth2AccessToken.EphemeralVaultGcpOauth2AccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgcpoauth2accesstoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpoauth2accesstoken"
 
 ephemeralvaultgcpoauth2accesstoken.EphemeralVaultGcpOauth2AccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultGcpOauth2AccessToken.EphemeralVaultGcpOauth2AccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgcpoauth2accesstoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpoauth2accesstoken"
 
 ephemeralvaultgcpoauth2accesstoken.EphemeralVaultGcpOauth2AccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ ephemeralvaultgcpoauth2accesstoken.EphemeralVaultGcpOauth2AccessToken_IsTerrafor
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultGcpOauth2AccessToken.EphemeralVaultGcpOauth2AccessToken.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgcpoauth2accesstoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpoauth2accesstoken"
 
 ephemeralvaultgcpoauth2accesstoken.EphemeralVaultGcpOauth2AccessToken_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultGcpOauth2AccessToken.EphemeralVaultGcpOauth2AccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgcpoauth2accesstoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpoauth2accesstoken"
 
 &ephemeralvaultgcpoauth2accesstoken.EphemeralVaultGcpOauth2AccessTokenConfig {
 	Count: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultRadiusAuthLogin.EphemeralVaultRadiusAuthLogin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultradiusauthlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultradiusauthlogin"
 
 ephemeralvaultradiusauthlogin.NewEphemeralVaultRadiusAuthLogin(scope Construct, id *string, config EphemeralVaultRadiusAuthLoginConfig) EphemeralVaultRadiusAuthLogin
 ```
@@ -309,7 +309,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultRadiusAuthLogin.EphemeralVaultRadiusAuthLogin.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultradiusauthlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultradiusauthlogin"
 
 ephemeralvaultradiusauthlogin.EphemeralVaultRadiusAuthLogin_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultRadiusAuthLogin.EphemeralVaultRadiusAuthLogin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultradiusauthlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultradiusauthlogin"
 
 ephemeralvaultradiusauthlogin.EphemeralVaultRadiusAuthLogin_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ ephemeralvaultradiusauthlogin.EphemeralVaultRadiusAuthLogin_IsTerraformElement(x
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultRadiusAuthLogin.EphemeralVaultRadiusAuthLogin.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultradiusauthlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultradiusauthlogin"
 
 ephemeralvaultradiusauthlogin.EphemeralVaultRadiusAuthLogin_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -796,7 +796,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultRadiusAuthLogin.EphemeralVaultRadiusAuthLoginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultradiusauthlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultradiusauthlogin"
 
 &ephemeralvaultradiusauthlogin.EphemeralVaultRadiusAuthLoginConfig {
 	Count: interface{},

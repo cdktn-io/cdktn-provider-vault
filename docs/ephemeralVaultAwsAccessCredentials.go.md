@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultAwsAccessCredentials.EphemeralVaultAwsAccessCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultawsaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultawsaccesscredentials"
 
 ephemeralvaultawsaccesscredentials.NewEphemeralVaultAwsAccessCredentials(scope Construct, id *string, config EphemeralVaultAwsAccessCredentialsConfig) EphemeralVaultAwsAccessCredentials
 ```
@@ -337,7 +337,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultAwsAccessCredentials.EphemeralVaultAwsAccessCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultawsaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultawsaccesscredentials"
 
 ephemeralvaultawsaccesscredentials.EphemeralVaultAwsAccessCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultAwsAccessCredentials.EphemeralVaultAwsAccessCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultawsaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultawsaccesscredentials"
 
 ephemeralvaultawsaccesscredentials.EphemeralVaultAwsAccessCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ ephemeralvaultawsaccesscredentials.EphemeralVaultAwsAccessCredentials_IsTerrafor
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultAwsAccessCredentials.EphemeralVaultAwsAccessCredentials.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultawsaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultawsaccesscredentials"
 
 ephemeralvaultawsaccesscredentials.EphemeralVaultAwsAccessCredentials_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultAwsAccessCredentials.EphemeralVaultAwsAccessCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultawsaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultawsaccesscredentials"
 
 &ephemeralvaultawsaccesscredentials.EphemeralVaultAwsAccessCredentialsConfig {
 	Count: interface{},
