@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultAlicloudAccessCredentials.EphemeralVaultAlicloudAccessCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultalicloudaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultalicloudaccesscredentials"
 
 ephemeralvaultalicloudaccesscredentials.NewEphemeralVaultAlicloudAccessCredentials(scope Construct, id *string, config EphemeralVaultAlicloudAccessCredentialsConfig) EphemeralVaultAlicloudAccessCredentials
 ```
@@ -309,7 +309,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultAlicloudAccessCredentials.EphemeralVaultAlicloudAccessCredentials.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultalicloudaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultalicloudaccesscredentials"
 
 ephemeralvaultalicloudaccesscredentials.EphemeralVaultAlicloudAccessCredentials_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultAlicloudAccessCredentials.EphemeralVaultAlicloudAccessCredentials.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultalicloudaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultalicloudaccesscredentials"
 
 ephemeralvaultalicloudaccesscredentials.EphemeralVaultAlicloudAccessCredentials_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ ephemeralvaultalicloudaccesscredentials.EphemeralVaultAlicloudAccessCredentials_
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultAlicloudAccessCredentials.EphemeralVaultAlicloudAccessCredentials.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultalicloudaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultalicloudaccesscredentials"
 
 ephemeralvaultalicloudaccesscredentials.EphemeralVaultAlicloudAccessCredentials_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultAlicloudAccessCredentials.EphemeralVaultAlicloudAccessCredentialsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultalicloudaccesscredentials"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultalicloudaccesscredentials"
 
 &ephemeralvaultalicloudaccesscredentials.EphemeralVaultAlicloudAccessCredentialsConfig {
 	Count: interface{},

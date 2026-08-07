@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.configUiDefaultAuth.ConfigUiDefaultAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuidefaultauth"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configuidefaultauth"
 
 configuidefaultauth.NewConfigUiDefaultAuth(scope Construct, id *string, config ConfigUiDefaultAuthConfig) ConfigUiDefaultAuth
 ```
@@ -428,7 +428,7 @@ func ResetNamespacePath()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.configUiDefaultAuth.ConfigUiDefaultAuth.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuidefaultauth"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configuidefaultauth"
 
 configuidefaultauth.ConfigUiDefaultAuth_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.configUiDefaultAuth.ConfigUiDefaultAuth.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuidefaultauth"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configuidefaultauth"
 
 configuidefaultauth.ConfigUiDefaultAuth_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ configuidefaultauth.ConfigUiDefaultAuth_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.configUiDefaultAuth.ConfigUiDefaultAuth.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuidefaultauth"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configuidefaultauth"
 
 configuidefaultauth.ConfigUiDefaultAuth_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ configuidefaultauth.ConfigUiDefaultAuth_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.configUiDefaultAuth.ConfigUiDefaultAuth.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuidefaultauth"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configuidefaultauth"
 
 configuidefaultauth.ConfigUiDefaultAuth_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.configUiDefaultAuth.ConfigUiDefaultAuthConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/configuidefaultauth"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/configuidefaultauth"
 
 &configuidefaultauth.ConfigUiDefaultAuthConfig {
 	Connection: interface{},

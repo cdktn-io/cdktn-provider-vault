@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultSpiffeSecretBackendMintjwt.EphemeralVaultSpiffeSecretBackendMintjwt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultspiffesecretbackendmintjwt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultspiffesecretbackendmintjwt"
 
 ephemeralvaultspiffesecretbackendmintjwt.NewEphemeralVaultSpiffeSecretBackendMintjwt(scope Construct, id *string, config EphemeralVaultSpiffeSecretBackendMintjwtConfig) EphemeralVaultSpiffeSecretBackendMintjwt
 ```
@@ -309,7 +309,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultSpiffeSecretBackendMintjwt.EphemeralVaultSpiffeSecretBackendMintjwt.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultspiffesecretbackendmintjwt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultspiffesecretbackendmintjwt"
 
 ephemeralvaultspiffesecretbackendmintjwt.EphemeralVaultSpiffeSecretBackendMintjwt_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultSpiffeSecretBackendMintjwt.EphemeralVaultSpiffeSecretBackendMintjwt.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultspiffesecretbackendmintjwt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultspiffesecretbackendmintjwt"
 
 ephemeralvaultspiffesecretbackendmintjwt.EphemeralVaultSpiffeSecretBackendMintjwt_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ ephemeralvaultspiffesecretbackendmintjwt.EphemeralVaultSpiffeSecretBackendMintjw
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultSpiffeSecretBackendMintjwt.EphemeralVaultSpiffeSecretBackendMintjwt.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultspiffesecretbackendmintjwt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultspiffesecretbackendmintjwt"
 
 ephemeralvaultspiffesecretbackendmintjwt.EphemeralVaultSpiffeSecretBackendMintjwt_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultSpiffeSecretBackendMintjwt.EphemeralVaultSpiffeSecretBackendMintjwtConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultspiffesecretbackendmintjwt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultspiffesecretbackendmintjwt"
 
 &ephemeralvaultspiffesecretbackendmintjwt.EphemeralVaultSpiffeSecretBackendMintjwtConfig {
 	Count: interface{},

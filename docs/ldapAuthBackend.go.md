@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapauthbackend"
 
 ldapauthbackend.NewLdapAuthBackend(scope Construct, id *string, config LdapAuthBackendConfig) LdapAuthBackend
 ```
@@ -763,7 +763,7 @@ func ResetUseTokenGroups()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapauthbackend"
 
 ldapauthbackend.LdapAuthBackend_IsConstruct(x interface{}) *bool
 ```
@@ -795,7 +795,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapauthbackend"
 
 ldapauthbackend.LdapAuthBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -809,7 +809,7 @@ ldapauthbackend.LdapAuthBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapauthbackend"
 
 ldapauthbackend.LdapAuthBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -823,7 +823,7 @@ ldapauthbackend.LdapAuthBackend_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapauthbackend"
 
 ldapauthbackend.LdapAuthBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2187,7 +2187,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapauthbackend"
 
 &ldapauthbackend.LdapAuthBackendConfig {
 	Connection: interface{},
@@ -3058,7 +3058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackendTune.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapauthbackend"
 
 &ldapauthbackend.LdapAuthBackendTune {
 	AllowedResponseHeaders: *[]*string,
@@ -3190,7 +3190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackendTuneList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapauthbackend"
 
 ldapauthbackend.NewLdapAuthBackendTuneList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LdapAuthBackendTuneList
 ```
@@ -3350,7 +3350,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ldapAuthBackend.LdapAuthBackendTuneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ldapauthbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapauthbackend"
 
 ldapauthbackend.NewLdapAuthBackendTuneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LdapAuthBackendTuneOutputReference
 ```

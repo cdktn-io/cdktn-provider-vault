@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultUserpassAuthLogin.EphemeralVaultUserpassAuthLogin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultuserpassauthlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultuserpassauthlogin"
 
 ephemeralvaultuserpassauthlogin.NewEphemeralVaultUserpassAuthLogin(scope Construct, id *string, config EphemeralVaultUserpassAuthLoginConfig) EphemeralVaultUserpassAuthLogin
 ```
@@ -309,7 +309,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultUserpassAuthLogin.EphemeralVaultUserpassAuthLogin.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultuserpassauthlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultuserpassauthlogin"
 
 ephemeralvaultuserpassauthlogin.EphemeralVaultUserpassAuthLogin_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultUserpassAuthLogin.EphemeralVaultUserpassAuthLogin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultuserpassauthlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultuserpassauthlogin"
 
 ephemeralvaultuserpassauthlogin.EphemeralVaultUserpassAuthLogin_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ ephemeralvaultuserpassauthlogin.EphemeralVaultUserpassAuthLogin_IsTerraformEleme
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultUserpassAuthLogin.EphemeralVaultUserpassAuthLogin.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultuserpassauthlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultuserpassauthlogin"
 
 ephemeralvaultuserpassauthlogin.EphemeralVaultUserpassAuthLogin_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -697,7 +697,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultUserpassAuthLogin.EphemeralVaultUserpassAuthLoginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultuserpassauthlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultuserpassauthlogin"
 
 &ephemeralvaultuserpassauthlogin.EphemeralVaultUserpassAuthLoginConfig {
 	Count: interface{},

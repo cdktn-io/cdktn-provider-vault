@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultToken.EphemeralVaultToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaulttoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaulttoken"
 
 ephemeralvaulttoken.NewEphemeralVaultToken(scope Construct, id *string, config EphemeralVaultTokenConfig) EphemeralVaultToken
 ```
@@ -414,7 +414,7 @@ func ResetWrappingTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultToken.EphemeralVaultToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaulttoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaulttoken"
 
 ephemeralvaulttoken.EphemeralVaultToken_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultToken.EphemeralVaultToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaulttoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaulttoken"
 
 ephemeralvaulttoken.EphemeralVaultToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ ephemeralvaulttoken.EphemeralVaultToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultToken.EphemeralVaultToken.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaulttoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaulttoken"
 
 ephemeralvaulttoken.EphemeralVaultToken_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -1110,7 +1110,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultToken.EphemeralVaultTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaulttoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaulttoken"
 
 &ephemeralvaulttoken.EphemeralVaultTokenConfig {
 	Count: interface{},

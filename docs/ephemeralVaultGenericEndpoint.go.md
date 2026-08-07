@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultGenericEndpoint.EphemeralVaultGenericEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgenericendpoint"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgenericendpoint"
 
 ephemeralvaultgenericendpoint.NewEphemeralVaultGenericEndpoint(scope Construct, id *string, config EphemeralVaultGenericEndpointConfig) EphemeralVaultGenericEndpoint
 ```
@@ -323,7 +323,7 @@ func ResetWriteFields()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultGenericEndpoint.EphemeralVaultGenericEndpoint.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgenericendpoint"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgenericendpoint"
 
 ephemeralvaultgenericendpoint.EphemeralVaultGenericEndpoint_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultGenericEndpoint.EphemeralVaultGenericEndpoint.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgenericendpoint"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgenericendpoint"
 
 ephemeralvaultgenericendpoint.EphemeralVaultGenericEndpoint_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ ephemeralvaultgenericendpoint.EphemeralVaultGenericEndpoint_IsTerraformElement(x
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultGenericEndpoint.EphemeralVaultGenericEndpoint.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgenericendpoint"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgenericendpoint"
 
 ephemeralvaultgenericendpoint.EphemeralVaultGenericEndpoint_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultGenericEndpoint.EphemeralVaultGenericEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v17/ephemeralvaultgenericendpoint"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgenericendpoint"
 
 &ephemeralvaultgenericendpoint.EphemeralVaultGenericEndpointConfig {
 	Count: interface{},
