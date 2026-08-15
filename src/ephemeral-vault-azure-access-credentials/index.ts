@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials
+// https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,79 +15,79 @@ export interface EphemeralVaultAzureAccessCredentialsConfig extends cdktn.Terraf
   /**
   * Azure Secret Backend to read credentials from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials#backend EphemeralVaultAzureAccessCredentials#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials#backend EphemeralVaultAzureAccessCredentials#backend}
   */
   readonly backend: string;
   /**
   * The Azure environment to use during credential validation. Defaults to the Azure Public Cloud. Some possible values: AzurePublicCloud, AzureUSGovernmentCloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials#environment EphemeralVaultAzureAccessCredentials#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials#environment EphemeralVaultAzureAccessCredentials#environment}
   */
   readonly environment?: string;
   /**
   * If 'validate_creds' is true, the number of seconds after which to give up validating credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials#max_cred_validation_seconds EphemeralVaultAzureAccessCredentials#max_cred_validation_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials#max_cred_validation_seconds EphemeralVaultAzureAccessCredentials#max_cred_validation_seconds}
   */
   readonly maxCredValidationSeconds?: number;
   /**
   * Terraform ID of the mount resource. Used to defer the provisioning of the ephemeral resource till the apply stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials#mount_id EphemeralVaultAzureAccessCredentials#mount_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials#mount_id EphemeralVaultAzureAccessCredentials#mount_id}
   */
   readonly mountId?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials#namespace EphemeralVaultAzureAccessCredentials#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials#namespace EphemeralVaultAzureAccessCredentials#namespace}
   */
   readonly namespace?: string;
   /**
   * If 'validate_creds' is true, the number of seconds to wait between each test of generated credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials#num_seconds_between_tests EphemeralVaultAzureAccessCredentials#num_seconds_between_tests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials#num_seconds_between_tests EphemeralVaultAzureAccessCredentials#num_seconds_between_tests}
   */
   readonly numSecondsBetweenTests?: number;
   /**
   * If 'validate_creds' is true, the number of sequential successes required to validate generated credentials.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials#num_sequential_successes EphemeralVaultAzureAccessCredentials#num_sequential_successes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials#num_sequential_successes EphemeralVaultAzureAccessCredentials#num_sequential_successes}
   */
   readonly numSequentialSuccesses?: number;
   /**
   * Input metadata to send with the request to Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials#request_metadata EphemeralVaultAzureAccessCredentials#request_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials#request_metadata EphemeralVaultAzureAccessCredentials#request_metadata}
   */
   readonly requestMetadata?: { [key: string]: string };
   /**
   * Azure Secret Role to read credentials from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials#role EphemeralVaultAzureAccessCredentials#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials#role EphemeralVaultAzureAccessCredentials#role}
   */
   readonly role: string;
   /**
   * The subscription ID to use during credential validation. Defaults to the subscription ID configured in the Vault backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials#subscription_id EphemeralVaultAzureAccessCredentials#subscription_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials#subscription_id EphemeralVaultAzureAccessCredentials#subscription_id}
   */
   readonly subscriptionId?: string;
   /**
   * The tenant ID to use during credential validation. Defaults to the tenant ID configured in the Vault backend.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials#tenant_id EphemeralVaultAzureAccessCredentials#tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials#tenant_id EphemeralVaultAzureAccessCredentials#tenant_id}
   */
   readonly tenantId?: string;
   /**
   * Whether generated credentials should be validated before being returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials#validate_creds EphemeralVaultAzureAccessCredentials#validate_creds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials#validate_creds EphemeralVaultAzureAccessCredentials#validate_creds}
   */
   readonly validateCreds?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials vault_azure_access_credentials}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials vault_azure_access_credentials}
 */
 export class EphemeralVaultAzureAccessCredentials extends cdktn.TerraformEphemeralResource {
 
@@ -101,7 +101,7 @@ export class EphemeralVaultAzureAccessCredentials extends cdktn.TerraformEphemer
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/azure_access_credentials vault_azure_access_credentials} Ephemeral Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/azure_access_credentials vault_azure_access_credentials} Ephemeral Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -112,7 +112,7 @@ export class EphemeralVaultAzureAccessCredentials extends cdktn.TerraformEphemer
       terraformResourceType: 'vault_azure_access_credentials',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

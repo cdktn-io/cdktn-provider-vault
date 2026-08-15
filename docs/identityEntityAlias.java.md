@@ -4,7 +4,7 @@
 
 ### IdentityEntityAlias <a name="IdentityEntityAlias" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias vault_identity_entity_alias}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias vault_identity_entity_alias}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer"></a>
 
@@ -23,7 +23,9 @@ IdentityEntityAlias.Builder.create(Construct scope, java.lang.String id)
     .mountAccessor(java.lang.String)
     .name(java.lang.String)
 //  .customMetadata(java.util.Map<java.lang.String, java.lang.String>)
+//  .externalId(java.lang.String)
 //  .id(java.lang.String)
+//  .issuer(java.lang.String)
 //  .namespace(java.lang.String)
     .build();
 ```
@@ -43,7 +45,9 @@ IdentityEntityAlias.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.mountAccessor">mountAccessor</a></code> | <code>java.lang.String</code> | Mount accessor to which this alias belongs toMount accessor to which this alias belongs to. |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the entity alias. |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.customMetadata">customMetadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Custom metadata to be associated with this alias. |
-| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}. |
+| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.externalId">externalId</a></code> | <code>java.lang.String</code> | Unique external identifier from the external IdP. |
+| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}. |
+| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.issuer">issuer</a></code> | <code>java.lang.String</code> | Issuer name associated with this alias. |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -114,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 ID of the entity to which this is an alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#canonical_id IdentityEntityAlias#canonical_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#canonical_id IdentityEntityAlias#canonical_id}
 
 ---
 
@@ -124,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Mount accessor to which this alias belongs toMount accessor to which this alias belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#mount_accessor IdentityEntityAlias#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#mount_accessor IdentityEntityAlias#mount_accessor}
 
 ---
 
@@ -134,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the entity alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#name IdentityEntityAlias#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#name IdentityEntityAlias#name}
 
 ---
 
@@ -144,7 +148,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Custom metadata to be associated with this alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#custom_metadata IdentityEntityAlias#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#custom_metadata IdentityEntityAlias#custom_metadata}
+
+---
+
+##### `externalId`<sup>Optional</sup> <a name="externalId" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.externalId"></a>
+
+- *Type:* java.lang.String
+
+Unique external identifier from the external IdP.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#external_id IdentityEntityAlias#external_id}
 
 ---
 
@@ -152,10 +166,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `issuer`<sup>Optional</sup> <a name="issuer" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.Initializer.parameter.issuer"></a>
+
+- *Type:* java.lang.String
+
+Issuer name associated with this alias.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#issuer IdentityEntityAlias#issuer}
 
 ---
 
@@ -165,7 +189,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#namespace IdentityEntityAlias#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#namespace IdentityEntityAlias#namespace}
 
 ---
 
@@ -198,7 +222,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.resetCustomMetadata">resetCustomMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.resetExternalId">resetExternalId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.resetIssuer">resetIssuer</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.resetNamespace">resetNamespace</a></code> | *No description.* |
 
 ---
@@ -520,10 +546,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetCustomMetadata()
 ```
 
+##### `resetExternalId` <a name="resetExternalId" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.resetExternalId"></a>
+
+```java
+public void resetExternalId()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.resetId"></a>
 
 ```java
 public void resetId()
+```
+
+##### `resetIssuer` <a name="resetIssuer" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.resetIssuer"></a>
+
+```java
+public void resetIssuer()
 ```
 
 ##### `resetNamespace` <a name="resetNamespace" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.resetNamespace"></a>
@@ -635,7 +673,7 @@ The construct id used in the generated config for the IdentityEntityAlias to imp
 
 The id of the existing IdentityEntityAlias that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -667,13 +705,17 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.canonicalIdInput">canonicalIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.customMetadataInput">customMetadataInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.externalIdInput">externalIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.issuerInput">issuerInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.mountAccessorInput">mountAccessorInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.canonicalId">canonicalId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.customMetadata">customMetadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.externalId">externalId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.issuer">issuer</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.mountAccessor">mountAccessor</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -842,10 +884,30 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomMetadataInput(
 
 ---
 
+##### `externalIdInput`<sup>Optional</sup> <a name="externalIdInput" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.externalIdInput"></a>
+
+```java
+public java.lang.String getExternalIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.idInput"></a>
 
 ```java
 public java.lang.String getIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `issuerInput`<sup>Optional</sup> <a name="issuerInput" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.issuerInput"></a>
+
+```java
+public java.lang.String getIssuerInput();
 ```
 
 - *Type:* java.lang.String
@@ -902,10 +964,30 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomMetadata();
 
 ---
 
+##### `externalId`<sup>Required</sup> <a name="externalId" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.externalId"></a>
+
+```java
+public java.lang.String getExternalId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.id"></a>
 
 ```java
 public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `issuer`<sup>Required</sup> <a name="issuer" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAlias.property.issuer"></a>
+
+```java
+public java.lang.String getIssuer();
 ```
 
 - *Type:* java.lang.String
@@ -981,7 +1063,9 @@ IdentityEntityAliasConfig.builder()
     .mountAccessor(java.lang.String)
     .name(java.lang.String)
 //  .customMetadata(java.util.Map<java.lang.String, java.lang.String>)
+//  .externalId(java.lang.String)
 //  .id(java.lang.String)
+//  .issuer(java.lang.String)
 //  .namespace(java.lang.String)
     .build();
 ```
@@ -1001,7 +1085,9 @@ IdentityEntityAliasConfig.builder()
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.mountAccessor">mountAccessor</a></code> | <code>java.lang.String</code> | Mount accessor to which this alias belongs toMount accessor to which this alias belongs to. |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the entity alias. |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.customMetadata">customMetadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Custom metadata to be associated with this alias. |
-| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}. |
+| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.externalId">externalId</a></code> | <code>java.lang.String</code> | Unique external identifier from the external IdP. |
+| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}. |
+| <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.issuer">issuer</a></code> | <code>java.lang.String</code> | Issuer name associated with this alias. |
 | <code><a href="#@cdktn/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -1086,7 +1172,7 @@ public java.lang.String getCanonicalId();
 
 ID of the entity to which this is an alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#canonical_id IdentityEntityAlias#canonical_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#canonical_id IdentityEntityAlias#canonical_id}
 
 ---
 
@@ -1100,7 +1186,7 @@ public java.lang.String getMountAccessor();
 
 Mount accessor to which this alias belongs toMount accessor to which this alias belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#mount_accessor IdentityEntityAlias#mount_accessor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#mount_accessor IdentityEntityAlias#mount_accessor}
 
 ---
 
@@ -1114,7 +1200,7 @@ public java.lang.String getName();
 
 Name of the entity alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#name IdentityEntityAlias#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#name IdentityEntityAlias#name}
 
 ---
 
@@ -1128,7 +1214,21 @@ public java.util.Map<java.lang.String, java.lang.String> getCustomMetadata();
 
 Custom metadata to be associated with this alias.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#custom_metadata IdentityEntityAlias#custom_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#custom_metadata IdentityEntityAlias#custom_metadata}
+
+---
+
+##### `externalId`<sup>Optional</sup> <a name="externalId" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.externalId"></a>
+
+```java
+public java.lang.String getExternalId();
+```
+
+- *Type:* java.lang.String
+
+Unique external identifier from the external IdP.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#external_id IdentityEntityAlias#external_id}
 
 ---
 
@@ -1140,10 +1240,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#id IdentityEntityAlias#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `issuer`<sup>Optional</sup> <a name="issuer" id="@cdktn/provider-vault.identityEntityAlias.IdentityEntityAliasConfig.property.issuer"></a>
+
+```java
+public java.lang.String getIssuer();
+```
+
+- *Type:* java.lang.String
+
+Issuer name associated with this alias.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#issuer IdentityEntityAlias#issuer}
 
 ---
 
@@ -1157,7 +1271,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/identity_entity_alias#namespace IdentityEntityAlias#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/identity_entity_alias#namespace IdentityEntityAlias#namespace}
 
 ---
 

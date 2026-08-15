@@ -4,7 +4,7 @@
 
 ### EphemeralVaultTerraformToken <a name="EphemeralVaultTerraformToken" id="@cdktn/provider-vault.ephemeralVaultTerraformToken.EphemeralVaultTerraformToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/terraform_token vault_terraform_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token vault_terraform_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultTerraformToken.EphemeralVaultTerraformToken.Initializer"></a>
 
@@ -719,7 +719,7 @@ public readonly roleName: string;
 
 Specifies the name of the role to create credentials against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/terraform_token#role_name EphemeralVaultTerraformToken#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token#role_name EphemeralVaultTerraformToken#role_name}
 
 ---
 
@@ -733,7 +733,7 @@ public readonly mount: string;
 
 Mount path for the Terraform engine in Vault. Default is `terraform`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/terraform_token#mount EphemeralVaultTerraformToken#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token#mount EphemeralVaultTerraformToken#mount}
 
 ---
 
@@ -747,7 +747,7 @@ public readonly mountId: string;
 
 Terraform ID of the mount resource. Used to defer the provisioning of the ephemeral resource till the apply stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/terraform_token#mount_id EphemeralVaultTerraformToken#mount_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token#mount_id EphemeralVaultTerraformToken#mount_id}
 
 ---
 
@@ -761,7 +761,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/terraform_token#namespace EphemeralVaultTerraformToken#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token#namespace EphemeralVaultTerraformToken#namespace}
 
 ---
 

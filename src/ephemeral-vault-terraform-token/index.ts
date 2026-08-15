@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/terraform_token
+// https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface EphemeralVaultTerraformTokenConfig extends cdktn.TerraformEphem
   /**
   * Mount path for the Terraform engine in Vault. Default is `terraform`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/terraform_token#mount EphemeralVaultTerraformToken#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token#mount EphemeralVaultTerraformToken#mount}
   */
   readonly mount?: string;
   /**
   * Terraform ID of the mount resource. Used to defer the provisioning of the ephemeral resource till the apply stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/terraform_token#mount_id EphemeralVaultTerraformToken#mount_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token#mount_id EphemeralVaultTerraformToken#mount_id}
   */
   readonly mountId?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/terraform_token#namespace EphemeralVaultTerraformToken#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token#namespace EphemeralVaultTerraformToken#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the name of the role to create credentials against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/terraform_token#role_name EphemeralVaultTerraformToken#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token#role_name EphemeralVaultTerraformToken#role_name}
   */
   readonly roleName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/terraform_token vault_terraform_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token vault_terraform_token}
 */
 export class EphemeralVaultTerraformToken extends cdktn.TerraformEphemeralResource {
 
@@ -53,7 +53,7 @@ export class EphemeralVaultTerraformToken extends cdktn.TerraformEphemeralResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/terraform_token vault_terraform_token} Ephemeral Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/terraform_token vault_terraform_token} Ephemeral Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -64,7 +64,7 @@ export class EphemeralVaultTerraformToken extends cdktn.TerraformEphemeralResour
       terraformResourceType: 'vault_terraform_token',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

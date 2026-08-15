@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/spiffe_secret_backend_mintjwt
+// https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface EphemeralVaultSpiffeSecretBackendMintjwtConfig extends cdktn.Te
   /**
   * The audience claim to use
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/spiffe_secret_backend_mintjwt#audience EphemeralVaultSpiffeSecretBackendMintjwt#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt#audience EphemeralVaultSpiffeSecretBackendMintjwt#audience}
   */
   readonly audience: string;
   /**
   * Mount path for the SPIFFE secrets engine in Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/spiffe_secret_backend_mintjwt#mount EphemeralVaultSpiffeSecretBackendMintjwt#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt#mount EphemeralVaultSpiffeSecretBackendMintjwt#mount}
   */
   readonly mount: string;
   /**
   * Terraform ID of the mount resource. Used to defer the provisioning of the ephemeral resource till the apply stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/spiffe_secret_backend_mintjwt#mount_id EphemeralVaultSpiffeSecretBackendMintjwt#mount_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt#mount_id EphemeralVaultSpiffeSecretBackendMintjwt#mount_id}
   */
   readonly mountId?: string;
   /**
   * Name of the SPIFFE role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/spiffe_secret_backend_mintjwt#name EphemeralVaultSpiffeSecretBackendMintjwt#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt#name EphemeralVaultSpiffeSecretBackendMintjwt#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/spiffe_secret_backend_mintjwt#namespace EphemeralVaultSpiffeSecretBackendMintjwt#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt#namespace EphemeralVaultSpiffeSecretBackendMintjwt#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/spiffe_secret_backend_mintjwt vault_spiffe_secret_backend_mintjwt}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt vault_spiffe_secret_backend_mintjwt}
 */
 export class EphemeralVaultSpiffeSecretBackendMintjwt extends cdktn.TerraformEphemeralResource {
 
@@ -59,7 +59,7 @@ export class EphemeralVaultSpiffeSecretBackendMintjwt extends cdktn.TerraformEph
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/spiffe_secret_backend_mintjwt vault_spiffe_secret_backend_mintjwt} Ephemeral Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/spiffe_secret_backend_mintjwt vault_spiffe_secret_backend_mintjwt} Ephemeral Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class EphemeralVaultSpiffeSecretBackendMintjwt extends cdktn.TerraformEph
       terraformResourceType: 'vault_spiffe_secret_backend_mintjwt',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### EphemeralVaultDatabaseSecret <a name="EphemeralVaultDatabaseSecret" id="@cdktn/provider-vault.ephemeralVaultDatabaseSecret.EphemeralVaultDatabaseSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/database_secret vault_database_secret}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/database_secret vault_database_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultDatabaseSecret.EphemeralVaultDatabaseSecret.Initializer"></a>
 
@@ -777,7 +777,7 @@ Mount *string
 
 Mount path for the DB engine in Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/database_secret#mount EphemeralVaultDatabaseSecret#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/database_secret#mount EphemeralVaultDatabaseSecret#mount}
 
 ---
 
@@ -791,7 +791,7 @@ Name *string
 
 Specifies the name of the role to create credentials against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/database_secret#name EphemeralVaultDatabaseSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/database_secret#name EphemeralVaultDatabaseSecret#name}
 
 ---
 
@@ -805,7 +805,7 @@ MountId *string
 
 Terraform ID of the mount resource. Used to defer the provisioning of the ephemeral resource till the apply stage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/database_secret#mount_id EphemeralVaultDatabaseSecret#mount_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/database_secret#mount_id EphemeralVaultDatabaseSecret#mount_id}
 
 ---
 
@@ -819,7 +819,7 @@ Namespace *string
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/database_secret#namespace EphemeralVaultDatabaseSecret#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/database_secret#namespace EphemeralVaultDatabaseSecret#namespace}
 
 ---
 

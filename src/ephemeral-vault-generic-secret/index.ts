@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/generic_secret
+// https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface EphemeralVaultGenericSecretConfig extends cdktn.TerraformEpheme
   /**
   * Terraform ID of the mount resource. Used to defer the provisioning of the ephemeral resource till the apply stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/generic_secret#mount_id EphemeralVaultGenericSecret#mount_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_secret#mount_id EphemeralVaultGenericSecret#mount_id}
   */
   readonly mountId?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/generic_secret#namespace EphemeralVaultGenericSecret#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_secret#namespace EphemeralVaultGenericSecret#namespace}
   */
   readonly namespace?: string;
   /**
   * Full path from which a secret will be read.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/generic_secret#path EphemeralVaultGenericSecret#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_secret#path EphemeralVaultGenericSecret#path}
   */
   readonly path: string;
   /**
   * Version of the secret to retrieve. Use -1 for latest version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/generic_secret#version EphemeralVaultGenericSecret#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_secret#version EphemeralVaultGenericSecret#version}
   */
   readonly version?: number;
   /**
   * If set to true, stores 'lease_start_time' in the result.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/generic_secret#with_lease_start_time EphemeralVaultGenericSecret#with_lease_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_secret#with_lease_start_time EphemeralVaultGenericSecret#with_lease_start_time}
   */
   readonly withLeaseStartTime?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/generic_secret vault_generic_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_secret vault_generic_secret}
 */
 export class EphemeralVaultGenericSecret extends cdktn.TerraformEphemeralResource {
 
@@ -59,7 +59,7 @@ export class EphemeralVaultGenericSecret extends cdktn.TerraformEphemeralResourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/generic_secret vault_generic_secret} Ephemeral Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/generic_secret vault_generic_secret} Ephemeral Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class EphemeralVaultGenericSecret extends cdktn.TerraformEphemeralResourc
       terraformResourceType: 'vault_generic_secret',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

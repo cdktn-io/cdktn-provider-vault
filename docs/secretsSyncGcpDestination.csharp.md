@@ -4,7 +4,7 @@
 
 ### SecretsSyncGcpDestination <a name="SecretsSyncGcpDestination" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination vault_secrets_sync_gcp_destination}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.Initializer"></a>
 
@@ -88,9 +88,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetIdentityTokenKeyWo">ResetIdentityTokenKeyWo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetIdentityTokenKeyWoVersion">ResetIdentityTokenKeyWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetIdentityTokenTtl">ResetIdentityTokenTtl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetKmsKeyId">ResetKmsKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetLocationalKmsKeys">ResetLocationalKmsKeys</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetNamespace">ResetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetProjectId">ResetProjectId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetReplicaRegions">ResetReplicaRegions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetReplicationLocations">ResetReplicationLocations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetSecretNameTemplate">ResetSecretNameTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetServiceAccountEmail">ResetServiceAccountEmail</a></code> | *No description.* |
@@ -490,6 +492,12 @@ private void ResetIdentityTokenKeyWoVersion()
 private void ResetIdentityTokenTtl()
 ```
 
+##### `ResetKmsKeyId` <a name="ResetKmsKeyId" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetKmsKeyId"></a>
+
+```csharp
+private void ResetKmsKeyId()
+```
+
 ##### `ResetLocationalKmsKeys` <a name="ResetLocationalKmsKeys" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetLocationalKmsKeys"></a>
 
 ```csharp
@@ -506,6 +514,12 @@ private void ResetNamespace()
 
 ```csharp
 private void ResetProjectId()
+```
+
+##### `ResetReplicaRegions` <a name="ResetReplicaRegions" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetReplicaRegions"></a>
+
+```csharp
+private void ResetReplicaRegions()
 ```
 
 ##### `ResetReplicationLocations` <a name="ResetReplicationLocations" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.resetReplicationLocations"></a>
@@ -629,7 +643,7 @@ The construct id used in the generated config for the SecretsSyncGcpDestination 
 
 The id of the existing SecretsSyncGcpDestination that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -674,10 +688,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.identityTokenKeyWoVersionInput">IdentityTokenKeyWoVersionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.identityTokenTtlInput">IdentityTokenTtlInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.kmsKeyIdInput">KmsKeyIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.locationalKmsKeysInput">LocationalKmsKeysInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.projectIdInput">ProjectIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.replicaRegionsInput">ReplicaRegionsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.replicationLocationsInput">ReplicationLocationsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.secretNameTemplateInput">SecretNameTemplateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.serviceAccountEmailInput">ServiceAccountEmailInput</a></code> | <code>string</code> | *No description.* |
@@ -695,10 +711,12 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.identityTokenKeyWo">IdentityTokenKeyWo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.identityTokenKeyWoVersion">IdentityTokenKeyWoVersion</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.identityTokenTtl">IdentityTokenTtl</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.kmsKeyId">KmsKeyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.locationalKmsKeys">LocationalKmsKeys</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.projectId">ProjectId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.replicaRegions">ReplicaRegions</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.replicationLocations">ReplicationLocations</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.secretNameTemplate">SecretNameTemplate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.serviceAccountEmail">ServiceAccountEmail</a></code> | <code>string</code> | *No description.* |
@@ -997,6 +1015,16 @@ public string IdInput { get; }
 
 ---
 
+##### `KmsKeyIdInput`<sup>Optional</sup> <a name="KmsKeyIdInput" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.kmsKeyIdInput"></a>
+
+```csharp
+public string KmsKeyIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `LocationalKmsKeysInput`<sup>Optional</sup> <a name="LocationalKmsKeysInput" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.locationalKmsKeysInput"></a>
 
 ```csharp
@@ -1034,6 +1062,16 @@ public string ProjectIdInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `ReplicaRegionsInput`<sup>Optional</sup> <a name="ReplicaRegionsInput" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.replicaRegionsInput"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> ReplicaRegionsInput { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
 
 ---
 
@@ -1211,6 +1249,16 @@ public double IdentityTokenTtl { get; }
 
 ---
 
+##### `KmsKeyId`<sup>Required</sup> <a name="KmsKeyId" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.kmsKeyId"></a>
+
+```csharp
+public string KmsKeyId { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `LocationalKmsKeys`<sup>Required</sup> <a name="LocationalKmsKeys" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.locationalKmsKeys"></a>
 
 ```csharp
@@ -1248,6 +1296,16 @@ public string ProjectId { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `ReplicaRegions`<sup>Required</sup> <a name="ReplicaRegions" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestination.property.replicaRegions"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> ReplicaRegions { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
 
 ---
 
@@ -1331,9 +1389,11 @@ new SecretsSyncGcpDestinationConfig {
     string IdentityTokenKeyWo = null,
     double IdentityTokenKeyWoVersion = null,
     double IdentityTokenTtl = null,
+    string KmsKeyId = null,
     System.Collections.Generic.IDictionary<string, string> LocationalKmsKeys = null,
     string Namespace = null,
     string ProjectId = null,
+    System.Collections.Generic.IDictionary<string, string> ReplicaRegions = null,
     string[] ReplicationLocations = null,
     string SecretNameTemplate = null,
     string ServiceAccountEmail = null
@@ -1360,15 +1420,17 @@ new SecretsSyncGcpDestinationConfig {
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.disableStrictNetworking">DisableStrictNetworking</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Disable strict networking requirements. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.globalKmsKey">GlobalKmsKey</a></code> | <code>string</code> | Global KMS key for encryption. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.granularity">Granularity</a></code> | <code>string</code> | Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'. |
-| <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#id SecretsSyncGcpDestination#id}. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#id SecretsSyncGcpDestination#id}. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.identityTokenAudienceWo">IdentityTokenAudienceWo</a></code> | <code>string</code> | The audience claim value for identity tokens. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.identityTokenAudienceWoVersion">IdentityTokenAudienceWoVersion</a></code> | <code>double</code> | A version counter for the write-only identity_token_audience_wo field. Incrementing this value will trigger an update. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.identityTokenKeyWo">IdentityTokenKeyWo</a></code> | <code>string</code> | The key to use for signing identity tokens. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.identityTokenKeyWoVersion">IdentityTokenKeyWoVersion</a></code> | <code>double</code> | A version counter for the write-only identity_token_key_wo field. Incrementing this value will trigger an update. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.identityTokenTtl">IdentityTokenTtl</a></code> | <code>double</code> | The TTL of generated tokens. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.kmsKeyId">KmsKeyId</a></code> | <code>string</code> | Specifies the ID of the GCP KMS key to be used to encrypt the secret. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.locationalKmsKeys">LocationalKmsKeys</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Locational KMS keys for encryption. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.projectId">ProjectId</a></code> | <code>string</code> | The target project to manage secrets in. |
+| <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.replicaRegions">ReplicaRegions</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Map of regions to KMS key resource names for replica region encryption. KMS key values are optional. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.replicationLocations">ReplicationLocations</a></code> | <code>string[]</code> | Replication locations for secrets. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.secretNameTemplate">SecretNameTemplate</a></code> | <code>string</code> | Template describing how to generate external secret names. |
 | <code><a href="#@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.serviceAccountEmail">ServiceAccountEmail</a></code> | <code>string</code> | Service Account to impersonate for workload identity federation. |
@@ -1455,7 +1517,7 @@ public string Name { get; set; }
 
 Unique name of the GCP destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#name SecretsSyncGcpDestination#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#name SecretsSyncGcpDestination#name}
 
 ---
 
@@ -1469,7 +1531,7 @@ public string[] AllowedIpv4Addresses { get; set; }
 
 Allowed IPv4 addresses for outbound network connectivity in CIDR notation. If not set, all IPv4 addresses are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#allowed_ipv4_addresses SecretsSyncGcpDestination#allowed_ipv4_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#allowed_ipv4_addresses SecretsSyncGcpDestination#allowed_ipv4_addresses}
 
 ---
 
@@ -1483,7 +1545,7 @@ public string[] AllowedIpv6Addresses { get; set; }
 
 Allowed IPv6 addresses for outbound network connectivity in CIDR notation. If not set, all IPv6 addresses are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#allowed_ipv6_addresses SecretsSyncGcpDestination#allowed_ipv6_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#allowed_ipv6_addresses SecretsSyncGcpDestination#allowed_ipv6_addresses}
 
 ---
 
@@ -1497,7 +1559,7 @@ public double[] AllowedPorts { get; set; }
 
 Allowed ports for outbound network connectivity. If not set, all ports are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#allowed_ports SecretsSyncGcpDestination#allowed_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#allowed_ports SecretsSyncGcpDestination#allowed_ports}
 
 ---
 
@@ -1511,7 +1573,7 @@ public string Credentials { get; set; }
 
 JSON-encoded credentials to use to connect to GCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#credentials SecretsSyncGcpDestination#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#credentials SecretsSyncGcpDestination#credentials}
 
 ---
 
@@ -1525,7 +1587,7 @@ public System.Collections.Generic.IDictionary<string, string> CustomTags { get; 
 
 Custom tags to set on the secret managed at the destination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#custom_tags SecretsSyncGcpDestination#custom_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#custom_tags SecretsSyncGcpDestination#custom_tags}
 
 ---
 
@@ -1539,7 +1601,7 @@ public bool|IResolvable DisableStrictNetworking { get; set; }
 
 Disable strict networking requirements.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#disable_strict_networking SecretsSyncGcpDestination#disable_strict_networking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#disable_strict_networking SecretsSyncGcpDestination#disable_strict_networking}
 
 ---
 
@@ -1553,7 +1615,7 @@ public string GlobalKmsKey { get; set; }
 
 Global KMS key for encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#global_kms_key SecretsSyncGcpDestination#global_kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#global_kms_key SecretsSyncGcpDestination#global_kms_key}
 
 ---
 
@@ -1567,7 +1629,7 @@ public string Granularity { get; set; }
 
 Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#granularity SecretsSyncGcpDestination#granularity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#granularity SecretsSyncGcpDestination#granularity}
 
 ---
 
@@ -1579,7 +1641,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#id SecretsSyncGcpDestination#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#id SecretsSyncGcpDestination#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1598,7 +1660,7 @@ The audience claim value for identity tokens.
 
 This is a write-only field and will not be read back from Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#identity_token_audience_wo SecretsSyncGcpDestination#identity_token_audience_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#identity_token_audience_wo SecretsSyncGcpDestination#identity_token_audience_wo}
 
 ---
 
@@ -1612,7 +1674,7 @@ public double IdentityTokenAudienceWoVersion { get; set; }
 
 A version counter for the write-only identity_token_audience_wo field. Incrementing this value will trigger an update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#identity_token_audience_wo_version SecretsSyncGcpDestination#identity_token_audience_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#identity_token_audience_wo_version SecretsSyncGcpDestination#identity_token_audience_wo_version}
 
 ---
 
@@ -1628,7 +1690,7 @@ The key to use for signing identity tokens.
 
 This is a write-only field and will not be read back from Vault.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#identity_token_key_wo SecretsSyncGcpDestination#identity_token_key_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#identity_token_key_wo SecretsSyncGcpDestination#identity_token_key_wo}
 
 ---
 
@@ -1642,7 +1704,7 @@ public double IdentityTokenKeyWoVersion { get; set; }
 
 A version counter for the write-only identity_token_key_wo field. Incrementing this value will trigger an update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#identity_token_key_wo_version SecretsSyncGcpDestination#identity_token_key_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#identity_token_key_wo_version SecretsSyncGcpDestination#identity_token_key_wo_version}
 
 ---
 
@@ -1656,7 +1718,21 @@ public double IdentityTokenTtl { get; set; }
 
 The TTL of generated tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#identity_token_ttl SecretsSyncGcpDestination#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#identity_token_ttl SecretsSyncGcpDestination#identity_token_ttl}
+
+---
+
+##### `KmsKeyId`<sup>Optional</sup> <a name="KmsKeyId" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.kmsKeyId"></a>
+
+```csharp
+public string KmsKeyId { get; set; }
+```
+
+- *Type:* string
+
+Specifies the ID of the GCP KMS key to be used to encrypt the secret.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#kms_key_id SecretsSyncGcpDestination#kms_key_id}
 
 ---
 
@@ -1670,7 +1746,7 @@ public System.Collections.Generic.IDictionary<string, string> LocationalKmsKeys 
 
 Locational KMS keys for encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#locational_kms_keys SecretsSyncGcpDestination#locational_kms_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#locational_kms_keys SecretsSyncGcpDestination#locational_kms_keys}
 
 ---
 
@@ -1684,7 +1760,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#namespace SecretsSyncGcpDestination#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#namespace SecretsSyncGcpDestination#namespace}
 
 ---
 
@@ -1698,7 +1774,21 @@ public string ProjectId { get; set; }
 
 The target project to manage secrets in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#project_id SecretsSyncGcpDestination#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#project_id SecretsSyncGcpDestination#project_id}
+
+---
+
+##### `ReplicaRegions`<sup>Optional</sup> <a name="ReplicaRegions" id="@cdktn/provider-vault.secretsSyncGcpDestination.SecretsSyncGcpDestinationConfig.property.replicaRegions"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, string> ReplicaRegions { get; set; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, string>
+
+Map of regions to KMS key resource names for replica region encryption. KMS key values are optional.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#replica_regions SecretsSyncGcpDestination#replica_regions}
 
 ---
 
@@ -1712,7 +1802,7 @@ public string[] ReplicationLocations { get; set; }
 
 Replication locations for secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#replication_locations SecretsSyncGcpDestination#replication_locations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#replication_locations SecretsSyncGcpDestination#replication_locations}
 
 ---
 
@@ -1726,7 +1816,7 @@ public string SecretNameTemplate { get; set; }
 
 Template describing how to generate external secret names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#secret_name_template SecretsSyncGcpDestination#secret_name_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#secret_name_template SecretsSyncGcpDestination#secret_name_template}
 
 ---
 
@@ -1740,7 +1830,7 @@ public string ServiceAccountEmail { get; set; }
 
 Service Account to impersonate for workload identity federation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_gcp_destination#service_account_email SecretsSyncGcpDestination#service_account_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_gcp_destination#service_account_email SecretsSyncGcpDestination#service_account_email}
 
 ---
 

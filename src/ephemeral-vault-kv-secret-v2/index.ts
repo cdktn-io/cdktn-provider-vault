@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/kv_secret_v2
+// https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface EphemeralVaultKvSecretV2Config extends cdktn.TerraformEphemeral
   /**
   * Mount path for the KVV2 engine in Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/kv_secret_v2#mount EphemeralVaultKvSecretV2#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2#mount EphemeralVaultKvSecretV2#mount}
   */
   readonly mount: string;
   /**
   * Terraform ID of the mount resource. Used to defer the provisioning of the ephemeral resource till the apply stage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/kv_secret_v2#mount_id EphemeralVaultKvSecretV2#mount_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2#mount_id EphemeralVaultKvSecretV2#mount_id}
   */
   readonly mountId?: string;
   /**
   * Full name of the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/kv_secret_v2#name EphemeralVaultKvSecretV2#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2#name EphemeralVaultKvSecretV2#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/kv_secret_v2#namespace EphemeralVaultKvSecretV2#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2#namespace EphemeralVaultKvSecretV2#namespace}
   */
   readonly namespace?: string;
   /**
   * Version of the secret to retrieve.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/kv_secret_v2#version EphemeralVaultKvSecretV2#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2#version EphemeralVaultKvSecretV2#version}
   */
   readonly version?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/kv_secret_v2 vault_kv_secret_v2}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2 vault_kv_secret_v2}
 */
 export class EphemeralVaultKvSecretV2 extends cdktn.TerraformEphemeralResource {
 
@@ -59,7 +59,7 @@ export class EphemeralVaultKvSecretV2 extends cdktn.TerraformEphemeralResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/ephemeral-resources/kv_secret_v2 vault_kv_secret_v2} Ephemeral Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/ephemeral-resources/kv_secret_v2 vault_kv_secret_v2} Ephemeral Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class EphemeralVaultKvSecretV2 extends cdktn.TerraformEphemeralResource {
       terraformResourceType: 'vault_kv_secret_v2',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

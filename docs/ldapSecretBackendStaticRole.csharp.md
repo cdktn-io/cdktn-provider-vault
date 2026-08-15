@@ -4,7 +4,7 @@
 
 ### LdapSecretBackendStaticRole <a name="LdapSecretBackendStaticRole" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role vault_ldap_secret_backend_static_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.Initializer"></a>
 
@@ -74,13 +74,17 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetAutoUnlock">ResetAutoUnlock</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetDisableAutomatedRotation">ResetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetDn">ResetDn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetMount">ResetMount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetPasswordPolicy">ResetPasswordPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetPasswordWo">ResetPasswordWo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetPasswordWoVersion">ResetPasswordWoVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetRotateOnRead">ResetRotateOnRead</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetRotateOnReadCooldown">ResetRotateOnReadCooldown</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetRotationPeriod">ResetRotationPeriod</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetRotationPolicy">ResetRotationPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetRotationSchedule">ResetRotationSchedule</a></code> | *No description.* |
@@ -398,6 +402,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetAutoUnlock` <a name="ResetAutoUnlock" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetAutoUnlock"></a>
+
+```csharp
+private void ResetAutoUnlock()
+```
+
 ##### `ResetDisableAutomatedRotation` <a name="ResetDisableAutomatedRotation" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetDisableAutomatedRotation"></a>
 
 ```csharp
@@ -428,6 +438,12 @@ private void ResetMount()
 private void ResetNamespace()
 ```
 
+##### `ResetPasswordPolicy` <a name="ResetPasswordPolicy" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetPasswordPolicy"></a>
+
+```csharp
+private void ResetPasswordPolicy()
+```
+
 ##### `ResetPasswordWo` <a name="ResetPasswordWo" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetPasswordWo"></a>
 
 ```csharp
@@ -438,6 +454,18 @@ private void ResetPasswordWo()
 
 ```csharp
 private void ResetPasswordWoVersion()
+```
+
+##### `ResetRotateOnRead` <a name="ResetRotateOnRead" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetRotateOnRead"></a>
+
+```csharp
+private void ResetRotateOnRead()
+```
+
+##### `ResetRotateOnReadCooldown` <a name="ResetRotateOnReadCooldown" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetRotateOnReadCooldown"></a>
+
+```csharp
+private void ResetRotateOnReadCooldown()
 ```
 
 ##### `ResetRotationPeriod` <a name="ResetRotationPeriod" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.resetRotationPeriod"></a>
@@ -573,7 +601,7 @@ The construct id used in the generated config for the LdapSecretBackendStaticRol
 
 The id of the existing LdapSecretBackendStaticRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -603,28 +631,36 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.autoUnlockInput">AutoUnlockInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.disableAutomatedRotationInput">DisableAutomatedRotationInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.dnInput">DnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.mountInput">MountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.passwordPolicyInput">PasswordPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.passwordWoInput">PasswordWoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.passwordWoVersionInput">PasswordWoVersionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.roleNameInput">RoleNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotateOnReadCooldownInput">RotateOnReadCooldownInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotateOnReadInput">RotateOnReadInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotationPeriodInput">RotationPeriodInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotationPolicyInput">RotationPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotationScheduleInput">RotationScheduleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotationWindowInput">RotationWindowInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.skipImportRotationInput">SkipImportRotationInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.usernameInput">UsernameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.autoUnlock">AutoUnlock</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.dn">Dn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.mount">Mount</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.passwordPolicy">PasswordPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.passwordWo">PasswordWo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.passwordWoVersion">PasswordWoVersion</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.roleName">RoleName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotateOnRead">RotateOnRead</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotateOnReadCooldown">RotateOnReadCooldown</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotationPolicy">RotationPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | *No description.* |
@@ -776,6 +812,16 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `AutoUnlockInput`<sup>Optional</sup> <a name="AutoUnlockInput" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.autoUnlockInput"></a>
+
+```csharp
+public bool|IResolvable AutoUnlockInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `DisableAutomatedRotationInput`<sup>Optional</sup> <a name="DisableAutomatedRotationInput" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.disableAutomatedRotationInput"></a>
 
 ```csharp
@@ -826,6 +872,16 @@ public string NamespaceInput { get; }
 
 ---
 
+##### `PasswordPolicyInput`<sup>Optional</sup> <a name="PasswordPolicyInput" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.passwordPolicyInput"></a>
+
+```csharp
+public string PasswordPolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `PasswordWoInput`<sup>Optional</sup> <a name="PasswordWoInput" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.passwordWoInput"></a>
 
 ```csharp
@@ -853,6 +909,26 @@ public string RoleNameInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `RotateOnReadCooldownInput`<sup>Optional</sup> <a name="RotateOnReadCooldownInput" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotateOnReadCooldownInput"></a>
+
+```csharp
+public double RotateOnReadCooldownInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `RotateOnReadInput`<sup>Optional</sup> <a name="RotateOnReadInput" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotateOnReadInput"></a>
+
+```csharp
+public bool|IResolvable RotateOnReadInput { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
 
 ---
 
@@ -916,6 +992,16 @@ public string UsernameInput { get; }
 
 ---
 
+##### `AutoUnlock`<sup>Required</sup> <a name="AutoUnlock" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.autoUnlock"></a>
+
+```csharp
+public bool|IResolvable AutoUnlock { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
 ##### `DisableAutomatedRotation`<sup>Required</sup> <a name="DisableAutomatedRotation" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.disableAutomatedRotation"></a>
 
 ```csharp
@@ -966,6 +1052,16 @@ public string Namespace { get; }
 
 ---
 
+##### `PasswordPolicy`<sup>Required</sup> <a name="PasswordPolicy" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.passwordPolicy"></a>
+
+```csharp
+public string PasswordPolicy { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### ~~`PasswordWo`~~<sup>Required</sup> <a name="PasswordWo" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.passwordWo"></a>
 
 - *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
@@ -995,6 +1091,26 @@ public string RoleName { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `RotateOnRead`<sup>Required</sup> <a name="RotateOnRead" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotateOnRead"></a>
+
+```csharp
+public bool|IResolvable RotateOnRead { get; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+---
+
+##### `RotateOnReadCooldown`<sup>Required</sup> <a name="RotateOnReadCooldown" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRole.property.rotateOnReadCooldown"></a>
+
+```csharp
+public double RotateOnReadCooldown { get; }
+```
+
+- *Type:* double
 
 ---
 
@@ -1095,13 +1211,17 @@ new LdapSecretBackendStaticRoleConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string RoleName,
     string Username,
+    bool|IResolvable AutoUnlock = null,
     bool|IResolvable DisableAutomatedRotation = null,
     string Dn = null,
     string Id = null,
     string Mount = null,
     string Namespace = null,
+    string PasswordPolicy = null,
     string PasswordWo = null,
     double PasswordWoVersion = null,
+    bool|IResolvable RotateOnRead = null,
+    double RotateOnReadCooldown = null,
     double RotationPeriod = null,
     string RotationPolicy = null,
     string RotationSchedule = null,
@@ -1123,13 +1243,17 @@ new LdapSecretBackendStaticRoleConfig {
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.roleName">RoleName</a></code> | <code>string</code> | Name of the role. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.username">Username</a></code> | <code>string</code> | The username of the existing LDAP entry to manage password rotation for. |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.autoUnlock">AutoUnlock</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Overrides the mount-level auto_unlock setting for this role. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.disableAutomatedRotation">DisableAutomatedRotation</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.dn">Dn</a></code> | <code>string</code> | Distinguished name (DN) of the existing LDAP entry to manage password rotation for. |
-| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#id LdapSecretBackendStaticRole#id}. |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#id LdapSecretBackendStaticRole#id}. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.mount">Mount</a></code> | <code>string</code> | The path where the LDAP secrets backend is mounted. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.passwordPolicy">PasswordPolicy</a></code> | <code>string</code> | Name of the password policy to use to generate passwords for this role. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.passwordWo">PasswordWo</a></code> | <code>string</code> | Password for the static role. This is required for Vault to manage an existing account and enable rotation. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.passwordWoVersion">PasswordWoVersion</a></code> | <code>double</code> | Version counter for write-only password. |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.rotateOnRead">RotateOnRead</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | If true, credentials are rotated on each read. Overrides the engine-level default when set. Requires Vault Enterprise ≥ 2.2.0. |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.rotateOnReadCooldown">RotateOnReadCooldown</a></code> | <code>double</code> | Minimum seconds between rotate-on-read rotations for this role. Overrides the engine-level default when set. Requires Vault Enterprise ≥ 2.2.0. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.rotationPeriod">RotationPeriod</a></code> | <code>double</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.rotationPolicy">RotationPolicy</a></code> | <code>string</code> | The rotation policy to use for this credential. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.rotationSchedule">RotationSchedule</a></code> | <code>string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
@@ -1218,7 +1342,7 @@ public string RoleName { get; set; }
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#role_name LdapSecretBackendStaticRole#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#role_name LdapSecretBackendStaticRole#role_name}
 
 ---
 
@@ -1232,7 +1356,23 @@ public string Username { get; set; }
 
 The username of the existing LDAP entry to manage password rotation for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#username LdapSecretBackendStaticRole#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#username LdapSecretBackendStaticRole#username}
+
+---
+
+##### `AutoUnlock`<sup>Optional</sup> <a name="AutoUnlock" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.autoUnlock"></a>
+
+```csharp
+public bool|IResolvable AutoUnlock { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+Overrides the mount-level auto_unlock setting for this role.
+
+When true, Vault unlocks the account automatically after a successful rotation. When false, disables automatic unlock even if the mount enables it. When unset, inherits the mount-level setting. Currently only the Active Directory schema is supported. Requires Vault 2.2.0+
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#auto_unlock LdapSecretBackendStaticRole#auto_unlock}
 
 ---
 
@@ -1246,7 +1386,7 @@ public bool|IResolvable DisableAutomatedRotation { get; set; }
 
 Stops rotation of the root credential until set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#disable_automated_rotation LdapSecretBackendStaticRole#disable_automated_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#disable_automated_rotation LdapSecretBackendStaticRole#disable_automated_rotation}
 
 ---
 
@@ -1260,7 +1400,7 @@ public string Dn { get; set; }
 
 Distinguished name (DN) of the existing LDAP entry to manage password rotation for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#dn LdapSecretBackendStaticRole#dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#dn LdapSecretBackendStaticRole#dn}
 
 ---
 
@@ -1272,7 +1412,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#id LdapSecretBackendStaticRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#id LdapSecretBackendStaticRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1289,7 +1429,7 @@ public string Mount { get; set; }
 
 The path where the LDAP secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#mount LdapSecretBackendStaticRole#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#mount LdapSecretBackendStaticRole#mount}
 
 ---
 
@@ -1303,7 +1443,21 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#namespace LdapSecretBackendStaticRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#namespace LdapSecretBackendStaticRole#namespace}
+
+---
+
+##### `PasswordPolicy`<sup>Optional</sup> <a name="PasswordPolicy" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.passwordPolicy"></a>
+
+```csharp
+public string PasswordPolicy { get; set; }
+```
+
+- *Type:* string
+
+Name of the password policy to use to generate passwords for this role.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#password_policy LdapSecretBackendStaticRole#password_policy}
 
 ---
 
@@ -1317,7 +1471,7 @@ public string PasswordWo { get; set; }
 
 Password for the static role. This is required for Vault to manage an existing account and enable rotation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#password_wo LdapSecretBackendStaticRole#password_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#password_wo LdapSecretBackendStaticRole#password_wo}
 
 ---
 
@@ -1331,7 +1485,35 @@ public double PasswordWoVersion { get; set; }
 
 Version counter for write-only password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#password_wo_version LdapSecretBackendStaticRole#password_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#password_wo_version LdapSecretBackendStaticRole#password_wo_version}
+
+---
+
+##### `RotateOnRead`<sup>Optional</sup> <a name="RotateOnRead" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.rotateOnRead"></a>
+
+```csharp
+public bool|IResolvable RotateOnRead { get; set; }
+```
+
+- *Type:* bool|Io.Cdktn.IResolvable
+
+If true, credentials are rotated on each read. Overrides the engine-level default when set. Requires Vault Enterprise ≥ 2.2.0.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#rotate_on_read LdapSecretBackendStaticRole#rotate_on_read}
+
+---
+
+##### `RotateOnReadCooldown`<sup>Optional</sup> <a name="RotateOnReadCooldown" id="@cdktn/provider-vault.ldapSecretBackendStaticRole.LdapSecretBackendStaticRoleConfig.property.rotateOnReadCooldown"></a>
+
+```csharp
+public double RotateOnReadCooldown { get; set; }
+```
+
+- *Type:* double
+
+Minimum seconds between rotate-on-read rotations for this role. Overrides the engine-level default when set. Requires Vault Enterprise ≥ 2.2.0.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#rotate_on_read_cooldown LdapSecretBackendStaticRole#rotate_on_read_cooldown}
 
 ---
 
@@ -1345,7 +1527,7 @@ public double RotationPeriod { get; set; }
 
 The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#rotation_period LdapSecretBackendStaticRole#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#rotation_period LdapSecretBackendStaticRole#rotation_period}
 
 ---
 
@@ -1359,7 +1541,7 @@ public string RotationPolicy { get; set; }
 
 The rotation policy to use for this credential.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#rotation_policy LdapSecretBackendStaticRole#rotation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#rotation_policy LdapSecretBackendStaticRole#rotation_policy}
 
 ---
 
@@ -1373,7 +1555,7 @@ public string RotationSchedule { get; set; }
 
 The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#rotation_schedule LdapSecretBackendStaticRole#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#rotation_schedule LdapSecretBackendStaticRole#rotation_schedule}
 
 ---
 
@@ -1389,7 +1571,7 @@ The maximum amount of time in seconds Vault is allowed to complete a rotation on
 
 Can only be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#rotation_window LdapSecretBackendStaticRole#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#rotation_window LdapSecretBackendStaticRole#rotation_window}
 
 ---
 
@@ -1403,7 +1585,7 @@ public bool|IResolvable SkipImportRotation { get; set; }
 
 Skip rotation of the password on import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_static_role#skip_import_rotation LdapSecretBackendStaticRole#skip_import_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_static_role#skip_import_rotation LdapSecretBackendStaticRole#skip_import_rotation}
 
 ---
 
