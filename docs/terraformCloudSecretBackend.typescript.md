@@ -4,7 +4,7 @@
 
 ### TerraformCloudSecretBackend <a name="TerraformCloudSecretBackend" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend vault_terraform_cloud_secret_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.Initializer"></a>
 
@@ -84,7 +84,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetDefaultLeaseTtlSeconds">resetDefaultLeaseTtlSeconds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetDelegatedAuthAccessors">resetDelegatedAuthAccessors</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetDisableAutomatedRotation">resetDisableAutomatedRotation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetDisableRemount">resetDisableRemount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetExplicitMaxTtl">resetExplicitMaxTtl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetExternalEntropyAccess">resetExternalEntropyAccess</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetForceNoCache">resetForceNoCache</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetId">resetId</a></code> | *No description.* |
@@ -96,6 +98,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetOptions">resetOptions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetPassthroughRequestHeaders">resetPassthroughRequestHeaders</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetPluginVersion">resetPluginVersion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetRotationPeriod">resetRotationPeriod</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetRotationSchedule">resetRotationSchedule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetRotationWindow">resetRotationWindow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetSealWrap">resetSealWrap</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetToken">resetToken</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetTokenWo">resetTokenWo</a></code> | *No description.* |
@@ -472,10 +477,22 @@ public resetDelegatedAuthAccessors(): void
 public resetDescription(): void
 ```
 
+##### `resetDisableAutomatedRotation` <a name="resetDisableAutomatedRotation" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetDisableAutomatedRotation"></a>
+
+```typescript
+public resetDisableAutomatedRotation(): void
+```
+
 ##### `resetDisableRemount` <a name="resetDisableRemount" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetDisableRemount"></a>
 
 ```typescript
 public resetDisableRemount(): void
+```
+
+##### `resetExplicitMaxTtl` <a name="resetExplicitMaxTtl" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetExplicitMaxTtl"></a>
+
+```typescript
+public resetExplicitMaxTtl(): void
 ```
 
 ##### `resetExternalEntropyAccess` <a name="resetExternalEntropyAccess" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetExternalEntropyAccess"></a>
@@ -542,6 +559,24 @@ public resetPassthroughRequestHeaders(): void
 
 ```typescript
 public resetPluginVersion(): void
+```
+
+##### `resetRotationPeriod` <a name="resetRotationPeriod" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetRotationPeriod"></a>
+
+```typescript
+public resetRotationPeriod(): void
+```
+
+##### `resetRotationSchedule` <a name="resetRotationSchedule" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetRotationSchedule"></a>
+
+```typescript
+public resetRotationSchedule(): void
+```
+
+##### `resetRotationWindow` <a name="resetRotationWindow" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetRotationWindow"></a>
+
+```typescript
+public resetRotationWindow(): void
 ```
 
 ##### `resetSealWrap` <a name="resetSealWrap" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.resetSealWrap"></a>
@@ -671,7 +706,7 @@ The construct id used in the generated config for the TerraformCloudSecretBacken
 
 The id of the existing TerraformCloudSecretBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -712,7 +747,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.defaultLeaseTtlSecondsInput">defaultLeaseTtlSecondsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.delegatedAuthAccessorsInput">delegatedAuthAccessorsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.disableAutomatedRotationInput">disableAutomatedRotationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.disableRemountInput">disableRemountInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.explicitMaxTtlInput">explicitMaxTtlInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.externalEntropyAccessInput">externalEntropyAccessInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.forceNoCacheInput">forceNoCacheInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.identityTokenKeyInput">identityTokenKeyInput</a></code> | <code>string</code> | *No description.* |
@@ -724,6 +761,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.optionsInput">optionsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.passthroughRequestHeadersInput">passthroughRequestHeadersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.pluginVersionInput">pluginVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.rotationPeriodInput">rotationPeriodInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.rotationScheduleInput">rotationScheduleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.rotationWindowInput">rotationWindowInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.sealWrapInput">sealWrapInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.tokenInput">tokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.tokenWoInput">tokenWoInput</a></code> | <code>string</code> | *No description.* |
@@ -738,7 +778,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.defaultLeaseTtlSeconds">defaultLeaseTtlSeconds</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.delegatedAuthAccessors">delegatedAuthAccessors</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.disableAutomatedRotation">disableAutomatedRotation</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.disableRemount">disableRemount</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.explicitMaxTtl">explicitMaxTtl</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.forceNoCache">forceNoCache</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -750,6 +792,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.pluginVersion">pluginVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.rotationPeriod">rotationPeriod</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.rotationSchedule">rotationSchedule</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.rotationWindow">rotationWindow</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.sealWrap">sealWrap</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.token">token</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.tokenWo">tokenWo</a></code> | <code>string</code> | *No description.* |
@@ -1009,6 +1054,16 @@ public readonly descriptionInput: string;
 
 ---
 
+##### `disableAutomatedRotationInput`<sup>Optional</sup> <a name="disableAutomatedRotationInput" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.disableAutomatedRotationInput"></a>
+
+```typescript
+public readonly disableAutomatedRotationInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `disableRemountInput`<sup>Optional</sup> <a name="disableRemountInput" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.disableRemountInput"></a>
 
 ```typescript
@@ -1016,6 +1071,16 @@ public readonly disableRemountInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `explicitMaxTtlInput`<sup>Optional</sup> <a name="explicitMaxTtlInput" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.explicitMaxTtlInput"></a>
+
+```typescript
+public readonly explicitMaxTtlInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -1126,6 +1191,36 @@ public readonly pluginVersionInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `rotationPeriodInput`<sup>Optional</sup> <a name="rotationPeriodInput" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.rotationPeriodInput"></a>
+
+```typescript
+public readonly rotationPeriodInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `rotationScheduleInput`<sup>Optional</sup> <a name="rotationScheduleInput" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.rotationScheduleInput"></a>
+
+```typescript
+public readonly rotationScheduleInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rotationWindowInput`<sup>Optional</sup> <a name="rotationWindowInput" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.rotationWindowInput"></a>
+
+```typescript
+public readonly rotationWindowInput: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -1269,6 +1364,16 @@ public readonly description: string;
 
 ---
 
+##### `disableAutomatedRotation`<sup>Required</sup> <a name="disableAutomatedRotation" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.disableAutomatedRotation"></a>
+
+```typescript
+public readonly disableAutomatedRotation: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+---
+
 ##### `disableRemount`<sup>Required</sup> <a name="disableRemount" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.disableRemount"></a>
 
 ```typescript
@@ -1276,6 +1381,16 @@ public readonly disableRemount: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `explicitMaxTtl`<sup>Required</sup> <a name="explicitMaxTtl" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.explicitMaxTtl"></a>
+
+```typescript
+public readonly explicitMaxTtl: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -1389,6 +1504,36 @@ public readonly pluginVersion: string;
 
 ---
 
+##### `rotationPeriod`<sup>Required</sup> <a name="rotationPeriod" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.rotationPeriod"></a>
+
+```typescript
+public readonly rotationPeriod: number;
+```
+
+- *Type:* number
+
+---
+
+##### `rotationSchedule`<sup>Required</sup> <a name="rotationSchedule" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.rotationSchedule"></a>
+
+```typescript
+public readonly rotationSchedule: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rotationWindow`<sup>Required</sup> <a name="rotationWindow" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.rotationWindow"></a>
+
+```typescript
+public readonly rotationWindow: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `sealWrap`<sup>Required</sup> <a name="sealWrap" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackend.property.sealWrap"></a>
 
 ```typescript
@@ -1482,10 +1627,12 @@ const terraformCloudSecretBackendConfig: terraformCloudSecretBackend.TerraformCl
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.defaultLeaseTtlSeconds">defaultLeaseTtlSeconds</a></code> | <code>number</code> | Default lease duration for secrets in seconds. |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.delegatedAuthAccessors">delegatedAuthAccessors</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.description">description</a></code> | <code>string</code> | Human-friendly description of the mount for the backend. |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.disableAutomatedRotation">disableAutomatedRotation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.disableRemount">disableRemount</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set, opts out of mount migration on path updates. |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.explicitMaxTtl">explicitMaxTtl</a></code> | <code>number</code> | The maximum lifetime, in seconds, set on the root token in Terraform Cloud or Enterprise when Vault rotates it. |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.externalEntropyAccess">externalEntropyAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable the secrets engine to access Vault's external entropy source. |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.forceNoCache">forceNoCache</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, disables caching. |
-| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#id TerraformCloudSecretBackend#id}. |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#id TerraformCloudSecretBackend#id}. |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.identityTokenKey">identityTokenKey</a></code> | <code>string</code> | The key to use for signing plugin workload identity tokens. |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.listingVisibility">listingVisibility</a></code> | <code>string</code> | Specifies whether to show this mount in the UI-specific listing endpoint. |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.local">local</a></code> | <code>boolean \| cdktn.IResolvable</code> | Local mount flag that can be explicitly set to true to enforce local mount in HA environment. |
@@ -1494,6 +1641,9 @@ const terraformCloudSecretBackendConfig: terraformCloudSecretBackend.TerraformCl
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.options">options</a></code> | <code>{[ key: string ]: string}</code> | Specifies mount type specific options that are passed to the backend. |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.passthroughRequestHeaders">passthroughRequestHeaders</a></code> | <code>string[]</code> | List of headers to allow and pass from the request to the plugin. |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.pluginVersion">pluginVersion</a></code> | <code>string</code> | Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'. |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.rotationPeriod">rotationPeriod</a></code> | <code>number</code> | The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule. |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.rotationSchedule">rotationSchedule</a></code> | <code>string</code> | The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period. |
+| <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.rotationWindow">rotationWindow</a></code> | <code>number</code> | The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered. |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.sealWrap">sealWrap</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability. |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.token">token</a></code> | <code>string</code> | Specifies the Terraform Cloud access token to use. |
 | <code><a href="#@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.tokenWo">tokenWo</a></code> | <code>string</code> | Write-only Terraform Cloud access token to use. |
@@ -1581,7 +1731,7 @@ public readonly address: string;
 
 Specifies the address of the Terraform Cloud instance, provided as "host:port" like "127.0.0.1:8500".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#address TerraformCloudSecretBackend#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#address TerraformCloudSecretBackend#address}
 
 ---
 
@@ -1595,7 +1745,7 @@ public readonly allowedManagedKeys: string[];
 
 List of managed key registry entry names that the mount in question is allowed to access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#allowed_managed_keys TerraformCloudSecretBackend#allowed_managed_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#allowed_managed_keys TerraformCloudSecretBackend#allowed_managed_keys}
 
 ---
 
@@ -1609,7 +1759,7 @@ public readonly allowedResponseHeaders: string[];
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#allowed_response_headers TerraformCloudSecretBackend#allowed_response_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#allowed_response_headers TerraformCloudSecretBackend#allowed_response_headers}
 
 ---
 
@@ -1623,7 +1773,7 @@ public readonly auditNonHmacRequestKeys: string[];
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the request data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#audit_non_hmac_request_keys TerraformCloudSecretBackend#audit_non_hmac_request_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#audit_non_hmac_request_keys TerraformCloudSecretBackend#audit_non_hmac_request_keys}
 
 ---
 
@@ -1637,7 +1787,7 @@ public readonly auditNonHmacResponseKeys: string[];
 
 Specifies the list of keys that will not be HMAC'd by audit devices in the response data object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#audit_non_hmac_response_keys TerraformCloudSecretBackend#audit_non_hmac_response_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#audit_non_hmac_response_keys TerraformCloudSecretBackend#audit_non_hmac_response_keys}
 
 ---
 
@@ -1651,7 +1801,7 @@ public readonly backend: string;
 
 Unique name of the Vault Terraform Cloud mount to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#backend TerraformCloudSecretBackend#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#backend TerraformCloudSecretBackend#backend}
 
 ---
 
@@ -1665,7 +1815,7 @@ public readonly basePath: string;
 
 Specifies the base path for the Terraform Cloud or Enterprise API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#base_path TerraformCloudSecretBackend#base_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#base_path TerraformCloudSecretBackend#base_path}
 
 ---
 
@@ -1679,7 +1829,7 @@ public readonly defaultLeaseTtlSeconds: number;
 
 Default lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#default_lease_ttl_seconds TerraformCloudSecretBackend#default_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#default_lease_ttl_seconds TerraformCloudSecretBackend#default_lease_ttl_seconds}
 
 ---
 
@@ -1693,7 +1843,7 @@ public readonly delegatedAuthAccessors: string[];
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#delegated_auth_accessors TerraformCloudSecretBackend#delegated_auth_accessors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#delegated_auth_accessors TerraformCloudSecretBackend#delegated_auth_accessors}
 
 ---
 
@@ -1707,7 +1857,21 @@ public readonly description: string;
 
 Human-friendly description of the mount for the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#description TerraformCloudSecretBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#description TerraformCloudSecretBackend#description}
+
+---
+
+##### `disableAutomatedRotation`<sup>Optional</sup> <a name="disableAutomatedRotation" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.disableAutomatedRotation"></a>
+
+```typescript
+public readonly disableAutomatedRotation: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktn.IResolvable
+
+Stops rotation of the root credential until set to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#disable_automated_rotation TerraformCloudSecretBackend#disable_automated_rotation}
 
 ---
 
@@ -1721,7 +1885,23 @@ public readonly disableRemount: boolean | IResolvable;
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#disable_remount TerraformCloudSecretBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#disable_remount TerraformCloudSecretBackend#disable_remount}
+
+---
+
+##### `explicitMaxTtl`<sup>Optional</sup> <a name="explicitMaxTtl" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.explicitMaxTtl"></a>
+
+```typescript
+public readonly explicitMaxTtl: number;
+```
+
+- *Type:* number
+
+The maximum lifetime, in seconds, set on the root token in Terraform Cloud or Enterprise when Vault rotates it.
+
+Acts as an upper-bound safety net; Vault manages the root token lifecycle. The default (0) omits the expiration so Terraform applies its default token expiry.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#explicit_max_ttl TerraformCloudSecretBackend#explicit_max_ttl}
 
 ---
 
@@ -1735,7 +1915,7 @@ public readonly externalEntropyAccess: boolean | IResolvable;
 
 Enable the secrets engine to access Vault's external entropy source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#external_entropy_access TerraformCloudSecretBackend#external_entropy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#external_entropy_access TerraformCloudSecretBackend#external_entropy_access}
 
 ---
 
@@ -1749,7 +1929,7 @@ public readonly forceNoCache: boolean | IResolvable;
 
 If set to true, disables caching.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#force_no_cache TerraformCloudSecretBackend#force_no_cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#force_no_cache TerraformCloudSecretBackend#force_no_cache}
 
 ---
 
@@ -1761,7 +1941,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#id TerraformCloudSecretBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#id TerraformCloudSecretBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1778,7 +1958,7 @@ public readonly identityTokenKey: string;
 
 The key to use for signing plugin workload identity tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#identity_token_key TerraformCloudSecretBackend#identity_token_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#identity_token_key TerraformCloudSecretBackend#identity_token_key}
 
 ---
 
@@ -1792,7 +1972,7 @@ public readonly listingVisibility: string;
 
 Specifies whether to show this mount in the UI-specific listing endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#listing_visibility TerraformCloudSecretBackend#listing_visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#listing_visibility TerraformCloudSecretBackend#listing_visibility}
 
 ---
 
@@ -1806,7 +1986,7 @@ public readonly local: boolean | IResolvable;
 
 Local mount flag that can be explicitly set to true to enforce local mount in HA environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#local TerraformCloudSecretBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#local TerraformCloudSecretBackend#local}
 
 ---
 
@@ -1820,7 +2000,7 @@ public readonly maxLeaseTtlSeconds: number;
 
 Maximum possible lease duration for secrets in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#max_lease_ttl_seconds TerraformCloudSecretBackend#max_lease_ttl_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#max_lease_ttl_seconds TerraformCloudSecretBackend#max_lease_ttl_seconds}
 
 ---
 
@@ -1834,7 +2014,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#namespace TerraformCloudSecretBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#namespace TerraformCloudSecretBackend#namespace}
 
 ---
 
@@ -1848,7 +2028,7 @@ public readonly options: {[ key: string ]: string};
 
 Specifies mount type specific options that are passed to the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#options TerraformCloudSecretBackend#options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#options TerraformCloudSecretBackend#options}
 
 ---
 
@@ -1862,7 +2042,7 @@ public readonly passthroughRequestHeaders: string[];
 
 List of headers to allow and pass from the request to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#passthrough_request_headers TerraformCloudSecretBackend#passthrough_request_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#passthrough_request_headers TerraformCloudSecretBackend#passthrough_request_headers}
 
 ---
 
@@ -1876,7 +2056,51 @@ public readonly pluginVersion: string;
 
 Specifies the semantic version of the plugin to use, e.g. 'v1.0.0'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#plugin_version TerraformCloudSecretBackend#plugin_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#plugin_version TerraformCloudSecretBackend#plugin_version}
+
+---
+
+##### `rotationPeriod`<sup>Optional</sup> <a name="rotationPeriod" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.rotationPeriod"></a>
+
+```typescript
+public readonly rotationPeriod: number;
+```
+
+- *Type:* number
+
+The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#rotation_period TerraformCloudSecretBackend#rotation_period}
+
+---
+
+##### `rotationSchedule`<sup>Optional</sup> <a name="rotationSchedule" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.rotationSchedule"></a>
+
+```typescript
+public readonly rotationSchedule: string;
+```
+
+- *Type:* string
+
+The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#rotation_schedule TerraformCloudSecretBackend#rotation_schedule}
+
+---
+
+##### `rotationWindow`<sup>Optional</sup> <a name="rotationWindow" id="@cdktn/provider-vault.terraformCloudSecretBackend.TerraformCloudSecretBackendConfig.property.rotationWindow"></a>
+
+```typescript
+public readonly rotationWindow: number;
+```
+
+- *Type:* number
+
+The maximum amount of time in seconds Vault is allowed to complete a rotation once a scheduled rotation is triggered.
+
+Can only be used with rotation_schedule.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#rotation_window TerraformCloudSecretBackend#rotation_window}
 
 ---
 
@@ -1890,7 +2114,7 @@ public readonly sealWrap: boolean | IResolvable;
 
 Enable seal wrapping for the mount, causing values stored by the mount to be wrapped by the seal's encryption capability.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#seal_wrap TerraformCloudSecretBackend#seal_wrap}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#seal_wrap TerraformCloudSecretBackend#seal_wrap}
 
 ---
 
@@ -1904,7 +2128,7 @@ public readonly token: string;
 
 Specifies the Terraform Cloud access token to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#token TerraformCloudSecretBackend#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#token TerraformCloudSecretBackend#token}
 
 ---
 
@@ -1918,7 +2142,7 @@ public readonly tokenWo: string;
 
 Write-only Terraform Cloud access token to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#token_wo TerraformCloudSecretBackend#token_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#token_wo TerraformCloudSecretBackend#token_wo}
 
 ---
 
@@ -1932,7 +2156,7 @@ public readonly tokenWoVersion: number;
 
 Version counter for write-only secret data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/terraform_cloud_secret_backend#token_wo_version TerraformCloudSecretBackend#token_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/terraform_cloud_secret_backend#token_wo_version TerraformCloudSecretBackend#token_wo_version}
 
 ---
 

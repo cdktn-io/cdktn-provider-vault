@@ -4,7 +4,7 @@
 
 ### DataVaultLdapStaticCredentials <a name="DataVaultLdapStaticCredentials" id="@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials vault_ldap_static_credentials}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.Initializer"></a>
 
@@ -39,7 +39,7 @@ DataVaultLdapStaticCredentials.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.Initializer.parameter.mount">mount</a></code> | <code>java.lang.String</code> | LDAP Secret Backend to read credentials from. |
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.Initializer.parameter.roleName">roleName</a></code> | <code>java.lang.String</code> | Name of the role. |
-| <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials#id DataVaultLdapStaticCredentials#id}. |
+| <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials#id DataVaultLdapStaticCredentials#id}. |
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 LDAP Secret Backend to read credentials from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials#mount DataVaultLdapStaticCredentials#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials#mount DataVaultLdapStaticCredentials#mount}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials#role_name DataVaultLdapStaticCredentials#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials#role_name DataVaultLdapStaticCredentials#role_name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials#id DataVaultLdapStaticCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials#id DataVaultLdapStaticCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +141,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials#namespace DataVaultLdapStaticCredentials#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials#namespace DataVaultLdapStaticCredentials#namespace}
 
 ---
 
@@ -500,7 +500,7 @@ The construct id used in the generated config for the DataVaultLdapStaticCredent
 
 The id of the existing DataVaultLdapStaticCredentials that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -532,6 +532,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.property.lastPassword">lastPassword</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.property.lastVaultRotation">lastVaultRotation</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.property.rotatedOnRead">rotatedOnRead</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.property.rotationPeriod">rotationPeriod</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.property.ttl">ttl</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -708,6 +709,16 @@ public java.lang.String getPassword();
 
 ---
 
+##### `rotatedOnRead`<sup>Required</sup> <a name="rotatedOnRead" id="@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.property.rotatedOnRead"></a>
+
+```java
+public IResolvable getRotatedOnRead();
+```
+
+- *Type:* io.cdktn.cdktn.IResolvable
+
+---
+
 ##### `rotationPeriod`<sup>Required</sup> <a name="rotationPeriod" id="@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentials.property.rotationPeriod"></a>
 
 ```java
@@ -873,7 +884,7 @@ DataVaultLdapStaticCredentialsConfig.builder()
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentialsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentialsConfig.property.mount">mount</a></code> | <code>java.lang.String</code> | LDAP Secret Backend to read credentials from. |
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentialsConfig.property.roleName">roleName</a></code> | <code>java.lang.String</code> | Name of the role. |
-| <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentialsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials#id DataVaultLdapStaticCredentials#id}. |
+| <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentialsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials#id DataVaultLdapStaticCredentials#id}. |
 | <code><a href="#@cdktn/provider-vault.dataVaultLdapStaticCredentials.DataVaultLdapStaticCredentialsConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
 ---
@@ -958,7 +969,7 @@ public java.lang.String getMount();
 
 LDAP Secret Backend to read credentials from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials#mount DataVaultLdapStaticCredentials#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials#mount DataVaultLdapStaticCredentials#mount}
 
 ---
 
@@ -972,7 +983,7 @@ public java.lang.String getRoleName();
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials#role_name DataVaultLdapStaticCredentials#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials#role_name DataVaultLdapStaticCredentials#role_name}
 
 ---
 
@@ -984,7 +995,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials#id DataVaultLdapStaticCredentials#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials#id DataVaultLdapStaticCredentials#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1001,7 +1012,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/data-sources/ldap_static_credentials#namespace DataVaultLdapStaticCredentials#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/ldap_static_credentials#namespace DataVaultLdapStaticCredentials#namespace}
 
 ---
 

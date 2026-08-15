@@ -4,7 +4,7 @@
 
 ### LdapSecretBackendDynamicRole <a name="LdapSecretBackendDynamicRole" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role vault_ldap_secret_backend_dynamic_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.resetMaxTtl">resetMaxTtl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.resetMount">resetMount</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.resetNamespace">resetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.resetPasswordPolicy">resetPasswordPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.resetRollbackLdif">resetRollbackLdif</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.resetUsernameTemplate">resetUsernameTemplate</a></code> | *No description.* |
 
@@ -423,6 +424,12 @@ public resetMount(): void
 public resetNamespace(): void
 ```
 
+##### `resetPasswordPolicy` <a name="resetPasswordPolicy" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.resetPasswordPolicy"></a>
+
+```typescript
+public resetPasswordPolicy(): void
+```
+
 ##### `resetRollbackLdif` <a name="resetRollbackLdif" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.resetRollbackLdif"></a>
 
 ```typescript
@@ -538,7 +545,7 @@ The construct id used in the generated config for the LdapSecretBackendDynamicRo
 
 The id of the existing LdapSecretBackendDynamicRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -575,6 +582,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.maxTtlInput">maxTtlInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.mountInput">mountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.passwordPolicyInput">passwordPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.roleNameInput">roleNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.rollbackLdifInput">rollbackLdifInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.usernameTemplateInput">usernameTemplateInput</a></code> | <code>string</code> | *No description.* |
@@ -585,6 +593,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.maxTtl">maxTtl</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.mount">mount</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.passwordPolicy">passwordPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.roleName">roleName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.rollbackLdif">rollbackLdif</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.usernameTemplate">usernameTemplate</a></code> | <code>string</code> | *No description.* |
@@ -803,6 +812,16 @@ public readonly namespaceInput: string;
 
 ---
 
+##### `passwordPolicyInput`<sup>Optional</sup> <a name="passwordPolicyInput" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.passwordPolicyInput"></a>
+
+```typescript
+public readonly passwordPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `roleNameInput`<sup>Optional</sup> <a name="roleNameInput" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.roleNameInput"></a>
 
 ```typescript
@@ -903,6 +922,16 @@ public readonly namespace: string;
 
 ---
 
+##### `passwordPolicy`<sup>Required</sup> <a name="passwordPolicy" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.passwordPolicy"></a>
+
+```typescript
+public readonly passwordPolicy: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `roleName`<sup>Required</sup> <a name="roleName" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.property.roleName"></a>
 
 ```typescript
@@ -978,10 +1007,11 @@ const ldapSecretBackendDynamicRoleConfig: ldapSecretBackendDynamicRole.LdapSecre
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.property.deletionLdif">deletionLdif</a></code> | <code>string</code> | A templatized LDIF string used to delete the user account once its TTL has expired. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.property.roleName">roleName</a></code> | <code>string</code> | Name of the role. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.property.defaultTtl">defaultTtl</a></code> | <code>number</code> | Specifies the TTL for the leases associated with this role. |
-| <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role#id LdapSecretBackendDynamicRole#id}. |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role#id LdapSecretBackendDynamicRole#id}. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.property.maxTtl">maxTtl</a></code> | <code>number</code> | Specifies the maximum TTL for the leases associated with this role. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.property.mount">mount</a></code> | <code>string</code> | The path where the LDAP secrets backend is mounted. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.property.passwordPolicy">passwordPolicy</a></code> | <code>string</code> | Name of the password policy to use to generate passwords for this role. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.property.rollbackLdif">rollbackLdif</a></code> | <code>string</code> | A templatized LDIF string used to attempt to rollback any changes in the event that execution of the creation_ldif results in an error. |
 | <code><a href="#@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.property.usernameTemplate">usernameTemplate</a></code> | <code>string</code> | A template used to generate a dynamic username. |
 
@@ -1067,7 +1097,7 @@ public readonly creationLdif: string;
 
 A templatized LDIF string used to create a user account. May contain multiple entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role#creation_ldif LdapSecretBackendDynamicRole#creation_ldif}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role#creation_ldif LdapSecretBackendDynamicRole#creation_ldif}
 
 ---
 
@@ -1083,7 +1113,7 @@ A templatized LDIF string used to delete the user account once its TTL has expir
 
 This may contain multiple LDIF entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role#deletion_ldif LdapSecretBackendDynamicRole#deletion_ldif}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role#deletion_ldif LdapSecretBackendDynamicRole#deletion_ldif}
 
 ---
 
@@ -1097,7 +1127,7 @@ public readonly roleName: string;
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role#role_name LdapSecretBackendDynamicRole#role_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role#role_name LdapSecretBackendDynamicRole#role_name}
 
 ---
 
@@ -1111,7 +1141,7 @@ public readonly defaultTtl: number;
 
 Specifies the TTL for the leases associated with this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role#default_ttl LdapSecretBackendDynamicRole#default_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role#default_ttl LdapSecretBackendDynamicRole#default_ttl}
 
 ---
 
@@ -1123,7 +1153,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role#id LdapSecretBackendDynamicRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role#id LdapSecretBackendDynamicRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1140,7 +1170,7 @@ public readonly maxTtl: number;
 
 Specifies the maximum TTL for the leases associated with this role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role#max_ttl LdapSecretBackendDynamicRole#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role#max_ttl LdapSecretBackendDynamicRole#max_ttl}
 
 ---
 
@@ -1154,7 +1184,7 @@ public readonly mount: string;
 
 The path where the LDAP secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role#mount LdapSecretBackendDynamicRole#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role#mount LdapSecretBackendDynamicRole#mount}
 
 ---
 
@@ -1168,7 +1198,21 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role#namespace LdapSecretBackendDynamicRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role#namespace LdapSecretBackendDynamicRole#namespace}
+
+---
+
+##### `passwordPolicy`<sup>Optional</sup> <a name="passwordPolicy" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.property.passwordPolicy"></a>
+
+```typescript
+public readonly passwordPolicy: string;
+```
+
+- *Type:* string
+
+Name of the password policy to use to generate passwords for this role.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role#password_policy LdapSecretBackendDynamicRole#password_policy}
 
 ---
 
@@ -1184,7 +1228,7 @@ A templatized LDIF string used to attempt to rollback any changes in the event t
 
 This may contain multiple LDIF entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role#rollback_ldif LdapSecretBackendDynamicRole#rollback_ldif}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role#rollback_ldif LdapSecretBackendDynamicRole#rollback_ldif}
 
 ---
 
@@ -1200,7 +1244,7 @@ A template used to generate a dynamic username.
 
 This will be used to fill in the .Username field within the creation_ldif string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/ldap_secret_backend_dynamic_role#username_template LdapSecretBackendDynamicRole#username_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/ldap_secret_backend_dynamic_role#username_template LdapSecretBackendDynamicRole#username_template}
 
 ---
 
