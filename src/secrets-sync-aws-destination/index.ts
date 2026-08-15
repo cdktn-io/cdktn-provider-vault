@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination
+// https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,53 +15,53 @@ export interface SecretsSyncAwsDestinationConfig extends cdktn.TerraformMetaArgu
   /**
   * Access key id to authenticate against the AWS secrets manager.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#access_key_id SecretsSyncAwsDestination#access_key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#access_key_id SecretsSyncAwsDestination#access_key_id}
   */
   readonly accessKeyId?: string;
   /**
   * Allowed IPv4 addresses for outbound connections from Vault to AWS Secrets Manager. Can also be set via an IP address range using CIDR notation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#allowed_ipv4_addresses SecretsSyncAwsDestination#allowed_ipv4_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#allowed_ipv4_addresses SecretsSyncAwsDestination#allowed_ipv4_addresses}
   */
   readonly allowedIpv4Addresses?: string[];
   /**
   * Allowed IPv6 addresses for outbound connections from Vault to AWS Secrets Manager. Can also be set via an IP address range using CIDR notation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#allowed_ipv6_addresses SecretsSyncAwsDestination#allowed_ipv6_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#allowed_ipv6_addresses SecretsSyncAwsDestination#allowed_ipv6_addresses}
   */
   readonly allowedIpv6Addresses?: string[];
   /**
   * Allowed ports for outbound connections from Vault to AWS Secrets Manager.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#allowed_ports SecretsSyncAwsDestination#allowed_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#allowed_ports SecretsSyncAwsDestination#allowed_ports}
   */
   readonly allowedPorts?: number[];
   /**
   * Custom tags to set on the secret managed at the destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#custom_tags SecretsSyncAwsDestination#custom_tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#custom_tags SecretsSyncAwsDestination#custom_tags}
   */
   readonly customTags?: { [key: string]: string };
   /**
   * Disable strict networking mode. When set to true, Vault will not enforce allowed IP addresses and ports.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#disable_strict_networking SecretsSyncAwsDestination#disable_strict_networking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#disable_strict_networking SecretsSyncAwsDestination#disable_strict_networking}
   */
   readonly disableStrictNetworking?: boolean | cdktn.IResolvable;
   /**
   * Extra protection that must match the trust policy granting access to the AWS IAM role ARN.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#external_id SecretsSyncAwsDestination#external_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#external_id SecretsSyncAwsDestination#external_id}
   */
   readonly externalId?: string;
   /**
   * Determines what level of information is synced as a distinct resource at the destination. Can be 'secret-path' or 'secret-key'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#granularity SecretsSyncAwsDestination#granularity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#granularity SecretsSyncAwsDestination#granularity}
   */
   readonly granularity?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#id SecretsSyncAwsDestination#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#id SecretsSyncAwsDestination#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -70,73 +70,85 @@ export interface SecretsSyncAwsDestinationConfig extends cdktn.TerraformMetaArgu
   /**
   * The audience claim value for identity tokens. This is a write-only field and will not be read back from Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#identity_token_audience_wo SecretsSyncAwsDestination#identity_token_audience_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#identity_token_audience_wo SecretsSyncAwsDestination#identity_token_audience_wo}
   */
   readonly identityTokenAudienceWo?: string;
   /**
   * A version counter for the write-only identity_token_audience_wo field. Incrementing this value will trigger an update.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#identity_token_audience_wo_version SecretsSyncAwsDestination#identity_token_audience_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#identity_token_audience_wo_version SecretsSyncAwsDestination#identity_token_audience_wo_version}
   */
   readonly identityTokenAudienceWoVersion?: number;
   /**
   * The key to use for signing identity tokens. This is a write-only field and will not be read back from Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#identity_token_key_wo SecretsSyncAwsDestination#identity_token_key_wo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#identity_token_key_wo SecretsSyncAwsDestination#identity_token_key_wo}
   */
   readonly identityTokenKeyWo?: string;
   /**
   * A version counter for the write-only identity_token_key_wo field. Incrementing this value will trigger an update.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#identity_token_key_wo_version SecretsSyncAwsDestination#identity_token_key_wo_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#identity_token_key_wo_version SecretsSyncAwsDestination#identity_token_key_wo_version}
   */
   readonly identityTokenKeyWoVersion?: number;
   /**
   * The TTL of generated tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#identity_token_ttl SecretsSyncAwsDestination#identity_token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#identity_token_ttl SecretsSyncAwsDestination#identity_token_ttl}
   */
   readonly identityTokenTtl?: number;
   /**
+  * Specifies the ARN of the AWS KMS key to be used to encrypt the secret.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#kms_key_id SecretsSyncAwsDestination#kms_key_id}
+  */
+  readonly kmsKeyId?: string;
+  /**
   * Unique name of the AWS destination.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#name SecretsSyncAwsDestination#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#name SecretsSyncAwsDestination#name}
   */
   readonly name: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#namespace SecretsSyncAwsDestination#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#namespace SecretsSyncAwsDestination#namespace}
   */
   readonly namespace?: string;
   /**
   * Region where to manage the secrets manager entries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#region SecretsSyncAwsDestination#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#region SecretsSyncAwsDestination#region}
   */
   readonly region?: string;
   /**
+  * Map of regions to KMS key ARN values for replica region encryption. KMS key values are optional.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#replica_regions SecretsSyncAwsDestination#replica_regions}
+  */
+  readonly replicaRegions?: { [key: string]: string };
+  /**
   * Specifies a role to assume when connecting to AWS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#role_arn SecretsSyncAwsDestination#role_arn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#role_arn SecretsSyncAwsDestination#role_arn}
   */
   readonly roleArn?: string;
   /**
   * Secret access key to authenticate against the AWS secrets manager.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#secret_access_key SecretsSyncAwsDestination#secret_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#secret_access_key SecretsSyncAwsDestination#secret_access_key}
   */
   readonly secretAccessKey?: string;
   /**
   * Template describing how to generate external secret names.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#secret_name_template SecretsSyncAwsDestination#secret_name_template}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#secret_name_template SecretsSyncAwsDestination#secret_name_template}
   */
   readonly secretNameTemplate?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination}
 */
 export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
 
@@ -152,7 +164,7 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SecretsSyncAwsDestination resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SecretsSyncAwsDestination to import
-  * @param importFromId The id of the existing SecretsSyncAwsDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SecretsSyncAwsDestination that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SecretsSyncAwsDestination to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -164,7 +176,7 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.10.1/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/secrets_sync_aws_destination vault_secrets_sync_aws_destination} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -175,7 +187,7 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
       terraformResourceType: 'vault_secrets_sync_aws_destination',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.10.1',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -200,9 +212,11 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
     this._identityTokenKeyWo = config.identityTokenKeyWo;
     this._identityTokenKeyWoVersion = config.identityTokenKeyWoVersion;
     this._identityTokenTtl = config.identityTokenTtl;
+    this._kmsKeyId = config.kmsKeyId;
     this._name = config.name;
     this._namespace = config.namespace;
     this._region = config.region;
+    this._replicaRegions = config.replicaRegions;
     this._roleArn = config.roleArn;
     this._secretAccessKey = config.secretAccessKey;
     this._secretNameTemplate = config.secretNameTemplate;
@@ -442,6 +456,22 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
     return this._identityTokenTtl;
   }
 
+  // kms_key_id - computed: false, optional: true, required: false
+  private _kmsKeyId?: string; 
+  public get kmsKeyId() {
+    return this.getStringAttribute('kms_key_id');
+  }
+  public set kmsKeyId(value: string) {
+    this._kmsKeyId = value;
+  }
+  public resetKmsKeyId() {
+    this._kmsKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyIdInput() {
+    return this._kmsKeyId;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -485,6 +515,22 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get regionInput() {
     return this._region;
+  }
+
+  // replica_regions - computed: false, optional: true, required: false
+  private _replicaRegions?: { [key: string]: string }; 
+  public get replicaRegions() {
+    return this.getStringMapAttribute('replica_regions');
+  }
+  public set replicaRegions(value: { [key: string]: string }) {
+    this._replicaRegions = value;
+  }
+  public resetReplicaRegions() {
+    this._replicaRegions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicaRegionsInput() {
+    return this._replicaRegions;
   }
 
   // role_arn - computed: false, optional: true, required: false
@@ -560,9 +606,11 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
       identity_token_key_wo: this.markWriteOnlyAttribute(cdktn.stringToTerraform(this._identityTokenKeyWo)),
       identity_token_key_wo_version: cdktn.numberToTerraform(this._identityTokenKeyWoVersion),
       identity_token_ttl: cdktn.numberToTerraform(this._identityTokenTtl),
+      kms_key_id: cdktn.stringToTerraform(this._kmsKeyId),
       name: cdktn.stringToTerraform(this._name),
       namespace: cdktn.stringToTerraform(this._namespace),
       region: cdktn.stringToTerraform(this._region),
+      replica_regions: cdktn.hashMapper(cdktn.stringToTerraform)(this._replicaRegions),
       role_arn: cdktn.stringToTerraform(this._roleArn),
       secret_access_key: cdktn.stringToTerraform(this._secretAccessKey),
       secret_name_template: cdktn.stringToTerraform(this._secretNameTemplate),
@@ -655,6 +703,12 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "number",
       },
+      kms_key_id: {
+        value: cdktn.stringToHclTerraform(this._kmsKeyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       name: {
         value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
@@ -672,6 +726,12 @@ export class SecretsSyncAwsDestination extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      replica_regions: {
+        value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(this._replicaRegions),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
       },
       role_arn: {
         value: cdktn.stringToHclTerraform(this._roleArn),
