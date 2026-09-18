@@ -4,7 +4,7 @@
 
 ### KerberosAuthBackendConfig <a name="KerberosAuthBackendConfig" id="@cdktn/provider-vault.kerberosAuthBackendConfig.KerberosAuthBackendConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kerberos_auth_backend_config vault_kerberos_auth_backend_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config vault_kerberos_auth_backend_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.kerberosAuthBackendConfig.KerberosAuthBackendConfig.Initializer"></a>
 
@@ -510,7 +510,7 @@ The construct id used in the generated config for the KerberosAuthBackendConfig 
 
 The id of the existing KerberosAuthBackendConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kerberos_auth_backend_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -987,7 +987,7 @@ public string KeytabWo { get; set; }
 
 Base64-encoded keytab file content (write-only). Must contain an entry matching service_account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kerberos_auth_backend_config#keytab_wo KerberosAuthBackendConfig#keytab_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#keytab_wo KerberosAuthBackendConfig#keytab_wo}
 
 ---
 
@@ -1001,7 +1001,7 @@ public double KeytabWoVersion { get; set; }
 
 Version identifier for keytab updates. Increment this value to trigger a keytab update.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kerberos_auth_backend_config#keytab_wo_version KerberosAuthBackendConfig#keytab_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#keytab_wo_version KerberosAuthBackendConfig#keytab_wo_version}
 
 ---
 
@@ -1015,7 +1015,7 @@ public string Mount { get; set; }
 
 Path where the Kerberos auth method is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kerberos_auth_backend_config#mount KerberosAuthBackendConfig#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#mount KerberosAuthBackendConfig#mount}
 
 ---
 
@@ -1029,7 +1029,7 @@ public string ServiceAccount { get; set; }
 
 The Kerberos service account associated with the keytab entry (e.g., 'vault_svc').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kerberos_auth_backend_config#service_account KerberosAuthBackendConfig#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#service_account KerberosAuthBackendConfig#service_account}
 
 ---
 
@@ -1043,7 +1043,7 @@ public bool|IResolvable AddGroupAliases { get; set; }
 
 Adds group aliases during authentication. Default: false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kerberos_auth_backend_config#add_group_aliases KerberosAuthBackendConfig#add_group_aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#add_group_aliases KerberosAuthBackendConfig#add_group_aliases}
 
 ---
 
@@ -1057,7 +1057,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kerberos_auth_backend_config#namespace KerberosAuthBackendConfig#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#namespace KerberosAuthBackendConfig#namespace}
 
 ---
 
@@ -1071,7 +1071,7 @@ public bool|IResolvable RemoveInstanceName { get; set; }
 
 Removes instance names from Kerberos service principal names. Default: false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/kerberos_auth_backend_config#remove_instance_name KerberosAuthBackendConfig#remove_instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/kerberos_auth_backend_config#remove_instance_name KerberosAuthBackendConfig#remove_instance_name}
 
 ---
 

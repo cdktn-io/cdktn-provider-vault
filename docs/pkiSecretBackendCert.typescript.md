@@ -4,7 +4,7 @@
 
 ### PkiSecretBackendCert <a name="PkiSecretBackendCert" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert vault_pki_secret_backend_cert}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCert.Initializer"></a>
 
@@ -650,7 +650,7 @@ The construct id used in the generated config for the PkiSecretBackendCert to im
 
 The id of the existing PkiSecretBackendCert that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1533,8 +1533,8 @@ const pkiSecretBackendCertConfig: pkiSecretBackendCert.PkiSecretBackendCertConfi
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.autoRenew">autoRenew</a></code> | <code>boolean \| cdktn.IResolvable</code> | If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.certMetadata">certMetadata</a></code> | <code>string</code> | A base 64 encoded value or an empty string to associate with the certificate's serial number. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.excludeCnFromSans">excludeCnFromSans</a></code> | <code>boolean \| cdktn.IResolvable</code> | Flag to exclude CN from SANs. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.format">format</a></code> | <code>string</code> | The format of data. Values "pkcs12_bundle" and "jks_bundle" require Vault version 2.0.5 or later. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.format">format</a></code> | <code>string</code> | The format of data. Values "pkcs12_bundle" and "jks_bundle" require Vault version 2.1.0 or later. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.ipSans">ipSans</a></code> | <code>string[]</code> | List of alternative IPs. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.issuerRef">issuerRef</a></code> | <code>string</code> | Specifies the default issuer of this request. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendCert.PkiSecretBackendCertConfig.property.jksPassword">jksPassword</a></code> | <code>string</code> | Password for encrypting the Java keystore 		when format is set to "jks_bundle". |
@@ -1635,7 +1635,7 @@ public readonly backend: string;
 
 The PKI secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#backend PkiSecretBackendCert#backend}
 
 ---
 
@@ -1649,7 +1649,7 @@ public readonly commonName: string;
 
 CN of the certificate to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#common_name PkiSecretBackendCert#common_name}
 
 ---
 
@@ -1663,7 +1663,7 @@ public readonly name: string;
 
 Name of the role to create the certificate against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#name PkiSecretBackendCert#name}
 
 ---
 
@@ -1677,7 +1677,7 @@ public readonly altNames: string[];
 
 List of alternative names.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#alt_names PkiSecretBackendCert#alt_names}
 
 ---
 
@@ -1691,7 +1691,7 @@ public readonly autoRenew: boolean | IResolvable;
 
 If enabled, a new certificate will be generated if the expiration is within min_seconds_remaining.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#auto_renew PkiSecretBackendCert#auto_renew}
 
 ---
 
@@ -1707,7 +1707,7 @@ A base 64 encoded value or an empty string to associate with the certificate's s
 
 The role's no_store_metadata must be set to false, otherwise an error is returned when specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#cert_metadata PkiSecretBackendCert#cert_metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#cert_metadata PkiSecretBackendCert#cert_metadata}
 
 ---
 
@@ -1721,7 +1721,7 @@ public readonly excludeCnFromSans: boolean | IResolvable;
 
 Flag to exclude CN from SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#exclude_cn_from_sans PkiSecretBackendCert#exclude_cn_from_sans}
 
 ---
 
@@ -1733,9 +1733,9 @@ public readonly format: string;
 
 - *Type:* string
 
-The format of data. Values "pkcs12_bundle" and "jks_bundle" require Vault version 2.0.5 or later.
+The format of data. Values "pkcs12_bundle" and "jks_bundle" require Vault version 2.1.0 or later.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#format PkiSecretBackendCert#format}
 
 ---
 
@@ -1747,7 +1747,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#id PkiSecretBackendCert#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1764,7 +1764,7 @@ public readonly ipSans: string[];
 
 List of alternative IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#ip_sans PkiSecretBackendCert#ip_sans}
 
 ---
 
@@ -1778,7 +1778,7 @@ public readonly issuerRef: string;
 
 Specifies the default issuer of this request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#issuer_ref PkiSecretBackendCert#issuer_ref}
 
 ---
 
@@ -1796,7 +1796,7 @@ If not provided,
 		defaults to "changeit". It is recommended to use the default password
 		and protect the file using other means or use a high-entropy password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#jks_password PkiSecretBackendCert#jks_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#jks_password PkiSecretBackendCert#jks_password}
 
 ---
 
@@ -1815,7 +1815,7 @@ This field is case-sensitive, but relying
 			This parameter is ignored by endpoints that return TrustedCertificateEntry values
 			(JKS trust stores), and entry aliases are assigned incrementing numeric strings starting at "1".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#jks_private_key_alias PkiSecretBackendCert#jks_private_key_alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#jks_private_key_alias PkiSecretBackendCert#jks_private_key_alias}
 
 ---
 
@@ -1829,7 +1829,7 @@ public readonly minSecondsRemaining: number;
 
 Generate a new certificate when the expiration is within this number of seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#min_seconds_remaining PkiSecretBackendCert#min_seconds_remaining}
 
 ---
 
@@ -1843,7 +1843,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#namespace PkiSecretBackendCert#namespace}
 
 ---
 
@@ -1859,7 +1859,7 @@ Set the Not After field of the certificate with specified date value.
 
 The value format should be given in UTC format YYYY-MM-ddTHH:MM:SSZ. Supports the Y10K end date for IEEE 802.1AR-2018 standard devices, 9999-12-31T23:59:59Z.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#not_after PkiSecretBackendCert#not_after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#not_after PkiSecretBackendCert#not_after}
 
 ---
 
@@ -1873,7 +1873,7 @@ public readonly otherSans: string[];
 
 List of other SANs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#other_sans PkiSecretBackendCert#other_sans}
 
 ---
 
@@ -1891,7 +1891,7 @@ Valid values are "modern2026" and
 "modern2023". Defaults to "modern2026", which uses the newer PKCS#12 
 integrity format (PBMAC1).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#pkcs12_encoder PkiSecretBackendCert#pkcs12_encoder}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#pkcs12_encoder PkiSecretBackendCert#pkcs12_encoder}
 
 ---
 
@@ -1909,7 +1909,7 @@ If not provided,
 		defaults to "changeit". It is recommended to use the default password
 		and protect the file using other means or use a high-entropy password.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#pkcs12_password PkiSecretBackendCert#pkcs12_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#pkcs12_password PkiSecretBackendCert#pkcs12_password}
 
 ---
 
@@ -1923,7 +1923,7 @@ public readonly privateKeyFormat: string;
 
 The private key format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#private_key_format PkiSecretBackendCert#private_key_format}
 
 ---
 
@@ -1939,7 +1939,7 @@ If true, the returned ca_chain field will not include any self-signed CA certifi
 
 Useful if end-users already have the root CA in their trust store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#remove_roots_from_chain PkiSecretBackendCert#remove_roots_from_chain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#remove_roots_from_chain PkiSecretBackendCert#remove_roots_from_chain}
 
 ---
 
@@ -1953,7 +1953,7 @@ public readonly revoke: boolean | IResolvable;
 
 Revoke the certificate upon resource destruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#revoke PkiSecretBackendCert#revoke}
 
 ---
 
@@ -1967,7 +1967,7 @@ public readonly revokeWithKey: boolean | IResolvable;
 
 Revoke the certificate with private key method upon resource destruction.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#revoke_with_key PkiSecretBackendCert#revoke_with_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#revoke_with_key PkiSecretBackendCert#revoke_with_key}
 
 ---
 
@@ -1981,7 +1981,7 @@ public readonly ttl: string;
 
 Time to live.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#ttl PkiSecretBackendCert#ttl}
 
 ---
 
@@ -1995,7 +1995,7 @@ public readonly uriSans: string[];
 
 List of alternative URIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#uri_sans PkiSecretBackendCert#uri_sans}
 
 ---
 
@@ -2009,7 +2009,7 @@ public readonly userIds: string[];
 
 List of Subject User IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_secret_backend_cert#user_ids PkiSecretBackendCert#user_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_cert#user_ids PkiSecretBackendCert#user_ids}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### PkiExternalCaSecretBackendAcmeAccount <a name="PkiExternalCaSecretBackendAcmeAccount" id="@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account vault_pki_external_ca_secret_backend_acme_account}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.resetDefaultNameserver">ResetDefaultNameserver</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.resetEabKey">ResetEabKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.resetEabKid">ResetEabKid</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.resetKeyType">ResetKeyType</a></code> | *No description.* |
@@ -391,6 +392,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetDefaultNameserver` <a name="ResetDefaultNameserver" id="@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.resetDefaultNameserver"></a>
+
+```csharp
+private void ResetDefaultNameserver()
+```
+
 ##### `ResetEabKey` <a name="ResetEabKey" id="@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.resetEabKey"></a>
 
 ```csharp
@@ -524,7 +531,7 @@ The construct id used in the generated config for the PkiExternalCaSecretBackend
 
 The id of the existing PkiExternalCaSecretBackendAcmeAccount that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -555,6 +562,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.activeKeyVersion">ActiveKeyVersion</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.defaultNameserverInput">DefaultNameserverInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.directoryUrlInput">DirectoryUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.eabKeyInput">EabKeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.eabKidInput">EabKidInput</a></code> | <code>string</code> | *No description.* |
@@ -564,6 +572,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.trustedCaInput">TrustedCaInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.defaultNameserver">DefaultNameserver</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.directoryUrl">DirectoryUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.eabKey">EabKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.eabKid">EabKid</a></code> | <code>string</code> | *No description.* |
@@ -728,6 +737,16 @@ public double ActiveKeyVersion { get; }
 
 ---
 
+##### `DefaultNameserverInput`<sup>Optional</sup> <a name="DefaultNameserverInput" id="@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.defaultNameserverInput"></a>
+
+```csharp
+public string DefaultNameserverInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `DirectoryUrlInput`<sup>Optional</sup> <a name="DirectoryUrlInput" id="@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.directoryUrlInput"></a>
 
 ```csharp
@@ -812,6 +831,16 @@ public string NamespaceInput { get; }
 
 ```csharp
 public string TrustedCaInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DefaultNameserver`<sup>Required</sup> <a name="DefaultNameserver" id="@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccount.property.defaultNameserver"></a>
+
+```csharp
+public string DefaultNameserver { get; }
 ```
 
 - *Type:* string
@@ -951,6 +980,7 @@ new PkiExternalCaSecretBackendAcmeAccountConfig {
     string[] EmailContacts,
     string Mount,
     string Name,
+    string DefaultNameserver = null,
     string EabKey = null,
     string EabKid = null,
     string KeyType = null,
@@ -974,6 +1004,7 @@ new PkiExternalCaSecretBackendAcmeAccountConfig {
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccountConfig.property.emailContacts">EmailContacts</a></code> | <code>string[]</code> | Email addresses for the ACME account. |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccountConfig.property.mount">Mount</a></code> | <code>string</code> | The path where the PKI secret backend is mounted. |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccountConfig.property.name">Name</a></code> | <code>string</code> | Name of the ACME account. |
+| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccountConfig.property.defaultNameserver">DefaultNameserver</a></code> | <code>string</code> | Address of a DNS nameserver (`host` or `host:port`) to use when verifying DNS-01 challenge propagation for providers that do not specify a nameserver, in addition to the domain's primary nameserver. |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccountConfig.property.eabKey">EabKey</a></code> | <code>string</code> | An url base64 encoded external binding token to create the initial account. |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccountConfig.property.eabKid">EabKid</a></code> | <code>string</code> | The external binding key ID to create the initial account. |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccountConfig.property.keyType">KeyType</a></code> | <code>string</code> | Key type to generate for the account key. Valid values are `ec-256`, `ec-384`, `ec-521`, `rsa-2048`, `rsa-4096`, `rsa-8192`. |
@@ -1062,7 +1093,7 @@ public string DirectoryUrl { get; set; }
 
 ACME Directory URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account#directory_url PkiExternalCaSecretBackendAcmeAccount#directory_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account#directory_url PkiExternalCaSecretBackendAcmeAccount#directory_url}
 
 ---
 
@@ -1076,7 +1107,7 @@ public string[] EmailContacts { get; set; }
 
 Email addresses for the ACME account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account#email_contacts PkiExternalCaSecretBackendAcmeAccount#email_contacts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account#email_contacts PkiExternalCaSecretBackendAcmeAccount#email_contacts}
 
 ---
 
@@ -1090,7 +1121,7 @@ public string Mount { get; set; }
 
 The path where the PKI secret backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account#mount PkiExternalCaSecretBackendAcmeAccount#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account#mount PkiExternalCaSecretBackendAcmeAccount#mount}
 
 ---
 
@@ -1104,7 +1135,21 @@ public string Name { get; set; }
 
 Name of the ACME account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account#name PkiExternalCaSecretBackendAcmeAccount#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account#name PkiExternalCaSecretBackendAcmeAccount#name}
+
+---
+
+##### `DefaultNameserver`<sup>Optional</sup> <a name="DefaultNameserver" id="@cdktn/provider-vault.pkiExternalCaSecretBackendAcmeAccount.PkiExternalCaSecretBackendAcmeAccountConfig.property.defaultNameserver"></a>
+
+```csharp
+public string DefaultNameserver { get; set; }
+```
+
+- *Type:* string
+
+Address of a DNS nameserver (`host` or `host:port`) to use when verifying DNS-01 challenge propagation for providers that do not specify a nameserver, in addition to the domain's primary nameserver.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account#default_nameserver PkiExternalCaSecretBackendAcmeAccount#default_nameserver}
 
 ---
 
@@ -1118,7 +1163,7 @@ public string EabKey { get; set; }
 
 An url base64 encoded external binding token to create the initial account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account#eab_key PkiExternalCaSecretBackendAcmeAccount#eab_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account#eab_key PkiExternalCaSecretBackendAcmeAccount#eab_key}
 
 ---
 
@@ -1132,7 +1177,7 @@ public string EabKid { get; set; }
 
 The external binding key ID to create the initial account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account#eab_kid PkiExternalCaSecretBackendAcmeAccount#eab_kid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account#eab_kid PkiExternalCaSecretBackendAcmeAccount#eab_kid}
 
 ---
 
@@ -1146,7 +1191,7 @@ public string KeyType { get; set; }
 
 Key type to generate for the account key. Valid values are `ec-256`, `ec-384`, `ec-521`, `rsa-2048`, `rsa-4096`, `rsa-8192`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account#key_type PkiExternalCaSecretBackendAcmeAccount#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account#key_type PkiExternalCaSecretBackendAcmeAccount#key_type}
 
 ---
 
@@ -1160,7 +1205,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account#namespace PkiExternalCaSecretBackendAcmeAccount#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account#namespace PkiExternalCaSecretBackendAcmeAccount#namespace}
 
 ---
 
@@ -1174,7 +1219,7 @@ public string TrustedCa { get; set; }
 
 Trusted CA certificates for the ACME server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_acme_account#trusted_ca PkiExternalCaSecretBackendAcmeAccount#trusted_ca}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_acme_account#trusted_ca PkiExternalCaSecretBackendAcmeAccount#trusted_ca}
 
 ---
 

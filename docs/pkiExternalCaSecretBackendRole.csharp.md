@@ -4,7 +4,7 @@
 
 ### PkiExternalCaSecretBackendRole <a name="PkiExternalCaSecretBackendRole" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role vault_pki_external_ca_secret_backend_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.Initializer"></a>
 
@@ -79,6 +79,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.resetAllowedDomains">ResetAllowedDomains</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.resetCsrGenerateKeyType">ResetCsrGenerateKeyType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.resetCsrIdentifierPopulation">ResetCsrIdentifierPopulation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.resetDnsProviderName">ResetDnsProviderName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.resetDnsProviderType">ResetDnsProviderType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.resetForce">ResetForce</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.resetNamespace">ResetNamespace</a></code> | *No description.* |
 
@@ -423,6 +425,18 @@ private void ResetCsrGenerateKeyType()
 private void ResetCsrIdentifierPopulation()
 ```
 
+##### `ResetDnsProviderName` <a name="ResetDnsProviderName" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.resetDnsProviderName"></a>
+
+```csharp
+private void ResetDnsProviderName()
+```
+
+##### `ResetDnsProviderType` <a name="ResetDnsProviderType" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.resetDnsProviderType"></a>
+
+```csharp
+private void ResetDnsProviderType()
+```
+
 ##### `ResetForce` <a name="ResetForce" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.resetForce"></a>
 
 ```csharp
@@ -538,7 +552,7 @@ The construct id used in the generated config for the PkiExternalCaSecretBackend
 
 The id of the existing PkiExternalCaSecretBackendRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -569,13 +583,15 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.creationDate">CreationDate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.lastUpdateDate">LastUpdateDate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.lastUpdatedDate">LastUpdatedDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.acmeAccountNameInput">AcmeAccountNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.allowedChallengeTypesInput">AllowedChallengeTypesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.allowedDomainOptionsInput">AllowedDomainOptionsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.allowedDomainsInput">AllowedDomainsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.csrGenerateKeyTypeInput">CsrGenerateKeyTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.csrIdentifierPopulationInput">CsrIdentifierPopulationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.dnsProviderNameInput">DnsProviderNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.dnsProviderTypeInput">DnsProviderTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.forceInput">ForceInput</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.mountInput">MountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
@@ -586,6 +602,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.allowedDomains">AllowedDomains</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.csrGenerateKeyType">CsrGenerateKeyType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.csrIdentifierPopulation">CsrIdentifierPopulation</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.dnsProviderName">DnsProviderName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.dnsProviderType">DnsProviderType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.force">Force</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.mount">Mount</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.name">Name</a></code> | <code>string</code> | *No description.* |
@@ -745,10 +763,10 @@ public string CreationDate { get; }
 
 ---
 
-##### `LastUpdateDate`<sup>Required</sup> <a name="LastUpdateDate" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.lastUpdateDate"></a>
+##### `LastUpdatedDate`<sup>Required</sup> <a name="LastUpdatedDate" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.lastUpdatedDate"></a>
 
 ```csharp
-public string LastUpdateDate { get; }
+public string LastUpdatedDate { get; }
 ```
 
 - *Type:* string
@@ -809,6 +827,26 @@ public string CsrGenerateKeyTypeInput { get; }
 
 ```csharp
 public string CsrIdentifierPopulationInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DnsProviderNameInput`<sup>Optional</sup> <a name="DnsProviderNameInput" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.dnsProviderNameInput"></a>
+
+```csharp
+public string DnsProviderNameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DnsProviderTypeInput`<sup>Optional</sup> <a name="DnsProviderTypeInput" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.dnsProviderTypeInput"></a>
+
+```csharp
+public string DnsProviderTypeInput { get; }
 ```
 
 - *Type:* string
@@ -915,6 +953,26 @@ public string CsrIdentifierPopulation { get; }
 
 ---
 
+##### `DnsProviderName`<sup>Required</sup> <a name="DnsProviderName" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.dnsProviderName"></a>
+
+```csharp
+public string DnsProviderName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DnsProviderType`<sup>Required</sup> <a name="DnsProviderType" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.dnsProviderType"></a>
+
+```csharp
+public string DnsProviderType { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Force`<sup>Required</sup> <a name="Force" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRole.property.force"></a>
 
 ```csharp
@@ -998,6 +1056,8 @@ new PkiExternalCaSecretBackendRoleConfig {
     string[] AllowedDomains = null,
     string CsrGenerateKeyType = null,
     string CsrIdentifierPopulation = null,
+    string DnsProviderName = null,
+    string DnsProviderType = null,
     bool|IResolvable Force = null,
     string Namespace = null
 };
@@ -1022,6 +1082,8 @@ new PkiExternalCaSecretBackendRoleConfig {
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRoleConfig.property.allowedDomains">AllowedDomains</a></code> | <code>string[]</code> | A list of domains the role will accept certificates for. May contain templates, as with ACL Path Templating. |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRoleConfig.property.csrGenerateKeyType">CsrGenerateKeyType</a></code> | <code>string</code> | The key type and size/parameters to use when generating a new key if running in the identifier workflow. |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRoleConfig.property.csrIdentifierPopulation">CsrIdentifierPopulation</a></code> | <code>string</code> | The technique used to populate a CSR from the provided identifiers in the identifier workflow. |
+| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRoleConfig.property.dnsProviderName">DnsProviderName</a></code> | <code>string</code> | The name of the DNS provider configuration to use for DNS-01 challenges. |
+| <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRoleConfig.property.dnsProviderType">DnsProviderType</a></code> | <code>string</code> | The type of the DNS provider. Valid values are: `aws-route53`, `rfc2136`, `google-cloud-dns`, `azure-dns`. |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRoleConfig.property.force">Force</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Force deletion even when active orders exist. |
 | <code><a href="#@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRoleConfig.property.namespace">Namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 
@@ -1107,7 +1169,7 @@ public string AcmeAccountName { get; set; }
 
 The ACME account to use when validating certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role#acme_account_name PkiExternalCaSecretBackendRole#acme_account_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role#acme_account_name PkiExternalCaSecretBackendRole#acme_account_name}
 
 ---
 
@@ -1121,7 +1183,7 @@ public string Mount { get; set; }
 
 The path where the PKI External CA secret backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role#mount PkiExternalCaSecretBackendRole#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role#mount PkiExternalCaSecretBackendRole#mount}
 
 ---
 
@@ -1135,7 +1197,7 @@ public string Name { get; set; }
 
 Name of the role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role#name PkiExternalCaSecretBackendRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role#name PkiExternalCaSecretBackendRole#name}
 
 ---
 
@@ -1151,7 +1213,7 @@ The list of challenge types that are allowed to be used.
 
 Valid values are: `http-01`, `dns-01`, `tls-alpn-01`. Defaults to all challenge types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role#allowed_challenge_types PkiExternalCaSecretBackendRole#allowed_challenge_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role#allowed_challenge_types PkiExternalCaSecretBackendRole#allowed_challenge_types}
 
 ---
 
@@ -1167,7 +1229,7 @@ A list of keyword options that influence how values within allowed_domains are i
 
 Valid values are: `bare_domains`, `subdomains`, `wildcards`, `globs`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role#allowed_domain_options PkiExternalCaSecretBackendRole#allowed_domain_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role#allowed_domain_options PkiExternalCaSecretBackendRole#allowed_domain_options}
 
 ---
 
@@ -1181,7 +1243,7 @@ public string[] AllowedDomains { get; set; }
 
 A list of domains the role will accept certificates for. May contain templates, as with ACL Path Templating.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role#allowed_domains PkiExternalCaSecretBackendRole#allowed_domains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role#allowed_domains PkiExternalCaSecretBackendRole#allowed_domains}
 
 ---
 
@@ -1197,7 +1259,7 @@ The key type and size/parameters to use when generating a new key if running in 
 
 Valid values are: `ec-256`, `ec-384`, `ec-521`, `rsa-2048`, `rsa-4096`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role#csr_generate_key_type PkiExternalCaSecretBackendRole#csr_generate_key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role#csr_generate_key_type PkiExternalCaSecretBackendRole#csr_generate_key_type}
 
 ---
 
@@ -1213,7 +1275,35 @@ The technique used to populate a CSR from the provided identifiers in the identi
 
 Valid values are: `cn_first`, `sans_only`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role#csr_identifier_population PkiExternalCaSecretBackendRole#csr_identifier_population}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role#csr_identifier_population PkiExternalCaSecretBackendRole#csr_identifier_population}
+
+---
+
+##### `DnsProviderName`<sup>Optional</sup> <a name="DnsProviderName" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRoleConfig.property.dnsProviderName"></a>
+
+```csharp
+public string DnsProviderName { get; set; }
+```
+
+- *Type:* string
+
+The name of the DNS provider configuration to use for DNS-01 challenges.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role#dns_provider_name PkiExternalCaSecretBackendRole#dns_provider_name}
+
+---
+
+##### `DnsProviderType`<sup>Optional</sup> <a name="DnsProviderType" id="@cdktn/provider-vault.pkiExternalCaSecretBackendRole.PkiExternalCaSecretBackendRoleConfig.property.dnsProviderType"></a>
+
+```csharp
+public string DnsProviderType { get; set; }
+```
+
+- *Type:* string
+
+The type of the DNS provider. Valid values are: `aws-route53`, `rfc2136`, `google-cloud-dns`, `azure-dns`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role#dns_provider_type PkiExternalCaSecretBackendRole#dns_provider_type}
 
 ---
 
@@ -1227,7 +1317,7 @@ public bool|IResolvable Force { get; set; }
 
 Force deletion even when active orders exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role#force PkiExternalCaSecretBackendRole#force}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role#force PkiExternalCaSecretBackendRole#force}
 
 ---
 
@@ -1241,7 +1331,7 @@ public string Namespace { get; set; }
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/pki_external_ca_secret_backend_role#namespace PkiExternalCaSecretBackendRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_external_ca_secret_backend_role#namespace PkiExternalCaSecretBackendRole#namespace}
 
 ---
 
