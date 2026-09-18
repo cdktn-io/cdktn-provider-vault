@@ -138,6 +138,10 @@ export * as osSecretBackendAccount from './os-secret-backend-account/index';
 export * as osSecretBackendHost from './os-secret-backend-host/index';
 export * as passwordPolicy from './password-policy/index';
 export * as pkiExternalCaSecretBackendAcmeAccount from './pki-external-ca-secret-backend-acme-account/index';
+export * as pkiExternalCaSecretBackendDnsProviderAwsRoute53 from './pki-external-ca-secret-backend-dns-provider-aws-route53/index';
+export * as pkiExternalCaSecretBackendDnsProviderAzure from './pki-external-ca-secret-backend-dns-provider-azure/index';
+export * as pkiExternalCaSecretBackendDnsProviderGcp from './pki-external-ca-secret-backend-dns-provider-gcp/index';
+export * as pkiExternalCaSecretBackendDnsProviderRfc2136 from './pki-external-ca-secret-backend-dns-provider-rfc2136/index';
 export * as pkiExternalCaSecretBackendOrder from './pki-external-ca-secret-backend-order/index';
 export * as pkiExternalCaSecretBackendOrderCertificate from './pki-external-ca-secret-backend-order-certificate/index';
 export * as pkiExternalCaSecretBackendOrderChallengeFulfilled from './pki-external-ca-secret-backend-order-challenge-fulfilled/index';
@@ -205,6 +209,8 @@ export * as transformKeyConfiguration from './transform-key-configuration/index'
 export * as transformRole from './transform-role/index';
 export * as transformTemplate from './transform-template/index';
 export * as transformTransformation from './transform-transformation/index';
+export * as transformTransformationTokenization from './transform-transformation-tokenization/index';
+export * as transformTransformationTokenizationStore from './transform-transformation-tokenization-store/index';
 export * as transitSecretBackendKey from './transit-secret-backend-key/index';
 export * as transitSecretCacheConfig from './transit-secret-cache-config/index';
 export * as userpassAuthBackendUser from './userpass-auth-backend-user/index';
@@ -263,6 +269,7 @@ export * as ephemeralVaultApproleAuthBackendRoleSecretId from './ephemeral-vault
 export * as ephemeralVaultAwsAccessCredentials from './ephemeral-vault-aws-access-credentials/index';
 export * as ephemeralVaultAwsStaticAccessCredentials from './ephemeral-vault-aws-static-access-credentials/index';
 export * as ephemeralVaultAzureAccessCredentials from './ephemeral-vault-azure-access-credentials/index';
+export * as ephemeralVaultAzureAccessToken from './ephemeral-vault-azure-access-token/index';
 export * as ephemeralVaultAzureStaticCredentials from './ephemeral-vault-azure-static-credentials/index';
 export * as ephemeralVaultCfAuthLogin from './ephemeral-vault-cf-auth-login/index';
 export * as ephemeralVaultDatabaseSecret from './ephemeral-vault-database-secret/index';
