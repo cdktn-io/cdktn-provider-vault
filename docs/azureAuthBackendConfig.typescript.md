@@ -4,7 +4,7 @@
 
 ### AzureAuthBackendConfig <a name="AzureAuthBackendConfig" id="@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config vault_azure_auth_backend_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetAuthType">resetAuthType</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetBackend">resetBackend</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetClientId">resetClientId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetClientSecret">resetClientSecret</a></code> | *No description.* |
@@ -403,6 +404,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetAuthType` <a name="resetAuthType" id="@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetAuthType"></a>
+
+```typescript
+public resetAuthType(): void
+```
+
 ##### `resetBackend` <a name="resetBackend" id="@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.resetBackend"></a>
 
 ```typescript
@@ -608,7 +615,7 @@ The construct id used in the generated config for the AzureAuthBackendConfig to 
 
 The id of the existing AzureAuthBackendConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,6 +645,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.authTypeInput">authTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.clientIdInput">clientIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.clientSecretInput">clientSecretInput</a></code> | <code>string</code> | *No description.* |
@@ -657,6 +665,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.rotationScheduleInput">rotationScheduleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.rotationWindowInput">rotationWindowInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.tenantIdInput">tenantIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.authType">authType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.backend">backend</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.clientId">clientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.clientSecret">clientSecret</a></code> | <code>string</code> | *No description.* |
@@ -818,6 +827,16 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 ```
 
 - *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
+
+---
+
+##### `authTypeInput`<sup>Optional</sup> <a name="authTypeInput" id="@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.authTypeInput"></a>
+
+```typescript
+public readonly authTypeInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1005,6 +1024,16 @@ public readonly rotationWindowInput: number;
 
 ```typescript
 public readonly tenantIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `authType`<sup>Required</sup> <a name="authType" id="@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfig.property.authType"></a>
+
+```typescript
+public readonly authType: string;
 ```
 
 - *Type:* string
@@ -1246,6 +1275,7 @@ const azureAuthBackendConfigConfig: azureAuthBackendConfig.AzureAuthBackendConfi
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.resource">resource</a></code> | <code>string</code> | The configured URL for the application registered in Azure Active Directory. |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.tenantId">tenantId</a></code> | <code>string</code> | The tenant id for the Azure Active Directory organization. |
+| <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.authType">authType</a></code> | <code>string</code> | The authentication method used by Vault to access Azure APIs. |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.backend">backend</a></code> | <code>string</code> | Unique name of the auth backend to configure. |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.clientId">clientId</a></code> | <code>string</code> | The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required. |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.clientSecret">clientSecret</a></code> | <code>string</code> | The client secret for credentials to query the Azure APIs. Mutually exclusive with 'client_secret_wo'. |
@@ -1253,7 +1283,7 @@ const azureAuthBackendConfigConfig: azureAuthBackendConfig.AzureAuthBackendConfi
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.clientSecretWoVersion">clientSecretWoVersion</a></code> | <code>number</code> | Version counter for the write-only client secret. |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.disableAutomatedRotation">disableAutomatedRotation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Stops rotation of the root credential until set to false. |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.environment">environment</a></code> | <code>string</code> | The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud. |
-| <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#id AzureAuthBackendConfig#id}. |
+| <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#id AzureAuthBackendConfig#id}. |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.identityTokenAudience">identityTokenAudience</a></code> | <code>string</code> | The audience claim value. |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.identityTokenTtl">identityTokenTtl</a></code> | <code>number</code> | The TTL of generated identity tokens in seconds. |
 | <code><a href="#@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.maxRetries">maxRetries</a></code> | <code>number</code> | Maximum number of retries for Azure API requests. Defaults to 3. |
@@ -1346,7 +1376,7 @@ public readonly resource: string;
 
 The configured URL for the application registered in Azure Active Directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#resource AzureAuthBackendConfig#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#resource AzureAuthBackendConfig#resource}
 
 ---
 
@@ -1360,7 +1390,23 @@ public readonly tenantId: string;
 
 The tenant id for the Azure Active Directory organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#tenant_id AzureAuthBackendConfig#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#tenant_id AzureAuthBackendConfig#tenant_id}
+
+---
+
+##### `authType`<sup>Optional</sup> <a name="authType" id="@cdktn/provider-vault.azureAuthBackendConfig.AzureAuthBackendConfigConfig.property.authType"></a>
+
+```typescript
+public readonly authType: string;
+```
+
+- *Type:* string
+
+The authentication method used by Vault to access Azure APIs.
+
+The following values are supported: root_creds, plugin_wif, msi, aks_wif. plugin_wif requires Vault Enterprise.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#auth_type AzureAuthBackendConfig#auth_type}
 
 ---
 
@@ -1374,7 +1420,7 @@ public readonly backend: string;
 
 Unique name of the auth backend to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#backend AzureAuthBackendConfig#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#backend AzureAuthBackendConfig#backend}
 
 ---
 
@@ -1388,7 +1434,7 @@ public readonly clientId: string;
 
 The client id for credentials to query the Azure APIs. Currently read permissions to query compute resources are required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#client_id AzureAuthBackendConfig#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#client_id AzureAuthBackendConfig#client_id}
 
 ---
 
@@ -1402,7 +1448,7 @@ public readonly clientSecret: string;
 
 The client secret for credentials to query the Azure APIs. Mutually exclusive with 'client_secret_wo'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#client_secret AzureAuthBackendConfig#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#client_secret AzureAuthBackendConfig#client_secret}
 
 ---
 
@@ -1418,7 +1464,7 @@ The client secret for credentials to query the Azure APIs.
 
 This field is write-only and will never be stored in state. Mutually exclusive with 'client_secret'. Requires 'client_secret_wo_version' to trigger updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#client_secret_wo AzureAuthBackendConfig#client_secret_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#client_secret_wo AzureAuthBackendConfig#client_secret_wo}
 
 ---
 
@@ -1434,7 +1480,7 @@ Version counter for the write-only client secret.
 
 Increment this value to trigger rotation of the client secret. Required when using 'client_secret_wo'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#client_secret_wo_version AzureAuthBackendConfig#client_secret_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#client_secret_wo_version AzureAuthBackendConfig#client_secret_wo_version}
 
 ---
 
@@ -1448,7 +1494,7 @@ public readonly disableAutomatedRotation: boolean | IResolvable;
 
 Stops rotation of the root credential until set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#disable_automated_rotation AzureAuthBackendConfig#disable_automated_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#disable_automated_rotation AzureAuthBackendConfig#disable_automated_rotation}
 
 ---
 
@@ -1462,7 +1508,7 @@ public readonly environment: string;
 
 The Azure cloud environment. Valid values: AzurePublicCloud, AzureUSGovernmentCloud, AzureChinaCloud, AzureGermanCloud.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#environment AzureAuthBackendConfig#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#environment AzureAuthBackendConfig#environment}
 
 ---
 
@@ -1474,7 +1520,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#id AzureAuthBackendConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#id AzureAuthBackendConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1491,7 +1537,7 @@ public readonly identityTokenAudience: string;
 
 The audience claim value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#identity_token_audience AzureAuthBackendConfig#identity_token_audience}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#identity_token_audience AzureAuthBackendConfig#identity_token_audience}
 
 ---
 
@@ -1505,7 +1551,7 @@ public readonly identityTokenTtl: number;
 
 The TTL of generated identity tokens in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#identity_token_ttl AzureAuthBackendConfig#identity_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#identity_token_ttl AzureAuthBackendConfig#identity_token_ttl}
 
 ---
 
@@ -1519,7 +1565,7 @@ public readonly maxRetries: number;
 
 Maximum number of retries for Azure API requests. Defaults to 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#max_retries AzureAuthBackendConfig#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#max_retries AzureAuthBackendConfig#max_retries}
 
 ---
 
@@ -1533,7 +1579,7 @@ public readonly maxRetryDelay: number;
 
 The maximum delay in seconds between retries for Azure API requests. Defaults to 60.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#max_retry_delay AzureAuthBackendConfig#max_retry_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#max_retry_delay AzureAuthBackendConfig#max_retry_delay}
 
 ---
 
@@ -1547,7 +1593,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#namespace AzureAuthBackendConfig#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#namespace AzureAuthBackendConfig#namespace}
 
 ---
 
@@ -1561,7 +1607,7 @@ public readonly retryDelay: number;
 
 The initial delay in seconds between retries for Azure API requests. Defaults to 4.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#retry_delay AzureAuthBackendConfig#retry_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#retry_delay AzureAuthBackendConfig#retry_delay}
 
 ---
 
@@ -1575,7 +1621,7 @@ public readonly rotationPeriod: number;
 
 The period of time in seconds between each rotation of the root credential. Cannot be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#rotation_period AzureAuthBackendConfig#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#rotation_period AzureAuthBackendConfig#rotation_period}
 
 ---
 
@@ -1589,7 +1635,7 @@ public readonly rotationSchedule: string;
 
 The cron-style schedule for the root credential to be rotated on. Cannot be used with rotation_period.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#rotation_schedule AzureAuthBackendConfig#rotation_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#rotation_schedule AzureAuthBackendConfig#rotation_schedule}
 
 ---
 
@@ -1605,7 +1651,7 @@ The maximum amount of time in seconds Vault is allowed to complete a rotation on
 
 Can only be used with rotation_schedule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/azure_auth_backend_config#rotation_window AzureAuthBackendConfig#rotation_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_auth_backend_config#rotation_window AzureAuthBackendConfig#rotation_window}
 
 ---
 

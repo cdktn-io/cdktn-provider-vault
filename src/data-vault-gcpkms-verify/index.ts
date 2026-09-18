@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/gcpkms_verify
+// https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/gcpkms_verify
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface DataVaultGcpkmsVerifyConfig extends cdktn.TerraformMetaArgument
   /**
   * Base64-encoded digest to verify.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/gcpkms_verify#digest DataVaultGcpkmsVerify#digest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/gcpkms_verify#digest DataVaultGcpkmsVerify#digest}
   */
   readonly digest: string;
   /**
   * Name of the Vault key to use for verification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/gcpkms_verify#key_name DataVaultGcpkmsVerify#key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/gcpkms_verify#key_name DataVaultGcpkmsVerify#key_name}
   */
   readonly keyName: string;
   /**
   * Version of the key to use for verification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/gcpkms_verify#key_version DataVaultGcpkmsVerify#key_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/gcpkms_verify#key_version DataVaultGcpkmsVerify#key_version}
   */
   readonly keyVersion: number;
   /**
   * Path where the GCP KMS secrets engine is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/gcpkms_verify#mount DataVaultGcpkmsVerify#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/gcpkms_verify#mount DataVaultGcpkmsVerify#mount}
   */
   readonly mount: string;
   /**
   * Target namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/gcpkms_verify#namespace DataVaultGcpkmsVerify#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/gcpkms_verify#namespace DataVaultGcpkmsVerify#namespace}
   */
   readonly namespace?: string;
   /**
   * Base64-encoded signature to verify.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/gcpkms_verify#signature DataVaultGcpkmsVerify#signature}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/gcpkms_verify#signature DataVaultGcpkmsVerify#signature}
   */
   readonly signature: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/gcpkms_verify vault_gcpkms_verify}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/gcpkms_verify vault_gcpkms_verify}
 */
 export class DataVaultGcpkmsVerify extends cdktn.TerraformDataSource {
 
@@ -67,7 +67,7 @@ export class DataVaultGcpkmsVerify extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataVaultGcpkmsVerify resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultGcpkmsVerify to import
-  * @param importFromId The id of the existing DataVaultGcpkmsVerify that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/gcpkms_verify#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultGcpkmsVerify that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/gcpkms_verify#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultGcpkmsVerify to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +79,7 @@ export class DataVaultGcpkmsVerify extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/data-sources/gcpkms_verify vault_gcpkms_verify} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/data-sources/gcpkms_verify vault_gcpkms_verify} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class DataVaultGcpkmsVerify extends cdktn.TerraformDataSource {
       terraformResourceType: 'vault_gcpkms_verify',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

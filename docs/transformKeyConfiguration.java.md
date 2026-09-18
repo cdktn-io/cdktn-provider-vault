@@ -4,7 +4,7 @@
 
 ### TransformKeyConfiguration <a name="TransformKeyConfiguration" id="@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration vault_transform_key_configuration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration vault_transform_key_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration.Initializer"></a>
 
@@ -42,7 +42,7 @@ TransformKeyConfiguration.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the transform. |
 | <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration.Initializer.parameter.path">path</a></code> | <code>java.lang.String</code> | The mount path for the transform backend, for example the path given in "$ vault secrets enable -path=transform transform". |
 | <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration.Initializer.parameter.autoRotatePeriod">autoRotatePeriod</a></code> | <code>java.lang.Number</code> | Amount of time the key should live before being automatically rotated. |
-| <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#id TransformKeyConfiguration#id}. |
+| <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#id TransformKeyConfiguration#id}. |
 | <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration.Initializer.parameter.minDecryptionVersion">minDecryptionVersion</a></code> | <code>java.lang.Number</code> | Minimum key version that vault uses to decode values for the transform. |
 | <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the transform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#name TransformKeyConfiguration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#name TransformKeyConfiguration#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The mount path for the transform backend, for example the path given in "$ vault secrets enable -path=transform transform".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#path TransformKeyConfiguration#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#path TransformKeyConfiguration#path}
 
 ---
 
@@ -136,7 +136,7 @@ Amount of time the key should live before being automatically rotated.
 
 A value of 0 disables automatic rotation for the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#auto_rotate_period TransformKeyConfiguration#auto_rotate_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#auto_rotate_period TransformKeyConfiguration#auto_rotate_period}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#id TransformKeyConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#id TransformKeyConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Minimum key version that vault uses to decode values for the transform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#min_decryption_version TransformKeyConfiguration#min_decryption_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#min_decryption_version TransformKeyConfiguration#min_decryption_version}
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#namespace TransformKeyConfiguration#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#namespace TransformKeyConfiguration#namespace}
 
 ---
 
@@ -644,7 +644,7 @@ The construct id used in the generated config for the TransformKeyConfiguration 
 
 The id of the existing TransformKeyConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1031,7 +1031,7 @@ TransformKeyConfigurationConfig.builder()
 | <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfigurationConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the transform. |
 | <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfigurationConfig.property.path">path</a></code> | <code>java.lang.String</code> | The mount path for the transform backend, for example the path given in "$ vault secrets enable -path=transform transform". |
 | <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfigurationConfig.property.autoRotatePeriod">autoRotatePeriod</a></code> | <code>java.lang.Number</code> | Amount of time the key should live before being automatically rotated. |
-| <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfigurationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#id TransformKeyConfiguration#id}. |
+| <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfigurationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#id TransformKeyConfiguration#id}. |
 | <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfigurationConfig.property.minDecryptionVersion">minDecryptionVersion</a></code> | <code>java.lang.Number</code> | Minimum key version that vault uses to decode values for the transform. |
 | <code><a href="#@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfigurationConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 
@@ -1117,7 +1117,7 @@ public java.lang.String getName();
 
 The name of the transform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#name TransformKeyConfiguration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#name TransformKeyConfiguration#name}
 
 ---
 
@@ -1131,7 +1131,7 @@ public java.lang.String getPath();
 
 The mount path for the transform backend, for example the path given in "$ vault secrets enable -path=transform transform".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#path TransformKeyConfiguration#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#path TransformKeyConfiguration#path}
 
 ---
 
@@ -1147,7 +1147,7 @@ Amount of time the key should live before being automatically rotated.
 
 A value of 0 disables automatic rotation for the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#auto_rotate_period TransformKeyConfiguration#auto_rotate_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#auto_rotate_period TransformKeyConfiguration#auto_rotate_period}
 
 ---
 
@@ -1159,7 +1159,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#id TransformKeyConfiguration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#id TransformKeyConfiguration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1176,7 +1176,7 @@ public java.lang.Number getMinDecryptionVersion();
 
 Minimum key version that vault uses to decode values for the transform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#min_decryption_version TransformKeyConfiguration#min_decryption_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#min_decryption_version TransformKeyConfiguration#min_decryption_version}
 
 ---
 
@@ -1190,7 +1190,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.11.0/docs/resources/transform_key_configuration#namespace TransformKeyConfiguration#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_key_configuration#namespace TransformKeyConfiguration#namespace}
 
 ---
 

@@ -138,6 +138,10 @@ Object.defineProperty(exports, 'osSecretBackendAccount', { get: function () { re
 Object.defineProperty(exports, 'osSecretBackendHost', { get: function () { return require('./os-secret-backend-host'); } });
 Object.defineProperty(exports, 'passwordPolicy', { get: function () { return require('./password-policy'); } });
 Object.defineProperty(exports, 'pkiExternalCaSecretBackendAcmeAccount', { get: function () { return require('./pki-external-ca-secret-backend-acme-account'); } });
+Object.defineProperty(exports, 'pkiExternalCaSecretBackendDnsProviderAwsRoute53', { get: function () { return require('./pki-external-ca-secret-backend-dns-provider-aws-route53'); } });
+Object.defineProperty(exports, 'pkiExternalCaSecretBackendDnsProviderAzure', { get: function () { return require('./pki-external-ca-secret-backend-dns-provider-azure'); } });
+Object.defineProperty(exports, 'pkiExternalCaSecretBackendDnsProviderGcp', { get: function () { return require('./pki-external-ca-secret-backend-dns-provider-gcp'); } });
+Object.defineProperty(exports, 'pkiExternalCaSecretBackendDnsProviderRfc2136', { get: function () { return require('./pki-external-ca-secret-backend-dns-provider-rfc2136'); } });
 Object.defineProperty(exports, 'pkiExternalCaSecretBackendOrder', { get: function () { return require('./pki-external-ca-secret-backend-order'); } });
 Object.defineProperty(exports, 'pkiExternalCaSecretBackendOrderCertificate', { get: function () { return require('./pki-external-ca-secret-backend-order-certificate'); } });
 Object.defineProperty(exports, 'pkiExternalCaSecretBackendOrderChallengeFulfilled', { get: function () { return require('./pki-external-ca-secret-backend-order-challenge-fulfilled'); } });
@@ -205,6 +209,8 @@ Object.defineProperty(exports, 'transformKeyConfiguration', { get: function () {
 Object.defineProperty(exports, 'transformRole', { get: function () { return require('./transform-role'); } });
 Object.defineProperty(exports, 'transformTemplate', { get: function () { return require('./transform-template'); } });
 Object.defineProperty(exports, 'transformTransformation', { get: function () { return require('./transform-transformation'); } });
+Object.defineProperty(exports, 'transformTransformationTokenization', { get: function () { return require('./transform-transformation-tokenization'); } });
+Object.defineProperty(exports, 'transformTransformationTokenizationStore', { get: function () { return require('./transform-transformation-tokenization-store'); } });
 Object.defineProperty(exports, 'transitSecretBackendKey', { get: function () { return require('./transit-secret-backend-key'); } });
 Object.defineProperty(exports, 'transitSecretCacheConfig', { get: function () { return require('./transit-secret-cache-config'); } });
 Object.defineProperty(exports, 'userpassAuthBackendUser', { get: function () { return require('./userpass-auth-backend-user'); } });
@@ -263,6 +269,7 @@ Object.defineProperty(exports, 'ephemeralVaultApproleAuthBackendRoleSecretId', {
 Object.defineProperty(exports, 'ephemeralVaultAwsAccessCredentials', { get: function () { return require('./ephemeral-vault-aws-access-credentials'); } });
 Object.defineProperty(exports, 'ephemeralVaultAwsStaticAccessCredentials', { get: function () { return require('./ephemeral-vault-aws-static-access-credentials'); } });
 Object.defineProperty(exports, 'ephemeralVaultAzureAccessCredentials', { get: function () { return require('./ephemeral-vault-azure-access-credentials'); } });
+Object.defineProperty(exports, 'ephemeralVaultAzureAccessToken', { get: function () { return require('./ephemeral-vault-azure-access-token'); } });
 Object.defineProperty(exports, 'ephemeralVaultAzureStaticCredentials', { get: function () { return require('./ephemeral-vault-azure-static-credentials'); } });
 Object.defineProperty(exports, 'ephemeralVaultCfAuthLogin', { get: function () { return require('./ephemeral-vault-cf-auth-login'); } });
 Object.defineProperty(exports, 'ephemeralVaultDatabaseSecret', { get: function () { return require('./ephemeral-vault-database-secret'); } });
