@@ -4,7 +4,7 @@
 
 ### TransformTransformation <a name="TransformTransformation" id="@cdktn/provider-vault.transformTransformation.TransformTransformation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation vault_transform_transformation}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation vault_transform_transformation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer"></a>
 
@@ -29,6 +29,7 @@ transformTransformation.TransformTransformation(
   id: str = None,
   mapping_mode: str = None,
   masking_character: str = None,
+  max_tweak_len: typing.Union[int, float] = None,
   namespace: str = None,
   stores: typing.List[str] = None,
   template: str = None,
@@ -54,9 +55,10 @@ transformTransformation.TransformTransformation(
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.allowedRoles">allowed_roles</a></code> | <code>typing.List[str]</code> | The set of roles allowed to perform this transformation. |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.convergent">convergent</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, multiple transformations of the same plaintext will produce the same ciphertext. |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.deletionAllowed">deletion_allowed</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false. |
-| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#id TransformTransformation#id}. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#id TransformTransformation#id}. |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.mappingMode">mapping_mode</a></code> | <code>str</code> | Specifies the mapping mode for stored values. Only used when type is "tokenization". Cannot be changed after creation. |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.maskingCharacter">masking_character</a></code> | <code>str</code> | The character used to replace data when in masking mode. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.maxTweakLen">max_tweak_len</a></code> | <code>typing.Union[int, float]</code> | The maximum tweak size, in bytes. Only used when type is "fpe". Cannot be changed after creation. |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.stores">stores</a></code> | <code>typing.List[str]</code> | List of stores to use for tokenization state. Only used when type is "tokenization". Cannot be changed after creation. |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.template">template</a></code> | <code>str</code> | The name of the template to use. |
@@ -132,7 +134,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#name TransformTransformation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#name TransformTransformation#name}
 
 ---
 
@@ -142,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#path TransformTransformation#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#path TransformTransformation#path}
 
 ---
 
@@ -152,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The set of roles allowed to perform this transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
 
 ---
 
@@ -164,7 +166,7 @@ If true, multiple transformations of the same plaintext will produce the same ci
 
 Only used when type is "tokenization". Cannot be changed after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#convergent TransformTransformation#convergent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#convergent TransformTransformation#convergent}
 
 ---
 
@@ -174,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
 
 ---
 
@@ -182,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#id TransformTransformation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#id TransformTransformation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -195,7 +197,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies the mapping mode for stored values. Only used when type is "tokenization". Cannot be changed after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#mapping_mode TransformTransformation#mapping_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#mapping_mode TransformTransformation#mapping_mode}
 
 ---
 
@@ -205,7 +207,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The character used to replace data when in masking mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
+
+---
+
+##### `max_tweak_len`<sup>Optional</sup> <a name="max_tweak_len" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.Initializer.parameter.maxTweakLen"></a>
+
+- *Type:* typing.Union[int, float]
+
+The maximum tweak size, in bytes. Only used when type is "fpe". Cannot be changed after creation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#max_tweak_len TransformTransformation#max_tweak_len}
 
 ---
 
@@ -215,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
 
 ---
 
@@ -225,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of stores to use for tokenization state. Only used when type is "tokenization". Cannot be changed after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#stores TransformTransformation#stores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#stores TransformTransformation#stores}
 
 ---
 
@@ -235,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the template to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#template TransformTransformation#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#template TransformTransformation#template}
 
 ---
 
@@ -245,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Templates configured for transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
 
 ---
 
@@ -255,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The source of where the tweak value comes from. Only valid when in FPE mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
 
 ---
 
@@ -265,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The type of transformation to perform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#type TransformTransformation#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#type TransformTransformation#type}
 
 ---
 
@@ -303,6 +315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetMappingMode">reset_mapping_mode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetMaskingCharacter">reset_masking_character</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetMaxTweakLen">reset_max_tweak_len</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetNamespace">reset_namespace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetStores">reset_stores</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.resetTemplate">reset_template</a></code> | *No description.* |
@@ -696,6 +709,12 @@ def reset_mapping_mode() -> None
 def reset_masking_character() -> None
 ```
 
+##### `reset_max_tweak_len` <a name="reset_max_tweak_len" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.resetMaxTweakLen"></a>
+
+```python
+def reset_max_tweak_len() -> None
+```
+
 ##### `reset_namespace` <a name="reset_namespace" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.resetNamespace"></a>
 
 ```python
@@ -846,7 +865,7 @@ The construct id used in the generated config for the TransformTransformation to
 
 The id of the existing TransformTransformation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -876,12 +895,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.fpeAlgorithm">fpe_algorithm</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.allowedRolesInput">allowed_roles_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.convergentInput">convergent_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.deletionAllowedInput">deletion_allowed_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.mappingModeInput">mapping_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.maskingCharacterInput">masking_character_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.maxTweakLenInput">max_tweak_len_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.pathInput">path_input</a></code> | <code>str</code> | *No description.* |
@@ -896,6 +917,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.mappingMode">mapping_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.maskingCharacter">masking_character</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.maxTweakLen">max_tweak_len</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformation.property.path">path</a></code> | <code>str</code> | *No description.* |
@@ -1049,6 +1071,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `fpe_algorithm`<sup>Required</sup> <a name="fpe_algorithm" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.fpeAlgorithm"></a>
+
+```python
+fpe_algorithm: str
+```
+
+- *Type:* str
+
+---
+
 ##### `allowed_roles_input`<sup>Optional</sup> <a name="allowed_roles_input" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.allowedRolesInput"></a>
 
 ```python
@@ -1106,6 +1138,16 @@ masking_character_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `max_tweak_len_input`<sup>Optional</sup> <a name="max_tweak_len_input" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.maxTweakLenInput"></a>
+
+```python
+max_tweak_len_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 
@@ -1249,6 +1291,16 @@ masking_character: str
 
 ---
 
+##### `max_tweak_len`<sup>Required</sup> <a name="max_tweak_len" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.maxTweakLen"></a>
+
+```python
+max_tweak_len: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-vault.transformTransformation.TransformTransformation.property.name"></a>
 
 ```python
@@ -1372,6 +1424,7 @@ transformTransformation.TransformTransformationConfig(
   id: str = None,
   mapping_mode: str = None,
   masking_character: str = None,
+  max_tweak_len: typing.Union[int, float] = None,
   namespace: str = None,
   stores: typing.List[str] = None,
   template: str = None,
@@ -1397,9 +1450,10 @@ transformTransformation.TransformTransformationConfig(
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.allowedRoles">allowed_roles</a></code> | <code>typing.List[str]</code> | The set of roles allowed to perform this transformation. |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.convergent">convergent</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, multiple transformations of the same plaintext will produce the same ciphertext. |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.deletionAllowed">deletion_allowed</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false. |
-| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#id TransformTransformation#id}. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#id TransformTransformation#id}. |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.mappingMode">mapping_mode</a></code> | <code>str</code> | Specifies the mapping mode for stored values. Only used when type is "tokenization". Cannot be changed after creation. |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.maskingCharacter">masking_character</a></code> | <code>str</code> | The character used to replace data when in masking mode. |
+| <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.maxTweakLen">max_tweak_len</a></code> | <code>typing.Union[int, float]</code> | The maximum tweak size, in bytes. Only used when type is "fpe". Cannot be changed after creation. |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.stores">stores</a></code> | <code>typing.List[str]</code> | List of stores to use for tokenization state. Only used when type is "tokenization". Cannot be changed after creation. |
 | <code><a href="#@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.template">template</a></code> | <code>str</code> | The name of the template to use. |
@@ -1489,7 +1543,7 @@ name: str
 
 The name of the transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#name TransformTransformation#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#name TransformTransformation#name}
 
 ---
 
@@ -1503,7 +1557,7 @@ path: str
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#path TransformTransformation#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#path TransformTransformation#path}
 
 ---
 
@@ -1517,7 +1571,7 @@ allowed_roles: typing.List[str]
 
 The set of roles allowed to perform this transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#allowed_roles TransformTransformation#allowed_roles}
 
 ---
 
@@ -1533,7 +1587,7 @@ If true, multiple transformations of the same plaintext will produce the same ci
 
 Only used when type is "tokenization". Cannot be changed after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#convergent TransformTransformation#convergent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#convergent TransformTransformation#convergent}
 
 ---
 
@@ -1547,7 +1601,7 @@ deletion_allowed: bool | IResolvable
 
 If true, this transform can be deleted. Otherwise deletion is blocked while this value remains false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#deletion_allowed TransformTransformation#deletion_allowed}
 
 ---
 
@@ -1559,7 +1613,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#id TransformTransformation#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#id TransformTransformation#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1576,7 +1630,7 @@ mapping_mode: str
 
 Specifies the mapping mode for stored values. Only used when type is "tokenization". Cannot be changed after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#mapping_mode TransformTransformation#mapping_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#mapping_mode TransformTransformation#mapping_mode}
 
 ---
 
@@ -1590,7 +1644,21 @@ masking_character: str
 
 The character used to replace data when in masking mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#masking_character TransformTransformation#masking_character}
+
+---
+
+##### `max_tweak_len`<sup>Optional</sup> <a name="max_tweak_len" id="@cdktn/provider-vault.transformTransformation.TransformTransformationConfig.property.maxTweakLen"></a>
+
+```python
+max_tweak_len: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The maximum tweak size, in bytes. Only used when type is "fpe". Cannot be changed after creation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#max_tweak_len TransformTransformation#max_tweak_len}
 
 ---
 
@@ -1604,7 +1672,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#namespace TransformTransformation#namespace}
 
 ---
 
@@ -1618,7 +1686,7 @@ stores: typing.List[str]
 
 List of stores to use for tokenization state. Only used when type is "tokenization". Cannot be changed after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#stores TransformTransformation#stores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#stores TransformTransformation#stores}
 
 ---
 
@@ -1632,7 +1700,7 @@ template: str
 
 The name of the template to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#template TransformTransformation#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#template TransformTransformation#template}
 
 ---
 
@@ -1646,7 +1714,7 @@ templates: typing.List[str]
 
 Templates configured for transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#templates TransformTransformation#templates}
 
 ---
 
@@ -1660,7 +1728,7 @@ tweak_source: str
 
 The source of where the tweak value comes from. Only valid when in FPE mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#tweak_source TransformTransformation#tweak_source}
 
 ---
 
@@ -1674,7 +1742,7 @@ type: str
 
 The type of transformation to perform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation#type TransformTransformation#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation#type TransformTransformation#type}
 
 ---
 

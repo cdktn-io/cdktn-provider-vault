@@ -4,7 +4,7 @@
 
 ### PkiSecretBackendKey <a name="PkiSecretBackendKey" id="@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key vault_pki_secret_backend_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer"></a>
 
@@ -28,6 +28,7 @@ PkiSecretBackendKey.Builder.create(Construct scope, java.lang.String id)
 //  .managedKeyId(java.lang.String)
 //  .managedKeyName(java.lang.String)
 //  .namespace(java.lang.String)
+//  .parameterSet(java.lang.String)
     .build();
 ```
 
@@ -44,13 +45,14 @@ PkiSecretBackendKey.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.backend">backend</a></code> | <code>java.lang.String</code> | Full path where PKI backend is mounted. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Specifies the type of the key to create. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.keyBits">keyBits</a></code> | <code>java.lang.Number</code> | Specifies the number of bits to use for the generated keys. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.keyName">keyName</a></code> | <code>java.lang.String</code> | When a new key is created with this request, optionally specifies the name for this. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.keyType">keyType</a></code> | <code>java.lang.String</code> | Specifies the desired key type; must be 'rsa', 'ed25519' or 'ec'. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.keyType">keyType</a></code> | <code>java.lang.String</code> | Specifies the desired key type; must be 'rsa', 'ed25519', 'ec', or 'ml-dsa'. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.managedKeyId">managedKeyId</a></code> | <code>java.lang.String</code> | The managed key's UUID. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.managedKeyName">managedKeyName</a></code> | <code>java.lang.String</code> | The managed key's configured name. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.parameterSet">parameterSet</a></code> | <code>java.lang.String</code> | Specifies a parameter set for ml-dsa; must be 'ml-dsa-44', 'ml-dsa-65' or 'ml-dsa-87'. |
 
 ---
 
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Full path where PKI backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#backend PkiSecretBackendKey#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#backend PkiSecretBackendKey#backend}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the type of the key to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#type PkiSecretBackendKey#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#type PkiSecretBackendKey#type}
 
 ---
 
@@ -138,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies the number of bits to use for the generated keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#key_bits PkiSecretBackendKey#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#key_bits PkiSecretBackendKey#key_bits}
 
 ---
 
@@ -161,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 When a new key is created with this request, optionally specifies the name for this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#key_name PkiSecretBackendKey#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#key_name PkiSecretBackendKey#key_name}
 
 ---
 
@@ -169,9 +171,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Specifies the desired key type; must be 'rsa', 'ed25519' or 'ec'.
+Specifies the desired key type; must be 'rsa', 'ed25519', 'ec', or 'ml-dsa'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#key_type PkiSecretBackendKey#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#key_type PkiSecretBackendKey#key_type}
 
 ---
 
@@ -181,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The managed key's UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#managed_key_id PkiSecretBackendKey#managed_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#managed_key_id PkiSecretBackendKey#managed_key_id}
 
 ---
 
@@ -191,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The managed key's configured name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#managed_key_name PkiSecretBackendKey#managed_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#managed_key_name PkiSecretBackendKey#managed_key_name}
 
 ---
 
@@ -201,7 +203,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#namespace PkiSecretBackendKey#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#namespace PkiSecretBackendKey#namespace}
+
+---
+
+##### `parameterSet`<sup>Optional</sup> <a name="parameterSet" id="@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.Initializer.parameter.parameterSet"></a>
+
+- *Type:* java.lang.String
+
+Specifies a parameter set for ml-dsa; must be 'ml-dsa-44', 'ml-dsa-65' or 'ml-dsa-87'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#parameter_set PkiSecretBackendKey#parameter_set}
 
 ---
 
@@ -240,6 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.resetManagedKeyId">resetManagedKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.resetManagedKeyName">resetManagedKeyName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.resetNamespace">resetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.resetParameterSet">resetParameterSet</a></code> | *No description.* |
 
 ---
 
@@ -596,6 +609,12 @@ public void resetManagedKeyName()
 public void resetNamespace()
 ```
 
+##### `resetParameterSet` <a name="resetParameterSet" id="@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.resetParameterSet"></a>
+
+```java
+public void resetParameterSet()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -699,7 +718,7 @@ The construct id used in the generated config for the PkiSecretBackendKey to imp
 
 The id of the existing PkiSecretBackendKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -738,6 +757,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.managedKeyIdInput">managedKeyIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.managedKeyNameInput">managedKeyNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.parameterSetInput">parameterSetInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.backend">backend</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -747,6 +767,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.managedKeyId">managedKeyId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.managedKeyName">managedKeyName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.parameterSet">parameterSet</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -983,6 +1004,16 @@ public java.lang.String getNamespaceInput();
 
 ---
 
+##### `parameterSetInput`<sup>Optional</sup> <a name="parameterSetInput" id="@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.parameterSetInput"></a>
+
+```java
+public java.lang.String getParameterSetInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.typeInput"></a>
 
 ```java
@@ -1073,6 +1104,16 @@ public java.lang.String getNamespace();
 
 ---
 
+##### `parameterSet`<sup>Required</sup> <a name="parameterSet" id="@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.parameterSet"></a>
+
+```java
+public java.lang.String getParameterSet();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKey.property.type"></a>
 
 ```java
@@ -1127,6 +1168,7 @@ PkiSecretBackendKeyConfig.builder()
 //  .managedKeyId(java.lang.String)
 //  .managedKeyName(java.lang.String)
 //  .namespace(java.lang.String)
+//  .parameterSet(java.lang.String)
     .build();
 ```
 
@@ -1143,13 +1185,14 @@ PkiSecretBackendKeyConfig.builder()
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.backend">backend</a></code> | <code>java.lang.String</code> | Full path where PKI backend is mounted. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.type">type</a></code> | <code>java.lang.String</code> | Specifies the type of the key to create. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.keyBits">keyBits</a></code> | <code>java.lang.Number</code> | Specifies the number of bits to use for the generated keys. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.keyName">keyName</a></code> | <code>java.lang.String</code> | When a new key is created with this request, optionally specifies the name for this. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.keyType">keyType</a></code> | <code>java.lang.String</code> | Specifies the desired key type; must be 'rsa', 'ed25519' or 'ec'. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.keyType">keyType</a></code> | <code>java.lang.String</code> | Specifies the desired key type; must be 'rsa', 'ed25519', 'ec', or 'ml-dsa'. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.managedKeyId">managedKeyId</a></code> | <code>java.lang.String</code> | The managed key's UUID. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.managedKeyName">managedKeyName</a></code> | <code>java.lang.String</code> | The managed key's configured name. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.parameterSet">parameterSet</a></code> | <code>java.lang.String</code> | Specifies a parameter set for ml-dsa; must be 'ml-dsa-44', 'ml-dsa-65' or 'ml-dsa-87'. |
 
 ---
 
@@ -1233,7 +1276,7 @@ public java.lang.String getBackend();
 
 Full path where PKI backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#backend PkiSecretBackendKey#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#backend PkiSecretBackendKey#backend}
 
 ---
 
@@ -1247,7 +1290,7 @@ public java.lang.String getType();
 
 Specifies the type of the key to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#type PkiSecretBackendKey#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#type PkiSecretBackendKey#type}
 
 ---
 
@@ -1259,7 +1302,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#id PkiSecretBackendKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1276,7 +1319,7 @@ public java.lang.Number getKeyBits();
 
 Specifies the number of bits to use for the generated keys.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#key_bits PkiSecretBackendKey#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#key_bits PkiSecretBackendKey#key_bits}
 
 ---
 
@@ -1290,7 +1333,7 @@ public java.lang.String getKeyName();
 
 When a new key is created with this request, optionally specifies the name for this.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#key_name PkiSecretBackendKey#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#key_name PkiSecretBackendKey#key_name}
 
 ---
 
@@ -1302,9 +1345,9 @@ public java.lang.String getKeyType();
 
 - *Type:* java.lang.String
 
-Specifies the desired key type; must be 'rsa', 'ed25519' or 'ec'.
+Specifies the desired key type; must be 'rsa', 'ed25519', 'ec', or 'ml-dsa'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#key_type PkiSecretBackendKey#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#key_type PkiSecretBackendKey#key_type}
 
 ---
 
@@ -1318,7 +1361,7 @@ public java.lang.String getManagedKeyId();
 
 The managed key's UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#managed_key_id PkiSecretBackendKey#managed_key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#managed_key_id PkiSecretBackendKey#managed_key_id}
 
 ---
 
@@ -1332,7 +1375,7 @@ public java.lang.String getManagedKeyName();
 
 The managed key's configured name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#managed_key_name PkiSecretBackendKey#managed_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#managed_key_name PkiSecretBackendKey#managed_key_name}
 
 ---
 
@@ -1346,7 +1389,21 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/pki_secret_backend_key#namespace PkiSecretBackendKey#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#namespace PkiSecretBackendKey#namespace}
+
+---
+
+##### `parameterSet`<sup>Optional</sup> <a name="parameterSet" id="@cdktn/provider-vault.pkiSecretBackendKey.PkiSecretBackendKeyConfig.property.parameterSet"></a>
+
+```java
+public java.lang.String getParameterSet();
+```
+
+- *Type:* java.lang.String
+
+Specifies a parameter set for ml-dsa; must be 'ml-dsa-44', 'ml-dsa-65' or 'ml-dsa-87'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_key#parameter_set PkiSecretBackendKey#parameter_set}
 
 ---
 

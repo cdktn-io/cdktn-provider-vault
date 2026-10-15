@@ -4,7 +4,7 @@
 
 ### Plugin <a name="Plugin" id="@cdktn/provider-vault.plugin.Plugin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin vault_plugin}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin vault_plugin}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.plugin.Plugin.Initializer"></a>
 
@@ -25,6 +25,7 @@ plugin.Plugin(
   type: str,
   args: typing.List[str] = None,
   command: str = None,
+  download: bool | IResolvable = None,
   env: typing.List[str] = None,
   id: str = None,
   oci_image: str = None,
@@ -49,8 +50,9 @@ plugin.Plugin(
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of plugin; one of "auth", "secret", or "database". |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.Initializer.parameter.args">args</a></code> | <code>typing.List[str]</code> | List of additional arguments to pass to the plugin. |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.Initializer.parameter.command">command</a></code> | <code>str</code> | Command to execute the plugin, relative to the plugin_directory. |
+| <code><a href="#@cdktn/provider-vault.plugin.Plugin.Initializer.parameter.download">download</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Vault should download the plugin artifact from releases.hashicorp.com when registering it. Vault Enterprise 1.20+ only, and only for official enterprise plugins (version ending in +ent). |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.Initializer.parameter.env">env</a></code> | <code>typing.List[str]</code> | List of additional environment variables to run the plugin with in KEY=VALUE form. |
-| <code><a href="#@cdktn/provider-vault.plugin.Plugin.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#id Plugin#id}. |
+| <code><a href="#@cdktn/provider-vault.plugin.Plugin.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#id Plugin#id}. |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.Initializer.parameter.ociImage">oci_image</a></code> | <code>str</code> | OCI image to run. |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.Initializer.parameter.runtime">runtime</a></code> | <code>str</code> | Vault plugin runtime to use if oci_image is specified. |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.Initializer.parameter.sha256">sha256</a></code> | <code>str</code> | SHA256 sum of the plugin binary. |
@@ -124,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#name Plugin#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#name Plugin#name}
 
 ---
 
@@ -134,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Type of plugin; one of "auth", "secret", or "database".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#type Plugin#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#type Plugin#type}
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of additional arguments to pass to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#args Plugin#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#args Plugin#args}
 
 ---
 
@@ -154,7 +156,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Command to execute the plugin, relative to the plugin_directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#command Plugin#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#command Plugin#command}
+
+---
+
+##### `download`<sup>Optional</sup> <a name="download" id="@cdktn/provider-vault.plugin.Plugin.Initializer.parameter.download"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether Vault should download the plugin artifact from releases.hashicorp.com when registering it. Vault Enterprise 1.20+ only, and only for official enterprise plugins (version ending in +ent).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#download Plugin#download}
 
 ---
 
@@ -164,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of additional environment variables to run the plugin with in KEY=VALUE form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#env Plugin#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#env Plugin#env}
 
 ---
 
@@ -172,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#id Plugin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#id Plugin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -187,7 +199,7 @@ OCI image to run.
 
 If specified, setting command, args, and env will update the container's entrypoint, args, and environment variables (append-only) respectively.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#oci_image Plugin#oci_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#oci_image Plugin#oci_image}
 
 ---
 
@@ -197,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Vault plugin runtime to use if oci_image is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#runtime Plugin#runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#runtime Plugin#runtime}
 
 ---
 
@@ -207,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 SHA256 sum of the plugin binary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#sha256 Plugin#sha256}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#sha256 Plugin#sha256}
 
 ---
 
@@ -217,7 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Semantic version of the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#version Plugin#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#version Plugin#version}
 
 ---
 
@@ -251,6 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.resetArgs">reset_args</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.resetCommand">reset_command</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.plugin.Plugin.resetDownload">reset_download</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.resetEnv">reset_env</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.resetOciImage">reset_oci_image</a></code> | *No description.* |
@@ -620,6 +633,12 @@ def reset_args() -> None
 def reset_command() -> None
 ```
 
+##### `reset_download` <a name="reset_download" id="@cdktn/provider-vault.plugin.Plugin.resetDownload"></a>
+
+```python
+def reset_download() -> None
+```
+
 ##### `reset_env` <a name="reset_env" id="@cdktn/provider-vault.plugin.Plugin.resetEnv"></a>
 
 ```python
@@ -770,7 +789,7 @@ The construct id used in the generated config for the Plugin to import.
 
 The id of the existing Plugin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -802,6 +821,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.argsInput">args_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.commandInput">command_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.downloadInput">download_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.envInput">env_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
@@ -812,6 +832,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.versionInput">version_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.args">args</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.command">command</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.download">download</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.env">env</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.plugin.Plugin.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -985,6 +1006,16 @@ command_input: str
 
 ---
 
+##### `download_input`<sup>Optional</sup> <a name="download_input" id="@cdktn/provider-vault.plugin.Plugin.property.downloadInput"></a>
+
+```python
+download_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `env_input`<sup>Optional</sup> <a name="env_input" id="@cdktn/provider-vault.plugin.Plugin.property.envInput"></a>
 
 ```python
@@ -1082,6 +1113,16 @@ command: str
 ```
 
 - *Type:* str
+
+---
+
+##### `download`<sup>Required</sup> <a name="download" id="@cdktn/provider-vault.plugin.Plugin.property.download"></a>
+
+```python
+download: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1204,6 +1245,7 @@ plugin.PluginConfig(
   type: str,
   args: typing.List[str] = None,
   command: str = None,
+  download: bool | IResolvable = None,
   env: typing.List[str] = None,
   id: str = None,
   oci_image: str = None,
@@ -1228,8 +1270,9 @@ plugin.PluginConfig(
 | <code><a href="#@cdktn/provider-vault.plugin.PluginConfig.property.type">type</a></code> | <code>str</code> | Type of plugin; one of "auth", "secret", or "database". |
 | <code><a href="#@cdktn/provider-vault.plugin.PluginConfig.property.args">args</a></code> | <code>typing.List[str]</code> | List of additional arguments to pass to the plugin. |
 | <code><a href="#@cdktn/provider-vault.plugin.PluginConfig.property.command">command</a></code> | <code>str</code> | Command to execute the plugin, relative to the plugin_directory. |
+| <code><a href="#@cdktn/provider-vault.plugin.PluginConfig.property.download">download</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Vault should download the plugin artifact from releases.hashicorp.com when registering it. Vault Enterprise 1.20+ only, and only for official enterprise plugins (version ending in +ent). |
 | <code><a href="#@cdktn/provider-vault.plugin.PluginConfig.property.env">env</a></code> | <code>typing.List[str]</code> | List of additional environment variables to run the plugin with in KEY=VALUE form. |
-| <code><a href="#@cdktn/provider-vault.plugin.PluginConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#id Plugin#id}. |
+| <code><a href="#@cdktn/provider-vault.plugin.PluginConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#id Plugin#id}. |
 | <code><a href="#@cdktn/provider-vault.plugin.PluginConfig.property.ociImage">oci_image</a></code> | <code>str</code> | OCI image to run. |
 | <code><a href="#@cdktn/provider-vault.plugin.PluginConfig.property.runtime">runtime</a></code> | <code>str</code> | Vault plugin runtime to use if oci_image is specified. |
 | <code><a href="#@cdktn/provider-vault.plugin.PluginConfig.property.sha256">sha256</a></code> | <code>str</code> | SHA256 sum of the plugin binary. |
@@ -1317,7 +1360,7 @@ name: str
 
 Name of the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#name Plugin#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#name Plugin#name}
 
 ---
 
@@ -1331,7 +1374,7 @@ type: str
 
 Type of plugin; one of "auth", "secret", or "database".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#type Plugin#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#type Plugin#type}
 
 ---
 
@@ -1345,7 +1388,7 @@ args: typing.List[str]
 
 List of additional arguments to pass to the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#args Plugin#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#args Plugin#args}
 
 ---
 
@@ -1359,7 +1402,21 @@ command: str
 
 Command to execute the plugin, relative to the plugin_directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#command Plugin#command}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#command Plugin#command}
+
+---
+
+##### `download`<sup>Optional</sup> <a name="download" id="@cdktn/provider-vault.plugin.PluginConfig.property.download"></a>
+
+```python
+download: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether Vault should download the plugin artifact from releases.hashicorp.com when registering it. Vault Enterprise 1.20+ only, and only for official enterprise plugins (version ending in +ent).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#download Plugin#download}
 
 ---
 
@@ -1373,7 +1430,7 @@ env: typing.List[str]
 
 List of additional environment variables to run the plugin with in KEY=VALUE form.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#env Plugin#env}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#env Plugin#env}
 
 ---
 
@@ -1385,7 +1442,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#id Plugin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#id Plugin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1404,7 +1461,7 @@ OCI image to run.
 
 If specified, setting command, args, and env will update the container's entrypoint, args, and environment variables (append-only) respectively.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#oci_image Plugin#oci_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#oci_image Plugin#oci_image}
 
 ---
 
@@ -1418,7 +1475,7 @@ runtime: str
 
 Vault plugin runtime to use if oci_image is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#runtime Plugin#runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#runtime Plugin#runtime}
 
 ---
 
@@ -1432,7 +1489,7 @@ sha256: str
 
 SHA256 sum of the plugin binary.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#sha256 Plugin#sha256}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#sha256 Plugin#sha256}
 
 ---
 
@@ -1446,7 +1503,7 @@ version: str
 
 Semantic version of the plugin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#version Plugin#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#version Plugin#version}
 
 ---
 
