@@ -84,6 +84,8 @@ Object.defineProperty(exports, 'identityOidcKeyAllowedClientId', { get: function
 Object.defineProperty(exports, 'identityOidcProvider', { get: function () { return require('./identity-oidc-provider'); } });
 Object.defineProperty(exports, 'identityOidcRole', { get: function () { return require('./identity-oidc-role'); } });
 Object.defineProperty(exports, 'identityOidcScope', { get: function () { return require('./identity-oidc-scope'); } });
+Object.defineProperty(exports, 'identityTpm', { get: function () { return require('./identity-tpm'); } });
+Object.defineProperty(exports, 'identityTpmGroup', { get: function () { return require('./identity-tpm-group'); } });
 Object.defineProperty(exports, 'jwtAuthBackend', { get: function () { return require('./jwt-auth-backend'); } });
 Object.defineProperty(exports, 'jwtAuthBackendRole', { get: function () { return require('./jwt-auth-backend-role'); } });
 Object.defineProperty(exports, 'kerberosAuthBackendConfig', { get: function () { return require('./kerberos-auth-backend-config'); } });
@@ -158,6 +160,7 @@ Object.defineProperty(exports, 'pkiSecretBackendConfigIssuers', { get: function 
 Object.defineProperty(exports, 'pkiSecretBackendConfigScep', { get: function () { return require('./pki-secret-backend-config-scep'); } });
 Object.defineProperty(exports, 'pkiSecretBackendConfigUrls', { get: function () { return require('./pki-secret-backend-config-urls'); } });
 Object.defineProperty(exports, 'pkiSecretBackendCrlConfig', { get: function () { return require('./pki-secret-backend-crl-config'); } });
+Object.defineProperty(exports, 'pkiSecretBackendExportKey', { get: function () { return require('./pki-secret-backend-export-key'); } });
 Object.defineProperty(exports, 'pkiSecretBackendIntermediateCertRequest', { get: function () { return require('./pki-secret-backend-intermediate-cert-request'); } });
 Object.defineProperty(exports, 'pkiSecretBackendIntermediateSetSigned', { get: function () { return require('./pki-secret-backend-intermediate-set-signed'); } });
 Object.defineProperty(exports, 'pkiSecretBackendIssuer', { get: function () { return require('./pki-secret-backend-issuer'); } });
@@ -166,6 +169,7 @@ Object.defineProperty(exports, 'pkiSecretBackendRole', { get: function () { retu
 Object.defineProperty(exports, 'pkiSecretBackendRootCert', { get: function () { return require('./pki-secret-backend-root-cert'); } });
 Object.defineProperty(exports, 'pkiSecretBackendRootSignIntermediate', { get: function () { return require('./pki-secret-backend-root-sign-intermediate'); } });
 Object.defineProperty(exports, 'pkiSecretBackendSign', { get: function () { return require('./pki-secret-backend-sign'); } });
+Object.defineProperty(exports, 'pkiSecretBackendWrappedKeyImport', { get: function () { return require('./pki-secret-backend-wrapped-key-import'); } });
 Object.defineProperty(exports, 'plugin', { get: function () { return require('./plugin'); } });
 Object.defineProperty(exports, 'pluginPinnedVersion', { get: function () { return require('./plugin-pinned-version'); } });
 Object.defineProperty(exports, 'pluginRuntime', { get: function () { return require('./plugin-runtime'); } });
@@ -184,6 +188,7 @@ Object.defineProperty(exports, 'rotationPolicy', { get: function () { return req
 Object.defineProperty(exports, 'samlAuthBackend', { get: function () { return require('./saml-auth-backend'); } });
 Object.defineProperty(exports, 'samlAuthBackendRole', { get: function () { return require('./saml-auth-backend-role'); } });
 Object.defineProperty(exports, 'scepAuthBackendRole', { get: function () { return require('./scep-auth-backend-role'); } });
+Object.defineProperty(exports, 'scimClient', { get: function () { return require('./scim-client'); } });
 Object.defineProperty(exports, 'secretsSyncAssociation', { get: function () { return require('./secrets-sync-association'); } });
 Object.defineProperty(exports, 'secretsSyncAwsDestination', { get: function () { return require('./secrets-sync-aws-destination'); } });
 Object.defineProperty(exports, 'secretsSyncAzureDestination', { get: function () { return require('./secrets-sync-azure-destination'); } });
@@ -204,6 +209,8 @@ Object.defineProperty(exports, 'terraformCloudSecretCreds', { get: function () {
 Object.defineProperty(exports, 'terraformCloudSecretRole', { get: function () { return require('./terraform-cloud-secret-role'); } });
 Object.defineProperty(exports, 'token', { get: function () { return require('./token'); } });
 Object.defineProperty(exports, 'tokenAuthBackendRole', { get: function () { return require('./token-auth-backend-role'); } });
+Object.defineProperty(exports, 'tpmAuthBackendConfig', { get: function () { return require('./tpm-auth-backend-config'); } });
+Object.defineProperty(exports, 'tpmAuthBackendRole', { get: function () { return require('./tpm-auth-backend-role'); } });
 Object.defineProperty(exports, 'transformAlphabet', { get: function () { return require('./transform-alphabet'); } });
 Object.defineProperty(exports, 'transformKeyConfiguration', { get: function () { return require('./transform-key-configuration'); } });
 Object.defineProperty(exports, 'transformRole', { get: function () { return require('./transform-role'); } });
@@ -259,6 +266,7 @@ Object.defineProperty(exports, 'dataVaultSshSecretBackendSign', { get: function 
 Object.defineProperty(exports, 'dataVaultSysConfigCors', { get: function () { return require('./data-vault-sys-config-cors'); } });
 Object.defineProperty(exports, 'dataVaultTransformDecode', { get: function () { return require('./data-vault-transform-decode'); } });
 Object.defineProperty(exports, 'dataVaultTransformEncode', { get: function () { return require('./data-vault-transform-encode'); } });
+Object.defineProperty(exports, 'dataVaultTransformRewrap', { get: function () { return require('./data-vault-transform-rewrap'); } });
 Object.defineProperty(exports, 'dataVaultTransitCmac', { get: function () { return require('./data-vault-transit-cmac'); } });
 Object.defineProperty(exports, 'dataVaultTransitDecrypt', { get: function () { return require('./data-vault-transit-decrypt'); } });
 Object.defineProperty(exports, 'dataVaultTransitEncrypt', { get: function () { return require('./data-vault-transit-encrypt'); } });
@@ -284,6 +292,7 @@ Object.defineProperty(exports, 'ephemeralVaultGenericSecret', { get: function ()
 Object.defineProperty(exports, 'ephemeralVaultKerberosAuthBackendLogin', { get: function () { return require('./ephemeral-vault-kerberos-auth-backend-login'); } });
 Object.defineProperty(exports, 'ephemeralVaultKubernetesServiceAccountToken', { get: function () { return require('./ephemeral-vault-kubernetes-service-account-token'); } });
 Object.defineProperty(exports, 'ephemeralVaultKvSecretV2', { get: function () { return require('./ephemeral-vault-kv-secret-v2'); } });
+Object.defineProperty(exports, 'ephemeralVaultPkiSecretBackendCaKeyExport', { get: function () { return require('./ephemeral-vault-pki-secret-backend-ca-key-export'); } });
 Object.defineProperty(exports, 'ephemeralVaultRadiusAuthLogin', { get: function () { return require('./ephemeral-vault-radius-auth-login'); } });
 Object.defineProperty(exports, 'ephemeralVaultSpiffeSecretBackendMintjwt', { get: function () { return require('./ephemeral-vault-spiffe-secret-backend-mintjwt'); } });
 Object.defineProperty(exports, 'ephemeralVaultTerraformToken', { get: function () { return require('./ephemeral-vault-terraform-token'); } });

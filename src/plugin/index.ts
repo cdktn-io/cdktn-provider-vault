@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin
+// https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,29 @@ export interface PluginConfig extends cdktn.TerraformMetaArguments {
   /**
   * List of additional arguments to pass to the plugin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#args Plugin#args}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#args Plugin#args}
   */
   readonly args?: string[];
   /**
   * Command to execute the plugin, relative to the plugin_directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#command Plugin#command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#command Plugin#command}
   */
   readonly command?: string;
   /**
+  * Whether Vault should download the plugin artifact from releases.hashicorp.com when registering it. Vault Enterprise 1.20+ only, and only for official enterprise plugins (version ending in +ent).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#download Plugin#download}
+  */
+  readonly download?: boolean | cdktn.IResolvable;
+  /**
   * List of additional environment variables to run the plugin with in KEY=VALUE form.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#env Plugin#env}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#env Plugin#env}
   */
   readonly env?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#id Plugin#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#id Plugin#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,43 +46,43 @@ export interface PluginConfig extends cdktn.TerraformMetaArguments {
   /**
   * Name of the plugin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#name Plugin#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#name Plugin#name}
   */
   readonly name: string;
   /**
   * OCI image to run. If specified, setting command, args, and env will update the container's entrypoint, args, and environment variables (append-only) respectively.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#oci_image Plugin#oci_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#oci_image Plugin#oci_image}
   */
   readonly ociImage?: string;
   /**
   * Vault plugin runtime to use if oci_image is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#runtime Plugin#runtime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#runtime Plugin#runtime}
   */
   readonly runtime?: string;
   /**
   * SHA256 sum of the plugin binary.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#sha256 Plugin#sha256}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#sha256 Plugin#sha256}
   */
   readonly sha256?: string;
   /**
   * Type of plugin; one of "auth", "secret", or "database".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#type Plugin#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#type Plugin#type}
   */
   readonly type: string;
   /**
   * Semantic version of the plugin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#version Plugin#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#version Plugin#version}
   */
   readonly version?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin vault_plugin}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin vault_plugin}
 */
 export class Plugin extends cdktn.TerraformResource {
 
@@ -92,7 +98,7 @@ export class Plugin extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Plugin resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Plugin to import
-  * @param importFromId The id of the existing Plugin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Plugin that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Plugin to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -104,7 +110,7 @@ export class Plugin extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/plugin vault_plugin} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/plugin vault_plugin} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -115,7 +121,7 @@ export class Plugin extends cdktn.TerraformResource {
       terraformResourceType: 'vault_plugin',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -128,6 +134,7 @@ export class Plugin extends cdktn.TerraformResource {
     });
     this._args = config.args;
     this._command = config.command;
+    this._download = config.download;
     this._env = config.env;
     this._id = config.id;
     this._name = config.name;
@@ -172,6 +179,22 @@ export class Plugin extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get commandInput() {
     return this._command;
+  }
+
+  // download - computed: false, optional: true, required: false
+  private _download?: boolean | cdktn.IResolvable; 
+  public get download() {
+    return this.getBooleanAttribute('download');
+  }
+  public set download(value: boolean | cdktn.IResolvable) {
+    this._download = value;
+  }
+  public resetDownload() {
+    this._download = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get downloadInput() {
+    return this._download;
   }
 
   // env - computed: false, optional: true, required: false
@@ -304,6 +327,7 @@ export class Plugin extends cdktn.TerraformResource {
     return {
       args: cdktn.listMapper(cdktn.stringToTerraform, false)(this._args),
       command: cdktn.stringToTerraform(this._command),
+      download: cdktn.booleanToTerraform(this._download),
       env: cdktn.listMapper(cdktn.stringToTerraform, false)(this._env),
       id: cdktn.stringToTerraform(this._id),
       name: cdktn.stringToTerraform(this._name),
@@ -328,6 +352,12 @@ export class Plugin extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      download: {
+        value: cdktn.booleanToHclTerraform(this._download),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
       env: {
         value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._env),

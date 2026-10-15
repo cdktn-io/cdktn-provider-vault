@@ -1,0 +1,421 @@
+/**
+ * Copyright IBM Corp. 2021, 2026
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
+// https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktn from 'cdktn';
+
+// Configuration
+
+export interface DataVaultTransformRewrapConfig extends cdktn.TerraformMetaArguments {
+  /**
+  * Specifies a list of items to be re-encoded in a single batch. If this parameter is set, the top-level parameters 'value', 'transformation', 'decode_transformation', 'tweak', and 'decode_tweak' will be ignored. Each batch item within the list can specify these parameters instead.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap#batch_input DataVaultTransformRewrap#batch_input}
+  */
+  readonly batchInput?: { [key: string]: string }[] | cdktn.IResolvable;
+  /**
+  * The FPE transformation to use to decode the value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap#decode_transformation DataVaultTransformRewrap#decode_transformation}
+  */
+  readonly decodeTransformation?: string;
+  /**
+  * The tweak value to use for decoding. Only applicable for FPE transformations with a supplied tweak source.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap#decode_tweak DataVaultTransformRewrap#decode_tweak}
+  */
+  readonly decodeTweak?: string;
+  /**
+  * The result of rewrapping a value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap#encoded_value DataVaultTransformRewrap#encoded_value}
+  */
+  readonly encodedValue?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap#id DataVaultTransformRewrap#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * Target namespace. (requires Enterprise)
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap#namespace DataVaultTransformRewrap#namespace}
+  */
+  readonly namespace?: string;
+  /**
+  * Path to backend from which to retrieve data.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap#path DataVaultTransformRewrap#path}
+  */
+  readonly path: string;
+  /**
+  * The name of the role.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap#role_name DataVaultTransformRewrap#role_name}
+  */
+  readonly roleName: string;
+  /**
+  * The FPE transformation to use for re-encrypting the value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap#transformation DataVaultTransformRewrap#transformation}
+  */
+  readonly transformation?: string;
+  /**
+  * The tweak value to use for re-encrypting. Only applicable for FPE transformations with a supplied tweak source.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap#tweak DataVaultTransformRewrap#tweak}
+  */
+  readonly tweak?: string;
+  /**
+  * The value to rewrap.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap#value DataVaultTransformRewrap#value}
+  */
+  readonly value?: string;
+}
+
+/**
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap vault_transform_rewrap}
+*/
+export class DataVaultTransformRewrap extends cdktn.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "vault_transform_rewrap";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTN code for importing a DataVaultTransformRewrap resource upon running "cdktn plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataVaultTransformRewrap to import
+  * @param importFromId The id of the existing DataVaultTransformRewrap that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataVaultTransformRewrap to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "vault_transform_rewrap", importId: importFromId, provider });
+      }
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transform_rewrap vault_transform_rewrap} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataVaultTransformRewrapConfig
+  */
+  public constructor(scope: Construct, id: string, config: DataVaultTransformRewrapConfig) {
+    super(scope, id, {
+      terraformResourceType: 'vault_transform_rewrap',
+      terraformGeneratorMetadata: {
+        providerName: 'vault',
+        providerVersion: '5.13.0',
+        providerVersionConstraint: '~> 5.0'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._batchInput = config.batchInput;
+    this._decodeTransformation = config.decodeTransformation;
+    this._decodeTweak = config.decodeTweak;
+    this._encodedValue = config.encodedValue;
+    this._id = config.id;
+    this._namespace = config.namespace;
+    this._path = config.path;
+    this._roleName = config.roleName;
+    this._transformation = config.transformation;
+    this._tweak = config.tweak;
+    this._value = config.value;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // batch_input - computed: false, optional: true, required: false
+  private _batchInput?: { [key: string]: string }[] | cdktn.IResolvable; 
+  public get batchInput() {
+    return this.interpolationForAttribute('batch_input');
+  }
+  public set batchInput(value: { [key: string]: string }[] | cdktn.IResolvable) {
+    this._batchInput = value;
+  }
+  public resetBatchInput() {
+    this._batchInput = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get batchInputInput() {
+    return this._batchInput;
+  }
+
+  // batch_results - computed: true, optional: false, required: false
+  private _batchResults = new cdktn.StringMapList(this, "batch_results", false);
+  public get batchResults() {
+    return this._batchResults;
+  }
+
+  // decode_transformation - computed: false, optional: true, required: false
+  private _decodeTransformation?: string; 
+  public get decodeTransformation() {
+    return this.getStringAttribute('decode_transformation');
+  }
+  public set decodeTransformation(value: string) {
+    this._decodeTransformation = value;
+  }
+  public resetDecodeTransformation() {
+    this._decodeTransformation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get decodeTransformationInput() {
+    return this._decodeTransformation;
+  }
+
+  // decode_tweak - computed: false, optional: true, required: false
+  private _decodeTweak?: string; 
+  public get decodeTweak() {
+    return this.getStringAttribute('decode_tweak');
+  }
+  public set decodeTweak(value: string) {
+    this._decodeTweak = value;
+  }
+  public resetDecodeTweak() {
+    this._decodeTweak = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get decodeTweakInput() {
+    return this._decodeTweak;
+  }
+
+  // encoded_value - computed: true, optional: true, required: false
+  private _encodedValue?: string; 
+  public get encodedValue() {
+    return this.getStringAttribute('encoded_value');
+  }
+  public set encodedValue(value: string) {
+    this._encodedValue = value;
+  }
+  public resetEncodedValue() {
+    this._encodedValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encodedValueInput() {
+    return this._encodedValue;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // namespace - computed: false, optional: true, required: false
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  public resetNamespace() {
+    this._namespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // role_name - computed: false, optional: false, required: true
+  private _roleName?: string; 
+  public get roleName() {
+    return this.getStringAttribute('role_name');
+  }
+  public set roleName(value: string) {
+    this._roleName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get roleNameInput() {
+    return this._roleName;
+  }
+
+  // transformation - computed: false, optional: true, required: false
+  private _transformation?: string; 
+  public get transformation() {
+    return this.getStringAttribute('transformation');
+  }
+  public set transformation(value: string) {
+    this._transformation = value;
+  }
+  public resetTransformation() {
+    this._transformation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transformationInput() {
+    return this._transformation;
+  }
+
+  // tweak - computed: true, optional: true, required: false
+  private _tweak?: string; 
+  public get tweak() {
+    return this.getStringAttribute('tweak');
+  }
+  public set tweak(value: string) {
+    this._tweak = value;
+  }
+  public resetTweak() {
+    this._tweak = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tweakInput() {
+    return this._tweak;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      batch_input: cdktn.listMapper(cdktn.hashMapper(cdktn.stringToTerraform), false)(this._batchInput),
+      decode_transformation: cdktn.stringToTerraform(this._decodeTransformation),
+      decode_tweak: cdktn.stringToTerraform(this._decodeTweak),
+      encoded_value: cdktn.stringToTerraform(this._encodedValue),
+      id: cdktn.stringToTerraform(this._id),
+      namespace: cdktn.stringToTerraform(this._namespace),
+      path: cdktn.stringToTerraform(this._path),
+      role_name: cdktn.stringToTerraform(this._roleName),
+      transformation: cdktn.stringToTerraform(this._transformation),
+      tweak: cdktn.stringToTerraform(this._tweak),
+      value: cdktn.stringToTerraform(this._value),
+    };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      batch_input: {
+        value: cdktn.listMapperHcl(cdktn.hashMapperHcl(cdktn.stringToHclTerraform), false)(this._batchInput),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringMapList",
+      },
+      decode_transformation: {
+        value: cdktn.stringToHclTerraform(this._decodeTransformation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      decode_tweak: {
+        value: cdktn.stringToHclTerraform(this._decodeTweak),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      encoded_value: {
+        value: cdktn.stringToHclTerraform(this._encodedValue),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktn.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktn.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      path: {
+        value: cdktn.stringToHclTerraform(this._path),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      role_name: {
+        value: cdktn.stringToHclTerraform(this._roleName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      transformation: {
+        value: cdktn.stringToHclTerraform(this._transformation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tweak: {
+        value: cdktn.stringToHclTerraform(this._tweak),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value: {
+        value: cdktn.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
+}

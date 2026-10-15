@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile
+// https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,93 +13,117 @@ import * as cdktn from 'cdktn';
 
 export interface OauthResourceServerConfigProfileConfig extends cdktn.TerraformMetaArguments {
   /**
+  * The JWT claim to use as the actor identifier for delegation/chained-token scenarios (RFC 8693 `act` claim). Requires Vault 2.2.0 or later.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#actor_claim OauthResourceServerConfigProfile#actor_claim}
+  */
+  readonly actorClaim?: string;
+  /**
   * List of allowed audiences (aud claim) to validate in JWTs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#audiences OauthResourceServerConfigProfile#audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#audiences OauthResourceServerConfigProfile#audiences}
   */
   readonly audiences?: string[];
   /**
+  * The claim to use for RAR (Rich Authorization Requests) authorization details. Defaults to 'authorization_details'. Requires Vault 2.2.0 or later when set.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#authorization_details_claim OauthResourceServerConfigProfile#authorization_details_claim}
+  */
+  readonly authorizationDetailsClaim?: string;
+  /**
   * Leeway for clock skew in seconds when validating time-based claims. Defaults to 0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#clock_skew_leeway OauthResourceServerConfigProfile#clock_skew_leeway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#clock_skew_leeway OauthResourceServerConfigProfile#clock_skew_leeway}
   */
   readonly clockSkewLeeway?: number;
   /**
   * Whether this profile is enabled for JWT validation. Disabled profiles are ignored. Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#enabled OauthResourceServerConfigProfile#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#enabled OauthResourceServerConfigProfile#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The issuer ID (iss claim) to validate against in incoming JWTs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#issuer_id OauthResourceServerConfigProfile#issuer_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#issuer_id OauthResourceServerConfigProfile#issuer_id}
   */
   readonly issuerId: string;
   /**
   * Optional CA certificate (PEM format) for JWKS URI TLS validation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#jwks_ca_pem OauthResourceServerConfigProfile#jwks_ca_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#jwks_ca_pem OauthResourceServerConfigProfile#jwks_ca_pem}
   */
   readonly jwksCaPem?: string;
   /**
   * The JWKS URI to fetch public keys from. Required when use_jwks=true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#jwks_uri OauthResourceServerConfigProfile#jwks_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#jwks_uri OauthResourceServerConfigProfile#jwks_uri}
   */
   readonly jwksUri?: string;
   /**
   * The JWT type: 'access_token' or 'transaction_token'. Defaults to 'access_token'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#jwt_type OauthResourceServerConfigProfile#jwt_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#jwt_type OauthResourceServerConfigProfile#jwt_type}
   */
   readonly jwtType?: string;
   /**
+  * If true, this profile is cluster-scoped and never replicated to performance secondaries. If false (default), the profile is written to replicated storage and propagated to all secondaries. This field is immutable after creation; delete and recreate the profile to change locality.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#local OauthResourceServerConfigProfile#local}
+  */
+  readonly local?: boolean | cdktn.IResolvable;
+  /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#namespace OauthResourceServerConfigProfile#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#namespace OauthResourceServerConfigProfile#namespace}
   */
   readonly namespace?: string;
   /**
   * If true, JWT-authenticated tokens omit the default policy unless added elsewhere. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#no_default_policy OauthResourceServerConfigProfile#no_default_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#no_default_policy OauthResourceServerConfigProfile#no_default_policy}
   */
   readonly noDefaultPolicy?: boolean | cdktn.IResolvable;
   /**
   * When false, RAR (Rich Authorization Requests) is mandatory and authorization_details must be present in the token. When set to true, authorization_details in the JWT token are optional. Defaults to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#optional_authorization_details OauthResourceServerConfigProfile#optional_authorization_details}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#optional_authorization_details OauthResourceServerConfigProfile#optional_authorization_details}
   */
   readonly optionalAuthorizationDetails?: boolean | cdktn.IResolvable;
   /**
   * The name of the OAuth Resource Server Configuration profile. Must be unique within the namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#profile_name OauthResourceServerConfigProfile#profile_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#profile_name OauthResourceServerConfigProfile#profile_name}
   */
   readonly profileName: string;
   /**
   * List of supported signing algorithms (e.g., RS256, ES256). Defaults to all supported algorithms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#supported_algorithms OauthResourceServerConfigProfile#supported_algorithms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#supported_algorithms OauthResourceServerConfigProfile#supported_algorithms}
   */
   readonly supportedAlgorithms?: string[];
   /**
+  * The JWT claim to use as the unique identifier for the token. If unset, Vault uses the `jti` claim. This field is immutable after creation; changing it forces a new resource. Requires Vault 2.2.0 or later.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#unique_id_claim OauthResourceServerConfigProfile#unique_id_claim}
+  */
+  readonly uniqueIdClaim?: string;
+  /**
   * If true, use JWKS URI for key validation; if false, use static public keys. Defaults to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#use_jwks OauthResourceServerConfigProfile#use_jwks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#use_jwks OauthResourceServerConfigProfile#use_jwks}
   */
   readonly useJwks?: boolean | cdktn.IResolvable;
   /**
   * The claim to use as the user identifier. Defaults to 'sub'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#user_claim OauthResourceServerConfigProfile#user_claim}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#user_claim OauthResourceServerConfigProfile#user_claim}
   */
   readonly userClaim?: string;
   /**
   * public_keys block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#public_keys OauthResourceServerConfigProfile#public_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#public_keys OauthResourceServerConfigProfile#public_keys}
   */
   readonly publicKeys?: OauthResourceServerConfigProfilePublicKeys[] | cdktn.IResolvable;
 }
@@ -107,13 +131,13 @@ export interface OauthResourceServerConfigProfilePublicKeys {
   /**
   * The key ID (kid) for this public key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#key_id OauthResourceServerConfigProfile#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#key_id OauthResourceServerConfigProfile#key_id}
   */
   readonly keyId: string;
   /**
   * The PEM-encoded public key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#pem OauthResourceServerConfigProfile#pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#pem OauthResourceServerConfigProfile#pem}
   */
   readonly pem: string;
 }
@@ -252,7 +276,7 @@ export class OauthResourceServerConfigProfilePublicKeysList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile}
 */
 export class OauthResourceServerConfigProfile extends cdktn.TerraformResource {
 
@@ -268,7 +292,7 @@ export class OauthResourceServerConfigProfile extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a OauthResourceServerConfigProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OauthResourceServerConfigProfile to import
-  * @param importFromId The id of the existing OauthResourceServerConfigProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OauthResourceServerConfigProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OauthResourceServerConfigProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -280,7 +304,7 @@ export class OauthResourceServerConfigProfile extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -291,7 +315,7 @@ export class OauthResourceServerConfigProfile extends cdktn.TerraformResource {
       terraformResourceType: 'vault_oauth_resource_server_config_profile',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -302,18 +326,22 @@ export class OauthResourceServerConfigProfile extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._actorClaim = config.actorClaim;
     this._audiences = config.audiences;
+    this._authorizationDetailsClaim = config.authorizationDetailsClaim;
     this._clockSkewLeeway = config.clockSkewLeeway;
     this._enabled = config.enabled;
     this._issuerId = config.issuerId;
     this._jwksCaPem = config.jwksCaPem;
     this._jwksUri = config.jwksUri;
     this._jwtType = config.jwtType;
+    this._local = config.local;
     this._namespace = config.namespace;
     this._noDefaultPolicy = config.noDefaultPolicy;
     this._optionalAuthorizationDetails = config.optionalAuthorizationDetails;
     this._profileName = config.profileName;
     this._supportedAlgorithms = config.supportedAlgorithms;
+    this._uniqueIdClaim = config.uniqueIdClaim;
     this._useJwks = config.useJwks;
     this._userClaim = config.userClaim;
     this._publicKeys.internalValue = config.publicKeys;
@@ -322,6 +350,22 @@ export class OauthResourceServerConfigProfile extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // actor_claim - computed: true, optional: true, required: false
+  private _actorClaim?: string; 
+  public get actorClaim() {
+    return this.getStringAttribute('actor_claim');
+  }
+  public set actorClaim(value: string) {
+    this._actorClaim = value;
+  }
+  public resetActorClaim() {
+    this._actorClaim = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get actorClaimInput() {
+    return this._actorClaim;
+  }
 
   // audiences - computed: false, optional: true, required: false
   private _audiences?: string[]; 
@@ -337,6 +381,22 @@ export class OauthResourceServerConfigProfile extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get audiencesInput() {
     return this._audiences;
+  }
+
+  // authorization_details_claim - computed: true, optional: true, required: false
+  private _authorizationDetailsClaim?: string; 
+  public get authorizationDetailsClaim() {
+    return this.getStringAttribute('authorization_details_claim');
+  }
+  public set authorizationDetailsClaim(value: string) {
+    this._authorizationDetailsClaim = value;
+  }
+  public resetAuthorizationDetailsClaim() {
+    this._authorizationDetailsClaim = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizationDetailsClaimInput() {
+    return this._authorizationDetailsClaim;
   }
 
   // clock_skew_leeway - computed: true, optional: true, required: false
@@ -437,6 +497,22 @@ export class OauthResourceServerConfigProfile extends cdktn.TerraformResource {
     return this._jwtType;
   }
 
+  // local - computed: true, optional: true, required: false
+  private _local?: boolean | cdktn.IResolvable; 
+  public get local() {
+    return this.getBooleanAttribute('local');
+  }
+  public set local(value: boolean | cdktn.IResolvable) {
+    this._local = value;
+  }
+  public resetLocal() {
+    this._local = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localInput() {
+    return this._local;
+  }
+
   // namespace - computed: false, optional: true, required: false
   private _namespace?: string; 
   public get namespace() {
@@ -514,6 +590,22 @@ export class OauthResourceServerConfigProfile extends cdktn.TerraformResource {
     return this._supportedAlgorithms;
   }
 
+  // unique_id_claim - computed: true, optional: true, required: false
+  private _uniqueIdClaim?: string; 
+  public get uniqueIdClaim() {
+    return this.getStringAttribute('unique_id_claim');
+  }
+  public set uniqueIdClaim(value: string) {
+    this._uniqueIdClaim = value;
+  }
+  public resetUniqueIdClaim() {
+    this._uniqueIdClaim = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uniqueIdClaimInput() {
+    return this._uniqueIdClaim;
+  }
+
   // use_jwks - computed: true, optional: true, required: false
   private _useJwks?: boolean | cdktn.IResolvable; 
   public get useJwks() {
@@ -568,18 +660,22 @@ export class OauthResourceServerConfigProfile extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      actor_claim: cdktn.stringToTerraform(this._actorClaim),
       audiences: cdktn.listMapper(cdktn.stringToTerraform, false)(this._audiences),
+      authorization_details_claim: cdktn.stringToTerraform(this._authorizationDetailsClaim),
       clock_skew_leeway: cdktn.numberToTerraform(this._clockSkewLeeway),
       enabled: cdktn.booleanToTerraform(this._enabled),
       issuer_id: cdktn.stringToTerraform(this._issuerId),
       jwks_ca_pem: cdktn.stringToTerraform(this._jwksCaPem),
       jwks_uri: cdktn.stringToTerraform(this._jwksUri),
       jwt_type: cdktn.stringToTerraform(this._jwtType),
+      local: cdktn.booleanToTerraform(this._local),
       namespace: cdktn.stringToTerraform(this._namespace),
       no_default_policy: cdktn.booleanToTerraform(this._noDefaultPolicy),
       optional_authorization_details: cdktn.booleanToTerraform(this._optionalAuthorizationDetails),
       profile_name: cdktn.stringToTerraform(this._profileName),
       supported_algorithms: cdktn.listMapper(cdktn.stringToTerraform, false)(this._supportedAlgorithms),
+      unique_id_claim: cdktn.stringToTerraform(this._uniqueIdClaim),
       use_jwks: cdktn.booleanToTerraform(this._useJwks),
       user_claim: cdktn.stringToTerraform(this._userClaim),
       public_keys: cdktn.listMapper(oauthResourceServerConfigProfilePublicKeysToTerraform, true)(this._publicKeys.internalValue),
@@ -588,11 +684,23 @@ export class OauthResourceServerConfigProfile extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      actor_claim: {
+        value: cdktn.stringToHclTerraform(this._actorClaim),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       audiences: {
         value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._audiences),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
+      },
+      authorization_details_claim: {
+        value: cdktn.stringToHclTerraform(this._authorizationDetailsClaim),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       clock_skew_leeway: {
         value: cdktn.numberToHclTerraform(this._clockSkewLeeway),
@@ -630,6 +738,12 @@ export class OauthResourceServerConfigProfile extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      local: {
+        value: cdktn.booleanToHclTerraform(this._local),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       namespace: {
         value: cdktn.stringToHclTerraform(this._namespace),
         isBlock: false,
@@ -659,6 +773,12 @@ export class OauthResourceServerConfigProfile extends cdktn.TerraformResource {
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
+      },
+      unique_id_claim: {
+        value: cdktn.stringToHclTerraform(this._uniqueIdClaim),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       use_jwks: {
         value: cdktn.booleanToHclTerraform(this._useJwks),
