@@ -4,7 +4,7 @@
 
 ### OauthResourceServerConfigProfile <a name="OauthResourceServerConfigProfile" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile vault_oauth_resource_server_config_profile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer"></a>
 
@@ -23,17 +23,21 @@ oauthResourceServerConfigProfile.OauthResourceServerConfigProfile(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   issuer_id: str,
   profile_name: str,
+  actor_claim: str = None,
   audiences: typing.List[str] = None,
+  authorization_details_claim: str = None,
   clock_skew_leeway: typing.Union[int, float] = None,
   enabled: bool | IResolvable = None,
   jwks_ca_pem: str = None,
   jwks_uri: str = None,
   jwt_type: str = None,
+  local: bool | IResolvable = None,
   namespace: str = None,
   no_default_policy: bool | IResolvable = None,
   optional_authorization_details: bool | IResolvable = None,
   public_keys: IResolvable | typing.List[OauthResourceServerConfigProfilePublicKeys] = None,
   supported_algorithms: typing.List[str] = None,
+  unique_id_claim: str = None,
   use_jwks: bool | IResolvable = None,
   user_claim: str = None
 )
@@ -52,17 +56,21 @@ oauthResourceServerConfigProfile.OauthResourceServerConfigProfile(
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.issuerId">issuer_id</a></code> | <code>str</code> | The issuer ID (iss claim) to validate against in incoming JWTs. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.profileName">profile_name</a></code> | <code>str</code> | The name of the OAuth Resource Server Configuration profile. Must be unique within the namespace. |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.actorClaim">actor_claim</a></code> | <code>str</code> | The JWT claim to use as the actor identifier for delegation/chained-token scenarios (RFC 8693 `act` claim). |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.audiences">audiences</a></code> | <code>typing.List[str]</code> | List of allowed audiences (aud claim) to validate in JWTs. |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.authorizationDetailsClaim">authorization_details_claim</a></code> | <code>str</code> | The claim to use for RAR (Rich Authorization Requests) authorization details. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.clockSkewLeeway">clock_skew_leeway</a></code> | <code>typing.Union[int, float]</code> | Leeway for clock skew in seconds when validating time-based claims. Defaults to 0. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this profile is enabled for JWT validation. Disabled profiles are ignored. Defaults to true. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.jwksCaPem">jwks_ca_pem</a></code> | <code>str</code> | Optional CA certificate (PEM format) for JWKS URI TLS validation. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.jwksUri">jwks_uri</a></code> | <code>str</code> | The JWKS URI to fetch public keys from. Required when use_jwks=true. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.jwtType">jwt_type</a></code> | <code>str</code> | The JWT type: 'access_token' or 'transaction_token'. Defaults to 'access_token'. |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.local">local</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, this profile is cluster-scoped and never replicated to performance secondaries. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.noDefaultPolicy">no_default_policy</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, JWT-authenticated tokens omit the default policy unless added elsewhere. Defaults to false. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.optionalAuthorizationDetails">optional_authorization_details</a></code> | <code>bool \| cdktn.IResolvable</code> | When false, RAR (Rich Authorization Requests) is mandatory and authorization_details must be present in the token. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.publicKeys">public_keys</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfilePublicKeys">OauthResourceServerConfigProfilePublicKeys</a>]</code> | public_keys block. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.supportedAlgorithms">supported_algorithms</a></code> | <code>typing.List[str]</code> | List of supported signing algorithms (e.g., RS256, ES256). Defaults to all supported algorithms. |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.uniqueIdClaim">unique_id_claim</a></code> | <code>str</code> | The JWT claim to use as the unique identifier for the token. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.useJwks">use_jwks</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, use JWKS URI for key validation; if false, use static public keys. Defaults to true. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.userClaim">user_claim</a></code> | <code>str</code> | The claim to use as the user identifier. Defaults to 'sub'. |
 
@@ -134,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 The issuer ID (iss claim) to validate against in incoming JWTs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#issuer_id OauthResourceServerConfigProfile#issuer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#issuer_id OauthResourceServerConfigProfile#issuer_id}
 
 ---
 
@@ -144,7 +152,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the OAuth Resource Server Configuration profile. Must be unique within the namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#profile_name OauthResourceServerConfigProfile#profile_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#profile_name OauthResourceServerConfigProfile#profile_name}
+
+---
+
+##### `actor_claim`<sup>Optional</sup> <a name="actor_claim" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.actorClaim"></a>
+
+- *Type:* str
+
+The JWT claim to use as the actor identifier for delegation/chained-token scenarios (RFC 8693 `act` claim).
+
+Requires Vault 2.2.0 or later.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#actor_claim OauthResourceServerConfigProfile#actor_claim}
 
 ---
 
@@ -154,7 +174,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of allowed audiences (aud claim) to validate in JWTs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#audiences OauthResourceServerConfigProfile#audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#audiences OauthResourceServerConfigProfile#audiences}
+
+---
+
+##### `authorization_details_claim`<sup>Optional</sup> <a name="authorization_details_claim" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.authorizationDetailsClaim"></a>
+
+- *Type:* str
+
+The claim to use for RAR (Rich Authorization Requests) authorization details.
+
+Defaults to 'authorization_details'. Requires Vault 2.2.0 or later when set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#authorization_details_claim OauthResourceServerConfigProfile#authorization_details_claim}
 
 ---
 
@@ -164,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Leeway for clock skew in seconds when validating time-based claims. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#clock_skew_leeway OauthResourceServerConfigProfile#clock_skew_leeway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#clock_skew_leeway OauthResourceServerConfigProfile#clock_skew_leeway}
 
 ---
 
@@ -174,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether this profile is enabled for JWT validation. Disabled profiles are ignored. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#enabled OauthResourceServerConfigProfile#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#enabled OauthResourceServerConfigProfile#enabled}
 
 ---
 
@@ -184,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Optional CA certificate (PEM format) for JWKS URI TLS validation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#jwks_ca_pem OauthResourceServerConfigProfile#jwks_ca_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#jwks_ca_pem OauthResourceServerConfigProfile#jwks_ca_pem}
 
 ---
 
@@ -194,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The JWKS URI to fetch public keys from. Required when use_jwks=true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#jwks_uri OauthResourceServerConfigProfile#jwks_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#jwks_uri OauthResourceServerConfigProfile#jwks_uri}
 
 ---
 
@@ -204,7 +236,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The JWT type: 'access_token' or 'transaction_token'. Defaults to 'access_token'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#jwt_type OauthResourceServerConfigProfile#jwt_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#jwt_type OauthResourceServerConfigProfile#jwt_type}
+
+---
+
+##### `local`<sup>Optional</sup> <a name="local" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.local"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+If true, this profile is cluster-scoped and never replicated to performance secondaries.
+
+If false (default), the profile is written to replicated storage and propagated to all secondaries. This field is immutable after creation; delete and recreate the profile to change locality.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#local OauthResourceServerConfigProfile#local}
 
 ---
 
@@ -214,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#namespace OauthResourceServerConfigProfile#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#namespace OauthResourceServerConfigProfile#namespace}
 
 ---
 
@@ -224,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, JWT-authenticated tokens omit the default policy unless added elsewhere. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#no_default_policy OauthResourceServerConfigProfile#no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#no_default_policy OauthResourceServerConfigProfile#no_default_policy}
 
 ---
 
@@ -236,7 +280,7 @@ When false, RAR (Rich Authorization Requests) is mandatory and authorization_det
 
 When set to true, authorization_details in the JWT token are optional. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#optional_authorization_details OauthResourceServerConfigProfile#optional_authorization_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#optional_authorization_details OauthResourceServerConfigProfile#optional_authorization_details}
 
 ---
 
@@ -246,7 +290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 public_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#public_keys OauthResourceServerConfigProfile#public_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#public_keys OauthResourceServerConfigProfile#public_keys}
 
 ---
 
@@ -256,7 +300,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of supported signing algorithms (e.g., RS256, ES256). Defaults to all supported algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#supported_algorithms OauthResourceServerConfigProfile#supported_algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#supported_algorithms OauthResourceServerConfigProfile#supported_algorithms}
+
+---
+
+##### `unique_id_claim`<sup>Optional</sup> <a name="unique_id_claim" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.Initializer.parameter.uniqueIdClaim"></a>
+
+- *Type:* str
+
+The JWT claim to use as the unique identifier for the token.
+
+If unset, Vault uses the `jti` claim. This field is immutable after creation; changing it forces a new resource. Requires Vault 2.2.0 or later.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#unique_id_claim OauthResourceServerConfigProfile#unique_id_claim}
 
 ---
 
@@ -266,7 +322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, use JWKS URI for key validation; if false, use static public keys. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#use_jwks OauthResourceServerConfigProfile#use_jwks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#use_jwks OauthResourceServerConfigProfile#use_jwks}
 
 ---
 
@@ -276,7 +332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The claim to use as the user identifier. Defaults to 'sub'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#user_claim OauthResourceServerConfigProfile#user_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#user_claim OauthResourceServerConfigProfile#user_claim}
 
 ---
 
@@ -309,17 +365,21 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.putPublicKeys">put_public_keys</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetActorClaim">reset_actor_claim</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetAudiences">reset_audiences</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetAuthorizationDetailsClaim">reset_authorization_details_claim</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetClockSkewLeeway">reset_clock_skew_leeway</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetJwksCaPem">reset_jwks_ca_pem</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetJwksUri">reset_jwks_uri</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetJwtType">reset_jwt_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetLocal">reset_local</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetNamespace">reset_namespace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetNoDefaultPolicy">reset_no_default_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetOptionalAuthorizationDetails">reset_optional_authorization_details</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetPublicKeys">reset_public_keys</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetSupportedAlgorithms">reset_supported_algorithms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetUniqueIdClaim">reset_unique_id_claim</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetUseJwks">reset_use_jwks</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetUserClaim">reset_user_claim</a></code> | *No description.* |
 
@@ -687,10 +747,22 @@ def put_public_keys(
 
 ---
 
+##### `reset_actor_claim` <a name="reset_actor_claim" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetActorClaim"></a>
+
+```python
+def reset_actor_claim() -> None
+```
+
 ##### `reset_audiences` <a name="reset_audiences" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetAudiences"></a>
 
 ```python
 def reset_audiences() -> None
+```
+
+##### `reset_authorization_details_claim` <a name="reset_authorization_details_claim" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetAuthorizationDetailsClaim"></a>
+
+```python
+def reset_authorization_details_claim() -> None
 ```
 
 ##### `reset_clock_skew_leeway` <a name="reset_clock_skew_leeway" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetClockSkewLeeway"></a>
@@ -723,6 +795,12 @@ def reset_jwks_uri() -> None
 def reset_jwt_type() -> None
 ```
 
+##### `reset_local` <a name="reset_local" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetLocal"></a>
+
+```python
+def reset_local() -> None
+```
+
 ##### `reset_namespace` <a name="reset_namespace" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetNamespace"></a>
 
 ```python
@@ -751,6 +829,12 @@ def reset_public_keys() -> None
 
 ```python
 def reset_supported_algorithms() -> None
+```
+
+##### `reset_unique_id_claim` <a name="reset_unique_id_claim" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetUniqueIdClaim"></a>
+
+```python
+def reset_unique_id_claim() -> None
 ```
 
 ##### `reset_use_jwks` <a name="reset_use_jwks" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.resetUseJwks"></a>
@@ -879,7 +963,7 @@ The construct id used in the generated config for the OauthResourceServerConfigP
 
 The id of the existing OauthResourceServerConfigProfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -911,33 +995,41 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.publicKeys">public_keys</a></code> | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfilePublicKeysList">OauthResourceServerConfigProfilePublicKeysList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.actorClaimInput">actor_claim_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.audiencesInput">audiences_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.authorizationDetailsClaimInput">authorization_details_claim_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.clockSkewLeewayInput">clock_skew_leeway_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.issuerIdInput">issuer_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.jwksCaPemInput">jwks_ca_pem_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.jwksUriInput">jwks_uri_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.jwtTypeInput">jwt_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.localInput">local_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.noDefaultPolicyInput">no_default_policy_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.optionalAuthorizationDetailsInput">optional_authorization_details_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.profileNameInput">profile_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.publicKeysInput">public_keys_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfilePublicKeys">OauthResourceServerConfigProfilePublicKeys</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.supportedAlgorithmsInput">supported_algorithms_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.uniqueIdClaimInput">unique_id_claim_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.useJwksInput">use_jwks_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.userClaimInput">user_claim_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.actorClaim">actor_claim</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.audiences">audiences</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.authorizationDetailsClaim">authorization_details_claim</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.clockSkewLeeway">clock_skew_leeway</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.issuerId">issuer_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.jwksCaPem">jwks_ca_pem</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.jwksUri">jwks_uri</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.jwtType">jwt_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.local">local</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.noDefaultPolicy">no_default_policy</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.optionalAuthorizationDetails">optional_authorization_details</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.profileName">profile_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.supportedAlgorithms">supported_algorithms</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.uniqueIdClaim">unique_id_claim</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.useJwks">use_jwks</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.userClaim">user_claim</a></code> | <code>str</code> | *No description.* |
 
@@ -1105,6 +1197,16 @@ public_keys: OauthResourceServerConfigProfilePublicKeysList
 
 ---
 
+##### `actor_claim_input`<sup>Optional</sup> <a name="actor_claim_input" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.actorClaimInput"></a>
+
+```python
+actor_claim_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `audiences_input`<sup>Optional</sup> <a name="audiences_input" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.audiencesInput"></a>
 
 ```python
@@ -1112,6 +1214,16 @@ audiences_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `authorization_details_claim_input`<sup>Optional</sup> <a name="authorization_details_claim_input" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.authorizationDetailsClaimInput"></a>
+
+```python
+authorization_details_claim_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1175,6 +1287,16 @@ jwt_type_input: str
 
 ---
 
+##### `local_input`<sup>Optional</sup> <a name="local_input" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.localInput"></a>
+
+```python
+local_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `namespace_input`<sup>Optional</sup> <a name="namespace_input" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.namespaceInput"></a>
 
 ```python
@@ -1235,6 +1357,16 @@ supported_algorithms_input: typing.List[str]
 
 ---
 
+##### `unique_id_claim_input`<sup>Optional</sup> <a name="unique_id_claim_input" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.uniqueIdClaimInput"></a>
+
+```python
+unique_id_claim_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `use_jwks_input`<sup>Optional</sup> <a name="use_jwks_input" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.useJwksInput"></a>
 
 ```python
@@ -1255,6 +1387,16 @@ user_claim_input: str
 
 ---
 
+##### `actor_claim`<sup>Required</sup> <a name="actor_claim" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.actorClaim"></a>
+
+```python
+actor_claim: str
+```
+
+- *Type:* str
+
+---
+
 ##### `audiences`<sup>Required</sup> <a name="audiences" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.audiences"></a>
 
 ```python
@@ -1262,6 +1404,16 @@ audiences: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `authorization_details_claim`<sup>Required</sup> <a name="authorization_details_claim" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.authorizationDetailsClaim"></a>
+
+```python
+authorization_details_claim: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1325,6 +1477,16 @@ jwt_type: str
 
 ---
 
+##### `local`<sup>Required</sup> <a name="local" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.local"></a>
+
+```python
+local: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.namespace"></a>
 
 ```python
@@ -1372,6 +1534,16 @@ supported_algorithms: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `unique_id_claim`<sup>Required</sup> <a name="unique_id_claim" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfile.property.uniqueIdClaim"></a>
+
+```python
+unique_id_claim: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1432,17 +1604,21 @@ oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   issuer_id: str,
   profile_name: str,
+  actor_claim: str = None,
   audiences: typing.List[str] = None,
+  authorization_details_claim: str = None,
   clock_skew_leeway: typing.Union[int, float] = None,
   enabled: bool | IResolvable = None,
   jwks_ca_pem: str = None,
   jwks_uri: str = None,
   jwt_type: str = None,
+  local: bool | IResolvable = None,
   namespace: str = None,
   no_default_policy: bool | IResolvable = None,
   optional_authorization_details: bool | IResolvable = None,
   public_keys: IResolvable | typing.List[OauthResourceServerConfigProfilePublicKeys] = None,
   supported_algorithms: typing.List[str] = None,
+  unique_id_claim: str = None,
   use_jwks: bool | IResolvable = None,
   user_claim: str = None
 )
@@ -1461,17 +1637,21 @@ oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig(
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.issuerId">issuer_id</a></code> | <code>str</code> | The issuer ID (iss claim) to validate against in incoming JWTs. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.profileName">profile_name</a></code> | <code>str</code> | The name of the OAuth Resource Server Configuration profile. Must be unique within the namespace. |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.actorClaim">actor_claim</a></code> | <code>str</code> | The JWT claim to use as the actor identifier for delegation/chained-token scenarios (RFC 8693 `act` claim). |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.audiences">audiences</a></code> | <code>typing.List[str]</code> | List of allowed audiences (aud claim) to validate in JWTs. |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.authorizationDetailsClaim">authorization_details_claim</a></code> | <code>str</code> | The claim to use for RAR (Rich Authorization Requests) authorization details. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.clockSkewLeeway">clock_skew_leeway</a></code> | <code>typing.Union[int, float]</code> | Leeway for clock skew in seconds when validating time-based claims. Defaults to 0. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether this profile is enabled for JWT validation. Disabled profiles are ignored. Defaults to true. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.jwksCaPem">jwks_ca_pem</a></code> | <code>str</code> | Optional CA certificate (PEM format) for JWKS URI TLS validation. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.jwksUri">jwks_uri</a></code> | <code>str</code> | The JWKS URI to fetch public keys from. Required when use_jwks=true. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.jwtType">jwt_type</a></code> | <code>str</code> | The JWT type: 'access_token' or 'transaction_token'. Defaults to 'access_token'. |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.local">local</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, this profile is cluster-scoped and never replicated to performance secondaries. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.noDefaultPolicy">no_default_policy</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, JWT-authenticated tokens omit the default policy unless added elsewhere. Defaults to false. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.optionalAuthorizationDetails">optional_authorization_details</a></code> | <code>bool \| cdktn.IResolvable</code> | When false, RAR (Rich Authorization Requests) is mandatory and authorization_details must be present in the token. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.publicKeys">public_keys</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfilePublicKeys">OauthResourceServerConfigProfilePublicKeys</a>]</code> | public_keys block. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.supportedAlgorithms">supported_algorithms</a></code> | <code>typing.List[str]</code> | List of supported signing algorithms (e.g., RS256, ES256). Defaults to all supported algorithms. |
+| <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.uniqueIdClaim">unique_id_claim</a></code> | <code>str</code> | The JWT claim to use as the unique identifier for the token. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.useJwks">use_jwks</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, use JWKS URI for key validation; if false, use static public keys. Defaults to true. |
 | <code><a href="#@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.userClaim">user_claim</a></code> | <code>str</code> | The claim to use as the user identifier. Defaults to 'sub'. |
 
@@ -1557,7 +1737,7 @@ issuer_id: str
 
 The issuer ID (iss claim) to validate against in incoming JWTs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#issuer_id OauthResourceServerConfigProfile#issuer_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#issuer_id OauthResourceServerConfigProfile#issuer_id}
 
 ---
 
@@ -1571,7 +1751,23 @@ profile_name: str
 
 The name of the OAuth Resource Server Configuration profile. Must be unique within the namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#profile_name OauthResourceServerConfigProfile#profile_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#profile_name OauthResourceServerConfigProfile#profile_name}
+
+---
+
+##### `actor_claim`<sup>Optional</sup> <a name="actor_claim" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.actorClaim"></a>
+
+```python
+actor_claim: str
+```
+
+- *Type:* str
+
+The JWT claim to use as the actor identifier for delegation/chained-token scenarios (RFC 8693 `act` claim).
+
+Requires Vault 2.2.0 or later.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#actor_claim OauthResourceServerConfigProfile#actor_claim}
 
 ---
 
@@ -1585,7 +1781,23 @@ audiences: typing.List[str]
 
 List of allowed audiences (aud claim) to validate in JWTs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#audiences OauthResourceServerConfigProfile#audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#audiences OauthResourceServerConfigProfile#audiences}
+
+---
+
+##### `authorization_details_claim`<sup>Optional</sup> <a name="authorization_details_claim" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.authorizationDetailsClaim"></a>
+
+```python
+authorization_details_claim: str
+```
+
+- *Type:* str
+
+The claim to use for RAR (Rich Authorization Requests) authorization details.
+
+Defaults to 'authorization_details'. Requires Vault 2.2.0 or later when set.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#authorization_details_claim OauthResourceServerConfigProfile#authorization_details_claim}
 
 ---
 
@@ -1599,7 +1811,7 @@ clock_skew_leeway: typing.Union[int, float]
 
 Leeway for clock skew in seconds when validating time-based claims. Defaults to 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#clock_skew_leeway OauthResourceServerConfigProfile#clock_skew_leeway}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#clock_skew_leeway OauthResourceServerConfigProfile#clock_skew_leeway}
 
 ---
 
@@ -1613,7 +1825,7 @@ enabled: bool | IResolvable
 
 Whether this profile is enabled for JWT validation. Disabled profiles are ignored. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#enabled OauthResourceServerConfigProfile#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#enabled OauthResourceServerConfigProfile#enabled}
 
 ---
 
@@ -1627,7 +1839,7 @@ jwks_ca_pem: str
 
 Optional CA certificate (PEM format) for JWKS URI TLS validation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#jwks_ca_pem OauthResourceServerConfigProfile#jwks_ca_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#jwks_ca_pem OauthResourceServerConfigProfile#jwks_ca_pem}
 
 ---
 
@@ -1641,7 +1853,7 @@ jwks_uri: str
 
 The JWKS URI to fetch public keys from. Required when use_jwks=true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#jwks_uri OauthResourceServerConfigProfile#jwks_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#jwks_uri OauthResourceServerConfigProfile#jwks_uri}
 
 ---
 
@@ -1655,7 +1867,23 @@ jwt_type: str
 
 The JWT type: 'access_token' or 'transaction_token'. Defaults to 'access_token'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#jwt_type OauthResourceServerConfigProfile#jwt_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#jwt_type OauthResourceServerConfigProfile#jwt_type}
+
+---
+
+##### `local`<sup>Optional</sup> <a name="local" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.local"></a>
+
+```python
+local: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+If true, this profile is cluster-scoped and never replicated to performance secondaries.
+
+If false (default), the profile is written to replicated storage and propagated to all secondaries. This field is immutable after creation; delete and recreate the profile to change locality.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#local OauthResourceServerConfigProfile#local}
 
 ---
 
@@ -1669,7 +1897,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#namespace OauthResourceServerConfigProfile#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#namespace OauthResourceServerConfigProfile#namespace}
 
 ---
 
@@ -1683,7 +1911,7 @@ no_default_policy: bool | IResolvable
 
 If true, JWT-authenticated tokens omit the default policy unless added elsewhere. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#no_default_policy OauthResourceServerConfigProfile#no_default_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#no_default_policy OauthResourceServerConfigProfile#no_default_policy}
 
 ---
 
@@ -1699,7 +1927,7 @@ When false, RAR (Rich Authorization Requests) is mandatory and authorization_det
 
 When set to true, authorization_details in the JWT token are optional. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#optional_authorization_details OauthResourceServerConfigProfile#optional_authorization_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#optional_authorization_details OauthResourceServerConfigProfile#optional_authorization_details}
 
 ---
 
@@ -1713,7 +1941,7 @@ public_keys: IResolvable | typing.List[OauthResourceServerConfigProfilePublicKey
 
 public_keys block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#public_keys OauthResourceServerConfigProfile#public_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#public_keys OauthResourceServerConfigProfile#public_keys}
 
 ---
 
@@ -1727,7 +1955,23 @@ supported_algorithms: typing.List[str]
 
 List of supported signing algorithms (e.g., RS256, ES256). Defaults to all supported algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#supported_algorithms OauthResourceServerConfigProfile#supported_algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#supported_algorithms OauthResourceServerConfigProfile#supported_algorithms}
+
+---
+
+##### `unique_id_claim`<sup>Optional</sup> <a name="unique_id_claim" id="@cdktn/provider-vault.oauthResourceServerConfigProfile.OauthResourceServerConfigProfileConfig.property.uniqueIdClaim"></a>
+
+```python
+unique_id_claim: str
+```
+
+- *Type:* str
+
+The JWT claim to use as the unique identifier for the token.
+
+If unset, Vault uses the `jti` claim. This field is immutable after creation; changing it forces a new resource. Requires Vault 2.2.0 or later.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#unique_id_claim OauthResourceServerConfigProfile#unique_id_claim}
 
 ---
 
@@ -1741,7 +1985,7 @@ use_jwks: bool | IResolvable
 
 If true, use JWKS URI for key validation; if false, use static public keys. Defaults to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#use_jwks OauthResourceServerConfigProfile#use_jwks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#use_jwks OauthResourceServerConfigProfile#use_jwks}
 
 ---
 
@@ -1755,7 +1999,7 @@ user_claim: str
 
 The claim to use as the user identifier. Defaults to 'sub'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#user_claim OauthResourceServerConfigProfile#user_claim}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#user_claim OauthResourceServerConfigProfile#user_claim}
 
 ---
 
@@ -1791,7 +2035,7 @@ key_id: str
 
 The key ID (kid) for this public key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#key_id OauthResourceServerConfigProfile#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#key_id OauthResourceServerConfigProfile#key_id}
 
 ---
 
@@ -1805,7 +2049,7 @@ pem: str
 
 The PEM-encoded public key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/oauth_resource_server_config_profile#pem OauthResourceServerConfigProfile#pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/oauth_resource_server_config_profile#pem OauthResourceServerConfigProfile#pem}
 
 ---
 

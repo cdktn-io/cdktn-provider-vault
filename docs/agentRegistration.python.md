@@ -4,7 +4,7 @@
 
 ### AgentRegistration <a name="AgentRegistration" id="@cdktn/provider-vault.agentRegistration.AgentRegistration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration vault_agent_registration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration vault_agent_registration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.agentRegistration.AgentRegistration.Initializer"></a>
 
@@ -25,6 +25,7 @@ agentRegistration.AgentRegistration(
   entity_id: str,
   ceiling_policies: typing.List[str] = None,
   description: str = None,
+  local: bool | IResolvable = None,
   namespace: str = None,
   no_default_ceiling_policy: bool | IResolvable = None,
   optional_authorization_details: bool | IResolvable = None,
@@ -47,6 +48,7 @@ agentRegistration.AgentRegistration(
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.Initializer.parameter.entityId">entity_id</a></code> | <code>str</code> | Entity ID representing this agent. Each entity can only have one registration. |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.Initializer.parameter.ceilingPolicies">ceiling_policies</a></code> | <code>typing.List[str]</code> | List of policy identifiers that define the authorization ceiling for this agent. |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.Initializer.parameter.description">description</a></code> | <code>str</code> | Detailed description of the agent's purpose. |
+| <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.Initializer.parameter.local">local</a></code> | <code>bool \| cdktn.IResolvable</code> | When set to true, the agent registration is not replicated globally and will be local to the current cluster. |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.Initializer.parameter.noDefaultCeilingPolicy">no_default_ceiling_policy</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, opts out of automatically adding the default-ceiling policy to this agent registration. |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.Initializer.parameter.optionalAuthorizationDetails">optional_authorization_details</a></code> | <code>bool \| cdktn.IResolvable</code> | When false, RAR (Rich Authorization Requests) is mandatory and authorization_details must be present in the token. |
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Human-readable name for the agent registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#display_name AgentRegistration#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#display_name AgentRegistration#display_name}
 
 ---
 
@@ -130,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Entity ID representing this agent. Each entity can only have one registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#entity_id AgentRegistration#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#entity_id AgentRegistration#entity_id}
 
 ---
 
@@ -142,7 +144,7 @@ List of policy identifiers that define the authorization ceiling for this agent.
 
 Cannot include 'root' policy. Note: Vault automatically adds default policies (['default', 'default-ceiling']) unless no_default_ceiling_policy is true, but these are filtered out when reading the state to match your configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#ceiling_policies AgentRegistration#ceiling_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#ceiling_policies AgentRegistration#ceiling_policies}
 
 ---
 
@@ -152,7 +154,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Detailed description of the agent's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#description AgentRegistration#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#description AgentRegistration#description}
+
+---
+
+##### `local`<sup>Optional</sup> <a name="local" id="@cdktn/provider-vault.agentRegistration.AgentRegistration.Initializer.parameter.local"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+When set to true, the agent registration is not replicated globally and will be local to the current cluster.
+
+Defaults to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#local AgentRegistration#local}
 
 ---
 
@@ -162,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#namespace AgentRegistration#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#namespace AgentRegistration#namespace}
 
 ---
 
@@ -172,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, opts out of automatically adding the default-ceiling policy to this agent registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#no_default_ceiling_policy AgentRegistration#no_default_ceiling_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#no_default_ceiling_policy AgentRegistration#no_default_ceiling_policy}
 
 ---
 
@@ -184,7 +198,7 @@ When false, RAR (Rich Authorization Requests) is mandatory and authorization_det
 
 When set to true, authorization_details in the JWT token are optional for this agent. This setting works in conjunction with the OAuth Resource Server profile's optional_authorization_details setting - RAR is optional if EITHER is true. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#optional_authorization_details AgentRegistration#optional_authorization_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#optional_authorization_details AgentRegistration#optional_authorization_details}
 
 ---
 
@@ -194,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Owner of the agent registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#owner AgentRegistration#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#owner AgentRegistration#owner}
 
 ---
 
@@ -228,6 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.resetCeilingPolicies">reset_ceiling_policies</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.resetLocal">reset_local</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.resetNamespace">reset_namespace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.resetNoDefaultCeilingPolicy">reset_no_default_ceiling_policy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.resetOptionalAuthorizationDetails">reset_optional_authorization_details</a></code> | *No description.* |
@@ -595,6 +610,12 @@ def reset_ceiling_policies() -> None
 def reset_description() -> None
 ```
 
+##### `reset_local` <a name="reset_local" id="@cdktn/provider-vault.agentRegistration.AgentRegistration.resetLocal"></a>
+
+```python
+def reset_local() -> None
+```
+
 ##### `reset_namespace` <a name="reset_namespace" id="@cdktn/provider-vault.agentRegistration.AgentRegistration.resetNamespace"></a>
 
 ```python
@@ -733,7 +754,7 @@ The construct id used in the generated config for the AgentRegistration to impor
 
 The id of the existing AgentRegistration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -770,6 +791,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.entityIdInput">entity_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.localInput">local_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.noDefaultCeilingPolicyInput">no_default_ceiling_policy_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.optionalAuthorizationDetailsInput">optional_authorization_details_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -778,6 +800,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.entityId">entity_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.local">local</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.noDefaultCeilingPolicy">no_default_ceiling_policy</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistration.property.optionalAuthorizationDetails">optional_authorization_details</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -997,6 +1020,16 @@ entity_id_input: str
 
 ---
 
+##### `local_input`<sup>Optional</sup> <a name="local_input" id="@cdktn/provider-vault.agentRegistration.AgentRegistration.property.localInput"></a>
+
+```python
+local_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `namespace_input`<sup>Optional</sup> <a name="namespace_input" id="@cdktn/provider-vault.agentRegistration.AgentRegistration.property.namespaceInput"></a>
 
 ```python
@@ -1074,6 +1107,16 @@ entity_id: str
 ```
 
 - *Type:* str
+
+---
+
+##### `local`<sup>Required</sup> <a name="local" id="@cdktn/provider-vault.agentRegistration.AgentRegistration.property.local"></a>
+
+```python
+local: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1156,6 +1199,7 @@ agentRegistration.AgentRegistrationConfig(
   entity_id: str,
   ceiling_policies: typing.List[str] = None,
   description: str = None,
+  local: bool | IResolvable = None,
   namespace: str = None,
   no_default_ceiling_policy: bool | IResolvable = None,
   optional_authorization_details: bool | IResolvable = None,
@@ -1178,6 +1222,7 @@ agentRegistration.AgentRegistrationConfig(
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistrationConfig.property.entityId">entity_id</a></code> | <code>str</code> | Entity ID representing this agent. Each entity can only have one registration. |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistrationConfig.property.ceilingPolicies">ceiling_policies</a></code> | <code>typing.List[str]</code> | List of policy identifiers that define the authorization ceiling for this agent. |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistrationConfig.property.description">description</a></code> | <code>str</code> | Detailed description of the agent's purpose. |
+| <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistrationConfig.property.local">local</a></code> | <code>bool \| cdktn.IResolvable</code> | When set to true, the agent registration is not replicated globally and will be local to the current cluster. |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistrationConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistrationConfig.property.noDefaultCeilingPolicy">no_default_ceiling_policy</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, opts out of automatically adding the default-ceiling policy to this agent registration. |
 | <code><a href="#@cdktn/provider-vault.agentRegistration.AgentRegistrationConfig.property.optionalAuthorizationDetails">optional_authorization_details</a></code> | <code>bool \| cdktn.IResolvable</code> | When false, RAR (Rich Authorization Requests) is mandatory and authorization_details must be present in the token. |
@@ -1265,7 +1310,7 @@ display_name: str
 
 Human-readable name for the agent registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#display_name AgentRegistration#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#display_name AgentRegistration#display_name}
 
 ---
 
@@ -1279,7 +1324,7 @@ entity_id: str
 
 Entity ID representing this agent. Each entity can only have one registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#entity_id AgentRegistration#entity_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#entity_id AgentRegistration#entity_id}
 
 ---
 
@@ -1295,7 +1340,7 @@ List of policy identifiers that define the authorization ceiling for this agent.
 
 Cannot include 'root' policy. Note: Vault automatically adds default policies (['default', 'default-ceiling']) unless no_default_ceiling_policy is true, but these are filtered out when reading the state to match your configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#ceiling_policies AgentRegistration#ceiling_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#ceiling_policies AgentRegistration#ceiling_policies}
 
 ---
 
@@ -1309,7 +1354,23 @@ description: str
 
 Detailed description of the agent's purpose.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#description AgentRegistration#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#description AgentRegistration#description}
+
+---
+
+##### `local`<sup>Optional</sup> <a name="local" id="@cdktn/provider-vault.agentRegistration.AgentRegistrationConfig.property.local"></a>
+
+```python
+local: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+When set to true, the agent registration is not replicated globally and will be local to the current cluster.
+
+Defaults to false.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#local AgentRegistration#local}
 
 ---
 
@@ -1323,7 +1384,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#namespace AgentRegistration#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#namespace AgentRegistration#namespace}
 
 ---
 
@@ -1337,7 +1398,7 @@ no_default_ceiling_policy: bool | IResolvable
 
 If true, opts out of automatically adding the default-ceiling policy to this agent registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#no_default_ceiling_policy AgentRegistration#no_default_ceiling_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#no_default_ceiling_policy AgentRegistration#no_default_ceiling_policy}
 
 ---
 
@@ -1353,7 +1414,7 @@ When false, RAR (Rich Authorization Requests) is mandatory and authorization_det
 
 When set to true, authorization_details in the JWT token are optional for this agent. This setting works in conjunction with the OAuth Resource Server profile's optional_authorization_details setting - RAR is optional if EITHER is true. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#optional_authorization_details AgentRegistration#optional_authorization_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#optional_authorization_details AgentRegistration#optional_authorization_details}
 
 ---
 
@@ -1367,7 +1428,7 @@ owner: str
 
 Owner of the agent registration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/agent_registration#owner AgentRegistration#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/agent_registration#owner AgentRegistration#owner}
 
 ---
 

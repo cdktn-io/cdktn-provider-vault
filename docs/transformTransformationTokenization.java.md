@@ -4,7 +4,7 @@
 
 ### TransformTransformationTokenization <a name="TransformTransformationTokenization" id="@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization vault_transform_transformation_tokenization}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization vault_transform_transformation_tokenization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenization.Initializer"></a>
 
@@ -48,7 +48,7 @@ TransformTransformationTokenization.Builder.create(Construct scope, java.lang.St
 | <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenization.Initializer.parameter.allowedRoles">allowedRoles</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of allowed roles that this transformation can be assigned to. |
 | <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenization.Initializer.parameter.convergent">convergent</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Specifies whether to use convergent tokenization, where tokenization of the same plaintext more than once results in the same token. |
 | <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenization.Initializer.parameter.deletionAllowed">deletionAllowed</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, this transform can be deleted. |
-| <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenization.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#id TransformTransformationTokenization#id}. |
+| <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenization.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#id TransformTransformationTokenization#id}. |
 | <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenization.Initializer.parameter.mappingMode">mappingMode</a></code> | <code>java.lang.String</code> | Specifies the mapping mode for stored tokenization values. |
 | <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenization.Initializer.parameter.maxTtl">maxTtl</a></code> | <code>java.lang.Number</code> | The maximum TTL of a token. If 0 or unspecified, tokens may have no expiration. |
 | <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenization.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#name TransformTransformationTokenization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#name TransformTransformationTokenization#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#path TransformTransformationTokenization#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#path TransformTransformationTokenization#path}
 
 ---
 
@@ -144,7 +144,7 @@ Specifies a list of allowed roles that this transformation can be assigned to.
 
 A role using this transformation must exist in this list in order for encode and decode operations to properly function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#allowed_roles TransformTransformationTokenization#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#allowed_roles TransformTransformationTokenization#allowed_roles}
 
 ---
 
@@ -156,7 +156,7 @@ Specifies whether to use convergent tokenization, where tokenization of the same
 
 Defaults to false as unique tokens are more desirable from a security standpoint if there isn't a use-case need for convergence. This property cannot be changed after the transform is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#convergent TransformTransformationTokenization#convergent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#convergent TransformTransformationTokenization#convergent}
 
 ---
 
@@ -168,7 +168,7 @@ If true, this transform can be deleted.
 
 Otherwise deletion is blocked while this value remains false. Note that deleting the transform deletes the underlying key making decoding of tokenized values impossible without restoring from a backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#deletion_allowed TransformTransformationTokenization#deletion_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#deletion_allowed TransformTransformationTokenization#deletion_allowed}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#id TransformTransformationTokenization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#id TransformTransformationTokenization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -191,7 +191,7 @@ Specifies the mapping mode for stored tokenization values.
 
 default is strongly recommended for highest security. exportable allows for all plaintexts to be decoded via the export-decoded endpoint in an emergency.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#mapping_mode TransformTransformationTokenization#mapping_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#mapping_mode TransformTransformationTokenization#mapping_mode}
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The maximum TTL of a token. If 0 or unspecified, tokens may have no expiration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#max_ttl TransformTransformationTokenization#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#max_ttl TransformTransformationTokenization#max_ttl}
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#namespace TransformTransformationTokenization#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#namespace TransformTransformationTokenization#namespace}
 
 ---
 
@@ -221,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The list of tokenization stores to use for tokenization state. Vault's internal storage is used by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#stores TransformTransformationTokenization#stores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#stores TransformTransformationTokenization#stores}
 
 ---
 
@@ -726,7 +726,7 @@ The construct id used in the generated config for the TransformTransformationTok
 
 The id of the existing TransformTransformationTokenization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1185,7 +1185,7 @@ TransformTransformationTokenizationConfig.builder()
 | <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenizationConfig.property.allowedRoles">allowedRoles</a></code> | <code>java.util.List<java.lang.String></code> | Specifies a list of allowed roles that this transformation can be assigned to. |
 | <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenizationConfig.property.convergent">convergent</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Specifies whether to use convergent tokenization, where tokenization of the same plaintext more than once results in the same token. |
 | <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenizationConfig.property.deletionAllowed">deletionAllowed</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If true, this transform can be deleted. |
-| <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenizationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#id TransformTransformationTokenization#id}. |
+| <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenizationConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#id TransformTransformationTokenization#id}. |
 | <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenizationConfig.property.mappingMode">mappingMode</a></code> | <code>java.lang.String</code> | Specifies the mapping mode for stored tokenization values. |
 | <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenizationConfig.property.maxTtl">maxTtl</a></code> | <code>java.lang.Number</code> | The maximum TTL of a token. If 0 or unspecified, tokens may have no expiration. |
 | <code><a href="#@cdktn/provider-vault.transformTransformationTokenization.TransformTransformationTokenizationConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
@@ -1273,7 +1273,7 @@ public java.lang.String getName();
 
 The name of the transformation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#name TransformTransformationTokenization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#name TransformTransformationTokenization#name}
 
 ---
 
@@ -1287,7 +1287,7 @@ public java.lang.String getPath();
 
 The mount path for a back-end, for example, the path given in "$ vault auth enable -path=my-aws aws".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#path TransformTransformationTokenization#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#path TransformTransformationTokenization#path}
 
 ---
 
@@ -1303,7 +1303,7 @@ Specifies a list of allowed roles that this transformation can be assigned to.
 
 A role using this transformation must exist in this list in order for encode and decode operations to properly function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#allowed_roles TransformTransformationTokenization#allowed_roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#allowed_roles TransformTransformationTokenization#allowed_roles}
 
 ---
 
@@ -1319,7 +1319,7 @@ Specifies whether to use convergent tokenization, where tokenization of the same
 
 Defaults to false as unique tokens are more desirable from a security standpoint if there isn't a use-case need for convergence. This property cannot be changed after the transform is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#convergent TransformTransformationTokenization#convergent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#convergent TransformTransformationTokenization#convergent}
 
 ---
 
@@ -1335,7 +1335,7 @@ If true, this transform can be deleted.
 
 Otherwise deletion is blocked while this value remains false. Note that deleting the transform deletes the underlying key making decoding of tokenized values impossible without restoring from a backup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#deletion_allowed TransformTransformationTokenization#deletion_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#deletion_allowed TransformTransformationTokenization#deletion_allowed}
 
 ---
 
@@ -1347,7 +1347,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#id TransformTransformationTokenization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#id TransformTransformationTokenization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1366,7 +1366,7 @@ Specifies the mapping mode for stored tokenization values.
 
 default is strongly recommended for highest security. exportable allows for all plaintexts to be decoded via the export-decoded endpoint in an emergency.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#mapping_mode TransformTransformationTokenization#mapping_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#mapping_mode TransformTransformationTokenization#mapping_mode}
 
 ---
 
@@ -1380,7 +1380,7 @@ public java.lang.Number getMaxTtl();
 
 The maximum TTL of a token. If 0 or unspecified, tokens may have no expiration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#max_ttl TransformTransformationTokenization#max_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#max_ttl TransformTransformationTokenization#max_ttl}
 
 ---
 
@@ -1394,7 +1394,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#namespace TransformTransformationTokenization#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#namespace TransformTransformationTokenization#namespace}
 
 ---
 
@@ -1408,7 +1408,7 @@ public java.util.List<java.lang.String> getStores();
 
 The list of tokenization stores to use for tokenization state. Vault's internal storage is used by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/transform_transformation_tokenization#stores TransformTransformationTokenization#stores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/transform_transformation_tokenization#stores TransformTransformationTokenization#stores}
 
 ---
 

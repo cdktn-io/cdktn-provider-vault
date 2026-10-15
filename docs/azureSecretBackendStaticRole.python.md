@@ -4,7 +4,7 @@
 
 ### AzureSecretBackendStaticRole <a name="AzureSecretBackendStaticRole" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer"></a>
 
@@ -29,6 +29,9 @@ azureSecretBackendStaticRole.AzureSecretBackendStaticRole(
   expiration: str = None,
   metadata: typing.Mapping[str] = None,
   namespace: str = None,
+  rotation_grace_period: typing.Union[int, float] = None,
+  rotation_period: typing.Union[int, float] = None,
+  seamless_rotation: bool | IResolvable = None,
   secret_id: str = None,
   skip_import_rotation: bool | IResolvable = None,
   ttl: typing.Union[int, float] = None
@@ -54,6 +57,9 @@ azureSecretBackendStaticRole.AzureSecretBackendStaticRole(
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer.parameter.expiration">expiration</a></code> | <code>str</code> | A future expiration time for the imported credential, in RFC3339 format. |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer.parameter.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | A map of string key/value pairs that will be stored as metadata on the secret. |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer.parameter.rotationGracePeriod">rotation_grace_period</a></code> | <code>typing.Union[int, float]</code> | Amount of time (in seconds) that active and staged credentials are permitted to overlap when seamless rotation is enabled. |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer.parameter.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | Timespan of 1 month or more during which the role credentials are valid. |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer.parameter.seamlessRotation">seamless_rotation</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable or disable seamless rotation for the role. |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer.parameter.secretId">secret_id</a></code> | <code>str</code> | The secret ID of the Azure password credential you want to import. |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer.parameter.skipImportRotation">skip_import_rotation</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, skip rotation of the client secret on import. |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Timespan of 1 month or more during which the role credentials are valid. |
@@ -126,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 Application object ID for an existing service principal that is managed by the static role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#application_object_id AzureSecretBackendStaticRole#application_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#application_object_id AzureSecretBackendStaticRole#application_object_id}
 
 ---
 
@@ -136,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The path where the Azure secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#backend AzureSecretBackendStaticRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#backend AzureSecretBackendStaticRole#backend}
 
 ---
 
@@ -146,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the static role to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#role AzureSecretBackendStaticRole#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#role AzureSecretBackendStaticRole#role}
 
 ---
 
@@ -156,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The plaintext secret value of the credential you want to import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#client_secret AzureSecretBackendStaticRole#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#client_secret AzureSecretBackendStaticRole#client_secret}
 
 ---
 
@@ -166,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, the initial creation of credentials will be deferred until first static-creds read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#defer_initial_creds AzureSecretBackendStaticRole#defer_initial_creds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#defer_initial_creds AzureSecretBackendStaticRole#defer_initial_creds}
 
 ---
 
@@ -176,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A future expiration time for the imported credential, in RFC3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#expiration AzureSecretBackendStaticRole#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#expiration AzureSecretBackendStaticRole#expiration}
 
 ---
 
@@ -186,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A map of string key/value pairs that will be stored as metadata on the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#metadata AzureSecretBackendStaticRole#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#metadata AzureSecretBackendStaticRole#metadata}
 
 ---
 
@@ -196,7 +202,41 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#namespace AzureSecretBackendStaticRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#namespace AzureSecretBackendStaticRole#namespace}
+
+---
+
+##### `rotation_grace_period`<sup>Optional</sup> <a name="rotation_grace_period" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer.parameter.rotationGracePeriod"></a>
+
+- *Type:* typing.Union[int, float]
+
+Amount of time (in seconds) that active and staged credentials are permitted to overlap when seamless rotation is enabled.
+
+Must not exceed (rotation_period - 1h) / 2. Set to -1 to disable overlap or 0 to use the default value of 5 minutes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#rotation_grace_period AzureSecretBackendStaticRole#rotation_grace_period}
+
+---
+
+##### `rotation_period`<sup>Optional</sup> <a name="rotation_period" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer.parameter.rotationPeriod"></a>
+
+- *Type:* typing.Union[int, float]
+
+Timespan of 1 month or more during which the role credentials are valid.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#rotation_period AzureSecretBackendStaticRole#rotation_period}
+
+---
+
+##### `seamless_rotation`<sup>Optional</sup> <a name="seamless_rotation" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer.parameter.seamlessRotation"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Enable or disable seamless rotation for the role.
+
+When enabled, allows the plugin to pre-provision the next credential to avoid propagation delays.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#seamless_rotation AzureSecretBackendStaticRole#seamless_rotation}
 
 ---
 
@@ -206,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The secret ID of the Azure password credential you want to import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#secret_id AzureSecretBackendStaticRole#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#secret_id AzureSecretBackendStaticRole#secret_id}
 
 ---
 
@@ -216,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, skip rotation of the client secret on import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#skip_import_rotation AzureSecretBackendStaticRole#skip_import_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#skip_import_rotation AzureSecretBackendStaticRole#skip_import_rotation}
 
 ---
 
@@ -226,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Timespan of 1 month or more during which the role credentials are valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#ttl AzureSecretBackendStaticRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#ttl AzureSecretBackendStaticRole#ttl}
 
 ---
 
@@ -263,6 +303,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.resetExpiration">reset_expiration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.resetMetadata">reset_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.resetNamespace">reset_namespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.resetRotationGracePeriod">reset_rotation_grace_period</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.resetRotationPeriod">reset_rotation_period</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.resetSeamlessRotation">reset_seamless_rotation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.resetSecretId">reset_secret_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.resetSkipImportRotation">reset_skip_import_rotation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.resetTtl">reset_ttl</a></code> | *No description.* |
@@ -647,6 +690,24 @@ def reset_metadata() -> None
 def reset_namespace() -> None
 ```
 
+##### `reset_rotation_grace_period` <a name="reset_rotation_grace_period" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.resetRotationGracePeriod"></a>
+
+```python
+def reset_rotation_grace_period() -> None
+```
+
+##### `reset_rotation_period` <a name="reset_rotation_period" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.resetRotationPeriod"></a>
+
+```python
+def reset_rotation_period() -> None
+```
+
+##### `reset_seamless_rotation` <a name="reset_seamless_rotation" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.resetSeamlessRotation"></a>
+
+```python
+def reset_seamless_rotation() -> None
+```
+
 ##### `reset_secret_id` <a name="reset_secret_id" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.resetSecretId"></a>
 
 ```python
@@ -779,7 +840,7 @@ The construct id used in the generated config for the AzureSecretBackendStaticRo
 
 The id of the existing AzureSecretBackendStaticRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -818,6 +879,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.metadataInput">metadata_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.rotationGracePeriodInput">rotation_grace_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.rotationPeriodInput">rotation_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.seamlessRotationInput">seamless_rotation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.secretIdInput">secret_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.skipImportRotationInput">skip_import_rotation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.ttlInput">ttl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -829,6 +893,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.12
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.role">role</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.rotationGracePeriod">rotation_grace_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.seamlessRotation">seamless_rotation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.secretId">secret_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.skipImportRotation">skip_import_rotation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1067,6 +1134,36 @@ role_input: str
 
 ---
 
+##### `rotation_grace_period_input`<sup>Optional</sup> <a name="rotation_grace_period_input" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.rotationGracePeriodInput"></a>
+
+```python
+rotation_grace_period_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `rotation_period_input`<sup>Optional</sup> <a name="rotation_period_input" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.rotationPeriodInput"></a>
+
+```python
+rotation_period_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `seamless_rotation_input`<sup>Optional</sup> <a name="seamless_rotation_input" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.seamlessRotationInput"></a>
+
+```python
+seamless_rotation_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `secret_id_input`<sup>Optional</sup> <a name="secret_id_input" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.secretIdInput"></a>
 
 ```python
@@ -1179,6 +1276,36 @@ role: str
 
 ---
 
+##### `rotation_grace_period`<sup>Required</sup> <a name="rotation_grace_period" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.rotationGracePeriod"></a>
+
+```python
+rotation_grace_period: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `rotation_period`<sup>Required</sup> <a name="rotation_period" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.rotationPeriod"></a>
+
+```python
+rotation_period: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `seamless_rotation`<sup>Required</sup> <a name="seamless_rotation" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.seamlessRotation"></a>
+
+```python
+seamless_rotation: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `secret_id`<sup>Required</sup> <a name="secret_id" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.property.secretId"></a>
 
 ```python
@@ -1252,6 +1379,9 @@ azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig(
   expiration: str = None,
   metadata: typing.Mapping[str] = None,
   namespace: str = None,
+  rotation_grace_period: typing.Union[int, float] = None,
+  rotation_period: typing.Union[int, float] = None,
+  seamless_rotation: bool | IResolvable = None,
   secret_id: str = None,
   skip_import_rotation: bool | IResolvable = None,
   ttl: typing.Union[int, float] = None
@@ -1277,6 +1407,9 @@ azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig(
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig.property.expiration">expiration</a></code> | <code>str</code> | A future expiration time for the imported credential, in RFC3339 format. |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig.property.metadata">metadata</a></code> | <code>typing.Mapping[str]</code> | A map of string key/value pairs that will be stored as metadata on the secret. |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig.property.rotationGracePeriod">rotation_grace_period</a></code> | <code>typing.Union[int, float]</code> | Amount of time (in seconds) that active and staged credentials are permitted to overlap when seamless rotation is enabled. |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig.property.rotationPeriod">rotation_period</a></code> | <code>typing.Union[int, float]</code> | Timespan of 1 month or more during which the role credentials are valid. |
+| <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig.property.seamlessRotation">seamless_rotation</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable or disable seamless rotation for the role. |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig.property.secretId">secret_id</a></code> | <code>str</code> | The secret ID of the Azure password credential you want to import. |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig.property.skipImportRotation">skip_import_rotation</a></code> | <code>bool \| cdktn.IResolvable</code> | If true, skip rotation of the client secret on import. |
 | <code><a href="#@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Timespan of 1 month or more during which the role credentials are valid. |
@@ -1363,7 +1496,7 @@ application_object_id: str
 
 Application object ID for an existing service principal that is managed by the static role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#application_object_id AzureSecretBackendStaticRole#application_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#application_object_id AzureSecretBackendStaticRole#application_object_id}
 
 ---
 
@@ -1377,7 +1510,7 @@ backend: str
 
 The path where the Azure secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#backend AzureSecretBackendStaticRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#backend AzureSecretBackendStaticRole#backend}
 
 ---
 
@@ -1391,7 +1524,7 @@ role: str
 
 Name of the static role to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#role AzureSecretBackendStaticRole#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#role AzureSecretBackendStaticRole#role}
 
 ---
 
@@ -1405,7 +1538,7 @@ client_secret: str
 
 The plaintext secret value of the credential you want to import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#client_secret AzureSecretBackendStaticRole#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#client_secret AzureSecretBackendStaticRole#client_secret}
 
 ---
 
@@ -1419,7 +1552,7 @@ defer_initial_creds: bool | IResolvable
 
 If true, the initial creation of credentials will be deferred until first static-creds read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#defer_initial_creds AzureSecretBackendStaticRole#defer_initial_creds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#defer_initial_creds AzureSecretBackendStaticRole#defer_initial_creds}
 
 ---
 
@@ -1433,7 +1566,7 @@ expiration: str
 
 A future expiration time for the imported credential, in RFC3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#expiration AzureSecretBackendStaticRole#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#expiration AzureSecretBackendStaticRole#expiration}
 
 ---
 
@@ -1447,7 +1580,7 @@ metadata: typing.Mapping[str]
 
 A map of string key/value pairs that will be stored as metadata on the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#metadata AzureSecretBackendStaticRole#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#metadata AzureSecretBackendStaticRole#metadata}
 
 ---
 
@@ -1461,7 +1594,53 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#namespace AzureSecretBackendStaticRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#namespace AzureSecretBackendStaticRole#namespace}
+
+---
+
+##### `rotation_grace_period`<sup>Optional</sup> <a name="rotation_grace_period" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig.property.rotationGracePeriod"></a>
+
+```python
+rotation_grace_period: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Amount of time (in seconds) that active and staged credentials are permitted to overlap when seamless rotation is enabled.
+
+Must not exceed (rotation_period - 1h) / 2. Set to -1 to disable overlap or 0 to use the default value of 5 minutes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#rotation_grace_period AzureSecretBackendStaticRole#rotation_grace_period}
+
+---
+
+##### `rotation_period`<sup>Optional</sup> <a name="rotation_period" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig.property.rotationPeriod"></a>
+
+```python
+rotation_period: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Timespan of 1 month or more during which the role credentials are valid.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#rotation_period AzureSecretBackendStaticRole#rotation_period}
+
+---
+
+##### `seamless_rotation`<sup>Optional</sup> <a name="seamless_rotation" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig.property.seamlessRotation"></a>
+
+```python
+seamless_rotation: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Enable or disable seamless rotation for the role.
+
+When enabled, allows the plugin to pre-provision the next credential to avoid propagation delays.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#seamless_rotation AzureSecretBackendStaticRole#seamless_rotation}
 
 ---
 
@@ -1475,7 +1654,7 @@ secret_id: str
 
 The secret ID of the Azure password credential you want to import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#secret_id AzureSecretBackendStaticRole#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#secret_id AzureSecretBackendStaticRole#secret_id}
 
 ---
 
@@ -1489,7 +1668,7 @@ skip_import_rotation: bool | IResolvable
 
 If true, skip rotation of the client secret on import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#skip_import_rotation AzureSecretBackendStaticRole#skip_import_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#skip_import_rotation AzureSecretBackendStaticRole#skip_import_rotation}
 
 ---
 
@@ -1503,7 +1682,7 @@ ttl: typing.Union[int, float]
 
 Timespan of 1 month or more during which the role credentials are valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.12.0/docs/resources/azure_secret_backend_static_role#ttl AzureSecretBackendStaticRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#ttl AzureSecretBackendStaticRole#ttl}
 
 ---
 

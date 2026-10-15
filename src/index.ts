@@ -84,6 +84,8 @@ export * as identityOidcKeyAllowedClientId from './identity-oidc-key-allowed-cli
 export * as identityOidcProvider from './identity-oidc-provider/index';
 export * as identityOidcRole from './identity-oidc-role/index';
 export * as identityOidcScope from './identity-oidc-scope/index';
+export * as identityTpm from './identity-tpm/index';
+export * as identityTpmGroup from './identity-tpm-group/index';
 export * as jwtAuthBackend from './jwt-auth-backend/index';
 export * as jwtAuthBackendRole from './jwt-auth-backend-role/index';
 export * as kerberosAuthBackendConfig from './kerberos-auth-backend-config/index';
@@ -158,6 +160,7 @@ export * as pkiSecretBackendConfigIssuers from './pki-secret-backend-config-issu
 export * as pkiSecretBackendConfigScep from './pki-secret-backend-config-scep/index';
 export * as pkiSecretBackendConfigUrls from './pki-secret-backend-config-urls/index';
 export * as pkiSecretBackendCrlConfig from './pki-secret-backend-crl-config/index';
+export * as pkiSecretBackendExportKey from './pki-secret-backend-export-key/index';
 export * as pkiSecretBackendIntermediateCertRequest from './pki-secret-backend-intermediate-cert-request/index';
 export * as pkiSecretBackendIntermediateSetSigned from './pki-secret-backend-intermediate-set-signed/index';
 export * as pkiSecretBackendIssuer from './pki-secret-backend-issuer/index';
@@ -166,6 +169,7 @@ export * as pkiSecretBackendRole from './pki-secret-backend-role/index';
 export * as pkiSecretBackendRootCert from './pki-secret-backend-root-cert/index';
 export * as pkiSecretBackendRootSignIntermediate from './pki-secret-backend-root-sign-intermediate/index';
 export * as pkiSecretBackendSign from './pki-secret-backend-sign/index';
+export * as pkiSecretBackendWrappedKeyImport from './pki-secret-backend-wrapped-key-import/index';
 export * as plugin from './plugin/index';
 export * as pluginPinnedVersion from './plugin-pinned-version/index';
 export * as pluginRuntime from './plugin-runtime/index';
@@ -184,6 +188,7 @@ export * as rotationPolicy from './rotation-policy/index';
 export * as samlAuthBackend from './saml-auth-backend/index';
 export * as samlAuthBackendRole from './saml-auth-backend-role/index';
 export * as scepAuthBackendRole from './scep-auth-backend-role/index';
+export * as scimClient from './scim-client/index';
 export * as secretsSyncAssociation from './secrets-sync-association/index';
 export * as secretsSyncAwsDestination from './secrets-sync-aws-destination/index';
 export * as secretsSyncAzureDestination from './secrets-sync-azure-destination/index';
@@ -204,6 +209,8 @@ export * as terraformCloudSecretCreds from './terraform-cloud-secret-creds/index
 export * as terraformCloudSecretRole from './terraform-cloud-secret-role/index';
 export * as token from './token/index';
 export * as tokenAuthBackendRole from './token-auth-backend-role/index';
+export * as tpmAuthBackendConfig from './tpm-auth-backend-config/index';
+export * as tpmAuthBackendRole from './tpm-auth-backend-role/index';
 export * as transformAlphabet from './transform-alphabet/index';
 export * as transformKeyConfiguration from './transform-key-configuration/index';
 export * as transformRole from './transform-role/index';
@@ -259,6 +266,7 @@ export * as dataVaultSshSecretBackendSign from './data-vault-ssh-secret-backend-
 export * as dataVaultSysConfigCors from './data-vault-sys-config-cors/index';
 export * as dataVaultTransformDecode from './data-vault-transform-decode/index';
 export * as dataVaultTransformEncode from './data-vault-transform-encode/index';
+export * as dataVaultTransformRewrap from './data-vault-transform-rewrap/index';
 export * as dataVaultTransitCmac from './data-vault-transit-cmac/index';
 export * as dataVaultTransitDecrypt from './data-vault-transit-decrypt/index';
 export * as dataVaultTransitEncrypt from './data-vault-transit-encrypt/index';
@@ -284,6 +292,7 @@ export * as ephemeralVaultGenericSecret from './ephemeral-vault-generic-secret/i
 export * as ephemeralVaultKerberosAuthBackendLogin from './ephemeral-vault-kerberos-auth-backend-login/index';
 export * as ephemeralVaultKubernetesServiceAccountToken from './ephemeral-vault-kubernetes-service-account-token/index';
 export * as ephemeralVaultKvSecretV2 from './ephemeral-vault-kv-secret-v2/index';
+export * as ephemeralVaultPkiSecretBackendCaKeyExport from './ephemeral-vault-pki-secret-backend-ca-key-export/index';
 export * as ephemeralVaultRadiusAuthLogin from './ephemeral-vault-radius-auth-login/index';
 export * as ephemeralVaultSpiffeSecretBackendMintjwt from './ephemeral-vault-spiffe-secret-backend-mintjwt/index';
 export * as ephemeralVaultTerraformToken from './ephemeral-vault-terraform-token/index';
