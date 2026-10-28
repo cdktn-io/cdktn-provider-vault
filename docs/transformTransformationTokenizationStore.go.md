@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.transformTransformationTokenizationStore.TransformTransformationTokenizationStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/transformtransformationtokenizationstore"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/transformtransformationtokenizationstore"
 
 transformtransformationtokenizationstore.NewTransformTransformationTokenizationStore(scope Construct, id *string, config TransformTransformationTokenizationStoreConfig) TransformTransformationTokenizationStore
 ```
@@ -449,7 +449,7 @@ func ResetSupportedTransformations()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.transformTransformationTokenizationStore.TransformTransformationTokenizationStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/transformtransformationtokenizationstore"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/transformtransformationtokenizationstore"
 
 transformtransformationtokenizationstore.TransformTransformationTokenizationStore_IsConstruct(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.transformTransformationTokenizationStore.TransformTransformationTokenizationStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/transformtransformationtokenizationstore"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/transformtransformationtokenizationstore"
 
 transformtransformationtokenizationstore.TransformTransformationTokenizationStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ transformtransformationtokenizationstore.TransformTransformationTokenizationStor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.transformTransformationTokenizationStore.TransformTransformationTokenizationStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/transformtransformationtokenizationstore"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/transformtransformationtokenizationstore"
 
 transformtransformationtokenizationstore.TransformTransformationTokenizationStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ transformtransformationtokenizationstore.TransformTransformationTokenizationStor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.transformTransformationTokenizationStore.TransformTransformationTokenizationStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/transformtransformationtokenizationstore"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/transformtransformationtokenizationstore"
 
 transformtransformationtokenizationstore.TransformTransformationTokenizationStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1046,7 +1046,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.transformTransformationTokenizationStore.TransformTransformationTokenizationStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/transformtransformationtokenizationstore"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/transformtransformationtokenizationstore"
 
 &transformtransformationtokenizationstore.TransformTransformationTokenizationStoreConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.gcpkmsSecretBackendKey.GcpkmsSecretBackendKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/gcpkmssecretbackendkey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/gcpkmssecretbackendkey"
 
 gcpkmssecretbackendkey.NewGcpkmsSecretBackendKey(scope Construct, id *string, config GcpkmsSecretBackendKeyConfig) GcpkmsSecretBackendKey
 ```
@@ -449,7 +449,7 @@ func ResetRotationPeriod()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.gcpkmsSecretBackendKey.GcpkmsSecretBackendKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/gcpkmssecretbackendkey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/gcpkmssecretbackendkey"
 
 gcpkmssecretbackendkey.GcpkmsSecretBackendKey_IsConstruct(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.gcpkmsSecretBackendKey.GcpkmsSecretBackendKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/gcpkmssecretbackendkey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/gcpkmssecretbackendkey"
 
 gcpkmssecretbackendkey.GcpkmsSecretBackendKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ gcpkmssecretbackendkey.GcpkmsSecretBackendKey_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.gcpkmsSecretBackendKey.GcpkmsSecretBackendKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/gcpkmssecretbackendkey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/gcpkmssecretbackendkey"
 
 gcpkmssecretbackendkey.GcpkmsSecretBackendKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ gcpkmssecretbackendkey.GcpkmsSecretBackendKey_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.gcpkmsSecretBackendKey.GcpkmsSecretBackendKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/gcpkmssecretbackendkey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/gcpkmssecretbackendkey"
 
 gcpkmssecretbackendkey.GcpkmsSecretBackendKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -991,7 +991,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.gcpkmsSecretBackendKey.GcpkmsSecretBackendKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/gcpkmssecretbackendkey"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/gcpkmssecretbackendkey"
 
 &gcpkmssecretbackendkey.GcpkmsSecretBackendKeyConfig {
 	Connection: interface{},

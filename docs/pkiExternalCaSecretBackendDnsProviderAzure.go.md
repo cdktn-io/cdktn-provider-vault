@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderAzure.PkiExternalCaSecretBackendDnsProviderAzure.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderazure"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderazure"
 
 pkiexternalcasecretbackenddnsproviderazure.NewPkiExternalCaSecretBackendDnsProviderAzure(scope Construct, id *string, config PkiExternalCaSecretBackendDnsProviderAzureConfig) PkiExternalCaSecretBackendDnsProviderAzure
 ```
@@ -477,7 +477,7 @@ func ResetZoneName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderAzure.PkiExternalCaSecretBackendDnsProviderAzure.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderazure"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderazure"
 
 pkiexternalcasecretbackenddnsproviderazure.PkiExternalCaSecretBackendDnsProviderAzure_IsConstruct(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderAzure.PkiExternalCaSecretBackendDnsProviderAzure.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderazure"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderazure"
 
 pkiexternalcasecretbackenddnsproviderazure.PkiExternalCaSecretBackendDnsProviderAzure_IsTerraformElement(x interface{}) *bool
 ```
@@ -523,7 +523,7 @@ pkiexternalcasecretbackenddnsproviderazure.PkiExternalCaSecretBackendDnsProvider
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderAzure.PkiExternalCaSecretBackendDnsProviderAzure.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderazure"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderazure"
 
 pkiexternalcasecretbackenddnsproviderazure.PkiExternalCaSecretBackendDnsProviderAzure_IsTerraformResource(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ pkiexternalcasecretbackenddnsproviderazure.PkiExternalCaSecretBackendDnsProvider
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderAzure.PkiExternalCaSecretBackendDnsProviderAzure.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderazure"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderazure"
 
 pkiexternalcasecretbackenddnsproviderazure.PkiExternalCaSecretBackendDnsProviderAzure_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1098,7 +1098,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderAzure.PkiExternalCaSecretBackendDnsProviderAzureConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderazure"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderazure"
 
 &pkiexternalcasecretbackenddnsproviderazure.PkiExternalCaSecretBackendDnsProviderAzureConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackend.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ldapsecretbackend"
 
 ldapsecretbackend.NewLdapSecretBackend(scope Construct, id *string, config LdapSecretBackendConfig) LdapSecretBackend
 ```
@@ -729,7 +729,7 @@ func ResetUserdn()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackend.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ldapsecretbackend"
 
 ldapsecretbackend.LdapSecretBackend_IsConstruct(x interface{}) *bool
 ```
@@ -761,7 +761,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackend.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ldapsecretbackend"
 
 ldapsecretbackend.LdapSecretBackend_IsTerraformElement(x interface{}) *bool
 ```
@@ -775,7 +775,7 @@ ldapsecretbackend.LdapSecretBackend_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackend.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ldapsecretbackend"
 
 ldapsecretbackend.LdapSecretBackend_IsTerraformResource(x interface{}) *bool
 ```
@@ -789,7 +789,7 @@ ldapsecretbackend.LdapSecretBackend_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackend.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ldapsecretbackend"
 
 ldapsecretbackend.LdapSecretBackend_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2087,7 +2087,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ldapSecretBackend.LdapSecretBackendConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapsecretbackend"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ldapsecretbackend"
 
 &ldapsecretbackend.LdapSecretBackendConfig {
 	Connection: interface{},

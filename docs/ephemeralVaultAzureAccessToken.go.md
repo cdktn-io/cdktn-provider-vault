@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultAzureAccessToken.EphemeralVaultAzureAccessToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultazureaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultazureaccesstoken"
 
 ephemeralvaultazureaccesstoken.NewEphemeralVaultAzureAccessToken(scope Construct, id *string, config EphemeralVaultAzureAccessTokenConfig) EphemeralVaultAzureAccessToken
 ```
@@ -323,7 +323,7 @@ func ResetRetryDelay()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultAzureAccessToken.EphemeralVaultAzureAccessToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultazureaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultazureaccesstoken"
 
 ephemeralvaultazureaccesstoken.EphemeralVaultAzureAccessToken_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultAzureAccessToken.EphemeralVaultAzureAccessToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultazureaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultazureaccesstoken"
 
 ephemeralvaultazureaccesstoken.EphemeralVaultAzureAccessToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ ephemeralvaultazureaccesstoken.EphemeralVaultAzureAccessToken_IsTerraformElement
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultAzureAccessToken.EphemeralVaultAzureAccessToken.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultazureaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultazureaccesstoken"
 
 ephemeralvaultazureaccesstoken.EphemeralVaultAzureAccessToken_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultAzureAccessToken.EphemeralVaultAzureAccessTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultazureaccesstoken"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultazureaccesstoken"
 
 &ephemeralvaultazureaccesstoken.EphemeralVaultAzureAccessTokenConfig {
 	Count: interface{},

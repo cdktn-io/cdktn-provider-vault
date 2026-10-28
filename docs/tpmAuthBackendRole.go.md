@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.tpmAuthBackendRole.TpmAuthBackendRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/tpmauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/tpmauthbackendrole"
 
 tpmauthbackendrole.NewTpmAuthBackendRole(scope Construct, id *string, config TpmAuthBackendRoleConfig) TpmAuthBackendRole
 ```
@@ -505,7 +505,7 @@ func ResetTpmIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.tpmAuthBackendRole.TpmAuthBackendRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/tpmauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/tpmauthbackendrole"
 
 tpmauthbackendrole.TpmAuthBackendRole_IsConstruct(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.tpmAuthBackendRole.TpmAuthBackendRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/tpmauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/tpmauthbackendrole"
 
 tpmauthbackendrole.TpmAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ tpmauthbackendrole.TpmAuthBackendRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.tpmAuthBackendRole.TpmAuthBackendRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/tpmauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/tpmauthbackendrole"
 
 tpmauthbackendrole.TpmAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ tpmauthbackendrole.TpmAuthBackendRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.tpmAuthBackendRole.TpmAuthBackendRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/tpmauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/tpmauthbackendrole"
 
 tpmauthbackendrole.TpmAuthBackendRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1168,7 +1168,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.tpmAuthBackendRole.TpmAuthBackendRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/tpmauthbackendrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/tpmauthbackendrole"
 
 &tpmauthbackendrole.TpmAuthBackendRoleConfig {
 	Connection: interface{},

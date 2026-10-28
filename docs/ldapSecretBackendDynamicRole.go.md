@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapsecretbackenddynamicrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ldapsecretbackenddynamicrole"
 
 ldapsecretbackenddynamicrole.NewLdapSecretBackendDynamicRole(scope Construct, id *string, config LdapSecretBackendDynamicRoleConfig) LdapSecretBackendDynamicRole
 ```
@@ -456,7 +456,7 @@ func ResetUsernameTemplate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapsecretbackenddynamicrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ldapsecretbackenddynamicrole"
 
 ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRole_IsConstruct(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapsecretbackenddynamicrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ldapsecretbackenddynamicrole"
 
 ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRole_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapsecretbackenddynamicrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ldapsecretbackenddynamicrole"
 
 ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRole_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapsecretbackenddynamicrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ldapsecretbackenddynamicrole"
 
 ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -987,7 +987,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ldapSecretBackendDynamicRole.LdapSecretBackendDynamicRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ldapsecretbackenddynamicrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ldapsecretbackenddynamicrole"
 
 &ldapsecretbackenddynamicrole.LdapSecretBackendDynamicRoleConfig {
 	Connection: interface{},

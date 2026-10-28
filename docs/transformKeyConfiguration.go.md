@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/transformkeyconfiguration"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/transformkeyconfiguration"
 
 transformkeyconfiguration.NewTransformKeyConfiguration(scope Construct, id *string, config TransformKeyConfigurationConfig) TransformKeyConfiguration
 ```
@@ -428,7 +428,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/transformkeyconfiguration"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/transformkeyconfiguration"
 
 transformkeyconfiguration.TransformKeyConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/transformkeyconfiguration"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/transformkeyconfiguration"
 
 transformkeyconfiguration.TransformKeyConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ transformkeyconfiguration.TransformKeyConfiguration_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/transformkeyconfiguration"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/transformkeyconfiguration"
 
 transformkeyconfiguration.TransformKeyConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ transformkeyconfiguration.TransformKeyConfiguration_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/transformkeyconfiguration"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/transformkeyconfiguration"
 
 transformkeyconfiguration.TransformKeyConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.transformKeyConfiguration.TransformKeyConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/transformkeyconfiguration"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/transformkeyconfiguration"
 
 &transformkeyconfiguration.TransformKeyConfigurationConfig {
 	Connection: interface{},

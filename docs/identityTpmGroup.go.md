@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.identityTpmGroup.IdentityTpmGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/identitytpmgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/identitytpmgroup"
 
 identitytpmgroup.NewIdentityTpmGroup(scope Construct, id *string, config IdentityTpmGroupConfig) IdentityTpmGroup
 ```
@@ -428,7 +428,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.identityTpmGroup.IdentityTpmGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/identitytpmgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/identitytpmgroup"
 
 identitytpmgroup.IdentityTpmGroup_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.identityTpmGroup.IdentityTpmGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/identitytpmgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/identitytpmgroup"
 
 identitytpmgroup.IdentityTpmGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ identitytpmgroup.IdentityTpmGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.identityTpmGroup.IdentityTpmGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/identitytpmgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/identitytpmgroup"
 
 identitytpmgroup.IdentityTpmGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ identitytpmgroup.IdentityTpmGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.identityTpmGroup.IdentityTpmGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/identitytpmgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/identitytpmgroup"
 
 identitytpmgroup.IdentityTpmGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -816,7 +816,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.identityTpmGroup.IdentityTpmGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/identitytpmgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/identitytpmgroup"
 
 &identitytpmgroup.IdentityTpmGroupConfig {
 	Connection: interface{},

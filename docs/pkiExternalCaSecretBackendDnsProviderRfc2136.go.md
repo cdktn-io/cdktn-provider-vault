@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderRfc2136.PkiExternalCaSecretBackendDnsProviderRfc2136.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderrfc2136"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderrfc2136"
 
 pkiexternalcasecretbackenddnsproviderrfc2136.NewPkiExternalCaSecretBackendDnsProviderRfc2136(scope Construct, id *string, config PkiExternalCaSecretBackendDnsProviderRfc2136Config) PkiExternalCaSecretBackendDnsProviderRfc2136
 ```
@@ -421,7 +421,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderRfc2136.PkiExternalCaSecretBackendDnsProviderRfc2136.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderrfc2136"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderrfc2136"
 
 pkiexternalcasecretbackenddnsproviderrfc2136.PkiExternalCaSecretBackendDnsProviderRfc2136_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderRfc2136.PkiExternalCaSecretBackendDnsProviderRfc2136.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderrfc2136"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderrfc2136"
 
 pkiexternalcasecretbackenddnsproviderrfc2136.PkiExternalCaSecretBackendDnsProviderRfc2136_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ pkiexternalcasecretbackenddnsproviderrfc2136.PkiExternalCaSecretBackendDnsProvid
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderRfc2136.PkiExternalCaSecretBackendDnsProviderRfc2136.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderrfc2136"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderrfc2136"
 
 pkiexternalcasecretbackenddnsproviderrfc2136.PkiExternalCaSecretBackendDnsProviderRfc2136_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ pkiexternalcasecretbackenddnsproviderrfc2136.PkiExternalCaSecretBackendDnsProvid
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderRfc2136.PkiExternalCaSecretBackendDnsProviderRfc2136.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderrfc2136"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderrfc2136"
 
 pkiexternalcasecretbackenddnsproviderrfc2136.PkiExternalCaSecretBackendDnsProviderRfc2136_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -954,7 +954,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderRfc2136.PkiExternalCaSecretBackendDnsProviderRfc2136Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderrfc2136"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderrfc2136"
 
 &pkiexternalcasecretbackenddnsproviderrfc2136.PkiExternalCaSecretBackendDnsProviderRfc2136Config {
 	Connection: interface{},

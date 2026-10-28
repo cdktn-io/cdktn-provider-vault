@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderAwsRoute53.PkiExternalCaSecretBackendDnsProviderAwsRoute53.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderawsroute53"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderawsroute53"
 
 pkiexternalcasecretbackenddnsproviderawsroute53.NewPkiExternalCaSecretBackendDnsProviderAwsRoute53(scope Construct, id *string, config PkiExternalCaSecretBackendDnsProviderAwsRoute53Config) PkiExternalCaSecretBackendDnsProviderAwsRoute53
 ```
@@ -470,7 +470,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderAwsRoute53.PkiExternalCaSecretBackendDnsProviderAwsRoute53.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderawsroute53"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderawsroute53"
 
 pkiexternalcasecretbackenddnsproviderawsroute53.PkiExternalCaSecretBackendDnsProviderAwsRoute53_IsConstruct(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderAwsRoute53.PkiExternalCaSecretBackendDnsProviderAwsRoute53.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderawsroute53"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderawsroute53"
 
 pkiexternalcasecretbackenddnsproviderawsroute53.PkiExternalCaSecretBackendDnsProviderAwsRoute53_IsTerraformElement(x interface{}) *bool
 ```
@@ -516,7 +516,7 @@ pkiexternalcasecretbackenddnsproviderawsroute53.PkiExternalCaSecretBackendDnsPro
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderAwsRoute53.PkiExternalCaSecretBackendDnsProviderAwsRoute53.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderawsroute53"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderawsroute53"
 
 pkiexternalcasecretbackenddnsproviderawsroute53.PkiExternalCaSecretBackendDnsProviderAwsRoute53_IsTerraformResource(x interface{}) *bool
 ```
@@ -530,7 +530,7 @@ pkiexternalcasecretbackenddnsproviderawsroute53.PkiExternalCaSecretBackendDnsPro
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderAwsRoute53.PkiExternalCaSecretBackendDnsProviderAwsRoute53.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderawsroute53"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderawsroute53"
 
 pkiexternalcasecretbackenddnsproviderawsroute53.PkiExternalCaSecretBackendDnsProviderAwsRoute53_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1069,7 +1069,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.pkiExternalCaSecretBackendDnsProviderAwsRoute53.PkiExternalCaSecretBackendDnsProviderAwsRoute53Config.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkiexternalcasecretbackenddnsproviderawsroute53"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkiexternalcasecretbackenddnsproviderawsroute53"
 
 &pkiexternalcasecretbackenddnsproviderawsroute53.PkiExternalCaSecretBackendDnsProviderAwsRoute53Config {
 	Connection: interface{},

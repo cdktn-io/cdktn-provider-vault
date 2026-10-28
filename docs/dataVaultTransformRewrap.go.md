@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultTransformRewrap.DataVaultTransformRewrap.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/datavaulttransformrewrap"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/datavaulttransformrewrap"
 
 datavaulttransformrewrap.NewDataVaultTransformRewrap(scope Construct, id *string, config DataVaultTransformRewrapConfig) DataVaultTransformRewrap
 ```
@@ -361,7 +361,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.dataVaultTransformRewrap.DataVaultTransformRewrap.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/datavaulttransformrewrap"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/datavaulttransformrewrap"
 
 datavaulttransformrewrap.DataVaultTransformRewrap_IsConstruct(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.dataVaultTransformRewrap.DataVaultTransformRewrap.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/datavaulttransformrewrap"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/datavaulttransformrewrap"
 
 datavaulttransformrewrap.DataVaultTransformRewrap_IsTerraformElement(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ datavaulttransformrewrap.DataVaultTransformRewrap_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-vault.dataVaultTransformRewrap.DataVaultTransformRewrap.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/datavaulttransformrewrap"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/datavaulttransformrewrap"
 
 datavaulttransformrewrap.DataVaultTransformRewrap_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ datavaulttransformrewrap.DataVaultTransformRewrap_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.dataVaultTransformRewrap.DataVaultTransformRewrap.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/datavaulttransformrewrap"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/datavaulttransformrewrap"
 
 datavaulttransformrewrap.DataVaultTransformRewrap_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -881,7 +881,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.dataVaultTransformRewrap.DataVaultTransformRewrapConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/datavaulttransformrewrap"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/datavaulttransformrewrap"
 
 &datavaulttransformrewrap.DataVaultTransformRewrapConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultGcpkmsDecrypt.EphemeralVaultGcpkmsDecrypt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpkmsdecrypt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultgcpkmsdecrypt"
 
 ephemeralvaultgcpkmsdecrypt.NewEphemeralVaultGcpkmsDecrypt(scope Construct, id *string, config EphemeralVaultGcpkmsDecryptConfig) EphemeralVaultGcpkmsDecrypt
 ```
@@ -323,7 +323,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultGcpkmsDecrypt.EphemeralVaultGcpkmsDecrypt.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpkmsdecrypt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultgcpkmsdecrypt"
 
 ephemeralvaultgcpkmsdecrypt.EphemeralVaultGcpkmsDecrypt_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultGcpkmsDecrypt.EphemeralVaultGcpkmsDecrypt.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpkmsdecrypt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultgcpkmsdecrypt"
 
 ephemeralvaultgcpkmsdecrypt.EphemeralVaultGcpkmsDecrypt_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ ephemeralvaultgcpkmsdecrypt.EphemeralVaultGcpkmsDecrypt_IsTerraformElement(x int
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultGcpkmsDecrypt.EphemeralVaultGcpkmsDecrypt.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpkmsdecrypt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultgcpkmsdecrypt"
 
 ephemeralvaultgcpkmsdecrypt.EphemeralVaultGcpkmsDecrypt_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultGcpkmsDecrypt.EphemeralVaultGcpkmsDecryptConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultgcpkmsdecrypt"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultgcpkmsdecrypt"
 
 &ephemeralvaultgcpkmsdecrypt.EphemeralVaultGcpkmsDecryptConfig {
 	Count: interface{},

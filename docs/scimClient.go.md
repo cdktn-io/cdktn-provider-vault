@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.scimClient.ScimClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/scimclient"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/scimclient"
 
 scimclient.NewScimClient(scope Construct, id *string, config ScimClientConfig) ScimClient
 ```
@@ -490,7 +490,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.scimClient.ScimClient.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/scimclient"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/scimclient"
 
 scimclient.ScimClient_IsConstruct(x interface{}) *bool
 ```
@@ -522,7 +522,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.scimClient.ScimClient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/scimclient"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/scimclient"
 
 scimclient.ScimClient_IsTerraformElement(x interface{}) *bool
 ```
@@ -536,7 +536,7 @@ scimclient.ScimClient_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.scimClient.ScimClient.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/scimclient"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/scimclient"
 
 scimclient.ScimClient_IsTerraformResource(x interface{}) *bool
 ```
@@ -550,7 +550,7 @@ scimclient.ScimClient_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.scimClient.ScimClient.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/scimclient"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/scimclient"
 
 scimclient.ScimClient_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1087,7 +1087,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.scimClient.ScimClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/scimclient"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/scimclient"
 
 &scimclient.ScimClientConfig {
 	Connection: interface{},
@@ -1109,7 +1109,7 @@ import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/scimclient"
 	MaxActiveTokens: *f64,
 	MaxTokenTtl: *f64,
 	Namespace: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-vault-go/vault/v18.scimClient.ScimClientTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-vault-go/vault/v19.scimClient.ScimClientTimeouts,
 }
 ```
 
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.scimClient.ScimClientTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/scimclient"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/scimclient"
 
 &scimclient.ScimClientTimeouts {
 	Delete: *string,
@@ -1440,7 +1440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.scimClient.ScimClientTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/scimclient"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/scimclient"
 
 scimclient.NewScimClientTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ScimClientTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiSecretBackendWrappedKeyImport.PkiSecretBackendWrappedKeyImport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkisecretbackendwrappedkeyimport"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkisecretbackendwrappedkeyimport"
 
 pkisecretbackendwrappedkeyimport.NewPkiSecretBackendWrappedKeyImport(scope Construct, id *string, config PkiSecretBackendWrappedKeyImportConfig) PkiSecretBackendWrappedKeyImport
 ```
@@ -414,7 +414,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.pkiSecretBackendWrappedKeyImport.PkiSecretBackendWrappedKeyImport.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkisecretbackendwrappedkeyimport"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkisecretbackendwrappedkeyimport"
 
 pkisecretbackendwrappedkeyimport.PkiSecretBackendWrappedKeyImport_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.pkiSecretBackendWrappedKeyImport.PkiSecretBackendWrappedKeyImport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkisecretbackendwrappedkeyimport"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkisecretbackendwrappedkeyimport"
 
 pkisecretbackendwrappedkeyimport.PkiSecretBackendWrappedKeyImport_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ pkisecretbackendwrappedkeyimport.PkiSecretBackendWrappedKeyImport_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.pkiSecretBackendWrappedKeyImport.PkiSecretBackendWrappedKeyImport.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkisecretbackendwrappedkeyimport"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkisecretbackendwrappedkeyimport"
 
 pkisecretbackendwrappedkeyimport.PkiSecretBackendWrappedKeyImport_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ pkisecretbackendwrappedkeyimport.PkiSecretBackendWrappedKeyImport_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.pkiSecretBackendWrappedKeyImport.PkiSecretBackendWrappedKeyImport.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkisecretbackendwrappedkeyimport"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkisecretbackendwrappedkeyimport"
 
 pkisecretbackendwrappedkeyimport.PkiSecretBackendWrappedKeyImport_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -839,7 +839,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.pkiSecretBackendWrappedKeyImport.PkiSecretBackendWrappedKeyImportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/pkisecretbackendwrappedkeyimport"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/pkisecretbackendwrappedkeyimport"
 
 &pkisecretbackendwrappedkeyimport.PkiSecretBackendWrappedKeyImportConfig {
 	Connection: interface{},
