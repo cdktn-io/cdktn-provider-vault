@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/azuresecretbackendstaticrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/azuresecretbackendstaticrole"
 
 azuresecretbackendstaticrole.NewAzureSecretBackendStaticRole(scope Construct, id *string, config AzureSecretBackendStaticRoleConfig) AzureSecretBackendStaticRole
 ```
@@ -477,7 +477,7 @@ func ResetTtl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/azuresecretbackendstaticrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/azuresecretbackendstaticrole"
 
 azuresecretbackendstaticrole.AzureSecretBackendStaticRole_IsConstruct(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/azuresecretbackendstaticrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/azuresecretbackendstaticrole"
 
 azuresecretbackendstaticrole.AzureSecretBackendStaticRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -523,7 +523,7 @@ azuresecretbackendstaticrole.AzureSecretBackendStaticRole_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/azuresecretbackendstaticrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/azuresecretbackendstaticrole"
 
 azuresecretbackendstaticrole.AzureSecretBackendStaticRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ azuresecretbackendstaticrole.AzureSecretBackendStaticRole_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/azuresecretbackendstaticrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/azuresecretbackendstaticrole"
 
 azuresecretbackendstaticrole.AzureSecretBackendStaticRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1087,7 +1087,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/azuresecretbackendstaticrole"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/azuresecretbackendstaticrole"
 
 &azuresecretbackendstaticrole.AzureSecretBackendStaticRoleConfig {
 	Connection: interface{},

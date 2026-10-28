@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.kerberosAuthBackendGroup.KerberosAuthBackendGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/kerberosauthbackendgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/kerberosauthbackendgroup"
 
 kerberosauthbackendgroup.NewKerberosAuthBackendGroup(scope Construct, id *string, config KerberosAuthBackendGroupConfig) KerberosAuthBackendGroup
 ```
@@ -414,7 +414,7 @@ func ResetPolicies()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.kerberosAuthBackendGroup.KerberosAuthBackendGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/kerberosauthbackendgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/kerberosauthbackendgroup"
 
 kerberosauthbackendgroup.KerberosAuthBackendGroup_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.kerberosAuthBackendGroup.KerberosAuthBackendGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/kerberosauthbackendgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/kerberosauthbackendgroup"
 
 kerberosauthbackendgroup.KerberosAuthBackendGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ kerberosauthbackendgroup.KerberosAuthBackendGroup_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-vault.kerberosAuthBackendGroup.KerberosAuthBackendGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/kerberosauthbackendgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/kerberosauthbackendgroup"
 
 kerberosauthbackendgroup.KerberosAuthBackendGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ kerberosauthbackendgroup.KerberosAuthBackendGroup_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-vault.kerberosAuthBackendGroup.KerberosAuthBackendGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/kerberosauthbackendgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/kerberosauthbackendgroup"
 
 kerberosauthbackendgroup.KerberosAuthBackendGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.kerberosAuthBackendGroup.KerberosAuthBackendGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/kerberosauthbackendgroup"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/kerberosauthbackendgroup"
 
 &kerberosauthbackendgroup.KerberosAuthBackendGroupConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultPkiSecretBackendCaKeyExport.EphemeralVaultPkiSecretBackendCaKeyExport.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultpkisecretbackendcakeyexport"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultpkisecretbackendcakeyexport"
 
 ephemeralvaultpkisecretbackendcakeyexport.NewEphemeralVaultPkiSecretBackendCaKeyExport(scope Construct, id *string, config EphemeralVaultPkiSecretBackendCaKeyExportConfig) EphemeralVaultPkiSecretBackendCaKeyExport
 ```
@@ -309,7 +309,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultPkiSecretBackendCaKeyExport.EphemeralVaultPkiSecretBackendCaKeyExport.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultpkisecretbackendcakeyexport"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultpkisecretbackendcakeyexport"
 
 ephemeralvaultpkisecretbackendcakeyexport.EphemeralVaultPkiSecretBackendCaKeyExport_IsConstruct(x interface{}) *bool
 ```
@@ -341,7 +341,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultPkiSecretBackendCaKeyExport.EphemeralVaultPkiSecretBackendCaKeyExport.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultpkisecretbackendcakeyexport"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultpkisecretbackendcakeyexport"
 
 ephemeralvaultpkisecretbackendcakeyexport.EphemeralVaultPkiSecretBackendCaKeyExport_IsTerraformElement(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ ephemeralvaultpkisecretbackendcakeyexport.EphemeralVaultPkiSecretBackendCaKeyExp
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultPkiSecretBackendCaKeyExport.EphemeralVaultPkiSecretBackendCaKeyExport.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultpkisecretbackendcakeyexport"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultpkisecretbackendcakeyexport"
 
 ephemeralvaultpkisecretbackendcakeyexport.EphemeralVaultPkiSecretBackendCaKeyExport_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -675,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultPkiSecretBackendCaKeyExport.EphemeralVaultPkiSecretBackendCaKeyExportConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultpkisecretbackendcakeyexport"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultpkisecretbackendcakeyexport"
 
 &ephemeralvaultpkisecretbackendcakeyexport.EphemeralVaultPkiSecretBackendCaKeyExportConfig {
 	Count: interface{},

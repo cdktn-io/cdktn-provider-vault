@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.ephemeralVaultKerberosAuthBackendLogin.EphemeralVaultKerberosAuthBackendLogin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkerberosauthbackendlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultkerberosauthbackendlogin"
 
 ephemeralvaultkerberosauthbackendlogin.NewEphemeralVaultKerberosAuthBackendLogin(scope Construct, id *string, config EphemeralVaultKerberosAuthBackendLoginConfig) EphemeralVaultKerberosAuthBackendLogin
 ```
@@ -323,7 +323,7 @@ func ResetRemoveInstanceName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-vault.ephemeralVaultKerberosAuthBackendLogin.EphemeralVaultKerberosAuthBackendLogin.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkerberosauthbackendlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultkerberosauthbackendlogin"
 
 ephemeralvaultkerberosauthbackendlogin.EphemeralVaultKerberosAuthBackendLogin_IsConstruct(x interface{}) *bool
 ```
@@ -355,7 +355,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-vault.ephemeralVaultKerberosAuthBackendLogin.EphemeralVaultKerberosAuthBackendLogin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkerberosauthbackendlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultkerberosauthbackendlogin"
 
 ephemeralvaultkerberosauthbackendlogin.EphemeralVaultKerberosAuthBackendLogin_IsTerraformElement(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ ephemeralvaultkerberosauthbackendlogin.EphemeralVaultKerberosAuthBackendLogin_Is
 ##### `IsTerraformEphemeralResource` <a name="IsTerraformEphemeralResource" id="@cdktn/provider-vault.ephemeralVaultKerberosAuthBackendLogin.EphemeralVaultKerberosAuthBackendLogin.isTerraformEphemeralResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkerberosauthbackendlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultkerberosauthbackendlogin"
 
 ephemeralvaultkerberosauthbackendlogin.EphemeralVaultKerberosAuthBackendLogin_IsTerraformEphemeralResource(x interface{}) *bool
 ```
@@ -876,7 +876,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-vault.ephemeralVaultKerberosAuthBackendLogin.EphemeralVaultKerberosAuthBackendLoginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v18/ephemeralvaultkerberosauthbackendlogin"
+import "github.com/cdktn-io/cdktn-provider-vault-go/vault/v19/ephemeralvaultkerberosauthbackendlogin"
 
 &ephemeralvaultkerberosauthbackendlogin.EphemeralVaultKerberosAuthBackendLoginConfig {
 	Count: interface{},
