@@ -4,7 +4,7 @@
 
 ### AzureSecretBackendStaticRole <a name="AzureSecretBackendStaticRole" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role vault_azure_secret_backend_static_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.azureSecretBackendStaticRole.AzureSecretBackendStaticRole.Initializer"></a>
 
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 Application object ID for an existing service principal that is managed by the static role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#application_object_id AzureSecretBackendStaticRole#application_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#application_object_id AzureSecretBackendStaticRole#application_object_id}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The path where the Azure secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#backend AzureSecretBackendStaticRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#backend AzureSecretBackendStaticRole#backend}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the static role to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#role AzureSecretBackendStaticRole#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#role AzureSecretBackendStaticRole#role}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The plaintext secret value of the credential you want to import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#client_secret AzureSecretBackendStaticRole#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#client_secret AzureSecretBackendStaticRole#client_secret}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, the initial creation of credentials will be deferred until first static-creds read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#defer_initial_creds AzureSecretBackendStaticRole#defer_initial_creds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#defer_initial_creds AzureSecretBackendStaticRole#defer_initial_creds}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A future expiration time for the imported credential, in RFC3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#expiration AzureSecretBackendStaticRole#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#expiration AzureSecretBackendStaticRole#expiration}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A map of string key/value pairs that will be stored as metadata on the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#metadata AzureSecretBackendStaticRole#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#metadata AzureSecretBackendStaticRole#metadata}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#namespace AzureSecretBackendStaticRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#namespace AzureSecretBackendStaticRole#namespace}
 
 ---
 
@@ -212,7 +212,7 @@ Amount of time (in seconds) that active and staged credentials are permitted to 
 
 Must not exceed (rotation_period - 1h) / 2. Set to -1 to disable overlap or 0 to use the default value of 5 minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#rotation_grace_period AzureSecretBackendStaticRole#rotation_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#rotation_grace_period AzureSecretBackendStaticRole#rotation_grace_period}
 
 ---
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Timespan of 1 month or more during which the role credentials are valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#rotation_period AzureSecretBackendStaticRole#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#rotation_period AzureSecretBackendStaticRole#rotation_period}
 
 ---
 
@@ -234,7 +234,7 @@ Enable or disable seamless rotation for the role.
 
 When enabled, allows the plugin to pre-provision the next credential to avoid propagation delays.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#seamless_rotation AzureSecretBackendStaticRole#seamless_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#seamless_rotation AzureSecretBackendStaticRole#seamless_rotation}
 
 ---
 
@@ -244,7 +244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The secret ID of the Azure password credential you want to import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#secret_id AzureSecretBackendStaticRole#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#secret_id AzureSecretBackendStaticRole#secret_id}
 
 ---
 
@@ -254,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, skip rotation of the client secret on import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#skip_import_rotation AzureSecretBackendStaticRole#skip_import_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#skip_import_rotation AzureSecretBackendStaticRole#skip_import_rotation}
 
 ---
 
@@ -264,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Timespan of 1 month or more during which the role credentials are valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#ttl AzureSecretBackendStaticRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#ttl AzureSecretBackendStaticRole#ttl}
 
 ---
 
@@ -790,7 +790,7 @@ The construct id used in the generated config for the AzureSecretBackendStaticRo
 
 The id of the existing AzureSecretBackendStaticRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1446,7 +1446,7 @@ public java.lang.String getApplicationObjectId();
 
 Application object ID for an existing service principal that is managed by the static role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#application_object_id AzureSecretBackendStaticRole#application_object_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#application_object_id AzureSecretBackendStaticRole#application_object_id}
 
 ---
 
@@ -1460,7 +1460,7 @@ public java.lang.String getBackend();
 
 The path where the Azure secrets backend is mounted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#backend AzureSecretBackendStaticRole#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#backend AzureSecretBackendStaticRole#backend}
 
 ---
 
@@ -1474,7 +1474,7 @@ public java.lang.String getRole();
 
 Name of the static role to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#role AzureSecretBackendStaticRole#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#role AzureSecretBackendStaticRole#role}
 
 ---
 
@@ -1488,7 +1488,7 @@ public java.lang.String getClientSecret();
 
 The plaintext secret value of the credential you want to import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#client_secret AzureSecretBackendStaticRole#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#client_secret AzureSecretBackendStaticRole#client_secret}
 
 ---
 
@@ -1502,7 +1502,7 @@ public java.lang.Boolean|IResolvable getDeferInitialCreds();
 
 If true, the initial creation of credentials will be deferred until first static-creds read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#defer_initial_creds AzureSecretBackendStaticRole#defer_initial_creds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#defer_initial_creds AzureSecretBackendStaticRole#defer_initial_creds}
 
 ---
 
@@ -1516,7 +1516,7 @@ public java.lang.String getExpiration();
 
 A future expiration time for the imported credential, in RFC3339 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#expiration AzureSecretBackendStaticRole#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#expiration AzureSecretBackendStaticRole#expiration}
 
 ---
 
@@ -1530,7 +1530,7 @@ public java.util.Map<java.lang.String, java.lang.String> getMetadata();
 
 A map of string key/value pairs that will be stored as metadata on the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#metadata AzureSecretBackendStaticRole#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#metadata AzureSecretBackendStaticRole#metadata}
 
 ---
 
@@ -1544,7 +1544,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#namespace AzureSecretBackendStaticRole#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#namespace AzureSecretBackendStaticRole#namespace}
 
 ---
 
@@ -1560,7 +1560,7 @@ Amount of time (in seconds) that active and staged credentials are permitted to 
 
 Must not exceed (rotation_period - 1h) / 2. Set to -1 to disable overlap or 0 to use the default value of 5 minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#rotation_grace_period AzureSecretBackendStaticRole#rotation_grace_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#rotation_grace_period AzureSecretBackendStaticRole#rotation_grace_period}
 
 ---
 
@@ -1574,7 +1574,7 @@ public java.lang.Number getRotationPeriod();
 
 Timespan of 1 month or more during which the role credentials are valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#rotation_period AzureSecretBackendStaticRole#rotation_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#rotation_period AzureSecretBackendStaticRole#rotation_period}
 
 ---
 
@@ -1590,7 +1590,7 @@ Enable or disable seamless rotation for the role.
 
 When enabled, allows the plugin to pre-provision the next credential to avoid propagation delays.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#seamless_rotation AzureSecretBackendStaticRole#seamless_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#seamless_rotation AzureSecretBackendStaticRole#seamless_rotation}
 
 ---
 
@@ -1604,7 +1604,7 @@ public java.lang.String getSecretId();
 
 The secret ID of the Azure password credential you want to import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#secret_id AzureSecretBackendStaticRole#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#secret_id AzureSecretBackendStaticRole#secret_id}
 
 ---
 
@@ -1618,7 +1618,7 @@ public java.lang.Boolean|IResolvable getSkipImportRotation();
 
 If true, skip rotation of the client secret on import.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#skip_import_rotation AzureSecretBackendStaticRole#skip_import_rotation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#skip_import_rotation AzureSecretBackendStaticRole#skip_import_rotation}
 
 ---
 
@@ -1632,7 +1632,7 @@ public java.lang.Number getTtl();
 
 Timespan of 1 month or more during which the role credentials are valid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/azure_secret_backend_static_role#ttl AzureSecretBackendStaticRole#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/azure_secret_backend_static_role#ttl AzureSecretBackendStaticRole#ttl}
 
 ---
 

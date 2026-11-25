@@ -4,7 +4,7 @@
 
 ### PkiSecretBackendConfigUrls <a name="PkiSecretBackendConfigUrls" id="@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_config_urls vault_pki_secret_backend_config_urls}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.resetCrlDistributionPoints">resetCrlDistributionPoints</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.resetDeltaCrlDistributionPoints">resetDeltaCrlDistributionPoints</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.resetEnableTemplating">resetEnableTemplating</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.resetIssuingCertificates">resetIssuingCertificates</a></code> | *No description.* |
@@ -398,6 +399,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetCrlDistributionPoints(): void
 ```
 
+##### `resetDeltaCrlDistributionPoints` <a name="resetDeltaCrlDistributionPoints" id="@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.resetDeltaCrlDistributionPoints"></a>
+
+```typescript
+public resetDeltaCrlDistributionPoints(): void
+```
+
 ##### `resetEnableTemplating` <a name="resetEnableTemplating" id="@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.resetEnableTemplating"></a>
 
 ```typescript
@@ -531,7 +538,7 @@ The construct id used in the generated config for the PkiSecretBackendConfigUrls
 
 The id of the existing PkiSecretBackendConfigUrls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_config_urls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_config_urls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -563,6 +570,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.crlDistributionPointsInput">crlDistributionPointsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.deltaCrlDistributionPointsInput">deltaCrlDistributionPointsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.enableTemplatingInput">enableTemplatingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.issuingCertificatesInput">issuingCertificatesInput</a></code> | <code>string[]</code> | *No description.* |
@@ -570,6 +578,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.ocspServersInput">ocspServersInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.backend">backend</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.crlDistributionPoints">crlDistributionPoints</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.deltaCrlDistributionPoints">deltaCrlDistributionPoints</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.enableTemplating">enableTemplating</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.issuingCertificates">issuingCertificates</a></code> | <code>string[]</code> | *No description.* |
@@ -740,6 +749,16 @@ public readonly crlDistributionPointsInput: string[];
 
 ---
 
+##### `deltaCrlDistributionPointsInput`<sup>Optional</sup> <a name="deltaCrlDistributionPointsInput" id="@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.deltaCrlDistributionPointsInput"></a>
+
+```typescript
+public readonly deltaCrlDistributionPointsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `enableTemplatingInput`<sup>Optional</sup> <a name="enableTemplatingInput" id="@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.enableTemplatingInput"></a>
 
 ```typescript
@@ -804,6 +823,16 @@ public readonly backend: string;
 
 ```typescript
 public readonly crlDistributionPoints: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `deltaCrlDistributionPoints`<sup>Required</sup> <a name="deltaCrlDistributionPoints" id="@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrls.property.deltaCrlDistributionPoints"></a>
+
+```typescript
+public readonly deltaCrlDistributionPoints: string[];
 ```
 
 - *Type:* string[]
@@ -903,8 +932,9 @@ const pkiSecretBackendConfigUrlsConfig: pkiSecretBackendConfigUrls.PkiSecretBack
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.backend">backend</a></code> | <code>string</code> | The path of the PKI secret backend the resource belongs to. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.crlDistributionPoints">crlDistributionPoints</a></code> | <code>string[]</code> | Specifies the URL values for the CRL Distribution Points field. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.deltaCrlDistributionPoints">deltaCrlDistributionPoints</a></code> | <code>string[]</code> | Specifies the URL values for the Delta CRL Distribution Points field. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.enableTemplating">enableTemplating</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies that templating of AIA fields is allowed. |
-| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_config_urls#id PkiSecretBackendConfigUrls#id}. |
+| <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_config_urls#id PkiSecretBackendConfigUrls#id}. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.issuingCertificates">issuingCertificates</a></code> | <code>string[]</code> | Specifies the URL values for the Issuing Certificate field. |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.ocspServers">ocspServers</a></code> | <code>string[]</code> | Specifies the URL values for the OCSP Servers field. |
@@ -991,7 +1021,7 @@ public readonly backend: string;
 
 The path of the PKI secret backend the resource belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_config_urls#backend PkiSecretBackendConfigUrls#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_config_urls#backend PkiSecretBackendConfigUrls#backend}
 
 ---
 
@@ -1005,7 +1035,21 @@ public readonly crlDistributionPoints: string[];
 
 Specifies the URL values for the CRL Distribution Points field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_config_urls#crl_distribution_points PkiSecretBackendConfigUrls#crl_distribution_points}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_config_urls#crl_distribution_points PkiSecretBackendConfigUrls#crl_distribution_points}
+
+---
+
+##### `deltaCrlDistributionPoints`<sup>Optional</sup> <a name="deltaCrlDistributionPoints" id="@cdktn/provider-vault.pkiSecretBackendConfigUrls.PkiSecretBackendConfigUrlsConfig.property.deltaCrlDistributionPoints"></a>
+
+```typescript
+public readonly deltaCrlDistributionPoints: string[];
+```
+
+- *Type:* string[]
+
+Specifies the URL values for the Delta CRL Distribution Points field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_config_urls#delta_crl_distribution_points PkiSecretBackendConfigUrls#delta_crl_distribution_points}
 
 ---
 
@@ -1019,7 +1063,7 @@ public readonly enableTemplating: boolean | IResolvable;
 
 Specifies that templating of AIA fields is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_config_urls#enable_templating PkiSecretBackendConfigUrls#enable_templating}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_config_urls#enable_templating PkiSecretBackendConfigUrls#enable_templating}
 
 ---
 
@@ -1031,7 +1075,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_config_urls#id PkiSecretBackendConfigUrls#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_config_urls#id PkiSecretBackendConfigUrls#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1048,7 +1092,7 @@ public readonly issuingCertificates: string[];
 
 Specifies the URL values for the Issuing Certificate field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_config_urls#issuing_certificates PkiSecretBackendConfigUrls#issuing_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_config_urls#issuing_certificates PkiSecretBackendConfigUrls#issuing_certificates}
 
 ---
 
@@ -1062,7 +1106,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_config_urls#namespace PkiSecretBackendConfigUrls#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_config_urls#namespace PkiSecretBackendConfigUrls#namespace}
 
 ---
 
@@ -1076,7 +1120,7 @@ public readonly ocspServers: string[];
 
 Specifies the URL values for the OCSP Servers field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_config_urls#ocsp_servers PkiSecretBackendConfigUrls#ocsp_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_config_urls#ocsp_servers PkiSecretBackendConfigUrls#ocsp_servers}
 
 ---
 

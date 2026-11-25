@@ -4,7 +4,7 @@
 
 ### PkiSecretBackendExportKey <a name="PkiSecretBackendExportKey" id="@cdktn/provider-vault.pkiSecretBackendExportKey.PkiSecretBackendExportKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_export_key vault_pki_secret_backend_export_key}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_export_key vault_pki_secret_backend_export_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.pkiSecretBackendExportKey.PkiSecretBackendExportKey.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Algorithm for the wrapping keypair.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_export_key#key_type PkiSecretBackendExportKey#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_export_key#key_type PkiSecretBackendExportKey#key_type}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Path of the PKI secrets engine mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_export_key#mount PkiSecretBackendExportKey#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_export_key#mount PkiSecretBackendExportKey#mount}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Human-readable name for this export key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_export_key#name PkiSecretBackendExportKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_export_key#name PkiSecretBackendExportKey#name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_export_key#namespace PkiSecretBackendExportKey#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_export_key#namespace PkiSecretBackendExportKey#namespace}
 
 ---
 
@@ -603,7 +603,7 @@ The construct id used in the generated config for the PkiSecretBackendExportKey 
 
 The id of the existing PkiSecretBackendExportKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_export_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_export_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1050,7 +1050,7 @@ public java.lang.String getKeyType();
 
 Algorithm for the wrapping keypair.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_export_key#key_type PkiSecretBackendExportKey#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_export_key#key_type PkiSecretBackendExportKey#key_type}
 
 ---
 
@@ -1064,7 +1064,7 @@ public java.lang.String getMount();
 
 Path of the PKI secrets engine mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_export_key#mount PkiSecretBackendExportKey#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_export_key#mount PkiSecretBackendExportKey#mount}
 
 ---
 
@@ -1078,7 +1078,7 @@ public java.lang.String getName();
 
 Human-readable name for this export key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_export_key#name PkiSecretBackendExportKey#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_export_key#name PkiSecretBackendExportKey#name}
 
 ---
 
@@ -1092,7 +1092,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_export_key#namespace PkiSecretBackendExportKey#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_export_key#namespace PkiSecretBackendExportKey#namespace}
 
 ---
 

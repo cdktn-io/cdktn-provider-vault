@@ -4,7 +4,7 @@
 
 ### JwtAuthBackend <a name="JwtAuthBackend" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend vault_jwt_auth_backend}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer"></a>
 
@@ -35,6 +35,8 @@ jwtAuthBackend.JwtAuthBackend(
   namespace: str = None,
   namespace_in_state: bool | IResolvable = None,
   oidc_client_id: str = None,
+  oidc_client_id_wo: str = None,
+  oidc_client_id_wo_version: typing.Union[int, float] = None,
   oidc_client_secret: str = None,
   oidc_client_secret_wo: str = None,
   oidc_client_secret_wo_version: typing.Union[int, float] = None,
@@ -45,7 +47,8 @@ jwtAuthBackend.JwtAuthBackend(
   path: str = None,
   provider_config: typing.Mapping[str] = None,
   tune: IResolvable | typing.List[JwtAuthBackendTune] = None,
-  type: str = None
+  type: str = None,
+  unsupported_critical_cert_extensions: typing.List[str] = None
 )
 ```
 
@@ -64,7 +67,7 @@ jwtAuthBackend.JwtAuthBackend(
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.defaultRole">default_role</a></code> | <code>str</code> | The default role to use if none is provided during login. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the auth backend. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.disableRemount">disable_remount</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#id JwtAuthBackend#id}. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#id JwtAuthBackend#id}. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.jwksCaPem">jwks_ca_pem</a></code> | <code>str</code> | The CA certificate or chain of certificates, in PEM format, to use to validate connections to the JWKS URL. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.jwksPairs">jwks_pairs</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | List of JWKS URL and optional CA certificate pairs. Cannot be used with 'jwks_url' or 'jwks_ca_pem'. Requires Vault 1.16+. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.jwksUrl">jwks_url</a></code> | <code>str</code> | JWKS URL to use to authenticate signatures. Cannot be used with 'oidc_discovery_url' or 'jwt_validation_pubkeys'. |
@@ -74,6 +77,8 @@ jwtAuthBackend.JwtAuthBackend(
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.namespaceInState">namespace_in_state</a></code> | <code>bool \| cdktn.IResolvable</code> | Pass namespace in the OIDC state parameter instead of as a separate query parameter. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.oidcClientId">oidc_client_id</a></code> | <code>str</code> | Client ID used for OIDC. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.oidcClientIdWo">oidc_client_id_wo</a></code> | <code>str</code> | Write-only Client ID used for OIDC. Use this instead of oidc_client_id to accept ephemeral values. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.oidcClientIdWoVersion">oidc_client_id_wo_version</a></code> | <code>typing.Union[int, float]</code> | Version counter for write-only oidc_client_id_wo field. Increment this value to force update of the client ID. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.oidcClientSecret">oidc_client_secret</a></code> | <code>str</code> | Client Secret used for OIDC. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.oidcClientSecretWo">oidc_client_secret_wo</a></code> | <code>str</code> | Write-only Client Secret used for OIDC. This field is recommended over oidc_client_secret for enhanced security. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.oidcClientSecretWoVersion">oidc_client_secret_wo_version</a></code> | <code>typing.Union[int, float]</code> | Version counter for write-only oidc_client_secret field. Increment this value to force update of the secret. |
@@ -83,8 +88,9 @@ jwtAuthBackend.JwtAuthBackend(
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.oidcResponseTypes">oidc_response_types</a></code> | <code>typing.List[str]</code> | The response types to request. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.path">path</a></code> | <code>str</code> | path to mount the backend. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.providerConfig">provider_config</a></code> | <code>typing.Mapping[str]</code> | Provider specific handling configuration. |
-| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.tune">tune</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune">JwtAuthBackendTune</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#tune JwtAuthBackend#tune}. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.tune">tune</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune">JwtAuthBackendTune</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#tune JwtAuthBackend#tune}. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of backend. Can be either 'jwt' or 'oidc'. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.unsupportedCriticalCertExtensions">unsupported_critical_cert_extensions</a></code> | <code>typing.List[str]</code> | A list of ASN1 OIDs of certificate extensions marked Critical that are unsupported by Vault and should be ignored. |
 
 ---
 
@@ -154,7 +160,7 @@ Must be unique amongst siblings in the same scope
 
 The value against which to match the iss claim in a JWT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#bound_issuer JwtAuthBackend#bound_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#bound_issuer JwtAuthBackend#bound_issuer}
 
 ---
 
@@ -164,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The default role to use if none is provided during login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#default_role JwtAuthBackend#default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#default_role JwtAuthBackend#default_role}
 
 ---
 
@@ -174,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The description of the auth backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#description JwtAuthBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#description JwtAuthBackend#description}
 
 ---
 
@@ -184,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#disable_remount JwtAuthBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#disable_remount JwtAuthBackend#disable_remount}
 
 ---
 
@@ -192,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#id JwtAuthBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#id JwtAuthBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -207,7 +213,7 @@ The CA certificate or chain of certificates, in PEM format, to use to validate c
 
 If not set, system certificates are used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#jwks_ca_pem JwtAuthBackend#jwks_ca_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#jwks_ca_pem JwtAuthBackend#jwks_ca_pem}
 
 ---
 
@@ -217,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 List of JWKS URL and optional CA certificate pairs. Cannot be used with 'jwks_url' or 'jwks_ca_pem'. Requires Vault 1.16+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#jwks_pairs JwtAuthBackend#jwks_pairs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#jwks_pairs JwtAuthBackend#jwks_pairs}
 
 ---
 
@@ -227,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 JWKS URL to use to authenticate signatures. Cannot be used with 'oidc_discovery_url' or 'jwt_validation_pubkeys'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#jwks_url JwtAuthBackend#jwks_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#jwks_url JwtAuthBackend#jwks_url}
 
 ---
 
@@ -237,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A list of supported signing algorithms. Defaults to [RS256].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#jwt_supported_algs JwtAuthBackend#jwt_supported_algs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#jwt_supported_algs JwtAuthBackend#jwt_supported_algs}
 
 ---
 
@@ -249,7 +255,7 @@ A list of PEM-encoded public keys to use to authenticate signatures locally.
 
 Cannot be used with 'jwks_url' or 'oidc_discovery_url'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#jwt_validation_pubkeys JwtAuthBackend#jwt_validation_pubkeys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#jwt_validation_pubkeys JwtAuthBackend#jwt_validation_pubkeys}
 
 ---
 
@@ -259,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies if the auth method is local only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#local JwtAuthBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#local JwtAuthBackend#local}
 
 ---
 
@@ -269,7 +275,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#namespace JwtAuthBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#namespace JwtAuthBackend#namespace}
 
 ---
 
@@ -281,7 +287,7 @@ Pass namespace in the OIDC state parameter instead of as a separate query parame
 
 With this setting, the allowed redirect URL(s) in Vault and on the provider side should not contain a namespace query parameter. This means only one redirect URL entry needs to be maintained on the OIDC provider side for all vault namespaces that will be authenticating against it. Defaults to true for new configs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#namespace_in_state JwtAuthBackend#namespace_in_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#namespace_in_state JwtAuthBackend#namespace_in_state}
 
 ---
 
@@ -291,7 +297,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Client ID used for OIDC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_client_id JwtAuthBackend#oidc_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_client_id JwtAuthBackend#oidc_client_id}
+
+---
+
+##### `oidc_client_id_wo`<sup>Optional</sup> <a name="oidc_client_id_wo" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.oidcClientIdWo"></a>
+
+- *Type:* str
+
+Write-only Client ID used for OIDC. Use this instead of oidc_client_id to accept ephemeral values.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_client_id_wo JwtAuthBackend#oidc_client_id_wo}
+
+---
+
+##### `oidc_client_id_wo_version`<sup>Optional</sup> <a name="oidc_client_id_wo_version" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.oidcClientIdWoVersion"></a>
+
+- *Type:* typing.Union[int, float]
+
+Version counter for write-only oidc_client_id_wo field. Increment this value to force update of the client ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_client_id_wo_version JwtAuthBackend#oidc_client_id_wo_version}
 
 ---
 
@@ -301,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Client Secret used for OIDC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_client_secret JwtAuthBackend#oidc_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_client_secret JwtAuthBackend#oidc_client_secret}
 
 ---
 
@@ -311,7 +337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Write-only Client Secret used for OIDC. This field is recommended over oidc_client_secret for enhanced security.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_client_secret_wo JwtAuthBackend#oidc_client_secret_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_client_secret_wo JwtAuthBackend#oidc_client_secret_wo}
 
 ---
 
@@ -321,7 +347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Version counter for write-only oidc_client_secret field. Increment this value to force update of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_client_secret_wo_version JwtAuthBackend#oidc_client_secret_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_client_secret_wo_version JwtAuthBackend#oidc_client_secret_wo_version}
 
 ---
 
@@ -333,7 +359,7 @@ The CA certificate or chain of certificates, in PEM format, to use to validate c
 
 If not set, system certificates are used
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_discovery_ca_pem JwtAuthBackend#oidc_discovery_ca_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_discovery_ca_pem JwtAuthBackend#oidc_discovery_ca_pem}
 
 ---
 
@@ -343,7 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The OIDC Discovery URL, without any .well-known component (base path). Cannot be used with 'jwks_url' or 'jwt_validation_pubkeys'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_discovery_url JwtAuthBackend#oidc_discovery_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_discovery_url JwtAuthBackend#oidc_discovery_url}
 
 ---
 
@@ -355,7 +381,7 @@ The response mode to be used in the OAuth2 request.
 
 Allowed values are 'query' and 'form_post'. Defaults to 'query'. If using Vault namespaces, and oidc_response_mode is 'form_post', then 'namespace_in_state' should be set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_response_mode JwtAuthBackend#oidc_response_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_response_mode JwtAuthBackend#oidc_response_mode}
 
 ---
 
@@ -367,7 +393,7 @@ The response types to request.
 
 Allowed values are 'code' and 'id_token'. Defaults to 'code'. Note: 'id_token' may only be used if 'oidc_response_mode' is set to 'form_post'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_response_types JwtAuthBackend#oidc_response_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_response_types JwtAuthBackend#oidc_response_types}
 
 ---
 
@@ -377,7 +403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 path to mount the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#path JwtAuthBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#path JwtAuthBackend#path}
 
 ---
 
@@ -387,7 +413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Provider specific handling configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#provider_config JwtAuthBackend#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#provider_config JwtAuthBackend#provider_config}
 
 ---
 
@@ -395,7 +421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune">JwtAuthBackendTune</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#tune JwtAuthBackend#tune}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#tune JwtAuthBackend#tune}.
 
 ---
 
@@ -405,7 +431,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Type of backend. Can be either 'jwt' or 'oidc'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#type JwtAuthBackend#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#type JwtAuthBackend#type}
+
+---
+
+##### `unsupported_critical_cert_extensions`<sup>Optional</sup> <a name="unsupported_critical_cert_extensions" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.Initializer.parameter.unsupportedCriticalCertExtensions"></a>
+
+- *Type:* typing.List[str]
+
+A list of ASN1 OIDs of certificate extensions marked Critical that are unsupported by Vault and should be ignored.
+
+This option should very rarely be needed except in specialized PKI environments.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#unsupported_critical_cert_extensions JwtAuthBackend#unsupported_critical_cert_extensions}
 
 ---
 
@@ -452,6 +490,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetNamespace">reset_namespace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetNamespaceInState">reset_namespace_in_state</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetOidcClientId">reset_oidc_client_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetOidcClientIdWo">reset_oidc_client_id_wo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetOidcClientIdWoVersion">reset_oidc_client_id_wo_version</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetOidcClientSecret">reset_oidc_client_secret</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetOidcClientSecretWo">reset_oidc_client_secret_wo</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetOidcClientSecretWoVersion">reset_oidc_client_secret_wo_version</a></code> | *No description.* |
@@ -463,6 +503,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetProviderConfig">reset_provider_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetTune">reset_tune</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetType">reset_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetUnsupportedCriticalCertExtensions">reset_unsupported_critical_cert_extensions</a></code> | *No description.* |
 
 ---
 
@@ -912,6 +953,18 @@ def reset_namespace_in_state() -> None
 def reset_oidc_client_id() -> None
 ```
 
+##### `reset_oidc_client_id_wo` <a name="reset_oidc_client_id_wo" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetOidcClientIdWo"></a>
+
+```python
+def reset_oidc_client_id_wo() -> None
+```
+
+##### `reset_oidc_client_id_wo_version` <a name="reset_oidc_client_id_wo_version" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetOidcClientIdWoVersion"></a>
+
+```python
+def reset_oidc_client_id_wo_version() -> None
+```
+
 ##### `reset_oidc_client_secret` <a name="reset_oidc_client_secret" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetOidcClientSecret"></a>
 
 ```python
@@ -976,6 +1029,12 @@ def reset_tune() -> None
 
 ```python
 def reset_type() -> None
+```
+
+##### `reset_unsupported_critical_cert_extensions` <a name="reset_unsupported_critical_cert_extensions" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.resetUnsupportedCriticalCertExtensions"></a>
+
+```python
+def reset_unsupported_critical_cert_extensions() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -1092,7 +1151,7 @@ The construct id used in the generated config for the JwtAuthBackend to import.
 
 The id of the existing JwtAuthBackend that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1138,6 +1197,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.namespaceInStateInput">namespace_in_state_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientIdInput">oidc_client_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientIdWoInput">oidc_client_id_wo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientIdWoVersionInput">oidc_client_id_wo_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientSecretInput">oidc_client_secret_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientSecretWoInput">oidc_client_secret_wo_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientSecretWoVersionInput">oidc_client_secret_wo_version_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1149,6 +1210,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.providerConfigInput">provider_config_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.tuneInput">tune_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune">JwtAuthBackendTune</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.unsupportedCriticalCertExtensionsInput">unsupported_critical_cert_extensions_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.boundIssuer">bound_issuer</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.defaultRole">default_role</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.description">description</a></code> | <code>str</code> | *No description.* |
@@ -1163,6 +1225,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.namespaceInState">namespace_in_state</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientId">oidc_client_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientIdWo">oidc_client_id_wo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientIdWoVersion">oidc_client_id_wo_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientSecret">oidc_client_secret</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientSecretWo">oidc_client_secret_wo</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientSecretWoVersion">oidc_client_secret_wo_version</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1173,6 +1237,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.path">path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.providerConfig">provider_config</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.unsupportedCriticalCertExtensions">unsupported_critical_cert_extensions</a></code> | <code>typing.List[str]</code> | *No description.* |
 
 ---
 
@@ -1478,6 +1543,26 @@ oidc_client_id_input: str
 
 ---
 
+##### `oidc_client_id_wo_input`<sup>Optional</sup> <a name="oidc_client_id_wo_input" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientIdWoInput"></a>
+
+```python
+oidc_client_id_wo_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `oidc_client_id_wo_version_input`<sup>Optional</sup> <a name="oidc_client_id_wo_version_input" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientIdWoVersionInput"></a>
+
+```python
+oidc_client_id_wo_version_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `oidc_client_secret_input`<sup>Optional</sup> <a name="oidc_client_secret_input" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientSecretInput"></a>
 
 ```python
@@ -1585,6 +1670,16 @@ type_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `unsupported_critical_cert_extensions_input`<sup>Optional</sup> <a name="unsupported_critical_cert_extensions_input" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.unsupportedCriticalCertExtensionsInput"></a>
+
+```python
+unsupported_critical_cert_extensions_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -1728,6 +1823,28 @@ oidc_client_id: str
 
 ---
 
+##### ~~`oidc_client_id_wo`~~<sup>Required</sup> <a name="oidc_client_id_wo" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientIdWo"></a>
+
+- *Deprecated:* Write-only: the provider never returns this value; reading it always yields null by protocol contract. The getter remains for compatibility and will be removed in a future prebuilt-provider major.
+
+```python
+oidc_client_id_wo: str
+```
+
+- *Type:* str
+
+---
+
+##### `oidc_client_id_wo_version`<sup>Required</sup> <a name="oidc_client_id_wo_version" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientIdWoVersion"></a>
+
+```python
+oidc_client_id_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `oidc_client_secret`<sup>Required</sup> <a name="oidc_client_secret" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.oidcClientSecret"></a>
 
 ```python
@@ -1830,6 +1947,16 @@ type: str
 
 ---
 
+##### `unsupported_critical_cert_extensions`<sup>Required</sup> <a name="unsupported_critical_cert_extensions" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackend.property.unsupportedCriticalCertExtensions"></a>
+
+```python
+unsupported_critical_cert_extensions: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1879,6 +2006,8 @@ jwtAuthBackend.JwtAuthBackendConfig(
   namespace: str = None,
   namespace_in_state: bool | IResolvable = None,
   oidc_client_id: str = None,
+  oidc_client_id_wo: str = None,
+  oidc_client_id_wo_version: typing.Union[int, float] = None,
   oidc_client_secret: str = None,
   oidc_client_secret_wo: str = None,
   oidc_client_secret_wo_version: typing.Union[int, float] = None,
@@ -1889,7 +2018,8 @@ jwtAuthBackend.JwtAuthBackendConfig(
   path: str = None,
   provider_config: typing.Mapping[str] = None,
   tune: IResolvable | typing.List[JwtAuthBackendTune] = None,
-  type: str = None
+  type: str = None,
+  unsupported_critical_cert_extensions: typing.List[str] = None
 )
 ```
 
@@ -1908,7 +2038,7 @@ jwtAuthBackend.JwtAuthBackendConfig(
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.defaultRole">default_role</a></code> | <code>str</code> | The default role to use if none is provided during login. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.description">description</a></code> | <code>str</code> | The description of the auth backend. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.disableRemount">disable_remount</a></code> | <code>bool \| cdktn.IResolvable</code> | If set, opts out of mount migration on path updates. |
-| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#id JwtAuthBackend#id}. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#id JwtAuthBackend#id}. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.jwksCaPem">jwks_ca_pem</a></code> | <code>str</code> | The CA certificate or chain of certificates, in PEM format, to use to validate connections to the JWKS URL. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.jwksPairs">jwks_pairs</a></code> | <code>cdktn.IResolvable \| typing.List[typing.Mapping[str]]</code> | List of JWKS URL and optional CA certificate pairs. Cannot be used with 'jwks_url' or 'jwks_ca_pem'. Requires Vault 1.16+. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.jwksUrl">jwks_url</a></code> | <code>str</code> | JWKS URL to use to authenticate signatures. Cannot be used with 'oidc_discovery_url' or 'jwt_validation_pubkeys'. |
@@ -1918,6 +2048,8 @@ jwtAuthBackend.JwtAuthBackendConfig(
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.namespace">namespace</a></code> | <code>str</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.namespaceInState">namespace_in_state</a></code> | <code>bool \| cdktn.IResolvable</code> | Pass namespace in the OIDC state parameter instead of as a separate query parameter. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.oidcClientId">oidc_client_id</a></code> | <code>str</code> | Client ID used for OIDC. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.oidcClientIdWo">oidc_client_id_wo</a></code> | <code>str</code> | Write-only Client ID used for OIDC. Use this instead of oidc_client_id to accept ephemeral values. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.oidcClientIdWoVersion">oidc_client_id_wo_version</a></code> | <code>typing.Union[int, float]</code> | Version counter for write-only oidc_client_id_wo field. Increment this value to force update of the client ID. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.oidcClientSecret">oidc_client_secret</a></code> | <code>str</code> | Client Secret used for OIDC. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.oidcClientSecretWo">oidc_client_secret_wo</a></code> | <code>str</code> | Write-only Client Secret used for OIDC. This field is recommended over oidc_client_secret for enhanced security. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.oidcClientSecretWoVersion">oidc_client_secret_wo_version</a></code> | <code>typing.Union[int, float]</code> | Version counter for write-only oidc_client_secret field. Increment this value to force update of the secret. |
@@ -1927,8 +2059,9 @@ jwtAuthBackend.JwtAuthBackendConfig(
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.oidcResponseTypes">oidc_response_types</a></code> | <code>typing.List[str]</code> | The response types to request. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.path">path</a></code> | <code>str</code> | path to mount the backend. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.providerConfig">provider_config</a></code> | <code>typing.Mapping[str]</code> | Provider specific handling configuration. |
-| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.tune">tune</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune">JwtAuthBackendTune</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#tune JwtAuthBackend#tune}. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.tune">tune</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune">JwtAuthBackendTune</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#tune JwtAuthBackend#tune}. |
 | <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.type">type</a></code> | <code>str</code> | Type of backend. Can be either 'jwt' or 'oidc'. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.unsupportedCriticalCertExtensions">unsupported_critical_cert_extensions</a></code> | <code>typing.List[str]</code> | A list of ASN1 OIDs of certificate extensions marked Critical that are unsupported by Vault and should be ignored. |
 
 ---
 
@@ -2012,7 +2145,7 @@ bound_issuer: str
 
 The value against which to match the iss claim in a JWT.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#bound_issuer JwtAuthBackend#bound_issuer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#bound_issuer JwtAuthBackend#bound_issuer}
 
 ---
 
@@ -2026,7 +2159,7 @@ default_role: str
 
 The default role to use if none is provided during login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#default_role JwtAuthBackend#default_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#default_role JwtAuthBackend#default_role}
 
 ---
 
@@ -2040,7 +2173,7 @@ description: str
 
 The description of the auth backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#description JwtAuthBackend#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#description JwtAuthBackend#description}
 
 ---
 
@@ -2054,7 +2187,7 @@ disable_remount: bool | IResolvable
 
 If set, opts out of mount migration on path updates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#disable_remount JwtAuthBackend#disable_remount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#disable_remount JwtAuthBackend#disable_remount}
 
 ---
 
@@ -2066,7 +2199,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#id JwtAuthBackend#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#id JwtAuthBackend#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2085,7 +2218,7 @@ The CA certificate or chain of certificates, in PEM format, to use to validate c
 
 If not set, system certificates are used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#jwks_ca_pem JwtAuthBackend#jwks_ca_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#jwks_ca_pem JwtAuthBackend#jwks_ca_pem}
 
 ---
 
@@ -2099,7 +2232,7 @@ jwks_pairs: IResolvable | typing.List[typing.Mapping[str]]
 
 List of JWKS URL and optional CA certificate pairs. Cannot be used with 'jwks_url' or 'jwks_ca_pem'. Requires Vault 1.16+.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#jwks_pairs JwtAuthBackend#jwks_pairs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#jwks_pairs JwtAuthBackend#jwks_pairs}
 
 ---
 
@@ -2113,7 +2246,7 @@ jwks_url: str
 
 JWKS URL to use to authenticate signatures. Cannot be used with 'oidc_discovery_url' or 'jwt_validation_pubkeys'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#jwks_url JwtAuthBackend#jwks_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#jwks_url JwtAuthBackend#jwks_url}
 
 ---
 
@@ -2127,7 +2260,7 @@ jwt_supported_algs: typing.List[str]
 
 A list of supported signing algorithms. Defaults to [RS256].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#jwt_supported_algs JwtAuthBackend#jwt_supported_algs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#jwt_supported_algs JwtAuthBackend#jwt_supported_algs}
 
 ---
 
@@ -2143,7 +2276,7 @@ A list of PEM-encoded public keys to use to authenticate signatures locally.
 
 Cannot be used with 'jwks_url' or 'oidc_discovery_url'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#jwt_validation_pubkeys JwtAuthBackend#jwt_validation_pubkeys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#jwt_validation_pubkeys JwtAuthBackend#jwt_validation_pubkeys}
 
 ---
 
@@ -2157,7 +2290,7 @@ local: bool | IResolvable
 
 Specifies if the auth method is local only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#local JwtAuthBackend#local}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#local JwtAuthBackend#local}
 
 ---
 
@@ -2171,7 +2304,7 @@ namespace: str
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#namespace JwtAuthBackend#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#namespace JwtAuthBackend#namespace}
 
 ---
 
@@ -2187,7 +2320,7 @@ Pass namespace in the OIDC state parameter instead of as a separate query parame
 
 With this setting, the allowed redirect URL(s) in Vault and on the provider side should not contain a namespace query parameter. This means only one redirect URL entry needs to be maintained on the OIDC provider side for all vault namespaces that will be authenticating against it. Defaults to true for new configs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#namespace_in_state JwtAuthBackend#namespace_in_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#namespace_in_state JwtAuthBackend#namespace_in_state}
 
 ---
 
@@ -2201,7 +2334,35 @@ oidc_client_id: str
 
 Client ID used for OIDC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_client_id JwtAuthBackend#oidc_client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_client_id JwtAuthBackend#oidc_client_id}
+
+---
+
+##### `oidc_client_id_wo`<sup>Optional</sup> <a name="oidc_client_id_wo" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.oidcClientIdWo"></a>
+
+```python
+oidc_client_id_wo: str
+```
+
+- *Type:* str
+
+Write-only Client ID used for OIDC. Use this instead of oidc_client_id to accept ephemeral values.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_client_id_wo JwtAuthBackend#oidc_client_id_wo}
+
+---
+
+##### `oidc_client_id_wo_version`<sup>Optional</sup> <a name="oidc_client_id_wo_version" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.oidcClientIdWoVersion"></a>
+
+```python
+oidc_client_id_wo_version: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Version counter for write-only oidc_client_id_wo field. Increment this value to force update of the client ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_client_id_wo_version JwtAuthBackend#oidc_client_id_wo_version}
 
 ---
 
@@ -2215,7 +2376,7 @@ oidc_client_secret: str
 
 Client Secret used for OIDC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_client_secret JwtAuthBackend#oidc_client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_client_secret JwtAuthBackend#oidc_client_secret}
 
 ---
 
@@ -2229,7 +2390,7 @@ oidc_client_secret_wo: str
 
 Write-only Client Secret used for OIDC. This field is recommended over oidc_client_secret for enhanced security.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_client_secret_wo JwtAuthBackend#oidc_client_secret_wo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_client_secret_wo JwtAuthBackend#oidc_client_secret_wo}
 
 ---
 
@@ -2243,7 +2404,7 @@ oidc_client_secret_wo_version: typing.Union[int, float]
 
 Version counter for write-only oidc_client_secret field. Increment this value to force update of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_client_secret_wo_version JwtAuthBackend#oidc_client_secret_wo_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_client_secret_wo_version JwtAuthBackend#oidc_client_secret_wo_version}
 
 ---
 
@@ -2259,7 +2420,7 @@ The CA certificate or chain of certificates, in PEM format, to use to validate c
 
 If not set, system certificates are used
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_discovery_ca_pem JwtAuthBackend#oidc_discovery_ca_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_discovery_ca_pem JwtAuthBackend#oidc_discovery_ca_pem}
 
 ---
 
@@ -2273,7 +2434,7 @@ oidc_discovery_url: str
 
 The OIDC Discovery URL, without any .well-known component (base path). Cannot be used with 'jwks_url' or 'jwt_validation_pubkeys'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_discovery_url JwtAuthBackend#oidc_discovery_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_discovery_url JwtAuthBackend#oidc_discovery_url}
 
 ---
 
@@ -2289,7 +2450,7 @@ The response mode to be used in the OAuth2 request.
 
 Allowed values are 'query' and 'form_post'. Defaults to 'query'. If using Vault namespaces, and oidc_response_mode is 'form_post', then 'namespace_in_state' should be set to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_response_mode JwtAuthBackend#oidc_response_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_response_mode JwtAuthBackend#oidc_response_mode}
 
 ---
 
@@ -2305,7 +2466,7 @@ The response types to request.
 
 Allowed values are 'code' and 'id_token'. Defaults to 'code'. Note: 'id_token' may only be used if 'oidc_response_mode' is set to 'form_post'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#oidc_response_types JwtAuthBackend#oidc_response_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#oidc_response_types JwtAuthBackend#oidc_response_types}
 
 ---
 
@@ -2319,7 +2480,7 @@ path: str
 
 path to mount the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#path JwtAuthBackend#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#path JwtAuthBackend#path}
 
 ---
 
@@ -2333,7 +2494,7 @@ provider_config: typing.Mapping[str]
 
 Provider specific handling configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#provider_config JwtAuthBackend#provider_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#provider_config JwtAuthBackend#provider_config}
 
 ---
 
@@ -2345,7 +2506,7 @@ tune: IResolvable | typing.List[JwtAuthBackendTune]
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune">JwtAuthBackendTune</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#tune JwtAuthBackend#tune}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#tune JwtAuthBackend#tune}.
 
 ---
 
@@ -2359,7 +2520,23 @@ type: str
 
 Type of backend. Can be either 'jwt' or 'oidc'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#type JwtAuthBackend#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#type JwtAuthBackend#type}
+
+---
+
+##### `unsupported_critical_cert_extensions`<sup>Optional</sup> <a name="unsupported_critical_cert_extensions" id="@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendConfig.property.unsupportedCriticalCertExtensions"></a>
+
+```python
+unsupported_critical_cert_extensions: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+A list of ASN1 OIDs of certificate extensions marked Critical that are unsupported by Vault and should be ignored.
+
+This option should very rarely be needed except in specialized PKI environments.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#unsupported_critical_cert_extensions JwtAuthBackend#unsupported_critical_cert_extensions}
 
 ---
 
@@ -2386,14 +2563,14 @@ jwtAuthBackend.JwtAuthBackendTune(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#allowed_response_headers JwtAuthBackend#allowed_response_headers}. |
-| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#audit_non_hmac_request_keys JwtAuthBackend#audit_non_hmac_request_keys}. |
-| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#audit_non_hmac_response_keys JwtAuthBackend#audit_non_hmac_response_keys}. |
-| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.defaultLeaseTtl">default_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#default_lease_ttl JwtAuthBackend#default_lease_ttl}. |
-| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#listing_visibility JwtAuthBackend#listing_visibility}. |
-| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.maxLeaseTtl">max_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#max_lease_ttl JwtAuthBackend#max_lease_ttl}. |
-| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#passthrough_request_headers JwtAuthBackend#passthrough_request_headers}. |
-| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.tokenType">token_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#token_type JwtAuthBackend#token_type}. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.allowedResponseHeaders">allowed_response_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#allowed_response_headers JwtAuthBackend#allowed_response_headers}. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.auditNonHmacRequestKeys">audit_non_hmac_request_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#audit_non_hmac_request_keys JwtAuthBackend#audit_non_hmac_request_keys}. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.auditNonHmacResponseKeys">audit_non_hmac_response_keys</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#audit_non_hmac_response_keys JwtAuthBackend#audit_non_hmac_response_keys}. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.defaultLeaseTtl">default_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#default_lease_ttl JwtAuthBackend#default_lease_ttl}. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.listingVisibility">listing_visibility</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#listing_visibility JwtAuthBackend#listing_visibility}. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.maxLeaseTtl">max_lease_ttl</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#max_lease_ttl JwtAuthBackend#max_lease_ttl}. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.passthroughRequestHeaders">passthrough_request_headers</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#passthrough_request_headers JwtAuthBackend#passthrough_request_headers}. |
+| <code><a href="#@cdktn/provider-vault.jwtAuthBackend.JwtAuthBackendTune.property.tokenType">token_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#token_type JwtAuthBackend#token_type}. |
 
 ---
 
@@ -2405,7 +2582,7 @@ allowed_response_headers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#allowed_response_headers JwtAuthBackend#allowed_response_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#allowed_response_headers JwtAuthBackend#allowed_response_headers}.
 
 ---
 
@@ -2417,7 +2594,7 @@ audit_non_hmac_request_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#audit_non_hmac_request_keys JwtAuthBackend#audit_non_hmac_request_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#audit_non_hmac_request_keys JwtAuthBackend#audit_non_hmac_request_keys}.
 
 ---
 
@@ -2429,7 +2606,7 @@ audit_non_hmac_response_keys: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#audit_non_hmac_response_keys JwtAuthBackend#audit_non_hmac_response_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#audit_non_hmac_response_keys JwtAuthBackend#audit_non_hmac_response_keys}.
 
 ---
 
@@ -2441,7 +2618,7 @@ default_lease_ttl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#default_lease_ttl JwtAuthBackend#default_lease_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#default_lease_ttl JwtAuthBackend#default_lease_ttl}.
 
 ---
 
@@ -2453,7 +2630,7 @@ listing_visibility: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#listing_visibility JwtAuthBackend#listing_visibility}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#listing_visibility JwtAuthBackend#listing_visibility}.
 
 ---
 
@@ -2465,7 +2642,7 @@ max_lease_ttl: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#max_lease_ttl JwtAuthBackend#max_lease_ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#max_lease_ttl JwtAuthBackend#max_lease_ttl}.
 
 ---
 
@@ -2477,7 +2654,7 @@ passthrough_request_headers: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#passthrough_request_headers JwtAuthBackend#passthrough_request_headers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#passthrough_request_headers JwtAuthBackend#passthrough_request_headers}.
 
 ---
 
@@ -2489,7 +2666,7 @@ token_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/jwt_auth_backend#token_type JwtAuthBackend#token_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/jwt_auth_backend#token_type JwtAuthBackend#token_type}.
 
 ---
 

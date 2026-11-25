@@ -4,7 +4,7 @@
 
 ### TpmAuthBackendConfig <a name="TpmAuthBackendConfig" id="@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config vault_tpm_auth_backend_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config vault_tpm_auth_backend_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.resetAliasMode">resetAliasMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.resetCaLifetime">resetCaLifetime</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.resetCaSoftExpiry">resetCaSoftExpiry</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.resetDefaultCertTtl">resetDefaultCertTtl</a></code> | *No description.* |
@@ -390,6 +391,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetAliasMode` <a name="resetAliasMode" id="@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.resetAliasMode"></a>
+
+```typescript
+public resetAliasMode(): void
+```
+
 ##### `resetCaLifetime` <a name="resetCaLifetime" id="@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.resetCaLifetime"></a>
 
 ```typescript
@@ -517,7 +524,7 @@ The construct id used in the generated config for the TpmAuthBackendConfig to im
 
 The id of the existing TpmAuthBackendConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -547,11 +554,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.aliasModeInput">aliasModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.caLifetimeInput">caLifetimeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.caSoftExpiryInput">caSoftExpiryInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.defaultCertTtlInput">defaultCertTtlInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.mountInput">mountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.aliasMode">aliasMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.caLifetime">caLifetime</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.caSoftExpiry">caSoftExpiry</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.defaultCertTtl">defaultCertTtl</a></code> | <code>number</code> | *No description.* |
@@ -702,6 +711,16 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `aliasModeInput`<sup>Optional</sup> <a name="aliasModeInput" id="@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.aliasModeInput"></a>
+
+```typescript
+public readonly aliasModeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `caLifetimeInput`<sup>Optional</sup> <a name="caLifetimeInput" id="@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.caLifetimeInput"></a>
 
 ```typescript
@@ -746,6 +765,16 @@ public readonly mountInput: string;
 
 ```typescript
 public readonly namespaceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `aliasMode`<sup>Required</sup> <a name="aliasMode" id="@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfig.property.aliasMode"></a>
+
+```typescript
+public readonly aliasMode: string;
 ```
 
 - *Type:* string
@@ -844,6 +873,7 @@ const tpmAuthBackendConfigConfig: tpmAuthBackendConfig.TpmAuthBackendConfigConfi
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfigConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfigConfig.property.mount">mount</a></code> | <code>string</code> | Path of the enabled TPM auth backend mount to configure. |
+| <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfigConfig.property.aliasMode">aliasMode</a></code> | <code>string</code> | The identity alias name mode used at login. |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfigConfig.property.caLifetime">caLifetime</a></code> | <code>number</code> | How long each CA is valid once it becomes active, in seconds. |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfigConfig.property.caSoftExpiry">caSoftExpiry</a></code> | <code>number</code> | How long before hard expiry the active CA stops signing new certificates, in seconds. |
 | <code><a href="#@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfigConfig.property.defaultCertTtl">defaultCertTtl</a></code> | <code>number</code> | Default lifetime for issued client certificates when the role does not specify `cert_ttl`, in seconds. |
@@ -931,7 +961,23 @@ public readonly mount: string;
 
 Path of the enabled TPM auth backend mount to configure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config#mount TpmAuthBackendConfig#mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#mount TpmAuthBackendConfig#mount}
+
+---
+
+##### `aliasMode`<sup>Optional</sup> <a name="aliasMode" id="@cdktn/provider-vault.tpmAuthBackendConfig.TpmAuthBackendConfigConfig.property.aliasMode"></a>
+
+```typescript
+public readonly aliasMode: string;
+```
+
+- *Type:* string
+
+The identity alias name mode used at login.
+
+`tpm_id` uses the TPM ID, so every role used from the same TPM shares one entity. `role_id` uses the generated `role_id` of the Vault role, so each role maps to a unique entity.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#alias_mode TpmAuthBackendConfig#alias_mode}
 
 ---
 
@@ -945,7 +991,7 @@ public readonly caLifetime: number;
 
 How long each CA is valid once it becomes active, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config#ca_lifetime TpmAuthBackendConfig#ca_lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#ca_lifetime TpmAuthBackendConfig#ca_lifetime}
 
 ---
 
@@ -959,7 +1005,7 @@ public readonly caSoftExpiry: number;
 
 How long before hard expiry the active CA stops signing new certificates, in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config#ca_soft_expiry TpmAuthBackendConfig#ca_soft_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#ca_soft_expiry TpmAuthBackendConfig#ca_soft_expiry}
 
 ---
 
@@ -975,7 +1021,7 @@ Default lifetime for issued client certificates when the role does not specify `
 
 When unset or `0`, the effective TTL falls back to CA soft expiry. Vault always caps the actual certificate lifetime by the remaining validity of the signing CA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config#default_cert_ttl TpmAuthBackendConfig#default_cert_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#default_cert_ttl TpmAuthBackendConfig#default_cert_ttl}
 
 ---
 
@@ -989,7 +1035,7 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config#namespace TpmAuthBackendConfig#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#namespace TpmAuthBackendConfig#namespace}
 
 ---
 

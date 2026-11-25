@@ -4,7 +4,7 @@
 
 ### ManagedKeys <a name="ManagedKeys" id="@cdktn/provider-vault.managedKeys.ManagedKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys vault_managed_keys}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys vault_managed_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer"></a>
 
@@ -42,7 +42,7 @@ ManagedKeys.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.aws">aws</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>></code> | aws block. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.azure">azure</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>></code> | azure block. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.gcp">gcp</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a>></code> | gcp block. |
-| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#id ManagedKeys#id}. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#id ManagedKeys#id}. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeys.Initializer.parameter.pkcs">pkcs</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>></code> | pkcs block. |
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#aws ManagedKeys#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#aws ManagedKeys#aws}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#azure ManagedKeys#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#azure ManagedKeys#azure}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 gcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#gcp ManagedKeys#gcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#gcp ManagedKeys#gcp}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#id ManagedKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#id ManagedKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
 
 ---
 
@@ -165,7 +165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 pkcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
 
 ---
 
@@ -708,7 +708,7 @@ The construct id used in the generated config for the ManagedKeys to import.
 
 The id of the existing ManagedKeys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1091,7 +1091,7 @@ public java.lang.String getAccessKey();
 
 The AWS access key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#access_key ManagedKeys#access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#access_key ManagedKeys#access_key}
 
 ---
 
@@ -1105,7 +1105,7 @@ public java.lang.String getKeyBits();
 
 The size in bits for an RSA key. This field is required when 'key_type' is 'RSA'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
 
 ---
 
@@ -1119,7 +1119,7 @@ public java.lang.String getKeyType();
 
 The type of key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
 
 ---
 
@@ -1133,7 +1133,7 @@ public java.lang.String getKmsKey();
 
 An identifier for the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#kms_key ManagedKeys#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#kms_key ManagedKeys#kms_key}
 
 ---
 
@@ -1147,7 +1147,7 @@ public java.lang.String getName();
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -1161,7 +1161,7 @@ public java.lang.String getSecretKey();
 
 The AWS secret key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#secret_key ManagedKeys#secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#secret_key ManagedKeys#secret_key}
 
 ---
 
@@ -1175,7 +1175,7 @@ public java.lang.Boolean|IResolvable getAllowGenerateKey();
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -1189,7 +1189,7 @@ public java.lang.Boolean|IResolvable getAllowReplaceKey();
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -1203,7 +1203,7 @@ public java.lang.Boolean|IResolvable getAllowStoreKey();
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -1217,7 +1217,7 @@ public java.lang.Boolean|IResolvable getAnyMount();
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
 
 ---
 
@@ -1231,7 +1231,7 @@ public java.lang.String getCurve();
 
 The curve to use for an ECDSA key. Used when key_type is 'ECDSA'. Required if 'allow_generate_key' is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#curve ManagedKeys#curve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#curve ManagedKeys#curve}
 
 ---
 
@@ -1245,7 +1245,7 @@ public java.lang.String getEndpoint();
 
 Used to specify a custom AWS endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#endpoint ManagedKeys#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#endpoint ManagedKeys#endpoint}
 
 ---
 
@@ -1259,7 +1259,7 @@ public java.lang.String getRegion();
 
 The AWS region where the keys are stored (or will be stored).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#region ManagedKeys#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#region ManagedKeys#region}
 
 ---
 
@@ -1275,7 +1275,7 @@ A list of the allowed usages of this key.
 
 Valid values are encrypt, decrypt, sign, verify, wrap, unwrap, mac, and generate_random. Default values are sign and verify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#usages ManagedKeys#usages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#usages ManagedKeys#usages}
 
 ---
 
@@ -1298,6 +1298,7 @@ ManagedKeysAzure.builder()
 //  .allowReplaceKey(java.lang.Boolean|IResolvable)
 //  .allowStoreKey(java.lang.Boolean|IResolvable)
 //  .anyMount(java.lang.Boolean|IResolvable)
+//  .encryptionMode(java.lang.String)
 //  .environment(java.lang.String)
 //  .keyBits(java.lang.String)
 //  .resource(java.lang.String)
@@ -1320,6 +1321,7 @@ ManagedKeysAzure.builder()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure.property.allowReplaceKey">allowReplaceKey</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure.property.allowStoreKey">allowStoreKey</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure.property.anyMount">anyMount</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Allow usage from any mount point within the namespace if 'true'. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure.property.encryptionMode">encryptionMode</a></code> | <code>java.lang.String</code> | The encryption mode to use for the key. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure.property.environment">environment</a></code> | <code>java.lang.String</code> | The Azure Cloud environment API endpoints to use. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure.property.keyBits">keyBits</a></code> | <code>java.lang.String</code> | The size in bits for an RSA key. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure.property.resource">resource</a></code> | <code>java.lang.String</code> | The Azure Key Vault resource's DNS Suffix to connect to. |
@@ -1337,7 +1339,7 @@ public java.lang.String getClientId();
 
 The client id for credentials to query the Azure APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#client_id ManagedKeys#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#client_id ManagedKeys#client_id}
 
 ---
 
@@ -1351,7 +1353,7 @@ public java.lang.String getClientSecret();
 
 The client secret for credentials to query the Azure APIs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#client_secret ManagedKeys#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#client_secret ManagedKeys#client_secret}
 
 ---
 
@@ -1365,7 +1367,7 @@ public java.lang.String getKeyName();
 
 The Key Vault key to use for encryption and decryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#key_name ManagedKeys#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#key_name ManagedKeys#key_name}
 
 ---
 
@@ -1379,7 +1381,7 @@ public java.lang.String getKeyType();
 
 The type of key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#key_type ManagedKeys#key_type}
 
 ---
 
@@ -1393,7 +1395,7 @@ public java.lang.String getName();
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -1407,7 +1409,7 @@ public java.lang.String getTenantId();
 
 The tenant id for the Azure Active Directory organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#tenant_id ManagedKeys#tenant_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#tenant_id ManagedKeys#tenant_id}
 
 ---
 
@@ -1421,7 +1423,7 @@ public java.lang.String getVaultName();
 
 The Key Vault vault to use the encryption keys for encryption and decryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#vault_name ManagedKeys#vault_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#vault_name ManagedKeys#vault_name}
 
 ---
 
@@ -1435,7 +1437,7 @@ public java.lang.Boolean|IResolvable getAllowGenerateKey();
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -1449,7 +1451,7 @@ public java.lang.Boolean|IResolvable getAllowReplaceKey();
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -1463,7 +1465,7 @@ public java.lang.Boolean|IResolvable getAllowStoreKey();
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -1477,7 +1479,23 @@ public java.lang.Boolean|IResolvable getAnyMount();
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+
+---
+
+##### `encryptionMode`<sup>Optional</sup> <a name="encryptionMode" id="@cdktn/provider-vault.managedKeys.ManagedKeysAzure.property.encryptionMode"></a>
+
+```java
+public java.lang.String getEncryptionMode();
+```
+
+- *Type:* java.lang.String
+
+The encryption mode to use for the key.
+
+`envelope` uses AES-GCM envelope encryption, `raw` encrypts directly with the KMS key. If not set, Vault defaults to envelope.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#encryption_mode ManagedKeys#encryption_mode}
 
 ---
 
@@ -1491,7 +1509,7 @@ public java.lang.String getEnvironment();
 
 The Azure Cloud environment API endpoints to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#environment ManagedKeys#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#environment ManagedKeys#environment}
 
 ---
 
@@ -1507,7 +1525,7 @@ The size in bits for an RSA key.
 
 This field is required when 'key_type' is 'RSA' or when 'allow_generate_key' is true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
 
 ---
 
@@ -1521,7 +1539,7 @@ public java.lang.String getResource();
 
 The Azure Key Vault resource's DNS Suffix to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#resource ManagedKeys#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#resource ManagedKeys#resource}
 
 ---
 
@@ -1537,7 +1555,7 @@ A list of the allowed usages of this key.
 
 Valid values are encrypt, decrypt, sign, verify, wrap, unwrap, mac, and generate_random. Default values are sign and verify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#usages ManagedKeys#usages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#usages ManagedKeys#usages}
 
 ---
 
@@ -1579,7 +1597,7 @@ ManagedKeysConfig.builder()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.aws">aws</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAws">ManagedKeysAws</a>></code> | aws block. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.azure">azure</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzure">ManagedKeysAzure</a>></code> | azure block. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.gcp">gcp</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysGcp">ManagedKeysGcp</a>></code> | gcp block. |
-| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#id ManagedKeys#id}. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#id ManagedKeys#id}. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysConfig.property.pkcs">pkcs</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs">ManagedKeysPkcs</a>></code> | pkcs block. |
 
@@ -1665,7 +1683,7 @@ public IResolvable|java.util.List<ManagedKeysAws> getAws();
 
 aws block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#aws ManagedKeys#aws}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#aws ManagedKeys#aws}
 
 ---
 
@@ -1679,7 +1697,7 @@ public IResolvable|java.util.List<ManagedKeysAzure> getAzure();
 
 azure block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#azure ManagedKeys#azure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#azure ManagedKeys#azure}
 
 ---
 
@@ -1693,7 +1711,7 @@ public IResolvable|java.util.List<ManagedKeysGcp> getGcp();
 
 gcp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#gcp ManagedKeys#gcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#gcp ManagedKeys#gcp}
 
 ---
 
@@ -1705,7 +1723,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#id ManagedKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#id ManagedKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1722,7 +1740,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#namespace ManagedKeys#namespace}
 
 ---
 
@@ -1736,7 +1754,7 @@ public IResolvable|java.util.List<ManagedKeysPkcs> getPkcs();
 
 pkcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#pkcs ManagedKeys#pkcs}
 
 ---
 
@@ -1796,7 +1814,7 @@ The signature algorithm to be used with the key.
 
 Supported values: ec_sign_p256_sha256, ec_sign_p384_sha384, rsa_sign_pss_2048_sha256, rsa_sign_pss_3072_sha256, rsa_sign_pss_4096_sha256, rsa_sign_pss_4096_sha512, rsa_sign_pkcs1_2048_sha256, rsa_sign_pkcs1_3072_sha256, rsa_sign_pkcs1_4096_sha256, rsa_sign_pkcs1_4096_sha512
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#algorithm ManagedKeys#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#algorithm ManagedKeys#algorithm}
 
 ---
 
@@ -1810,7 +1828,7 @@ public java.lang.String getCredentials();
 
 The GCP service account credentials JSON to use for authenticating to GCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#credentials ManagedKeys#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#credentials ManagedKeys#credentials}
 
 ---
 
@@ -1826,7 +1844,7 @@ The name of the GCP Cloud KMS key.
 
 If no existing key exists and allow_generate_key is true, Vault will generate a key with this name
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#crypto_key ManagedKeys#crypto_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#crypto_key ManagedKeys#crypto_key}
 
 ---
 
@@ -1840,7 +1858,7 @@ public java.lang.String getKeyRing();
 
 The name of the key ring in GCP Cloud KMS. This needs to be created prior to key creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#key_ring ManagedKeys#key_ring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#key_ring ManagedKeys#key_ring}
 
 ---
 
@@ -1854,7 +1872,7 @@ public java.lang.String getName();
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -1868,7 +1886,7 @@ public java.lang.String getProject();
 
 The GCP project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#project ManagedKeys#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#project ManagedKeys#project}
 
 ---
 
@@ -1882,7 +1900,7 @@ public java.lang.String getRegion();
 
 The GCP region where the key ring was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#region ManagedKeys#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#region ManagedKeys#region}
 
 ---
 
@@ -1896,7 +1914,7 @@ public java.lang.Boolean|IResolvable getAllowGenerateKey();
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -1910,7 +1928,7 @@ public java.lang.Boolean|IResolvable getAllowReplaceKey();
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -1924,7 +1942,7 @@ public java.lang.Boolean|IResolvable getAllowStoreKey();
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -1938,7 +1956,7 @@ public java.lang.Boolean|IResolvable getAnyMount();
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
 
 ---
 
@@ -1952,7 +1970,7 @@ public java.lang.String getCryptoKeyVersion();
 
 The version of the key to use. (Default: 1).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#crypto_key_version ManagedKeys#crypto_key_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#crypto_key_version ManagedKeys#crypto_key_version}
 
 ---
 
@@ -1968,7 +1986,7 @@ A list of the allowed usages of this key.
 
 Valid values are encrypt, decrypt, sign, verify, wrap, unwrap, mac, and generate_random. Default values are sign and verify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#usages ManagedKeys#usages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#usages ManagedKeys#usages}
 
 ---
 
@@ -1994,6 +2012,7 @@ ManagedKeysPkcs.builder()
 //  .keyId(java.lang.String)
 //  .keyLabel(java.lang.String)
 //  .maxParallel(java.lang.Number)
+//  .rsaOaepHash(java.lang.String)
 //  .slot(java.lang.String)
 //  .tokenLabel(java.lang.String)
 //  .usages(java.util.List<java.lang.String>)
@@ -2018,6 +2037,7 @@ ManagedKeysPkcs.builder()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.keyId">keyId</a></code> | <code>java.lang.String</code> | The id of a PKCS#11 key to use. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.keyLabel">keyLabel</a></code> | <code>java.lang.String</code> | The label of the key to use. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.maxParallel">maxParallel</a></code> | <code>java.lang.Number</code> | The number of concurrent requests that may be in flight to the HSM at any given time. |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.rsaOaepHash">rsaOaepHash</a></code> | <code>java.lang.String</code> | The hash algorithm to use for RSA-OAEP encryption with mechanism CKM_RSA_PKCS_OAEP. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.slot">slot</a></code> | <code>java.lang.String</code> | The slot number to use, specified as a string in a decimal format (e.g. '2305843009213693953'). |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.tokenLabel">tokenLabel</a></code> | <code>java.lang.String</code> | The slot token label to use. |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.usages">usages</a></code> | <code>java.util.List<java.lang.String></code> | A list of the allowed usages of this key. |
@@ -2034,7 +2054,7 @@ public java.lang.String getLibrary();
 
 The name of the kms_library stanza to use from Vault's config to lookup the local library path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#library ManagedKeys#library}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#library ManagedKeys#library}
 
 ---
 
@@ -2048,7 +2068,7 @@ public java.lang.String getMechanism();
 
 The encryption/decryption mechanism to use, specified as a hexadecimal (prefixed by 0x) string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#mechanism ManagedKeys#mechanism}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#mechanism ManagedKeys#mechanism}
 
 ---
 
@@ -2062,7 +2082,7 @@ public java.lang.String getName();
 
 A unique lowercase name that serves as identifying the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#name ManagedKeys#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#name ManagedKeys#name}
 
 ---
 
@@ -2076,7 +2096,7 @@ public java.lang.String getPin();
 
 The PIN for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#pin ManagedKeys#pin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#pin ManagedKeys#pin}
 
 ---
 
@@ -2090,7 +2110,7 @@ public java.lang.Boolean|IResolvable getAllowGenerateKey();
 
 If no existing key can be found in the referenced backend, instructs Vault to generate a key within the backend.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#allow_generate_key ManagedKeys#allow_generate_key}
 
 ---
 
@@ -2104,7 +2124,7 @@ public java.lang.Boolean|IResolvable getAllowReplaceKey();
 
 Controls the ability for Vault to replace through generation or importing a key into the configured backend even if a key is present, if set to false those operations are forbidden if a key exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#allow_replace_key ManagedKeys#allow_replace_key}
 
 ---
 
@@ -2118,7 +2138,7 @@ public java.lang.Boolean|IResolvable getAllowStoreKey();
 
 Controls the ability for Vault to import a key to the configured backend, if 'false', those operations will be forbidden.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#allow_store_key ManagedKeys#allow_store_key}
 
 ---
 
@@ -2132,7 +2152,7 @@ public java.lang.Boolean|IResolvable getAnyMount();
 
 Allow usage from any mount point within the namespace if 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#any_mount ManagedKeys#any_mount}
 
 ---
 
@@ -2146,7 +2166,7 @@ public java.lang.String getCurve();
 
 Supplies the curve value when using the 'CKM_ECDSA' mechanism. Required if 'allow_generate_key' is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#curve ManagedKeys#curve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#curve ManagedKeys#curve}
 
 ---
 
@@ -2160,7 +2180,7 @@ public java.lang.String getForceRwSession();
 
 Force all operations to open up a read-write session to the HSM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#force_rw_session ManagedKeys#force_rw_session}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#force_rw_session ManagedKeys#force_rw_session}
 
 ---
 
@@ -2176,7 +2196,7 @@ Supplies the size in bits of the key when using 'CKM_RSA_PKCS_PSS', 'CKM_RSA_PKC
 
 Required if 'allow_generate_key' is true
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#key_bits ManagedKeys#key_bits}
 
 ---
 
@@ -2190,7 +2210,7 @@ public java.lang.String getKeyId();
 
 The id of a PKCS#11 key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#key_id ManagedKeys#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#key_id ManagedKeys#key_id}
 
 ---
 
@@ -2204,7 +2224,7 @@ public java.lang.String getKeyLabel();
 
 The label of the key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#key_label ManagedKeys#key_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#key_label ManagedKeys#key_label}
 
 ---
 
@@ -2220,7 +2240,23 @@ The number of concurrent requests that may be in flight to the HSM at any given 
 
 Default is 1
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#max_parallel ManagedKeys#max_parallel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#max_parallel ManagedKeys#max_parallel}
+
+---
+
+##### `rsaOaepHash`<sup>Optional</sup> <a name="rsaOaepHash" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcs.property.rsaOaepHash"></a>
+
+```java
+public java.lang.String getRsaOaepHash();
+```
+
+- *Type:* java.lang.String
+
+The hash algorithm to use for RSA-OAEP encryption with mechanism CKM_RSA_PKCS_OAEP.
+
+Only applies when 'mechanism' is set to 'CKM_RSA_PKCS_OAEP'. Supported values are: sha1, sha224, sha256, sha384, sha512. If not set, Vault defaults to sha256.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#rsa_oaep_hash ManagedKeys#rsa_oaep_hash}
 
 ---
 
@@ -2234,7 +2270,7 @@ public java.lang.String getSlot();
 
 The slot number to use, specified as a string in a decimal format (e.g. '2305843009213693953').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#slot ManagedKeys#slot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#slot ManagedKeys#slot}
 
 ---
 
@@ -2248,7 +2284,7 @@ public java.lang.String getTokenLabel();
 
 The slot token label to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#token_label ManagedKeys#token_label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#token_label ManagedKeys#token_label}
 
 ---
 
@@ -2264,7 +2300,7 @@ A list of the allowed usages of this key.
 
 Valid values are encrypt, decrypt, sign, verify, wrap, unwrap, mac, and generate_random. Default values are sign and verify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/managed_keys#usages ManagedKeys#usages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/managed_keys#usages ManagedKeys#usages}
 
 ---
 
@@ -3304,6 +3340,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetAllowReplaceKey">resetAllowReplaceKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetAllowStoreKey">resetAllowStoreKey</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetAnyMount">resetAnyMount</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetEncryptionMode">resetEncryptionMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetEnvironment">resetEnvironment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetKeyBits">resetKeyBits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetResource">resetResource</a></code> | *No description.* |
@@ -3485,6 +3522,12 @@ public void resetAllowStoreKey()
 public void resetAnyMount()
 ```
 
+##### `resetEncryptionMode` <a name="resetEncryptionMode" id="@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetEncryptionMode"></a>
+
+```java
+public void resetEncryptionMode()
+```
+
 ##### `resetEnvironment` <a name="resetEnvironment" id="@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.resetEnvironment"></a>
 
 ```java
@@ -3523,6 +3566,7 @@ public void resetUsages()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMountInput">anyMountInput</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.clientIdInput">clientIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.clientSecretInput">clientSecretInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.encryptionModeInput">encryptionModeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.environmentInput">environmentInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.keyBitsInput">keyBitsInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.keyNameInput">keyNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3538,6 +3582,7 @@ public void resetUsages()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.anyMount">anyMount</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.clientId">clientId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.clientSecret">clientSecret</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.encryptionMode">encryptionMode</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.environment">environment</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.keyBits">keyBits</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.keyName">keyName</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3639,6 +3684,16 @@ public java.lang.String getClientIdInput();
 
 ```java
 public java.lang.String getClientSecretInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `encryptionModeInput`<sup>Optional</sup> <a name="encryptionModeInput" id="@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.encryptionModeInput"></a>
+
+```java
+public java.lang.String getEncryptionModeInput();
 ```
 
 - *Type:* java.lang.String
@@ -3789,6 +3844,16 @@ public java.lang.String getClientId();
 
 ```java
 public java.lang.String getClientSecret();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `encryptionMode`<sup>Required</sup> <a name="encryptionMode" id="@cdktn/provider-vault.managedKeys.ManagedKeysAzureOutputReference.property.encryptionMode"></a>
+
+```java
+public java.lang.String getEncryptionMode();
 ```
 
 - *Type:* java.lang.String
@@ -4900,6 +4965,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetKeyId">resetKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetKeyLabel">resetKeyLabel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetMaxParallel">resetMaxParallel</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetRsaOaepHash">resetRsaOaepHash</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetSlot">resetSlot</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetTokenLabel">resetTokenLabel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetUsages">resetUsages</a></code> | *No description.* |
@@ -5116,6 +5182,12 @@ public void resetKeyLabel()
 public void resetMaxParallel()
 ```
 
+##### `resetRsaOaepHash` <a name="resetRsaOaepHash" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetRsaOaepHash"></a>
+
+```java
+public void resetRsaOaepHash()
+```
+
 ##### `resetSlot` <a name="resetSlot" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.resetSlot"></a>
 
 ```java
@@ -5156,6 +5228,7 @@ public void resetUsages()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.mechanismInput">mechanismInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.pinInput">pinInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.rsaOaepHashInput">rsaOaepHashInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.slotInput">slotInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.tokenLabelInput">tokenLabelInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.usagesInput">usagesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -5173,6 +5246,7 @@ public void resetUsages()
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.mechanism">mechanism</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.pin">pin</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.rsaOaepHash">rsaOaepHash</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.slot">slot</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.tokenLabel">tokenLabel</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.usages">usages</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -5354,6 +5428,16 @@ public java.lang.String getPinInput();
 
 ---
 
+##### `rsaOaepHashInput`<sup>Optional</sup> <a name="rsaOaepHashInput" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.rsaOaepHashInput"></a>
+
+```java
+public java.lang.String getRsaOaepHashInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `slotInput`<sup>Optional</sup> <a name="slotInput" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.slotInput"></a>
 
 ```java
@@ -5518,6 +5602,16 @@ public java.lang.String getName();
 
 ```java
 public java.lang.String getPin();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `rsaOaepHash`<sup>Required</sup> <a name="rsaOaepHash" id="@cdktn/provider-vault.managedKeys.ManagedKeysPkcsOutputReference.property.rsaOaepHash"></a>
+
+```java
+public java.lang.String getRsaOaepHash();
 ```
 
 - *Type:* java.lang.String

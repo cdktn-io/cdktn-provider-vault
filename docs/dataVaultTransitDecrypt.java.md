@@ -4,7 +4,7 @@
 
 ### DataVaultTransitDecrypt <a name="DataVaultTransitDecrypt" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt vault_transit_decrypt}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt vault_transit_decrypt}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer"></a>
 
@@ -23,8 +23,10 @@ DataVaultTransitDecrypt.Builder.create(Construct scope, java.lang.String id)
     .ciphertext(java.lang.String)
     .key(java.lang.String)
 //  .context(java.lang.String)
+//  .hashAlgorithm(java.lang.String)
 //  .id(java.lang.String)
 //  .namespace(java.lang.String)
+//  .paddingScheme(java.lang.String)
     .build();
 ```
 
@@ -43,8 +45,10 @@ DataVaultTransitDecrypt.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer.parameter.ciphertext">ciphertext</a></code> | <code>java.lang.String</code> | Transit encrypted cipher text. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | Name of the decryption key to use. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer.parameter.context">context</a></code> | <code>java.lang.String</code> | Specifies the context for key derivation. |
-| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer.parameter.hashAlgorithm">hashAlgorithm</a></code> | <code>java.lang.String</code> | Specifies the hash algorithm to use for RSA key decryption. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer.parameter.paddingScheme">paddingScheme</a></code> | <code>java.lang.String</code> | Specifies the RSA padding scheme to use for decryption. |
 
 ---
 
@@ -114,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The Transit secret backend the key belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#backend DataVaultTransitDecrypt#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#backend DataVaultTransitDecrypt#backend}
 
 ---
 
@@ -124,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Transit encrypted cipher text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#ciphertext DataVaultTransitDecrypt#ciphertext}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#ciphertext DataVaultTransitDecrypt#ciphertext}
 
 ---
 
@@ -134,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the decryption key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#key DataVaultTransitDecrypt#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#key DataVaultTransitDecrypt#key}
 
 ---
 
@@ -144,7 +148,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Specifies the context for key derivation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#context DataVaultTransitDecrypt#context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#context DataVaultTransitDecrypt#context}
+
+---
+
+##### `hashAlgorithm`<sup>Optional</sup> <a name="hashAlgorithm" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer.parameter.hashAlgorithm"></a>
+
+- *Type:* java.lang.String
+
+Specifies the hash algorithm to use for RSA key decryption.
+
+Only applies to RSA key types; ignored for all other key types. Supported values are: sha1, sha2-224, sha2-256, sha2-384, sha2-512, sha3-224, sha3-256, sha3-384, sha3-512. If not set, Vault defaults to sha2-256 for RSA keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#hash_algorithm DataVaultTransitDecrypt#hash_algorithm}
 
 ---
 
@@ -152,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +181,19 @@ If you experience problems setting this value it might not be settable. Please t
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#namespace DataVaultTransitDecrypt#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#namespace DataVaultTransitDecrypt#namespace}
+
+---
+
+##### `paddingScheme`<sup>Optional</sup> <a name="paddingScheme" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer.parameter.paddingScheme"></a>
+
+- *Type:* java.lang.String
+
+Specifies the RSA padding scheme to use for decryption.
+
+Only applies to RSA key types; ignored for all other key types. Supported values are: oaep, pkcs1v15. If not set, Vault defaults to oaep for RSA keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#padding_scheme DataVaultTransitDecrypt#padding_scheme}
 
 ---
 
@@ -192,8 +220,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetContext">resetContext</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetHashAlgorithm">resetHashAlgorithm</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetNamespace">resetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetPaddingScheme">resetPaddingScheme</a></code> | *No description.* |
 
 ---
 
@@ -416,6 +446,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 public void resetContext()
 ```
 
+##### `resetHashAlgorithm` <a name="resetHashAlgorithm" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetHashAlgorithm"></a>
+
+```java
+public void resetHashAlgorithm()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetId"></a>
 
 ```java
@@ -426,6 +462,12 @@ public void resetId()
 
 ```java
 public void resetNamespace()
+```
+
+##### `resetPaddingScheme` <a name="resetPaddingScheme" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetPaddingScheme"></a>
+
+```java
+public void resetPaddingScheme()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -531,7 +573,7 @@ The construct id used in the generated config for the DataVaultTransitDecrypt to
 
 The id of the existing DataVaultTransitDecrypt that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -563,15 +605,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.backendInput">backendInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.ciphertextInput">ciphertextInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.contextInput">contextInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.hashAlgorithmInput">hashAlgorithmInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.keyInput">keyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.namespaceInput">namespaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.paddingSchemeInput">paddingSchemeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.backend">backend</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.ciphertext">ciphertext</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.context">context</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.hashAlgorithm">hashAlgorithm</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.key">key</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.namespace">namespace</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.paddingScheme">paddingScheme</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
 
@@ -737,6 +783,16 @@ public java.lang.String getContextInput();
 
 ---
 
+##### `hashAlgorithmInput`<sup>Optional</sup> <a name="hashAlgorithmInput" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.hashAlgorithmInput"></a>
+
+```java
+public java.lang.String getHashAlgorithmInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.idInput"></a>
 
 ```java
@@ -761,6 +817,16 @@ public java.lang.String getKeyInput();
 
 ```java
 public java.lang.String getNamespaceInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `paddingSchemeInput`<sup>Optional</sup> <a name="paddingSchemeInput" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.paddingSchemeInput"></a>
+
+```java
+public java.lang.String getPaddingSchemeInput();
 ```
 
 - *Type:* java.lang.String
@@ -797,6 +863,16 @@ public java.lang.String getContext();
 
 ---
 
+##### `hashAlgorithm`<sup>Required</sup> <a name="hashAlgorithm" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.hashAlgorithm"></a>
+
+```java
+public java.lang.String getHashAlgorithm();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.id"></a>
 
 ```java
@@ -821,6 +897,16 @@ public java.lang.String getKey();
 
 ```java
 public java.lang.String getNamespace();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `paddingScheme`<sup>Required</sup> <a name="paddingScheme" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.paddingScheme"></a>
+
+```java
+public java.lang.String getPaddingScheme();
 ```
 
 - *Type:* java.lang.String
@@ -866,8 +952,10 @@ DataVaultTransitDecryptConfig.builder()
     .ciphertext(java.lang.String)
     .key(java.lang.String)
 //  .context(java.lang.String)
+//  .hashAlgorithm(java.lang.String)
 //  .id(java.lang.String)
 //  .namespace(java.lang.String)
+//  .paddingScheme(java.lang.String)
     .build();
 ```
 
@@ -886,8 +974,10 @@ DataVaultTransitDecryptConfig.builder()
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.ciphertext">ciphertext</a></code> | <code>java.lang.String</code> | Transit encrypted cipher text. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.key">key</a></code> | <code>java.lang.String</code> | Name of the decryption key to use. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.context">context</a></code> | <code>java.lang.String</code> | Specifies the context for key derivation. |
-| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.hashAlgorithm">hashAlgorithm</a></code> | <code>java.lang.String</code> | Specifies the hash algorithm to use for RSA key decryption. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.paddingScheme">paddingScheme</a></code> | <code>java.lang.String</code> | Specifies the RSA padding scheme to use for decryption. |
 
 ---
 
@@ -971,7 +1061,7 @@ public java.lang.String getBackend();
 
 The Transit secret backend the key belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#backend DataVaultTransitDecrypt#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#backend DataVaultTransitDecrypt#backend}
 
 ---
 
@@ -985,7 +1075,7 @@ public java.lang.String getCiphertext();
 
 Transit encrypted cipher text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#ciphertext DataVaultTransitDecrypt#ciphertext}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#ciphertext DataVaultTransitDecrypt#ciphertext}
 
 ---
 
@@ -999,7 +1089,7 @@ public java.lang.String getKey();
 
 Name of the decryption key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#key DataVaultTransitDecrypt#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#key DataVaultTransitDecrypt#key}
 
 ---
 
@@ -1013,7 +1103,23 @@ public java.lang.String getContext();
 
 Specifies the context for key derivation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#context DataVaultTransitDecrypt#context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#context DataVaultTransitDecrypt#context}
+
+---
+
+##### `hashAlgorithm`<sup>Optional</sup> <a name="hashAlgorithm" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.hashAlgorithm"></a>
+
+```java
+public java.lang.String getHashAlgorithm();
+```
+
+- *Type:* java.lang.String
+
+Specifies the hash algorithm to use for RSA key decryption.
+
+Only applies to RSA key types; ignored for all other key types. Supported values are: sha1, sha2-224, sha2-256, sha2-384, sha2-512, sha3-224, sha3-256, sha3-384, sha3-512. If not set, Vault defaults to sha2-256 for RSA keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#hash_algorithm DataVaultTransitDecrypt#hash_algorithm}
 
 ---
 
@@ -1025,7 +1131,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1042,7 +1148,23 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#namespace DataVaultTransitDecrypt#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#namespace DataVaultTransitDecrypt#namespace}
+
+---
+
+##### `paddingScheme`<sup>Optional</sup> <a name="paddingScheme" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.paddingScheme"></a>
+
+```java
+public java.lang.String getPaddingScheme();
+```
+
+- *Type:* java.lang.String
+
+Specifies the RSA padding scheme to use for decryption.
+
+Only applies to RSA key types; ignored for all other key types. Supported values are: oaep, pkcs1v15. If not set, Vault defaults to oaep for RSA keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#padding_scheme DataVaultTransitDecrypt#padding_scheme}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataVaultTransitDecrypt <a name="DataVaultTransitDecrypt" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt vault_transit_decrypt}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt vault_transit_decrypt}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.Initializer"></a>
 
@@ -69,8 +69,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetContext">resetContext</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetHashAlgorithm">resetHashAlgorithm</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetNamespace">resetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetPaddingScheme">resetPaddingScheme</a></code> | *No description.* |
 
 ---
 
@@ -293,6 +295,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetContext(): void
 ```
 
+##### `resetHashAlgorithm` <a name="resetHashAlgorithm" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetHashAlgorithm"></a>
+
+```typescript
+public resetHashAlgorithm(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetId"></a>
 
 ```typescript
@@ -303,6 +311,12 @@ public resetId(): void
 
 ```typescript
 public resetNamespace(): void
+```
+
+##### `resetPaddingScheme` <a name="resetPaddingScheme" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.resetPaddingScheme"></a>
+
+```typescript
+public resetPaddingScheme(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -408,7 +422,7 @@ The construct id used in the generated config for the DataVaultTransitDecrypt to
 
 The id of the existing DataVaultTransitDecrypt that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -440,15 +454,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.backendInput">backendInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.ciphertextInput">ciphertextInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.contextInput">contextInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.hashAlgorithmInput">hashAlgorithmInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.paddingSchemeInput">paddingSchemeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.backend">backend</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.ciphertext">ciphertext</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.context">context</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.hashAlgorithm">hashAlgorithm</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.paddingScheme">paddingScheme</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -614,6 +632,16 @@ public readonly contextInput: string;
 
 ---
 
+##### `hashAlgorithmInput`<sup>Optional</sup> <a name="hashAlgorithmInput" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.hashAlgorithmInput"></a>
+
+```typescript
+public readonly hashAlgorithmInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.idInput"></a>
 
 ```typescript
@@ -638,6 +666,16 @@ public readonly keyInput: string;
 
 ```typescript
 public readonly namespaceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `paddingSchemeInput`<sup>Optional</sup> <a name="paddingSchemeInput" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.paddingSchemeInput"></a>
+
+```typescript
+public readonly paddingSchemeInput: string;
 ```
 
 - *Type:* string
@@ -674,6 +712,16 @@ public readonly context: string;
 
 ---
 
+##### `hashAlgorithm`<sup>Required</sup> <a name="hashAlgorithm" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.hashAlgorithm"></a>
+
+```typescript
+public readonly hashAlgorithm: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.id"></a>
 
 ```typescript
@@ -698,6 +746,16 @@ public readonly key: string;
 
 ```typescript
 public readonly namespace: string;
+```
+
+- *Type:* string
+
+---
+
+##### `paddingScheme`<sup>Required</sup> <a name="paddingScheme" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecrypt.property.paddingScheme"></a>
+
+```typescript
+public readonly paddingScheme: string;
 ```
 
 - *Type:* string
@@ -749,8 +807,10 @@ const dataVaultTransitDecryptConfig: dataVaultTransitDecrypt.DataVaultTransitDec
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.ciphertext">ciphertext</a></code> | <code>string</code> | Transit encrypted cipher text. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.key">key</a></code> | <code>string</code> | Name of the decryption key to use. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.context">context</a></code> | <code>string</code> | Specifies the context for key derivation. |
-| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.hashAlgorithm">hashAlgorithm</a></code> | <code>string</code> | Specifies the hash algorithm to use for RSA key decryption. |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}. |
 | <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.namespace">namespace</a></code> | <code>string</code> | Target namespace. (requires Enterprise). |
+| <code><a href="#@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.paddingScheme">paddingScheme</a></code> | <code>string</code> | Specifies the RSA padding scheme to use for decryption. |
 
 ---
 
@@ -834,7 +894,7 @@ public readonly backend: string;
 
 The Transit secret backend the key belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#backend DataVaultTransitDecrypt#backend}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#backend DataVaultTransitDecrypt#backend}
 
 ---
 
@@ -848,7 +908,7 @@ public readonly ciphertext: string;
 
 Transit encrypted cipher text.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#ciphertext DataVaultTransitDecrypt#ciphertext}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#ciphertext DataVaultTransitDecrypt#ciphertext}
 
 ---
 
@@ -862,7 +922,7 @@ public readonly key: string;
 
 Name of the decryption key to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#key DataVaultTransitDecrypt#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#key DataVaultTransitDecrypt#key}
 
 ---
 
@@ -876,7 +936,23 @@ public readonly context: string;
 
 Specifies the context for key derivation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#context DataVaultTransitDecrypt#context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#context DataVaultTransitDecrypt#context}
+
+---
+
+##### `hashAlgorithm`<sup>Optional</sup> <a name="hashAlgorithm" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.hashAlgorithm"></a>
+
+```typescript
+public readonly hashAlgorithm: string;
+```
+
+- *Type:* string
+
+Specifies the hash algorithm to use for RSA key decryption.
+
+Only applies to RSA key types; ignored for all other key types. Supported values are: sha1, sha2-224, sha2-256, sha2-384, sha2-512, sha3-224, sha3-256, sha3-384, sha3-512. If not set, Vault defaults to sha2-256 for RSA keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#hash_algorithm DataVaultTransitDecrypt#hash_algorithm}
 
 ---
 
@@ -888,7 +964,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#id DataVaultTransitDecrypt#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -905,7 +981,23 @@ public readonly namespace: string;
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_decrypt#namespace DataVaultTransitDecrypt#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#namespace DataVaultTransitDecrypt#namespace}
+
+---
+
+##### `paddingScheme`<sup>Optional</sup> <a name="paddingScheme" id="@cdktn/provider-vault.dataVaultTransitDecrypt.DataVaultTransitDecryptConfig.property.paddingScheme"></a>
+
+```typescript
+public readonly paddingScheme: string;
+```
+
+- *Type:* string
+
+Specifies the RSA padding scheme to use for decryption.
+
+Only applies to RSA key types; ignored for all other key types. Supported values are: oaep, pkcs1v15. If not set, Vault defaults to oaep for RSA keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_decrypt#padding_scheme DataVaultTransitDecrypt#padding_scheme}
 
 ---
 
