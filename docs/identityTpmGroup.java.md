@@ -4,7 +4,7 @@
 
 ### IdentityTpmGroup <a name="IdentityTpmGroup" id="@cdktn/provider-vault.identityTpmGroup.IdentityTpmGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group vault_identity_tpm_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group vault_identity_tpm_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-vault.identityTpmGroup.IdentityTpmGroup.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Set of TPM IDs that are members of this TPM group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#member_tpm_ids IdentityTpmGroup#member_tpm_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#member_tpm_ids IdentityTpmGroup#member_tpm_ids}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Metadata to associate with the TPM group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#metadata IdentityTpmGroup#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#metadata IdentityTpmGroup#metadata}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Name of the TPM group. Vault generates a name if one is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#name IdentityTpmGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#name IdentityTpmGroup#name}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#namespace IdentityTpmGroup#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#namespace IdentityTpmGroup#namespace}
 
 ---
 
@@ -617,7 +617,7 @@ The construct id used in the generated config for the IdentityTpmGroup to import
 
 The id of the existing IdentityTpmGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1031,7 +1031,7 @@ public java.util.List<java.lang.String> getMemberTpmIds();
 
 Set of TPM IDs that are members of this TPM group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#member_tpm_ids IdentityTpmGroup#member_tpm_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#member_tpm_ids IdentityTpmGroup#member_tpm_ids}
 
 ---
 
@@ -1045,7 +1045,7 @@ public java.util.Map<java.lang.String, java.lang.String> getMetadata();
 
 Metadata to associate with the TPM group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#metadata IdentityTpmGroup#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#metadata IdentityTpmGroup#metadata}
 
 ---
 
@@ -1059,7 +1059,7 @@ public java.lang.String getName();
 
 Name of the TPM group. Vault generates a name if one is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#name IdentityTpmGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#name IdentityTpmGroup#name}
 
 ---
 
@@ -1073,7 +1073,7 @@ public java.lang.String getNamespace();
 
 Target namespace. (requires Enterprise).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#namespace IdentityTpmGroup#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#namespace IdentityTpmGroup#namespace}
 
 ---
 

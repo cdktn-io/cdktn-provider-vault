@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt
+// https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,23 @@ export interface DataVaultTransitEncryptConfig extends cdktn.TerraformMetaArgume
   /**
   * The Transit secret backend the key belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#backend DataVaultTransitEncrypt#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#backend DataVaultTransitEncrypt#backend}
   */
   readonly backend: string;
   /**
   * Specifies the context for key derivation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#context DataVaultTransitEncrypt#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#context DataVaultTransitEncrypt#context}
   */
   readonly context?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#id DataVaultTransitEncrypt#id}
+  * Specifies the hash algorithm to use for RSA key encryption. Only applies to RSA key types; ignored for all other key types. Supported values are: sha1, sha2-224, sha2-256, sha2-384, sha2-512, sha3-224, sha3-256, sha3-384, sha3-512. If not set, Vault defaults to sha2-256 for RSA keys.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#hash_algorithm DataVaultTransitEncrypt#hash_algorithm}
+  */
+  readonly hashAlgorithm?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#id DataVaultTransitEncrypt#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,31 +40,37 @@ export interface DataVaultTransitEncryptConfig extends cdktn.TerraformMetaArgume
   /**
   * Name of the encryption key to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#key DataVaultTransitEncrypt#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#key DataVaultTransitEncrypt#key}
   */
   readonly key: string;
   /**
   * The version of the key to use for encryption
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#key_version DataVaultTransitEncrypt#key_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#key_version DataVaultTransitEncrypt#key_version}
   */
   readonly keyVersion?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#namespace DataVaultTransitEncrypt#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#namespace DataVaultTransitEncrypt#namespace}
   */
   readonly namespace?: string;
   /**
+  * Specifies the RSA padding scheme to use for encryption. Only applies to RSA key types; ignored for all other key types. Supported values are: oaep, pkcs1v15. If not set, Vault defaults to oaep for RSA keys.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#padding_scheme DataVaultTransitEncrypt#padding_scheme}
+  */
+  readonly paddingScheme?: string;
+  /**
   * Map of strings read from Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#plaintext DataVaultTransitEncrypt#plaintext}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#plaintext DataVaultTransitEncrypt#plaintext}
   */
   readonly plaintext: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt vault_transit_encrypt}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt vault_transit_encrypt}
 */
 export class DataVaultTransitEncrypt extends cdktn.TerraformDataSource {
 
@@ -74,7 +86,7 @@ export class DataVaultTransitEncrypt extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataVaultTransitEncrypt resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultTransitEncrypt to import
-  * @param importFromId The id of the existing DataVaultTransitEncrypt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultTransitEncrypt that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultTransitEncrypt to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -86,7 +98,7 @@ export class DataVaultTransitEncrypt extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/transit_encrypt vault_transit_encrypt} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +109,7 @@ export class DataVaultTransitEncrypt extends cdktn.TerraformDataSource {
       terraformResourceType: 'vault_transit_encrypt',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -110,10 +122,12 @@ export class DataVaultTransitEncrypt extends cdktn.TerraformDataSource {
     });
     this._backend = config.backend;
     this._context = config.context;
+    this._hashAlgorithm = config.hashAlgorithm;
     this._id = config.id;
     this._key = config.key;
     this._keyVersion = config.keyVersion;
     this._namespace = config.namespace;
+    this._paddingScheme = config.paddingScheme;
     this._plaintext = config.plaintext;
   }
 
@@ -153,6 +167,22 @@ export class DataVaultTransitEncrypt extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get contextInput() {
     return this._context;
+  }
+
+  // hash_algorithm - computed: false, optional: true, required: false
+  private _hashAlgorithm?: string; 
+  public get hashAlgorithm() {
+    return this.getStringAttribute('hash_algorithm');
+  }
+  public set hashAlgorithm(value: string) {
+    this._hashAlgorithm = value;
+  }
+  public resetHashAlgorithm() {
+    this._hashAlgorithm = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hashAlgorithmInput() {
+    return this._hashAlgorithm;
   }
 
   // id - computed: true, optional: true, required: false
@@ -216,6 +246,22 @@ export class DataVaultTransitEncrypt extends cdktn.TerraformDataSource {
     return this._namespace;
   }
 
+  // padding_scheme - computed: false, optional: true, required: false
+  private _paddingScheme?: string; 
+  public get paddingScheme() {
+    return this.getStringAttribute('padding_scheme');
+  }
+  public set paddingScheme(value: string) {
+    this._paddingScheme = value;
+  }
+  public resetPaddingScheme() {
+    this._paddingScheme = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get paddingSchemeInput() {
+    return this._paddingScheme;
+  }
+
   // plaintext - computed: false, optional: false, required: true
   private _plaintext?: string; 
   public get plaintext() {
@@ -237,10 +283,12 @@ export class DataVaultTransitEncrypt extends cdktn.TerraformDataSource {
     return {
       backend: cdktn.stringToTerraform(this._backend),
       context: cdktn.stringToTerraform(this._context),
+      hash_algorithm: cdktn.stringToTerraform(this._hashAlgorithm),
       id: cdktn.stringToTerraform(this._id),
       key: cdktn.stringToTerraform(this._key),
       key_version: cdktn.numberToTerraform(this._keyVersion),
       namespace: cdktn.stringToTerraform(this._namespace),
+      padding_scheme: cdktn.stringToTerraform(this._paddingScheme),
       plaintext: cdktn.stringToTerraform(this._plaintext),
     };
   }
@@ -255,6 +303,12 @@ export class DataVaultTransitEncrypt extends cdktn.TerraformDataSource {
       },
       context: {
         value: cdktn.stringToHclTerraform(this._context),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hash_algorithm: {
+        value: cdktn.stringToHclTerraform(this._hashAlgorithm),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -279,6 +333,12 @@ export class DataVaultTransitEncrypt extends cdktn.TerraformDataSource {
       },
       namespace: {
         value: cdktn.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      padding_scheme: {
+        value: cdktn.stringToHclTerraform(this._paddingScheme),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

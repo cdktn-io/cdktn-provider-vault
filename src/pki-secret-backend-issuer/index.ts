@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer
+// https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,47 +15,53 @@ export interface PkiSecretBackendIssuerConfig extends cdktn.TerraformMetaArgumen
   /**
   * Full path where PKI backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#backend PkiSecretBackendIssuer#backend}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#backend PkiSecretBackendIssuer#backend}
   */
   readonly backend: string;
   /**
   * Specifies the URL values for the CRL Distribution Points field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#crl_distribution_points PkiSecretBackendIssuer#crl_distribution_points}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#crl_distribution_points PkiSecretBackendIssuer#crl_distribution_points}
   */
   readonly crlDistributionPoints?: string[];
   /**
+  * Specifies the URL values for the Delta CRL Distribution Points field.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#delta_crl_distribution_points PkiSecretBackendIssuer#delta_crl_distribution_points}
+  */
+  readonly deltaCrlDistributionPoints?: string[];
+  /**
   * This determines whether this issuer is able to issue certificates where the chain of trust (including the issued certificate) contain critical extensions not processed by Vault.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#disable_critical_extension_checks PkiSecretBackendIssuer#disable_critical_extension_checks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#disable_critical_extension_checks PkiSecretBackendIssuer#disable_critical_extension_checks}
   */
   readonly disableCriticalExtensionChecks?: boolean | cdktn.IResolvable;
   /**
   * This determines whether this issuer is able to issue certificates where the chain of trust (including the final issued certificate) contains a link in which the subject of the issuing certificate does not match the named issuer of the certificate it signed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#disable_name_checks PkiSecretBackendIssuer#disable_name_checks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#disable_name_checks PkiSecretBackendIssuer#disable_name_checks}
   */
   readonly disableNameChecks?: boolean | cdktn.IResolvable;
   /**
   * This determines whether this issuer is able to issue certificates where the chain of trust (including the final issued certificate) violates the name constraints critical extension of one of the issuer certificates in the chain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#disable_name_constraint_checks PkiSecretBackendIssuer#disable_name_constraint_checks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#disable_name_constraint_checks PkiSecretBackendIssuer#disable_name_constraint_checks}
   */
   readonly disableNameConstraintChecks?: boolean | cdktn.IResolvable;
   /**
   * This determines whether this issuer is able to issue certificates where the chain of trust (including the final issued certificate) is longer than allowed by a certificate authority in that chain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#disable_path_length_checks PkiSecretBackendIssuer#disable_path_length_checks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#disable_path_length_checks PkiSecretBackendIssuer#disable_path_length_checks}
   */
   readonly disablePathLengthChecks?: boolean | cdktn.IResolvable;
   /**
   * Specifies that the AIA URL values should be templated.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#enable_aia_url_templating PkiSecretBackendIssuer#enable_aia_url_templating}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#enable_aia_url_templating PkiSecretBackendIssuer#enable_aia_url_templating}
   */
   readonly enableAiaUrlTemplating?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#id PkiSecretBackendIssuer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#id PkiSecretBackendIssuer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -64,61 +70,61 @@ export interface PkiSecretBackendIssuerConfig extends cdktn.TerraformMetaArgumen
   /**
   * Reference to an existing issuer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#issuer_name PkiSecretBackendIssuer#issuer_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#issuer_name PkiSecretBackendIssuer#issuer_name}
   */
   readonly issuerName?: string;
   /**
   * Reference to an existing issuer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#issuer_ref PkiSecretBackendIssuer#issuer_ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#issuer_ref PkiSecretBackendIssuer#issuer_ref}
   */
   readonly issuerRef: string;
   /**
   * Specifies the URL values for the Issuing Certificate field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#issuing_certificates PkiSecretBackendIssuer#issuing_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#issuing_certificates PkiSecretBackendIssuer#issuing_certificates}
   */
   readonly issuingCertificates?: string[];
   /**
   * Behavior of a leaf's 'NotAfter' field during issuance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#leaf_not_after_behavior PkiSecretBackendIssuer#leaf_not_after_behavior}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#leaf_not_after_behavior PkiSecretBackendIssuer#leaf_not_after_behavior}
   */
   readonly leafNotAfterBehavior?: string;
   /**
   * Chain of issuer references to build this issuer's computed CAChain field from, when non-empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#manual_chain PkiSecretBackendIssuer#manual_chain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#manual_chain PkiSecretBackendIssuer#manual_chain}
   */
   readonly manualChain?: string[];
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#namespace PkiSecretBackendIssuer#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#namespace PkiSecretBackendIssuer#namespace}
   */
   readonly namespace?: string;
   /**
   * Specifies the URL values for the OCSP Servers field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#ocsp_servers PkiSecretBackendIssuer#ocsp_servers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#ocsp_servers PkiSecretBackendIssuer#ocsp_servers}
   */
   readonly ocspServers?: string[];
   /**
   * Which signature algorithm to use when building CRLs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#revocation_signature_algorithm PkiSecretBackendIssuer#revocation_signature_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#revocation_signature_algorithm PkiSecretBackendIssuer#revocation_signature_algorithm}
   */
   readonly revocationSignatureAlgorithm?: string;
   /**
   * Comma-separated list of allowed usages for this issuer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#usage PkiSecretBackendIssuer#usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#usage PkiSecretBackendIssuer#usage}
   */
   readonly usage?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer}
 */
 export class PkiSecretBackendIssuer extends cdktn.TerraformResource {
 
@@ -134,7 +140,7 @@ export class PkiSecretBackendIssuer extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PkiSecretBackendIssuer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PkiSecretBackendIssuer to import
-  * @param importFromId The id of the existing PkiSecretBackendIssuer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PkiSecretBackendIssuer that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PkiSecretBackendIssuer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -146,7 +152,7 @@ export class PkiSecretBackendIssuer extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/pki_secret_backend_issuer vault_pki_secret_backend_issuer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -157,7 +163,7 @@ export class PkiSecretBackendIssuer extends cdktn.TerraformResource {
       terraformResourceType: 'vault_pki_secret_backend_issuer',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -170,6 +176,7 @@ export class PkiSecretBackendIssuer extends cdktn.TerraformResource {
     });
     this._backend = config.backend;
     this._crlDistributionPoints = config.crlDistributionPoints;
+    this._deltaCrlDistributionPoints = config.deltaCrlDistributionPoints;
     this._disableCriticalExtensionChecks = config.disableCriticalExtensionChecks;
     this._disableNameChecks = config.disableNameChecks;
     this._disableNameConstraintChecks = config.disableNameConstraintChecks;
@@ -218,6 +225,22 @@ export class PkiSecretBackendIssuer extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get crlDistributionPointsInput() {
     return this._crlDistributionPoints;
+  }
+
+  // delta_crl_distribution_points - computed: false, optional: true, required: false
+  private _deltaCrlDistributionPoints?: string[]; 
+  public get deltaCrlDistributionPoints() {
+    return this.getListAttribute('delta_crl_distribution_points');
+  }
+  public set deltaCrlDistributionPoints(value: string[]) {
+    this._deltaCrlDistributionPoints = value;
+  }
+  public resetDeltaCrlDistributionPoints() {
+    this._deltaCrlDistributionPoints = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deltaCrlDistributionPointsInput() {
+    return this._deltaCrlDistributionPoints;
   }
 
   // disable_critical_extension_checks - computed: false, optional: true, required: false
@@ -470,6 +493,7 @@ export class PkiSecretBackendIssuer extends cdktn.TerraformResource {
     return {
       backend: cdktn.stringToTerraform(this._backend),
       crl_distribution_points: cdktn.listMapper(cdktn.stringToTerraform, false)(this._crlDistributionPoints),
+      delta_crl_distribution_points: cdktn.listMapper(cdktn.stringToTerraform, false)(this._deltaCrlDistributionPoints),
       disable_critical_extension_checks: cdktn.booleanToTerraform(this._disableCriticalExtensionChecks),
       disable_name_checks: cdktn.booleanToTerraform(this._disableNameChecks),
       disable_name_constraint_checks: cdktn.booleanToTerraform(this._disableNameConstraintChecks),
@@ -498,6 +522,12 @@ export class PkiSecretBackendIssuer extends cdktn.TerraformResource {
       },
       crl_distribution_points: {
         value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._crlDistributionPoints),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      delta_crl_distribution_points: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._deltaCrlDistributionPoints),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",

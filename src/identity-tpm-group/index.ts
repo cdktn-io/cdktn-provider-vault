@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group
+// https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface IdentityTpmGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Set of TPM IDs that are members of this TPM group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#member_tpm_ids IdentityTpmGroup#member_tpm_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#member_tpm_ids IdentityTpmGroup#member_tpm_ids}
   */
   readonly memberTpmIds?: string[];
   /**
   * Metadata to associate with the TPM group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#metadata IdentityTpmGroup#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#metadata IdentityTpmGroup#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Name of the TPM group. Vault generates a name if one is not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#name IdentityTpmGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#name IdentityTpmGroup#name}
   */
   readonly name?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#namespace IdentityTpmGroup#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#namespace IdentityTpmGroup#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group vault_identity_tpm_group}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group vault_identity_tpm_group}
 */
 export class IdentityTpmGroup extends cdktn.TerraformResource {
 
@@ -55,7 +55,7 @@ export class IdentityTpmGroup extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IdentityTpmGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityTpmGroup to import
-  * @param importFromId The id of the existing IdentityTpmGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityTpmGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityTpmGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -67,7 +67,7 @@ export class IdentityTpmGroup extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm_group vault_identity_tpm_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm_group vault_identity_tpm_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class IdentityTpmGroup extends cdktn.TerraformResource {
       terraformResourceType: 'vault_identity_tpm_group',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
