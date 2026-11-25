@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm
+// https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface IdentityTpmConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether the TPM is disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm#disabled IdentityTpm#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm#disabled IdentityTpm#disabled}
   */
   readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * Metadata to associate with the TPM record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm#metadata IdentityTpm#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm#metadata IdentityTpm#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Name of the TPM record. Vault generates a name if one is not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm#name IdentityTpm#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm#name IdentityTpm#name}
   */
   readonly name?: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm#namespace IdentityTpm#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm#namespace IdentityTpm#namespace}
   */
   readonly namespace?: string;
   /**
   * PEM-encoded TPM Endorsement Key (EK) public key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm#tpm_ek_public_key IdentityTpm#tpm_ek_public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm#tpm_ek_public_key IdentityTpm#tpm_ek_public_key}
   */
   readonly tpmEkPublicKey: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm vault_identity_tpm}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm vault_identity_tpm}
 */
 export class IdentityTpm extends cdktn.TerraformResource {
 
@@ -61,7 +61,7 @@ export class IdentityTpm extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a IdentityTpm resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IdentityTpm to import
-  * @param importFromId The id of the existing IdentityTpm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IdentityTpm that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IdentityTpm to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +73,7 @@ export class IdentityTpm extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/identity_tpm vault_identity_tpm} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/identity_tpm vault_identity_tpm} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class IdentityTpm extends cdktn.TerraformResource {
       terraformResourceType: 'vault_identity_tpm',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

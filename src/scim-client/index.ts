@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client
+// https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,53 +15,53 @@ export interface ScimClientConfig extends cdktn.TerraformMetaArguments {
   /**
   * Entity ID authorized to call SCIM protocol endpoints on behalf of this client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#access_grant_principal ScimClient#access_grant_principal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#access_grant_principal ScimClient#access_grant_principal}
   */
   readonly accessGrantPrincipal: string;
   /**
   * Auth mount accessor used to create entity aliases for SCIM users. Immutable after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#alias_mount_accessor ScimClient#alias_mount_accessor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#alias_mount_accessor ScimClient#alias_mount_accessor}
   */
   readonly aliasMountAccessor?: string;
   /**
   * Whether to allow adoption of existing Vault groups by SCIM-provisioned groups.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#allow_group_adoption ScimClient#allow_group_adoption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#allow_group_adoption ScimClient#allow_group_adoption}
   */
   readonly allowGroupAdoption?: boolean | cdktn.IResolvable;
   /**
   * Whether to allow adoption of existing Vault entities by SCIM users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#allow_user_adoption ScimClient#allow_user_adoption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#allow_user_adoption ScimClient#allow_user_adoption}
   */
   readonly allowUserAdoption?: boolean | cdktn.IResolvable;
   /**
   * Additional mount accessors whose aliases may be managed by this SCIM client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#allowed_extra_alias_mount_accessors ScimClient#allowed_extra_alias_mount_accessors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#allowed_extra_alias_mount_accessors ScimClient#allowed_extra_alias_mount_accessors}
   */
   readonly allowedExtraAliasMountAccessors?: string[];
   /**
   * The name of the SCIM client. Must be lowercase, because Vault lowercases client names when it stores them. May contain only letters, digits, '_', '-' and '.', and must start and end with a letter, digit or '_'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#client_name ScimClient#client_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#client_name ScimClient#client_name}
   */
   readonly clientName: string;
   /**
   * The Vault SCIM extension schema version used for this client. Must be "2.0" or "2.2". Leave unset to use Vault's default for new clients ("2.2").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#default_schema_version ScimClient#default_schema_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#default_schema_version ScimClient#default_schema_version}
   */
   readonly defaultSchemaVersion?: string;
   /**
   * Controls how linked entities/groups/aliases are handled when this resource is destroyed. `orphan_child_resources` detaches managed resources without deleting them; `delete_child_resources` deletes all managed resources along with the client. Leave unset for a plain delete (fails if the client still owns linked resources). Only consulted at destroy time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#deletion_policy ScimClient#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#deletion_policy ScimClient#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#id ScimClient#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#id ScimClient#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -70,31 +70,31 @@ export interface ScimClientConfig extends cdktn.TerraformMetaArguments {
   /**
   * Maximum number of active tokens for this SCIM client. Must be a positive non-zero value. Leave unset to use Vault's default (2).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#max_active_tokens ScimClient#max_active_tokens}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#max_active_tokens ScimClient#max_active_tokens}
   */
   readonly maxActiveTokens?: number;
   /**
   * Maximum TTL (in seconds) for tokens issued to this SCIM client. Zero means the cluster default is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#max_token_ttl ScimClient#max_token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#max_token_ttl ScimClient#max_token_ttl}
   */
   readonly maxTokenTtl?: number;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#namespace ScimClient#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#namespace ScimClient#namespace}
   */
   readonly namespace?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#timeouts ScimClient#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#timeouts ScimClient#timeouts}
   */
   readonly timeouts?: ScimClientTimeouts;
 }
 export interface ScimClientTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#delete ScimClient#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#delete ScimClient#delete}
   */
   readonly delete?: string;
 }
@@ -188,7 +188,7 @@ export class ScimClientTimeoutsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client vault_scim_client}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client vault_scim_client}
 */
 export class ScimClient extends cdktn.TerraformResource {
 
@@ -204,7 +204,7 @@ export class ScimClient extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ScimClient resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ScimClient to import
-  * @param importFromId The id of the existing ScimClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ScimClient that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ScimClient to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -216,7 +216,7 @@ export class ScimClient extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/scim_client vault_scim_client} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/scim_client vault_scim_client} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +227,7 @@ export class ScimClient extends cdktn.TerraformResource {
       terraformResourceType: 'vault_scim_client',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

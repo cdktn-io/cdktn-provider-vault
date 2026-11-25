@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config
+// https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,39 +13,45 @@ import * as cdktn from 'cdktn';
 
 export interface TpmAuthBackendConfigConfig extends cdktn.TerraformMetaArguments {
   /**
+  * The identity alias name mode used at login. `tpm_id` uses the TPM ID, so every role used from the same TPM shares one entity. `role_id` uses the generated `role_id` of the Vault role, so each role maps to a unique entity.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#alias_mode TpmAuthBackendConfig#alias_mode}
+  */
+  readonly aliasMode?: string;
+  /**
   * How long each CA is valid once it becomes active, in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config#ca_lifetime TpmAuthBackendConfig#ca_lifetime}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#ca_lifetime TpmAuthBackendConfig#ca_lifetime}
   */
   readonly caLifetime?: number;
   /**
   * How long before hard expiry the active CA stops signing new certificates, in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config#ca_soft_expiry TpmAuthBackendConfig#ca_soft_expiry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#ca_soft_expiry TpmAuthBackendConfig#ca_soft_expiry}
   */
   readonly caSoftExpiry?: number;
   /**
   * Default lifetime for issued client certificates when the role does not specify `cert_ttl`, in seconds. When unset or `0`, the effective TTL falls back to CA soft expiry. Vault always caps the actual certificate lifetime by the remaining validity of the signing CA.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config#default_cert_ttl TpmAuthBackendConfig#default_cert_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#default_cert_ttl TpmAuthBackendConfig#default_cert_ttl}
   */
   readonly defaultCertTtl?: number;
   /**
   * Path of the enabled TPM auth backend mount to configure.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config#mount TpmAuthBackendConfig#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#mount TpmAuthBackendConfig#mount}
   */
   readonly mount: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config#namespace TpmAuthBackendConfig#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#namespace TpmAuthBackendConfig#namespace}
   */
   readonly namespace?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config vault_tpm_auth_backend_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config vault_tpm_auth_backend_config}
 */
 export class TpmAuthBackendConfig extends cdktn.TerraformResource {
 
@@ -61,7 +67,7 @@ export class TpmAuthBackendConfig extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a TpmAuthBackendConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TpmAuthBackendConfig to import
-  * @param importFromId The id of the existing TpmAuthBackendConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TpmAuthBackendConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TpmAuthBackendConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -73,7 +79,7 @@ export class TpmAuthBackendConfig extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/resources/tpm_auth_backend_config vault_tpm_auth_backend_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/resources/tpm_auth_backend_config vault_tpm_auth_backend_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +90,7 @@ export class TpmAuthBackendConfig extends cdktn.TerraformResource {
       terraformResourceType: 'vault_tpm_auth_backend_config',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -95,6 +101,7 @@ export class TpmAuthBackendConfig extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._aliasMode = config.aliasMode;
     this._caLifetime = config.caLifetime;
     this._caSoftExpiry = config.caSoftExpiry;
     this._defaultCertTtl = config.defaultCertTtl;
@@ -105,6 +112,22 @@ export class TpmAuthBackendConfig extends cdktn.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // alias_mode - computed: true, optional: true, required: false
+  private _aliasMode?: string; 
+  public get aliasMode() {
+    return this.getStringAttribute('alias_mode');
+  }
+  public set aliasMode(value: string) {
+    this._aliasMode = value;
+  }
+  public resetAliasMode() {
+    this._aliasMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aliasModeInput() {
+    return this._aliasMode;
+  }
 
   // ca_lifetime - computed: true, optional: true, required: false
   private _caLifetime?: number; 
@@ -189,6 +212,7 @@ export class TpmAuthBackendConfig extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      alias_mode: cdktn.stringToTerraform(this._aliasMode),
       ca_lifetime: cdktn.numberToTerraform(this._caLifetime),
       ca_soft_expiry: cdktn.numberToTerraform(this._caSoftExpiry),
       default_cert_ttl: cdktn.numberToTerraform(this._defaultCertTtl),
@@ -199,6 +223,12 @@ export class TpmAuthBackendConfig extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      alias_mode: {
+        value: cdktn.stringToHclTerraform(this._aliasMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       ca_lifetime: {
         value: cdktn.numberToHclTerraform(this._caLifetime),
         isBlock: false,

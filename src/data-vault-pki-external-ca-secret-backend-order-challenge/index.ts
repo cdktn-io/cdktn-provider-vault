@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge
+// https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,145 @@ export interface DataVaultPkiExternalCaSecretBackendOrderChallengeConfig extends
   /**
   * The type of ACME challenge to retrieve. Valid values are `http-01`, `dns-01`, `tls-alpn-01`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#challenge_type DataVaultPkiExternalCaSecretBackendOrderChallenge#challenge_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#challenge_type DataVaultPkiExternalCaSecretBackendOrderChallenge#challenge_type}
   */
   readonly challengeType: string;
   /**
   * The identifier (domain name) for which to retrieve the challenge.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#identifier DataVaultPkiExternalCaSecretBackendOrderChallenge#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#identifier DataVaultPkiExternalCaSecretBackendOrderChallenge#identifier}
   */
   readonly identifier: string;
   /**
   * The path where the PKI External CA secret backend is mounted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#mount DataVaultPkiExternalCaSecretBackendOrderChallenge#mount}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#mount DataVaultPkiExternalCaSecretBackendOrderChallenge#mount}
   */
   readonly mount: string;
   /**
   * Target namespace. (requires Enterprise)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#namespace DataVaultPkiExternalCaSecretBackendOrderChallenge#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#namespace DataVaultPkiExternalCaSecretBackendOrderChallenge#namespace}
   */
   readonly namespace?: string;
   /**
   * The unique identifier for the ACME order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#order_id DataVaultPkiExternalCaSecretBackendOrderChallenge#order_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#order_id DataVaultPkiExternalCaSecretBackendOrderChallenge#order_id}
   */
   readonly orderId: string;
   /**
   * Name of the role associated with the order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#role_name DataVaultPkiExternalCaSecretBackendOrderChallenge#role_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#role_name DataVaultPkiExternalCaSecretBackendOrderChallenge#role_name}
   */
   readonly roleName: string;
+  /**
+  * timeouts block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#timeouts DataVaultPkiExternalCaSecretBackendOrderChallenge#timeouts}
+  */
+  readonly timeouts?: DataVaultPkiExternalCaSecretBackendOrderChallengeTimeouts;
+}
+export interface DataVaultPkiExternalCaSecretBackendOrderChallengeTimeouts {
+  /**
+  * A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#read DataVaultPkiExternalCaSecretBackendOrderChallenge#read}
+  */
+  readonly read?: string;
+}
+
+export function dataVaultPkiExternalCaSecretBackendOrderChallengeTimeoutsToTerraform(struct?: DataVaultPkiExternalCaSecretBackendOrderChallengeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    read: cdktn.stringToTerraform(struct!.read),
+  }
+}
+
+
+export function dataVaultPkiExternalCaSecretBackendOrderChallengeTimeoutsToHclTerraform(struct?: DataVaultPkiExternalCaSecretBackendOrderChallengeTimeouts | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    read: {
+      value: cdktn.stringToHclTerraform(struct!.read),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataVaultPkiExternalCaSecretBackendOrderChallengeTimeoutsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataVaultPkiExternalCaSecretBackendOrderChallengeTimeouts | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._read !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.read = this._read;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataVaultPkiExternalCaSecretBackendOrderChallengeTimeouts | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._read = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._read = value.read;
+    }
+  }
+
+  // read - computed: false, optional: true, required: false
+  private _read?: string; 
+  public get read() {
+    return this.getStringAttribute('read');
+  }
+  public set read(value: string) {
+    this._read = value;
+  }
+  public resetRead() {
+    this._read = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readInput() {
+    return this._read;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge vault_pki_external_ca_secret_backend_order_challenge}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge vault_pki_external_ca_secret_backend_order_challenge}
 */
 export class DataVaultPkiExternalCaSecretBackendOrderChallenge extends cdktn.TerraformDataSource {
 
@@ -67,7 +169,7 @@ export class DataVaultPkiExternalCaSecretBackendOrderChallenge extends cdktn.Ter
   * Generates CDKTN code for importing a DataVaultPkiExternalCaSecretBackendOrderChallenge resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataVaultPkiExternalCaSecretBackendOrderChallenge to import
-  * @param importFromId The id of the existing DataVaultPkiExternalCaSecretBackendOrderChallenge that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataVaultPkiExternalCaSecretBackendOrderChallenge that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataVaultPkiExternalCaSecretBackendOrderChallenge to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -79,7 +181,7 @@ export class DataVaultPkiExternalCaSecretBackendOrderChallenge extends cdktn.Ter
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.13.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge vault_pki_external_ca_secret_backend_order_challenge} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/vault/5.14.0/docs/data-sources/pki_external_ca_secret_backend_order_challenge vault_pki_external_ca_secret_backend_order_challenge} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +192,7 @@ export class DataVaultPkiExternalCaSecretBackendOrderChallenge extends cdktn.Ter
       terraformResourceType: 'vault_pki_external_ca_secret_backend_order_challenge',
       terraformGeneratorMetadata: {
         providerName: 'vault',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -107,6 +209,7 @@ export class DataVaultPkiExternalCaSecretBackendOrderChallenge extends cdktn.Ter
     this._namespace = config.namespace;
     this._orderId = config.orderId;
     this._roleName = config.roleName;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -219,6 +322,22 @@ export class DataVaultPkiExternalCaSecretBackendOrderChallenge extends cdktn.Ter
     return this.getStringAttribute('token');
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new DataVaultPkiExternalCaSecretBackendOrderChallengeTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: DataVaultPkiExternalCaSecretBackendOrderChallengeTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -231,6 +350,7 @@ export class DataVaultPkiExternalCaSecretBackendOrderChallenge extends cdktn.Ter
       namespace: cdktn.stringToTerraform(this._namespace),
       order_id: cdktn.stringToTerraform(this._orderId),
       role_name: cdktn.stringToTerraform(this._roleName),
+      timeouts: dataVaultPkiExternalCaSecretBackendOrderChallengeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
@@ -271,6 +391,12 @@ export class DataVaultPkiExternalCaSecretBackendOrderChallenge extends cdktn.Ter
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      timeouts: {
+        value: dataVaultPkiExternalCaSecretBackendOrderChallengeTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataVaultPkiExternalCaSecretBackendOrderChallengeTimeouts",
       },
     };
 
